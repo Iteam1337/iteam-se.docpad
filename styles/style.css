@@ -1,0 +1,6 @@
+a,a:link{cursor:pointer}
+h1,h2,h3,h4{font-family:"AvantGarde ExtraLight",Franklin Gothic Book,Arial,Sans-Serif;font-weight:normal}
+body{padding-top:60px;font-family:"Palatino"}
+table tfoot th,table tbody th{border-top:1px solid #ddd}
+footer{padding-bottom:30px}
+@font-face{font-family:"AvantGarde ExtraLight";src:url("/fonts/lte52009.ttf") format('truetype');}
