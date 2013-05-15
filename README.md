@@ -1,3 +1,7 @@
+## This is the official iteam.se website
+We are now open-sourcing it and you are free to fork it and create your own. This site is built upon a lot of efforts from the open-source community and the main stuff is put together with DocPad which is kind of a CMS for NodeJs but works differently from other CMS's - it generates the files for you so there are no editor or database, just markdown and Jade. Pretty sweet. Look it up below:
+
+
 # [Twitter Bootstrap](http://twitter.github.com/bootstrap/) skeleton for [DocPad](https://github.com/bevry/docpad)
 Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
 
