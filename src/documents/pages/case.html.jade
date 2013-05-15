@@ -1,0 +1,12 @@
+---
+title: Våra case
+layout: page
+tags: ['intro','page']
+pageOrder: 1
+---
+
+nav.linklist
+  each doc in getCollection('cases').toJSON()
+    li
+      |  &raquo;&nbsp;
+      a(href=doc.url)= doc.title
