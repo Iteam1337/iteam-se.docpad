@@ -59,7 +59,6 @@ html(lang="en")
     != styles.toHTML()
 
   body
-
     // Markup
     .navbar.navbar-inverse.navbar-fixed-top
       .navbar-inner
@@ -72,9 +71,7 @@ html(lang="en")
                 a(href=doc.url, property="dc:title")= doc.title
     .container
       section#content.content!= content
-      hr
       footer
-        div= site.copyright
 
     // Scripts
     != scripts.toHTML()

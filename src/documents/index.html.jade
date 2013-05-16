@@ -7,21 +7,24 @@ title: 'Home'
 .hero-unit
   h1 Sveriges bästa teknikbyrå
   p: :markdown
-    Iteam är en teknikbyrå i Stockholm. Vi utvecklar smarta webblösningar som t ex communities, e-handel och intranät.
+    Lorem ipsum är en agil teknikbyrå i Stockholm. Vi har funnits sedan 1995 och förverkligar drömmar med teknik.
 
     Vi erbjuder även en komplett IT-avdelning som planerar, underhåller och övervakar din IT-miljö.
   .btn.btn-success.pull-right Kolla igenom våra case     
 // Example row of columns.
 .row
-  .span4
-    h2 Docpad
+  article.span4
+    h2 Lär känna oss på Instagram
     p DocPad takes that good ol' simple approach of writing files and wraps it with the best modern innovations, providing an awesome intuitive, liberating and empowering solution for HTML5 web development.</p>
     p: a.btn(href="https://github.com/bevry/docpad") Visit Website
-  .span4
-    h2 Twitter Bootstrap
+  article.span4
+    h2 Vi expanderar och söker projektledare
     p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
     p: a.btn(href="http://twitter.github.com/bootstrap/") Visit Website
-  .span4
-    h2 Twitter Bootstrap
-    p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
-    p: a.btn(href="http://twitter.github.com/bootstrap/") Visit Website
+  article.span4
+    h2 Senaste från bloggen
+    p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
+    ul.linklist
+      each doc in getCollection('posts').toJSON()
+        li
+          a(href=doc.url)= doc.title

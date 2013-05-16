@@ -1,12 +1,12 @@
 ---
-title: Våra case
-layout: page
+title: Case
+layout: section
 tags: ['intro','page']
 pageOrder: 1
 ---
 
-nav.linklist
+.row
   each doc in getCollection('cases').toJSON()
-    li
-      |  &raquo;&nbsp;
-      a(href=doc.url)= doc.title
+    article.span3
+      a(href=doc.url)
+        h2= doc.title
