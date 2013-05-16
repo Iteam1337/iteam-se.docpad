@@ -1,0 +1,12 @@
+---
+title: Medarbetare
+layout: section
+pageOrder: 2
+---
+
+.row
+  each doc in getCollection('coworkers').toJSON()
+    article.span4
+      a(href=doc.url)
+        h2= doc.title
+        p=doc.jobTitle

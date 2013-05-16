@@ -1,0 +1,13 @@
+---
+title: Erbjudanden
+layout: section
+tags: ['intro','page']
+pageOrder: 1
+---
+
+.row
+  each doc in getCollection('services').toJSON()
+    article.span3
+      a(href=doc.url)
+        h2= doc.title
+        p= doc.summary

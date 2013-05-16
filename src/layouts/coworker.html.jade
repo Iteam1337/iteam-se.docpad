@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+article#page.coworker
+    
+  .row
+    .span3
+      img(src=document.image)
+    .span6
+      h1= document.title
+      = document.jobTitle
+      != content
+    .span3
+      if document.twitter
+        h2 Twitter
+        a(href="http://twitter.com/" + document.twitter) @
+          =document.twitter
+
+      if document.linkedin
+        h2 LinkedIn
+        a(href="http://linkedin.com/" + document.linkedin)
+          =document.linkedin
+
+      if document.instagram
+        h2 Instagram
+        a(href="http://instagram.com/" + document.instagram) @
+          =document.instagram
