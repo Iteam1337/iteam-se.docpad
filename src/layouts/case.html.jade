@@ -2,9 +2,17 @@
 layout: default
 ---
 
-article#post.post
-  h1= document.title
-  .post-content!= content
+article#post.case.row
+  .span3
+    img(src=document.image)
+  .span9
+    h1= document.title
+    .post-content!= content
+    if (document.team)
+      ul
+        each member in document.team
+          li=member
+
 
 footer
   if document.relatedDocuments && document.relatedDocuments.length

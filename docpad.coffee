@@ -16,7 +16,6 @@ docpadConfig =
 
       # Here are some old site urls that you would like to redirect from
       oldUrls: [
-        'www.iteam.se'
       ]
 
       # The default title of our website
@@ -80,15 +79,15 @@ docpadConfig =
     posts: (database) ->
       database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
 
-    # This one, will fetch in all documents that will be outputted to the posts directory
+    # This one, will fetch in all documents that will be outputted to the cases directory
     cases: (database) ->
       database.findAllLive({relativeOutDirPath:'cases'},[pageorder:1])
 
-    # This one, will fetch in all documents that will be outputted to the posts directory
+    # This one, will fetch in all documents that will be outputted to the coworkers directory
     coworkers: (database) ->
       database.findAllLive({relativeOutDirPath:'coworkers'},[filename:1])
 
-    # This one, will fetch in all documents that will be outputted to the posts directory
+    # This one, will fetch in all documents that will be outputted to the services directory
     services: (database) ->
       database.findAllLive({relativeOutDirPath:'services'},[date:-1])
 
