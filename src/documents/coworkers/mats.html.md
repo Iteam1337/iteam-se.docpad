@@ -1,7 +1,8 @@
 ---
 title: Mats Egardt
 layout: coworker
-jobTitle: Ops
+jobTitle: Avdelningschef arkitektur, drift och support
+shortname: mats
 ---
 
 This is a **blog post**

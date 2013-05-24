@@ -4,8 +4,10 @@ layout: coworker
 jobTitle: Frontend Hacker
 twitter: rickardlaurin
 instagram: rickardlaurin
-linkedin: rickard.laurin
+linkedin: rickardlaurin
 github: believer
+email: rickard.laurin@gmail.com
+shortname: rickard
 ---
 
 #### Varför jobbar du med teknik?

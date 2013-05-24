@@ -4,9 +4,10 @@ layout: section
 pageOrder: 2
 ---
 
-.row
-  each doc in getCollection('coworkers').toJSON()
-    article.span4
-      a(href=doc.url)
-        h2= doc.title
-        p=doc.jobTitle
+.row.coworkers
+	each doc in getCollection('coworkers').toJSON()
+		article.span4
+			a(href=doc.url, class="name")
+				img(src=doc.image, class="image")
+				h4= doc.title
+			p(class="title")= doc.jobTitle

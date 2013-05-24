@@ -7,21 +7,23 @@ title: 'Home'
 .hero-unit
   h1 Sveriges bästa teknikbyrå
   p: :markdown
-    Lorem ipsum är en agil teknikbyrå i Stockholm. Vi har funnits sedan 1995 och förverkligar drömmar med teknik.
+    Iteam är en agil teknikbyrå i Stockholm. Vi har funnits sedan 1995 och förverkligar drömmar med teknik.
 
     Vi erbjuder även en komplett IT-avdelning som planerar, underhåller och övervakar din IT-miljö.
-  .btn.btn-success.pull-right Kolla igenom våra case     
+  a.btn.btn-success.pull-right(href="/pages/case") Kolla igenom våra case     
 // Example row of columns.
 .row
-  article.span4
+  article.span4.news
+    img(src="http://iteam.se/uploads/instagram-lokal.jpg");
     h2 Lär känna oss på Instagram
-    p DocPad takes that good ol' simple approach of writing files and wraps it with the best modern innovations, providing an awesome intuitive, liberating and empowering solution for HTML5 web development.</p>
+    p: :markdown
+     På instagram får ni en inblick i vår vardag. Vi har en ny instagrammer varje vecka. Följ oss här: [iteam1337](http://instagram.com/iteam1337)
     p: a.btn(href="https://github.com/bevry/docpad") Visit Website
-  article.span4
+  article.span4.news
     h2 Vi expanderar och söker projektledare
     p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
     p: a.btn(href="http://twitter.github.com/bootstrap/") Visit Website
-  article.span4
+  article.span4.news
     h2 Senaste från bloggen
     p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
     ul.linklist

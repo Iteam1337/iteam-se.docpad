@@ -1,9 +1,13 @@
 a, a:link
-  cursor pointer
-
-.navbar-inverse .nav > li > a,  a,  a:hover,  a:active, a:visited
   color: #FFBD09
+  cursor pointer
   text-decoration: none
+
+.navbar-inverse .nav > li > a, a:hover
+  color: #fff;
+
+.navbar-inverse .nav > li.active > a, .navbar-inverse .nav > li > a:hover
+  color: #FFBD09
 
 .navbar-inner
   padding: 10px;
@@ -13,22 +17,31 @@ h1, h2, h3, h4
   font-weight: normal
 
 body
-  padding-top 120px
-  font-family: "AvantGarde ExtraLight" , Franklin Gothic Book, Arial, Sans-Serif
   background: #000;
+  background: url(http://iteam.se/uploads/plattformar.jpg) no-repeat center fixed;
+  background-size: cover;
   color: #fff;
-  background: rgba(0, 0, 0, 0.2) url(http://iteam.se/uploads/plattformar.jpg);
+  font-family: "AvantGarde ExtraLight" , Franklin Gothic Book, Arial, Sans-Serif
+  height:100%;
+  padding-top 120px
+
+.navbar .nav
+  top: 6px;
+
+.brand img
+  width: 80px;
 
 .hero-unit p
   font-family: "AvantGarde ExtraLight";
 
 p
-  font-family: "Palatino"
+  font-family: "Palatino";
+  line-height:1.75;
 
 table
   tfoot, tbody
     th
-      border-top 1px solid #DDD
+      border-top: 1px solid #DDD;
 
 footer
   padding-bottom: 30px
@@ -47,5 +60,55 @@ article, .hero-unit
   list-style:none;
 
 a.btn
-  color:#000;
+  color:#fff;
 
+.news
+  box-sizing:border-box;
+  padding:20px;
+  h2
+    margin-top:0;
+  a.btn
+    color:#000;
+  ul
+    margin:0
+
+blockquote
+ font-size 24px
+ line-height 1.2
+
+/* Coworkers */
+.coworkers
+  text-align center
+  .image
+    border-radius 150px
+    display block
+    margin 0 auto 20px auto
+    width 150px
+  .name
+    h4
+      margin 5px
+
+/* Projects */
+.projectMembers
+  ul
+    margin 0
+    margin-top 40px
+    li
+      display inline-block
+      margin-right 20px
+      padding 10px 0
+      width 30%
+  .memberImg
+    display none
+    margin-right 10px
+    width 50px
+
+/* Blog */
+.blog
+  .post
+    margin-bottom 20px
+
+/* Media queries */
+@media (max-width: 979px)
+  body
+    padding-top:0;

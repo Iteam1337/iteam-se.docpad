@@ -4,9 +4,10 @@ layout: page
 pageOrder: 10
 ---
 
-nav.linklist
+.blog
   each doc in getCollection('posts').toJSON()
-    li
-      span= doc.date.toDateString()
-      |  &raquo;&nbsp;
-      a(href=doc.url)= doc.title
+    section(class="post")
+      header
+        a(href=doc.url)= doc.title
+        div= doc.date.toDateString()
+      article= doc.content
