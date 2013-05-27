@@ -20,13 +20,3 @@ article#post.case.row
                 a(href="/coworkers/" + member)= coworker.title
                 span= ", " + coworker.jobTitle
 
-footer
-  if document.relatedDocuments && document.relatedDocuments.length
-    section#related
-      h3 Related Posts
-      nav.linklist
-        each doc in document.relatedDocuments
-          li
-            span= doc.date.toDateString()
-            |  &raquo;&nbsp;
-            a(href=doc.url)= doc.title

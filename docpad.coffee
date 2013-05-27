@@ -73,7 +73,7 @@ docpadConfig =
   collections:
     # For instance, this one will fetch in all documents that have pageOrder set within their meta data
     pages: (database) ->
-      database.findAllLive({relativeOutDirPath:'pages', pageOrder: $exists: true}, [pageOrder:1,title:1])
+      database.findAllLive({relativeOutDirPath:'sections', pageOrder: $exists: true}, [pageOrder:1,title:1])
 
     # This one, will fetch in all documents that will be outputted to the posts directory
     posts: (database) ->
@@ -81,7 +81,7 @@ docpadConfig =
 
     # This one, will fetch in all documents that will be outputted to the cases directory
     cases: (database) ->
-      database.findAllLive({relativeOutDirPath:'cases'},[pageorder:1])
+      database.findAllLive({relativeOutDirPath:'cases'},[date:-1])
 
     # This one, will fetch in all documents that will be outputted to the coworkers directory
     coworkers: (database) ->
