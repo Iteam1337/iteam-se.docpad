@@ -5,7 +5,7 @@ tags: ['intro','page']
 pageOrder: 9
 ---
 
-Karriär på Iteam är en underbar resa
+Följ med på vår roliga resa.
 ====
 
-Lorem ipsum lorem ipsum
+Som medarbetare hos oss arbetar man under våra tre värden: Att göra något bra, Att ha kul och att Göra att skapa värde.
