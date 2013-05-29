@@ -5,12 +5,7 @@ tags: ['intro','page']
 pageOrder: 9
 ---
 
-<<<<<<< HEAD
-Följ med på vår roliga resa
-====
-=======
 ### Följ med på vår roliga resa.
->>>>>>> 070ac3403464bbe81ef7aa170694dfbd90a45396
 
 Som medarbetare hos oss arbetar man under våra tre värden: Att göra något bra, Att ha kul och att Göra att skapa värde.
 
