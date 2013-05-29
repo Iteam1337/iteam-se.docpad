@@ -1,7 +1,7 @@
 ---
 title: Sophie Raland Wesslau
 layout: coworker
-jobTitle: VD-assistent
+jobTitle: The all over the place woman
 shortname: sophie
 ---
 

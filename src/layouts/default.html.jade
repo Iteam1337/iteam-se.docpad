@@ -58,7 +58,7 @@ html(lang="en")
     // Styles
     != styles.toHTML()
 
-  body
+  body(class=document.slug)
     // Markup
     .navbar.navbar-inverse.navbar-fixed-top
       .navbar-inner
@@ -74,6 +74,9 @@ html(lang="en")
               - clazz = (document.url === doc.url) ? 'active' : null
               li(typeof="sioc:Page", about=doc.url, class=clazz)
                 a(href=doc.url, property="dc:title")= doc.title
+          ul.nav.pull-right
+            li
+                a(href="operations") Support
     .container
       section#content.content!= content
       footer
