@@ -2,6 +2,15 @@
 layout: default
 ---
 
-article#page.page
-  h1= document.title
-  .page-content!= content
+div.row-fluid
+	div.span3
+		blockquote= document.quote
+		div
+			each coworker in getCollection('coworkers').toJSON()
+				if coworker.shortname == document.quoteBy
+					a(href="/coworkers/" + document.quoteBy)= "-- " + coworker.title
+					span= ", " + coworker.jobTitle
+
+	div.span6#page.page
+		h1= document.title
+		.page-content!= content

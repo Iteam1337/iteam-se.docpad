@@ -1,7 +1,8 @@
 ---
 title: Johanna Gustafsson
 layout: coworker
-jobTitle: Code guru
+jobTitle: Senior webbutvecklare
+shortname: johanna
 ---
 
 This is a **blog post**

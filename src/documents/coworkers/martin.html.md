@@ -1,7 +1,9 @@
 ---
 title: Martin Loman
 layout: coworker
-jobTitle: Senior hacker
+jobTitle: Senior webbutvecklare
+shortname: martin
 ---
 
 This is a **blog post**
+
