@@ -7,9 +7,10 @@
 /* Variables
 ---------------------------------------------*/
 orange = #FFBD09
-bgBoxes = rgba(0,0,0,0.2)
+bgBoxes = rgba(0,0,0,0.3)
 opsBg = url(http://iteam.se/uploads/eastwing.png)
-regularBg = url(http://iteam.se/uploads/plattformar.jpg)
+regularBg = url(http://iteam.se/uploads/madmen.png)
+careerBg = url(http://iteam.se/uploads/gruppbild.jpg)
 
 /* Mixins
 ---------------------------------------------*/
@@ -36,9 +37,17 @@ body
   height:100%;
   padding-top 120px
 
+  &.operations
+    background: bgBoxes opsBg no-repeat center fixed;
+    background-size: cover;
+  
+  &.sections-career
+    background: bgBoxes careerBg no-repeat center fixed;
+    background-size: cover;
+    
 p
-  font-family: "Palatino";
-  line-height:1.75;
+  font-family: "Palatino"
+  line-height:1.75
 
 table
   tfoot, tbody
@@ -74,14 +83,12 @@ h1, h2, h3, h4
 
 /* Layout
 ---------------------------------------------*/
-body.operations
-  background: bgBoxes opsBg
-
 .brand img
   width: 80px
 
-article, .hero-unit
-  background: rgba(0,0,0,.12)
+.hero-unit
+  background: bgBoxes
+  border-radius:0
 
 .linklist li
   list-style:none
@@ -101,19 +108,7 @@ blockquote
  font-size: 24px
  line-height: 1.2
 
-/* Coworkers */
-.coworkers
-  text-align: center
-  .image
-    border-radius: 150px
-    display: block
-    margin: 0 auto 20px auto
-    width: 150px
-  .name
-    h4
-      margin: 5px
-
-/* Projects */
+/* Cases */
 .projectMembers
   ul
     margin: 0
@@ -127,6 +122,25 @@ blockquote
     display: none
     margin-right: 10px
     width: 50px
+
+/* Coworkers */
+.coworkers
+  text-align: center
+  .image
+    border-radius: 150px
+    display: block
+    margin: 0 auto 20px auto
+    width: 150px
+  .name
+    h4
+      margin: 5px
+
+/* Career */
+.sections-career
+  #page
+    background:bgBoxes
+    box-sizing(border-box)
+    padding:20px
 
 /* Blog */
 .blog
