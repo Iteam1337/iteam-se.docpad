@@ -78,8 +78,7 @@ html(lang="en")
             li
                 a(href="/operations") Support
     .container
-      section#content.content!= content
-      footer
+      .row-fluid#content.content!= content
 
     // Scripts
     != scripts.toHTML()

@@ -2,11 +2,12 @@
 layout: default
 ---
 
-article#post.post
-  h1= document.title
-  .post-content!= content
+.span8
+  article#post.post
+    h1= document.title
+    .post-content!= content
 
-footer
+.span4
   if document.relatedDocuments && document.relatedDocuments.length
     section#related
       h3 Related Posts
