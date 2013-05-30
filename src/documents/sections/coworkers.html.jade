@@ -4,7 +4,7 @@ layout: section
 pageOrder: 2
 ---
 
-.row.coworkers
+.row-fluid.coworkers
 	each doc in getCollection('coworkers').toJSON()
 		article.span4
 			a(href=doc.url, class="name")

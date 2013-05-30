@@ -30,6 +30,7 @@ a.btn
   background:orange
   color:#fff
   display:inline-block
+  font-size:12px
   margin-right:20px
 
 body
@@ -118,6 +119,18 @@ blockquote
  font-size: 24px
  line-height: 1.2
 
+#content
+  > .row-fluid
+    article
+      background:bg
+
+#page, #content
+  .row-fluid > article,
+  > .row-fluid article
+    box-sizing(border-box)
+    background:bgBoxes
+    padding:20px
+
 /* Cases */
 .projectMembers
   ul
@@ -151,11 +164,6 @@ blockquote
     background:bgBoxes
     box-sizing(border-box)
     padding:20px
-
-article
-  background:bgBoxes
-  box-sizing(border-box)
-  padding:20px
 
 /* Blog */
 .blog

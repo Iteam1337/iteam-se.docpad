@@ -5,7 +5,7 @@ tags: ['intro','page']
 pageOrder: 1
 ---
 
-.row
+.row-fluid
   each doc in getCollection('cases').toJSON()
     article.span3
       a(href=doc.url)
