@@ -87,6 +87,10 @@ docpadConfig =
     coworkers: (database) ->
       database.findAllLive({relativeOutDirPath:'coworkers'},[filename:1])
 
+    # This one, will fetch in all documents that will be outputted to the coworkers directory
+    operations: (database) ->
+      database.findAllLive({relativeOutDirPath:'operations'},[pageOrder:1])
+
     # This one, will fetch in all documents that will be outputted to the services directory
     services: (database) ->
       database.findAllLive({relativeOutDirPath:'services'},[date:-1])

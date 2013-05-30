@@ -12,26 +12,14 @@ title: 'Operations'
   .btn.btn-success.pull-right Kolla igenom våra case     
 // Example row of columns.
 .row
-  article.span4
-    h2 IT-review
-    p En IT-review innebär analys och dokumentation av din IT-miljö.</p>
-    p: a.btn(href="https://github.com/bevry/docpad") Till IT-review
-  article.span4
-    h2 Specialist- & Projektsupport
-    p Med vår specialist- och projektsupport får du som IT-chef eller IT-ansvarig förstärkning till din specialistroll.</p>
-    p: a.btn(href="http://twitter.github.com/bootstrap/") Till Specialist- & Projektsupport
-  article.span4
-    h2 IT-avdelning
-    p Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö.</p>
-    p: a.btn(href="http://twitter.github.com/bootstrap/") Till IT-avdelning
-  article.span4
-    h2 Systemförvaltning
-    p En bra webbplats eller webbtjänst ska leva, förfinas och förvaltas i många år.</p>
-    p: a.btn(href="http://twitter.github.com/bootstrap/") Till Systemförvaltning
-  article.span4
-    h2 Arkitektur & Infrastruktur
-    p Vi hjälper dig att planera, bygga och bibehålla en stabil och driftsäker infrastruktur.</p>
-    p: a.btn(href="http://twitter.github.com/bootstrap/") Till Arkitektur & Infrastruktur
+
+  each doc in getCollection('operations').toJSON()
+    article.span4
+      h2=doc.title
+      p=doc.description
+      a(href=doc.url)="Till " + doc.title
+
+
   article.span4
     h2 Fjärrstyr min dator
     p För fjärrstyrning, ring +46 8 267090 (välj 1).</p> 
