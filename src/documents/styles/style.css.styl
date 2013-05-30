@@ -1,63 +1,53 @@
+/* Font-face
+---------------------------------------------*/
+@font-face
+  font-family: "AvantGarde ExtraLight";
+  src: url(/fonts/lte52009.ttf) format('truetype'); /* TTF file for CSS3 browsers */  
+
+/* Variables
+---------------------------------------------*/
+orange = #FFBD09
+bgBoxes = rgba(0,0,0,0.3)
+opsBg = url(http://iteam.se/uploads/eastwing.png)
+regularBg = url(http://iteam.se/uploads/madmen.png)
+careerBg = url(http://iteam.se/uploads/gruppbild.jpg)
+
+/* Mixins
+---------------------------------------------*/
+box-sizing(model)
+  box-sizing model
+  -webkit-box-sizing model
+  -moz-box-sizing model
+
+/* General
+---------------------------------------------*/
 a, a:link
-  color: #FFBD09
-  cursor pointer
+  color: orange
+  cursor: pointer
   text-decoration: none
 
-.navbar-inverse .nav > li > a, a:hover
-  color: #fff;
-
-.navbar-inverse .nav > li.active > a, .navbar-inverse .nav > li > a:hover
-  color: #FFBD09
-
-.navbar-inner
-  padding: 10px;
-
-
-h1, h2, h3, h4
-  font-weight: normal
+  .btn
+    color:#fff;
 
 body
-  background: #000;
-  background: url(http://iteam.se/uploads/madmen.png) no-repeat center fixed;
+  background: bgBoxes regularBg no-repeat center fixed;
   background-size: cover;
   color: #fff;
   font-family: "AvantGarde ExtraLight" , Franklin Gothic Book, Arial, Sans-Serif
   height:100%;
   padding-top 120px
 
-.navbar .nav
-  top: 6px;
-
-.brand img
-  width: 80px;
-
-
-body.operations
-  background: rgba(0, 0, 0, 0.3) url(http://iteam.se/uploads/eastwing.png);
-  background: rgba(0, 0, 0, 0.3) url(http://iteam.se/uploads/eastwing.png)no-repeat center fixed;
-  background-size: cover;
-
-  #page
-    background: rgba(0,0,0,0.2)
-    box-sizing border-box
-    padding:20px
-
-body.sections-career
-  background: rgba(0, 0, 0, 0.2) url(http://iteam.se/uploads/gruppbild.jpg);
-  background: rgba(0, 0, 0, 0.2) url(http://iteam.se/uploads/gruppbild.jpg)no-repeat center fixed;
-  background-size: cover;
-
-  #page
-    background: rgba(0,0,0,0.2)
-    box-sizing border-box
-    padding:20px
-
-.hero-unit p
-  font-family: "AvantGarde ExtraLight";
-
+  &.operations
+    background: bgBoxes opsBg no-repeat center fixed;
+    background-size: cover;
+  
+  &.sections-career
+    background: bgBoxes careerBg no-repeat center fixed;
+    background-size: cover;
+    
 p
-  font-family: "Palatino";
-  line-height:1.75;
+  font-family: "Palatino"
+  line-height:1.75
 
 table
   tfoot, tbody
@@ -67,69 +57,97 @@ table
 footer
   padding-bottom: 30px
 
+/* Headings
+---------------------------------------------*/
+h1, h2, h3, h4
+  font-weight: normal
 
-@font-face
-  font-family: "AvantGarde ExtraLight";
-  src:    url(/fonts/lte52009.ttf) format('truetype'); /* TTF file for CSS3 browsers */  
+/* Navbar
+---------------------------------------------*/
+.navbar-inverse
+  
+  .navbar-inner
+    padding: 10px
 
+    .nav
+      top: 6px
+      
+      > li > a, a:hover
+        color: #fff
 
-article, .hero-unit
-  background: rgba(0,0,0,.12)
-  font-family: "AvantGarde ExtraLight" , Franklin Gothic Book, Arial, Sans-Serif
+      > li.active > a
+        color: orange
+
+      > li > a:hover
+        color: orange
+
+/* Layout
+---------------------------------------------*/
+.brand img
+  width: 80px
+
+.hero-unit
+  background: bgBoxes
+  border-radius:0
 
 .linklist li
-  list-style:none;
-
-a.btn
-  color:#fff;
+  list-style:none
 
 .news
-  box-sizing:border-box;
-  padding:20px;
+  box-sizing(border-box)
+  padding:20px
+
   h2
-    margin-top:0;
+    margin-top:0
   a.btn
-    color:#000;
+    color:#000
   ul
     margin:0
 
 blockquote
- font-size 24px
- line-height 1.2
+ font-size: 24px
+ line-height: 1.2
+
+/* Cases */
+.projectMembers
+  ul
+    margin: 0
+    margin-top: 40px
+    li
+      display: inline-block
+      margin-right: 20px
+      padding: 10px 0
+      width: 30%
+  .memberImg
+    display: none
+    margin-right: 10px
+    width: 50px
 
 /* Coworkers */
 .coworkers
-  text-align center
+  text-align: center
   .image
-    border-radius 150px
-    display block
-    margin 0 auto 20px auto
-    width 150px
+    border-radius: 150px
+    display: block
+    margin: 0 auto 20px auto
+    width: 150px
   .name
     h4
-      margin 5px
+      margin: 5px
 
-/* Projects */
-.projectMembers
-  ul
-    margin 0
-    margin-top 40px
-    li
-      display inline-block
-      margin-right 20px
-      padding 10px 0
-      width 30%
-  .memberImg
-    display none
-    margin-right 10px
-    width 50px
+/* Career */
+.sections-career
+  #page
+    background:bgBoxes
+    box-sizing(border-box)
+    padding:20px
 
 /* Blog */
 .blog
   .post
-    margin-bottom 20px
+    margin-bottom: 20px
 
 /* Media queries */
 @media (max-width: 979px)
   body
-    padding-top:0;
+    padding-top:0
