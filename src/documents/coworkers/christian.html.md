@@ -5,7 +5,7 @@ jobTitle: CEO and hacker
 twitter: landgren
 instagram: clandgren
 linkedin: christian.landgren
-//image: images/christian.jpg
+image: /images/christian.jpg
 shortname: christian
 ---
 

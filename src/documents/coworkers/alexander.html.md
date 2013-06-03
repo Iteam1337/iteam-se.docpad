@@ -2,8 +2,17 @@
 title: Alexander Czigler
 layout: coworker
 jobTitle: Hacker
+twitter: 
+instagram: 
+linkedin: zendeveloper
+github: 
+email: alexander.czigler@iteam.se
 image: /images/alexander.jpg
 shortname: alexander
+
+
+
+
 ---
 
 ### Varför jobbar du med teknik?

@@ -6,7 +6,8 @@ twitter: rickardlaurin
 instagram: rickardlaurin
 linkedin: rickardlaurin
 github: believer
-email: rickard.laurin@gmail.com
+email: rickard.laurin@giteam.se
+image: /images/rickard.jpg
 shortname: rickard
 ---
 
