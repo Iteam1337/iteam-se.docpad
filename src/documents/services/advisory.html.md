@@ -3,6 +3,7 @@ title: Rådgivning
 layout: page
 tags: ['intro','page']
 pageOrder: 1
-summary: Lorem ipsum....
+summary: När vi erbjuder Rådgivning ingår Behovsanalys, Förstudier samt Entreprenörsrådgivning i erbjudandet.
+
 ---
 This is a **page**
