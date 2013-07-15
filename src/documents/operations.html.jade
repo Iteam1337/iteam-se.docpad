@@ -12,14 +12,12 @@ title: 'Operations'
   .btn.btn-success.pull-right Kolla igenom våra case     
 // Example row of columns.
 .row-fluid
-  each doc in   ('operations').toJSON().slice(0,3)
+  each doc in getCollection('operations').toJSON().slice(0,3)
     article.span4
       h2=doc.title
       p=doc.description
       a(href=doc.url)="Till " + doc.title
       img(src="http://iteam.se/Content/Images/Iteam.png")
-
-
 .row-fluid
   each doc in getCollection('operations').toJSON().slice(3,5)
     article.span4
