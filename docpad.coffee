@@ -124,6 +124,22 @@ docpadConfig =
         else
           next()
 
+    # Write After
+    # Used to minify our assets with grunt
+    writeAfter: (opts,next) ->
+        # Prepare
+        balUtil = require('safeps')
+        docpad = @docpad
+        rootPath = docpad.config.rootPath
+
+        command = ["#{rootPath}/node_modules/.bin/grunt", 'default']
+
+        # Execute
+        balUtil.spawn(command, {cwd:rootPath,output:true}, next)
+
+        # Chain
+        @
+
 
 # Export our DocPad Configuration
 module.exports = docpadConfig

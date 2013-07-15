@@ -3,20 +3,19 @@ layout: default
 ---
 
 article#post.case.row-fluid
-  .span3
-    img(src=document.image)
-  .span9.projectMembers
+  if (document.images)
+    each image,i in document.images
+      img(src='/images/' + image, class=document.imagePos[i])
+
+  .about
     h1= document.title
-    .post-content!= content
+    .content!= content
     if (document.team)
-      ul
+      ul.team
         each member in document.team
           li
             each coworker in getCollection('coworkers').toJSON()
               if coworker.shortname == member
-                if coworker.image
-                  div.memberImg
-                    img(src=coworker.image)
                 a(href="/coworkers/" + member)= coworker.title
                 div= coworker.jobTitle
 
