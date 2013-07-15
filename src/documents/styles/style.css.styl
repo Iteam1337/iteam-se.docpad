@@ -4,9 +4,17 @@
   font-family: "AvantGarde ExtraLight";
   src: url(/fonts/lte52009.ttf) format('truetype'); /* TTF file for CSS3 browsers */  
 
+@font-face
+  font-family: 'Entypo';
+  src:url(/fonts/Entypo-webfont.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 /* Variables
 ---------------------------------------------*/
-orange = #FFBD09
+igrey = #231F20
+iorange = #FFBD09
+iorangergb = rgb(255,189,9)
 bgBoxes = rgba(0,0,0,0.3)
 opsBg = url(http://iteam.se/uploads/operations.jpg)
 regularBg = url(http://iteam.se/uploads/madmen.png)
@@ -18,6 +26,11 @@ box-sizing(model)
   box-sizing model
   -webkit-box-sizing model
   -moz-box-sizing model
+
+box-shadow(shadow)
+  box-shadow: shadow
+  -webkit-box-shadow: shadow
+  -moz-box-shadow: shadow
 
 /* General
 ---------------------------------------------*/
@@ -34,24 +47,16 @@ a.btn
   margin-right:20px
 
 body
-  background: bgBoxes regularBg no-repeat center fixed;
-  background-size: cover;
-  color: #fff;
+  background:#fff
   font-family: "AvantGarde ExtraLight" , Franklin Gothic Book, Arial, Sans-Serif
+  font-size: 1em
   height:100%;
-  padding-top 120px
-
-  &.operations
-    background: bgBoxes opsBg no-repeat center fixed;
-    background-size: cover;
-  
-  &.sections-career
-    background: bgBoxes regularBg no-repeat center fixed;
-    background-size: cover;
     
 p
+  color:#666
   font-family: "Palatino"
-  line-height:1.75
+  line-height:2
+  margin-bottom: 20px
 
   a
     font-family: "AvantGarde ExtraLight" , Franklin Gothic Book, Arial, Sans-Serif
@@ -60,9 +65,6 @@ table
   tfoot, tbody
     th
       border-top: 1px solid #DDD;
-
-footer
-  padding-bottom: 30px
 
 /* Headings
 ---------------------------------------------*/
@@ -74,109 +76,146 @@ h2
 
 /* Navbar
 ---------------------------------------------*/
-.navbar-inverse
-  
-  .navbar-inner
-    padding: 10px
+.nav.nav-collapse.collapse
+  margin-bottom: 0;
+  margin-top: 40px;
+  width: 100%;
 
-    .nav
-      top: 6px
-      
-      > li > a, a:hover
-        color: #fff
+  a
+    display: inline-block;
+    padding:20px
 
-      > li.active > a
-        color: orange
+    &.active, &:hover
+      background:#fff
+      color:#333
 
-      > li > a:hover
-        color: orange
+    a:hover
+      background:none
+      color:#333
 
-      .nav-support
-        color:orange
-
-/* Layout
+/* Header
 ---------------------------------------------*/
-.brand img
-  width: 80px
+#header
+  box-sizing(border-box)
+
+  background:#333
+  position:relative
+  text-align:center
 
 .hero-unit
-  background: bgBoxes
-  border-radius:0
-  margin-bottom:40px
+  background: regularBg
 
-.linklist li
-  list-style:none
-
-.row-fluid
+#nowplaying
+  background:#2b2b2b
+  color:#fff
   margin-bottom:20px
+  padding: 5px 20px
+  text-align:center
+  width:100%
 
-.news
-  box-sizing(border-box)
-  padding:20px
+  #wejay
+    margin-right:20px
+    width:25px
 
-  h2
-    margin-top:0
-  a.btn
-    color:#000
-  ul
-    margin:0
+.container
+  margin-top:40px
 
-blockquote
- font-size: 24px
- line-height: 1.2
 
-#content
-  > .row-fluid
-    article
-      background:bg
-
-#page, #content
-  .row-fluid > article,
-  > .row-fluid article
-    box-sizing(border-box)
-    background:bgBoxes
-    padding:20px
-
-/* Cases */
-.projectMembers
-  ul
-    margin: 0
-    margin-top: 40px
-    li
-      display: inline-block
-      margin-right: 20px
-      padding: 10px 0
-      width: 30%
-  .memberImg
-    display: none
-    margin-right: 10px
-    width: 50px
-
-/* Coworkers */
 .coworkers
-  text-align: center
-  .image
-    
-    display: block
-    margin: 0 auto 20px auto
-    width: 150px
-  .name
-    h4
-      margin: 5px
+  .coworker
+    a
+      display inline-block
+      .image
+        border-radius:100px
+        display inline-block
+        margin-right:20px
+        width:100px
 
-/* Career */
-.sections-career
-  #page
-    background:bgBoxes
-    box-sizing(border-box)
-    padding:20px
-
-/* Blog */
 .blog
   .post
-    margin-bottom: 20px
+    margin-bottom:40px
 
-/* Media queries */
-@media (max-width: 979px)
-  body
-    padding-top:0
+    header      
+      .date
+        color:#666
+        font-family:'Palatino'
+        font-size:14px
+
+      .title
+        display inline-block
+        font-size:24px
+        margin:20px 0
+
+    article
+      color:#999
+      font-family:'Palatino'
+      line-height:2
+
+#post
+  margin-top:40px
+
+  .post-title
+    margin:20px 0 40px
+
+  .post-content
+    color: #666
+
+  .post-author
+    border-top: 1px solid #eee
+    padding-top: 20px
+    margin-top: 40px
+
+#about
+  .history
+    margin-bottom:20px
+    position:relative
+
+    .year
+      left:-80px
+      position: absolute
+
+    .text
+      font-size:0.8em
+
+  #financialNumbers
+    position: relative
+    left: -60px
+
+  .legend
+    margin-top:20px
+    > div
+      display: inline-block
+      margin-right:20px
+
+    .box
+      display: inline-block
+      height:10px
+      margin-right: 10px
+      width:10px
+
+    .employees
+      .box
+        background:iorange
+
+    .turnover
+      .box
+        background:rgb(151,187,205)
+
+
+footer
+  box-sizing(border-box)
+
+  background: igrey
+  bottom:0
+  color:#fff
+  left:0
+  margin-top: 50px
+  padding:40px
+  width: 100%
+
+
+
+
+
+
+

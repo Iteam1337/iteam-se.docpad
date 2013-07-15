@@ -2,18 +2,30 @@
 layout: default
 ---
 
-.span8
-  article#post.post
-    h1= document.title
-    .post-content!= content
+.row-fluid
+  .span2
+  .span8
+    article#post.post
+      div.post-date= document.date.toDateString()
+      h2.post-title= document.title
+      .post-content!= content
+      .post-author
+        if document.author
+            each coworker in getCollection('coworkers').toJSON()
+              if coworker.shortname == document.author
+                a(href="/coworkers/" + member)= coworker.title
+                div= coworker.jobTitle
+  .span2
 
-.span4
-  if document.relatedDocuments && document.relatedDocuments.length
-    section#related
-      h3 Related Posts
-      nav.linklist
-        each doc in document.relatedDocuments
-          li
-            span= doc.date.toDateString()
-            |  &raquo;&nbsp;
-            a(href=doc.url)= doc.title
+//- .row-fluid
+//-   .span2
+//-   .span8
+//-     if document.relatedDocuments && document.relatedDocuments.length
+//-       section#related
+//-         h3 Related Posts
+//-         nav.linklist
+//-           each doc in document.relatedDocuments.slice(0,5)
+//-             li
+//-               span= doc.date.toDateString()
+//-               |  &raquo;&nbsp;
+//-               a(href=doc.url)= doc.title

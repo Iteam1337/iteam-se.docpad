@@ -5,9 +5,10 @@ pageOrder: 2
 ---
 
 .row-fluid.coworkers
-	each doc in getCollection('coworkers').toJSON()
-		article.span4
-			a(href=doc.url, class="name")
-				img(src=doc.image, class="image")
-				h4= doc.title
-			p(class="title")= doc.jobTitle
+	.span6
+		each doc in getCollection('coworkers').toJSON()
+			.coworker
+				a(href=doc.url, class="name")
+					img(src=doc.image, class="image")
+					h4= doc.title
+				p(class="title")= doc.jobTitle

@@ -7,7 +7,7 @@ pageOrder: 1
 
 .row-fluid
   each doc in getCollection('services').toJSON()
-    article.span3
+    article.span4
       a(href=doc.url)
         h2= doc.title
       p= doc.summary

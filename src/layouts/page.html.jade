@@ -3,7 +3,7 @@ layout: default
 ---
 
 div.row-fluid
-	div.span3
+	div.span2
 		blockquote= document.quote
 		div
 			each coworker in getCollection('coworkers').toJSON()
@@ -11,6 +11,6 @@ div.row-fluid
 					a(href="/coworkers/" + document.quoteBy)= "-- " + coworker.title
 					span= ", " + coworker.jobTitle
 
-	div.span6#page.page
+	div.span8#page.page
 		h1= document.title
 		article.page-content!= content

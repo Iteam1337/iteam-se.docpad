@@ -13,14 +13,15 @@
 - styles.add(["/vendor/twitter-bootstrap/css/bootstrap.css","/vendor/twitter-bootstrap/css/bootstrap-responsive.css"])
 
 //- Other Scripts
-- scripts.add(["/vendor/log.js","/vendor/modernizr.js"])
+- scripts.add(["/vendor/log.js","/vendor/modernizr.js","/vendor/chart.js","/vendor/moment.js"])
+- scripts.add(["//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"])
 
 //- User
 - styles.add(["/styles/style.css"])
 - scripts.add(["/scripts/script.js"])
 
 doctype 5
-html(lang="en")
+html(lang="en", ng-app="iteam.se")
   head
 
     // Meta
@@ -58,25 +59,31 @@ html(lang="en")
     // Styles
     != styles.toHTML()
 
-  body(class=document.slug)
-    // Markup
-    .navbar.navbar-inverse.navbar-fixed-top
-      .navbar-inner
-        .container
-          a(class="btn btn-navbar", data-toggle="collapse", data-target=".nav-collapse")
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.brand(href="/")
-            img(src="http://iteam.se/Content/Images/Iteam.png")
-          ul.nav.nav-collapse.collapse
-            each doc in getCollection('pages').toJSON()
-              - clazz = (document.url === doc.url) ? 'active' : null
-              li(typeof="sioc:Page", about=doc.url, class=clazz)
-                a(href=doc.url, property="dc:title")= doc.title
-          ul.nav.pull-right
-            li
-                a(href="/operations", class="nav-support") Support
+  body(class=document.slug, ng-controller="MainCtrl")
+    .row-fluid#header
+      div#nowplaying(ng-show="nowplaying")
+        a(href="https://github.com/Iteam1337/Wejay")
+          img#wejay(src="/images/wejay.png")
+        span Just nu lyssnar vi på: {{nowplaying.artist}} - {{nowplaying.track}}
+      a.brand(href="/")
+        img(src="http://iteam.se/Content/Images/Iteam.png")   
+      ul.nav.nav-collapse.collapse
+        each doc in getCollection('pages').toJSON()
+          - clazz = (document.url === doc.url) ? 'active' : null
+            a(href=doc.url, property="dc:title", class=clazz)= doc.title
+              li(typeof="sioc:Page", about=doc.url)
+        //- ul.nav.pull-right
+        //-   li
+        //-     a(href="/operations", class="nav-support") Support
+      
+
+    //- .hero-unit
+    //-   h1 Förverkligar drömmar med teknik.
+    //-   p: :markdown
+    //-     Iteam är en agil teknikbyrå i Stockholm. Vi har funnits sedan 1995 och förverkligar drömmar med teknik.
+    //-     Vi har tre affärsområden –Rådgivning, Systemutveckling, Drift & Support. De tre motton vi lever efter är: Göra något bra, ha kul och skapa värde.
+    //-   a.btn.btn-success.pull-right(href="/sections/case") Kolla igenom våra case  
+
     .container
       .row-fluid#content.content!= content
 

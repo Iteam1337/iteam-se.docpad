@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blogg
 layout: page
 pageOrder: 10
 ---
@@ -8,6 +8,7 @@ pageOrder: 10
   each doc in getCollection('posts').toJSON()
     section(class="post")
       header
-        a(href=doc.url)= doc.title
-        div= doc.date.toDateString()
+        div.date= doc.date.toDateString()
+        a.title(href=doc.url)= doc.title
+        
       article= doc.content

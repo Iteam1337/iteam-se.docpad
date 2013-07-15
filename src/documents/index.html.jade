@@ -3,29 +3,23 @@ layout: 'default'
 title: 'Home'
 ---
 
-// Main hero unit for a primary marketing message or call to action.
-.hero-unit
-  h1 Förverkligar drömmar med teknik.
-  p: :markdown
-    Iteam är en agil teknikbyrå i Stockholm. Vi har funnits sedan 1995 och förverkligar drömmar med teknik.
-    Vi har tre affärsområden –Rådgivning, Systemutveckling, Drift & Support. De tre motton vi lever efter är: Göra något bra, ha kul och skapa värde.
-  a.btn.btn-success.pull-right(href="/sections/case") Kolla igenom våra case     
 // Example row of columns.
 .row-fluid
-  article.span4.news
-    h2 Rådgivning
-    p: :markdown
-     På instagram får ni en inblick i vår vardag. Vi har en ny instagrammer varje vecka. Följ oss här: [iteam1337](http://instagram.com/iteam1337)
-    p: a(href="https://github.com/bevry/docpad") Iteam på Instagram
-  article.span4.news
-    h2 Systemutveckling
-    p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
-    p: a(href="http://twitter.github.com/bootstrap/") Jobba hos oss
-  article.span4.news
-    h2 Drift & Support
-    p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
-    p: a(href="http://localhost:9778/operations") Till Drift & Support
-  article.span4.news
+  div.span6
+    article.news
+      h2 Rådgivning
+      p: :markdown
+       På instagram får ni en inblick i vår vardag. Vi har en ny instagrammer varje vecka. Följ oss här: [iteam1337](http://instagram.com/iteam1337)
+      p: a(href="https://github.com/bevry/docpad") Iteam på Instagram
+    article.news
+      h2 Systemutveckling
+      p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
+      p: a(href="http://twitter.github.com/bootstrap/") Jobba hos oss
+    article.news
+      h2 Drift & Support
+      p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
+      p: a(href="http://localhost:9778/operations") Till Drift & Support
+  div.span6
     h2 Senaste från bloggen
     p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
     ul.linklist
