@@ -2,7 +2,7 @@
 layout: default
 ---
 
-article#post.case.row-fluid
+article#case.row-fluid
   if (document.images)
     each image,i in document.images
       img(src='/images/' + image, class=document.imagePos[i])
@@ -10,12 +10,19 @@ article#post.case.row-fluid
   .about
     h1= document.title
     .content!= content
-    if (document.team)
-      ul.team
-        each member in document.team
-          li
-            each coworker in getCollection('coworkers').toJSON()
-              if coworker.shortname == member
-                a(href="/coworkers/" + member)= coworker.title
-                div= coworker.jobTitle
+      if (document.team)
+        ul.team
+          .team-title Teamet
+          each member in document.team
+            li
+              each coworker in getCollection('coworkers').toJSON()
+                if coworker.shortname == member
+                  a(href="/coworkers/" + member)= coworker.title
+                  div= coworker.jobTitle
+
+  if (document.imageGallery)
+    .gallery
+      .gallery-title Bilder
+      each image in document.imageGallery
+        img(src="/images/" + image)
 

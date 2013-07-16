@@ -2,16 +2,16 @@
 layout: default
 ---
 
-article#page.coworker
+article#coworker(ng-controller="CoworkerCtrl")
     
   .row-fluid
-    .span3
+    .image
       img(src=document.image)
-    .span6
+    .information
       h1= document.title
       = document.jobTitle
       != content
-    .span3
+    .social-media
       if document.twitter
         h2 Twitter
         a(href="http://twitter.com/" + document.twitter) @
@@ -29,7 +29,12 @@ article#page.coworker
 
       if document.github
         h2 GitHub
-        a(href="http://github.com/" + document.github)
+        a#githubuser(href="http://github.com/" + document.github)
           =document.github
+    ul.github
+      li(ng-repeat="git in github")
+        .title {{git.actor.login}} pushed to {{git.repo.name}}
+        .time  {{git.created_at}}
+
 
       

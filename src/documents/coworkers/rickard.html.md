@@ -8,6 +8,7 @@ linkedin: rickardlaurin
 github: believer
 email: rickard.laurin@giteam.se
 image: /images/rickard.jpg
+fullimage: /images/rickard_hel.jpg
 shortname: rickard
 ---
 

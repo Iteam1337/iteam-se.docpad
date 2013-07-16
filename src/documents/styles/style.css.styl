@@ -1,6 +1,28 @@
+/* Variables
+---------------------------------------------*/
+igrey = #231F20
+iorange = #FFBD09
+iorangergb = rgb(255,189,9)
+bgBoxes = rgba(0,0,0,0.3)
+opsBg = url(http://iteam.se/uploads/operations.jpg)
+regularBg = url(http://iteam.se/uploads/madmen.png)
+careerBg = url(http://iteam.se/uploads/madmen.png)
+
+/* Mixins
+---------------------------------------------*/
+box-sizing(model)
+  box-sizing model
+  -webkit-box-sizing model
+  -moz-box-sizing model
+
+box-shadow(shadow)
+  box-shadow: shadow
+  -webkit-box-shadow: shadow
+  -moz-box-shadow: shadow
+
 /* Navbar
 ---------------------------------------------*/
-.nav.nav-collapse.collapse
+.nav
   margin-bottom: 0;
   margin-top: 40px;
   width: 100%;
@@ -16,6 +38,14 @@
     a:hover
       background:none
       color:#333
+
+.other-cases
+  background:#fff
+  padding:20px 0
+
+  li
+    display:inline-block
+    margin-right:20px
 
 /* Header
 ---------------------------------------------*/
@@ -46,9 +76,35 @@
 
 .container
   margin-top:40px
-  width:700px
+  max-width:700px
 
-.case
+#cases
+  .case
+    margin-bottom:40px
+    .case-image
+      display inline-block
+      height:100px
+      margin-right:40px
+      vertical-align:top
+    .case-about
+      display inline-block
+      width:80%
+
+      .case-title
+        margin-top:0
+
+      .case-tags
+        border-top:1px solid #ccc
+        padding-top:20px
+
+        .tag
+          display:inline-block
+          margin-right:20px
+
+#case
+  margin:40px auto
+  max-width:700px
+
   img
     &.left
       left:-100px
@@ -59,17 +115,66 @@
 
   .about
     -webkit-transition:all 300ms ease
-    width:80%
+    
+    h1
+      margin-bottom:40px
 
-    .team
-      border-top:1px solid #ccc
-      margin-top:40px
-      padding-top:20px
+    .content
+      p
+        img
+          margin:40px 0
+          width:100%
 
-      li
-        display inline-block
-        margin-bottom:20px
-        width:49%
+      .team
+        border-top:1px solid #ccc
+        margin-top:40px
+        padding:40px 0
+        position:relative
+
+        .team-title
+          box-sizing(border-box)
+          -webkit-transform: translateX(-50%)
+
+          background: #fff;
+          font-size:1.2em
+          left: 50%;
+          padding: 5px 10px;
+          position: relative;
+          text-align: center;
+          top: -55px;
+          width: 120px;
+
+        li
+          display inline-block
+          margin-bottom:20px
+          text-align:center
+          width:49%
+
+          a
+            display:block
+            margin-bottom:5px
+
+
+  .gallery
+    border-top:1px solid #ccc
+    padding-top:40px
+    position:relative
+    width: 100%;
+
+    .gallery-title
+      -webkit-transform: translateX(-50%);
+
+      background: #fff;
+      font-size:1.2em
+      left: 50%;
+      position: relative;
+      text-align:center
+      top: -50px;
+      width: 120px;
+
+    img
+      border-radius: 3px;
+      box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
 
 .coworkers
   .coworker
@@ -151,15 +256,42 @@
       .box
         background:rgb(151,187,205)
 
+
 @media (min-width:1200px)
   .case
     .about
       width:100%
 
 @media (max-width:979px) and (min-width:768px)
-  .case
+  #case
+    img
+      &.right
+        float:right
+        position:relative
+        right:0
+        width:300px
     .about
-      width:60%;
+      width:100%;
+
+@media (max-width:767px)
+  body
+    padding:0
+    
+  .container
+    padding:0 20px
+
+@media (max-width:480px)
+  .case
+    img
+      &.right
+        float: right;
+        position: relative;
+        right: 0;
+        width: 200px;
+    
+    .about
+      width:100%
+
 
 
 

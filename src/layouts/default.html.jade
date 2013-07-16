@@ -1,23 +1,20 @@
 - var scripts = getBlock('scripts')
 - var styles = getBlock('styles')
 
-//- jQuery
-- scripts.add(["/vendor/jquery.js"])
+//- Other Scripts
+- scripts.add(["//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"])
+- scripts.add(["/scripts/vendor.js"])
 
 //- Bootstrap
 - scripts.add(["/vendor/twitter-bootstrap/js/bootstrap.js"])
 - styles.add(["/vendor/twitter-bootstrap/css/bootstrap.css","/vendor/twitter-bootstrap/css/bootstrap-responsive.css"])
 
-//- Other Scripts
-- scripts.add(["/vendor/log.js","/vendor/modernizr.js","/vendor/chart.js","/vendor/moment.js"])
-- scripts.add(["//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"])
-
 //- User
 - styles.add(["/styles/iteamse.css"])
-- scripts.add(["/scripts/script.js"])
+- scripts.add(["/scripts/iteamse.js"])
 
 doctype 5
-html(lang="en", ng-app="iteam.se")
+html(lang="en", ng-app="iteamse")
   head
 
     // Meta
@@ -66,7 +63,7 @@ html(lang="en", ng-app="iteam.se")
         a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
       a.brand(href="/")
         img(src="http://iteam.se/Content/Images/Iteam.png")   
-      ul.nav.nav-collapse.collapse
+      ul.nav
         each doc in getCollection('pages').toJSON()
           - clazz = (document.url === doc.url) ? 'active' : null
             a(href=doc.url, property="dc:title", class=clazz)= doc.title
@@ -74,6 +71,13 @@ html(lang="en", ng-app="iteam.se")
         //- ul.nav.pull-right
         //-   li
         //-     a(href="/operations", class="nav-support") Support
+      if (document.siteurl)
+        .other-cases
+          ul
+            each cases in getCollection('cases').toJSON()
+              if (cases.title !== document.title)
+                li
+                  a(href=cases.url)= cases.title
       
 
     //- .hero-unit
