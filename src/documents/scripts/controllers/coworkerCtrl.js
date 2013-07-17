@@ -6,7 +6,7 @@
 
     var github, githubUser;
 
-    githubUser = document.getElementById('githubuser').innerHTML;
+    githubUser = document.getElementById('github').innerHTML;
     github     = 'https://api.github.com/users/{user}/events';
 
     $http.get(github.replace('{user}', githubUser))
@@ -17,6 +17,7 @@
           push.created_at = moment(push.created_at).fromNow();
         });
       });
+
   });
 
 })();

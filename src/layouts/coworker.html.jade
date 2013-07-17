@@ -3,38 +3,41 @@ layout: default
 ---
 
 article#coworker(ng-controller="CoworkerCtrl")
-    
   .row-fluid
     .image
       img(src=document.image)
     .information
-      h1= document.title
-      = document.jobTitle
-      != content
-    .social-media
-      if document.twitter
-        h2 Twitter
-        a(href="http://twitter.com/" + document.twitter) @
-          =document.twitter
+      h1.name= document.title
+      .job= document.jobTitle
+      .email
+        a(href="mailto:" + document.email)= document.email
+        .phone= document.phonenumber
+      .desc!= content
 
-      if document.linkedin
-        h2 LinkedIn
-        a(href="http://linkedin.com/in/" + document.linkedin)
-          =document.linkedin
+      .social-media
+        .title Sociala medier
+        if document.twitter
+          a(href="http://twitter.com/" + document.twitter)
+            .ets-c-twitter
 
-      if document.instagram
-        h2 Instagram
-        a(href="http://instagram.com/" + document.instagram) @
-          =document.instagram
+        if document.linkedin
+          a(href="http://linkedin.com/in/" + document.linkedin)
+            .ets-c-linkedin
 
-      if document.github
-        h2 GitHub
-        a#githubuser(href="http://github.com/" + document.github)
-          =document.github
-    ul.github
-      li(ng-repeat="git in github")
-        .title {{git.actor.login}} pushed to {{git.repo.name}}
-        .time  {{git.created_at}}
+        if document.instagram
+          a(href="http://instagram.com/" + document.instagram)
+            .ets-instagram
+
+        if document.github
+          a(href="http://github.com/" + document.github)
+            .ets-c-github
+
+    if document.github
+      ul.github
+        .title Senaste på Github
+        li(ng-repeat="git in github")
+          .push-title {{git.repo.name}}
+          .push-time  {{git.created_at}}
 
 
       

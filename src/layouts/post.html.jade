@@ -2,20 +2,19 @@
 layout: default
 ---
 
-.row-fluid
-  .span2
-  .span8
-    article#post.post
-      div.post-date= document.date.toDateString()
-      h2.post-title= document.title
-      .post-content!= content
-      .post-author
-        if document.author
-            each coworker in getCollection('coworkers').toJSON()
-              if coworker.shortname == document.author
-                a(href="/coworkers/" + member)= coworker.title
-                div= coworker.jobTitle
-  .span2
+.row-fluid(make-pretty)
+  article#post.post
+    div.post-date= document.date.toDateString()
+    h2.post-title= document.title
+    .post-content!= content
+    .next
+      a(href="")
+    .post-author
+      if document.author
+        each coworker in getCollection('coworkers').toJSON()
+          if coworker.shortname == document.author
+            a(href="/coworkers/" + member)= coworker.title
+            div= coworker.jobTitle
 
 //- .row-fluid
 //-   .span2
