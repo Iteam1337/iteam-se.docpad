@@ -13,7 +13,7 @@ Vi tror på vikten av att klarlägga din verksamhets nuläge och identifera en t
 
 
 ### Lead tech
-Vi vet att dom allra bästa teknikkonceptare, nytänkare och systemutvecklare är svåra att rekrytera för många av våra kunder. Men, du kan fortfarande få tillgång till just en sådan person i just ditt team, eller i din styrgrupp. Genom att vi endast rekryterar erfarna systemutvecklare, vårdar kvåra medarbetares kunskapsnivå och håller oss ajour inom det senaste så finner du just den extraresurs du behöver hos oss. Anlita en senior lead tech-roll som stöttar just ditt team genom oss. Du kan också använda vår lead tech som expertis i din rekryteringsprocess för att bygga upp  ett eget utvecklingsteam. 
+Vi vet att dom allra bästa teknikkonceptare, nytänkare och systemutvecklare är svåra att rekrytera för många av våra kunder. Men, du kan fortfarande få tillgång till just en sådan person i just ditt team, eller i din styrgrupp. Genom att vi endast rekryterar erfarna systemutvecklare, vårdar våra medarbetares kunskapsnivå och håller oss ajour inom det senaste så finner du just den extraresurs du behöver hos oss. Anlita en senior lead tech-roll som stöttar just ditt team genom oss. Du kan också använda vår lead tech som expertis i din rekryteringsprocess för att bygga upp  ett eget utvecklingsteam. 
 
 < Kontakt mig om Lead tech >
 
