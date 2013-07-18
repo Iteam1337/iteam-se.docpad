@@ -12,6 +12,7 @@
     var np, time;
 
     $scope.mobileNav = false;
+    $scope.allTags   = [];
 
     /**
      * Gets now playing music from Last.fm

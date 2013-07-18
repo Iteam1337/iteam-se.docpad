@@ -1,7 +1,7 @@
 ---
 title: Dennis Pettersson
 layout: coworker
-jobTitle: Frontend Hacker
+jobTitle: Webbutvecklare
 twitter: 
 instagram: 
 linkedin: 

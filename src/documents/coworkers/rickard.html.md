@@ -1,7 +1,7 @@
 ---
 title: Rickard Laurin
 layout: coworker
-jobTitle: Frontend Hacker
+jobTitle: Webbutvecklare
 twitter: rickardlaurin
 instagram: rickardlaurin
 linkedin: rickardlaurin
