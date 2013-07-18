@@ -3,8 +3,7 @@ title: Systemutveckling
 layout: page
 tags: ['intro','page']
 pageOrder: 2
-summary: Vi kallar oss teknikbyrå och jobbar som en webbyrå men tar endast projekt med större tekniskt fokus. Ofta jobbar vi tillsammans med andra webbyråer som då står för design och formgivning. De webbplatser vi bygger är oftast centrala i våra kunders affär och har därför ofta stort fokus på en stabil teknisk plattform och integration mot interna system så som produktsystem (PIM), affärssystem och Single Sign On etc.
-quote: Scrum som projektmodell garanterar kvalitet och hög effektivitet
+summary: När du vill ha det bästa teknikteamet – dom mest engagerade hjärnorna – och den senaste kunskapen - samlat i ett och samma team, då ska just ditt projekt genomföras tillsammans med oss på Iteam. Vi bygger det system som du behöver, det verktyget som du ser framför dig – precis så som du vill ha det. Vare sig det handlar om en ny webb, en webbutik, ett forum eller verksamhetsvertyg som molntjänst så kan vi bygga det åt dig. Vi utvecklar webbplatsen och tjänsten som utgör drivkraften i din affärsverksamhet.
 quoteBy: ['anders']
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Beckers.se responsive
 layout: case
-tags: ['beckers','responsive']
+tags: ['beckers','responsive','systemutveckling']
 images: ['beckers1.jpg']
 imagePos: ['right']
 imageGallery: ['beckers2.jpg']
