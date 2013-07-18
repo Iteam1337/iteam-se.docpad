@@ -5,7 +5,7 @@ tags: ['intro','page']
 pageOrder: 1
 ---
 
-.row-fluid#cases(ng-controller="CasesCtrl")
+.row-fluid#cases
   each doc in getCollection('cases').toJSON()
     .case
       if (doc.images)

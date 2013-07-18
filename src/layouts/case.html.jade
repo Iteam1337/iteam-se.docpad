@@ -7,6 +7,13 @@ article#case.row-fluid
     each image,i in document.images
       img(src='/images/' + image, class=document.imagePos[i])
 
+  if document.twitterTag
+    #twitter= document.twitterTag
+
+  ul.tweets
+    li(ng-repeat="tweet in tweets | limitTo:5", ng-bind-html-unsafe="tweet.text")
+      .time {{tweet.created_at}}
+
   .about
     h1= document.title
     .content!= content
@@ -25,4 +32,3 @@ article#case.row-fluid
       .gallery-title Bilder
       each image in document.imageGallery
         img(src="/images/" + image)
-
