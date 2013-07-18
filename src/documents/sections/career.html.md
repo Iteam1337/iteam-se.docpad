@@ -2,7 +2,7 @@
 title: Karriär
 layout: page
 tags: ['intro','page']
-pageOrder: 9
+pageOrder: 4
 ---
 
 ### Följ med på vår roliga resa.
