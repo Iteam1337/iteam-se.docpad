@@ -93,7 +93,7 @@ docpadConfig =
 
     # This one, will fetch in all documents that will be outputted to the services directory
     services: (database) ->
-      database.findAllLive({relativeOutDirPath:'services'},[date:-1])
+      database.findAllLive({relativeOutDirPath:'services'},[pageOrder:1])
 
 
   # DocPad Events
