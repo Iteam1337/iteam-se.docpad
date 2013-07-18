@@ -2,10 +2,10 @@
 title: Hans Rollman
 layout: coworker
 jobTitle: vVD, Sales
-twitter: 
-instagram: 
-linkedin: 
-github: 
+twitter: hrswe
+instagram: hrswe
+linkedin: hansrollman
+github: hanrol
 email: 
 image: /images/hans.jpg
 shortname: hans
