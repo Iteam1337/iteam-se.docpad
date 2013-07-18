@@ -14,6 +14,15 @@ article#coworker(ng-controller="CoworkerCtrl")
         .phone= document.phonenumber
       .desc!= content
 
+      ul.cases
+        .title Medverkande i case
+        each cases in getCollection('cases').toJSON()
+          if cases.team
+            each member in cases.team
+                if (member == document.shortname)
+                  li
+                    a(href=cases.url)= cases.title
+
       .social-media
         .title Sociala medier
         if document.twitter
@@ -29,14 +38,14 @@ article#coworker(ng-controller="CoworkerCtrl")
             .ets-instagram
 
         if document.github
+          #github= document.github
           a(href="http://github.com/" + document.github)
             .ets-c-github
 
-    if document.github
-      ul.github
+      ul.github(ng-show="github")
         .title Senaste på Github
         li(ng-repeat="git in github")
-          .push-title {{git.repo.name}}
+          a.push-title(ng-href="https://github.com/{{git.repo.name}}", target="_blank") {{git.repo.name}}
           .push-time  {{git.created_at}}
 
 

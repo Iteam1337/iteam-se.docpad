@@ -231,7 +231,7 @@ box-shadow(shadow)
     top:-10px
     width:180px
 
-  .social-media, .github
+  .social-media, .github, .cases
     border-top:1px solid #ccc
     margin-top:40px
     padding-top:40px
@@ -255,7 +255,7 @@ box-shadow(shadow)
       &:hover
         color:#ffbd09
 
-  .github
+  .github, .cases
     text-align:left
 
     .title
@@ -265,8 +265,12 @@ box-shadow(shadow)
       margin-bottom:10px
       position: relative
 
-      .push-title
-        font-size:0.8em
+      a
+        color:#ffbd09
+        font-size:1em
+
+        &:hover
+          color:#666
 
       .push-time
         color:#999
@@ -275,6 +279,16 @@ box-shadow(shadow)
         position:absolute
         right:0
         top:0
+
+
+  .cases
+    .title
+      width:220px
+
+    li
+      display: inline-block
+      text-align:center
+      width:49%
 
 .blog
   .post
@@ -350,6 +364,9 @@ box-shadow(shadow)
       .box
         background:rgb(151,187,205)
 
+#github
+  display none
+
 
 @media (min-width:1200px)
   #case
@@ -387,7 +404,7 @@ box-shadow(shadow)
 
     #nowplaying
       margin-bottom:20px
-      
+
     .nav, .subnav
       display none
 

@@ -13,7 +13,7 @@ layout: default
       if document.author
         each coworker in getCollection('coworkers').toJSON()
           if coworker.shortname == document.author
-            a(href="/coworkers/" + member)= coworker.title
+            a(href="/coworkers/" + document.author)= coworker.title
             div= coworker.jobTitle
 
 //- .row-fluid
