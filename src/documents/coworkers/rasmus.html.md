@@ -1,7 +1,7 @@
 ---
 title: Rasmus Fredriksson
 layout: coworker
-jobTitle: Ops
+jobTitle: Drift och support
 witter: 
 instagram: 
 linkedin: 
