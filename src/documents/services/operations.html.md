@@ -7,14 +7,30 @@ summary: Vi tror på att du och ditt företag mår bättre, blir lönsammare och
 quoteBy: mats
 ---
 
-### IT-kontor
-Vi erbjuder mindre byråer och företag i Stockholmsområdet möjligheten att hyra en komplett IT-avdelning som hjälper till att både planera, driftsätta och underhålla en väl fungerande IT-miljö. Om problem uppstår finns våra konsulter alltid på plats och kan avhjälpa både små och stora problem. 
-
-### Teaminsatser
-Ibland kämpar man själv inför ett större problem inom IT och där kan våra konsulter komma in för kortare insatser och ge stöd och vara bollplank för att planera eller förändra en struktur eller lösa ett kritiskt IT-problem.
-
 ### IT-review
-Känner man att sin IT-miljö inte håller måttet kan våra konsulter hjälpa till att analysera problemen, dokumentera brister och föreslå en lista av förändringar som avhjälper de problem som har varit. Vi kan ofta även hjälpa till att åtgärda problemen och erbjuda en underhållsnivå för att se till att miljön hålls uppdaterad.
+En IT-review innebär analys och dokumentation av din IT-miljö. Du får en tydligt översikt av allt från hårdvara och säkerhet, till mjukvara och licenser. I åtgärdsrapporten ser du också tydligt hur du kan åtgärda dagens brister och fel. Du får också en bra grund för att hålla IT-miljön och IT-dokumentationen uppdaterad på lång sikt.
 
-### Infrastruktur
-Som en del i samband med webbutveckling erbjuder vi hjälp med att föreslå stabil och driftsäker infrastruktur, inkl hårdvara, licenser, hostinglösningar inkl virtuell hosting.
+< Kontakt mig för IT-review >
+
+### Specialist- och projektstöd
+Med vår specialist- och projektsupport får du som IT-chef eller IT-ansvarig förstärkning till din specialistroll. Att kämpa ensam under planerings- och implementeringsfasen av IT-projekt kan vara mycket tufft – och det är just då som vi kommer in och agerar stöd, bollplank och specialistförstärkning.
+
+< Kontakt mig för specialist- och projektstöd >
+
+### Hyr en IT-avdelning
+Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och fjärrstyrning. Vi avhjälper små som stora problem snabbt.
+
+< Kontakt mig om att hyra en IT-avdelning>
+
+### Systemförvaltning
+En bra webbplats eller webbtjänst ska leva, förfinas och förvaltas i många år. Vi erbjuder därför en löpande avtal för underhåll och vidareutveckling. Ett retaineravtal tecknas vilket säkerställer att du får en fast antal timmar, till fast månadskostnad – allt för att ge dig en långsiktigt trygghet.
+
+< Kontakt mig för systemförvaltning >
+
+### Arkitektur & Infrastruktur
+Vi hjälper dig att planera, bygga och bibehålla en stabil och driftsäker infrastruktur – något som kan vara extra aktuellt i samband med kontorsflytt eller i samband med planering och release av nya webbar eller webbtjänster. Vi har god kunskap om fiber, lastbalansering, redundans/fail-over samt om uppsättning av VPN. Vi presenterar förslag och krav på arkitektur, nätverk, hårdvara, licenser och hostinglösning (inkl. virtuell hosting). Tack vare att vi är helt oberoende av IT-hårdvaruleverantörer kommer alltid föreslå den lösning som passar just era behov bäst.
+
+< Kontakt mig gällande arkitektur och infrastruktur >
+
+### Säkerhetsreview
+(text ska skrivas)
