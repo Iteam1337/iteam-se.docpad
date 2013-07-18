@@ -5,23 +5,24 @@ title: 'Home'
 
 // Example row of columns.
 .row-fluid
-  div.span6
+  div.span12
     article.news
-      h2 Rådgivning
+      h2 Vi förverkligar drömmar med teknik
       p: :markdown
-       På instagram får ni en inblick i vår vardag. Vi har en ny instagrammer varje vecka. Följ oss här: [iteam1337](http://instagram.com/iteam1337)
-      p: a(href="https://github.com/bevry/docpad") Iteam på Instagram
-    article.news
-      h2 Systemutveckling
-      p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
-      p: a(href="http://twitter.github.com/bootstrap/") Jobba hos oss
-    article.news
-      h2 Drift & Support
-      p Bootstrap is a toolkit from Twitter designed to kickstart development of webapps and sites. It includes base CSS and HTML for typography, forms, buttons, tables, grids, navigation, and more.</p>
-      p: a(href="http://localhost:9778/operations") Till Support
+       Genom att erbjuda goda råd, teknisk spjutspets och driftexpertis förverkligar vi din dröm. Tillsammans med oss - i ditt projekt - kan du få uppleva värdet av hög kvalitet, service och innovation. Läs mer om vad vi kan göra för just dig, eller [kontakta oss](sections/coworkers), så ses vi och berättar mer.
+      p: a(href="/sections/erbjudanden") Läs mer om vårt erbjudande.
+    
+.row-fluid
   div.span6
     h2 Senaste från bloggen
     p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
+    ul.linklist
+      each doc in getCollection('posts').toJSON()
+        li
+          a(href=doc.url)= doc.title
+  div.span6
+    h2 Senaste nyheter
+    p Här följer du våra senaste pressmeddelanden, våra kunders senaste nyheter och senaste branschnytt.
     ul.linklist
       each doc in getCollection('posts').toJSON()
         li
