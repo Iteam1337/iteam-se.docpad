@@ -55,13 +55,6 @@ html(lang="en", ng-app="iteamse")
 
   body(class=document.slug, ng-controller="MainCtrl")
     .row-fluid#header
-      div#nowplaying(ng-show="nowplaying")
-        a(href="https://github.com/Iteam1337/Wejay")
-          img#wejay(src="/images/wejay.png")
-        span Just nu lyssnar vi på: 
-        a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
-        span  - 
-        a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
       a.brand(href="/")
         img(src="http://iteam.se/Content/Images/Iteam.png")   
       ul.subnav
@@ -69,13 +62,19 @@ html(lang="en", ng-app="iteamse")
           if (doc.pageOrder >= 10)
             - clazz = (document.url === doc.url) ? 'active' : null
               a(href=doc.url, property="dc:title", class=clazz)= doc.title
-                li(typeof="sioc:Page", about=doc.url)
       ul.nav
         each doc in getCollection('pages').toJSON()
           if (doc.pageOrder < 10)
             - clazz = (document.url === doc.url) ? 'active' : null
               a(href=doc.url, property="dc:title", class=clazz)= doc.title
-                li(typeof="sioc:Page", about=doc.url)
+
+      .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav")
+        .etp-menu
+
+      ul#mobileNav(ng-show="mobileNav",ng-animate="'slide'")
+        each doc in getCollection('pages').toJSON()
+          - clazz = (document.url === doc.url) ? 'active' : null
+            a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
       if (document.siteurl)
         .other-cases
@@ -85,13 +84,13 @@ html(lang="en", ng-app="iteamse")
                 li
                   a(href=cases.url)= cases.title
       
-
-    //- .hero-unit
-    //-   h1 Förverkligar drömmar med teknik.
-    //-   p: :markdown
-    //-     Iteam är en agil teknikbyrå i Stockholm. Vi har funnits sedan 1995 och förverkligar drömmar med teknik.
-    //-     Vi har tre affärsområden –Rådgivning, Systemutveckling, Drift & Support. De tre motton vi lever efter är: Göra något bra, ha kul och skapa värde.
-    //-   a.btn.btn-success.pull-right(href="/sections/case") Kolla igenom våra case  
+    div#nowplaying(ng-show="nowplaying")
+      a(href="https://github.com/Iteam1337/Wejay")
+        img#wejay(src="/images/wejay.png")
+      span Just nu lyssnar vi på: 
+      a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
+      span  - 
+      a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
 
     .container
       .row-fluid#content.content!= content

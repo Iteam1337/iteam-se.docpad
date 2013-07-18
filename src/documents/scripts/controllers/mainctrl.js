@@ -11,6 +11,12 @@
 
     var np, time;
 
+    $scope.mobileNav = false;
+
+    /**
+     * Gets now playing music from Last.fm
+     * @param  {string} music URL to Last.fm recent tracks
+     */
     $http.get(lastfmUrl).success(function (music) {
       np = music.recenttracks.track[0];
 
@@ -29,8 +35,7 @@
     });
 
     /**
-     * [cb description]
-     * @type {Codebird}
+     * Searches Twitter for a given twitter hashtag, mention or other
      */
     if (document.getElementById('twitter')) {
       var cb = new Codebird(),

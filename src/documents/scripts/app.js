@@ -9,11 +9,20 @@
       .urlSanitizationWhitelist(/^\s*(https?|ftp|mailto|file|chrome-extension|spotify):/); 
   });
 
-  app.directive('makePretty', function() {
+  app.directive('makePretty', function () {
     return {
       link: function (scope, elm, attr) {
         $('pre code').each(function (i, e) {
           hljs.highlightBlock(e);
+        });
+      }
+    };
+  })
+  .directive('makeAnchors', function () {
+    return {
+      link: function (scope, elm, attr) {
+        $(':header').each(function () {
+          $(this).append('<a id="' + $(this).text().replace(/ /g,'-') + '"></a>');
         });
       }
     };

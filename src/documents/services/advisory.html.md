@@ -12,7 +12,7 @@ Vi tror på vikten av att klarlägga din verksamhets nuläge och identifera en t
 
 Ja, jag är intresserad av att genomföra en förstudie - [Köpknapp](/callme/)
 
-### [Lead tech](#lead-tech)
+### Lead tech
 Vi vet att dom allra bästa teknikkonceptare, nytänkare och systemutvecklare är svåra att rekrytera för många av våra kunder. Men, du kan fortfarande få tillgång till just en sådan person i just ditt team, eller i din styrgrupp. Genom att vi endast rekryterar erfarna systemutvecklare, vårdar kvåra medarbetares kunskapsnivå och håller oss ajour inom det senaste så finner du just den extraresurs du behöver hos oss. Anlita en senior lead tech-roll som stöttar just ditt team genom oss. Du kan också använda vår lead tech som expertis i din rekryteringsprocess för att bygga upp ett eget utvecklingsteam. 
 
 < Kontakt mig om Lead tech >
@@ -23,7 +23,7 @@ När vi förverkligar drömmar kan det ofta vara en god idé att starta med att 
 
 < Kontakt mig om Proof-of-concept >
 
-### [Entreprenörsrådgivning](#entrepreneur)
+### Entreprenörsrådgivning
 Att förverkliga en dröm är alldrig så påtagligt som hos dig som är entreprenör. Du tänker "såhär borde det funka" – fortsättningen på den meningen vill vi lyssna på. Vi ritar och målar på whiteboard – tänker fritt och öppet tillsammans. Innan vi sätter oss skriver vi självklart under sekretessavtal för att du ska känna trygghet och allt ska vara rätt. Kom upp till oss på en timmes gratis rådgivning för dig. Vi står för mötesrum, ledande koncept- och systemutvecklare. Vi lyssnar på din idé och beskriver vår syn på utmaningar, möjligheter och lösningar. Välkommen till oss så gör vi verklighet av din dröm.
 
 < Kontakt mig för Entreprenörsrådgivning >

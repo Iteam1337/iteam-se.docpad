@@ -411,24 +411,55 @@ box-shadow(shadow)
 
 @media (max-width:480px)
   #header
-    padding-bottom:30px
+    padding:20px
+    text-align:left
 
     #nowplaying
       margin-bottom:20px
 
     .nav, .subnav
-      margin:0
+      display:none
+
+    .openMobileNav
+      color:#fff
       position:relative
-      top:0
+
+      .etp-menu
+        position: absolute;
+        right: 0;
+        top: -30px;
+
+    #mobileNav
+      margin-top:20px
 
       a
-        box-sizing(border-box)
-        width:100%;
+        display: block
+        margin-bottom:10px
+        padding:5px 0
+
+        &.active
+          color:#fff
 
   #case
     img
       &.right
         display none
+
+  #coworker
+    .cases
+      li
+        text-align:left
+        width:100%;
+
+    .github
+      li
+        a
+          display: inline-block;
+          font-size: 0.8em;
+          max-width: 80%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
 
 
 

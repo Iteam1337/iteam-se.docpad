@@ -45,6 +45,7 @@ module.exports = function (grunt) {
         files: {
           'out/styles/<%= pkg.name %>.css':[
             'src/documents/styles/variables.css.styl',
+            'src/documents/styles/animation.css.styl',
             'src/documents/styles/general.css.styl',
             'src/documents/styles/style.css.styl'
           ]
