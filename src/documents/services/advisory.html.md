@@ -2,9 +2,9 @@
 title: Rådgivning
 layout: page
 tags: ['intro','page']
+pageType: Service
 pageOrder: 1
 summary: Kunskap är grunden för att lyckas - det är vår övertygelse. Kunskap om vad man kan göra på webben - hur och när. Kunskap om vilken målgrupp du vänder dig till och vad deras behov är. Vi agerar rådgivare till dig i den omfattning och takt som just du behöver. Hos oss beställer du din förstudie, hittar en grym lead tech, tar fram ett proof-of-koncept och får inspirerande entreprenörsrådgivning.
-
 ---
 
 ### Förstudier

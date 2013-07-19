@@ -23,6 +23,13 @@ article#case.row-fluid
                   a(href="/coworkers/" + member)= coworker.title
                   div= coworker.jobTitle
 
+  if (document.readmorelinks)
+    ul.urls
+      .url-title Relaterade länkar
+        each url in document.readmorelinks
+          li
+            a(href=url)= url
+
   if (document.imageGallery)
     .gallery
       .gallery-title Bilder
