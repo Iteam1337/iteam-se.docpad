@@ -1,10 +1,10 @@
 ---
 title: Trygghetsrådet Jobbkontakter
 layout: case
-tags: ['intro','post']
+tags: ['rådgivning','lead tech']
 projectManager: hans
 image: http://lorempixel.com/300/200
-team: ['hans', 'christian', 'martin', 'dennis', 'alexander', 'ola']
+team: ['hans', 'christian', 'martin', 'dennis', 'alexander']
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, rem error tempore culpa ipsum quidem beatae quae. Natus, fugit, nisi, commodi adipisci cumque omnis est eaque nulla sequi incidunt deserunt.
