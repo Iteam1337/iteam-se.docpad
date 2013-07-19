@@ -1,8 +1,7 @@
 ---
-title: Svensk Byggjänst Projektbevakning
+title: Svensk Byggjänsts Projektbevakning
 layout: case
-tags: ['Svensk Byggtjanst','Systemutveckling','Proof-of-concept']
-twitterTag: 'byggtjanst', Projektbevakning'
+tags: ['intro','post']
 images: ['sb-projektbevakning.jpg']
 imagePos: ['right']
 imageGallery: ['sb-projektbevakning.jpg']
@@ -10,7 +9,6 @@ team: ['anders','johanna','mats','dennis','maria','christian']
 intro: Vi utvecklade Svensk Byggtjänsts Projektbevakning tillsammans med byråpartnern Britny.
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
 twitterTag: 'svenskbyggtjanst','projektbevakning'
-
 ---
 
 ### Säljverktyg för byggsverige

@@ -20,4 +20,4 @@ En teknisk produktion av en webbplats av större karaktär ligger mellan 500 tkr
 
 Kontakta gärna [Hans Rollman](mailto:hans.rollman@iteam.se) för mer information eller VD [Christian Landgren](mailto:christian.landgren@iteam.se).
 
-Titta gärna igenom våra [case](/pages/case) och se vilka plattformar vi använder oss av!
+Titta gärna igenom våra [case](/sections/case) och se vilka plattformar vi använder oss av!
