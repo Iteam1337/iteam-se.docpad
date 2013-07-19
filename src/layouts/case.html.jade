@@ -15,7 +15,7 @@ article#case.row-fluid
     .content!= content
       if (document.team)
         ul.team
-          .team-title Teamet
+          .title Teamet
           each member in document.team
             li
               each coworker in getCollection('coworkers').toJSON()
@@ -25,13 +25,13 @@ article#case.row-fluid
 
   if (document.readmorelinks)
     ul.urls
-      .url-title Relaterade länkar
-        each url in document.readmorelinks
-          li
-            a(href=url)= url
+      .title Relaterade länkar
+      each url in document.readmorelinks
+        li
+          a(href=url)= url
 
   if (document.imageGallery)
     .gallery
-      .gallery-title Bilder
+      .title Bilder
       each image in document.imageGallery
         img(src="/images/" + image)

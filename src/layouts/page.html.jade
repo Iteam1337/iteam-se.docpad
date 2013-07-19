@@ -12,7 +12,8 @@ div.row-fluid(make-anchors)
         .title Relaterade case
         ul
           each cases in getCollection('cases').toJSON()
-            each tag in cases.tags
-              if tag === document.title.toLowerCase()
-                li
-                  a(href=cases.url)= cases.title
+            if cases.tags
+              each tag in cases.tags
+                if tag === document.title.toLowerCase()
+                  li
+                    a(href=cases.url)= cases.title

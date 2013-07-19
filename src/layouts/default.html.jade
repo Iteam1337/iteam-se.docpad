@@ -55,28 +55,29 @@ html(lang="en", ng-app="iteamse")
 
   body(class=document.slug, ng-controller="MainCtrl")
     .row-fluid#header
-      a.brand(href="/")
-        img(src="http://iteam.se/Content/Images/Iteam.png")   
-      ul.subnav
-        each doc in getCollection('pages').toJSON()
-          if (doc.pageOrder >= 10)
-            - clazz = (document.url === doc.url) ? 'active' : null
-              a(href=doc.url, property="dc:title", class=clazz)= doc.title
-      ul.nav
-        each doc in getCollection('pages').toJSON()
-          if (doc.pageOrder < 10)
-            - clazz = (document.url === doc.url) ? 'active' : null
-              a(href=doc.url, property="dc:title", class=clazz)= doc.title
+      .header-inner
+        a.brand(href="/")
+          img(src="http://iteam.se/Content/Images/Iteam.png")   
+        ul.subnav
+          each doc in getCollection('pages').toJSON()
+            if (doc.pageOrder >= 10)
+              - clazz = (document.url === doc.url) ? 'active' : null
+                a(href=doc.url, property="dc:title", class=clazz)= doc.title
+        ul.nav
+          each doc in getCollection('pages').toJSON()
+            if (doc.pageOrder < 10)
+              - clazz = (document.url === doc.url) ? 'active' : null
+                a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
-      .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav")
-        .etp-menu
+        .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav")
+          .etp-menu
 
       ul#mobileNav(ng-show="mobileNav",ng-animate="'slide'")
         each doc in getCollection('pages').toJSON()
           - clazz = (document.url === doc.url) ? 'active' : null
             a(href=doc.url, property="dc:title", class=clazz)= doc.title
       
-    div#nowplaying(ng-show="nowplaying")
+    #nowplaying(ng-show="nowplaying")
       a(href="https://github.com/Iteam1337/Wejay")
         img#wejay(src="/images/wejay.png")
       span Just nu lyssnar vi på: 
@@ -94,6 +95,21 @@ html(lang="en", ng-app="iteamse")
 
     .container
       .row-fluid#content.content!= content
+
+    #footer
+      #address
+        ul
+          li.company Iteam Solutions AB
+          li Organisationsnr: 556551-6928
+          li Telefon: 08-267090
+          li.address Tegnérgatan 28, 113 59 STOCKHOLM
+      #followUs
+        a(href="https://www.facebook.com/IteamSolutions")
+          .ets-c-facebook
+        a(href="http://twitter.com/iteam1337")
+          .ets-c-twitter
+        a(href="http://instagram.com/iteam1337")
+          .ets-instagram
 
     // Scripts
     != scripts.toHTML()

@@ -22,48 +22,58 @@ box-shadow(shadow)
 
 /* Navbar
 ---------------------------------------------*/
-.nav, .subnav
-  margin: 40px 0 0
-
-  a
-    display: inline-block;
-    padding:20px
-
-    &.active, &:hover
-      color:#fff
-
-    a:hover
-      background:none
-      color:#333
-
-.subnav
-  font-size:0.8em
-  margin:0
-  position:absolute
-  right:0
-  top:0
-
-.other-cases
-  background:#fff
-  padding:20px 0
-
-  li
-    display:inline-block
-    margin-right:20px
-
-/* Header
----------------------------------------------*/
 #header
   box-sizing(border-box)
 
   background:#333
-  padding-top:20px
+  padding:10px 0 30px
   position:relative
-  text-align:center
 
-.hero-unit
-  background: regularBg
+  .header-inner
+    margin:0 auto
+    max-width:700px
+    padding:20px 0
+    position:relative
 
+    .brand
+      float:left
+      position:relative
+      top:-10px
+
+    .nav, .subnav
+      float:right
+      text-align:right
+      vertical-align:top
+
+      a
+        color:#ccc
+        display: inline-block;
+        padding:0 20px
+
+        &.active, &:hover
+          color:#ffbd09
+
+        a:hover
+          background:none
+          color:#333
+
+    .subnav
+      font-size:0.6em
+      margin:0
+      position:absolute
+      right:0
+      top:50px
+
+    .other-cases
+      background:#fff
+      padding:20px 0
+
+      li
+        display:inline-block
+        margin-right:20px
+
+/* Layout
+---------------------------------------------*/
 #nowplaying
   box-sizing(border-box)
 
@@ -82,6 +92,45 @@ box-shadow(shadow)
 .container
   margin-top:40px
   max-width:700px
+
+#footer
+  border-top:1px solid #ccc
+  margin:40px auto 0
+  max-width:700px
+  padding-top:40px
+
+  > div
+    display:inline-block
+    vertical-align:top
+
+  #address
+    margin-right:20px
+    width:65%
+
+    li
+      font-size:0.8em
+      margin-bottom:5px
+      
+      &.company
+        font-size:1em
+        margin-bottom:10px
+
+  #followUs
+    text-align:right
+    width:30%
+
+    > a
+      -webkit-transition:color 300ms ease
+
+      color:#999
+      display:inline-block
+      font-size:2em
+
+      &:not(:last-child)
+        margin-right:20px
+
+      &:hover
+        color: #ffbd09
 
 #about
   .history
