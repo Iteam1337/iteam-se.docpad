@@ -8,7 +8,7 @@ imageGallery: ['beckers2.jpg']
 team: ['anders','johanna','martin','dennis','rickard','maria']
 intro: Vi utvecklade Beckers.se tillsammans med byråpartnern Klirr och lanserade i augusti 2012.
 siteurl: http://www.beckers.se
-twitterTag: 'beckers'
+twitterTag: 'beckersfarg', 
 ---
 
 ### Om projektet
