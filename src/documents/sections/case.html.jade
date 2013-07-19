@@ -21,6 +21,7 @@ pageOrder: 2
         p= doc.intro
         if (doc.tags)
         ul.case-tags(get-tags)
-          each tag in doc.tags
-            li.tag
-              a(href="#")= tag
+          if (doc.tags)
+            each tag in doc.tags
+              li.tag
+                a(href="#")= tag
