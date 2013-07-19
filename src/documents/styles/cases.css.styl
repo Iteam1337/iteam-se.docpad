@@ -1,0 +1,110 @@
+#cases
+  .case
+    margin-bottom:40px
+    .case-image
+      display inline-block
+      margin-right:40px
+      vertical-align:top
+      width:12%
+
+    .case-about
+      display inline-block
+      width:80%
+
+      .case-title
+        margin-top:0
+
+      .case-tags
+        border-top:1px solid #ccc
+        padding-top:20px
+
+        .tag
+          display:inline-block
+          margin-right:20px
+
+#case
+  margin:40px auto
+  max-width:700px
+
+  img
+    &.left
+      left:-100px
+      position:absolute
+    &.right
+      float:right
+      position:relative
+      width:300px
+
+  #twitter
+    display none
+
+  .tweets
+    li
+      color: #999
+      font-family:'Palatino'
+      font-size:0.8em
+      margin-bottom:10px
+
+
+  .about
+    -webkit-transition:all 300ms ease
+    
+    h1
+      margin-bottom:40px
+
+    .content
+      p
+        img
+          margin:40px 0
+          width:100%
+
+      .team
+        border-top:1px solid #ccc
+        margin-top:40px
+        padding:40px 0
+        position:relative
+
+        .team-title
+          box-sizing(border-box)
+          -webkit-transform: translateX(-50%)
+
+          background: #fff;
+          font-size:1.2em
+          left: 50%;
+          padding: 5px 10px;
+          position: relative;
+          text-align: center;
+          top: -55px;
+          width: 120px;
+
+        li
+          display inline-block
+          margin-bottom:20px
+          text-align:center
+          width:49%
+
+          a
+            display:block
+            margin-bottom:5px
+
+
+  .gallery
+    border-top:1px solid #ccc
+    padding-top:40px
+    position:relative
+    width: 100%;
+
+    .gallery-title
+      -webkit-transform: translateX(-50%);
+
+      background: #fff;
+      font-size:1.2em
+      left: 50%;
+      position: relative;
+      text-align:center
+      top: -50px;
+      width: 120px;
+
+    img
+      margin-bottom:20px
+      width:100%

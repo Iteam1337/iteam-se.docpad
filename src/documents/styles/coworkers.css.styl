@@ -1,0 +1,106 @@
+.coworkers
+  .coworker
+    a
+      display inline-block
+      .image
+        border-radius:100px
+        display inline-block
+        margin-right:20px
+        width:100px
+
+#coworker
+  #toAngular
+    display:none
+
+  .image
+    border-radius: 300px
+    border: 10px solid #ffbd09
+    margin: 0 auto
+    padding: 5px
+    width: 200px
+    
+    img
+      border-radius:200px
+      width:200px
+  .name, .job, .email
+    text-align:center
+
+  .name
+    margin-top:20px
+  .job
+    margin-bottom:20px
+  .email
+    margin-bottom:40px
+
+    a
+      display inline-block
+      margin-bottom:10px
+
+  .title
+    -webkit-transform: translateX(-50%)
+    background:#fff
+    font-size:1.2em
+    left:50%
+    position:absolute
+    text-align:center
+    top:-10px
+    width:180px
+
+  .social-media, .github, .cases
+    border-top:1px solid #ccc
+    margin-top:40px
+    padding-top:40px
+    position:relative
+    text-align:center
+
+    a
+      -webkit-transition:color 300ms ease
+
+      color:#666
+      font-size:2em
+
+      > div
+        display inline-block
+        margin-right:20px
+
+      &:last-child
+        > div
+          margin-right:0
+
+      &:hover
+        color:#ffbd09
+
+  .github, .cases
+    text-align:left
+
+    .title
+      width:200px
+
+    li
+      margin-bottom:10px
+      position: relative
+
+      a
+        color:#ffbd09
+        font-size:1em
+
+        &:hover
+          color:#666
+
+      .push-time
+        color:#999
+        font-family:'Palatino'
+        font-size:0.6em
+        position:absolute
+        right:0
+        top:0
+
+
+  .cases
+    .title
+      width:220px
+
+    li
+      display: inline-block
+      text-align:center
+      width:49%

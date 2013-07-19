@@ -1,13 +1,13 @@
 ---
-title: Case
+title: Referenser
 layout: section
 tags: ['intro','page']
 pageOrder: 2
 ---
 
 .row-fluid#cases
-  ul.all-tags
-    li(ng-repeat="tag in allTags") {{tag}}
+  //- ul.all-tags
+  //-   li(ng-repeat="tag in allTags") {{tag}}
 
   each doc in getCollection('cases').toJSON()
     .case

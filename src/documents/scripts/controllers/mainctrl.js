@@ -40,7 +40,7 @@
      */
     if (document.getElementById('twitter')) {
       var cb = new Codebird(),
-      query  = document.getElementById('twitter').innerHTML;
+      query  = document.getElementById('twitter').innerHTML.replace(',',' OR ');
 
       cb.setConsumerKey('bvqOzAMz10CWGfcWOfow','DYYE1S4jWeTX3rp4P5uJQ62a1AhlqxGRPTnkGYGx7M');
 
@@ -52,6 +52,8 @@
 
             var tweets = reply.statuses,
             tweet, text;
+
+            console.log(reply);
 
             Object.keys(tweets).map(function (i) {
 

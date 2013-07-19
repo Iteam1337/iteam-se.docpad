@@ -8,7 +8,7 @@ imageGallery: ['absolutforum2.jpg','absolutforum3.jpg']
 team: ['anders']
 intro: Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste varumärken. Designarbetet gjordes tillsammans med byråpartnern Supernative.
 siteurl: http://www.absolut.absolutcompany.com
-twitterTag: 'AbsolutVodka'
+twitterTag: ['Absolut Vodka','Absolut']
 ---
 
 ### En plattform för 126 marknader världen över

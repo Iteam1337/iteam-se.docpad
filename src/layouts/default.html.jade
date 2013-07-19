@@ -75,14 +75,6 @@ html(lang="en", ng-app="iteamse")
         each doc in getCollection('pages').toJSON()
           - clazz = (document.url === doc.url) ? 'active' : null
             a(href=doc.url, property="dc:title", class=clazz)= doc.title
-
-      if (document.siteurl)
-        .other-cases
-          ul
-            each cases in getCollection('cases').toJSON()
-              if (cases.title !== document.title)
-                li
-                  a(href=cases.url)= cases.title
       
     div#nowplaying(ng-show="nowplaying")
       a(href="https://github.com/Iteam1337/Wejay")
@@ -91,6 +83,14 @@ html(lang="en", ng-app="iteamse")
       a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
       span  - 
       a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
+
+    //- if (document.siteurl)
+    //-   .other-cases
+    //-     ul
+    //-       each cases in getCollection('cases').toJSON()
+    //-         if (cases.title !== document.title)
+    //-           li
+    //-             a(href=cases.url)= cases.title
 
     .container
       .row-fluid#content.content!= content

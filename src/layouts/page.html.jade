@@ -3,14 +3,16 @@ layout: default
 ---
 
 div.row-fluid(make-anchors)
-	div.quote
-		blockquote= document.quote
-		div
-			each coworker in getCollection('coworkers').toJSON()
-				if coworker.shortname == document.quoteBy
-					a(href="/coworkers/" + document.quoteBy)= "-- " + coworker.title
-					span= ", " + coworker.jobTitle
+  div#page.page
+    h1= document.title
+    article.page-content!= content
+    
 
-	div#page.page
-		h1= document.title
-		article.page-content!= content
+    div#connectedCases
+      .title Relaterade case
+      ul
+        each cases in getCollection('cases').toJSON()
+          each tag in cases.tags
+            if tag === document.title.toLowerCase()
+              li
+                a(href=cases.url)= cases.title

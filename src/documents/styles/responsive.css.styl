@@ -1,0 +1,99 @@
+/**
+ * Big screens > 1200px
+ */
+@media (min-width:1200px)
+  #case
+    .about
+      width:100%
+
+    img
+      &.right
+        float:none
+        position:absolute
+        right:-150px
+        width:450px
+
+/**
+ * iPad landscape
+ */
+@media (max-width:979px) and (min-width:768px)
+  #case
+    img
+      &.right
+        float:right
+        position:relative
+        right:0
+        width:300px
+    .about
+      width:100%;
+
+/**
+ * iPad portrait
+ */
+@media (max-width:767px)
+  body
+    padding:0
+
+  .container
+    padding:0 20px
+
+/**
+ * iPhone
+ */
+@media (max-width:480px)
+  #header
+    padding:20px
+    text-align:left
+
+    #nowplaying
+      margin-bottom:20px
+
+    .nav, .subnav
+      display:none
+
+    .openMobileNav
+      color:#fff
+      position:relative
+
+      .etp-menu
+        position: absolute;
+        right: 0;
+        top: -30px;
+
+    #mobileNav
+      margin-top:20px
+
+      a
+        display: block
+        margin-bottom:10px
+        padding:5px 0
+
+        &.active
+          color:#fff
+
+  #case
+    img
+      &.right
+        display none
+
+  #coworker
+    .cases
+      li
+        text-align:left
+        width:100%;
+
+    .github
+      li
+        a
+          display: inline-block;
+          font-size: 0.8em;
+          max-width: 80%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+
+
+
+
+
