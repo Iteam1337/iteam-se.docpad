@@ -1,7 +1,7 @@
 ---
 title: Tomsradio
 layout: case
-tags: ['tomsradio', 'systemutveckling', 'proof-of-concept', 'rådgivning']
+tags: ['tomsradio','systemutveckling','proof-of-concept','rådgivning']
 images: ['tomsradio.jpg']
 imagePos: ['right']
 imageGallery: ['tomsradio.jpg']
