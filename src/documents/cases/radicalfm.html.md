@@ -11,19 +11,13 @@ siteurl: http://www.radical.fm.
 twitterTag: 'radicalfm'
 ---
 
-### Radical.FM is the personal broadcasting and music & audio content delivery service that enables anyone to discover, connect, and communicate in real time.
+### 22 miljoner låtar i biblioteket
+Iteam har lett utvecklingen av Radical.FM – internetradio som den borde vara: personaliserade strömmar, egna radiokanaler, fri uppladdning av musik för osignade band och möjligheten för vem som helst att vara programvärd. Radical.FM är en internetradio där man som användare enkelt sätter ihop sitt eget personaliserade utbud genom att kombinera genrer efter önskemål. Saknas en genre kan man lätt sätta ihop en egen genom att söka i det omfattande musikbiblioteket på 22 miljoner låtar och sätta ihop en egen genrelista.
 
-Radical.FM marries the interactive nature of Internet with the programming expertise of the entire broadcast radio industry.
+Vill man ta steget till att skapa en egen radiokanal finns RadCast – ett inbyggd stöd för att vara radio-DJ och både välja låtar och sköta pratet, direkt till alla som lyssnar. För den som vill skapa en egen talkshow finns möjlighet att både sända video, välja musik och prata via den unika tjänsten TALK. För det osignerade bandet är Radical.FM en gyllene kanal – alla band kan ladda upp sin musik utan krav på distributionsavtal. Man får enkelheten i publiceringen som i tjänster som SoundCloud, samtidigt som man får exponeringen och möjligheten till integration i övrigt musikutbud som i Spotify.
 
-Radical’s competitors were founded by computer programmers who assign subjective tags to songs and artists and create complex algorithms to generate song lists. Unlike typical online stations, Radical is programmed by hand, by human beings.
+### Bakom kulisserna står legend och den senaste tekniken
+Bakom Radical.FM står Thomas McAlevey, grundaren av den legendariska svenska radiostationen Bandit 105.5 och Spotify-föregångaren tomsradio.com. Den nya tjänsten är helt gratis och reklamfri, och kommer att finansieras med hjälp av donationer från frekventa användare. Radical.FM använder den senaste webbtekniken (bland annat HTML5, NodeJS och MongoDB) för att hantera strömning och uppspelning av musik, och för att garantera en extrem skalbarhet. Den svenska teknikbyrån Iteam har fungerat som teknisk kravställare och har under projektet löpande arbetat med att utvärdera och rekommendera tekniker för att lösa Radical.FMs unika tekniska utmaningar.
 
-Similar to Satellite Radio, we have divided our massive library into niche formats like ROCK, POP, and COUNTRY. However, we go beyond Satellite and conventional Internet radio by allowing you to blend as many genres as you like, and then to assign each a value relative to the others. With 23 million tracks at our disposal and a powerful yet user-friendly design, no other service creates an endless stream of songs and audio content that so accurately reflects your taste.
-
-In addition to our comprehensive free personal radio services, Radical incorporates “Audio-On-Demand” Playlist functionality. Free users can create personal playlists using any of our music uploaded by independent bands, while subscribers can choose songs from our library of over 22 million tracks. Playlists of more than 50 songs automatically become available as Genres that can be added to stations, providing you with the ultimate control over your radio music stream.
-
-Radical.FM includes RadCast™ and TALK , which allows users to create their own radio station- complete with their own voice. Using these tools, users can broadcast their own radio station across the globe, engaging friends, fans, and other users in unprecedented ways.
-
-We encourage all independent musicians, bands, comedians, podcasters and spoken word artists to upload their content directly to our platform (it’s free!), so fans worldwide can enjoy their material alongside our label music catalog. With our SoundCloud sync functionality, bands can upload quickly, copying their entire SoundCloud library onto our platform with just a few simple clicks.
-
-Join today, and become a part of something Radical!
-
+### Teknisk kvalitet och innovation i världsklass
+Under projektets utvecklingsfaser har Iteam fungerat som beställarstöd för kunden, samt som projektledare och teknisk mentor för produktionsteamet som finns i Rumänien. ”Att använda Iteam som beställarstöd och teknisk lead ger oss det bästa av två världar – teknisk kvalitet och innovation i världsklass till väsentligt lägre pris.” berättar Tom McAlevey, grundare och VD i den amerikanska startupen Radical.FM.
