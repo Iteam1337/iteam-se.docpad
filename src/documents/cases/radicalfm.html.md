@@ -9,6 +9,7 @@ team: ['johanna','mats','hans','christian','johan']
 intro: Upptäck ny musik, dela och sänd - Radical.FM är din egen personliga webbradiokanal
 siteurl: http://www.radical.fm.
 twitterTag: 'radicalfm'
+readmorelinks: ['http://techcrunch.com/2012/11/19/radical-fm-wants-to-go-after-spotify-with-an-ad-free-listener-supported-streamed-music-service/','http://thenextweb.com/media/2012/11/20/radical-fm-throws-its-hat-into-the-music-streaming-ring-with/','http://www.theradioagency.com/blog/how-to-be-rad-an-interview-with-radical-fms-creator-thomas-mcalevey-part-1/'']
 ---
 
 ### 22 miljoner låtar i biblioteket
