@@ -76,7 +76,7 @@ html(lang="en", ng-app="iteamse")
           - clazz = (document.url === doc.url) ? 'active' : null
             a(href=doc.url, property="dc:title", class=clazz)= doc.title
       
-    div#nowplaying(ng-show="nowplaying")
+    #nowplaying(ng-show="nowplaying")
       a(href="https://github.com/Iteam1337/Wejay")
         img#wejay(src="/images/wejay.png")
       span Just nu lyssnar vi på: 
@@ -94,6 +94,18 @@ html(lang="en", ng-app="iteamse")
 
     .container
       .row-fluid#content.content!= content
+
+    #footer
+      #address
+        ul
+          li.company Iteam Solutions AB
+          li Organisationsnr: 556551-6928
+          li Telefon: 08-267090
+          li.address Tegnérgatan 28, 113 59 STOCKHOLM
+      #followUs
+        .ets-c-facebook
+        .ets-c-twitter
+        .ets-instagram
 
     // Scripts
     != scripts.toHTML()

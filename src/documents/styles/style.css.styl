@@ -61,9 +61,6 @@ box-shadow(shadow)
   position:relative
   text-align:center
 
-.hero-unit
-  background: regularBg
-
 #nowplaying
   box-sizing(border-box)
 
@@ -82,6 +79,45 @@ box-shadow(shadow)
 .container
   margin-top:40px
   max-width:700px
+
+#footer
+  border-top:1px solid #ccc
+  margin:40px auto 0
+  max-width:700px
+  padding-top:40px
+
+  > div
+    display:inline-block
+    vertical-align:top
+
+  #address
+    margin-right:20px
+    width:65%
+
+    li
+      font-size:0.8em
+      margin-bottom:5px
+      
+      &.company
+        font-size:1em
+        margin-bottom:10px
+
+  #followUs
+    text-align:right
+    width:30%
+
+    > div
+      -webkit-transition:color 300ms ease
+
+      color:#999
+      display:inline-block
+      font-size:2em
+
+      &:not(:last-child)
+        margin-right:20px
+
+      &:hover
+        color: #ffbd09
 
 #about
   .history
