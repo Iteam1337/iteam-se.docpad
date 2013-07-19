@@ -1,5 +1,5 @@
 ---
-title: Trygghetsrådet
+title: Trygghetsrådet Jobbkontakter
 layout: case
 tags: ['intro','post']
 projectManager: hans

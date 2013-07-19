@@ -1,7 +1,7 @@
 ---
 title: Beckers.se
 layout: case
-tags: ['beckers','systemutveckling','redaktörssupport']
+tags: ['systemutveckling','redaktörssupport']
 images: ['beckers1.jpg']
 imagePos: ['right']
 imageGallery: ['beckers2.jpg']
