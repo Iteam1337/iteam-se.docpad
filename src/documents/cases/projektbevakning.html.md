@@ -1,10 +1,10 @@
 ---
-title: Svensk Byggjänsts Projektbevakning
+title: Projektbevakning
 layout: case
-tags: ['intro','post']
-images: ['sb-projektbevakning.jpg']
+tags: ['proof-of-concept','systemutveckling']
+images: ['projektbevakning1.jpg']
 imagePos: ['right']
-imageGallery: ['sb-projektbevakning.jpg']
+imageGallery: ['projektbevakning1.jpg']
 team: ['anders','johanna','mats','dennis','maria','christian']
 intro: Vi utvecklade Svensk Byggtjänsts Projektbevakning tillsammans med byråpartnern Britny.
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
@@ -21,6 +21,3 @@ Iteam har deltagit i projektet från koncept fram till lansering. De automatiska
 ”Det känns extra kul att ett nytänkande inom hur en sådan här tjänst utformas kombineras med användning av den senaste webbtekniken för bästa effekt”, säger Christian Landgren, VD på Iteam.
 
 Läs mer om på Svensk Byggtjänsts hemsida om Projektbevakning.
-
-
-
