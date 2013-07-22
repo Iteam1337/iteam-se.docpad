@@ -96,6 +96,10 @@ docpadConfig =
     services: (database) ->
       database.findAllLive({relativeOutDirPath:'services'},[pageOrder:1])
 
+    # This one, will fetch in all documents that will be outputted to the services directory
+    about: (database) ->
+      database.findAllLive({relativeOutDirPath:'about'},[pageOrder:1])
+
   # =================================
   # Plugin Configuration
 
@@ -103,8 +107,7 @@ docpadConfig =
     feedr:
       feeds:
         'blogs':
-          'rickard':
-            url: 'http://rickardlaurin.wordpress.com/feed/'
+          url: 'http://rickardlaurin.wordpress.com/feed/'
         'github':
           url: "https://github.com/iteam1337.atom"
         'mynewsdesk':
