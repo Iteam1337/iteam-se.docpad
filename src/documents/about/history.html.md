@@ -1,11 +1,11 @@
 ---
 title: Historia
 layout: page
+pageOrder: 3
 summary: >
   Vår historia är kantad av drömmar som blivit verklighet. Vi jobbar med teknik för att vi älskar det och för att användare inte ska behöva reflektera över den.
 ---
 
-### Historia
 Vår historia är kantad av drömmar som blivit verklighet. Vi jobbar med teknik för att vi älskar det och för att användare inte ska behöva reflektera över den.
 
 <div class="history">

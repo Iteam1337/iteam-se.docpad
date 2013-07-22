@@ -1,10 +1,12 @@
 ---
-title: Fakta och siffror
+title: Siffror
 layout: page
+pageOrder: 2
 ---
 
-### Fakta och siffror
-Vi är en trygg leverantör och partner. I över 18 år har vi haft tillväxt - tryggt och säkert. Vi har hållit fokus på det vi älskar - teknik och att leverera bra tjänster. Just därför klarade vi 2000-talets turbulenta tid utmärkt, och just därför kommer vi finnas kvar i 18 år till.
+Vi är en trygg leverantör och partner. Vi har högsta kreditrating enligt UC, Trippel-A (AAA) enligt Soliditet, startade 1995 och är ett helt personalägt bolag. I över 18 år har vi haft tillväxt - tryggt och säkert. Vi har hållit fokus på det vi älskar - teknik och att leverera bra tjänster. Just därför klarade vi 2000-talets turbulenta tid utmärkt, och just därför kommer vi finnas kvar i 18 år till.
+
+
   
 <canvas id="financialNumbers" width=840 height=300></canvas>
 
