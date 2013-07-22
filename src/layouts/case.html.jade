@@ -23,15 +23,24 @@ article#case.row-fluid
                   a(href="/coworkers/" + member)= coworker.title
                   div= coworker.jobTitle
 
-  if (document.readmorelinks)
-    ul.urls
-      .title Relaterade länkar
-      each url in document.readmorelinks
-        li
-          a(href=url)= url
+      if (document.readmorelinks)
+        ul.urls
+          .title Relaterade länkar
+          each url in document.readmorelinks
+            li
+              a(href=url)= url
 
-  if (document.imageGallery)
-    .gallery
-      .title Bilder
-      each image in document.imageGallery
-        img(src="/images/" + image)
+      if (document.imageGallery)
+        .gallery
+          .title Bilder
+          each image in document.imageGallery
+            img(src="/images/" + image)
+
+      if (document.tags)
+        ul.relatedServices
+          .title Relaterade tjänster
+          each tag in document.tags
+            each service in getCollection('services').toJSON()
+              if service.title.toLowerCase() === tag
+                li
+                  a(href=service.url)= service.title
