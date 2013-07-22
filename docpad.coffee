@@ -19,16 +19,17 @@ docpadConfig =
       ]
 
       # The default title of our website
-      title: "Iteam.se"
+      title: "Iteam.se - vi förverkligar drömmar med teknik"
 
       # The website description (for SEO)
       description: """
-        Iteam är en teknikbyrå i Stockholm. Vi utvecklar smarta webblösningar som t ex communities, e-handel och intranät.
+        Iteam är en teknikbyrå i Stockholm. Genom att erbjuda goda råd, teknisk spjutspets och driftexpertis förverkligar vi din dröm Tillsammans med oss kan du få uppleva värdet av hög kvalitet, service och innovation. Vi utvecklar smarta webblösningar som t ex communities, e-handel och intranät.
         """
 
       # The website keywords (for SEO) separated by commas
       keywords: """
-        systemutveckling, .net, dotnet, nodejs, bootstrap, nosql, mongodb, iteam, iteamsolutions, iteam solutions, operations, devops, tfs, git
+        iteam, iteamsolutions, iteam solutions, rådgivning, lead tech, proof-of-concept, entreprenörsrådgivning, systemutveckling, scrum, agil utveckling, systemdevelopment, agile, scrum-metodik, utvecklingsteam,.net, dotnet, nodejs, bootstrap, nosql, mongodb, angular, angularjs, git, github, tfs, drift & support, operations, devops, IT-review, specialist- och projektstöd, hyr en IT-avdelning, systemförvaltning, arkitektur & infrastruktur, säkerhetsreview
+
         """
 
       # The website author's name
