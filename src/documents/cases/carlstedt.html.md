@@ -6,12 +6,11 @@ images: ['carlstedt.jpg']
 imagePos: ['right']
 imageGallery: ['carlstedt.jpg']
 team: ['mats','rasmus']
-intro: Expertstöd för IT-ansvarige och extra muskler vid kontorsflytt
+intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.carlstedtark.se
 twitterTag: 'carlstedt arkitekter'
 ---
 
-<img src="/images/carlstedt.jpg" class="right" alt="">
 ### Expertstöd vid större projekt
 Åt Carlstedt Arkitekter har vi under ett flertal år agerat extra stöd vid större projekt. Senast gällde det implementation av ett nytt Hyper-V 2012 kluster.
 
