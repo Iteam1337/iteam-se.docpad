@@ -19,7 +19,7 @@ docpadConfig =
       ]
 
       # The default title of our website
-      title: "Iteam.se - vi förverkligar drömmar med teknik"
+      title: "Iteam.se | Vi förverkligar drömmar med teknik"
 
       # The website description (for SEO)
       description: """
