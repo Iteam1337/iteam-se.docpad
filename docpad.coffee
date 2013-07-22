@@ -102,14 +102,11 @@ docpadConfig =
   plugins:
     feedr:
       feeds:
-        'stackoverflow-profile':
-          url: 'http://api.stackoverflow.com/1.0/users/130638/'
+        'blogs':
+          'rickard':
+            url: 'http://rickardlaurin.wordpress.com/feed/'
         'github':
-          url: "https://github.com/balupton.atom"
-        'twitter':
-          url: "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=balupton&count=20&include_entities=true&include_rts=true"
-        'vimeo':
-          url: "http://vimeo.com/api/v2/balupton/videos.json"
+          url: "https://github.com/iteam1337.atom"
         'mynewsdesk':
           url: "http://www.mynewsdesk.com/se/rss/source/14460/pressrelease"
 
