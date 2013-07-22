@@ -2,6 +2,7 @@
 title: Kontakt
 layout: page
 pageOrder: 1
+summary: Hitta oss, ring oss, följs oss - och kvittra med oss.
 ---
 
 ### Hitta oss
