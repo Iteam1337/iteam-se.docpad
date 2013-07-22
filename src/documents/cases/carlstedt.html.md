@@ -1,5 +1,5 @@
 ---
-title: Carlstedt
+title: Carlstedt Arkitekter
 layout: case
 tags: ['drift & support']
 images: ['carlstedt.jpg']

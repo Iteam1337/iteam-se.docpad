@@ -11,10 +11,8 @@ siteurl: http://www.carlstedtark.se
 twitterTag: 'landahl arkitekter'
 ---
 
-I den här kategorin faller merparten av Iteams driftarbete. Vi tar fullständigt ansvar för er IT och ser till att allt från servrar, datorer, skrivare och telefon fungerar som det ska. Vi har kunder i vitt skilda branscher som hyr denna tjänst av oss. Bland våra äldre kunder finns Landahl advokatbyrå som vi även hjälpt flytta servrarna till colocation hall samt Satellitoperatören SES där vi tar hand om tekniken hos deras svenska kontor. Till viss del hjälper vi även till med deras kontor i Baltikum samt Ukraina – vi kan förstås fjärrstyra det mesta men klagar inte på att resa när det gäller större ändringar.
+### Fullständigt IT-support ansvar
+För Landahl Advokatbyrå tar vi fullständigt ansvar för IT och ser till att allt från servrar, datorer, skrivare och telefon fungerar som det ska. Landahl tillhör en utav våra allra äldsta kunder och vi hjälp dom i flera projekt. En typisk insats var att stötta under flytta av servrar till en colocation hall.
 
-### Expertstöd vid större projekt
-Åt Carlstedt Arkitekter har vi under ett flertal år agerat extra stöd vid större projekt. Senast gällde det implementation av ett nytt Hyper-V 2012 kluster.
-
-### Kontorsflytt = flytta med tekniken
-Ett annat vanligt förekommande projekt är flytt mellan olika kontor. Vi är vana vid proceduren och kan hjälpa er med ett så smärtfritt förvarande som bara möjligt.
+### Advokatbyrån för bygg- och fastighetsbranschen
+Landahls verksamhet riktar sig främst till aktörerna inom bygg- och fastighetsbranschen. Inom det området intar Landahl en tätposition bland Sveriges advokabyråer. Landahl har uppdrag åt såväl många av landets största bygg- och fastighetsbolag samt andra fastighetsägare i den privata sektorn, som åt stat, kommun och landsting.  Då bygg- och fastighetsbranschen är livlig och dynamisk strävar Landahl ständigt efter att hålla sig à jour med branschen samt rättsutvecklingen och ha en omsorgsfull rekryteringsprocess för att bibehålla och utveckla den specialistkompetens branschen kräver. Landahls speciella inriktning mot bygg- och fastighetsbranschen samt byråns mix av bredd, kompetens och branschkännedom, ger ständigt klienterna betydande mervärden.
