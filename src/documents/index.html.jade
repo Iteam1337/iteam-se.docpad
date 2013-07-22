@@ -27,3 +27,11 @@ title: 'Home'
       each doc in getCollection('posts').toJSON()
         li
           a(href=doc.url)= doc.title
+
+      #nowplaying(ng-show="nowplaying")
+      a(href="https://github.com/Iteam1337/Wejay")
+        img#wejay(src="/images/wejay.png")
+      span Just nu lyssnar vi på: 
+      a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
+      span  - 
+      a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}

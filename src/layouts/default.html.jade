@@ -55,14 +55,16 @@ html(lang="en", ng-app="iteamse")
 
   body(class=document.slug, ng-controller="MainCtrl")
     .row-fluid#header
+      ul.subnav
+        each doc in getCollection('pages').toJSON()
+          if (doc.pageOrder >= 10)
+            - clazz = (document.url === doc.url) ? 'active' : null
+              a(href=doc.url, property="dc:title", class=clazz)= doc.title
+        a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
+
       .header-inner
         a.brand(href="/")
           img(src="http://iteam.se/Content/Images/Iteam.png")   
-        ul.subnav
-          each doc in getCollection('pages').toJSON()
-            if (doc.pageOrder >= 10)
-              - clazz = (document.url === doc.url) ? 'active' : null
-                a(href=doc.url, property="dc:title", class=clazz)= doc.title
         ul.nav
           each doc in getCollection('pages').toJSON()
             if (doc.pageOrder < 10)
@@ -76,14 +78,6 @@ html(lang="en", ng-app="iteamse")
         each doc in getCollection('pages').toJSON()
           - clazz = (document.url === doc.url) ? 'active' : null
             a(href=doc.url, property="dc:title", class=clazz)= doc.title
-      
-    #nowplaying(ng-show="nowplaying")
-      a(href="https://github.com/Iteam1337/Wejay")
-        img#wejay(src="/images/wejay.png")
-      span Just nu lyssnar vi på: 
-      a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
-      span  - 
-      a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
 
     //- if (document.siteurl)
     //-   .other-cases

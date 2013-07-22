@@ -46,7 +46,9 @@
     "bal-util": "~2.3.0",
     "grunt": "~0.4.1",
     "safeps": "~2.2.6",
-    "grunt-cli": "~0.1.9"
+    "grunt-cli": "~0.1.9",
+    "docpad-plugin-feedr": "~2.5.0",
+    "docpad-plugin-coffeekup": "~2.1.6"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.4.0",

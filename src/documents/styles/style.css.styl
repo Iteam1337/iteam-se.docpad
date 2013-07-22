@@ -26,51 +26,54 @@ box-shadow(shadow)
   box-sizing(border-box)
 
   background:#333
-  padding:10px 0 30px
+  padding-bottom:10px
   position:relative
 
   .header-inner
-    margin:0 auto
+    margin:25px auto 0 auto
     max-width:700px
-    padding:20px 0
+
+  .brand
+    float:left
     position:relative
+    top:-10px
 
-    .brand
-      float:left
+  .nav, .subnav
+    text-align:right
+    vertical-align:top
+
+    a
+      color:#ccc
+      display: inline-block;
+      padding:0 20px
+
+      &.active, &:hover
+        color:#ffbd09
+
+      a:hover
+        background:none
+        color:#333
+
+  .subnav
+    background:#2b2b2b
+    font-size:0.6em
+    margin:0
+
+    .btn
+      background:#666
+      border:none
+      border-radius:0
+      padding:5px 10px
       position:relative
-      top:-10px
+      text-shadow:none
 
-    .nav, .subnav
-      float:right
-      text-align:right
-      vertical-align:top
+  .other-cases
+    background:#fff
+    padding:20px 0
 
-      a
-        color:#ccc
-        display: inline-block;
-        padding:0 20px
-
-        &.active, &:hover
-          color:#ffbd09
-
-        a:hover
-          background:none
-          color:#333
-
-    .subnav
-      font-size:0.6em
-      margin:0
-      position:absolute
-      right:0
-      top:50px
-
-    .other-cases
-      background:#fff
-      padding:20px 0
-
-      li
-        display:inline-block
-        margin-right:20px
+    li
+      display:inline-block
+      margin-right:20px
 
 /* Layout
 ---------------------------------------------*/
