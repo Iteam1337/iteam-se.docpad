@@ -19,7 +19,7 @@ module.exports = function (grunt) {
         dest: 'out/scripts/<%= pkg.name %>.js'
       },
       vendor: {
-        src: ['src/files/vendor/*.js'],
+        src: ['src/files/vendor/*.js', 'src/files/vendor/twitter-bootstrap/js/bootstrap.js'],
         dest: 'out/scripts/vendor.js'
       }
     },
@@ -48,15 +48,33 @@ module.exports = function (grunt) {
           ]
         }
       }
+    },
+
+    // Minify vendor css
+    cssmin: {
+      add_banner: {
+        options: {
+          banner: '/* vendor.css */ \n'
+        },
+        files: {
+          'out/styles/vendor.css': [
+            'src/documents/styles/*.css',
+            'src/files/vendor/twitter-bootstrap/css/bootstrap.css',
+            'src/files/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
+            '!*.min.css'
+          ]
+        }
+      }
     }
   });
 
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'stylus']);
+  grunt.registerTask('default', ['concat', 'uglify', 'stylus', 'cssmin']);
 
 };

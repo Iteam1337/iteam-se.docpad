@@ -52,9 +52,26 @@
  * iPhone
  */
 @media (max-width:480px)
+  iframe
+    height:auto
+
+  a.btn
+    font-family:'Palatino', sans-serif;
+    margin: 0 0 10px
+    width:100%
+
+  .container
+    margin-top:0
+
   #header
-    padding:20px
+    padding:20px 10px 5px 20px
     text-align:left
+    
+    .header-inner
+      margin:0
+
+    .brand
+      width:80px
 
     #nowplaying
       margin-bottom:20px
@@ -69,10 +86,10 @@
       .etp-menu
         position: absolute;
         right: 0;
-        top: -30px;
+        top: -9px;
 
     #mobileNav
-      margin-top:20px
+      margin-top:40px
 
       a
         display: block
@@ -82,10 +99,41 @@
         &.active
           color:#fff
 
+  #cases
+    .case
+      .case-about
+        width:100%
+      .case-image
+        display:block
+        height:150px
+        margin:0 auto 20px
+        width:auto
+
   #case
     img
       &.right
         display none
+    
+    .about
+      .content
+        .team
+          li
+            display:block
+            width:100%
+
+  .coworkers
+    .coworker
+      width:100%
+
+      &:nth-child(2n)
+        text-align:left
+
+        .image
+          float:none
+          margin-right:20px
+
+        .info
+          margin-right:0
 
   #coworker
     .cases
@@ -103,7 +151,19 @@
           text-overflow: ellipsis;
           white-space: nowrap;
 
+  #page
+    .history
+      .year
+        left:0
+        margin-bottom:20px
+        position:relative
 
+  #footer
+    margin:40px 20px 0
+
+    #followUs
+      text-align:left
+      width:100%
 
 
 

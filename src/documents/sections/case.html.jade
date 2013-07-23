@@ -6,9 +6,6 @@ pageOrder: 2
 ---
 
 .row-fluid#cases
-  //- ul.all-tags
-  //-   li(ng-repeat="tag in allTags") {{tag}}
-
   each doc in getCollection('cases').toJSON()
     .case
       if (doc.images)
@@ -19,9 +16,3 @@ pageOrder: 2
         a(href=doc.url)
           h2.case-title= doc.title
         p= doc.intro
-        //- if (doc.tags)
-        //- ul.case-tags(get-tags)
-        //-   if (doc.tags)
-        //-     each tag in doc.tags
-        //-       li.tag
-        //-         a(href="#")= tag
