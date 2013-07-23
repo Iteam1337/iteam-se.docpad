@@ -79,14 +79,6 @@ html(lang="en", ng-app="iteamse")
           - clazz = (document.url === doc.url) ? 'active' : null
             a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
-    //- if (document.siteurl)
-    //-   .other-cases
-    //-     ul
-    //-       each cases in getCollection('cases').toJSON()
-    //-         if (cases.title !== document.title)
-    //-           li
-    //-             a(href=cases.url)= cases.title
-
     .container
       .row-fluid#content.content!= content
 

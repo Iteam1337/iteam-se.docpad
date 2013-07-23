@@ -2,7 +2,7 @@
 layout: default
 ---
 
-div.row-fluid(make-anchors)
+div.row-fluid(make-anchors, ng-controller="AboutCtrl")
   div#page.page
     h1= document.title
     article.page-content!= content

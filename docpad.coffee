@@ -108,10 +108,8 @@ docpadConfig =
       feeds:
         'blogs':
           url: 'http://rickardlaurin.wordpress.com/feed/'
-        'github':
-          url: "https://github.com/iteam1337.atom"
-        'mynewsdesk':
-          url: "http://www.mynewsdesk.com/se/rss/source/14460/pressrelease"
+        'iteam':
+          url: 'http://mix.chimpfeedr.com/16486-Iteam'
 
   # DocPad Events
   # =============

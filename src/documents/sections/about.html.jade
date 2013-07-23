@@ -5,6 +5,11 @@ tags: ['about','page']
 pageOrder: 10
 ---
 
+ul#subpages
+  each subpage in getCollection('about').toJSON()
+    li
+      a(href=subpage.url)= subpage.title
+
 p Vi förverkligar drömmar med teknik. Genom att erbjuda goda råd, teknisk spjutspets och driftexpertis förverkligar vi din dröm. Tillsammans med oss kan du få uppleva värdet av hög kvalitet, service och innovation. De webbplatser vi bygger är oftast centrala i våra kunders affär och har därför stort fokus på en stabil teknisk plattform och integration mot interna system så som produktsystem (PIM), affärssystem, säljstödssystem (CRM), webbshoppar. Det får gärna finnas behov av single-sign-on mm - ju komplexare destå mer utmaning. Och destå mer rätt är det att jobba tillsammans med oss på Iteam.
 
 p Vi är en teknikbyrå. Så när - och om - det behövs  jobbar vi gärna tätt ihop med partners på webb- eller designbyråsidan- Dom står då står för design och formgivning. 
@@ -12,12 +17,7 @@ p Vi är en teknikbyrå. Så när - och om - det behövs  jobbar vi gärna tätt
 p Vi <3 teknik.
 
 
-ul#subpages
-  each subpage in getCollection('about').toJSON()
-    li
-      a(href=subpage.url)= subpage.title
-
-.row-fluid#about(ng-controller="AboutCtrl")
+.row-fluid#about
   ul
     each subpage in getCollection('about').toJSON()
       li

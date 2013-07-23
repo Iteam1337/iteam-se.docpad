@@ -85,18 +85,27 @@ box-shadow(shadow)
 /* Layout
 ---------------------------------------------*/
 #nowplaying
-  box-sizing(border-box)
+  font-size:1em
+  padding: 40px 0 0
 
-  color:#fff
-  font-size:0.6em
-  margin-bottom:40px
-  padding: 10px 0
-  text-align:center
-  width:100%
+  > a
+    display:inline-block
+    margin-right:20px
+    vertical-align:top
+    width:20%
 
   #wejay
     margin-right:20px
-    width:25px
+
+  .info
+    display inline-block
+
+    p
+      margin:0
+
+    a
+      display:block
+      line-height:1.5
 
 .container
   margin-top:40px
@@ -177,14 +186,23 @@ box-shadow(shadow)
       .box
         background:rgb(151,187,205)
 
+  #about
+    a
+      display block
+      font-size:1em
+      margin-bottom:10px
+
 #subpages
-  background: #333;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 10px 0;
 
   li
     display inline-block
     margin-right:20px
+
+    &:not(:last-child)
+      border-right:1px solid #ccc
+      padding-right:20px
 
 #github
   display none

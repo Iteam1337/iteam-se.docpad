@@ -5,7 +5,7 @@ title: 'Iteam.se - vi förverkligar drömmar med teknik'
 
 // Example row of columns.
 .row-fluid
-  div.span12
+  .span12
     article.news
       h2 Vi förverkligar drömmar med teknik
       p: :markdown
@@ -14,14 +14,14 @@ title: 'Iteam.se - vi förverkligar drömmar med teknik'
        och innovation. 
        
 .row-fluid
-  div.span6
+  .span6
     h2 Senaste från bloggen
     p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
     ul.linklist
       each doc in getCollection('posts').toJSON()
         li
           a(href=doc.url)= doc.title
-  div.span6
+  .span6
     h2 Senaste nyheter
     p Här följer du våra senaste pressmeddelanden, våra kunders senaste nyheter och senaste branschnytt.
     ul.linklist
@@ -29,10 +29,11 @@ title: 'Iteam.se - vi förverkligar drömmar med teknik'
         li
           a(href=doc.url)= doc.title
 
-      #nowplaying(ng-show="nowplaying")
-      a(href="https://github.com/Iteam1337/Wejay")
-        img#wejay(src="/images/wejay.png")
-      span Just nu lyssnar vi på: 
+.row-fluid
+  .span6#nowplaying(ng-show="nowplaying")
+    a(href="https://github.com/Iteam1337/Wejay")
+      img#wejay(src="/images/wejay.png")
+    .info
+      p Just nu lyssnar vi på
       a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
-      span  - 
       a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
