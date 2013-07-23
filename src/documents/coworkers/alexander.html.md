@@ -7,6 +7,7 @@ instagram:
 linkedin: zendeveloper
 github: zendeveloper
 email: alexander.czigler@iteam.se
+phonenumber: '0727-14 50 60'
 image: /images/alexander.jpg
 shortname: alexander
 ---

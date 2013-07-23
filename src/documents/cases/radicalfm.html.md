@@ -1,7 +1,7 @@
 ---
 title: Radical.FM
 layout: case
-tags: ['proof-of-concept','lead tech','drift & support']
+tags: ['proof-of-concept','lead tech','drift & support','rådgivning']
 images: ['radicalfm1.jpg']
 imagePos: ['right']
 imageGallery: ['radicalfm1.jpg']
