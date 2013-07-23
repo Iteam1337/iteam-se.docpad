@@ -44,4 +44,4 @@ article#case.row-fluid
               each sTag in service.tags
                 if tag === sTag                  
                   li
-                    a(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1))= tag[0].toUpperCase() + tag.substr(1)
+                    a(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)

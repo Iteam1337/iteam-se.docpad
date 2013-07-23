@@ -4,7 +4,7 @@ layout: coworker
 jobTitle: Webbutvecklare
 twitter: rickardlaurin
 instagram: rickardlaurin
-linkedin: rickardlaurin
+linkedin: in/rickardlaurin
 github: believer
 email: rickard.laurin@iteam.se
 phonenumber: '076 - 166 85 11'
