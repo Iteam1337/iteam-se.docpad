@@ -29,7 +29,7 @@ title: 'Iteam.se - vi förverkligar drömmar med teknik'
         li
           a(href=doc.url)= doc.title
 
-.row-fluid
+.row-fluid(ng-controller="WejayCtrl")
   .span6#nowplaying(ng-show="nowplaying")
     a(href="https://github.com/Iteam1337/Wejay")
       img#wejay(src="/images/wejay.png")

@@ -3,12 +3,12 @@ layout: default
 ---
 
 article#case.row-fluid
-  //- if document.twitterTag
-  //-   #twitter= document.twitterTag
+  if document.twitterTag
+    #twitter= document.twitterTag
 
-  //- ul.tweets
-  //-   li(ng-repeat="tweet in tweets | limitTo:5", ng-bind-html-unsafe="tweet.text")
-  //-     .time {{tweet.created_at}}
+  ul.tweets
+    li(ng-repeat="tweet in tweets | limitTo:5", ng-bind-html-unsafe="tweet.text")
+      .time {{tweet.created_at}}
 
   .about
     h1= document.title
