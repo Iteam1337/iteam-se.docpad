@@ -1,5 +1,5 @@
 ---
-title: Press
+title: Nyheter
 layout: page
 pageOrder: 11
 ---

@@ -1,7 +1,7 @@
 ---
 title: Shake My World
 layout: case
-tags: ['entreprenörsrådgivning','proof-of-concepts','systemutveckling']
+tags: ['entreprenörsrådgivning','proof-of-concept','systemutveckling']
 images: ['shakemyworld1.jpg']
 imagePos: ['right']
 imageGallery: ['shakemyworld1.jpg','shakemyworld2.jpg','shakemyworld3.jpg']

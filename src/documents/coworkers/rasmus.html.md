@@ -2,13 +2,24 @@
 title: Rasmus Fredriksson
 layout: coworker
 jobTitle: Drift och support
-witter: 
+shortname: rasmus
+image: /images/rasmus.jpg
+email: rasmus.fredriksson@iteam.se
+phonenumber: 0703 - 76 66 40
+twitter: 
 instagram: 
 linkedin: 
 github: 
-email: 
-image: /images/rasmus.jpg
-shortname: rasmus
 ---
 
-This is a **blog post**
+### Varför jobbar du med teknik?
+Jag jobbar med allt ifrån klientdatorer till servrar och nätverksprodukter. Att spannet är så pass stort gör att ingen dag är den andra lik – det är roligt! Teknik är också spännande för att man aldrig kan bli fullärd!
+
+### Specialistkompetens
+Windows, Office, nätverk
+
+### Bakgrund
+Tvåårig KY-utbildning på Nackademin, Nätsystem/Systemintegration. Arbetade tidigare på ITF som supporttekniker/it-tekniker.
+
+### Superkraft
+Jag kan genom ett ”virtuellt skrivbord” i huvudet, oftast vägleda kunder med datorproblem per telefon. Typ: Klicka på start, högerklicka på Dator, välj egenskaper, tryck avancerat, inställningar på Prestanda, avancerat och tryck ändra....

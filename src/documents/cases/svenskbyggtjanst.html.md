@@ -1,7 +1,7 @@
 ---
 title: Svensk Byggtjänsts Byggtjanst.se
 layout: case
-tags: ['systemutveckling']
+tags: ['Systemutveckling','Systemförvaltning']
 images: ['sb-byggtjanst1.jpg']
 imagePos: ['right']
 imageGallery: ['sb-byggtjanst2.jpg']

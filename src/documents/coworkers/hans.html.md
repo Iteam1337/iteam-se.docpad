@@ -1,7 +1,7 @@
 ---
 title: Hans Rollman
 layout: coworker
-jobTitle: vVD, Sales
+jobTitle: Vice VD, Försäljning
 shortname: hans
 image: /images/hans.jpg
 email: hans.rollman@iteam.se
