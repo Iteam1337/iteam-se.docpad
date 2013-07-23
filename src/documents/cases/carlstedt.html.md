@@ -1,7 +1,7 @@
 ---
 title: Carlstedt Arkitekter
 layout: case
-tags: ['drift & support']
+tags: ['drift & support','Specialist- och projektstöd']
 images: ['carlstedt.jpg']
 imagePos: ['right']
 imageGallery: ['carlstedt.jpg']
@@ -14,5 +14,8 @@ twitterTag: 'carlstedt arkitekter'
 ### Expertstöd vid större projekt
 Åt Carlstedt Arkitekter har vi under ett flertal år agerat extra stöd vid större projekt. Senast gällde det implementation av ett nytt Hyper-V 2012 kluster.
 
-### Kontorsflytt = flytta med tekniken
-Ett annat vanligt förekommande projekt är flytt mellan olika kontor. Vi är vana vid proceduren och kan hjälpa er med ett så smärtfritt förvarande som bara möjligt.
+### Carlstedt byter kontor - Iteam flyttar tekniken
+Att byta kontor är en rejäl utmaning. När Carlstedt flyttar så finns Iteam där - vana vid proceduren och hjälper till så att det blir en så störningsfri flytt som möjligt ur ett teknik- och IT-perspektiv. 
+
+### Har skapat flera av landets sjukhus
+Carlstedt har lång och gedigen erfarenhet och kompetens inom lokalplanering och byggnadsprojektering. Man arbetar i byggprocessens alla skeden - och har sedan starten kontinuerligt arbetat med vård och sjukhusplanering. Flera av landets sjukhus är skapade på Carlstedts ritbord. Bland verksamhetsområdena återfinns bostäder för äldre, undervisnings- och forskningslokaler, kontor. Idag består bolaget av ca 30 arkitekter och ingenjörer med kontor i Stockholm och Nyköping.

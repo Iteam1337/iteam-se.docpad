@@ -8,7 +8,7 @@ summary: När du vill ha det bästa teknikteamet – dom mest engagerade hjärno
 quoteBy: ['anders']
 ---
 
-### Trygg metodik 
+### Trygg och effektiv utvecklingsmetodik 
 Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Det ger kundnyttor så som ökad kvalitet och mer fokus på att lösa uppgiften – snarare än att skriva detaljerade kravspecifikationer. Med Scrum som projektmodell kan vi garantera kvalitet och hög effektivitet. Det är en iterativ process vilket innebär att vi delar upp arbetet i ett antal korta intensiva utvecklingspass (s.k. sprintar), var och en ca. tre veckor lång. Den perioden arbetar vårt team fokuserat på en utvald delmängd (s.k. sprint backlog) av lösningen i taget. Parallellt med att utvecklingsteamet arbetar så jobbar din rådgivare och du vidare med att konkretisera uppgifter och kravtexter inför nästkommande sprint, så den är väl definierad när den startar. Detta iterativa sätt att bygga ett system har visat sig vara effektivt och samtidigt flexibelt. Vi vet också att oftast kommer de bästa idéerna kommer först när man ser sitt projekt växa fram och därför är det viktigt för oss att följa en modell som tillåter förändringar under resans gång.
 En bra webbplats lever i många år om man håller tekniken uppdaterad, vi erbjuder därför en löpande vidareutveckling av webbplatsen efter avslutat projekt. Ett så kallat retaineravtal tecknas för förvaltning, vidareutveckling och trimming så att din webbplats varje månad får nya funktioner, ses om och bevakas – allt till en fast månadskostnad.
 (What) Kontakta oss så definierar vi projektet som passar just dig. Agilt eller inte – stort eller smått – ring oss. <KONTAKT>
