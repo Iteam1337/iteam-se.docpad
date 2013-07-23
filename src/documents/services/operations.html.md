@@ -1,7 +1,7 @@
 ---
 title: Drift & Support
 layout: page
-tags: ['drift & support','IT-review','Specialist- och projektstöd', 'Hyr en IT-avdelning', 'Arkitektur & Infrastruktur','Säkerhetsreview']
+tags: ['Drift & support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 pageType: Service
 pageOrder: 3
 summary: Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.

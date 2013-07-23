@@ -1,7 +1,7 @@
 ---
 title: Trygghetsrådet Jobbkontakter
 layout: case
-tags: ['rådgivning','lead tech']
+tags: ['Rådgivning','Lead tech']
 projectManager: hans
 image: http://lorempixel.com/300/200
 team: ['hans', 'christian', 'martin', 'dennis', 'alexander']
