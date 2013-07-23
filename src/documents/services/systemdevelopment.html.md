@@ -1,7 +1,7 @@
 ---
 title: Systemutveckling
 layout: page
-tags: ['intro','page']
+tags: ['systemutveckling']
 pageType: Service
 pageOrder: 2
 summary: När du vill ha det bästa teknikteamet – dom mest engagerade hjärnorna – och den senaste kunskapen - samlat i ett och samma team, då ska just ditt projekt genomföras tillsammans med oss på Iteam. Vi bygger det system som du behöver, det verktyget som du ser framför dig – precis så som du vill ha det. Vare sig det handlar om en ny webb, en webbutik, ett forum eller verksamhetsvertyg som molntjänst så kan vi bygga det åt dig. Vi utvecklar webbplatsen och tjänsten som utgör drivkraften i din affärsverksamhet.
