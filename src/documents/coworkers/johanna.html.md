@@ -1,14 +1,25 @@
 ---
 title: Johanna Gustafsson
 layout: coworker
-jobTitle: Senior webbutvecklare
-witter: 
-instagram: 
-linkedin: 
-github: 
-email: 
+jobTitle: Utvecklingschef, Senior hacker
+twitter: mittistormen
+instagram: mittistormen
+linkedin: pub/johanna-gustafsson/3/b34/7a6
+github: mittistormen
+email: johanna.gustafsson@iteam.se
+phonenumber: 0734 - 02 91 12
 image: /images/johanna.jpg
 shortname: johanna
 ---
 
-This is a **blog post**
+### Varför jobbar du med teknik?
+Jag är systemutvecklare därför att jag gillar att skapa, jag gillar kod och jag gillar att lösa problem, stora som små. Lycka är att få göra det varje dag!
+
+### Specialistkompetens
+ASP.NET, C#, integration, AJAX, CSS
+
+### Bakgrund
+KY-utbildning med inriktning mot .NET-utveckling. Arbetade tidigare på ezy som systemutvecklare med fokus på API-integration, betalningslösningar och webbaserade bokningssystem för resebranschen.
+
+### Superkraft
+Snabb som en vessla
