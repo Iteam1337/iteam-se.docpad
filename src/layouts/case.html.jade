@@ -6,42 +6,45 @@ article#case.row-fluid
   if document.twitterTag
     #twitter= document.twitterTag
 
-  ul.tweets
-    li(ng-repeat="tweet in tweets | limitTo:5", ng-bind-html-unsafe="tweet.text")
-      .time {{tweet.created_at}}
+  //- ul.tweets
+  //-   li(ng-repeat="tweet in tweets | limitTo:5", ng-bind-html-unsafe="tweet.text")
+  //-     .time {{tweet.created_at}}
 
   .about
     h1= document.title
-    .content!= content
-      if (document.team)
-        ul.team
-          .title Teamet
-          each member in document.team
-            li
-              each coworker in getCollection('coworkers').toJSON()
-                if coworker.shortname == member
-                  a(href="/coworkers/" + member)= coworker.title
-                  div= coworker.jobTitle
+    .content
+      .text!= content
 
-      if (document.readmorelinks)
-        ul.urls
-          .title Relaterade länkar
-          each url in document.readmorelinks
-            li
-              a(href=url)= url
+      .information
+        if (document.team)
+          ul.team
+            .title Teamet
+            each member in document.team
+              li
+                each coworker in getCollection('coworkers').toJSON()
+                  if coworker.shortname == member
+                    a(href="/coworkers/" + member)= coworker.title
+                    div= coworker.jobTitle
 
-      if (document.imageGallery)
-        .gallery
-          .title Bilder
-          each image in document.imageGallery
-            img(src="/images/" + image)
+        if (document.readmorelinks)
+          ul.urls
+            .title Relaterade länkar
+            each url in document.readmorelinks
+              li
+                a(href=url)= url
 
-      if (document.tags)
-        ul.relatedServices
-          .title Relaterade tjänster
-          each tag in document.tags
-            each service in getCollection('services').toJSON()
-              each sTag in service.tags
-                if tag === sTag                  
-                  li
-                    a(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)
+        if (document.imageGallery)
+          .gallery
+            .title Bilder
+            each image in document.imageGallery
+              img(src="/images/" + image)
+
+        if (document.tags)
+          ul.relatedServices
+            .title Relaterade tjänster
+            each tag in document.tags
+              each service in getCollection('services').toJSON()
+                each sTag in service.tags
+                  if tag === sTag                  
+                    li
+                      a(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)

@@ -2,6 +2,16 @@
  * Big screens > 1200px
  */
 @media (min-width:1200px)
+  .container
+    max-width:100%
+
+    > div
+     display: inline-block
+
+  #header
+    .header-inner
+      max-width:1170px
+
   #cases
     .case
       display: inline-block;
@@ -16,13 +26,27 @@
         width:auto
 
   #case
+    margin:40px auto 0
+    max-width:100%;
+
     .about
       width:100%
-  .container
-    max-width:100%
+      
+      .content
+        > div
+          display inline-block
+          vertical-align:top
 
-    > div
-     display: inline-block
+        .text
+          width:50%
+
+        .information
+          margin-left:40px
+          width:40%
+  
+  #footer
+    max-width:100%
+    width:1170px
 
 /**
  * iPad landscape
@@ -140,7 +164,7 @@
 
   #coworker
     margin-top:40px
-    
+
     .cases
       li
         text-align:left
