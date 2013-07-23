@@ -58,7 +58,7 @@ html(lang="en", ng-app="iteamse")
 
       .header-inner
         a.brand(href="/")
-          img(src="http://iteam.se/Content/Images/Iteam.png")   
+          img(src="/images/logo.png")   
         ul.nav
           each doc in getCollection('pages').toJSON()
             if (doc.pageOrder < 10)
