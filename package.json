@@ -38,7 +38,7 @@
     "docpad-plugin-partials": "~2.7.0",
     "docpad-plugin-stylus": "~2.3.1",
     "docpad-plugin-text": "~2.2.4",
-    "docpad-plugin-jade": "~2.4.1",
+    "docpad-plugin-jade": "~2.4.0",
     "docpad-plugin-related": "~2.0.5",
     "marked": "*",
     "docpad-plugin-ghpages": "~2.2.0",

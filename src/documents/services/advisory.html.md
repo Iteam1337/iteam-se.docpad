@@ -25,6 +25,6 @@ När vi förverkligar drömmar kan det ofta vara en god idé att starta med att 
 < Kontakt mig om Proof-of-concept >
 
 ### Entreprenörsrådgivning
-Att förverkliga en dröm är alldrig så påtagligt som hos dig som är entreprenör. Du tänker "såhär borde det funka" – fortsättningen på den meningen vill vi lyssna på. Vi ritar och målar på whiteboard – tänker fritt och öppet tillsammans. Innan vi sätter oss skriver vi självklart under sekretessavtal för att du ska känna trygghet och allt ska vara rätt. Kom upp till oss på en timmes gratis rådgivning för dig. Vi står för mötesrum, ledande koncept- och systemutvecklare. Vi lyssnar på din idé och beskriver vår syn på utmaningar, möjligheter och lösningar. Välkommen till oss så gör vi verklighet av din dröm.
+Att förverkliga en dröm är alldrig så påtagligt som hos dig som är entreprenör. Du tänker "såhär borde det funka..." – fortsättningen på den meningen vill vi lyssna på. Vi ritar och målar på en whiteboard – tänker fritt och öppet tillsammans. Innan vi sätter oss skriver vi självklart sekretessavtal för att du ska känna trygghet och allt går rätt till. Kom upp till oss på en timmes gratis rådgivning för dig. Vi står för mötesrum, affärsutvecklingserfarenhet och ledande koncept- och systemutvecklare. Vi lyssnar på din idé och beskriver vår syn på dina utmaningar, möjligheter och potentiella lösningar. Välkommen till oss så gör vi verklighet av din dröm.
 
 < Kontakt mig för Entreprenörsrådgivning >
