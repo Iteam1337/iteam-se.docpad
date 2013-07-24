@@ -12,6 +12,7 @@ summary: Kunskap är grunden för att lyckas - det är vår övertygelse. Kunska
 Vi tror på vikten av att klarlägga din verksamhets nuläge och identifera en tydlig målbild för ditt växande tjänsteområde eller din produkt. Genom att intervjua dina kunder, dina kollegor, IT-kontakter och andra för dig relevanta aktörer så tar vi reda på detta innan vi sätter igång och utvecklar något. Du får en tydlig rapport som – utifrån din målgrupps perspektiv – visar på behov, förutsättningar och möjligheter för din nya tjänst eller produkt. 
 
 Ja, jag är intresserad av att genomföra en förstudie - [Här måste vi lösa nått i stil med köpknapp eller kontakt, eller intresseanmälan](/callme/)
+a.btn(href="../../../files/IteamRemoteControlWindows.exe") Köp
 
 ### Lead tech
 Vi vet att dom allra bästa teknikkonceptare, nytänkare och systemutvecklare är svåra att rekrytera för många av våra kunder. Men, du kan fortfarande få tillgång till just en sådan person i just ditt team, eller i din styrgrupp. Genom att vi endast rekryterar erfarna systemutvecklare, vårdar våra medarbetares kunskapsnivå och håller oss ajour inom det senaste så finner du just den extraresurs du behöver hos oss. Anlita en senior lead tech-roll som stöttar just ditt team genom oss. Du kan också använda vår lead tech som expertis i din rekryteringsprocess för att bygga upp ett eget utvecklingsteam. 

@@ -1,7 +1,7 @@
 ---
 title: Svensk Byggtjänsts Projektbevakning
 layout: case
-tags: ['proof-of-concept','systemutveckling']
+tags: ['Proof-of-concept','Systemutveckling']
 images: ['sb-projektbevakning1.jpg']
 imagePos: ['right']
 imageGallery: ['sb-projektbevakning1.jpg']

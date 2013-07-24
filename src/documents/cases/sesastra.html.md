@@ -1,7 +1,7 @@
 ---
 title: SES Astra
 layout: case
-tags: ['drift & support','it-review']
+tags: ['Drift & support','IT-review']
 images: ['sesastra.jpg']
 imagePos: ['right']
 imageGallery: ['sesastra.jpg']

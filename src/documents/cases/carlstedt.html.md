@@ -1,7 +1,7 @@
 ---
 title: Carlstedt Arkitekter
 layout: case
-tags: ['drift & support','specialist- och projektstöd']
+tags: ['IT-review','Drift & support','Specialist- och projektstöd']
 images: ['carlstedt.jpg']
 imagePos: ['right']
 imageGallery: ['carlstedt.jpg']

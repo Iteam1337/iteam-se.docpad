@@ -1,7 +1,7 @@
 ---
 title: Svensk Byggtjänsts Omvärldsbevakning
 layout: case
-tags: ['proof-of-concept','systemutveckling']
+tags: ['Proof-of-concept','Systemutveckling']
 images: ['sb-omvarldsbevakning1.jpg']
 imagePos: ['right']
 imageGallery: ['sb-omvarldsbevakning1.jpg']

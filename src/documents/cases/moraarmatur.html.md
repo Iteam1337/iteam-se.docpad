@@ -1,7 +1,7 @@
 ---
 title: Mora Armatur
 layout: case
-tags: ['systemutveckling']
+tags: ['Systemutveckling']
 images: ['moraarmatur1.jpg']
 imagePos: ['right']
 imageGallery: ['moraarmatur1.jpg']
