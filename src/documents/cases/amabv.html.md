@@ -1,7 +1,7 @@
 ---
 title: Svensk Byggtjänsts AMA Beskrivningsverktyg
 layout: case
-tags: ['systemutveckling']
+tags: ['Systemutveckling']
 images: ['sb-amabv1.jpg']
 imagePos: ['right']
 imageGallery: ['sb-amabv1.jpg']

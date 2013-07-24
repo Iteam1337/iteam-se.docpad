@@ -3,13 +3,6 @@ layout: default
 ---
 
 article#case.row-fluid
-  if document.twitterTag
-    #twitter= document.twitterTag
-
-  //- ul.tweets
-  //-   li(ng-repeat="tweet in tweets | limitTo:5", ng-bind-html-unsafe="tweet.text")
-  //-     .time {{tweet.created_at}}
-
   .about
     h1= document.title
     .content
@@ -48,3 +41,12 @@ article#case.row-fluid
                   if tag === sTag                  
                     li
                       a(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)
+
+          .twitter(ng-show="tweets")
+            .title Twitter
+            - twitter = "twitter = '" + document.twitterTag + "'"
+            ul.tweets(ng-init=twitter)
+              li(ng-repeat="tweet in tweets | limitTo:5")
+                .text(ng-bind-html-unsafe="tweet.text")
+                .time {{tweet.created_at}}
+                .user {{tweet.user}}

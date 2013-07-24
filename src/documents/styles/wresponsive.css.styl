@@ -57,6 +57,20 @@ transition(args)
         .information
           margin-left:40px
           width:40%
+
+  .coworkers
+    .coworker
+      width:33%
+
+      &:nth-child(2n)
+        text-align:left
+
+        .image
+          float:none
+          margin-right:20px
+
+        .info
+          margin:0
   
   #footer
     max-width:100%
@@ -134,7 +148,7 @@ transition(args)
 
     background:#333
     margin-top:10px
-    position fixed
+    position absolute
     width:100%
 
     .back

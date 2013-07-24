@@ -26,15 +26,7 @@
   margin:40px auto
   max-width:700px
 
-  #twitter
-    display none
 
-  .tweets
-    li
-      color: #999
-      font-family:'Palatino'
-      font-size:0.8em
-      margin-bottom:10px
 
   .title
     box-sizing(border-box)
@@ -70,7 +62,7 @@
             position:relative
             width:250px
 
-      .team, .relatedServices
+      .team, .relatedServices, .twitter
         border-top:1px solid #ccc
         margin-top:40px
         padding:40px 0
@@ -112,3 +104,31 @@
         
         .title
           width:200px
+  
+      .twitter
+        padding:40px 0 0
+        
+        .tweets
+          li
+            color: #999
+            font-family:'Palatino'
+            font-size:0.8em
+            margin-bottom:10px
+            text-align:left
+            vertical-align:top
+            width:48%
+
+            &:nth-child(2n-1)
+              margin-right:20px
+
+            a
+              display:inline
+
+            .text
+              color:#666
+
+            .time
+              margin: 5px 0
+
+            .user
+              font-weight:bold

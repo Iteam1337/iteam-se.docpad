@@ -82,7 +82,7 @@ docpadConfig =
 
     # This one, will fetch in all documents that will be outputted to the cases directory
     cases: (database) ->
-      database.findAllLive({relativeOutDirPath:'cases'},[date:-1])
+      database.findAllLive({relativeOutDirPath:'cases'},[title:1])
 
     # This one, will fetch in all documents that will be outputted to the coworkers directory
     coworkers: (database) ->

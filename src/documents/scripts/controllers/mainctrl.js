@@ -9,13 +9,15 @@
     $scope.mobileNav = false;
     $scope.allTags   = [];
     $scope.subpages  = null;
+    $scope.twitter   = null;
 
     /**
      * Searches Twitter for a given twitter hashtag, mention or other
      */
-    if (document.getElementById('twitter')) {
+    $scope.$watch('twitter', function() {
+
       var cb = new Codebird(),
-      query  = document.getElementById('twitter').innerHTML.replace(',',' OR ');
+      query  = $scope.twitter.replace(',',' OR ');
 
       cb.setConsumerKey('bvqOzAMz10CWGfcWOfow','DYYE1S4jWeTX3rp4P5uJQ62a1AhlqxGRPTnkGYGx7M');
 
@@ -39,7 +41,8 @@
 
               tweet = {
                 "text": text,
-                "created_at": moment(tweets[i].created_at).fromNow()
+                "created_at": moment(tweets[i].created_at).fromNow(),
+                "user": tweets[i].user.name
               };
 
               $scope.tweets.push(tweet);
@@ -49,7 +52,7 @@
           },
           true // this parameter required
       );
-    }
+    }, true);
 
   });
 

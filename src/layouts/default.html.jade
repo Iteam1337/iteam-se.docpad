@@ -69,10 +69,11 @@ html(lang="en", ng-app="iteamse")
           .etp-menu
   
     if (document.subpages)
-      ul#navSubpages  
-        each subpage in getCollection(document.subpages).toJSON()
-          - active = (document.url === subpage.url) ? 'active' : null
-          a(href=subpage.url, class=active)= subpage.title
+      #navSubpages
+        .subpage-inner
+          each subpage in getCollection(document.subpages).toJSON()
+            - active = (document.url === subpage.url) ? 'active' : null
+            a(href=subpage.url, class=active)= subpage.title
 
     ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
       each doc, i in getCollection('pages').toJSON()
