@@ -1,3 +1,17 @@
+transform(args)
+  -moz-transform args
+  -webkit-transform args
+  -o-transform args
+  -khtml-transform args
+  transform args
+
+transition(args)
+  -moz-transition args
+  -webkit-transition args
+  -o-transition args
+  -khtml-transition args
+  transition args
+
 /**
  * Big screens > 1200px
  */
@@ -115,16 +129,51 @@
         right: 0;
         top: -9px;
 
-    #mobileNav
-      margin-top:40px
+  #mobileNav, ul.subpages
+    transform(translate3d(0,0,0))
 
-      a
-        display: block
-        margin-bottom:10px
-        padding:5px 0
+    background:#333
+    margin-top:10px
+    position fixed
+    width:100%
 
-        &.active
-          color:#fff
+    .back
+      background:#2b2b2b
+      color:#999
+      cursor:pointer
+
+    > li
+      transition(background 300ms ease)
+
+      padding:10px 20px
+      position relative
+
+      &:hover
+        background:#444
+
+      > div
+        color:#999
+        position: absolute;
+        right: 10px;
+        top: 7px;
+
+    a
+      display: block
+
+      &:hover
+        color:#ffbd09
+        text-decoration:none
+
+      &.active
+        color:#fff
+
+  ul.subpages
+    > li
+      > div
+        left:20px
+        right: auto
+      > span
+        margin-left:30px
 
   #cases
     .case
@@ -193,7 +242,3 @@
     #followUs
       text-align:left
       width:100%
-
-
-
-

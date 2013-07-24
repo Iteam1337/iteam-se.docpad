@@ -8,6 +8,7 @@
 
     $scope.mobileNav = false;
     $scope.allTags   = [];
+    $scope.subpages  = null;
 
     /**
      * Searches Twitter for a given twitter hashtag, mention or other

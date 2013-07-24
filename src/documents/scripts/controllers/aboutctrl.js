@@ -39,6 +39,7 @@
     options = {scaleOverride : true, scaleSteps : 15, scaleStepWidth : 1,scaleStartValue : 0,animationSteps : 200}
     var canvas = document.getElementById("employeeNumbers");
     ctx = canvas.getContext("2d");
+<<<<<<< HEAD
     new Chart(ctx).Line(data,options);
 
     var ctx, chart, data, options;
@@ -60,6 +61,9 @@
     var canvas = document.getElementById("businessareaNumbers");
     ctx = canvas.getContext("2d");
     new Chart(ctx).Pie(data, options);
+=======
+    new Chart(ctx).Line(data);
+>>>>>>> e4c27d3ffca0f8a46f62a386911fc1fae36d2943
 
   });
 

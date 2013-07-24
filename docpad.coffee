@@ -107,7 +107,7 @@ docpadConfig =
     feedr:
       feeds:
         'blogs':
-          url: 'http://rickardlaurin.wordpress.com/feed/'
+          url: 'http://mix.chimpfeedr.com/c22cf-iteam-blogg'
         'iteam':
           url: 'http://mix.chimpfeedr.com/16486-Iteam'
 

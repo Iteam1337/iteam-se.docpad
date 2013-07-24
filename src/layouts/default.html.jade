@@ -65,13 +65,34 @@ html(lang="en", ng-app="iteamse")
               - clazz = (document.url === doc.url) ? 'active' : null
                 a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
-        .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav")
+        .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
           .etp-menu
+  
+    if (document.subpages)
+      ul#navSubpages  
+        each subpage in getCollection(document.subpages).toJSON()
+          - active = (document.url === subpage.url) ? 'active' : null
+          a(href=subpage.url, class=active)= subpage.title
 
-      ul#mobileNav(ng-show="mobileNav",ng-animate="'slide'")
-        each doc in getCollection('pages').toJSON()
-          - clazz = (document.url === doc.url) ? 'active' : null
-            a(href=doc.url, property="dc:title", class=clazz)= doc.title
+    ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
+      each doc, i in getCollection('pages').toJSON()
+        - clazz = (document.url === doc.url) ? 'active' : null
+        - hasSubpage = (doc.subpages) ? i : null
+        li(mobile-nav, data-subpage=hasSubpage)
+          a(class=clazz, data-url=doc.url)= doc.title
+          if (doc.subpages)
+            .etp-thin-chevron-right
+    #subpageWrap
+      each doc, i in getCollection('pages').toJSON()
+        if (doc.subpages)
+          - subId = "subpages == " + i
+          ul.subpages(ng-show=subId, ng-animate="'slide-in'")
+            li.back(ng-click="subpages = null")
+              .etp-thin-chevron-left
+              span Tillbaka
+            each subpage in getCollection(doc.subpages).toJSON()
+              li
+                a(href=subpage.url)= subpage.title
 
     .container
       .row-fluid#content.content!= content

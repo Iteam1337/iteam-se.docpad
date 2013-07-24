@@ -2,6 +2,7 @@
 title: Historia
 layout: page
 pageOrder: 3
+subpages: 'about'
 summary: >
   Vår historia är kantad av drömmar som blivit verklighet. Vi jobbar med teknik för att vi älskar det och för att användare inte ska behöva reflektera över den.
 ---
