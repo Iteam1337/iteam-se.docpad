@@ -30,6 +30,7 @@
 
     ctx = canvas.getContext("2d");
     new Chart(ctx).Line(data);
+
   });
 
 })();

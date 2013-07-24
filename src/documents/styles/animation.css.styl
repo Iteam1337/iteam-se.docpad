@@ -1,17 +1,42 @@
-.slide-hide, .slide-show 
+.slide-hide, .slide-show
     -webkit-transition:all 300ms ease;
     -moz-transition:all 300ms ease;
     -o-transition:all 300ms ease;
     transition:all 300ms ease;
 
 .slide-hide 
-    display:none;
+	left:0
 
 .slide-hide.slide-hide-active 
-    display:none;
+	left:-100%
 
 .slide-show 
-    height:0
+    opacity:0
+    top:60px
 
 .slide-show.slide-show-active 
-    height:360px
+    opacity:1
+    top:50px
+
+.slide-in-hide, .slide-in-show 
+    -webkit-transition:all 300ms ease;
+    -moz-transition:all 300ms ease;
+    -o-transition:all 300ms ease;
+    transition:all 300ms ease;
+
+.slide-in-hide 
+	left:0
+	opacity:1
+
+.slide-in-hide.slide-in-hide-active 
+	left:100%
+	opacity:0
+
+.slide-in-show 
+	left:100%
+	opacity:0
+
+.slide-in-show.slide-in-show-active 
+	left:0
+	opacity:1
+

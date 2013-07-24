@@ -1,12 +1,13 @@
 ---
 title: Svensk Byggtjänsts Byggtjanst.se
 layout: case
-tags: ['systemutveckling','systemförvaltning']
+tags: ['Systemutveckling','Systemförvaltning']
 images: ['sb-byggtjanst1.jpg']
 imagePos: ['right']
 imageGallery: ['sb-byggtjanst2.jpg']
 team: ['anders','johanna','mats','christian']
 intro: Vi utvecklade Svensk Byggtjänsts hemsida tillsammans med byråpartnern Britny.
+subpages: 'cases'
 siteurl: http://www.byggtjanst.se
 twitterTag: ['svenskbyggtjanst']
 ---

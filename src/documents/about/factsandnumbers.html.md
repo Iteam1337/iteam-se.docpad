@@ -2,6 +2,7 @@
 title: Fakta
 layout: page
 pageOrder: 2
+subpages: 'about'
 summary: I över 18 år har vi haft tillväxt - tryggt och säkert. Vi har hållit fokus på det vi älskar - teknik och att leverera bra tjänster. 
 ---
 

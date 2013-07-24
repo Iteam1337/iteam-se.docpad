@@ -9,7 +9,7 @@ pageOrder: 4
 
 Som medarbetare hos oss arbetar man under våra tre värden: Att göra något bra, Att ha kul och att Göra att skapa värde.
 
-Vi älskar spontanansökningar. Tveka inte att skicka din ansökan till sophie.wesslau@iteam.se.
+Vi älskar spontanansökningar. Tveka inte att skicka din ansökan till [sophie.wesslau@iteam.se](mailto:sophie.wesslau@iteam.se)
 
 Hos oss får du arbeta med den allra senaste tekniken - som HTML 5, MVC3, iPhone, Windows Phone 7, nodejs och NoSQL.
 

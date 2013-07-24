@@ -32,6 +32,25 @@
         });
       }
     };
+  })
+  /**
+   * Mobile nav
+   */
+  .directive('mobileNav', function() {
+    return {
+      link: function (scope, elm, attr) {
+        elm.bind('click', function () {
+
+          if (elm.attr('data-subpage')) {
+            scope.subpages = elm.attr('data-subpage');
+          } else {
+            window.location = elm.find('a').attr('data-url');
+          }
+
+          scope.$apply();
+        });
+      }
+    };
   });
 
 })();
