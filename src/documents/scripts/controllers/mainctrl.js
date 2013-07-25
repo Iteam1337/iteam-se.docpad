@@ -15,43 +15,42 @@
      * Searches Twitter for a given twitter hashtag, mention or other
      */
     $scope.$watch('twitter', function() {
+      if ($scope.twitter) {
+        var cb = new Codebird(),
+        query  = $scope.twitter.replace(',',' OR ');
 
-      var cb = new Codebird(),
-      query  = $scope.twitter.replace(',',' OR ');
+        cb.setConsumerKey('bvqOzAMz10CWGfcWOfow','DYYE1S4jWeTX3rp4P5uJQ62a1AhlqxGRPTnkGYGx7M');
 
-      cb.setConsumerKey('bvqOzAMz10CWGfcWOfow','DYYE1S4jWeTX3rp4P5uJQ62a1AhlqxGRPTnkGYGx7M');
+        cb.__call(
+            "search_tweets",
+            "q=" + query,
+            function (reply) {
+              $scope.tweets = [];
 
-      cb.__call(
-          "search_tweets",
-          "q=" + query,
-          function (reply) {
-            $scope.tweets = [];
+              var tweets = reply.statuses,
+              tweet, text;
 
-            var tweets = reply.statuses,
-            tweet, text;
+              Object.keys(tweets).map(function (i) {
 
-            console.log(reply);
+                text = tweets[i]
+                        .text
+                        .replace(/(@)(\w*)/ig,'<a href="http://twitter.com/$2" target="_blank">$&</a>')
+                        .replace(/(#)(\w*)/ig,'<a href="http://twitter.com/search/$2" target="_blank">$&</a>');
 
-            Object.keys(tweets).map(function (i) {
+                tweet = {
+                  "text": text,
+                  "created_at": moment(tweets[i].created_at).fromNow(),
+                  "user": tweets[i].user.name
+                };
 
-              text = tweets[i]
-                      .text
-                      .replace(/(@)(\w*)/ig,'<a href="http://twitter.com/$2" target="_blank">$&</a>')
-                      .replace(/(#)(\w*)/ig,'<a href="http://twitter.com/search/$2" target="_blank">$&</a>');
+                $scope.tweets.push(tweet);
+              });
 
-              tweet = {
-                "text": text,
-                "created_at": moment(tweets[i].created_at).fromNow(),
-                "user": tweets[i].user.name
-              };
-
-              $scope.tweets.push(tweet);
-            });
-
-            $scope.$apply();
-          },
-          true // this parameter required
-      );
+              $scope.$apply();
+            },
+            true // this parameter required
+        );
+      }
     }, true);
 
   });

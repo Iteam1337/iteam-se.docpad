@@ -13,8 +13,7 @@ module.exports = function (grunt) {
       },
       dist: {
         src: [
-          'src/documents/scripts/app.js',
-          'src/documents/scripts/controllers/*.js'
+          'src/documents/scripts/**/*.js'
         ],
         dest: 'out/scripts/<%= pkg.name %>.js'
       },
