@@ -19,5 +19,25 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
                     a(href=cases.url)= cases.title
 
     if (document.pageType === 'Feedback')
-      div#sendFeedback
-        p hej
+      div#sendFeedback(ng-controller="FeedbackCtrl")
+
+        ul
+          each feedback,i in getCollection('feedback').toJSON()
+            - change = 'changeFeedback(' + i + ')'
+            li(ng-click=change)= feedback.title
+
+        each feedback,i in getCollection('feedback').toJSON()
+          - inView = 'inView == ' + i
+          div(ng-show=inView)
+            h2= feedback.title
+            p!= feedback.content
+        
+        div.common
+          label(for="name") Vad heter du?
+          input(type="text", id="name", placeholder="Namn")
+
+          label(for="email") Vad är din e-mailadress?
+          input(type="text", id="email", placeholder="E-mailadress")
+
+          label(for="onyourmind") Vad har du på hjärtat?
+          textarea(id="onyourmind")

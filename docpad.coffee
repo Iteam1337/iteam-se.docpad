@@ -79,6 +79,10 @@ docpadConfig =
     # This one, will fetch in all documents that will be outputted to the posts directory
     posts: (database) ->
       database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
+    
+    # This one, will fetch in all documents that will be outputted to the posts directory
+    feedback: (database) ->
+      database.findAllLive({relativeOutDirPath:'feedback'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the cases directory
     cases: (database) ->
