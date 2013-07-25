@@ -2,6 +2,7 @@
 title: Alexander Czigler
 layout: coworker
 jobTitle: Hacker
+subpages: 'coworkers'
 twitter: 
 instagram: 
 linkedin: zendeveloper

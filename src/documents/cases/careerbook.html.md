@@ -1,7 +1,7 @@
 ---
 title: Careerbook
 layout: case
-tags: ['systemutveckling']
+tags: ['Systemutveckling']
 images: ['careerbook1.jpg']
 imagePos: ['right']
 imageGallery: ['careerbook2.jpg']

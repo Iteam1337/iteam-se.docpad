@@ -20,7 +20,7 @@ Med vår specialist- och projektsupport får du som IT-chef eller IT-ansvarig f�
 < Kontakt mig för specialist- och projektstöd >
 
 ### Hyr en IT-avdelning
-Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och fjärrstyrning. Vi avhjälper små som stora problem snabbt.
+Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och [fjärrhjälp](/sections/help). Vi avhjälper små som stora problem snabbt.
 
 < Kontakt mig om att hyra en IT-avdelning>
 

@@ -1,6 +1,7 @@
 ---
 title: Medarbetare
 layout: section
+subpages: 'coworkers'
 tags: ['intro','page']
 pageOrder: 3
 ---
@@ -10,6 +11,9 @@ pageOrder: 3
     .coworker
       a(href=doc.url, class="name")
         img(src=doc.image, class="image")
-        .info
-          h4= doc.title
-          p(class="title")= doc.jobTitle
+       .info
+        h4
+          a(href=doc.url)= doc.title
+        p(class="title")= doc.jobTitle
+        a(href="mailto:" + doc.email)= doc.email
+        p= doc.phonenumber

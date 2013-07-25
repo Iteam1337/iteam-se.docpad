@@ -5,14 +5,8 @@
     vertical-align:top
     width: 49%
 
-    &:nth-child(2n)
-      text-align:right
-
-      .image
-        float:right
-        margin-right:0
-      .info
-        margin-right:20px
+    &:nth-child(2n-1)
+      margin-right:10px
 
     &:last-child
       margin-bottom:0
@@ -20,16 +14,23 @@
     a
       display inline-block
 
-      .image
-        border-radius:100px
-        display inline-block
+      &:hover
+        color:#333
+
+      &.name
         margin-right:20px
         vertical-align:top
         width:30%
 
-      .info
+      .image
+        border-radius:100px
         display inline-block
-        width:60%
+        vertical-align:top
+        width:100%
+
+    .info
+      display inline-block
+      width:60%
 
 #coworker
   #toAngular

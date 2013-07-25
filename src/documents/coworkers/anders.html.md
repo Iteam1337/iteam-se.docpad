@@ -10,6 +10,7 @@ email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
 image: /images/anders.jpg
 shortname: anders
+subpages: 'coworkers'
 ---
 
 ### Varför jobbar du med teknik?
