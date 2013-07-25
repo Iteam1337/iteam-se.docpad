@@ -17,3 +17,7 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
                 if tag === document.title.toLowerCase()
                   li
                     a(href=cases.url)= cases.title
+
+    if (document.pageType === 'Feedback')
+      div#sendFeedback
+        p hej
