@@ -1,7 +1,7 @@
 ---
 title: Drift & Support
 layout: page
-tags: ['Drift & support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
+tags: ['Drift & Support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 pageType: Service
 pageOrder: 3
 subpages: 'services'

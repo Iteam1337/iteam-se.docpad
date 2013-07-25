@@ -1,7 +1,7 @@
 ---
 title: Stockmusic.com
 layout: case
-tags: ['Systemutveckling','Rådgivning','Drift & support','Specialist- och projektstöd','Systemförvaltning']
+tags: ['Systemutveckling','Rådgivning','Drift & Support','Specialist- och projektstöd','Systemförvaltning']
 images: ['stockmusic1.jpg']
 imagePos: ['right']
 imageGallery: ['stockmusic2.jpg','stockmusic3.jpg']

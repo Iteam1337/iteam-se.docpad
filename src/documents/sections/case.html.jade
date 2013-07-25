@@ -10,7 +10,8 @@ subpages: 'cases'
   each doc in getCollection('cases').toJSON()
     .case
       if (doc.images)
-        img(src="/images/" + doc.images[0], class="case-image")
+        a(href=doc.url)
+          img(src="/images/" + doc.images[0], class="case-image")
       else
         img(src="http://lorempixel.com/100/100", class="case-image")
       .case-about

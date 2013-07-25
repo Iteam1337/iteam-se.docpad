@@ -9,11 +9,11 @@ pageOrder: 3
 .row-fluid.coworkers
   each doc in getCollection('coworkers').toJSON()
     .coworker
-      a(href=doc.url, class="name")
-        img(src=doc.image, class="image")
+      a.name(href=doc.url)
+        img.image(src=doc.image)
        .info
         h4
           a(href=doc.url)= doc.title
         p(class="title")= doc.jobTitle
-        a(href="mailto:" + doc.email)= doc.email
+        a.email(href="mailto:" + doc.email)= doc.email
         p= doc.phonenumber

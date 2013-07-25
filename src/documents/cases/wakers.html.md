@@ -1,7 +1,7 @@
 ---
 title: Wakers Consulting
 layout: case
-tags: ['Drift & support','Specialist- och projektstöd']
+tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['wakers.jpg']
 imagePos: ['right']
 imageGallery: ['wakers.jpg']

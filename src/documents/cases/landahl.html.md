@@ -1,7 +1,7 @@
 ---
 title: Landahl Advokatbyrå
 layout: case
-tags: ['Drift & support','Specialist- och projektstöd']
+tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['landahl.jpg']
 imagePos: ['right']
 imageGallery: ['landahl.jpg']

@@ -14,7 +14,7 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
           each cases in getCollection('cases').toJSON()
             if cases.tags
               each tag in cases.tags
-                if tag === document.title.toLowerCase()
+                if tag === document.title
                   li
                     a(href=cases.url)= cases.title
 
