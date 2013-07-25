@@ -50,11 +50,12 @@ html(lang="en", ng-app="iteamse")
   body(class=document.slug, ng-controller="MainCtrl")
     .row-fluid#header
       ul.subnav
-        each doc in getCollection('pages').toJSON()
-          if (doc.pageOrder >= 10)
-            - clazz = (document.url === doc.url) ? 'active' : null
-              a(href=doc.url, property="dc:title", class=clazz)= doc.title
-        a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
+        div.subnav-inner
+          each doc in getCollection('pages').toJSON()
+            if (doc.pageOrder >= 10)
+              - clazz = (document.url === doc.url) ? 'active' : null
+                a(href=doc.url, property="dc:title", class=clazz)= doc.title
+          a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
 
       .header-inner
         a.brand(href="/")

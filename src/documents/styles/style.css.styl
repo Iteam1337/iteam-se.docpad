@@ -46,7 +46,10 @@ box-shadow(shadow)
     a
       color:#ccc
       display: inline-block;
-      padding:0 20px
+      margin-right:30px
+
+      &:last-child
+        margin:0
 
       &.active, &:hover
         color:#ffbd09
@@ -56,7 +59,9 @@ box-shadow(shadow)
         color:#333
 
   .nav
+    left:-60px
     position:relative
+    text-align:center
     top:4px
 
   .subnav
@@ -64,15 +69,20 @@ box-shadow(shadow)
     font-size:0.6em
     margin:0
 
-    .btn
-      box-shadow(none)
+    .subnav-inner
+      margin:0 auto
+      max-width:1170px
 
-      background:#666
-      border:none
-      border-radius:0
-      padding:5px 10px
-      position:relative
-      text-shadow:none
+      .btn
+        box-shadow(none)
+
+        background:#666
+        border:none
+        border-radius:0
+        margin:0
+        padding:5px 10px
+        position:relative
+        text-shadow:none
 
   .openMobileNav
     display:none
