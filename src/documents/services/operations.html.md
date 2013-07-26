@@ -5,9 +5,11 @@ tags: ['Drift & Support','IT-review','Specialist- och projektstöd','Hyr en IT-a
 pageType: Service
 pageOrder: 3
 subpages: 'services'
-icon: '/ico/systemutveckling.png'
+icon: '/ico/driftosupport.png'
 summary: Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.
 ---
+
+<img src="/ico/driftosupport.png" alt="IT-review icon" class="operations-icon"> Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.
 
 ### IT-review
 <img src="/ico/itreview.png" alt="IT-review icon" class="operations-icon"> En IT-review innebär analys och dokumentation av din IT-miljö. Du får en tydlig översikt av allt från hårdvara och säkerhet, till mjukvara och licenser. I åtgärdsrapporten ser du också tydligt hur du kan åtgärda dagens brister och fel. Du får också en bra grund för att hålla IT-miljön och IT-dokumentationen uppdaterad på lång sikt.
