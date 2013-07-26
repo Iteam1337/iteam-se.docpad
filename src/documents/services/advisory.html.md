@@ -1,7 +1,7 @@
 ---
 title: Rådgivning
 layout: page
-tags: ['Tomsradio', Rådgivning','Förstudie','Lead tech','Proof-of-concept','Entreprenörsrådgivning']
+tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Entreprenörsrådgivning']
 pageType: Service
 pageOrder: 1
 subpages: 'services'
