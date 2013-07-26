@@ -9,7 +9,7 @@ team: ['anders']
 intro: Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste varumärken. Designarbetet gjordes tillsammans med byråpartnern Supernative.
 siteurl: http://www.absolut.absolutcompany.com
 twitterTag: ['Absolut Vodka','Absolut']
-readmorelinks: ['http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009',http://www.absolut.absolutcompany.com','http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara']
+readmorelinks: ['http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009','http://www.absolut.absolutcompany.com','http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara']
 ---
 
 ### En plattform för 126 marknader världen över

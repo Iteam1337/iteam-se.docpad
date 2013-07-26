@@ -29,8 +29,9 @@ article#case.row-fluid
         if (document.imageGallery)
           .gallery
             .title Bilder
-            each image in document.imageGallery
-              img(src="/images/" + image)
+            .imgWrap
+              each image in document.imageGallery
+                img(src="/images/" + image)
 
         if (document.tags)
           ul.relatedServices

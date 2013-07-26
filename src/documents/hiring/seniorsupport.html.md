@@ -41,8 +41,6 @@ Vår vision är att förverkliga våra kunders drömmar med teknik. I vår strä
 **Anställningsform:** Tillsvidareanställning, 6 månaders provanställning, sedan fast anställning.  
 **Start:** Höst 2013
 
-Ansök tjänsten genom att maila ditt CV och personliga brev till sophie.wesslau@iteam.se.
-Ansök tjänsten
-Maila CV och personligt brev till sophie.wesslau@iteam.se
-Ring gärna vid frågor:
-0702 944 055
+Ansök tjänsten genom att maila ditt CV och personliga brev till [sophie.wesslau@iteam.se](mailto:sophie.wesslau@iteam.se)
+
+**Ring gärna vid frågor:** 0702 944 055

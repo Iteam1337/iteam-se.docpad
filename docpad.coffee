@@ -7,9 +7,6 @@ docpadConfig =
   # These are variables that will be accessible via our templates
   # To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
 
-  # Always output a static environment
-  environments: static: plugins: cleanurls: enabled: false
-
   templateData:
 
     # Specify some site properties

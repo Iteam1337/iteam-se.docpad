@@ -23,12 +23,10 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
         .title Lediga tjänster
         ul
           each career in getCollection('hiring').toJSON()
-            if career
+            if career.title
               li
                 a(href=career.url)= career.title
                 p= career.summary
-            else
-              li Just nu har vi inga lediga tjänster
 
     if (document.pageType === 'Feedback')
       div#sendFeedback(ng-controller="FeedbackCtrl")
