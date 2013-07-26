@@ -3,7 +3,7 @@
   <title>Iteam.se | Vi förverkligar drömmar med teknik</title>
   <link href="http://iteam.se/atom.xml" rel="self"/>
   <link href="http://iteam.se"/>
-  <updated>2013-07-25T12:42:30.726Z</updated>
+  <updated>2013-07-26T08:21:46.927Z</updated>
   <id>http://iteam.se</id>
   <author>
     <name>Iteam Solutions AB</name>
@@ -14,7 +14,7 @@
     <entry>
       <title>This is awesome</title>
       <link href="http://iteam.se//posts/hello"/>
-      <updated>2013-07-18T09:10:15.000Z</updated>
+      <updated>2013-07-18T06:46:25.000Z</updated>
       <id>http://iteam.se//posts/hello</id>
       <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot; ng-app=&quot;iteamse&quot;&gt;
@@ -221,7 +221,7 @@ var inject = function(){
     <entry>
       <title>This is another blog post</title>
       <link href="http://iteam.se//posts/test"/>
-      <updated>2013-05-29T09:55:18.000Z</updated>
+      <updated>2013-07-18T06:46:25.000Z</updated>
       <id>http://iteam.se//posts/test</id>
       <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot; ng-app=&quot;iteamse&quot;&gt;
@@ -346,7 +346,7 @@ var inject = function(){
       &lt;div id=&quot;content&quot; class=&quot;row-fluid content&quot;&gt;
 &lt;div make-pretty=&quot;make-pretty&quot; class=&quot;row-fluid&quot;&gt;
   &lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
-    &lt;div class=&quot;post-date&quot;&gt;Wed May 29 2013&lt;/div&gt;
+    &lt;div class=&quot;post-date&quot;&gt;Thu Jul 18 2013&lt;/div&gt;
     &lt;h2 class=&quot;post-title&quot;&gt;This is another blog post&lt;/h2&gt;
     &lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;This is a &lt;strong&gt;blog post&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
