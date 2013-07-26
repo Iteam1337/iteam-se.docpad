@@ -1,5 +1,5 @@
 ---
-title: Wakers Consulting
+title: Wakers Redovisningsbyrå
 layout: case
 tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['wakers.jpg']
@@ -11,13 +11,12 @@ siteurl: http://www.wakers.se
 twitterTag: ['Wakers','Consulting']
 ---
 
-### Wakers Consulting AB – 60 användare
-Efter att i många år skött driften av Wakers IT hjälpte vi dem i övergången till att arbeta mot terminalserver istället för lokalt. Syftet med det var att minska mängden administration av klientdatorer på deras fyra kontor.
-Kontoren är sammankopplade med VPN-tunnlar som bland annat används för att effektivisera skrivarhanteringen.
-Vi kan nu fjärrstyra användare direkt på servern. Vi kan även styra individuellt vilken användare som får tillgång till vilka företag.
+### Wakers Consulting
+Efter att i många år skött driften av Wakers IT engagerades Iteam intesivt i övergången till att låta medarbetarna arbeta mot en terminalserver, istället för att arbeta lokalt. Det handlar om att hjälpa Wakers och deras ca 60 medarbetare att i vardagen kunna arbeta enklare, effektivare och säkrare. Syftet har också varit att minska mängden administration av klientdatorer på deras fyra kontor. Kontoren är sammankopplade med VPN-tunnlar som bland annat används för att effevktivisera skrivarhanteringen. Vi kan nu fjärrstyra användare direkt på servern och kan individanpassa användarnas rättigheter. Vi använder Acronis backupsystem över IPSEC mellan två av kontoren för maximal säkerhet och tillgänglighet. 
 
-Backup sker över IPSEC mellan två av kontoren. Vi använder Acronis backupsystem här.
-
+### En bred pallett program
 Vi sköter här driften av Visma Byråstöd, Tid, Skatt, Koncern samt även programvaror från Björn Lundén, Norstedts och Softone. 
-Mailservern vi kör hos Wakers är Kerio Connect, dock kopplad till en Microsoftprodukt, Outlook.
-Serverövervakning med Dell Foglight NMS.
+Mail via Kerio Connect kopplad till användarnas Outlook, samt serverövervakning med Dell Foglight NMS ger en trygg och enkel vardag.
+
+## Mer om Wakers
+Wakers är ett tillförlitligt val när det handlar om bokföring, redovisning, skatterådgivning och andra ekonomiska tjänster. En redovisningsbyrå som under 30 år hjälpt ett stort antal företag i Storstockholm. Företagsledningen är auktoriserade redovisningskonsulter. Wakers redovisningsbyrå driver fyra lokala kontor i Storstockholm. Kungsholmen, Nacka, Bromma och Danderyd. Läs mer på <a href="http://www.wakers.se" target="blank">www.wakers.se</a>.
