@@ -1,0 +1,149 @@
+.coworkers .coworker {
+  display: inline-block;
+  margin-bottom: 40px;
+  vertical-align: top;
+  width: 49%;
+}
+.coworkers .coworker:nth-child(2n-1) {
+  margin-right: 10px;
+}
+.coworkers .coworker:last-child {
+  margin-bottom: 0;
+}
+.coworkers .coworker a {
+  display: inline-block;
+}
+.coworkers .coworker a:hover {
+  color: #333;
+}
+.coworkers .coworker a.name {
+  margin-right: 20px;
+  vertical-align: top;
+  width: 30%;
+}
+.coworkers .coworker a.email {
+  font-size: 0.8em;
+}
+.coworkers .coworker a .image {
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+.coworkers .coworker .info {
+  display: inline-block;
+  width: 60%;
+}
+#coworker #toAngular {
+  display: none;
+}
+#coworker .image {
+  border-radius: 300px;
+  border: 10px solid #ffbd09;
+  margin: 0 auto;
+  padding: 5px;
+  width: 200px;
+}
+#coworker .image img {
+  border-radius: 200px;
+  width: 200px;
+}
+#coworker .name,
+#coworker .job,
+#coworker .email {
+  text-align: center;
+}
+#coworker .name {
+  margin-top: 20px;
+}
+#coworker .job {
+  margin-bottom: 20px;
+}
+#coworker .email {
+  margin-bottom: 40px;
+}
+#coworker .email a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#coworker .title {
+  -webkit-transform: translateX(-50%);
+  background: #fff;
+  font-size: 1.2em;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: -10px;
+  width: 180px;
+}
+#coworker .social-media,
+#coworker .github,
+#coworker .cases {
+  border-top: 1px solid #ccc;
+  margin-top: 40px;
+  padding-top: 40px;
+  position: relative;
+  text-align: center;
+}
+#coworker .social-media a,
+#coworker .github a,
+#coworker .cases a {
+  -webkit-transition: color 300ms ease;
+  color: #666;
+  font-size: 2em;
+}
+#coworker .social-media a > div,
+#coworker .github a > div,
+#coworker .cases a > div {
+  display: inline-block;
+  margin-right: 20px;
+}
+#coworker .social-media a:last-child > div,
+#coworker .github a:last-child > div,
+#coworker .cases a:last-child > div {
+  margin-right: 0;
+}
+#coworker .social-media a:hover,
+#coworker .github a:hover,
+#coworker .cases a:hover {
+  color: #ffbd09;
+}
+#coworker .github,
+#coworker .cases {
+  text-align: left;
+}
+#coworker .github .title,
+#coworker .cases .title {
+  width: 200px;
+}
+#coworker .github li,
+#coworker .cases li {
+  margin-bottom: 10px;
+  position: relative;
+}
+#coworker .github li a,
+#coworker .cases li a {
+  color: #ffbd09;
+  font-size: 1em;
+}
+#coworker .github li a:hover,
+#coworker .cases li a:hover {
+  color: #666;
+}
+#coworker .github li .push-time,
+#coworker .cases li .push-time {
+  color: #999;
+  font-family: 'Palatino';
+  font-size: 0.6em;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#coworker .cases .title {
+  width: 220px;
+}
+#coworker .cases li {
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+}

@@ -1,0 +1,19 @@
+#sendFeedback {
+  margin-top: 40px;
+}
+#sendFeedback ul {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+#sendFeedback ul li {
+  border-right: 1px solid #ccc;
+  color: #ffbd09;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+#sendFeedback ul li:hover {
+  color: #333;
+}

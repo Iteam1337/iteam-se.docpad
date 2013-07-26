@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="iteamse">
+  <head>
+    <!-- Meta-->
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Martin Loman | Iteam.se | Vi förverkligar drömmar med teknik</title>
+    <meta name="description" content="Iteam är en teknikbyrå i Stockholm. Genom att erbjuda goda råd, teknisk spjutspets och driftexpertis förverkligar vi din dröm Tillsammans med oss kan du få uppleva värdet av hög kvalitet, service och innovation. Vi utvecklar smarta webblösningar som t ex communities, e-handel och intranät.">
+    <meta name="keywords" content="iteam, iteamsolutions, iteam solutions, rådgivning, lead tech, proof-of-concept, entreprenörsrådgivning, systemutveckling, scrum, agil utveckling, systemdevelopment, agile, scrum-metodik, utvecklingsteam, .net, dotnet, nodejs, bootstrap, nosql, mongodb, angular, angularjs, git, github, tfs, drift &amp; support, operations, devops, IT-review, specialist- och projektstöd, hyr en IT-avdelning, systemförvaltning, arkitektur &amp; infrastruktur, säkerhetsreview
+">
+    <meta name="author" content="Iteam Solutions AB"><meta http-equiv="X-Powered-By" content="DocPad v6.46.1"/>
+    <meta name="viewport" content="width=device-width">
+    <!-- Icons-->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png"><!--[if lt IE 9]>
+    <script async src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- Styles--><link  rel="stylesheet" href="/styles/vendor.css" /><link  rel="stylesheet" href="/styles/iteamse.css" />
+  </head>
+  <body ng-controller="MainCtrl" class="coworkers-martin">
+    <div id="header" class="row-fluid">
+      <ul class="subnav">
+        <div class="subnav-inner"><a href="/sections/about" property="dc:title">Om</a><a href="/sections/press" property="dc:title">Nyheter</a><a href="/sections/posts" property="dc:title">Blogg</a><a href="/sections/tycktill" property="dc:title">Feedback</a><a href="/sections/lab" property="dc:title">Lab</a><a href="/sections/help" property="dc:title">Fjärrhjälp</a><a href="http://tfs.iteam.se" target="_blank" class="btn">Logga in</a>
+        </div>
+      </ul>
+      <div class="header-inner"><a href="/" class="brand"><img src="/images/logo.png"></a>
+        <ul class="nav"><a href="/sections/erbjudanden" property="dc:title">Tjänster</a><a href="/sections/case" property="dc:title">Case</a><a href="/sections/coworkers" property="dc:title">Medarbetare</a><a href="/sections/career" property="dc:title">Karriär</a>
+        </ul>
+        <div ng-click="mobileNav = !mobileNav; subpages = null" class="openMobileNav visible-phone">
+          <div class="etp-menu"></div>
+        </div>
+      </div>
+    </div>
+    <ul id="mobileNav" ng-show="mobileNav &amp;&amp; subpages == null" ng-animate="'slide'">
+      <li mobile-nav data-subpage='0'><a data-url="/sections/erbjudanden">Tjänster</a>
+        <div class="etp-thin-chevron-right"></div>
+      </li>
+      <li mobile-nav data-subpage='1'><a data-url="/sections/case">Case</a>
+        <div class="etp-thin-chevron-right"></div>
+      </li>
+      <li mobile-nav data-subpage='2'><a data-url="/sections/coworkers">Medarbetare</a>
+        <div class="etp-thin-chevron-right"></div>
+      </li>
+      <li mobile-nav><a data-url="/sections/career">Karriär</a>
+      </li>
+      <li mobile-nav data-subpage='4'><a data-url="/sections/about">Om</a>
+        <div class="etp-thin-chevron-right"></div>
+      </li>
+      <li mobile-nav><a data-url="/sections/press">Nyheter</a>
+      </li>
+      <li mobile-nav><a data-url="/sections/posts">Blogg</a>
+      </li>
+      <li mobile-nav><a data-url="/sections/tycktill">Feedback</a>
+      </li>
+      <li mobile-nav><a data-url="/sections/lab">Lab</a>
+      </li>
+      <li mobile-nav><a data-url="/sections/help">Fjärrhjälp</a>
+      </li>
+    </ul>
+    <div id="subpageWrap">
+      <ul ng-show="subpages == 0" ng-animate="'slide-in'" class="subpages">
+        <li ng-click="subpages = null" class="back">
+          <div class="etp-thin-chevron-left"></div><span>Tillbaka</span>
+        </li>
+        <li><a href="/services/advisory">Rådgivning</a></li>
+        <li><a href="/services/systemdevelopment">Systemutveckling</a></li>
+        <li><a href="/services/operations">Drift &amp; Support</a></li>
+      </ul>
+      <ul ng-show="subpages == 1" ng-animate="'slide-in'" class="subpages">
+        <li ng-click="subpages = null" class="back">
+          <div class="etp-thin-chevron-left"></div><span>Tillbaka</span>
+        </li>
+        <li><a href="/cases/absolutforum">ABSOLUT FORUM</a></li>
+        <li><a href="/cases/beckers">Beckers.se</a></li>
+        <li><a href="/cases/careerbook">Careerbook</a></li>
+        <li><a href="/cases/carlstedt">Carlstedt Arkitekter</a></li>
+        <li><a href="/cases/landahl">Landahl Advokatbyrå</a></li>
+        <li><a href="/cases/moraarmatur">Mora Armatur</a></li>
+        <li><a href="/cases/radicalfm">Radical.FM</a></li>
+        <li><a href="/cases/sesastra">SES Astra</a></li>
+        <li><a href="/cases/shakemyworld">Shake My World</a></li>
+        <li><a href="/cases/stockmusic">Stockmusic.com</a></li>
+        <li><a href="/cases/amabv">Svensk Byggtjänsts AMA Beskrivningsverktyg</a></li>
+        <li><a href="/cases/svenskbyggtjanst">Svensk Byggtjänsts Byggtjanst.se</a></li>
+        <li><a href="/cases/omvarldsbevakning">Svensk Byggtjänsts Omvärldsbevakning</a></li>
+        <li><a href="/cases/projektbevakning">Svensk Byggtjänsts Projektbevakning</a></li>
+        <li><a href="/cases/tomsradio">Tomsradio</a></li>
+        <li><a href="/cases/wakers">Wakers Consulting</a></li>
+      </ul>
+      <ul ng-show="subpages == 2" ng-animate="'slide-in'" class="subpages">
+        <li ng-click="subpages = null" class="back">
+          <div class="etp-thin-chevron-left"></div><span>Tillbaka</span>
+        </li>
+        <li><a href="/coworkers/alexander">Alexander Czigler</a></li>
+        <li><a href="/coworkers/anders">Anders Bornholm</a></li>
+        <li><a href="/coworkers/christian">Christian Landgren</a></li>
+        <li><a href="/coworkers/dennis">Dennis Pettersson</a></li>
+        <li><a href="/coworkers/hans">Hans Rollman</a></li>
+        <li><a href="/coworkers/johan">Johan Öbrink</a></li>
+        <li><a href="/coworkers/johanna">Johanna Gustafsson</a></li>
+        <li><a href="/coworkers/maria">Maria Sölscher</a></li>
+        <li><a href="/coworkers/martin">Martin Loman</a></li>
+        <li><a href="/coworkers/mats">Mats Egardt</a></li>
+        <li><a href="/coworkers/rasmus">Rasmus Fredriksson</a></li>
+        <li><a href="/coworkers/rickard">Rickard Laurin</a></li>
+        <li><a href="/coworkers/sophie">Sophie Raland Wesslau</a></li>
+      </ul>
+      <ul ng-show="subpages == 4" ng-animate="'slide-in'" class="subpages">
+        <li ng-click="subpages = null" class="back">
+          <div class="etp-thin-chevron-left"></div><span>Tillbaka</span>
+        </li>
+        <li><a href="/about/contact">Kontakt</a></li>
+        <li><a href="/about/factsandnumbers">Iteam i siffror</a></li>
+        <li><a href="/about/history">Historia</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div id="content" class="row-fluid content">
+<article id="coworker" ng-controller="CoworkerCtrl">
+  <div class="row-fluid">
+    <div class="image"><img src="/images/martin.jpg"/></div>
+    <div class="information">
+      <h1 class="name">Martin Loman</h1>
+      <div class="job">Senior webbutvecklare</div>
+      <div class="email"><a href="mailto:martin.loman@iteam.se">martin.loman@iteam.se</a>
+        <div class="phone">0707 - 22 70 24</div>
+      </div>
+      <div class="desc"><h3>Varför jobbar du med teknik?</h3>
+<p>Äpplet föll inte långt från trädet den här gången. Jag gillar de klara regler för problemlösning som tekniken sätter. Den skapar ibland hinder men också mängder av nya möjligheter. Jag slutar aldrig att utmanas.</p>
+<h3>Specialistkompetens</h3>
+<p>Att få fart på SQL-frågor i SQL Server. Något jag får använda allt mer sällan nu för tiden.</p>
+<h3>Bakgrund</h3>
+<p>Datateknik på KTH, examen -99. Då var det glada dagar. Jag överlevde kraschen och har gjort 10+ år som IT-konsult inom systemutveckling på Microsoftplattformen.</p>
+<h3>Superkraft</h3>
+<p>Cyklar snabbare än lokaltrafiken till jobbet.</p>
+</div>
+      <ul class="cases">
+        <div class="title">Medverkande i case</div>
+        <li><a href="/cases/beckers">Beckers.se</a></li>
+      </ul>
+      <div class="social-media">
+        <div class="title">Sociala medier</div><a href="http://twitter.com/martinloman">
+          <div class="ets-c-twitter"></div></a><a href="http://linkedin.com/martinloman">
+          <div class="ets-c-linkedin"></div></a><a href="http://instagram.com/martinloman">
+          <div class="ets-instagram"></div></a>
+      </div>
+      <ul ng-show="github" class="github">
+        <div class="title">Senaste på Github</div>
+        <li ng-repeat="git in github"><a ng-href="https://github.com/{{git.repo.name}}" target="_blank" class="push-title">{{git.repo.name}}</a>
+          <div class="push-time"> {{git.created_at}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</article></div>
+    </div>
+    <div id="footer">
+      <div id="address">
+        <ul>
+          <li class="company">Iteam Solutions AB</li>
+          <li class="address">Tegnérgatan 28, 113 59 STOCKHOLM</li>
+          <li>Telefon: 08-267090</li>
+          <li>Organisationsnr: 556551-6928</li>
+        </ul>
+      </div>
+      <div id="followUs"><a href="https://www.facebook.com/IteamSolutions">
+          <div class="ets-c-facebook"></div></a><a href="http://twitter.com/iteam1337">
+          <div class="ets-c-twitter"></div></a><a href="http://instagram.com/iteam1337">
+          <div class="ets-instagram"></div></a></div>
+    </div>
+    <!-- Scripts--><script >(function(){
+	/* Did we just livereload? */
+var log = true && localStorage && console && console.log && true;
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReloaded at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var socket = io.connect('/docpad-livereload');
+	socket.on('regenerated',function(){
+		if ( log ) {
+	localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+}
+document.location.reload();
+	});
+};
+	if ( typeof io !== 'undefined' ) {
+		listen();
+	} else {
+		/* Inject socket.io into our page then listen once loaded */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = true;
+	t.src = '/socket.io/socket.io.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t,s);
+};
+		var readyStateCheckInterval = setInterval(function() {
+  if (document.readyState === "complete") {
+    inject();
+    clearInterval(readyStateCheckInterval);
+  }
+}, 10);
+	}
+})();</script><script defer="defer"  src="/scripts/vendor.js"></script><script defer="defer"  src="/scripts/iteamse.js"></script>
+  </body>
+</html>

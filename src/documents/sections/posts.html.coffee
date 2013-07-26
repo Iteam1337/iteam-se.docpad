@@ -4,17 +4,31 @@ layout: page
 pageOrder: 12
 ---
 
+formatDate = (datestring) ->
+  weeksdays = ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag', 'Söndag']
+  months = ['januari', 'februari', 'mars', 'april', 'maj', 'juni', 'juli', 'augusti', 'september', 'oktober', 'november', 'december']
+
+  newdate = new Date(datestring)
+  year = newdate.getFullYear()
+  month = months[newdate.getMonth()]
+  weekday = weeksdays[newdate.getDay()]
+  day = newdate.getDate()
+
+  return weekday + ' ' + day + ' ' + month + ' ' + year
+
+
 entries = (@feedr.feeds.blogs?.entry or [])
 if entries.length isnt 0 then div class:"blog", ->
   for entry in entries
     section class: "post", datetime: entry.updated, ->
       header ->
-        div class:"date", ->
-          entry.updated
-        a class: "title", href: entry.link['@'].href, target:"_blank", ->
-          entry.title
+        div class:"post-date", ->
+          formatDate(entry.updated)
+        h2 class: "post-title", ->
+          a href: entry.link['@'].href, target:"_blank", ->
+            entry.title
       article ->
-        entry.summary
+        entry.content['#']
 
   # //- each doc in getCollection('posts').toJSON()
   # //-   section(class="post")

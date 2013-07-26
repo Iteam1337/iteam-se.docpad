@@ -1,0 +1,255 @@
+/**
+ * Big screens > 1200px
+ */
+@media (min-width:1200px) {
+  .container {
+    max-width: 100%;
+  }
+  .container > div {
+    display: inline-block;
+  }
+  #header .header-inner {
+    max-width: 1170px;
+  }
+  #cases .case {
+    display: inline-block;
+    margin-right: 3%;
+    vertical-align: top;
+    width: 31.1%;
+  }
+  #cases .case:nth-child(3n) {
+    margin: 0;
+  }
+  #cases .case .case-image {
+    display: block;
+    height: 150px;
+    margin: 0 auto 20px;
+    width: auto;
+  }
+  #cases .case .case-about {
+    width: 100%;
+  }
+  #case {
+    margin: 40px auto 0;
+    max-width: 100%;
+  }
+  #case .about {
+    width: 100%;
+  }
+  #case .about .content > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+  #case .about .content .text {
+    width: 50%;
+  }
+  #case .about .content .information {
+    margin-left: 40px;
+    width: 40%;
+  }
+  .coworkers .coworker {
+    width: 32%;
+  }
+  .coworkers .coworker:nth-child(2n) {
+    text-align: left;
+  }
+  .coworkers .coworker:nth-child(2n) .image {
+    float: none;
+    margin-right: 20px;
+  }
+  .coworkers .coworker:nth-child(2n) .info {
+    margin: 0;
+  }
+  #footer {
+    max-width: 100%;
+    width: 1170px;
+  }
+}
+/**
+ * iPad landscape
+ */
+@media (max-width:979px) and (min-width:768px) {
+  #case img.right {
+    float: right;
+    position: relative;
+    right: 0;
+    width: 300px;
+  }
+  #case .about {
+    width: 100%;
+  }
+}
+/**
+ * iPad portrait
+ */
+@media (max-width:767px) {
+  body {
+    padding: 0;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+/**
+ * iPhone
+ */
+@media (max-width:480px) {
+  iframe {
+    height: auto;
+  }
+  a.btn {
+    font-family: 'Palatino', sans-serif;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  .container {
+    margin-top: 0;
+  }
+  #startpage {
+    margin-top: 40px;
+  }
+  #header {
+    padding: 20px 10px 5px 20px;
+    text-align: left;
+  }
+  #header .header-inner {
+    margin: 0;
+  }
+  #header .brand {
+    width: 80px;
+  }
+  #header #nowplaying {
+    margin-bottom: 20px;
+  }
+  #header .nav,
+  #header .subnav {
+    display: none;
+  }
+  #header .openMobileNav {
+    color: #fff;
+    position: relative;
+  }
+  #header .openMobileNav .etp-menu {
+    position: absolute;
+    right: 0;
+    top: -9px;
+  }
+  #mobileNav,
+  ul.subpages {
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -khtml-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background: #333;
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+  }
+  #mobileNav .back,
+  ul.subpages .back {
+    background: #2b2b2b;
+    color: #999;
+    cursor: pointer;
+  }
+  #mobileNav > li,
+  ul.subpages > li {
+    -moz-transition: background 300ms ease;
+    -webkit-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    -khtml-transition: background 300ms ease;
+    transition: background 300ms ease;
+    padding: 10px 20px;
+    position: relative;
+  }
+  #mobileNav > li:hover,
+  ul.subpages > li:hover {
+    background: #444;
+  }
+  #mobileNav > li > div,
+  ul.subpages > li > div {
+    color: #999;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+  }
+  #mobileNav a,
+  ul.subpages a {
+    display: block;
+  }
+  #mobileNav a:hover,
+  ul.subpages a:hover {
+    color: #ffbd09;
+    text-decoration: none;
+  }
+  #mobileNav a.active,
+  ul.subpages a.active {
+    color: #fff;
+  }
+  #navSubpages {
+    display: none;
+  }
+  ul.subpages > li > div {
+    left: 20px;
+    right: auto;
+  }
+  ul.subpages > li > span {
+    margin-left: 30px;
+  }
+  #cases .case .case-about {
+    width: 100%;
+  }
+  #cases .case .case-image {
+    display: block;
+    height: 150px;
+    margin: 0 auto 20px;
+    width: auto;
+  }
+  #case img.right {
+    display: none;
+  }
+  #case .about .content .team li {
+    display: block;
+    width: 100%;
+  }
+  .coworkers .coworker {
+    width: 100%;
+  }
+  .coworkers .coworker:nth-child(2n) {
+    text-align: left;
+  }
+  .coworkers .coworker:nth-child(2n) .image {
+    float: none;
+    margin-right: 20px;
+  }
+  .coworkers .coworker:nth-child(2n) .info {
+    margin-right: 0;
+  }
+  #coworker {
+    margin-top: 40px;
+  }
+  #coworker .cases li {
+    text-align: left;
+    width: 100%;
+  }
+  #coworker .github li a {
+    display: inline-block;
+    font-size: 0.8em;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #page .history .year {
+    left: 0;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  #footer {
+    margin: 40px 20px 0;
+  }
+  #footer #followUs {
+    text-align: left;
+    width: 100%;
+  }
+}
