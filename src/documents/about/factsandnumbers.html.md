@@ -15,15 +15,15 @@ Vi håller fokus på det vi älskar - teknik och att leverera bra tjänster. Vi 
 
 
 ### Omsättning [MSEK]
-<canvas id="turnoverNumbers" width=840 height=300></canvas>
+<canvas id="turnoverNumbers" width=700 height=300></canvas>
 
 ### Antal medarbetare
-<canvas id="employeeNumbers" width=840 height=300></canvas>
+<canvas id="employeeNumbers" width=700 height=300></canvas>
 
 Källa: Bolagsverket, Creditsafe, och <a href="http://www.allabolag.se/5565516928/Iteam_Solutions_AB" target="blank">Allabolag</a> 
 
 ### Fördelning mellan verksamhetsområden
-<canvas id="businessareaNumbers" width=840 height=300></canvas>
+<canvas id="businessareaNumbers" width=700 height=300></canvas>
 <center>
 <div class="legend">
 	<div class="advice">
