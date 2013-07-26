@@ -80,7 +80,7 @@ docpadConfig =
     posts: (database) ->
       database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
     
-    # This one, will fetch in all documents that will be outputted to the posts directory
+    # This one, will fetch in all documents that will be outputted to the feedback directory
     feedback: (database) ->
       database.findAllLive({relativeOutDirPath:'feedback'},[pageOrder:1])
 
@@ -103,6 +103,10 @@ docpadConfig =
     # This one, will fetch in all documents that will be outputted to the services directory
     about: (database) ->
       database.findAllLive({relativeOutDirPath:'about'},[pageOrder:1])
+
+    # This one, will fetch in all documents that will be outputted to the hiring directory
+    hiring: (database) ->
+      database.findAllLive({relativeOutDirPath:'hiring'},[pageOrder:1])
 
   # =================================
   # Plugin Configuration

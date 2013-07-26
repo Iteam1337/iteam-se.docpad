@@ -4,7 +4,13 @@ box-sizing(model)
   -moz-box-sizing model
 
 #page
-  #connectedCases
+  li
+    font-family: 'Palatino'
+    line-height: 1.75
+    list-style: circle
+    margin-left: 20px
+
+  #connectedCases, #opportunities
     border-top:1px solid #ccc;
     margin-top:40px;
     padding-top:20px
@@ -20,13 +26,24 @@ box-sizing(model)
       text-align: center;
       top: -35px;
       width: 180px;
-
+  
+  #connectedCases
     ul
       li
         display inline-block
         margin-bottom:20px
         text-align:center
         width:49%
+
+  #opportunities
+    ul
+      li
+        list-style:none
+        margin-left:0
+
+        a
+          display block
+          margin-bottom:20px
 
   .operations-icon
     float:right
