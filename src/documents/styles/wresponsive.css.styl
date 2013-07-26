@@ -38,8 +38,8 @@ transition(args)
 
       .case-image
         display block
-        height:150px
         margin:0 auto 20px
+        max-height:150px
         width:auto
 
       .case-about
@@ -158,6 +158,7 @@ transition(args)
     transform(translate3d(0,0,0))
 
     background:#333
+    display:block
     margin-top:10px
     position absolute
     width:100%
@@ -191,6 +192,9 @@ transition(args)
 
       &.active
         color:#fff
+  
+  #subpageWrap
+    display:block
 
   #navSubpages
     display:none

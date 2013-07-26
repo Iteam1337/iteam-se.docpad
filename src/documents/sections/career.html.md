@@ -12,7 +12,7 @@ Som medarbetare hos oss arbetar man med guidning av våra tre grundläggande vä
 Iteam är en arbetsplats med intressanta utmaningar och mycket stimulans – att ha kul på jobbet är viktigt. Det är en självklarhet att du är med och formar din egen roll och styr över hur du löser dina uppgifter. Vi delar våra erfarenheter med varandra på kontoret och våra kollegor i branschen på vår blogg http://tekniken.nu.
 
 ### Got talent? - spontanansök här.
-För oss är det viktigt att hitta rätt person, en som passar in i vårt gäng. Det spelar ingen roll om du har en bra utbildning i grunden eller om du skaffat dig din erfarenhet på egen hand. Vi letar efter dig som har en spännande bakgrund - och som letar efter än mer spänning och utmaningar framöver. Vi älskar spontanansökningar - så tveka inte att [skicka din ansökan](mailto:carreer@iteam.se) till oss.
+För oss är det viktigt att hitta rätt person, en som passar in i vårt gäng. Det spelar ingen roll om du har en bra utbildning i grunden eller om du skaffat dig din erfarenhet på egen hand. Vi letar efter dig som har en spännande bakgrund - och som letar efter än mer spänning och utmaningar framöver. Vi älskar spontanansökningar - så tveka inte att [skicka din ansökan](mailto:career@iteam.se) till oss.
 
 <form action="">
 	<input type="file">

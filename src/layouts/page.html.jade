@@ -32,12 +32,14 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
             h2= feedback.title
             p!= feedback.content
         
-        div.common
-          label(for="name") Vad heter du?
-          input(type="text", id="name", placeholder="Namn")
+        div.row-fluid.common
+          .span4
+            label(for="name") Vad heter du?
+            input(type="text", id="name", placeholder="Namn")
 
-          label(for="email") Vad är din e-mailadress?
-          input(type="text", id="email", placeholder="E-mailadress")
+            label(for="email") Vad är din e-mailadress?
+            input(type="text", id="email", placeholder="E-mailadress")
 
-          label(for="onyourmind") Vad har du på hjärtat?
-          textarea(id="onyourmind")
+          .span8
+            label(for="onyourmind") Vad har du på hjärtat?
+            textarea(id="onyourmind")

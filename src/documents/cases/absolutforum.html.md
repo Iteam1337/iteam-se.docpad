@@ -9,7 +9,6 @@ team: ['anders']
 intro: Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste varumärken. Designarbetet gjordes tillsammans med byråpartnern Supernative.
 siteurl: http://www.absolut.absolutcompany.com
 twitterTag: ['Absolut Vodka','Absolut']
-readmorelinks: ['http://länkEtt.se','http://länkTvå.com']
 ---
 
 ### En plattform för 126 marknader världen över
