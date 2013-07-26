@@ -1,10 +1,10 @@
 ---
 title: Beckers.se
 layout: case
-tags: ['Systemutveckling','Systemförvaltning']
+tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
 images: ['beckers1.jpg']
 imagePos: ['right']
-imageGallery: ['beckers2.jpg']
+imageGallery: ['beckers2.jpg','beckers3.jpg']
 team: ['anders','johanna','martin','dennis','rickard','maria']
 intro: Vi utvecklade Beckers.se tillsammans med byråpartnern Klirr och lanserade i augusti 2012.
 siteurl: http://www.beckers.se
