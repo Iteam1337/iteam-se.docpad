@@ -25,7 +25,15 @@
   margin-left: 20px;
   width: 75px;
 }
-#page .git a {
+#page .press li {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+#page .press li .post-title {
+  display: block;
+  margin: 20px 0;
+}
+#page .press .git a {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -38,10 +46,11 @@
   padding: 10px;
   width: 100%;
 }
-#page .git .simple {
+#page .press .git .simple,
+#page .press .git .post-date {
   display: none;
 }
-#page .yarpp-related-rss,
-#page article a[rel="nofollow"] {
+#page .press .yarpp-related-rss,
+#page .press article a[rel="nofollow"] {
   display: none;
 }
