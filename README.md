@@ -1,20 +1,14 @@
 ## This is the official iteam.se website
-We are now open-sourcing it and you are free to fork it and create your own. This site is built upon a lot of efforts from the open-source community and the main stuff is put together with DocPad which is kind of a CMS for NodeJs but works differently from other CMS's - it generates the files for you so there are no editor or database, just markdown and Jade. Pretty sweet. Look it up below:
-
-
-# [Twitter Bootstrap](http://twitter.github.com/bootstrap/) skeleton for [DocPad](https://github.com/bevry/docpad)
-Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.
-
+Our site is built using [docpad](https://github.com/bevry/docpad/)!
 
 ## Getting Started
-
-1. [Install DocPad](https://github.com/bevry/docpad)
 
 1. Clone the project and run the server
 
   ``` bash
   git clone git://github.com/docpad/twitter-bootstrap.docpad.git
-  cd twitter-bootstrap.docpad
+  git clone git@github.com:Iteam1337/iteam-se.docpad.git iteam-se
+  cd iteam-se
   npm install
   docpad run
   ```
@@ -26,16 +20,7 @@ Simple and flexible HTML, CSS, and Javascript for popular user interface compone
 
 ## License
 
-This skeleton is made ["public domain"](http://en.wikipedia.org/wiki/Public_domain) using the [Creative Commons Zero](http://creativecommons.org/publicdomain/zero/1.0/), as such before you publish your website you should place your desired license here and within the `LICENSE.md` file.
+Licensed under [Creative Commons Attribution-NonCommercial 3.0 Unported](http://creativecommons.org/licenses/by-nc/3.0).
+Copyright [Iteam](http://iteam.se). All rights reserved.
 
-If you are wanting to open-source your website, we suggest using the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) for content and the [MIT License](http://creativecommons.org/licenses/MIT/) for code. In which case you'd probably want to use the following as your license:
-
-  Unless stated otherwise, all content is licensed under the [Creative Commons Attribution License](http://creativecommons.org/licenses/by/3.0/) and code licensed under the [MIT License](http://creativecommons.org/licenses/MIT/), © [Your Name](http://your.website)
-
-If you are wanting to close-source your website, we'd suggest using the following:
-
-  Copyright [Your Name](http://your.website). All rights reserved.
-
-Other included things such as themes and libraries are likely already licensed by their own invidual licenses, so be sure to respect their licenses too.
-
-Thanks, the DocPad team loves you.
+Docpad is Copyrighted by [Bevry Pty Ltd](http://bevry.me) and Licensed under [MIT License](http://creativecommons.org/licenses/MIT/).
