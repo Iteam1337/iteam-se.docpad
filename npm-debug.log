@@ -1,0 +1,573 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'docpad@6.46' ]
+2 info using npm@1.3.4
+3 info using node@v0.10.6
+4 verbose cache add [ 'docpad@6.46', null ]
+5 verbose cache add name=undefined spec="docpad@6.46" args=["docpad@6.46",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'docpad@6.46',
+6 verbose parsed url   path: 'docpad@6.46',
+6 verbose parsed url   href: 'docpad@6.46' }
+7 verbose cache add name="docpad" spec="6.46" args=["docpad","6.46"]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '6.46',
+8 verbose parsed url   path: '6.46',
+8 verbose parsed url   href: '6.46' }
+9 verbose addNamed [ 'docpad', '6.46' ]
+10 verbose addNamed [ null, '>=6.46.0-0 <6.47.0-0' ]
+11 silly lockFile 5d1dd937-docpad-6-46 docpad@6.46
+12 verbose lock docpad@6.46 /Users/hrn/.npm/5d1dd937-docpad-6-46.lock
+13 silly addNameRange { name: 'docpad', range: '>=6.46.0-0 <6.47.0-0', hasData: false }
+14 verbose url raw docpad
+15 verbose url resolving [ 'https://registry.npmjs.org/', './docpad' ]
+16 verbose url resolved https://registry.npmjs.org/docpad
+17 info trying registry request attempt 1 at 11:15:56
+18 verbose etag "CZGDXTXWIO5YCCJ4C6FX0KE1Z"
+19 http GET https://registry.npmjs.org/docpad
+20 http 200 https://registry.npmjs.org/docpad
+21 silly registry.get cb [ 200,
+21 silly registry.get   { vary: 'Accept',
+21 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+21 silly registry.get     etag: '"2754ZOEW209WYB4IL1EQYCT0Z"',
+21 silly registry.get     date: 'Mon, 29 Jul 2013 09:15:57 GMT',
+21 silly registry.get     'content-type': 'application/json',
+21 silly registry.get     'content-length': '2179461' } ]
+22 silly addNameRange number 2 { name: 'docpad', range: '>=6.46.0-0 <6.47.0-0', hasData: true }
+23 silly addNameRange versions [ 'docpad',
+23 silly addNameRange   [ '0.1.0',
+23 silly addNameRange     '0.4.0',
+23 silly addNameRange     '0.5.0',
+23 silly addNameRange     '0.5.1',
+23 silly addNameRange     '0.6.0',
+23 silly addNameRange     '0.6.1',
+23 silly addNameRange     '0.7.0',
+23 silly addNameRange     '0.8.0',
+23 silly addNameRange     '0.8.1',
+23 silly addNameRange     '0.8.3',
+23 silly addNameRange     '0.9.0',
+23 silly addNameRange     '0.9.1',
+23 silly addNameRange     '0.9.2',
+23 silly addNameRange     '0.9.3',
+23 silly addNameRange     '0.9.4',
+23 silly addNameRange     '0.9.5',
+23 silly addNameRange     '0.9.6',
+23 silly addNameRange     '0.9.7',
+23 silly addNameRange     '0.9.8',
+23 silly addNameRange     '0.9.9',
+23 silly addNameRange     '0.9.10',
+23 silly addNameRange     '0.9.11',
+23 silly addNameRange     '0.9.12',
+23 silly addNameRange     '0.9.13',
+23 silly addNameRange     '0.9.14',
+23 silly addNameRange     '0.9.15',
+23 silly addNameRange     '0.9.16',
+23 silly addNameRange     '0.9.17',
+23 silly addNameRange     '0.9.18',
+23 silly addNameRange     '0.9.19',
+23 silly addNameRange     '0.9.20',
+23 silly addNameRange     '0.9.21',
+23 silly addNameRange     '0.9.22',
+23 silly addNameRange     '0.10.0',
+23 silly addNameRange     '1.0.0',
+23 silly addNameRange     '1.0.1',
+23 silly addNameRange     '1.0.2',
+23 silly addNameRange     '1.0.3',
+23 silly addNameRange     '1.1.1',
+23 silly addNameRange     '1.1.2',
+23 silly addNameRange     '1.1.3',
+23 silly addNameRange     '1.1.4',
+23 silly addNameRange     '1.1.6',
+23 silly addNameRange     '1.2.0',
+23 silly addNameRange     '1.2.1',
+23 silly addNameRange     '1.2.2',
+23 silly addNameRange     '1.2.3',
+23 silly addNameRange     '1.2.4',
+23 silly addNameRange     '1.2.5',
+23 silly addNameRange     '1.3.0',
+23 silly addNameRange     '1.3.1',
+23 silly addNameRange     '1.3.2',
+23 silly addNameRange     '1.3.3',
+23 silly addNameRange     '1.3.5',
+23 silly addNameRange     '1.3.6',
+23 silly addNameRange     '1.3.7',
+23 silly addNameRange     '1.3.8',
+23 silly addNameRange     '1.4.0',
+23 silly addNameRange     '1.4.1',
+23 silly addNameRange     '2.0.0',
+23 silly addNameRange     '2.0.1',
+23 silly addNameRange     '2.0.2',
+23 silly addNameRange     '2.1.0',
+23 silly addNameRange     '2.1.1',
+23 silly addNameRange     '2.2.0',
+23 silly addNameRange     '2.2.1',
+23 silly addNameRange     '2.3.0',
+23 silly addNameRange     '2.3.1',
+23 silly addNameRange     '2.3.2',
+23 silly addNameRange     '2.3.3',
+23 silly addNameRange     '2.3.4',
+23 silly addNameRange     '2.3.5',
+23 silly addNameRange     '2.3.6',
+23 silly addNameRange     '2.3.7',
+23 silly addNameRange     '2.3.8',
+23 silly addNameRange     '2.4.0',
+23 silly addNameRange     '2.5.0',
+23 silly addNameRange     '2.6.0',
+23 silly addNameRange     '2.6.1',
+23 silly addNameRange     '3.2.0',
+23 silly addNameRange     '3.2.1',
+23 silly addNameRange     '3.2.2',
+23 silly addNameRange     '3.2.3',
+23 silly addNameRange     '3.2.4',
+23 silly addNameRange     '3.2.5',
+23 silly addNameRange     '3.2.6',
+23 silly addNameRange     '3.2.7',
+23 silly addNameRange     '3.2.8',
+23 silly addNameRange     '3.3.0',
+23 silly addNameRange     '3.3.1',
+23 silly addNameRange     '3.3.2',
+23 silly addNameRange     '4.0.0',
+23 silly addNameRange     '4.0.1',
+23 silly addNameRange     '4.0.2',
+23 silly addNameRange     '4.0.3',
+23 silly addNameRange     '4.1.0',
+23 silly addNameRange     '4.1.1',
+23 silly addNameRange     '5.0.0',
+23 silly addNameRange     '5.0.1',
+23 silly addNameRange     '5.0.2',
+23 silly addNameRange     '5.0.3',
+23 silly addNameRange     '5.0.4',
+23 silly addNameRange     '5.0.5',
+23 silly addNameRange     '5.1.0',
+23 silly addNameRange     '5.1.1',
+23 silly addNameRange     '5.1.2',
+23 silly addNameRange     '5.2.0',
+23 silly addNameRange     '5.2.1',
+23 silly addNameRange     '5.2.2',
+23 silly addNameRange     '5.2.3',
+23 silly addNameRange     '5.2.4',
+23 silly addNameRange     '5.2.5',
+23 silly addNameRange     '6.0.0',
+23 silly addNameRange     '6.0.2',
+23 silly addNameRange     '6.0.3',
+23 silly addNameRange     '6.0.4',
+23 silly addNameRange     '6.0.5',
+23 silly addNameRange     '6.0.6',
+23 silly addNameRange     '6.0.7',
+23 silly addNameRange     '6.0.8',
+23 silly addNameRange     '6.0.9',
+23 silly addNameRange     '6.0.10',
+23 silly addNameRange     '6.0.11',
+23 silly addNameRange     '6.0.12',
+23 silly addNameRange     '6.0.13',
+23 silly addNameRange     '6.0.14',
+23 silly addNameRange     '6.1.0',
+23 silly addNameRange     '6.1.2',
+23 silly addNameRange     '6.1.3',
+23 silly addNameRange     '6.2.0',
+23 silly addNameRange     '6.3.0',
+23 silly addNameRange     '6.3.1',
+23 silly addNameRange     '6.3.2',
+23 silly addNameRange     '6.3.3',
+23 silly addNameRange     '6.4.0',
+23 silly addNameRange     '6.4.1',
+23 silly addNameRange     '6.4.2',
+23 silly addNameRange     '6.5.0-dev',
+23 silly addNameRange     '6.5.1-dev',
+23 silly addNameRange     '6.5.2-dev',
+23 silly addNameRange     '6.5.3-dev',
+23 silly addNameRange     '6.5.4',
+23 silly addNameRange     '6.5.5',
+23 silly addNameRange     '6.5.6',
+23 silly addNameRange     '6.5.7',
+23 silly addNameRange     '6.6.1',
+23 silly addNameRange     '6.6.2',
+23 silly addNameRange     '6.6.3',
+23 silly addNameRange     '6.6.4',
+23 silly addNameRange     '6.6.5',
+23 silly addNameRange     '6.6.6',
+23 silly addNameRange     '6.6.7',
+23 silly addNameRange     '6.6.8',
+23 silly addNameRange     '6.7.0',
+23 silly addNameRange     '6.7.1',
+23 silly addNameRange     '6.7.2',
+23 silly addNameRange     '6.7.3',
+23 silly addNameRange     '6.7.4',
+23 silly addNameRange     '6.8.0',
+23 silly addNameRange     '6.8.1',
+23 silly addNameRange     '6.8.2',
+23 silly addNameRange     '6.8.3',
+23 silly addNameRange     '6.8.4',
+23 silly addNameRange     '6.9.0',
+23 silly addNameRange     '6.9.1',
+23 silly addNameRange     '6.9.2',
+23 silly addNameRange     '6.10.0',
+23 silly addNameRange     '6.11.0',
+23 silly addNameRange     '6.11.1',
+23 silly addNameRange     '6.12.0',
+23 silly addNameRange     '6.12.1',
+23 silly addNameRange     '6.13.0',
+23 silly addNameRange     '6.13.1',
+23 silly addNameRange     '6.13.2',
+23 silly addNameRange     '6.13.3',
+23 silly addNameRange     '6.13.4',
+23 silly addNameRange     '6.14.0',
+23 silly addNameRange     '6.15.0',
+23 silly addNameRange     '6.16.0',
+23 silly addNameRange     '6.17.0',
+23 silly addNameRange     '6.17.1',
+23 silly addNameRange     '6.17.2',
+23 silly addNameRange     '6.17.3',
+23 silly addNameRange     '6.18.0',
+23 silly addNameRange     '6.19.0',
+23 silly addNameRange     '6.20.0',
+23 silly addNameRange     '6.20.1',
+23 silly addNameRange     '6.21.0',
+23 silly addNameRange     '6.21.1',
+23 silly addNameRange     '6.21.2',
+23 silly addNameRange     '6.21.3',
+23 silly addNameRange     '6.21.4',
+23 silly addNameRange     '6.21.5',
+23 silly addNameRange     '6.21.6',
+23 silly addNameRange     '6.21.7',
+23 silly addNameRange     '6.21.8',
+23 silly addNameRange     '6.21.9',
+23 silly addNameRange     '6.21.10',
+23 silly addNameRange     '6.22.0',
+23 silly addNameRange     '6.23.0',
+23 silly addNameRange     '6.24.0',
+23 silly addNameRange     '6.24.1',
+23 silly addNameRange     '6.24.2',
+23 silly addNameRange     '6.25.0',
+23 silly addNameRange     '6.26.0',
+23 silly addNameRange     '6.26.1',
+23 silly addNameRange     '6.26.2',
+23 silly addNameRange     '6.27.0',
+23 silly addNameRange     '6.28.0',
+23 silly addNameRange     '6.29.0',
+23 silly addNameRange     '6.30.0',
+23 silly addNameRange     '6.30.1',
+23 silly addNameRange     '6.30.2',
+23 silly addNameRange     '6.30.3',
+23 silly addNameRange     '6.30.4',
+23 silly addNameRange     '6.30.5',
+23 silly addNameRange     '6.31.0',
+23 silly addNameRange     '6.31.1',
+23 silly addNameRange     '6.31.2',
+23 silly addNameRange     '6.31.3',
+23 silly addNameRange     '6.31.4',
+23 silly addNameRange     '6.31.5',
+23 silly addNameRange     '6.31.6',
+23 silly addNameRange     '6.32.0',
+23 silly addNameRange     '6.33.0',
+23 silly addNameRange     '6.34.0',
+23 silly addNameRange     '6.34.1',
+23 silly addNameRange     '6.34.2',
+23 silly addNameRange     '6.35.0',
+23 silly addNameRange     '6.36.0',
+23 silly addNameRange     '6.36.1',
+23 silly addNameRange     '6.36.2',
+23 silly addNameRange     '6.37.0',
+23 silly addNameRange     '6.37.1',
+23 silly addNameRange     '6.38.0',
+23 silly addNameRange     '6.38.1',
+23 silly addNameRange     '6.39.0',
+23 silly addNameRange     '6.40.0',
+23 silly addNameRange     '6.41.0',
+23 silly addNameRange     '6.42.0',
+23 silly addNameRange     '6.42.1',
+23 silly addNameRange     '6.42.2',
+23 silly addNameRange     '6.42.3',
+23 silly addNameRange     '6.43.0',
+23 silly addNameRange     '6.43.1',
+23 silly addNameRange     '6.43.2',
+23 silly addNameRange     '6.44.0',
+23 silly addNameRange     '6.45.0',
+23 silly addNameRange     '6.45.1',
+23 silly addNameRange     '6.46.0',
+23 silly addNameRange     '6.46.1',
+23 silly addNameRange     '6.46.2',
+23 silly addNameRange     '6.46.3',
+23 silly addNameRange     '6.46.4',
+23 silly addNameRange     '6.46.5' ] ]
+24 verbose addNamed [ 'docpad', '6.46.5' ]
+25 verbose addNamed [ '6.46.5', '6.46.5' ]
+26 silly lockFile 02b7faa4-docpad-6-46-5 docpad@6.46.5
+27 verbose lock docpad@6.46.5 /Users/hrn/.npm/02b7faa4-docpad-6-46-5.lock
+28 silly lockFile 7345e4cb-mjs-org-docpad-docpad-6-46-5-tgz https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz
+29 verbose lock https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz /Users/hrn/.npm/7345e4cb-mjs-org-docpad-docpad-6-46-5-tgz.lock
+30 verbose addRemoteTarball [ 'https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz',
+30 verbose addRemoteTarball   'c1f9449535beead81969a878b22ea950cacec0c3' ]
+31 info retry fetch attempt 1 at 11:16:00
+32 verbose fetch to= /var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/tmp.tgz
+33 http GET https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz
+34 http 200 https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz
+35 verbose tar unpack /var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/tmp.tgz
+36 silly lockFile 1d92609f-60540-0-8189744940027595-package tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package
+37 verbose lock tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package /Users/hrn/.npm/1d92609f-60540-0-8189744940027595-package.lock
+38 silly lockFile ecf183d3-60540-0-8189744940027595-tmp-tgz tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/tmp.tgz
+39 verbose lock tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/tmp.tgz /Users/hrn/.npm/ecf183d3-60540-0-8189744940027595-tmp-tgz.lock
+40 silly gunzTarPerm modes [ '755', '644' ]
+41 silly gunzTarPerm extractEntry package.json
+42 silly gunzTarPerm extractEntry .npmignore
+43 silly gunzTarPerm extractEntry README.md
+44 silly gunzTarPerm extractEntry CONTRIBUTING.md
+45 silly gunzTarPerm extractEntry LICENSE.md
+46 silly gunzTarPerm extractEntry bin/docpad
+47 silly gunzTarPerm extractEntry bin/docpad-compile
+48 silly gunzTarPerm extractEntry bin/docpad-debug
+49 silly gunzTarPerm extractEntry bin/docpad-server
+50 silly gunzTarPerm extractEntry bin/docpad-trace
+51 silly gunzTarPerm extractEntry locale/en.cson
+52 silly gunzTarPerm extractEntry out/main.js
+53 silly gunzTarPerm extractEntry out/bin/docpad-compile.js
+54 silly gunzTarPerm extractEntry out/bin/docpad-server.js
+55 silly gunzTarPerm extractEntry out/bin/docpad.js
+56 silly gunzTarPerm extractEntry out/lib/base.js
+57 silly gunzTarPerm extractEntry out/lib/docpad.js
+58 silly gunzTarPerm extractEntry out/lib/plugin-loader.js
+59 silly gunzTarPerm extractEntry out/lib/plugin.js
+60 silly gunzTarPerm extractEntry out/lib/testers.js
+61 silly gunzTarPerm extractEntry out/lib/util.js
+62 silly gunzTarPerm extractEntry out/lib/collections/elements.js
+63 silly gunzTarPerm extractEntry out/lib/collections/files.js
+64 silly gunzTarPerm extractEntry out/lib/collections/meta.js
+65 silly gunzTarPerm extractEntry out/lib/collections/scripts.js
+66 silly gunzTarPerm extractEntry out/lib/collections/styles.js
+67 silly gunzTarPerm extractEntry out/lib/interfaces/console.js
+68 silly gunzTarPerm extractEntry out/lib/models/document.js
+69 silly gunzTarPerm extractEntry out/lib/models/file.js
+70 silly lockFile 1d92609f-60540-0-8189744940027595-package tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package
+71 silly lockFile 1d92609f-60540-0-8189744940027595-package tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package
+72 silly lockFile ecf183d3-60540-0-8189744940027595-tmp-tgz tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/tmp.tgz
+73 silly lockFile ecf183d3-60540-0-8189744940027595-tmp-tgz tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/tmp.tgz
+74 verbose tar pack [ '/Users/hrn/.npm/docpad/6.46.5/package.tgz',
+74 verbose tar pack   '/var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package' ]
+75 verbose tarball /Users/hrn/.npm/docpad/6.46.5/package.tgz
+76 verbose folder /var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package
+77 silly lockFile 1d92609f-60540-0-8189744940027595-package tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package
+78 verbose lock tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package /Users/hrn/.npm/1d92609f-60540-0-8189744940027595-package.lock
+79 silly lockFile 7baf9498-rn-npm-docpad-6-46-5-package-tgz tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz
+80 verbose lock tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz /Users/hrn/.npm/7baf9498-rn-npm-docpad-6-46-5-package-tgz.lock
+81 silly lockFile 1d92609f-60540-0-8189744940027595-package tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package
+82 silly lockFile 1d92609f-60540-0-8189744940027595-package tar:///var/folders/0l/04wjy7b54_xbjb9p3vhq1mtc0000gn/T/npm-2013-vi-Qhtmf/1375089360540-0.8189744940027595/package
+83 silly lockFile 7baf9498-rn-npm-docpad-6-46-5-package-tgz tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz
+84 silly lockFile 7baf9498-rn-npm-docpad-6-46-5-package-tgz tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz
+85 silly lockFile 1bbdb574-rs-hrn-npm-docpad-6-46-5-package /Users/hrn/.npm/docpad/6.46.5/package
+86 verbose lock /Users/hrn/.npm/docpad/6.46.5/package /Users/hrn/.npm/1bbdb574-rs-hrn-npm-docpad-6-46-5-package.lock
+87 silly lockFile 1bbdb574-rs-hrn-npm-docpad-6-46-5-package /Users/hrn/.npm/docpad/6.46.5/package
+88 silly lockFile 1bbdb574-rs-hrn-npm-docpad-6-46-5-package /Users/hrn/.npm/docpad/6.46.5/package
+89 verbose tar unpack /Users/hrn/.npm/docpad/6.46.5/package.tgz
+90 silly lockFile 5ae46d98-rs-hrn-npm-docpad-6-46-5-package tar:///Users/hrn/.npm/docpad/6.46.5/package
+91 verbose lock tar:///Users/hrn/.npm/docpad/6.46.5/package /Users/hrn/.npm/5ae46d98-rs-hrn-npm-docpad-6-46-5-package.lock
+92 silly lockFile 7baf9498-rn-npm-docpad-6-46-5-package-tgz tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz
+93 verbose lock tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz /Users/hrn/.npm/7baf9498-rn-npm-docpad-6-46-5-package-tgz.lock
+94 silly gunzTarPerm modes [ '755', '644' ]
+95 silly gunzTarPerm extractEntry package.json
+96 silly gunzTarPerm extractEntry .npmignore
+97 silly gunzTarPerm extractEntry README.md
+98 silly gunzTarPerm extractEntry CONTRIBUTING.md
+99 silly gunzTarPerm extractEntry LICENSE.md
+100 silly gunzTarPerm extractEntry bin/docpad
+101 silly gunzTarPerm extractEntry bin/docpad-compile
+102 silly gunzTarPerm extractEntry bin/docpad-debug
+103 silly gunzTarPerm extractEntry bin/docpad-server
+104 silly gunzTarPerm extractEntry bin/docpad-trace
+105 silly gunzTarPerm extractEntry locale/en.cson
+106 silly gunzTarPerm extractEntry out/main.js
+107 silly gunzTarPerm extractEntry out/bin/docpad-compile.js
+108 silly gunzTarPerm extractEntry out/bin/docpad-server.js
+109 silly gunzTarPerm extractEntry out/bin/docpad.js
+110 silly gunzTarPerm extractEntry out/lib/base.js
+111 silly gunzTarPerm extractEntry out/lib/docpad.js
+112 silly gunzTarPerm extractEntry out/lib/plugin-loader.js
+113 silly gunzTarPerm extractEntry out/lib/plugin.js
+114 silly gunzTarPerm extractEntry out/lib/testers.js
+115 silly gunzTarPerm extractEntry out/lib/util.js
+116 silly gunzTarPerm extractEntry out/lib/collections/elements.js
+117 silly gunzTarPerm extractEntry out/lib/collections/files.js
+118 silly gunzTarPerm extractEntry out/lib/collections/meta.js
+119 silly gunzTarPerm extractEntry out/lib/collections/scripts.js
+120 silly gunzTarPerm extractEntry out/lib/collections/styles.js
+121 silly gunzTarPerm extractEntry out/lib/interfaces/console.js
+122 silly gunzTarPerm extractEntry out/lib/models/document.js
+123 silly gunzTarPerm extractEntry out/lib/models/file.js
+124 silly lockFile 5ae46d98-rs-hrn-npm-docpad-6-46-5-package tar:///Users/hrn/.npm/docpad/6.46.5/package
+125 silly lockFile 5ae46d98-rs-hrn-npm-docpad-6-46-5-package tar:///Users/hrn/.npm/docpad/6.46.5/package
+126 silly lockFile 7baf9498-rn-npm-docpad-6-46-5-package-tgz tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz
+127 silly lockFile 7baf9498-rn-npm-docpad-6-46-5-package-tgz tar:///Users/hrn/.npm/docpad/6.46.5/package.tgz
+128 verbose chmod /Users/hrn/.npm/docpad/6.46.5/package.tgz 644
+129 verbose chown /Users/hrn/.npm/docpad/6.46.5/package.tgz [ 501, 20 ]
+130 silly lockFile 7345e4cb-mjs-org-docpad-docpad-6-46-5-tgz https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz
+131 silly lockFile 7345e4cb-mjs-org-docpad-docpad-6-46-5-tgz https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz
+132 silly lockFile 02b7faa4-docpad-6-46-5 docpad@6.46.5
+133 silly lockFile 02b7faa4-docpad-6-46-5 docpad@6.46.5
+134 silly lockFile 5d1dd937-docpad-6-46 docpad@6.46
+135 silly lockFile 5d1dd937-docpad-6-46 docpad@6.46
+136 silly resolved [ { name: 'docpad',
+136 silly resolved     version: '6.46.5',
+136 silly resolved     description: 'DocPad is a language agnostic document management system. This means you write your website as documents, in whatever language you wish, and DocPad will handle the compiling, templates and layouts for you. For static documents it will generate static files, for dynamic documents it\'ll re-render them on each request. You can utilise DocPad by itself, or use it as a module your own custom system. It\'s pretty cool, and well worth checking out. We love it.',
+136 silly resolved     homepage: 'https://github.com/bevry/docpad',
+136 silly resolved     installUrl: 'http://docpad.org/install',
+136 silly resolved     upgradeUrl: 'http://docpad.org/upgrade',
+136 silly resolved     keywords:
+136 silly resolved      [ 'document management system',
+136 silly resolved        'dms',
+136 silly resolved        'content management system',
+136 silly resolved        'cms',
+136 silly resolved        'static site generator',
+136 silly resolved        'generator',
+136 silly resolved        'static file server',
+136 silly resolved        'server',
+136 silly resolved        'web',
+136 silly resolved        'web framework',
+136 silly resolved        'framework',
+136 silly resolved        'web development',
+136 silly resolved        'development',
+136 silly resolved        'dev',
+136 silly resolved        'build and deployment',
+136 silly resolved        'builder',
+136 silly resolved        'build',
+136 silly resolved        'compiler',
+136 silly resolved        'compile',
+136 silly resolved        'parser',
+136 silly resolved        'parse',
+136 silly resolved        'renderer',
+136 silly resolved        'render',
+136 silly resolved        'templating',
+136 silly resolved        'templates',
+136 silly resolved        'language agnostic',
+136 silly resolved        'website',
+136 silly resolved        'blog',
+136 silly resolved        'cli',
+136 silly resolved        'tool',
+136 silly resolved        'utility',
+136 silly resolved        'scaffold' ],
+136 silly resolved     author:
+136 silly resolved      { name: 'Bevry Pty Ltd',
+136 silly resolved        email: 'us@bevry.me',
+136 silly resolved        url: 'http://bevry.me' },
+136 silly resolved     maintainers: [ [Object] ],
+136 silly resolved     contributors:
+136 silly resolved      [ [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object],
+136 silly resolved        [Object] ],
+136 silly resolved     bugs: { url: 'https://github.com/bevry/docpad/issues' },
+136 silly resolved     repository: { type: 'git', url: 'http://github.com/bevry/docpad.git' },
+136 silly resolved     engines: { node: '>=0.8', npm: '>=1.2' },
+136 silly resolved     dependencies:
+136 silly resolved      { ambi: '~2.0.0',
+136 silly resolved        backbone: '1.0.0',
+136 silly resolved        'bal-util': '~2.3.0',
+136 silly resolved        caterpillar: '~2.0.4',
+136 silly resolved        'caterpillar-filter': '~2.0.1',
+136 silly resolved        'caterpillar-human': '~2.1.0',
+136 silly resolved        commander: '~1.3.0',
+136 silly resolved        cson: '~1.4.2',
+136 silly resolved        eachr: '~2.0.2',
+136 silly resolved        envfile: '~1.0.0',
+136 silly resolved        'event-emitter-grouped': '~2.3.0',
+136 silly resolved        express: '~3.3.1',
+136 silly resolved        extendr: '~2.1.0',
+136 silly resolved        'extract-opts': '~2.2.0',
+136 silly resolved        getmac: '~1.0.4',
+136 silly resolved        jschardet: '~1.0.2',
+136 silly resolved        'lazy-require': '~1.0.0',
+136 silly resolved        lodash: '~1.3.1',
+136 silly resolved        mime: '~1.2.9',
+136 silly resolved        progressbar: '~1.0.1',
+136 silly resolved        'query-engine': '~1.5.2',
+136 silly resolved        safefs: '~3.0.1',
+136 silly resolved        safeps: '~2.2.6',
+136 silly resolved        semver: '~2.0.7',
+136 silly resolved        superagent: '~0.15.1',
+136 silly resolved        taskgroup: '~3.1.2',
+136 silly resolved        typechecker: '~2.0.1',
+136 silly resolved        watchr: '~2.4.1',
+136 silly resolved        yamljs: '~0.1.4',
+136 silly resolved        growl: '~1.7.0' },
+136 silly resolved     optionalDependencies: { growl: '~1.7.0' },
+136 silly resolved     devDependencies:
+136 silly resolved      { 'coffee-script': '~1.6.2',
+136 silly resolved        chai: '~1.7.0',
+136 silly resolved        joe: '~1.2.0',
+136 silly resolved        'joe-reporter-console': '~1.2.1' },
+136 silly resolved     directories: { lib: './out/lib' },
+136 silly resolved     bin:
+136 silly resolved      { docpad: './bin/docpad',
+136 silly resolved        'docpad-compile': './bin/docpad-compile',
+136 silly resolved        'docpad-debug': './bin/docpad-debug',
+136 silly resolved        'docpad-server': './bin/docpad-server',
+136 silly resolved        'docpad-trace': './bin/docpad-trace' },
+136 silly resolved     scripts: { test: './node_modules/.bin/cake test' },
+136 silly resolved     main: './out/main.js',
+136 silly resolved     readme: '[![DocPad Logo](http://d.pr/i/cfmt+)](http://docpad.org "Visit the DocPad Website")\n\n# DocPad. Streamlined web development.\n\n[![Build Status](https://secure.travis-ci.org/bevry/docpad.png?branch=master)](http://travis-ci.org/bevry/docpad "Check this project\'s build status on TravisCI")\n[![NPM version](https://badge.fury.io/js/docpad.png)](https://npmjs.org/package/docpad "View this project on NPM")\n[![Gittip donate button](http://badgr.co/gittip/docpad.png)](https://www.gittip.com/docpad/ "Donate weekly to this project using Gittip")\n[![Flattr donate button](https://raw.github.com/balupton/flattr-buttons/master/badge-89x18.gif)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")\n[![PayPayl donate button](https://www.paypalobjects.com/en_AU/i/btn/btn_donate_SM.gif)](https://www.paypal.com/au/cgi-bin/webscr?cmd=_flow&SESSION=IHj3DG3oy_N9A9ZDIUnPksOi59v0i-EWDTunfmDrmU38Tuohg_xQTx0xcjq&dispatch=5885d80a13c0db1f8e263663d3faee8d14f86393d55a810282b64afed84968ec "Donate once-off to this project using Paypal")\n\nHi! I\'m DocPad, I streamline the web development process and help close the gap between experts and beginners. I\'ve been used in production by big and small companies for over a year and a half now to create [plenty of amazing and powerful web sites and applications](http://docpad.org/docs/showcase) quicker than ever before. What makes me different is instead of being a box to cram yourself into and hold you back, I\'m a freeway to what you want to accomplish, just getting out of your way and allowing you to create stuff quicker than ever before without limits. Leave the redudant stuff up to me, so you can focus on the awesome stuff.\n\nDiscover my features below, or skip ahead to the installation instructions to get started with a [fully functional pre-made website](http://docpad.org/docs/skeletons) in a few minutes from reading this.\n\n**[Watch the Screencast!](http://www.youtube.com/watch?v=hvQCXDWh7Wg&feature=share&list=PLYVl5EnzwqsQs0tBLO6ug6WbqAbrpVbNf)**\n\n\n## Features\n\n### Out of the box\n\n- Competely file based meaning there is no pesky databases that need to be installed, and for version control you get to use systems like Git and SVN which you\'re already use to (You can still hook in remote data sources if you want, DocPad doesn\'t impose any limits on you, ever)\n- Choose from plenty of community maintained [pre-made websites](http://docpad.org/docs/skeletons) to use for your next project instead of starting from scratch everytime\n- Write your documents in any language, markup, templating engine, or pre-processor you wish (we\'re truly agnostic thanks to your plugin system). You can even mix and match them when needed by combining their extensions in a rails like fashion (e.g. `coffee-with-some-eco.js.coffee.eco`)\n- Changes to your website are automatically recompiled through our built in watch system\n- Add meta data to the top of your files to be used by templating engines to display non-standard information such as titles and descriptions for your documents\n- Display custom listings of content with our powerful [Query Engine](https://github.com/bevry/query-engine/) available to your templating engines\n- Abstract out generic headers and footers into layouts using our nested layout system\n- For simple static websites easily deploy your generated website to any web server like apache or github pages. For dynamic projects deploy them to servers like [heroku](http://www.heroku.com/) or [nodejitsu](http://nodejitsu.com/) to take advantage of custom routing with [express.js](http://expressjs.com/). [Deploy guide here](http://docpad.org/docs/deploy)\n- Built-in server to save you from having to startup your own, for dynamic deployments this even supports things like clean urls, custom routes and server-side logic\n- Robust architecture and powerful plugin system means that you are never boxed in unlike traditional CMS systems, instead you can always [extend DocPad](http://docpad.org/docs/extend) to do whatever you need it to do, and you can even write to bundle common custom functionality and distribute them through the amazing node package manager [npm](http://npmjs.org/)\n- Built in support for dynamic documents (e.g. search pages, signup forms, etc.), so you can code pages that change on each request by just adding `dynamic: true` to your document\'s meta data (exposes the [express.js](http://expressjs.com/) `req` and `res` objects to your templating engine)\n- You can use it standalone, or even easily include it within your existing systems with our [API](http://docpad.org/docs/api)\n\n\n### With our amazing community maintained plugins\n\n- Use the [Live Reload](http://docpad.org/plugin/livereload/) plugin to automatically refresh your web browser whenever a change is made, this is amazing\n- Pull in remote RSS/Atom/JSON feeds into your templating engines allowing you to display your latest twitter updates or github projects easily and effortlessly using the [Feedr Plugin](http://docpad.org/plugin/feedr/)\n- Support for every templating engine and pre-processor under the sun, including  but not limited to CoffeeScript, CoffeeKup, ECO, HAML, Handlebars, Jade, Less, Markdown, PHP, Ruby, SASS and Stylus - [the full listing is here](http://docpad.org/docs/plugins)\n- Use the [Partials Plugin](http://docpad.org/plugin/partials) to abstract common pieces of code into their own individual file that can be included as much as you want\n- Syntax highlight code blocks automatically with either our [Highlight.js Plugin](http://docpad.org/plugin/highlightjs/) or [Pygments Plugin](http://docpad.org/plugin/pygments/)\n- Get SEO friendly clean URLs with our [Clean URLs Plugin](http://docpad.org/plugin/cleanurls/) (dynamic deployments only)\n- Lint your code automatically with our Lint Plugin - under construction, coming soon\n- Concatenate and minify your JavaScript and CSS assets making page loads faster for your users with our Minify Plugin - under construction, coming soon\n- Install common javascript libraries like jQuery, Backbone and Underscore directly from the command line - under construction, coming soon\n- Automatically translate your entire website into other languages with our Translation Plugin - under construction, coming soon\n- Add a admin interface to your website allowing you to edit, save and preview your changes on live websites then push them back to your source repository with the Admin Plugin - under construction, coming soon\n- Pretty much if DocPad doesn\'t already do something, it is trivial to [write a plugin](http://docpad.org/docs/extend) to do it, seriously DocPad can accomplish anything, it never holds you back, there are no limits, it\'s like super powered guardian angel\n- There are also [plenty of other plugins](http://docpad.org/docs/plugins) not listed here that are still definitely worth checking out! :)\n\n\n## People love DocPad\n\nAll sorts of people love DocPad, from first time web developers to even industry leaders and experts. In fact, people even migrate to DocPad from other systems as they love it so much. Here are some our [favourite tweets](https://twitter.com/#!/DocPad/favorites) of what people are saying about DocPad :)\n\n[![Some favourite tweets about DocPad](https://raw.github.com/bevry/docpad/dev/docs/favs.gif)](https://twitter.com/#!/DocPad/favorites)\n\n\n\n\n## [Installation](http://docpad.org/docs/install)\n\n[Click here for our latest Install Instructions](http://docpad.org/docs/install)\n\n\n## [Quick Start](http://docpad.org/docs/start)\n\n[Click here to skip ahead to our latest Quick Start Guide](http://docpad.org/docs/start)\n\n\n## What next?\n\nHere are some quick links to help you get started:\n\n- [Getting Started](http://docpad.org/docs/intro)\n- [Frequently Asked Questions](http://docpad.org/docs/faq)\n- [Showcase and Examples](http://docpad.org/docs/showcase)\n- [Guides and Tutorials](http://docpad.org/docs/)\n- [Deployment Guide](http://docpad.org/docs/deploy)\n- [Extension Guide](http://docpad.org/docs/extend)\n- [Plugins](http://docpad.org/docs/plugins)\n- [Skeletons](http://docpad.org/docs/skeletons)\n- [Troubleshooting](http://docpad.org/docs/troubleshoot)\n- [Support Channels](http://docpad.org/support)\n- [Bug Tracker](http://docpad.org/issues)\n- [IRC Chat Room: `#docpad` on freenode](http://webchat.freenode.net?channels=docpad)\n- [Everything else](http://docpad.org/docs/)\n\n\n## History\n\n[You can discover the version history inside the `History.md` file](https://github.com/bevry/docpad/blob/master/History.md#files)\n\n\n\n## License\n\nLicensed under the incredibly [permissive](http://en.wikipedia.org/wiki/Permissive_free_software_licence) [MIT License](http://creativecommons.org/licenses/MIT/)\n<br/>Copyright &copy; 2012+ [Bevry Pty Ltd](http://bevry.me)\n<br/>Copyright &copy; 2011 [Benjamin Lupton](http://balupton.com)\n\n\n\n## Special Thanks\n\nSpecial thanks to all our wonderful contributors who have helped shaped the DocPad core of today:\n\n- [Benjamin Lupton](https://github.com/balupton)\n- [Nick Crohn](https://github.com/ncrohn)\n- [eldios](https://github.com/eldios)\n- [Changwoo Park](https://github.com/pismute)\n- [Bruno Héridet](https://github.com/Delapouite)\n- [Todd Anglin](https://github.com/toddanglin)\n- [Olivier Bazoud](https://github.com/obazoud)\n- [Zhao Lei](https://github.com/firede)\n- [Aaron Powell](https://github.com/aaronpowell)\n- [Andrew Patton](https://github.com/acusti)\n- [Paul Armstrong](https://github.com/paularmstrong)\n- [Sorin Ionescu](https://github.com/sorin-ionescu)\n- [Ferrari Lee](https://github.com/Ferrari)\n- [Ben Barber](https://github.com/barberboy)\n- [Sven Vetsch](https://github.com/disenchant)\n\nAlso thanks to all the countless others who have continued to raise DocPad even higher by submitting plugins, issues reports, discussion topics, IRC chat messages, and praise on twitter. We love you.\n\nLastly, thank YOU for giving us a go, believing us, and loving us. We love you too.\n\nSincerely, the DocPad team\n\n[![Flattr this project](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/344188/balupton-on-Flattr)\n',
+136 silly resolved     readmeFilename: 'README.md',
+136 silly resolved     _id: 'docpad@6.46.5',
+136 silly resolved     dist: { shasum: 'c1f9449535beead81969a878b22ea950cacec0c3' },
+136 silly resolved     _from: 'docpad@6.46',
+136 silly resolved     _resolved: 'https://registry.npmjs.org/docpad/-/docpad-6.46.5.tgz' } ]
+137 info install docpad@6.46.5 into /usr/local/lib
+138 info installOne docpad@6.46.5
+139 info /usr/local/lib/node_modules/docpad unbuild
+140 info preuninstall docpad@6.46.1
+141 info uninstall docpad@6.46.1
+142 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild docpad@6.46.1
+143 verbose /usr/local/bin,[object Object] binRoot
+144 info /usr/local/lib/node_modules/docpad unbuild
+145 info preuninstall docpad@6.46.1
+146 info uninstall docpad@6.46.1
+147 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild docpad@6.46.1
+148 verbose /usr/local/bin,[object Object] binRoot
+149 error error rolling back Error: EACCES, unlink '/usr/local/bin/docpad'
+149 error error rolling back  docpad@6.46.5 { [Error: EACCES, unlink '/usr/local/bin/docpad'] errno: 3, code: 'EACCES', path: '/usr/local/bin/docpad' }
+150 error Error: EACCES, unlink '/usr/local/bin/docpad'
+150 error  { [Error: EACCES, unlink '/usr/local/bin/docpad'] errno: 3, code: 'EACCES', path: '/usr/local/bin/docpad' }
+151 error Please try running this command again as root/Administrator.
+152 error System Darwin 12.4.0
+153 error command "node" "/usr/local/bin/npm" "install" "-g" "docpad@6.46"
+154 error cwd /Users/hrn/Projects/iteam-se.docpad
+155 error node -v v0.10.6
+156 error npm -v 1.3.4
+157 error path /usr/local/bin/docpad
+158 error code EACCES
+159 error errno 3
+160 error stack Error: EACCES, unlink '/usr/local/bin/docpad'
+161 verbose exit [ 3, true ]
