@@ -6,7 +6,6 @@ Our site is built using [docpad](https://github.com/bevry/docpad/)!
 1. Clone the project and run the server
 
   ``` bash
-  git clone git://github.com/docpad/twitter-bootstrap.docpad.git
   git clone git@github.com:Iteam1337/iteam-se.docpad.git iteam-se
   cd iteam-se
   npm install
