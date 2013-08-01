@@ -6,7 +6,7 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
   div#page.page
     h1= document.title
     article.page-content!= content
-    
+
     if (document.pageType === 'Service')
       div#connectedCases
         .title Relaterade case
@@ -28,12 +28,12 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
                 a(href=career.url)= career.title
                 p= career.summary
 
-    if (document.pageType === 'Feedback')
-      div#sendFeedback(ng-controller="FeedbackCtrl")
+    if (document.pageType === 'Contact')
+      div#sendFeedback(ng-controller="ContactCtrl")
 
         ul
           each feedback,i in getCollection('feedback').toJSON()
-            - change = 'changeFeedback(' + i + ')'
+            - change = 'changeContact(' + i + ')'
             li(ng-click=change)= feedback.title
 
         each feedback,i in getCollection('feedback').toJSON()
@@ -41,7 +41,7 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
           div(ng-show=inView)
             h2= feedback.title
             p!= feedback.content
-        
+
         div.row-fluid.common
           .span4
             label(for="name") Vad heter du?

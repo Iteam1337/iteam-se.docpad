@@ -8,7 +8,7 @@ imageGallery: ['absolutforum2.jpg','absolutforum3.jpg']
 team: ['anders']
 intro: Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste varumärken. Designarbetet gjordes tillsammans med byråpartnern Supernative.
 siteurl: http://www.absolut.absolutcompany.com
-twitterTag: ['Absolut Vodka','Absolut']
+twitterTag: ['#Absolut-Vodka','#Absolut']
 readmorelinks: ['http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009','http://www.absolut.absolutcompany.com','http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara']
 ---
 
@@ -23,5 +23,5 @@ Ett stort fokus under projektet har legat på att göra informationen lätt till
 Alla ABSOLUT VODKAs webbtjänster nås via ABSOLUT FORUM, som tack vare de specialbyggda inloggningsmodulerna för RSA Authentication Manager erbjuder tillgång till tjänsterna med en gemensam inloggning och single sign-on.
 
 ### Iteam och Absolut Company vinnare
-EpiServer Awards 2009 för bästa intranät gick till Absolut Company, Iteam och Supernative. 
+EpiServer Awards 2009 för bästa intranät gick till Absolut Company, Iteam och Supernative.
 <iframe width="640" height="480" src="//www.youtube.com/embed/0wt60HyxK_s" frameborder="0" allowfullscreen></iframe>

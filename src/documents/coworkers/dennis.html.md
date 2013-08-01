@@ -2,12 +2,12 @@
 title: Dennis Pettersson
 layout: coworker
 jobTitle: Webbutvecklare
-twitter: ankjevel 
-instagram: ankjevel 
+twitter: ankjevel
+instagram: ankjevel
 linkedin: pub/dennis-pettersson/23/92b/896
 github: ankjevel
 email: dennis.petterson@iteam.se
-phonenumber: 0733 - 34 00 02
+phonenumber:
 image: /images/dennis.jpg
 shortname: dennis
 ---

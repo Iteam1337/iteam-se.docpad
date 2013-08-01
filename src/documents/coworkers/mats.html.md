@@ -2,10 +2,10 @@
 title: Mats Egardt
 layout: coworker
 jobTitle: Avdelningschef arkitektur, drift och support
-twitter: megardt
-instagram: 
+twitter:
+instagram:
 linkedin: pub/mats-egardt/4/321/12
-github: 
+github:
 email: mats.egardt@iteam.se
 phonenumber: 0736 - 19 80 64
 image: /images/mats.jpg

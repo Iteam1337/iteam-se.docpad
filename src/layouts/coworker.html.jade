@@ -12,6 +12,20 @@ article#coworker(ng-controller="CoworkerCtrl")
       .email
         a(href="mailto:" + document.email)= document.email
         .phone= document.phonenumber
+      .social
+        if document.twitter
+          a(href="http://twitter.com/" + document.twitter, target="_blank")
+            .ets-c-twitter
+        if document.linkedin
+          a(href="http://linkedin.com/" + document.linkedin, target="_blank")
+            .ets-c-linkedin
+        if document.instagram
+          a(href="http://instagram.com/" + document.instagram, target="_blank")
+            .ets-instagram
+        if document.github
+          #github= document.github
+          a(href="http://github.com/" + document.github, target="_blank")
+            .ets-c-github
       .desc!= content
 
       ul.cases
@@ -23,24 +37,12 @@ article#coworker(ng-controller="CoworkerCtrl")
                   li
                     a(href=cases.url)= cases.title
 
-      .social-media
-        .title Sociala medier
-        if document.twitter
-          a(href="http://twitter.com/" + document.twitter)
-            .ets-c-twitter
-
-        if document.linkedin
-          a(href="http://linkedin.com/" + document.linkedin)
-            .ets-c-linkedin
-
-        if document.instagram
-          a(href="http://instagram.com/" + document.instagram)
-            .ets-instagram
-
-        if document.github
-          #github= document.github
-          a(href="http://github.com/" + document.github)
-            .ets-c-github
+      if document.instagram
+        instagram(name= document.instagram)
+          .social-media
+            .title Instagram
+            a(ng-repeat="image in feed", ng-href="{{image.link}}", target="_blank")
+              img(ng-src="{{image.image.low_resolution.url}}")
 
       ul.github(ng-show="github")
         .title Senaste på Github
@@ -49,4 +51,3 @@ article#coworker(ng-controller="CoworkerCtrl")
           .push-time  {{git.created_at}}
 
 
-      
