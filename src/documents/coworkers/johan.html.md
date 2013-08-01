@@ -2,8 +2,8 @@
 title: Johan Öbrink
 layout: coworker
 jobTitle: Senior Hacker
-twitter: 
-instagram: 
+twitter:
+instagram: johanobrink
 linkedin: /pub/johan-öbrink/1/512/71b/
 github: JohanObrink
 email: johan.obrink@iteam.se
@@ -13,7 +13,7 @@ shortname: johan
 ---
 
 ### Varför jobbar du med teknik?
-jag jobbar med teknik av samma skäl som jag bygger Lego. För att det är kul att skapa grejer. 
+jag jobbar med teknik av samma skäl som jag bygger Lego. För att det är kul att skapa grejer.
 Om man gör den tekniska lösningen perfekt, blir den osynlig för användaren. Att bygga någonting som “bara funkar” är den yttersta utmaningen.
 
 ### Specialistkompetens

@@ -3,8 +3,8 @@ title: Alexander Czigler
 layout: coworker
 jobTitle: Hacker
 subpages: 'coworkers'
-twitter: 
-instagram: 
+twitter:
+instagram: zendeveloper
 linkedin: zendeveloper
 github: zendeveloper
 email: alexander.czigler@iteam.se

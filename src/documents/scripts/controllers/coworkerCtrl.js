@@ -4,7 +4,7 @@
 
   angular.module('iteamse').controller('CoworkerCtrl', function($scope, $http) {
 
-    var github, githubUser;
+    var github, githubUser, instagram, instaElement;
 
     $scope.github = undefined;
 

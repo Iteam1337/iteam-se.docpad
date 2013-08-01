@@ -8,7 +8,7 @@ imageGallery: ['sb-amabv1.jpg']
 team: ['anders','johanna','hans','christian','mats']
 intro: Vi utvecklade AMA Beskrivningsverktyg för ett effektivare byggverige. Design och formgivning tillsammans med byråpartnern Britny.
 siteurl: http://amabv.byggtjanst.se/Account/Logon
-twitterTag: 'svenskbyggtjanst'
+twitterTag: [ '#svenskbyggtjanst', '#svb' ]
 ---
 
 ### Google Docs-liknande beskrivningsverktyg för byggsverige

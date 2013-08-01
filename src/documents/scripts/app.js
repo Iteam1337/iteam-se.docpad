@@ -51,6 +51,38 @@
         });
       }
     };
+  })
+  /*
+  * @desc
+  *   this is used to render the instagram-elements
+  */
+  .directive("instagram", function($http) {
+    return {
+      restrict: "E",
+      link: function(scope, element, attrs) {
+        var name, url, options;
+
+        scope.feed = [];
+
+        name = attrs.name;
+        url = "http://insta-team.se/user/" + name;
+
+        options = {
+          url: url,
+          method: "GET"
+        };
+
+        $http(options)
+        .success(function(content) {
+          if (content && content.data && content.data instanceof Array) {
+            scope.feed = content.data.slice(0, 3);
+          }
+        })
+        .error(function(data) {
+          console.error(data);
+        });
+      }
+    };
   });
 
 })();
