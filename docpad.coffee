@@ -74,12 +74,12 @@ docpadConfig =
   collections:
     # For instance, this one will fetch in all documents that have pageOrder set within their meta data
     pages: (database) ->
-      database.findAllLive({relativeOutDirPath:'sections', pageOrder: $exists: true}, [pageOrder:1,title:1])
+      database.findAllLive({relativeOutDirPath:'sektion', pageOrder: $exists: true}, [pageOrder:1,title:1])
 
-    # This one, will fetch in all documents that will be outputted to the posts directory
-    posts: (database) ->
-      database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
-    
+    # This one, will fetch in all documents that will be outputted to the blogg directory
+    blogg: (database) ->
+      database.findAllLive({relativeOutDirPath:'blogg'},[date:-1])
+
     # This one, will fetch in all documents that will be outputted to the feedback directory
     feedback: (database) ->
       database.findAllLive({relativeOutDirPath:'feedback'},[pageOrder:1])
@@ -101,12 +101,16 @@ docpadConfig =
       database.findAllLive({relativeOutDirPath:'services'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the services directory
-    about: (database) ->
-      database.findAllLive({relativeOutDirPath:'about'},[pageOrder:1])
+    om: (database) ->
+      database.findAllLive({relativeOutDirPath:'om'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the hiring directory
     hiring: (database) ->
       database.findAllLive({relativeOutDirPath:'hiring'},[pageOrder:1])
+
+    # This one, will fetch in all documents that will be outputted to the hiring directory
+    testaren: (database) ->
+      database.findAllLive({relativeOutDirPath:'testaren'},[pageOrder:1])
 
   # =================================
   # Plugin Configuration

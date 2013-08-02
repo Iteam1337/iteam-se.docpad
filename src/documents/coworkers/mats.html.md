@@ -1,15 +1,21 @@
 ---
 title: Mats Egardt
+navigationTitle: Mats
+
 layout: coworker
+subpages: 'coworkers'
+shortname: mats
+
 jobTitle: Avdelningschef arkitektur, drift och support
+email: mats.egardt@iteam.se
+phonenumber: 0736 - 19 80 64
+image: /images/mats.jpg
+fullimage:
+
 twitter:
 instagram:
 linkedin: pub/mats-egardt/4/321/12
 github:
-email: mats.egardt@iteam.se
-phonenumber: 0736 - 19 80 64
-image: /images/mats.jpg
-shortname: mats
 ---
 
 ### Varför jobbar du med teknik?

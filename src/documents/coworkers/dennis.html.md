@@ -1,15 +1,21 @@
 ---
 title: Dennis Pettersson
+navigationTitle: Dennis
+
 layout: coworker
+subpages: 'coworkers'
+shortname: dennis
+
 jobTitle: Webbutvecklare
+email: dennis.petterson@iteam.se
+phonenumber:
+image: /images/dennis.jpg
+fullimage:
+
 twitter: ankjevel
 instagram: ankjevel
 linkedin: pub/dennis-pettersson/23/92b/896
 github: ankjevel
-email: dennis.petterson@iteam.se
-phonenumber:
-image: /images/dennis.jpg
-shortname: dennis
 ---
 
 ### Varför jobbar du med teknik?

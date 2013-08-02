@@ -9,9 +9,9 @@ pageOrder: 3
 .row-fluid.coworkers
   each doc in getCollection('coworkers').toJSON()
     .coworker
-      a.name(href=doc.url)
+      a.portrait(href=doc.url)
         img.image(src=doc.image)
-       .info
+      .info
         h4
           a(href=doc.url)= doc.title
         p(class="title")= doc.jobTitle

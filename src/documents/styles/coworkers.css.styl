@@ -4,12 +4,16 @@
     margin-bottom:40px
     vertical-align:top
     width: 49%
+    position relative
 
     &:nth-child(2n-1)
       margin-right:10px
 
     &:last-child
-      margin-bottom:0
+      margin-bottom 0
+
+    p
+      margin-bottom 0
 
     a
       display inline-block
@@ -17,10 +21,12 @@
       &:hover
         color:#333
 
-      &.name
-        margin-right:20px
-        vertical-align:top
-        width:30%
+      &.portrait
+        vertical-align top
+        width 30%
+        position absolute
+        top 10px
+        margin 0
 
       &.email
         font-size:0.8em
@@ -31,9 +37,16 @@
         vertical-align:top
         width:100%
 
+    .title
+      margin-bottom 5px
+      line-height 1.4em
+
     .info
       display inline-block
-      width:60%
+      width 55%
+      margin-left 25%
+      padding 0 5%
+      float right
 
 #coworker
   #toAngular
@@ -49,7 +62,7 @@
     img
       border-radius:200px
       width:200px
-  .name, .job, .email
+  .name, .job, .email, .phone
     text-align:center
 
   .name
@@ -57,21 +70,18 @@
   .job
     margin-bottom:20px
   .email
-    margin-bottom:40px
-
     a
       display inline-block
       margin-bottom:10px
 
   .title
-    -webkit-transform: translateX(-50%)
     background:#fff
     font-size:1.2em
-    left:50%
-    position:absolute
     text-align:center
-    top:-10px
     width:180px
+    margin:-72px auto 0
+    display:block
+    padding:20px 0
 
   .social
     position: relative

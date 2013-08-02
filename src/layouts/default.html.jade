@@ -59,22 +59,23 @@ html(lang="en", ng-app="iteamse")
 
       .header-inner
         a.brand(href="/")
-          img(src="/images/logo.png")   
+          img(src="/images/logo.png")
         ul.nav
-          each doc in getCollection('pages').toJSON()
+          - var pages = getCollection('pages').toJSON()
+          each doc in pages
             if (doc.pageOrder < 10)
               - clazz = (document.url === doc.url) ? 'active' : null
                 a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
         .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
           .etp-menu
-  
-    if (document.subpages)
+
+    if (!!document.subpages)
       #navSubpages
         .subpage-inner
           each subpage in getCollection(document.subpages).toJSON()
             - active = (document.url === subpage.url) ? 'active' : null
-            a(href=subpage.url, class=active)= subpage.title
+            a(href=subpage.url, class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
     ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
       each doc, i in getCollection('pages').toJSON()
@@ -107,11 +108,11 @@ html(lang="en", ng-app="iteamse")
           li Telefon: 08-267090
           li Organisationsnr: 556551-6928
       #followUs
-        a(href="https://www.facebook.com/IteamSolutions")
+        a(href="https://www.facebook.com/IteamSolutions", target="_blank")
           .ets-c-facebook
-        a(href="http://twitter.com/iteam1337")
+        a(href="http://twitter.com/iteam1337", target="_blank")
           .ets-c-twitter
-        a(href="http://instagram.com/iteam1337")
+        a(href="http://instagram.com/iteam1337", target="_blank")
           .ets-instagram
 
     // Scripts

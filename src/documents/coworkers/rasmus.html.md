@@ -1,15 +1,21 @@
 ---
 title: Rasmus Fredriksson
+navigationTitle: Rasmus
+
 layout: coworker
-jobTitle: Drift och support
+subpages: 'coworkers'
 shortname: rasmus
-image: /images/rasmus.jpg
+
+jobTitle: Drift och support
 email: rasmus.fredriksson@iteam.se
 phonenumber: 0703 - 76 66 40
-twitter: 
-instagram: 
-linkedin: 
-github: 
+image: /images/rasmus.jpg
+fullimage:
+
+twitter:
+instagram:
+linkedin:
+github:
 ---
 
 ### Varför jobbar du med teknik?

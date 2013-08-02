@@ -60,12 +60,13 @@
     return {
       restrict: "E",
       link: function(scope, element, attrs) {
-        var name, url, options;
+        var name, url, options, max;
 
         scope.feed = [];
 
         name = attrs.name;
-        url = "http://insta-team.se/user/" + name;
+        max = attrs.max ? +attrs.max : 3;
+        url = "http://insta-team.se/user/" + name + "?count=" + max;
 
         options = {
           url: url,
@@ -75,7 +76,7 @@
         $http(options)
         .success(function(content) {
           if (content && content.data && content.data instanceof Array) {
-            scope.feed = content.data.slice(0, 3);
+            scope.feed = content.data;
           }
         })
         .error(function(data) {

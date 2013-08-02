@@ -1,16 +1,21 @@
 ---
 title: Anders Bornholm
+navigationTitle: Anders
+
 layout: coworker
+subpages: 'coworkers'
+shortname: anders
+
 jobTitle: Senior hacker
+email: anders.bornholm@iteam.se
+phonenumber: '0708-62 41 90'
+image: /images/anders.jpg
+fullimage:
+
 twitter: osirisguitar
 instagram: osirisguitar
 linkedin: andersbornholm
 github: osirisguitar
-email: anders.bornholm@iteam.se
-phonenumber: '0708-62 41 90'
-image: /images/anders.jpg
-shortname: anders
-subpages: 'coworkers'
 ---
 
 ### Varför jobbar du med teknik?

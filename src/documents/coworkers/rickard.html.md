@@ -1,16 +1,21 @@
 ---
 title: Rickard Laurin
+navigationTitle: Rickard
+
 layout: coworker
+subpages: 'coworkers'
+shortname: rickard
+
 jobTitle: Webbutvecklare
-twitter: rickardlaurin
-instagram: rickardlaurin
-linkedin: in/rickardlaurin
-github: believer
 email: rickard.laurin@iteam.se
 phonenumber: '076 - 166 85 11'
 image: /images/rickard.jpg
 fullimage: /images/rickard_hel.jpg
-shortname: rickard
+
+twitter: rickardlaurin
+instagram: rickardlaurin
+linkedin: in/rickardlaurin
+github: believer
 ---
 
 ### Varför jobbar du med teknik?

@@ -11,7 +11,7 @@ article#coworker(ng-controller="CoworkerCtrl")
       .job= document.jobTitle
       .email
         a(href="mailto:" + document.email)= document.email
-        .phone= document.phonenumber
+      .phone= document.phonenumber
       .social
         if document.twitter
           a(href="http://twitter.com/" + document.twitter, target="_blank")
@@ -38,7 +38,7 @@ article#coworker(ng-controller="CoworkerCtrl")
                     a(href=cases.url)= cases.title
 
       if document.instagram
-        instagram(name= document.instagram)
+        instagram(name= document.instagram, ng-show="!!feed")
           .social-media
             .title Instagram
             a(ng-repeat="image in feed", ng-href="{{image.link}}", target="_blank")

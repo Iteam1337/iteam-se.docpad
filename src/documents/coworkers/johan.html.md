@@ -1,15 +1,21 @@
 ---
 title: Johan Öbrink
+navigationTitle: Johan
+
 layout: coworker
+subpages: 'coworkers'
+shortname: johan
+
 jobTitle: Senior Hacker
+email: johan.obrink@iteam.se
+phonenumber: 0706 - 82 91 21
+image: /images/johan.jpg
+fullimage:
+
 twitter:
 instagram: johanobrink
 linkedin: /pub/johan-öbrink/1/512/71b/
 github: JohanObrink
-email: johan.obrink@iteam.se
-phonenumber: 0706 - 82 91 21
-image: /images/johan.jpg
-shortname: johan
 ---
 
 ### Varför jobbar du med teknik?

@@ -1,16 +1,21 @@
 ---
 title: Alexander Czigler
+navigationTitle: Alexander
+
 layout: coworker
-jobTitle: Hacker
 subpages: 'coworkers'
+shortname: alexander
+
+jobTitle: Hacker
+email: alexander.czigler@iteam.se
+phonenumber: '0727-14 50 60'
+image: /images/alexander.jpg
+fullimage:
+
 twitter:
 instagram: zendeveloper
 linkedin: zendeveloper
 github: zendeveloper
-email: alexander.czigler@iteam.se
-phonenumber: '0727-14 50 60'
-image: /images/alexander.jpg
-shortname: alexander
 ---
 
 ### Varför jobbar du med teknik?

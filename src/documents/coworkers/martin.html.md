@@ -1,15 +1,21 @@
 ---
 title: Martin Loman
+navigationTitle: Martin
+
 layout: coworker
+subpages: 'coworkers'
+shortname: martin
+
 jobTitle: Senior webbutvecklare
-twitter: martinloman
-instagram: martinloman
-linkedin: martinloman
-github: 
 email: martin.loman@iteam.se
 phonenumber: 0707 - 22 70 24
 image: /images/martin.jpg
-shortname: martin
+fullimage:
+
+twitter: martinloman
+instagram: martinloman
+linkedin: martinloman
+github:
 ---
 
 ### Varför jobbar du med teknik?

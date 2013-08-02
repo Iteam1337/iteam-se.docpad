@@ -15,14 +15,14 @@ title: 'Iteam.se - vi förverkligar drömmar med teknik'
     h2 Senaste från bloggen
     p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
     ul.linklist
-      each doc in getCollection('posts').toJSON()
+      each doc in getCollection('blogg').toJSON()
         li
           a(href=doc.url)= doc.title
   .span6
     h2 Senaste nyheter
     p Här följer du våra senaste pressmeddelanden, våra kunders senaste nyheter och senaste branschnytt.
     ul.linklist
-      each doc in getCollection('posts').toJSON()
+      each doc in getCollection('blogg').toJSON()
         li
           a(href=doc.url)= doc.title
 
