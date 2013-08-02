@@ -1,5 +1,9 @@
 - var scripts = getBlock('scripts')
 - var styles = getBlock('styles')
+- var basename = document.relativeBase.split("/")[0]
+- basename = basename !== "index" ? basename : ""
+- var pages = getCollection('pages').toJSON()
+- var subpages = (!!document.subpages) ? getCollection(document.subpages).toJSON() : []
 
 //- Other Scripts
 - scripts.add(["/scripts/vendor.js"])
@@ -8,7 +12,7 @@
 - styles.add(["/styles/vendor.css","/styles/iteamse.css"])
 - scripts.add(["/scripts/iteamse.js"])
 
-doctype 5
+!!! 5
 html(lang="en", ng-app="iteamse")
   head
 
@@ -48,23 +52,24 @@ html(lang="en", ng-app="iteamse")
     != styles.toHTML()
 
   body(class=document.slug, ng-controller="MainCtrl")
+
     .row-fluid#header
       ul.subnav
         div.subnav-inner
-          each doc in getCollection('pages').toJSON()
+          each doc in pages
             if (doc.pageOrder >= 10)
-              - clazz = (document.url === doc.url) ? 'active' : null
-                a(href=doc.url, property="dc:title", class=clazz)= doc.title
+              - var clazz = (document.url === doc.url || basename === doc.basename) ? 'active' : null
+              a(href=doc.url, property="dc:title", class=clazz)= doc.title
           a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
 
       .header-inner
         a.brand(href="/")
           img(src="/images/logo.png")
         ul.nav
-          - var pages = getCollection('pages').toJSON()
+
           each doc in pages
             if (doc.pageOrder < 10)
-              - clazz = (document.url === doc.url) ? 'active' : null
+              - clazz = (document.url === doc.url || basename === doc.basename) ? 'active' : null
                 a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
         .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
@@ -73,12 +78,12 @@ html(lang="en", ng-app="iteamse")
     if (!!document.subpages)
       #navSubpages
         .subpage-inner
-          each subpage in getCollection(document.subpages).toJSON()
+          each subpage in subpages
             - active = (document.url === subpage.url) ? 'active' : null
             a(href=subpage.url, class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
     ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
-      each doc, i in getCollection('pages').toJSON()
+      each doc, i in pages
         - clazz = (document.url === doc.url) ? 'active' : null
         - hasSubpage = (doc.subpages) ? i : null
         li(mobile-nav, data-subpage=hasSubpage)
@@ -86,7 +91,7 @@ html(lang="en", ng-app="iteamse")
           if (doc.subpages)
             .etp-thin-chevron-right
     #subpageWrap
-      each doc, i in getCollection('pages').toJSON()
+      each doc, i in pages
         if (doc.subpages)
           - subId = "subpages == " + i
           ul.subpages(ng-show=subId, ng-animate="'slide-in'")

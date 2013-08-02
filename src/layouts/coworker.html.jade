@@ -30,24 +30,22 @@ article#coworker(ng-controller="CoworkerCtrl")
 
       ul.cases
         .title Medverkande i case
-        each cases in getCollection('cases').toJSON()
+        each cases in getCollection('case').toJSON()
           if cases.team
             each member in cases.team
-                if (member == document.shortname)
-                  li
-                    a(href=cases.url)= cases.title
+              if (member == document.shortname)
+                li
+                  a(href=cases.url)= cases.title
 
       if document.instagram
-        instagram(name= document.instagram, ng-show="!!feed")
+        instagram(name= document.instagram)
           .social-media
             .title Instagram
-            a(ng-repeat="image in feed", ng-href="{{image.link}}", target="_blank")
-              img(ng-src="{{image.image.low_resolution.url}}")
+            a(ng-repeat="image in feed", ng-href="{{ image.link }}", target="_blank")
+              img(ng-src="{{ image.image.low_resolution.url }}")
 
       ul.github(ng-show="github")
         .title Senaste på Github
         li(ng-repeat="git in github")
           a.push-title(ng-href="https://github.com/{{git.repo.name}}", target="_blank") {{git.repo.name}}
           .push-time  {{git.created_at}}
-
-

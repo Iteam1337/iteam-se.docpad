@@ -85,8 +85,8 @@ docpadConfig =
       database.findAllLive({relativeOutDirPath:'feedback'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the cases directory
-    cases: (database) ->
-      database.findAllLive({relativeOutDirPath:'cases'},[title:1])
+    case: (database) ->
+      database.findAllLive({relativeOutDirPath:'case'},[title:1])
 
     # This one, will fetch in all documents that will be outputted to the coworkers directory
     medarbetare: (database) ->
@@ -105,8 +105,8 @@ docpadConfig =
       database.findAllLive({relativeOutDirPath:'om'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the hiring directory
-    hiring: (database) ->
-      database.findAllLive({relativeOutDirPath:'hiring'},[pageOrder:1])
+    ledigatjanster: (database) ->
+      database.findAllLive({relativeOutDirPath:'ledigatjanster'},[pageOrder:1])
 
   # =================================
   # Plugin Configuration

@@ -36,17 +36,23 @@
   /**
    * Mobile nav
    */
-  .directive('mobileNav', function() {
+  .directive("mobileNav", function() {
     return {
       link: function (scope, elm, attr) {
-        elm.bind('click', function () {
+        var arrow, link, subpage, url;
 
-          if (elm.attr('data-subpage')) {
-            scope.subpages = elm.attr('data-subpage');
-          } else {
-            window.location = elm.find('a').attr('data-url');
-          }
+        link = elm.find("a");
+        arrow = elm.find("div");
 
+        subpage = elm.attr("data-subpage");
+        url = link.attr("data-url");
+
+        arrow.bind("click", function() {
+          scope.subpages = subpage;
+          scope.$apply();
+        });
+        link.bind("click", function () {
+          window.location = url;
           scope.$apply();
         });
       }

@@ -3,11 +3,11 @@ title: Case
 layout: section
 tags: ['intro','page']
 pageOrder: 2
-subpages: 'cases'
+subpages: 'case'
 ---
 
 .row-fluid#cases
-  each doc in getCollection('cases').toJSON()
+  each doc in getCollection('case').toJSON()
     .case
       if (doc.images)
         a(href=doc.url)
