@@ -3,7 +3,7 @@ title: Hans Rollman
 navigationTitle: Hans
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: hans
 
 jobTitle: Vice VD, Försäljning

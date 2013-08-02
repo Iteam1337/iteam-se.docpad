@@ -3,11 +3,11 @@ title: Tjänster
 layout: section
 tags: ['intro','page']
 pageOrder: 1
-subpages: 'services'
+subpages: 'tjanster'
 ---
 
 .row-fluid
-  each doc in getCollection('services').toJSON()
+  each doc in getCollection('tjanster').toJSON()
     .offer
       a(href=doc.url)
         h2= doc.title

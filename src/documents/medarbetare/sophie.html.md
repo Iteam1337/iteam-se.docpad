@@ -3,7 +3,7 @@ title: Sophie Raland Wesslau
 navigationTitle: Sophie
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: sophie
 
 jobTitle: The all-over-the-place-woman

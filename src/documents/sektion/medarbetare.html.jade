@@ -1,13 +1,13 @@
 ---
 title: Medarbetare
 layout: section
-subpages: 'coworkers'
+subpages: 'medarbetare'
 tags: ['intro','page']
 pageOrder: 3
 ---
 
 .row-fluid.coworkers
-  each doc in getCollection('coworkers').toJSON()
+  each doc in getCollection('medarbetare').toJSON()
     .coworker
       a.portrait(href=doc.url)
         img.image(src=doc.image)

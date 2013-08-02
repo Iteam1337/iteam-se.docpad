@@ -72,7 +72,7 @@ docpadConfig =
   # These are special collections that our website makes available to us
 
   collections:
-    # For instance, this one will fetch in all documents that have pageOrder set within their meta data
+    # This is the main collection
     pages: (database) ->
       database.findAllLive({relativeOutDirPath:'sektion', pageOrder: $exists: true}, [pageOrder:1,title:1])
 
@@ -89,16 +89,16 @@ docpadConfig =
       database.findAllLive({relativeOutDirPath:'cases'},[title:1])
 
     # This one, will fetch in all documents that will be outputted to the coworkers directory
-    coworkers: (database) ->
-      database.findAllLive({relativeOutDirPath:'coworkers'},[filename:1])
+    medarbetare: (database) ->
+      database.findAllLive({relativeOutDirPath:'medarbetare'},[filename:1])
 
     # This one, will fetch in all documents that will be outputted to the coworkers directory
     operations: (database) ->
       database.findAllLive({relativeOutDirPath:'operations'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the services directory
-    services: (database) ->
-      database.findAllLive({relativeOutDirPath:'services'},[pageOrder:1])
+    tjanster: (database) ->
+      database.findAllLive({relativeOutDirPath:'tjanster'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the services directory
     om: (database) ->
@@ -107,10 +107,6 @@ docpadConfig =
     # This one, will fetch in all documents that will be outputted to the hiring directory
     hiring: (database) ->
       database.findAllLive({relativeOutDirPath:'hiring'},[pageOrder:1])
-
-    # This one, will fetch in all documents that will be outputted to the hiring directory
-    testaren: (database) ->
-      database.findAllLive({relativeOutDirPath:'testaren'},[pageOrder:1])
 
   # =================================
   # Plugin Configuration

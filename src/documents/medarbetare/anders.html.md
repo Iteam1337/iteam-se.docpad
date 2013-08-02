@@ -3,7 +3,7 @@ title: Anders Bornholm
 navigationTitle: Anders
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: anders
 
 jobTitle: Senior hacker

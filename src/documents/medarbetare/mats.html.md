@@ -3,7 +3,7 @@ title: Mats Egardt
 navigationTitle: Mats
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: mats
 
 jobTitle: Avdelningschef arkitektur, drift och support

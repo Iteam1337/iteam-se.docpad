@@ -3,7 +3,7 @@ title: Maria Sölscher
 navigationTitle: Maria
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: maria
 
 jobTitle: Project manager

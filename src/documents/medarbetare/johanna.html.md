@@ -3,7 +3,7 @@ title: Johanna Gustafsson
 navigationTitle: Johanna
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: johanna
 
 jobTitle: Utvecklingschef, Senior hacker

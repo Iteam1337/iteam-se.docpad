@@ -11,7 +11,7 @@ layout: default
       a(href="")
     .post-author
       if document.author
-        each coworker in getCollection('coworkers').toJSON()
+        each coworker in getCollection('medarbetare').toJSON()
           if coworker.shortname == document.author
-            a(href="/coworkers/" + document.author)= coworker.title
+            a(href="/medarbetare/" + document.author)= coworker.title
             div= coworker.jobTitle

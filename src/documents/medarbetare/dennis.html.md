@@ -3,7 +3,7 @@ title: Dennis Pettersson
 navigationTitle: Dennis
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: dennis
 
 jobTitle: Webbutvecklare

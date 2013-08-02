@@ -4,7 +4,7 @@ layout: page
 tags: ['Systemutveckling']
 pageType: Service
 pageOrder: 2
-subpages: 'services'
+subpages: 'tjanster'
 icon: '/ico/systemutveckling.png'
 summary: När du vill ha det bästa teknikteamet – dom mest engagerade hjärnorna – och den senaste kunskapen - samlat i ett och samma team, då ska just ditt projekt genomföras tillsammans med oss på Iteam. Vi bygger det system som du behöver, det verktyget som du ser framför dig – precis så som du vill ha det. Vare sig det handlar om en ny webb, en webbutik, ett forum eller verksamhetsvertyg som molntjänst så kan vi bygga det åt dig. Vi utvecklar webbplatsen och tjänsten som utgör drivkraften i din affärsverksamhet.
 ---
@@ -21,8 +21,8 @@ Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Scrum är en agil, och i
 I ett scrumprojekt betalar du för tiden dit utvecklingsteam ägnar åt att utveckla just din dröm. Det är vad vi brukar kalla filétid - dvs du betalar bara för det finaste. I motsats till att hyra en konsult på heltid - en systemutvecklare som sitter hos dig och debiterar full tid oavsett hon eller han har uppgifter att göra eller inte. En typisk sprint kan vara ca 280 timmar och då är det 280 timmar du betalar för - ofta fördelat över ca 3 veckors kalendertid. Mellan tumme och pekfinger - i väldigt grova generella drag - kan man säga att en teknisk produktion av en webbplats av större karaktär ligger mellan 0,5 och 2 MSEK att arbeta fram. Men för just ditt projekt - din dröm - måste vi såklart veta mer för att kunna bedömma hur mycket det kommer att kosta.
 
 ### Att vårda och underhålla system
-<img src="/ico/retainer.png" class="operations-icon" alt=""> Efter att din första release är gjord är en bra tumregel att budgetera ungefär lika mycket för år två i vidareutveckling. Skälet till det är att om allt går som det ska, så kommer din affär växa snabbt och då kommer också vilja ta dig råd och tid att förädla nya idéer och funktioner.  En bra webbplats lever i många år om man håller tekniken uppdaterad, vi erbjuder därför en löpande vidareutveckling av webbplatsen efter avslutat projekt. Ett så kallat retaineravtal tecknas för [förvaltning, vidareutveckling och trimming](/services/operations#Systemförvaltning) så att din webbplats varje månad får nya funktioner, ses om och bevakas – allt till en fast månadskostnad.
+<img src="/ico/retainer.png" class="operations-icon" alt=""> Efter att din första release är gjord är en bra tumregel att budgetera ungefär lika mycket för år två i vidareutveckling. Skälet till det är att om allt går som det ska, så kommer din affär växa snabbt och då kommer också vilja ta dig råd och tid att förädla nya idéer och funktioner.  En bra webbplats lever i många år om man håller tekniken uppdaterad, vi erbjuder därför en löpande vidareutveckling av webbplatsen efter avslutat projekt. Ett så kallat retaineravtal tecknas för [förvaltning, vidareutveckling och trimming](/tjanster/operations#Systemförvaltning) så att din webbplats varje månad får nya funktioner, ses om och bevakas – allt till en fast månadskostnad.
 
 
 
-Titta gärna igenom våra [case](/sektioner/case) och se vilka drömmar vi förverkligat hittils. Agilt eller inte – stort eller smått – ring oss. Kontakta [Hans Rollman](mailto:hans.rollman@iteam.se) för mer information, eller vår grundare och VD [Christian Landgren](mailto:christian.landgren@iteam.se).
+Titta gärna igenom våra [case](/sektion/case) och se vilka drömmar vi förverkligat hittils. Agilt eller inte – stort eller smått – ring oss. Kontakta [Hans Rollman](mailto:hans.rollman@iteam.se) för mer information, eller vår grundare och VD [Christian Landgren](mailto:christian.landgren@iteam.se).

@@ -3,7 +3,7 @@ title: Alexander Czigler
 navigationTitle: Alexander
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: alexander
 
 jobTitle: Hacker

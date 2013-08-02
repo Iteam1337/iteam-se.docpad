@@ -14,9 +14,9 @@ article#case.row-fluid
             .title Teamet
             each member in document.team
               li
-                each coworker in getCollection('coworkers').toJSON()
+                each coworker in getCollection('medarbetare').toJSON()
                   if coworker.shortname == member
-                    a(href="/coworkers/" + member)= coworker.title
+                    a(href="/medarbetare/" + member)= coworker.title
                     div= coworker.jobTitle
 
         if (document.readmorelinks)
@@ -37,9 +37,9 @@ article#case.row-fluid
           ul.relatedServices
             .title Relaterade tjänster
             each tag in document.tags
-              each service in getCollection('services').toJSON()
+              each service in getCollection('tjanster').toJSON()
                 each sTag in service.tags
-                  if tag === sTag                  
+                  if tag === sTag
                     li
                       a(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)
 

@@ -3,7 +3,7 @@ title: Rasmus Fredriksson
 navigationTitle: Rasmus
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: rasmus
 
 jobTitle: Drift och support

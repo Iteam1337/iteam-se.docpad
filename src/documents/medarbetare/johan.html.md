@@ -3,7 +3,7 @@ title: Johan Öbrink
 navigationTitle: Johan
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: johan
 
 jobTitle: Senior Hacker

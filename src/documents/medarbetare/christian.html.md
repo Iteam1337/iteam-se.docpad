@@ -3,7 +3,7 @@ title: Christian Landgren
 navigationTitle: Christian
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: christian
 
 jobTitle: CEO and hacker

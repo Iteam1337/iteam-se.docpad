@@ -3,7 +3,7 @@ title: Martin Loman
 navigationTitle: Martin
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: martin
 
 jobTitle: Senior webbutvecklare

@@ -3,7 +3,7 @@ title: Rickard Laurin
 navigationTitle: Rickard
 
 layout: coworker
-subpages: 'coworkers'
+subpages: 'medarbetare'
 shortname: rickard
 
 jobTitle: Webbutvecklare
