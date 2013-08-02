@@ -3,7 +3,7 @@ title: Karriär
 layout: page
 tags: ['intro','page']
 pageOrder: 4
-pageType: Career
+pageType: "karriar"
 ---
 
 ### Följ med på vår resa.

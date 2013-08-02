@@ -72,14 +72,14 @@ docpadConfig =
   # These are special collections that our website makes available to us
 
   collections:
-    # For instance, this one will fetch in all documents that have pageOrder set within their meta data
+    # This is the main collection
     pages: (database) ->
-      database.findAllLive({relativeOutDirPath:'sections', pageOrder: $exists: true}, [pageOrder:1,title:1])
+      database.findAllLive({relativeOutDirPath:'sektion', pageOrder: $exists: true}, [pageOrder:1,title:1])
 
-    # This one, will fetch in all documents that will be outputted to the posts directory
-    posts: (database) ->
-      database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
-    
+    # This one, will fetch in all documents that will be outputted to the blogg directory
+    blogg: (database) ->
+      database.findAllLive({relativeOutDirPath:'blogg'},[date:-1])
+
     # This one, will fetch in all documents that will be outputted to the feedback directory
     feedback: (database) ->
       database.findAllLive({relativeOutDirPath:'feedback'},[pageOrder:1])
@@ -89,20 +89,20 @@ docpadConfig =
       database.findAllLive({relativeOutDirPath:'cases'},[title:1])
 
     # This one, will fetch in all documents that will be outputted to the coworkers directory
-    coworkers: (database) ->
-      database.findAllLive({relativeOutDirPath:'coworkers'},[filename:1])
+    medarbetare: (database) ->
+      database.findAllLive({relativeOutDirPath:'medarbetare'},[filename:1])
 
     # This one, will fetch in all documents that will be outputted to the coworkers directory
     operations: (database) ->
       database.findAllLive({relativeOutDirPath:'operations'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the services directory
-    services: (database) ->
-      database.findAllLive({relativeOutDirPath:'services'},[pageOrder:1])
+    tjanster: (database) ->
+      database.findAllLive({relativeOutDirPath:'tjanster'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the services directory
-    about: (database) ->
-      database.findAllLive({relativeOutDirPath:'about'},[pageOrder:1])
+    om: (database) ->
+      database.findAllLive({relativeOutDirPath:'om'},[pageOrder:1])
 
     # This one, will fetch in all documents that will be outputted to the hiring directory
     hiring: (database) ->

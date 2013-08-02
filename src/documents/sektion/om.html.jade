@@ -1,8 +1,8 @@
 ---
-title: Om
+title: "Om"
 layout: page
-tags: ['about','page']
-subpages: 'about'
+tags: ['om','page']
+subpages: 'om'
 pageOrder: 10
 ---
 
@@ -13,7 +13,7 @@ p De webbplatser vi bygger är oftast centrala i våra kunders affär och har d�
 
 .row-fluid#about
   ul
-    each subpage in getCollection('about').toJSON()
+    each subpage in getCollection('om').toJSON()
       li
         a(href=subpage.url)= subpage.title
         p= subpage.summary

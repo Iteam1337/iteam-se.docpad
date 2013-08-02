@@ -1,15 +1,21 @@
 ---
 title: Johanna Gustafsson
+navigationTitle: Johanna
+
 layout: coworker
+subpages: 'medarbetare'
+shortname: johanna
+
 jobTitle: Utvecklingschef, Senior hacker
+email: johanna.gustafsson@iteam.se
+phonenumber: 0734 - 02 91 12
+image: /images/johanna.jpg
+fullimage:
+
 twitter: mittistormen
 instagram: mittistormen
 linkedin: pub/johanna-gustafsson/3/b34/7a6
 github: mittistormen
-email: johanna.gustafsson@iteam.se
-phonenumber: 0734 - 02 91 12
-image: /images/johanna.jpg
-shortname: johanna
 ---
 
 ### Varför jobbar du med teknik?

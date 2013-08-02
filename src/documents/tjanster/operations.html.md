@@ -4,7 +4,7 @@ layout: page
 tags: ['Drift & Support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 pageType: Service
 pageOrder: 3
-subpages: 'services'
+subpages: 'tjanster'
 icon: '/ico/driftosupport.png'
 summary: Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.
 ---
@@ -22,7 +22,7 @@ summary: Vi tror på att du och ditt företag mår bättre, blir lönsammare och
 < Kontakt mig för specialist- och projektstöd >
 
 ### Hyr en IT-avdelning
-<img src="/ico/hyrenitavdelning.png" alt="Rent IT icon" class="operations-icon">Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och [fjärrhjälp](/sections/help). Vi avhjälper små som stora problem snabbt.
+<img src="/ico/hyrenitavdelning.png" alt="Rent IT icon" class="operations-icon">Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och [fjärrhjälp](/sektion/fjarrhjalp). Vi avhjälper små som stora problem snabbt.
 
 < Kontakt mig om att hyra en IT-avdelning>
 

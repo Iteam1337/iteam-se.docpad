@@ -1,6 +1,6 @@
 ---
 title: Blogg
-layout: page
+layout: post
 pageOrder: 12
 ---
 
@@ -30,7 +30,7 @@ if entries.length isnt 0 then div class:"blog", ->
       article ->
         entry.content['#']
 
-  # //- each doc in getCollection('posts').toJSON()
+  # //- each doc in getCollection('blogg').toJSON()
   # //-   section(class="post")
   # //-     header
   # //-       div.date= doc.date.toDateString()

@@ -1,11 +1,17 @@
 ---
 title: Sophie Raland Wesslau
+navigationTitle: Sophie
+
 layout: coworker
-jobTitle: The all-over-the-place-woman
+subpages: 'medarbetare'
 shortname: sophie
-image: /images/sophie.jpg
+
+jobTitle: The all-over-the-place-woman
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
+image: /images/sophie.jpg
+fullimage:
+
 twitter: sophiewesslau
 instagram: sophiewesslau
 linkedin: pub/sophie-wesslau/1/839/870

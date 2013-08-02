@@ -18,7 +18,7 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
                   li
                     a(href=cases.url)= cases.title
 
-    if (document.pageType === 'Career')
+    if (document.pageType === 'karriar')
       div#opportunities
         .title Lediga tjänster
         ul
@@ -28,7 +28,7 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
                 a(href=career.url)= career.title
                 p= career.summary
 
-    if (document.pageType === 'Contact')
+    if (document.pageType === 'kontakt')
       div#sendFeedback(ng-controller="ContactCtrl")
 
         ul
