@@ -73,7 +73,7 @@ docpadConfig =
 
   collections:
     # This is the main collection
-    pages: (database) ->
+    sektion: (database) ->
       database.findAllLive({relativeOutDirPath:'sektion', pageOrder: $exists: true}, [pageOrder:1,title:1])
 
     # This one, will fetch in all documents that will be outputted to the blogg directory

@@ -2,8 +2,9 @@
 - var styles = getBlock('styles')
 - var basename = document.relativeBase.split("/")[0]
 - basename = basename !== "index" ? basename : ""
-- var pages = getCollection('pages').toJSON()
-- var subpages = (!!document.subpages) ? getCollection(document.subpages).toJSON() : []
+- var pages = getCollection('sektion').toJSON()
+- var subpages = (!!document.subpages) ? getCollection(document.subpages) : {}
+- subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : []
 
 //- Other Scripts
 - scripts.add(["/scripts/vendor.js"])
