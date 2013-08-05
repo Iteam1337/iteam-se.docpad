@@ -4,7 +4,9 @@ layout: default
 
 article#coworker(ng-controller="CoworkerCtrl")
   .row-fluid
-    .image
+    - var inlineClass = "image "
+    - inlineClass += !!document.css ? document.css : "";
+    div(class=inlineClass)
       img(src=document.image)
     .information
       h1.name= document.title

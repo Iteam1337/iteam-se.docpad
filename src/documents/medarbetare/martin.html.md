@@ -10,7 +10,8 @@ jobTitle: Senior webbutvecklare
 email: martin.loman@iteam.se
 phonenumber: 0707 - 22 70 24
 image: /images/martin.jpg
-fullimage:
+fullimage: /
+css: 'sun'
 
 twitter: martinloman
 instagram: martinloman

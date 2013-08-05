@@ -1,3 +1,36 @@
+trans()
+  -webkit-transform arguments
+  -moz-transform arguments
+  -ms-transform arguments
+  -o-transform arguments
+  transform arguments
+
+origin()
+  -webkit-transform-origin arguments
+  -moz-transform-origin arguments
+  -ms-transform-origin arguments
+  -o-transform-origin arguments
+  transform-origin arguments
+
+transition()
+  -webkit-transition arguments
+  -moz-transition arguments
+  -ms-transition arguments
+  -o-transition arguments
+  transition arguments
+
+mason(count = 2, gap = 25px)
+  -webkit-column-count: count;
+  -webkit-column-gap: gap;
+  -moz-column-count: count;
+  -moz-column-gap: gap;
+  -ms-column-count: count;
+  -ms-column-gap: gap;
+  -o-column-count: count;
+  -o-column-gap: gap;
+  column-count: count;
+  column-gap: gap;
+
 .coworkers
   .coworker
     display inline-block
@@ -49,19 +82,95 @@
       float right
 
 #coworker
+
+  .desc
+    mason()
+
   #toAngular
     display:none
 
   .image
-    border-radius: 300px
-    border: 10px solid #ffbd09
-    margin: 0 auto
-    padding: 5px
-    width: 200px
+    border-radius 300px
+    border 10px solid #ffbd09
+    margin 0 auto
+    padding 5px
+    width 200px
+    height 200px
+    position  relative
 
     img
-      border-radius:200px
-      width:200px
+      z-index 1
+      border-radius 200px
+      width 200px
+      position relative
+
+  .sun
+    border none
+    text-align center
+    background #ffbd09
+    border-radius 0
+    z-index 0
+    width 200px
+    height 200px
+    padding 0
+    margin 10px auto 40px
+
+    img
+      border 5px solid white
+      left -5px
+      top -5px
+
+    &:after,
+    &:before
+      z-index 0
+      top 0
+      left 0
+      height 200px
+      width 200px
+      background #ffbd09
+      content ""
+      position absolute
+      trans rotate(30deg)
+
+    &:after
+      trans rotate(-30deg)
+
+  .heart
+    border none
+    border-radius 0
+    background transparent
+    padding 0
+    width 250px
+    height 250px
+
+    &:before,
+    &:after
+      top 0
+      position absolute
+      content ""
+      width 150px
+      height 250px
+      background #D80829
+      -moz-border-radius 100px 100px 0 0
+      border-radius 100px 100px 0 0
+
+    &:before
+      left 125px
+      trans rotate(-45deg)
+      origin 0 100%
+
+    &:after
+      left -25px
+      trans rotate(45deg)
+      origin 100% 100%
+
+    img
+      left 35px
+      top 11px
+      width 175px
+      height 175px
+      border 5px solid white
+
   .name, .job, .email, .phone
     text-align:center
 
@@ -100,8 +209,9 @@
   .social-media, .github, .cases, .social
 
     a
-      -webkit-transition:color 300ms ease
+      transition color 300ms ease
 
+      display inline-block
       color:#666
       font-size:2em
 
@@ -115,6 +225,10 @@
 
       &:hover
         color:#ffbd09
+
+  .social-media
+    a
+      margin 0 20px
 
   .github, .cases
     text-align:left
