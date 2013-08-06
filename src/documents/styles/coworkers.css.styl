@@ -1,36 +1,4 @@
-trans()
-  -webkit-transform arguments
-  -moz-transform arguments
-  -ms-transform arguments
-  -o-transform arguments
-  transform arguments
-
-origin()
-  -webkit-transform-origin arguments
-  -moz-transform-origin arguments
-  -ms-transform-origin arguments
-  -o-transform-origin arguments
-  transform-origin arguments
-
-transition()
-  -webkit-transition arguments
-  -moz-transition arguments
-  -ms-transition arguments
-  -o-transition arguments
-  transition arguments
-
-mason(count = 2, gap = 25px)
-  -webkit-column-count: count;
-  -webkit-column-gap: gap;
-  -moz-column-count: count;
-  -moz-column-gap: gap;
-  -ms-column-count: count;
-  -ms-column-gap: gap;
-  -o-column-count: count;
-  -o-column-gap: gap;
-  column-count: count;
-  column-gap: gap;
-
+@import "variable"
 .coworkers
   .coworker
     display inline-block
@@ -82,9 +50,6 @@ mason(count = 2, gap = 25px)
       float right
 
 #coworker
-
-  .desc
-    mason()
 
   #toAngular
     display:none
@@ -200,11 +165,11 @@ mason(count = 2, gap = 25px)
     text-align: center
 
   .social-media, .github, .cases
-    border-top:1px solid #ccc
-    margin-top:40px
-    padding-top:40px
-    position:relative
-    text-align:center
+    border-top 1px solid #ccc
+    margin-top 40px
+    padding-top 40px
+    position relative
+    text-align center
 
   .social-media, .github, .cases, .social
 
@@ -212,55 +177,92 @@ mason(count = 2, gap = 25px)
       transition color 300ms ease
 
       display inline-block
-      color:#666
-      font-size:2em
+      color #666
+      font-size 2em
 
       > div
         display inline-block
-        margin-right:20px
+        margin-right 20px
 
       &:last-child
         > div
-          margin-right:0
+          margin-right 0
 
       &:hover
-        color:#ffbd09
+        color #ffbd09
 
   .social-media
     a
       margin 0 20px
 
-  .github, .cases
+  .github,
+  .cases
     text-align:left
 
+    .git-title
+      margin 0 0 10px
+      font-size 1.15em
+
+    .git
+      vertical-align top
+      width 48%
+      display inline-block
+      margin 0
+      padding 0
+      height auto
+      &.single
+        width 100%
+
+      li
+        border-bottom 1px solid #f9f9f9
+
+    .git:last-child
+      margin-left 2%
+
     .title
-      width:200px
+      width 200px
 
     li
-      margin-bottom:10px
-      position: relative
+      margin-bottom 10px
+      position relative
 
       a
-        color:#ffbd09
-        font-size:1em
+        color #ffbd09
+        font-size 1em
 
         &:hover
-          color:#666
+          color #666
 
-      .push-time
-        color:#999
-        font-family:'Palatino'
-        font-size:0.6em
-        position:absolute
-        right:0
-        top:0
+      .git-info
+        width 80%
+
+      p
+        margin 10px 0 0
+        line-height 1.8em
+        font-size .9em
+
+      .git-language
+        margin-top 10px
+        font-family Monaco, Menlo, Consolas, "Courier New", monospace
+        font-size 0.7em
+        color #999
+
+      .git-time
+        color #999
+        font-family 'Palatino'
+        font-size 0.6em
+        position absolute
+        top 0
+        right 0
+        width 20%
+        text-align right
 
 
   .cases
     .title
-      width:220px
+      width 220px
 
     li
-      display: inline-block
-      text-align:center
-      width:49%
+      display inline-block
+      text-align center
+      width 49%

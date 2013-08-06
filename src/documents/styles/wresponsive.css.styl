@@ -1,30 +1,23 @@
-transform(args)
-  -moz-transform args
-  -webkit-transform args
-  -o-transform args
-  -khtml-transform args
-  transform args
-
-transition(args)
-  -moz-transition args
-  -webkit-transition args
-  -o-transition args
-  -khtml-transition args
-  transition args
+@import "variable"
 
 /**
  * Big screens > 1200px
  */
 @media (min-width:1200px)
+  maxWidth = 1170px
   .container
-    max-width:100%
+    max-width 100%
 
     > div
      display: inline-block
 
   #header
     .header-inner
-      max-width:1170px
+      max-width: maxWidth
+
+  #coworker
+    .desc
+      mason()
 
   #cases
     .case
@@ -51,7 +44,7 @@ transition(args)
 
     .about
       width:100%
-      
+
       .content
         > div
           display inline-block
@@ -82,10 +75,17 @@ transition(args)
 
         .info
           margin:0
-  
+
   #footer
-    max-width:100%
-    width:1170px
+    width 100%
+    max-width maxWidth
+
+@media (max-width:1199px) and (min-width:980px)
+  #coworker
+    .social-media
+      a:last-child
+        display none
+
 
 /**
  * iPad landscape
@@ -100,6 +100,11 @@ transition(args)
         width:300px
     .about
       width:100%;
+  #coworker
+    .social-media
+      a:last-child
+        display none
+
 
 /**
  * iPad portrait
@@ -132,7 +137,7 @@ transition(args)
   #header
     padding:20px 10px 5px 20px
     text-align:left
-    
+
     .header-inner
       margin:0
 
@@ -155,7 +160,7 @@ transition(args)
         top: -9px;
 
   #mobileNav, ul.subpages
-    transform(translate3d(0,0,0))
+    trans translate3d(0,0,0)
 
     background:#333
     display:block
@@ -169,7 +174,7 @@ transition(args)
       cursor:pointer
 
     > li
-      transition(background 300ms ease)
+      trans background 300ms ease
 
       padding:10px 20px
       position relative
@@ -192,7 +197,7 @@ transition(args)
 
       &.active
         color:#fff
-  
+
   #subpageWrap
     display:block
 
@@ -221,7 +226,7 @@ transition(args)
     img
       &.right
         display none
-    
+
     .about
       .content
         .team

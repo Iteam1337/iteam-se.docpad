@@ -39,15 +39,26 @@ article#coworker(ng-controller="CoworkerCtrl")
                 li
                   a(href=cases.url)= cases.title
 
+      .github(ng-show="github")
+        .title Github
+        ul.git.repos(ng-class="{single: (!github.events.length && !!github.repos.length)}", ng-show="!!github.repos.length")
+          h3.git-title Repos ({{github.repos.length}})
+          li(ng-repeat="repo in github.repos|limitTo:8")
+            a.repo-title(ng-href="{{ repo.url }}", target="_blank") {{ repo.name }} <small>{{ repo.language && "(" + repo.language + ")" || "" }}</small>
+            .git-info
+              p.git-description {{ repo.description }}
+            .git-time {{ repo.created_at }}
+        ul.git.events(ng-class="{single: (!github.repos.length && !!github.events.length)}", ng-show="!!github.events.length")
+          h3.git-title Senaste aktivitet
+          li(ng-repeat="git in github.events")
+            a.push-title(ng-href="{{ git.url }}", target="_blank") {{ git.type }} <small>{{ !!repo.name && "(" + repo.name + ")" || "" }}</small>
+            .git-info
+              p.git-message {{ git.message }}
+            .git-time {{ git.created_at }}
+
       if document.instagram
         instagram(name= document.instagram)
           .social-media
             .title Instagram
             a(ng-repeat="image in feed", ng-href="{{ image.link }}", target="_blank")
               img(ng-src="{{ image.image.low_resolution.url }}")
-
-      ul.github(ng-show="github")
-        .title Senaste på Github
-        li(ng-repeat="git in github")
-          a.push-title(ng-href="https://github.com/{{git.repo.name}}", target="_blank") {{git.repo.name}}
-          .push-time  {{git.created_at}}

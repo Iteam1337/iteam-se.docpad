@@ -1,3 +1,4 @@
+@import "variable"
 /* Variables
 ---------------------------------------------*/
 igrey = #231F20
@@ -8,18 +9,6 @@ opsBg = url(http://iteam.se/uploads/operations.jpg)
 regularBg = url(http://iteam.se/uploads/madmen.png)
 careerBg = url(http://iteam.se/uploads/madmen.png)
 
-/* Mixins
----------------------------------------------*/
-box-sizing(model)
-  box-sizing model
-  -webkit-box-sizing model
-  -moz-box-sizing model
-
-box-shadow(shadow)
-  box-shadow: shadow
-  -webkit-box-shadow: shadow
-  -moz-box-shadow: shadow
-
 /* General
 ---------------------------------------------*/
 a, a:link
@@ -28,7 +17,7 @@ a, a:link
   text-decoration: none
 
 a.btn
-  box-sizing(border-box)
+  box border-box
 
   background:orange
   color:#fff
