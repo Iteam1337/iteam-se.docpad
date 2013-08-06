@@ -3,6 +3,7 @@
 /**
  * Big screens > 1200px
  */
+@media (max-width:1199px) and (min-width:980px),
 @media (min-width:1200px)
   maxWidth = 1170px
   .container
@@ -79,7 +80,9 @@
   #footer
     width 100%
     max-width maxWidth
-
+/**
+ * iPad landscape
+ */
 @media (max-width:1199px) and (min-width:980px)
   #coworker
     .social-media
@@ -115,6 +118,11 @@
 
   .container
     padding:0 20px
+
+  #coworker .github .git
+    width 100%
+    &:last-child
+      margin-left 0
 
 /**
  * iPhone

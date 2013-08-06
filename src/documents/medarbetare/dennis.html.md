@@ -7,10 +7,12 @@ subpages: 'medarbetare'
 shortname: dennis
 
 jobTitle: Webbutvecklare
-email: dennis.petterson@iteam.se
+email: dennis.pettersson@iteam.se
 phonenumber:
 image: /images/dennis.jpg
 fullimage:
+cssColor:
+css: sun
 
 twitter: ankjevel
 instagram: ankjevel

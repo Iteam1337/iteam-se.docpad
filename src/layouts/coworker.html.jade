@@ -6,8 +6,9 @@ article#coworker(ng-controller="CoworkerCtrl")
   .row-fluid
     - var inlineClass = "image "
     - inlineClass += !!document.css ? document.css : "";
-    div(class=inlineClass)
-      img(src=document.image)
+    - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : "";
+    div(class=inlineClass, style=inlineColor)
+      img(src=getGravatarUrl(200))
     .information
       h1.name= document.title
       .job= document.jobTitle
@@ -39,19 +40,19 @@ article#coworker(ng-controller="CoworkerCtrl")
                 li
                   a(href=cases.url)= cases.title
 
-      .github(ng-show="github")
+      .github(ng-show="github", class="ng-cloak")
         .title Github
         ul.git.repos(ng-class="{single: (!github.events.length && !!github.repos.length)}", ng-show="!!github.repos.length")
           h3.git-title Repos ({{github.repos.length}})
           li(ng-repeat="repo in github.repos|limitTo:8")
-            a.repo-title(ng-href="{{ repo.url }}", target="_blank") {{ repo.name }} <small>{{ repo.language && "// " + repo.language || "" }}</small>
+            a.repo-title(ng-href="{{ repo.url }}", target="_blank") {{ repo.name }} <small ng-show="!!repo.language">// {{repo.language}}</small>
             .git-info
               p.git-description {{ repo.description }}
             .git-time {{ repo.created_at }}
         ul.git.events(ng-class="{single: (!github.repos.length && !!github.events.length)}", ng-show="!!github.events.length")
           h3.git-title Senaste aktivitet
           li(ng-repeat="git in github.events")
-            a.push-title(ng-href="{{ git.url }}", target="_blank") {{ git.type }} <small>{{ (!!git.name && git.name != "/") && "(" + git.name + ")" || "" }}</small>
+            a.push-title(ng-href="{{ git.url }}", target="_blank") {{ git.type }} <small ng-show="!!git.name && git.name != ''">({{git.name}})</small>
             .git-info
               p.git-message {{ git.message }}
             .git-time {{ git.created_at }}

@@ -11,6 +11,8 @@ email: maria.solscher@iteam.se
 phonenumber: 0733 - 74 27 84
 image: /images/maria.jpg
 fullimage:
+cssColor:
+css:
 
 twitter: MariaSolscher
 instagram: MariaSolscher

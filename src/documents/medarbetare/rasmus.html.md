@@ -11,6 +11,8 @@ email: rasmus.fredriksson@iteam.se
 phonenumber: 0703 - 76 66 40
 image: /images/rasmus.jpg
 fullimage:
+cssColor: "#2d90ed"
+css:
 
 twitter:
 instagram:

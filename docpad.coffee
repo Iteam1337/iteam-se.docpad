@@ -66,6 +66,12 @@ docpadConfig =
       # Merge the document keywords with the site keywords
       @site.keywords.concat(@document.keywords or []).join(', ')
 
+    getGravatarUrl: (size) ->
+      hash = require('crypto').createHash('md5').update(@document.email).digest('hex')
+      url = "http://www.gravatar.com/avatar/#{hash}.jpg"
+      if size then url += "?s=#{size}"
+      return url
+
 
   # Collections
   # ===========

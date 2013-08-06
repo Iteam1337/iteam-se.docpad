@@ -11,6 +11,7 @@ email: rickard.laurin@iteam.se
 phonenumber: '076 - 166 85 11'
 image: /images/rickard.jpg
 fullimage: /images/rickard_hel.jpg
+cssColor: "#89e9a7"
 
 twitter: rickardlaurin
 instagram: rickardlaurin
