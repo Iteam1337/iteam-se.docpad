@@ -1,7 +1,7 @@
 ---
 title: Karriär
 layout: page
-tags: ['intro','page']
+tags: ['intro', 'page']
 pageOrder: 4
 pageType: "karriar"
 ---

@@ -7,14 +7,14 @@
 - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : []
 
 //- Other Scripts
-- scripts.add(["/scripts/vendor.js"])
+- scripts.add(["/content/scripts/vendor.js"])
 
 //- User
-- styles.add(["/styles/vendor.css","/styles/iteamse.css"])
-- scripts.add(["/scripts/iteamse.js"])
+- styles.add(["/content/styles/vendor.css","/content/styles/iteamse.css"])
+- scripts.add(["/content/scripts/iteamse.js"])
 
 !!! 5
-html(lang="en", ng-app="iteamse")
+html(lang="sv")
   head
 
     // Meta
@@ -39,11 +39,11 @@ html(lang="en", ng-app="iteamse")
     meta(name="viewport", content="width=device-width")
 
     // Icons
-    link(rel="shortcut icon", href="ico/favicon.ico")
-    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="ico/apple-touch-icon-144-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="ico/apple-touch-icon-114-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="ico/apple-touch-icon-72-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", href="ico/apple-touch-icon-57-precomposed.png")
+    link(rel="shortcut icon", href="/content/ico/favicon.ico")
+    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/content/ico/apple-touch-icon-144-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/content/ico/apple-touch-icon-114-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/content/ico/apple-touch-icon-72-precomposed.png")
+    link(rel="apple-touch-icon-precomposed", href="/content/ico/apple-touch-icon-57-precomposed.png")
 
     //- Shims: IE6-8 support of HTML5 elements
     //if lt IE 9
@@ -52,7 +52,7 @@ html(lang="en", ng-app="iteamse")
     // Styles
     != styles.toHTML()
 
-  body(class=document.slug, ng-controller="MainCtrl")
+  body(class=document.slug, ng-app="iteamse", ng-controller="MainCtrl")
 
     .row-fluid#header
       ul.subnav
@@ -65,7 +65,7 @@ html(lang="en", ng-app="iteamse")
 
       .header-inner
         a.brand(href="/")
-          img(src="/images/logo.png")
+          img(src="/content/images/logo.png")
         ul.nav
 
           each doc in pages

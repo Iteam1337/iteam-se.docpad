@@ -9,7 +9,7 @@ shortname: mats
 jobTitle: Avdelningschef arkitektur, drift och support
 email: mats.egardt@iteam.se
 phonenumber: 0736 - 19 80 64
-image: /images/mats.jpg
+image: /content/images/mats.jpg
 fullimage:
 cssColor:
 css:

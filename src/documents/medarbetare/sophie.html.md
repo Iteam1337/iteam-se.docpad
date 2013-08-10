@@ -9,7 +9,7 @@ shortname: sophie
 jobTitle: The all-over-the-place-woman
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
-image: /images/sophie.jpg
+image: /content/images/sophie.jpg
 fullimage:
 cssColor:
 css:

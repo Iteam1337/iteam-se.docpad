@@ -2,7 +2,8 @@
 title: Senior Supporttekniker sökes
 layout: page
 pageOrder: 2
-summary: Vi söker en klurig Senior Supporttekniker med det lilla extra. Som vår nya Seniora Supporttekniker är du självgående, nyfiken och gillar att ha kontakt med våra kunder. Du älskar att lösa problem och du ger dig inte förrän uppgiften är löst. Att hänga med i det senaste inom teknik är en självklarhet.
+summary: >
+  Vi söker en klurig Senior Supporttekniker med det lilla extra. Som vår nya Seniora Supporttekniker är du självgående, nyfiken och gillar att ha kontakt med våra kunder. Du älskar att lösa problem och du ger dig inte förrän uppgiften är löst. Att hänga med i det senaste inom teknik är en självklarhet.
 ---
 
 Vi söker en klurig Senior Supporttekniker med det lilla extra.
@@ -17,9 +18,9 @@ Din arbetsplats kommer att vara i våra ljusa och fina lokaler i centrala Stockh
 ### Krav
 
 * Minst 3-5 års erfarenhet
-* Behärskar Mac, Windows & Linux 
-* Behärskar Exchange och AD 
-* Hyper-V (även kluster) 
+* Behärskar Mac, Windows & Linux
+* Behärskar Exchange och AD
+* Hyper-V (även kluster)
 * Nginx, Apache, Node, Centos/Debian, Redhat
 * AWS, Azure, Openstack
 * Säljdriven
@@ -37,8 +38,8 @@ Våra värdeord är: Ha kul, Skapa värde, Göra något bra.
 
 Vår vision är att förverkliga våra kunders drömmar med teknik. I vår strävan mot visionen erbjuder vi teknisk rådgivning, förstudier, utveckling, drift och support. Vi är Microsoft-partner och EPiServer Solution Partner. I vår position som teknikbyrå jobbar vi i nära samarbete med webbyråpartners, reklambyråer och designbyråer i vårt kontinuerliga uppdrag att hjälpa förverkliga våra kunders mål och drömmar om affärsstödjande och moderna webbplatser och webbtjänster. Bland våra kunder finns Beckers Färg, ABSOLUT VODKA, Trygghetsrådet, ShakeMyWorld, Svensk Byggtjänst och Crucell.
 
-**Anställningsform:** Heltid  
-**Anställningsform:** Tillsvidareanställning, 6 månaders provanställning, sedan fast anställning.  
+**Anställningsform:** Heltid
+**Anställningsform:** Tillsvidareanställning, 6 månaders provanställning, sedan fast anställning.
 **Start:** Höst 2013
 
 Ansök tjänsten genom att maila ditt CV och personliga brev till [sophie.wesslau@iteam.se](mailto:sophie.wesslau@iteam.se)

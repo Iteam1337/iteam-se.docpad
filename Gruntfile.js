@@ -3,6 +3,7 @@ module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    outPath: (grunt.file.readJSON('config.json').outPath + "/"),
 
     // Concats the js files into a single include
     concat: {
@@ -12,14 +13,17 @@ module.exports = function (grunt) {
           '<%= grunt.template.today("yyyy-mm-dd HH:mm") %> */\n'
       },
       dist: {
+        dest: '<%= outPath %>content/scripts/<%= pkg.name %>.js',
         src: [
-          'src/documents/scripts/**/*.js'
-        ],
-        dest: 'out/scripts/<%= pkg.name %>.js'
+          'src/documents/content/scripts/**/*.js'
+        ]
       },
       vendor: {
-        src: ['src/files/vendor/*.js', 'src/files/vendor/twitter-bootstrap/js/bootstrap.js'],
-        dest: 'out/scripts/vendor.js'
+        dest: '<%= outPath %>content/scripts/vendor.js',
+        src: [
+          'src/files/content/vendor/*.js',
+          'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
+        ]
       }
     },
 
@@ -31,7 +35,10 @@ module.exports = function (grunt) {
       },
       dist: {
         files: {
-          'out/scripts/all.min.js': ['<%= concat.vendor.dest %>', '<%= concat.dist.dest %>']
+          '<%= outPath %>content/scripts/all.min.js': [
+            '<%= concat.vendor.dest %>',
+            '<%= concat.dist.dest %>'
+          ]
         }
       }
     },
@@ -42,8 +49,8 @@ module.exports = function (grunt) {
       },
       compile: {
         files: {
-          'out/styles/<%= pkg.name %>.css':[
-            'src/documents/styles/*.css.styl'
+          '<%= outPath %>content/styles/<%= pkg.name %>.css': [
+            'src/documents/content/styles/*.css.styl'
           ]
         }
       }
@@ -56,15 +63,32 @@ module.exports = function (grunt) {
           banner: '/* vendor.css */ \n'
         },
         files: {
-          'out/styles/vendor.css': [
-            'src/documents/styles/*.css',
-            'src/files/vendor/twitter-bootstrap/css/bootstrap.css',
-            'src/files/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
+          '<%= outPath %>content/styles/vendor.css': [
+            'src/documents/content/styles/*.css',
+            'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
+            'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
             '!*.min.css'
           ]
         }
       }
+    },
+
+    //
+    // Generate angular-templates
+    jade: {
+      compile: {
+        options: {
+          pretty: true
+        },
+        files: grunt.file.expandMapping(['**/*.jade'], "<%= outPath %>content/partials/", {
+          cwd: "src/angular_partials/",
+          rename: function(destBase, destPath) {
+            return destBase + destPath.replace(/\.jade$/, '.html');
+          }
+        })
+      }
     }
+
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -72,8 +96,15 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jade');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat', 'uglify', 'stylus', 'cssmin']);
+  grunt.registerTask('default', [
+    'concat',
+    'uglify',
+    'stylus',
+    'cssmin',
+    'jade'
+  ]);
 
 };

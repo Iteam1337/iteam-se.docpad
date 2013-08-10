@@ -9,7 +9,7 @@ shortname: anders
 jobTitle: Senior hacker
 email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
-image: /images/anders.jpg
+image: /content/images/anders.jpg
 fullimage:
 cssColor:
 css:

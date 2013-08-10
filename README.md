@@ -1,5 +1,5 @@
 ## This is the official iteam.se website
-Our site is built using [docpad](https://github.com/bevry/docpad/)!
+Our site is built using [docpad](https://github.com/bevry/docpad/)
 
 ## Getting Started
 
@@ -8,6 +8,7 @@ Our site is built using [docpad](https://github.com/bevry/docpad/)!
   ``` bash
   git clone git@github.com:Iteam1337/iteam-se.docpad.git iteam-se
   cd iteam-se
+  npm install -g docpad
   npm install
   docpad run
   ```

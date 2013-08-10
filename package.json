@@ -1,28 +1,24 @@
 {
   "name": "iteamse",
-  "version": "0.9.0",
-  "description": "Twitter Bootstrap skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.",
-  "homepage": "https://github.com/bevry/twitter-bootstrap.docpad",
+  "version": "0.0.1",
+  "description": "The sourcecode for iteam.se",
+  "homepage": "https://github.com/Iteam1337/iteam-se.docpad",
   "keywords": [
     "docpad-skeleton",
     "docpad",
     "website",
     "bootstrap",
-    "twitter bootstrap"
+    "twitter bootstrap",
+    "iteam",
+    "iteam.se"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
-  "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
-  ],
-  "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
-  ],
+  "author": "Iteam Solutions <info@iteam.se> (http://iteam.se)",
   "bugs": {
-    "url": "https://github.com/docpad/twitter-bootstrap.docpad/issues"
+    "url": "https://github.com/Iteam1337/iteam-se.docpad/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/docpad/twitter-bootstrap.docpad.git"
+    "url": "https://github.com/Iteam1337/iteam-se.docpad.git"
   },
   "engines": {
     "node": "0.8.x",
@@ -52,12 +48,13 @@
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.4.0",
+    "mocha": "~1.12.0",
     "grunt": "~0.4.1",
+    "grunt-mocha": "~0.3.4",
+    "grunt-contrib-jade": "~0.8.0",
     "grunt-contrib-stylus": "~0.6.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-uglify": "~0.2.2",
-    "grunt-mocha": "~0.3.4",
-    "mocha": "~1.12.0",
     "grunt-contrib-cssmin": "~0.6.1"
   },
   "main": "node_modules/docpad/bin/docpad-server"

@@ -9,7 +9,7 @@ shortname: maria
 jobTitle: Project manager
 email: maria.solscher@iteam.se
 phonenumber: 0733 - 74 27 84
-image: /images/maria.jpg
+image: /content/images/maria.jpg
 fullimage:
 cssColor:
 css:

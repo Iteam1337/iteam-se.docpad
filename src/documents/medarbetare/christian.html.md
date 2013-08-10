@@ -9,7 +9,7 @@ shortname: christian
 jobTitle: CEO and hacker
 email: christian.landgren@iteam.se
 phonenumber: 0707 - 75 58 31
-image: /images/christian.jpg
+image: /content/images/christian.jpg
 fullimage:
 cssColor: "#001337"
 css:

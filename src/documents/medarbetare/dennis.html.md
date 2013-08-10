@@ -9,7 +9,7 @@ shortname: dennis
 jobTitle: Webbutvecklare
 email: dennis.pettersson@iteam.se
 phonenumber:
-image: /images/dennis.jpg
+image: /content/images/dennis.jpg
 fullimage:
 cssColor:
 css: sun

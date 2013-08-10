@@ -2,7 +2,7 @@
 title: Medarbetare
 layout: section
 subpages: 'medarbetare'
-tags: ['intro','page']
+tags: ['intro', 'page']
 pageOrder: 3
 ---
 
@@ -10,7 +10,7 @@ pageOrder: 3
   each doc in getCollection('medarbetare').toJSON()
     .coworker
       a.portrait(href=doc.url)
-        img.image(src=doc.image)
+        img.image(src=getGravatarUrl(200,doc))
       .info
         h4
           a(href=doc.url)= doc.title

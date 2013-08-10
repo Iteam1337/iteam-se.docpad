@@ -66,12 +66,11 @@ docpadConfig =
       # Merge the document keywords with the site keywords
       @site.keywords.concat(@document.keywords or []).join(', ')
 
-    getGravatarUrl: (size) ->
-      hash = require('crypto').createHash('md5').update(@document.email).digest('hex')
+    getGravatarUrl: (size, doc=@document) ->
+      hash = require('crypto').createHash('md5').update(doc.email).digest('hex')
       url = "http://www.gravatar.com/avatar/#{hash}.jpg"
       if size then url += "?s=#{size}"
       return url
-
 
   # Collections
   # ===========
@@ -125,6 +124,12 @@ docpadConfig =
         'iteam':
           url: 'http://mix.chimpfeedr.com/16486-Iteam'
 
+  # Out Path
+  # Where should we put our generated website files?
+  # If it is a relative path, it will have the resolved `rootPath` prepended to it
+  outPath: require("./config.json").outPath
+
+
   # DocPad Events
   # =============
 
@@ -168,6 +173,14 @@ docpadConfig =
 
         # Chain
         @
+
+  # =================================
+  # Environment Configuration
+
+  # Locale Code
+  # The code we shall use for our locale (e.g. `en`, `fr`, etc)
+  # If not set, we will attempt to detect the system's locale, if the locale can't be detected or if our locale file is not found for it, we will revert to `en`
+  localeCode: null  # default
 
 
 # Export our DocPad Configuration

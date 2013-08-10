@@ -9,9 +9,10 @@ shortname: martin
 jobTitle: Senior webbutvecklare
 email: martin.loman@iteam.se
 phonenumber: 0707 - 22 70 24
-image: /images/martin.jpg
-fullimage: /
+image: /content/images/martin.jpg
+fullimage:
 cssColor: "#ec5c35"
+css:
 
 twitter: martinloman
 instagram: martinloman
