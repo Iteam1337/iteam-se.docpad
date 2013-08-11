@@ -2,8 +2,9 @@
 title: Karriär
 layout: page
 tags: ['intro', 'page']
-pageOrder: 4
 pageType: "karriar"
+pageIndex: 4
+dontIndexInAnyCollection: true
 ---
 
 ### Följ med på vår resa.
@@ -16,11 +17,11 @@ Iteam är en arbetsplats med intressanta utmaningar och mycket stimulans – att
 För oss är det viktigt att hitta rätt person, en som passar in i vårt gäng. Det spelar ingen roll om du har en bra utbildning i grunden eller om du skaffat dig din erfarenhet på egen hand. Vi letar efter dig som har en spännande bakgrund - och som letar efter än mer spänning och utmaningar framöver. Vi älskar spontanansökningar - så tveka inte att skicka din ansökan:
 
 <form action="">
-	<input type="file">
-	<textarea name="" id=""></textarea>
-	<input type="radio" name="application" id="app-job">
-	<label for="app-job">Jobb</label>
-	<input type="radio" name="application" id="app-intern">
-	<label for="app-intern">Praktik</label>
-	<input type="submit">
+  <input type="file">
+  <textarea name="" id=""></textarea>
+  <input type="radio" name="application" id="app-job">
+  <label for="app-job">Jobb</label>
+  <input type="radio" name="application" id="app-intern">
+  <label for="app-intern">Praktik</label>
+  <input type="submit">
 </form>

@@ -72,46 +72,75 @@ docpadConfig =
       if size then url += "?s=#{size}"
       return url
 
+    getAllBlogCategories: () ->
+      added = []
+      categories = []
+      for data, i in @getCollection('html').findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false})?.toJSON()
+        split = data.url.split("/")[2]
+        if ~added.indexOf split
+          continue
+        name = split.charAt(0).toUpperCase() + split.slice(1)
+        category = {url: "/blogg/" + split, title: name}
+        categories.push(category)
+        added.push(split)
+      return categories
+
   # Collections
   # ===========
   # These are special collections that our website makes available to us
-
   collections:
-    # This is the main collection
+    # This is the main collection, for index:es
     sektion: (database) ->
-      database.findAllLive({relativeOutDirPath:'sektion', pageOrder: $exists: true}, [pageOrder:1,title:1])
+      database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])
 
-    # This one, will fetch in all documents that will be outputted to the blogg directory
+    # All blog-posts
     blogg: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg'},[date:-1])
+      database.findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false},[pageOrder:-1])
 
-    # This one, will fetch in all documents that will be outputted to the feedback directory
-    feedback: (database) ->
-      database.findAllLive({relativeOutDirPath:'feedback'},[pageOrder:1])
+    # =================
+    # DRIFT blog-posts
+    blogg_drift: (database) ->
+      database.findAllLive({relativeOutDirPath:'blogg/drift', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+    # LARV blog-posts
+    blogg_larv: (database) ->
+      database.findAllLive({relativeOutDirPath:'blogg/larv', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+    # NYHETER blog-posts
+    blogg_nyheter: (database) ->
+      database.findAllLive({relativeOutDirPath:'blogg/nyheter', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+    # UTVECKLING blog-posts
+    blogg_utveckling: (database) ->
+      database.findAllLive({relativeOutDirPath:'blogg/utveckling', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+    # =================
 
-    # This one, will fetch in all documents that will be outputted to the cases directory
+    # Collection of all cases
     case: (database) ->
-      database.findAllLive({relativeOutDirPath:'case'},[title:1])
+      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[title:1])
 
-    # This one, will fetch in all documents that will be outputted to the coworkers directory
+    # Collection of all feedback-posts
+    feedback: (database) ->
+      database.findAllLive({relativeOutDirPath:'feedback', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+
+    # Collection of a coworkers
     medarbetare: (database) ->
-      database.findAllLive({relativeOutDirPath:'medarbetare'},[filename:1])
+      database.findAllLive({relativeOutDirPath:'medarbetare', dontIndexInAnyCollection: $exists: false},[filename:1])
 
-    # This one, will fetch in all documents that will be outputted to the coworkers directory
-    operations: (database) ->
-      database.findAllLive({relativeOutDirPath:'operations'},[pageOrder:1])
-
-    # This one, will fetch in all documents that will be outputted to the services directory
-    tjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'tjanster'},[pageOrder:1])
-
-    # This one, will fetch in all documents that will be outputted to the services directory
-    om: (database) ->
-      database.findAllLive({relativeOutDirPath:'om'},[pageOrder:1])
-
-    # This one, will fetch in all documents that will be outputted to the hiring directory
+    # Collection of all available positions
     ledigatjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'ledigatjanster'},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'karriar', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+
+    # All of our services
+    tjanster: (database) ->
+      database.findAllLive({relativeOutDirPath:'tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+
+    # A collection of information about us
+    om: (database) ->
+      database.findAllLive({relativeOutDirPath:'om', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+
+    # =======================
+    # not _really_ in use
+    # =======================
+    operations: (database) ->
+      database.findAllLive({relativeOutDirPath:'operations', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
   # =================================
   # Plugin Configuration

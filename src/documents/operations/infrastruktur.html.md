@@ -3,6 +3,7 @@ title: Arkitektur & Infrastruktur
 layout: page
 tags: ['intro','page']
 pageOrder: 9
+ignored: true
 description: >
   Vi hjälper dig att planera, bygga och bibehålla en stabil & driftsäker infrastruktur.
 ---

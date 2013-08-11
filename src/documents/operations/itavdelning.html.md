@@ -3,6 +3,7 @@ title: Hyra IT-avdelning
 layout: page
 tags: ['intro','page']
 pageOrder: 9
+ignored: true
 description: >
   Vi hjälper dig att planera & underhålla en väl fungerande IT-miljö.
 ---

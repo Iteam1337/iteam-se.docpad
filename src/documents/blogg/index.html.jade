@@ -1,0 +1,13 @@
+---
+title: Blogg
+layout: default
+pageIndex: 12
+dontIndexInAnyCollection: true
+---
+each doc in getCollection("blogg").toJSON()
+  section.post
+    header
+      .date= doc.date.toDateString()
+      .category= doc.category
+      a.title(href= doc.url)= doc.title
+    article= doc.intro

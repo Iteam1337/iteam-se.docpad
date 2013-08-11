@@ -3,6 +3,7 @@ title: Specialistsupport
 layout: page
 tags: ['intro','page']
 pageOrder: 9
+ignored: true
 description: >
   Du som IT-chef eller IT-ansvarig får förstärkning till din specialistroll.
 ---

@@ -1,0 +1,8 @@
+ul.team
+  .title Teamet
+  each member in document.team
+    li
+      each coworker in getCollection('medarbetare').toJSON()
+        if coworker.shortname == member
+          a(href="/medarbetare/" + member)= coworker.title
+          div= coworker.jobTitle

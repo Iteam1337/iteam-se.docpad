@@ -10,44 +10,15 @@ article#case.row-fluid
 
       .information
         if (document.team)
-          ul.team
-            .title Teamet
-            each member in document.team
-              li
-                each coworker in getCollection('medarbetare').toJSON()
-                  if coworker.shortname == member
-                    a(href="/medarbetare/" + member)= coworker.title
-                    div= coworker.jobTitle
+          include ../jade_includes/team
 
         if (document.readmorelinks)
-          ul.urls
-            .title Relaterade länkar
-            each url in document.readmorelinks
-              li
-                a(href=url)= url
+          include ../jade_includes/readmore
 
         if (document.imageGallery)
-          .gallery
-            .title Bilder
-            .imgWrap
-              each image in document.imageGallery
-                img(src="/content/images/" + image)
+          include ../jade_includes/image_gallery
 
         if (document.tags)
-          ul.relatedServices
-            .title Relaterade tjänster
-            each tag in document.tags
-              each service in getCollection('tjanster').toJSON()
-                each sTag in service.tags
-                  if tag === sTag
-                    li
-                      a(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)
+          include ../jade_includes/related_tags
 
-          .twitter(ng-show="tweets")
-            .title Twitter
-            - twitter = "twitter = '" + document.twitterTag + "'"
-            ul.tweets(ng-init=twitter)
-              li(ng-repeat="tweet in tweets | limitTo:5")
-                .text(ng-bind-html-unsafe="tweet.text")
-                .time {{tweet.created_at}}
-                .user {{tweet.user}}
+          include ../jade_includes/twitter_tags

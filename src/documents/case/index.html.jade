@@ -2,15 +2,16 @@
 title: Case
 layout: section
 tags: ['intro', 'page']
-pageOrder: 2
+pageIndex: 2
 subpages: 'case'
+dontIndexInAnyCollection: true
 ---
 
 .row-fluid#cases
   each doc in getCollection('case').toJSON()
     .case
       if (doc.images)
-        a(href=doc.url)
+        a.case-link(href=doc.url)
           img(src="/content/images/" + doc.images[0], class="case-image")
       else
         img(src="http://lorempixel.com/100/100", class="case-image")

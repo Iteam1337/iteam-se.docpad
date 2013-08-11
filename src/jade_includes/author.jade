@@ -1,0 +1,4 @@
+each coworker in getCollection('medarbetare').toJSON()
+  if coworker.shortname == document.author
+    a(href="/medarbetare/" + document.author)= coworker.title
+    div= coworker.jobTitle

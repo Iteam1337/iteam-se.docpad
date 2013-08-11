@@ -3,6 +3,7 @@ title: Systemförvaltning
 layout: page
 tags: ['intro','page']
 pageOrder: 9
+ignored: true
 description: >
   Med ett retaineravtal hos oss erbjuds löpande avtal för underhåll och vidareutveckling.
 ---

@@ -1,6 +1,8 @@
---- yaml
+---
 layout: 'default'
 title: 'Iteam.se - vi förverkligar drömmar med teknik'
+instagram: iteam1337
+dontIndexInAnyCollection: true
 ---
 
 // Example row of columns.
@@ -26,11 +28,13 @@ title: 'Iteam.se - vi förverkligar drömmar med teknik'
         li
           a(href=doc.url)= doc.title
 
-.row-fluid(ng-controller="WejayCtrl")
-  .span6#nowplaying(ng-show="nowplaying")
+.row-fluid(ng-controller="WejayCtrl", ng-show="!!nowplaying")
+  .span6#nowplaying
     a(href="https://github.com/Iteam1337/Wejay")
       img#wejay(src="/content/images/wejay.png")
     .info
       p Just nu lyssnar vi på
       a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
       a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
+
+instagram(name= document.instagram, max=6)

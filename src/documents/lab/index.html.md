@@ -2,7 +2,9 @@
 title: Lab
 layout: page
 tags: ['intro', 'page']
-pageOrder: 15
+pageIndex: 15
+dontIndexInAnyCollection: true
+ignored: true
 ---
 
 Välkommen till Iteams laboratorium. Här visar vi upp exempel på lösnignar som kan inspirera i din dröm. Vi tror på att inspirera - ibland genom att rita och måla på en whiteboard - men också genom att visa här på webben. Njut av spännande teknik som ger fantastiska möjligheter.

@@ -1,0 +1,11 @@
+- category = document.url.split("/")[2]
+.row-fluid
+  h1 bara ett test
+
+each doc in getCollection("blogg_" + category).toJSON()
+  section.post
+    header
+      .date= doc.date.toDateString()
+      .category= doc.category
+      a.title(href= doc.url)= doc.title
+    article= doc.intro

@@ -46,16 +46,18 @@ article#coworker(ng-controller="CoworkerCtrl")
           h3.git-title Repos ({{github.repos.length}})
           li(ng-repeat="repo in github.repos|limitTo:8")
             a.repo-title(ng-href="{{repo.url}}", target="_blank") {{repo.name}} <small ng-show="!!repo.language">// {{repo.language}}</small>
-            .git-info
+            .git-info(ng-show="!!repo.description")
               p.git-description {{repo.description}}
             .git-time {{repo.created_at}}
         ul.git.events(ng-class="{single: (!github.repos.length && !!github.events.length)}", ng-show="!!github.events.length")
           h3.git-title Senaste aktivitet
           li(ng-repeat="git in github.events")
             a.push-title(ng-href="{{git.url}}", target="_blank") {{git.type}} <small ng-show="!!git.name && git.name != ''">({{git.name}})</small>
-            .git-info
+            .git-info(ng-show="!!git.message")
               p.git-message {{git.message}}
             .git-time {{git.created_at}}
 
       if document.instagram
-        instagram(name= document.instagram)
+        .social-media
+          .title Instagram
+          instagram(name= document.instagram)

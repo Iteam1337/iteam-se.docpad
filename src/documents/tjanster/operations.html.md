@@ -23,7 +23,7 @@ summary: >
 < Kontakt mig för specialist- och projektstöd >
 
 ### Hyr en IT-avdelning
-<img src="/content/ico/hyrenitavdelning.png" alt="Rent IT icon" class="operations-icon">Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och [fjärrhjälp](/sektion/fjarrhjalp). Vi avhjälper små som stora problem snabbt.
+<img src="/content/ico/hyrenitavdelning.png" alt="Rent IT icon" class="operations-icon">Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och [fjärrhjälp](/fjarrhjalp). Vi avhjälper små som stora problem snabbt.
 
 < Kontakt mig om att hyra en IT-avdelning>
 

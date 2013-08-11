@@ -1,7 +1,8 @@
 ---
 title: Nyheter
 layout: page
-pageOrder: 11
+pageIndex: 11
+dontIndexInAnyCollection: true
 ---
 
 formatDate = (datestring) ->

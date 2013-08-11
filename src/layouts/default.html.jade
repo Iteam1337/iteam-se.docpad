@@ -1,10 +1,23 @@
 - var scripts = getBlock('scripts')
 - var styles = getBlock('styles')
-- var basename = document.relativeBase.split("/")[0]
-- basename = basename !== "index" ? basename : ""
+
+//- All indexes that are to be shown on all pages
 - var pages = getCollection('sektion').toJSON()
-- var subpages = (!!document.subpages) ? getCollection(document.subpages) : {}
-- subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : []
+
+//- url-highlighting and so on
+- var documentUrl = document.url.split("/")
+- var basename = documentUrl[1]
+- var onBlogPage = basename === "blogg"
+
+//- All pages that should be shown on the
+//- second navigation row
+- var subpages = {}
+- if (!onBlogPage)
+  - subpages = (!!document.subpages) ? getCollection(document.subpages) : false
+  - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false
+- else
+  - subpages = getAllBlogCategories()
+
 
 //- Other Scripts
 - scripts.add(["/content/scripts/vendor.js"])
@@ -58,8 +71,8 @@ html(lang="sv")
       ul.subnav
         div.subnav-inner
           each doc in pages
-            if (doc.pageOrder >= 10)
-              - var clazz = (document.url === doc.url || basename === doc.basename) ? 'active' : null
+            if (doc.pageIndex >= 10)
+              - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
               a(href=doc.url, property="dc:title", class=clazz)= doc.title
           a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
 
@@ -69,18 +82,18 @@ html(lang="sv")
         ul.nav
 
           each doc in pages
-            if (doc.pageOrder < 10)
-              - clazz = (document.url === doc.url || basename === doc.basename) ? 'active' : null
+            if (doc.pageIndex < 10)
+              - clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
                 a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
         .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
           .etp-menu
 
-    if (!!document.subpages)
+    if (!!subpages)
       #navSubpages
         .subpage-inner
           each subpage in subpages
-            - active = (document.url === subpage.url) ? 'active' : null
+            - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
             a(href=subpage.url, class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
     ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
@@ -91,6 +104,7 @@ html(lang="sv")
           a(class=clazz, data-url=doc.url)= doc.title
           if (doc.subpages)
             .etp-thin-chevron-right
+
     #subpageWrap
       each doc, i in pages
         if (doc.subpages)

@@ -3,6 +3,7 @@ title: IT-review
 layout: page
 tags: ['intro','page']
 pageOrder: 9
+ignored: true
 description: >
   IT-review är en analys & dokumentation av din IT-miljö.
 ---

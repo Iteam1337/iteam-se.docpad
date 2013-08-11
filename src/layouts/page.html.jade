@@ -8,48 +8,10 @@ div.row-fluid(make-anchors, ng-controller="AboutCtrl")
     article.page-content!= content
 
     if (document.pageType === 'Service')
-      div#connectedCases
-        .title Relaterade case
-        ul
-          each cases in getCollection('case').toJSON()
-            if cases.tags
-              each tag in cases.tags
-                if tag === document.title
-                  li
-                    a(href=cases.url)= cases.title
+      include ../jade_includes/service
 
-    if (document.pageType === 'karriar')
-      div#opportunities
-        .title Lediga tjänster
-        ul
-          each career in getCollection('ledigatjanster').toJSON()
-            if career.title
-              li
-                a(href=career.url)= career.title
-                p= career.summary
+    else if (document.pageType === 'karriar')
+      include ../jade_includes/karriar
 
-    if (document.pageType === 'kontakt')
-      div#sendFeedback(ng-controller="ContactCtrl")
-
-        ul
-          each feedback,i in getCollection('feedback').toJSON()
-            - change = 'changeContact(' + i + ')'
-            li(ng-click=change)= feedback.title
-
-        each feedback,i in getCollection('feedback').toJSON()
-          - inView = 'inView == ' + i
-          div(ng-show=inView)
-            h2= feedback.title
-            p!= feedback.content
-
-        div.row-fluid.common
-          .span4
-            label(for="name") Vad heter du?
-            input(type="text", id="name", placeholder="Namn")
-
-            label(for="email") Vad är din e-mailadress?
-            input(type="text", id="email", placeholder="E-mailadress")
-
-          .span8
-            label(for="onyourmind") Vad har du på hjärtat?
-            textarea(id="onyourmind")
+    else if (document.pageType === 'kontakt')
+      include ../jade_includes/kontakt

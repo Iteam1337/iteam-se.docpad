@@ -1,0 +1,24 @@
+div#sendFeedback(ng-controller="ContactCtrl")
+
+  ul
+    each feedback,i in getCollection('feedback').toJSON()
+      - change = 'changeContact(' + i + ')'
+      li(ng-click=change)= feedback.title
+
+  each feedback,i in getCollection('feedback').toJSON()
+    - inView = 'inView == ' + i
+    div(ng-show=inView)
+      h2= feedback.title
+      p!= feedback.content
+
+  div.row-fluid.common
+    .span4
+      label(for="name") Vad heter du?
+      input(type="text", id="name", placeholder="Namn")
+
+      label(for="email") Vad är din e-mailadress?
+      input(type="text", id="email", placeholder="E-mailadress")
+
+    .span8
+      label(for="onyourmind") Vad har du på hjärtat?
+      textarea(id="onyourmind")

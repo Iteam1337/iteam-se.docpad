@@ -1,0 +1,9 @@
+div#connectedCases
+  .title Relaterade case
+  ul
+    each cases in getCollection('case').toJSON()
+      if cases.tags
+        each tag in cases.tags
+          if tag === document.title
+            li
+              a(href=cases.url)= cases.title

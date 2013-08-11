@@ -26,4 +26,4 @@ I ett scrumprojekt betalar du för tiden dit utvecklingsteam ägnar åt att utve
 
 
 
-Titta gärna igenom våra [case](/sektion/case) och se vilka drömmar vi förverkligat hittils. Agilt eller inte – stort eller smått – ring oss. Kontakta [Hans Rollman](mailto:hans.rollman@iteam.se) för mer information, eller vår grundare och VD [Christian Landgren](mailto:christian.landgren@iteam.se).
+Titta gärna igenom våra [case](/case) och se vilka drömmar vi förverkligat hittils. Agilt eller inte – stort eller smått – ring oss. Kontakta [Hans Rollman](mailto:hans.rollman@iteam.se) för mer information, eller vår grundare och VD [Christian Landgren](mailto:christian.landgren@iteam.se).
