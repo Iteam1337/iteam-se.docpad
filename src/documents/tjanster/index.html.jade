@@ -7,7 +7,7 @@ subpages: 'tjanster'
 dontIndexInAnyCollection: true
 ---
 
-.row-fluid
+.row-fluid.tjanster
   each doc in getCollection('tjanster').toJSON()
     .offer
       a(href=doc.url)
