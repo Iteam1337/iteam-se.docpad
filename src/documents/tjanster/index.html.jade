@@ -8,9 +8,9 @@ dontIndexInAnyCollection: true
 ---
 
 .row-fluid.tjanster
-  each doc in getCollection('tjanster').toJSON()
+  each doc in getColl ection('tjanster').toJSON()
     .offer
       a(href=doc.url)
         h2= doc.title
-      img.service-icon(src=doc.icon)
+      
       p= doc.summary
