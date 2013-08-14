@@ -13,7 +13,7 @@ summary: >
 
 Kunskap är grunden för att lyckas - det är vår övertygelse. Kunskap om vad man kan göra på webben - hur och när. Kunskap om vilken målgrupp du vänder dig till och vad deras behov är. Vi agerar rådgivare till dig i den omfattning och takt som just du behöver. Hos oss beställer du din förstudie, hittar en grym Tech Lead, beställer du ett proof-of-koncept och får inspirerande entreprenörsrådgivning.
 
-Kontakta [Hans](/medarbetare/hans) och titta på våra tidigare [Case](/case).
+Kontakta [Hans](/medarbetare/hans) för svar på dina frågor.
 
 ### Förstudie
 Vi tror på vikten av att klarlägga din verksamhets nuläge och identifera en tydlig målbild för ditt växande tjänsteområde eller din produkt. Genom att intervjua dina kunder, dina kollegor, IT-kontakter och andra för dig relevanta aktörer så tar vi reda på detta innan vi sätter igång och utvecklar något. Du får en tydlig rapport som – utifrån din målgrupps perspektiv – visar på behov, förutsättningar och möjligheter för din nya tjänst eller produkt.
