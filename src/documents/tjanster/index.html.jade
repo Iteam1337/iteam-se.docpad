@@ -8,7 +8,7 @@ dontIndexInAnyCollection: true
 ---
 
 .row-fluid.tjanster
-  each doc in getColl ection('tjanster').toJSON()
+  each doc in getCollection('tjanster').toJSON()
     .offer
       a(href=doc.url)
         h2= doc.title
