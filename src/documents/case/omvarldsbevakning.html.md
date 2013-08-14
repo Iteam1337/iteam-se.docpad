@@ -1,7 +1,8 @@
 ---
 title: Svensk Byggtjänsts Omvärldsbevakning
 layout: case
-subpages: 'case'
+#showCase: true
+
 tags: ['Proof-of-concept','Systemutveckling']
 images: ['sb-omvarldsbevakning1.jpg']
 imagePos: ['right']
@@ -10,6 +11,9 @@ team: ['anders','johanna','mats','dennis','maria','christian']
 intro: Vi utvecklade Svensk Byggtjänsts Omvärldsbevakning tillsammans med byråpartnern Britny.
 siteurl: http://omvarldsbevakning.byggtjanst.se/
 twitterTag: ['svenskbyggtjanst']
+
+backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundDark: true
 ---
 
 Iteam har tillsammans med Britny utvecklat Omvärldsbevakning, byggbranschens egen nyhetstjänst. Med sina 20 egna redaktörer och specialister ger Bygginfo en överblick och direkttillgång till fördjupad information om allt som händer i byggbranschen – nya EU-direktiv, myndighetsrekommendationer och nya rön.

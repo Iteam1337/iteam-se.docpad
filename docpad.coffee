@@ -115,6 +115,8 @@ docpadConfig =
     # Collection of all cases
     case: (database) ->
       database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[title:1])
+    showcase: (database) ->
+      database.findAllLive({relativeOutDirPath:'case', showCase: true, dontIndexInAnyCollection: $exists: false},[title: 1])
 
     # Collection of all feedback-posts
     feedback: (database) ->

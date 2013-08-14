@@ -1,7 +1,8 @@
 ---
 title: Beckers.se
 layout: case
-subpages: 'case'
+showCase: true
+
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
 images: ['beckers1.jpg']
 imagePos: ['right']
@@ -10,6 +11,10 @@ team: ['anders','johanna','martin','dennis','rickard','maria']
 intro: Vi utvecklade Beckers.se tillsammans med byråpartnern Klirr och lanserade i augusti 2012.
 siteurl: http://www.beckers.se
 twitterTag: '#beckersfarg'
+
+
+backgroundImage: "http://i.bldr.se/hHDGu.jpeg"
+backgroundDark: true
 ---
 
 <img src="/content/images/beckers1.jpg" class="right" alt="">

@@ -1,7 +1,8 @@
 ---
 title: Shake My World
 layout: case
-subpages: 'case'
+#showCase: true
+
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']
 images: ['shakemyworld1.jpg']
 imagePos: ['right']
@@ -10,6 +11,9 @@ team: ['anders','johanna','christian']
 intro: Shake My World anlitade Iteam för att bygga en helt ny sorts webbplats för internetdating.
 siteurl: http://www.shakemyworld.se
 twitterTag: 'shakemyworld'
+
+backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundDark: true
 ---
 
 ### En kombination av Facebook, datingsajt och en aktivitetssajt.

@@ -1,5 +1,4 @@
 ul.relatedServices
-  .title Relaterade tjänster
   each tag in document.tags
     each service in getCollection('tjanster').toJSON()
       each sTag in service.tags

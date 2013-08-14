@@ -1,7 +1,8 @@
 ---
 title: Svensk Byggtjänsts AMA Beskrivningsverktyg
 layout: case
-subpages: 'case'
+#showCase: true
+
 tags: ['Systemutveckling']
 images: ['sb-amabv1.jpg']
 imagePos: ['right']
@@ -10,6 +11,9 @@ team: ['anders','johanna','hans','christian','mats']
 intro: Vi utvecklade AMA Beskrivningsverktyg för ett effektivare byggverige. Design och formgivning tillsammans med byråpartnern Britny.
 siteurl: http://amabv.byggtjanst.se/Account/Logon
 twitterTag: [ '#svenskbyggtjanst', '#svb' ]
+
+backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundDark: true
 ---
 
 ### Google Docs-liknande beskrivningsverktyg för byggsverige

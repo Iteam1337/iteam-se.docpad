@@ -146,7 +146,6 @@ box-shadow(shadow)
   max-width:700px
 
 #footer
-  border-top:1px solid #ccc
   margin:40px auto
   max-width:700px
   padding-top:40px
@@ -199,4 +198,26 @@ box-shadow(shadow)
 #github
   display none
 
+.background-image
+  z-index 0
+  position absolute
+  width 100%
+  height 450px
+  max-height 450px
+  display block
+  overflow hidden
+  background-size 100% auto
+  background-repeat no-repeat
+  background-color white
+  background-position 50% 50%
 
+.container
+  background-color white
+  z-index 1
+  position relative
+  padding 15px 55px
+  margin-top 250px
+  .main-title
+    position absolute
+    margin-top -70px
+    font-size 4em

@@ -1,7 +1,8 @@
 ---
 title: Careerbook
 layout: case
-subpages: 'case'
+#showCase: true
+
 tags: ['Systemutveckling']
 images: ['careerbook1.jpg']
 imagePos: ['right']
@@ -10,6 +11,9 @@ team: ['johanna','mats','hans','christian']
 intro: Academic Communication och Iteam tar fram en mötesplats för arbetsgivare och studenter.
 siteurl: http://www.academicwork.se/careerbook
 twitterTag: ['#careerbook','#academicwork_se']
+
+backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundDark: true
 ---
 
 ### Mötesplatsen för arbetsgivare och studenter

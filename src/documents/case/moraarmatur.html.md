@@ -1,7 +1,8 @@
 ---
 title: Mora Armatur
 layout: case
-subpages: 'case'
+#showCase: true
+
 tags: ['Systemutveckling']
 images: ['moraarmatur1.jpg']
 imagePos: ['right']
@@ -10,6 +11,10 @@ team: ['anders']
 intro: Produkten i fokus när Iteam och Supernative tar fram Mora Armaturs webbplats.
 siteurl: http://www.moraarmatur.se
 twitterTag: 'moraarmatur'
+
+
+backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundDark: true
 ---
 
 ### Allt för hemmafixaren till proffset

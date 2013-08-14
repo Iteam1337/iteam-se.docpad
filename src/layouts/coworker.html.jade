@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+- var backgroundDark = !!document.backgroundDark ? "color:white;" : "";
+h1.main-title(style=backgroundDark)= document.title
 
 article#coworker(ng-controller="CoworkerCtrl")
   .row-fluid
@@ -10,7 +12,6 @@ article#coworker(ng-controller="CoworkerCtrl")
     div(class=inlineClass, style=inlineColor)
       img(src=getGravatarUrl(200))
     .information
-      h1.name= document.title
       .job= document.jobTitle
       .email
         a(href="mailto:" + document.email)= document.email
@@ -39,6 +40,17 @@ article#coworker(ng-controller="CoworkerCtrl")
               if (member == document.shortname)
                 li
                   a(href=cases.url)= cases.title
+      ul.cases
+        .header
+          h2.title Bloggar
+          a.toggle-expand.pull-left(data-toggle="collapse",data-target="#collapse-blog") toggle
+            i.icon-envelope
+        ul#collapse-blog.unstyled.collapse.in
+          each blogg in getCollection('blogg').toJSON()
+            if blogg.author === document.shortname
+                li
+                  a(href=blogg.url)= blogg.title
+
 
       .github(ng-show="github", class="ng-cloak")
         .title Github

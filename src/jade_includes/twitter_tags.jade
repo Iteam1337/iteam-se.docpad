@@ -1,5 +1,4 @@
 .twitter(ng-show="tweets")
-  .title Twitter
   - twitter = "twitter = '" + document.twitterTag + "'"
   ul.tweets(ng-init=twitter)
     li(ng-repeat="tweet in tweets | limitTo:5")
