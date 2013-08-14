@@ -11,21 +11,10 @@ dontIndexInAnyCollection: true
     article.news
       h2 Vi älskar teknink
       p Iteam är en teknikbyrå med IT-support i Stockholm. Vi utvecklar smarta webblösningar som t ex communities, intranät och integration och vi hjälper dig med dina IT-frågor. Iteam förverkligar drömmar med teknik.
-     
-
  
-
 .row-fluid
   .span6
     h2 Senaste från bloggen
-    p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
-    ul.linklist
-      each doc in getCollection('blogg').toJSON()
-        li
-          a(href=doc.url)= doc.title
-  .span6
-    h2 Senaste nyheter
-    p Här följer du våra senaste pressmeddelanden, våra kunders senaste nyheter och senaste branschnytt.
     ul.linklist
       each doc in getCollection('blogg').toJSON()
         li
@@ -36,8 +25,16 @@ dontIndexInAnyCollection: true
     a(href="https://github.com/Iteam1337/Wejay")
       img#wejay(src="/content/images/wejay.png")
     .info
-      p Just nu lyssnar vi på
+      p Just nu i högtalarna hos oss
       a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
       a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
+
+      .row-fluid
+  .span6
+    h2 Iteams instagram
+    ul.linklist
+      each doc in getCollection('blogg').toJSON()
+        li
+          a(href=doc.url)= doc.title
 
 instagram(name= document.instagram, max=6)
