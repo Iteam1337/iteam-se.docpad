@@ -1,5 +1,5 @@
 ---
-title: Jobb
+title: Karriär
 layout: page
 tags: ['intro', 'page']
 pageType: "karriar"
