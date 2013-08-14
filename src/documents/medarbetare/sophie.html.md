@@ -13,6 +13,8 @@ image: /content/images/sophie.jpg
 fullimage:
 cssColor: "#4F8DAA"
 css: star
+backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+backgroundDark: true
 
 twitter: sophiewesslau
 instagram: sophiewesslau

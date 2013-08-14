@@ -13,6 +13,8 @@ image: /content/images/martin.jpg
 fullimage:
 cssColor: "#ec5c35"
 css:
+backgroundImage: "http://i.bldr.se/ZV45u.jpeg"
+backgroundDark: true
 
 twitter: martinloman
 instagram: martinloman

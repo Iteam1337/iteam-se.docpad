@@ -13,6 +13,8 @@ image: /content/images/rickard.jpg
 fullimage: /content/images/rickard_hel.jpg
 cssColor: "#89e9a7"
 css:
+backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+backgroundDark: true
 
 twitter: rickardlaurin
 instagram: rickardlaurin

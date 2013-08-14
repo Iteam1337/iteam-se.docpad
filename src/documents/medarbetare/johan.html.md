@@ -13,6 +13,8 @@ image: /content/images/johan.jpg
 fullimage:
 cssColor: "#fab"
 css:
+backgroundImage: "http://i.bldr.se/r4U73.jpeg"
+backgroundDark: true
 
 twitter:
 instagram: johanobrink
