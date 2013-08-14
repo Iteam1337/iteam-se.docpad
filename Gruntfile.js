@@ -49,8 +49,16 @@ module.exports = function (grunt) {
       },
       compile: {
         files: {
-          '<%= outPath %>content/styles/<%= pkg.name %>.css': [
-            'src/documents/content/styles/*.css.styl'
+          "<%= outPath %>content/styles/<%= pkg.name %>.css": [
+            "src/styles/variables.css.styl",
+            "src/styles/general.css.styl",
+            "src/styles/style.css.styl",
+            "src/styles/animation.css.styl",
+            "src/styles/blog.css.styl",
+            "src/styles/cases.css.styl",
+            "src/styles/coworkers.css.styl",
+            "src/styles/page.css.styl",
+            "src/styles/responsive.css.styl"
           ]
         }
       }
@@ -64,7 +72,6 @@ module.exports = function (grunt) {
         },
         files: {
           '<%= outPath %>content/styles/vendor.css': [
-            'src/documents/content/styles/*.css',
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
             '!*.min.css'

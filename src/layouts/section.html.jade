@@ -2,5 +2,8 @@
 layout: default
 ---
 
-article#page.page
-  .page-content!= content
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
+
+.row-fluid
+  article#page.page
+    .page-content!= content

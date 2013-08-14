@@ -21,18 +21,12 @@
   - subpages = (!!document.subpages) ? getCollection(document.subpages) : false
   - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false
 
-
-
-
 //- Other Scripts
 - scripts.add(["/content/scripts/vendor.js"])
 
 //- User
 - styles.add(["/content/styles/vendor.css","/content/styles/iteamse.css"])
 - scripts.add(["/content/scripts/iteamse.js"])
-
-
-- var backgroundImage = !!document.backgroundImage ? "background-image:url(" + document.backgroundImage + ")" : "";
 
 !!! 5
 html(lang="sv")
@@ -77,7 +71,7 @@ html(lang="sv")
 
     .row-fluid#header
       ul.subnav
-        div.subnav-inner
+        .subnav-inner
           each doc in pages
             if (doc.pageIndex >= 10)
               - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
@@ -125,8 +119,8 @@ html(lang="sv")
               li
                 a(href=subpage.url)= subpage.title
 
-    .background-image(style=backgroundImage)
-    .container
+    .background-image(style=backgroundImage())
+    .container(class=singlePageCase())
       .row-fluid#content.content!= content
 
     #footer

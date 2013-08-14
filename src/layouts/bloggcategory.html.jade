@@ -5,10 +5,12 @@ layout: default
 
 h1.main-title(style=shouldWeUseADarkBackground())= capitalizeFirstChar(category)
 
-each doc in getCollection("blogg_" + category).toJSON()
-  section.post
-    header
-      .date= doc.date.toDateString()
-      .category= doc.category
-      a.title(href= doc.url)= doc.title
-    article= doc.intro
+.row-fluid
+  article#post.post
+    each doc in getCollection("blogg_" + category).toJSON()
+      section.post
+        header
+          .date= doc.date.toDateString()
+          .category= doc.category
+          a.title(href= doc.url)= doc.title
+        article= doc.intro

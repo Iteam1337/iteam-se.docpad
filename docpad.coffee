@@ -77,7 +77,7 @@ docpadConfig =
       return composed
 
     shouldWeUseADarkBackground: ->
-      return !!@document.backgroundDark ? "color:white;" : "";
+      return if @document.backgroundDark then "color:white;" else ""
 
     getAllBlogCategories: () ->
       added = []
@@ -91,6 +91,16 @@ docpadConfig =
         categories.push(category)
         added.push(split)
       return categories
+
+    backgroundImage: () ->
+      return if @document.backgroundImage then "background-image:url(" + @document.backgroundImage + ")" else ""
+
+    singlePageCase: () ->
+      base = @document.url.split("/")
+      slug = @document.slug
+      onCase = base[1] is "case" and slug isnt "case-index"
+      return if onCase then "single-case" else ""
+
 
   # Collections
   # ===========

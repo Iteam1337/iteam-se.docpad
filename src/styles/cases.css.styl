@@ -1,0 +1,165 @@
+@import "variable"
+
+#cases
+  .case
+    margin-bottom 40px
+    .case-image
+      display inline-block
+      margin-right 40px
+      vertical-align top
+      width 30%
+
+    .case-about
+      display inline-block
+      width 60%
+
+      .case-title
+        margin-top 0
+
+      .case-tags
+        padding-top 20px
+
+        .tag
+          display inline-block
+          margin-right 20px
+
+#case
+  margin 40px auto
+  max-width 700px
+
+  .title
+    box-sizing(border-box)
+    background #fff
+    font-size 1.2em
+    margin 5px 0
+    position relative
+    width 120px
+
+  h1
+    margin-bottom 40px
+
+  .content
+
+    .about
+      margin 0 0 70px
+      padding 0
+      height 175px
+      position relative
+      img
+        max-height 175px
+        max-width 30%
+        position absolute
+        bottom 0
+        left 0
+      .about-text
+        width 65%
+        position absolute
+        bottom 0
+        right 0
+        max-height 175px
+        h2
+          display inline-block
+          font-size 1.5em
+        p
+          display inline-block
+          font-size 1.1em
+          margin 0
+
+    .quote
+      color #444
+      h3
+        font-size 2em
+      blockquote
+        border-left none
+        text-align right
+
+    p
+      img
+        margin 40px 0
+        width 100%
+
+        &.left
+          left -100px
+          position absolute
+        &.right
+          float right
+          margin-left 20px
+          position relative
+          width 250px
+
+    .team,
+    .relatedServices,
+    .twitter
+      margin-top 40px
+      padding 40px 0
+      position relative
+
+      li
+        display inline-block
+        margin-bottom 20px
+        text-align center
+        vertical-align top
+        width 49%
+
+        a
+          display block
+          margin-bottom 5px
+
+    .urls
+      padding 40px 0
+      position relative
+
+      .title
+        width 200px
+
+    .gallery
+      padding-top 40px
+      position relative
+      width 100%
+
+      .title
+        top -50px
+
+      .imgWrap
+        img
+          max-height 231px
+          margin-bottom 20px
+          margin-right 20px
+
+          &:nth-child(2n)
+            margin-right 0
+
+    .relatedServices
+      padding 40px 0 0
+
+      .title
+        width 200px
+
+    .twitter
+      padding 40px 0 0
+
+      .tweets
+        li
+          color #999
+          font-family "Palatino"
+          font-size 0.8em
+          margin-bottom 10px
+          text-align left
+          vertical-align top
+          width 48%
+
+          &:nth-child(2n-1)
+            margin-right 15px
+
+          a
+            display inline
+
+          .text
+            color #666
+            width 100%
+
+          .time
+            margin 5px 0
+
+          .user
+            font-weight bold

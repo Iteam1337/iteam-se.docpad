@@ -4,4 +4,4 @@ ul.team
       each coworker in getCollection('medarbetare').toJSON()
         if coworker.shortname == member
           a(href="/medarbetare/" + member)= coworker.title
-          div= coworker.jobTitle
+          .coworker-job-title= coworker.jobTitle

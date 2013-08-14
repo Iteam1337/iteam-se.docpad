@@ -4,8 +4,8 @@ layout: default
 
 h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
-article#coworker(ng-controller="CoworkerCtrl")
-  .row-fluid
+.row-fluid
+  article#coworker(ng-controller="CoworkerCtrl")
     - var inlineClass = "image "
     - inlineClass += !!document.css ? document.css : "";
     - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : "";

@@ -8,7 +8,7 @@ dontIndexInAnyCollection: true
 ---
 
 .row-fluid.coworkers
-  h1.main-title(style=shouldWeUseADarkBackground()) Medarbetare
+
   each doc in getCollection('medarbetare').toJSON()
     .coworker
       a.portrait(href=doc.url)

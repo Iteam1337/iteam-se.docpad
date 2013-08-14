@@ -7,8 +7,6 @@ pageIndex: 2
 dontIndexInAnyCollection: true
 ---
 
-h1.main-title(style=shouldWeUseADarkBackground()) Case
-
 .row-fluid#cases
   each doc in getCollection('case').toJSON()
     .case

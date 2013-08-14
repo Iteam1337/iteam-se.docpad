@@ -2,11 +2,12 @@
 layout: default
 ---
 
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
+
 .row-fluid(make-pretty)
-  h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
   article#post.post
-    div.post-date= document.date.toDateString()
+    .post-date= document.date.toDateString()
     .post-content!= content
     .next
       a(href="")
