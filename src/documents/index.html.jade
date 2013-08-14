@@ -32,9 +32,7 @@ dontIndexInAnyCollection: true
       .row-fluid
   .span6
     h2 Iteams instagram
-    ul.linklist
-      each doc in getCollection('blogg').toJSON()
-        li
-          a(href=doc.url)= doc.title
+
+         
 
 instagram(name= document.instagram, max=6)
