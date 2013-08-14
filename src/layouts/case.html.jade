@@ -9,9 +9,22 @@ article#case.row-fluid
   .about
 
     .content
-      .text!= content
+
+      .text
+        if (!!document.about)
+          .about
+            img(src=document.about.image)
+            .about-text
+              h2=document.about.title
+              p=document.about.text
+        != content
+
 
       .information
+        if (!!document.quote)
+          .quote
+            h3= "\"" + document.quote.text + "\""
+            blockquote="— " + document.quote.by
         if (document.team)
           include ../jade_includes/team
 
