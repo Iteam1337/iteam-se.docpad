@@ -25,13 +25,11 @@ dontIndexInAnyCollection: true
     a(href="https://github.com/Iteam1337/Wejay")
       img#wejay(src="/content/images/wejay.png")
 
-
-      a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
-      a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
-
 .row-fluid
   .span12
       h2 Just nu i högtalarna hos oss
+      a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
+      a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
 
 .row-fluid
   .span12
