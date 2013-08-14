@@ -126,7 +126,7 @@ docpadConfig =
 
     # Collection of all available positions
     ledigatjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'karriar', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'jobb', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # All of our services
     tjanster: (database) ->
