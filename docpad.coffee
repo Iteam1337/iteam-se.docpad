@@ -72,6 +72,13 @@ docpadConfig =
       if size then url += "?s=#{size}"
       return url
 
+    capitalizeFirstChar: (str) ->
+      composed = str.charAt(0).toUpperCase() + str.slice(1)
+      return composed
+
+    shouldWeUseADarkBackground: ->
+      return !!@document.backgroundDark ? "color:white;" : "";
+
     getAllBlogCategories: () ->
       added = []
       categories = []

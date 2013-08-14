@@ -3,6 +3,8 @@ layout: default
 ---
 - category = document.url.split("/")[2]
 
+h1.main-title(style=shouldWeUseADarkBackground())= capitalizeFirstChar(category)
+
 each doc in getCollection("blogg_" + category).toJSON()
   section.post
     header

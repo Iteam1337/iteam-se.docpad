@@ -2,8 +2,7 @@
 layout: default
 ---
 
-- var backgroundDark = !!document.backgroundDark ? "color:white;" : "";
-h1.main-title(style=backgroundDark)= document.title
+  h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
 article#case.row-fluid
   .about

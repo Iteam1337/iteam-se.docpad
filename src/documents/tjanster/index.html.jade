@@ -7,6 +7,8 @@ subpages: 'tjanster'
 dontIndexInAnyCollection: true
 ---
 
+h1.main-title(style=shouldWeUseADarkBackground()) Tjänster
+
 .row-fluid
   each doc in getCollection('tjanster').toJSON()
     .offer

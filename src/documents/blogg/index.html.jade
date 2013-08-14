@@ -4,6 +4,9 @@ layout: default
 pageIndex: 12
 dontIndexInAnyCollection: true
 ---
+
+h1.main-title(style=shouldWeUseADarkBackground()) Blogg
+
 each doc in getCollection("blogg").toJSON()
   section.post
     header

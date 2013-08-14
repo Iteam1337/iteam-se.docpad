@@ -13,7 +13,7 @@ image: /content/images/christian.jpg
 fullimage:
 cssColor: "#001337"
 css:
-backgroundImage: "http://i.bldr.se/2Gokw.jpeg
+backgroundImage: "http://i.bldr.se/2Gokw.jpeg"
 backgroundDark: true
 
 twitter: landgren
