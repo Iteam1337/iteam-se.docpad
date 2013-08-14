@@ -3,7 +3,7 @@ title: Karriär
 layout: page
 tags: ['intro', 'page']
 pageType: "karriar"
-pageIndex: 4
+pageIndex: 5
 dontIndexInAnyCollection: true
 ---
 
