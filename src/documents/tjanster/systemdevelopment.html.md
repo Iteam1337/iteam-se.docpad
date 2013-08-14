@@ -12,7 +12,7 @@ summary: >
 
 Att systemutveckla är att skapa - något som vi brinner för. Vi utvecklr i projektform - vilket betyder att vi planerar inför, sätter starttid, sluttid och budget tillsammans med våra kunder innan vi startar. I regel omfattar ett projekt en förstudiefas, en konceptfas och en intensiv utvecklingsfas. Och när vi är klara så har du ett färdigt system eller produkt redo att lanseras till sin målgrupp. Just ditt projekt är unikt så resan kan såklart se annorlunda ut för dig. Välkommen att kontakta oss och diskutera med oss hur just du kan komma igång med att förverkliga din dröm.
 
-Kontakta [Hans](/medarbetare/hans) och titta på våra tidigare [case](/case).
+Kontakta [Hans](/medarbetare/hans) och titta på våra tidigare [Case](/case).
 
 ### Scrum –trygg och effektiv utvecklingsmetodik
 Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Scrum är en agil, och iterativ arbetsprocess som ger dig fördelar. Scrum ger ökad kvalitet och ökat fokus på att lösa de utmaningar som är viktigast för dig. En metodik som handlar om att komma igång leverera värde - snarare än att skriva detaljerade kravspecifikationer. Med Scrum som projektmodell kan vi garantera kvalitet och hög effektivitet.
@@ -24,5 +24,5 @@ Metodiken innebär att vi delar upp arbetet i ett antal korta intensiva utveckli
 I ett scrumprojekt betalar du för tiden dit utvecklingsteam ägnar åt att utveckla just din dröm. En typisk sprint kan vara ca 280 timmar och då är det 280 timmar du betalar för - ofta fördelat över ca 3 veckors kalendertid. För just ditt projekt - din dröm - måste vi såklart veta mer för att kunna bedömma hur mycket det kommer att kosta.
 
 ### Att vårda och underhålla system
-Efter att din första release är gjord är det klokt att budgetera för ungefär lika mycket tid för år två i vidareutveckling. På så sätt har du råd och tid att förädla nya idéer och funktioner. En bra lösning lever i många år om man håller tekniken uppdaterad. Vi erbjuder därför en löpande vidareutveckling av webbplatsen efter avslutat projekt. Ett så kallat retaineravtal tecknas för [förvaltning, vidareutveckling och trimming](/tjanster/operations/Systemforvaltning). Din webbplats får varje månad får nya funktioner och bevakas.
+Efter att din första release är gjord är det klokt att budgetera för ungefär lika mycket tid för år två i vidareutveckling. På så sätt har du råd och tid att förädla nya idéer och funktioner. En bra lösning lever i många år om man håller tekniken uppdaterad. Vi erbjuder därför en löpande vidareutveckling av webbplatsen efter avslutat projekt. Ett så kallat retaineravtal tecknas för [förvaltning, vidareutveckling och trimming](/operations/systemforvaltning). Din webbplats får varje månad får nya funktioner och bevakas.
 
