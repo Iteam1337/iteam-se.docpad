@@ -24,9 +24,8 @@ dontIndexInAnyCollection: true
   .span6#nowplaying
     a(href="https://github.com/Iteam1337/Wejay")
       img#wejay(src="/content/images/wejay.png")
-.row-fluid
-  .span6
-      h2 Just nu i högtalarna hos oss
+    .info
+      p Just nu i högtalarna hos oss
       a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
       a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
 
