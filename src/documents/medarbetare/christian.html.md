@@ -10,8 +10,10 @@ jobTitle: CEO and hacker
 email: christian.landgren@iteam.se
 phonenumber: 0707 - 75 58 31
 image: /content/images/christian.jpg
-fullimage:
+backgroundImage: "http://www.oljani-crea.com/wp-content/uploads/2013/05/oljani.jpg"
+backgroundDark: true
 cssColor: "#001337"
+
 css:
 
 twitter: landgren
