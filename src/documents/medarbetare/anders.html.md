@@ -13,6 +13,8 @@ image: /content/images/anders.jpg
 fullimage:
 cssColor:
 css:
+backgroundImage: "http://i.bldr.se/2Gokw.jpeg"
+backgroundDark: false
 
 twitter: osirisguitar
 instagram: osirisguitar

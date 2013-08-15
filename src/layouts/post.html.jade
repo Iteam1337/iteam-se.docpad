@@ -2,13 +2,13 @@
 layout: default
 ---
 
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
+
 .row-fluid(make-pretty)
   article#post.post
-    div.post-date= document.date.toDateString()
+    .post-date= document.date.toDateString()
     h2.post-title= document.title
     .post-content!= content
-    .next
-      a(href="")
     .post-author
       if document.author
         include ../jade_includes/author

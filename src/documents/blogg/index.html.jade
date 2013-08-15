@@ -1,9 +1,10 @@
 ---
 title: Blogg
-layout: default
+layout: section
 pageIndex: 12
 dontIndexInAnyCollection: true
 ---
+
 each doc in getCollection("blogg").toJSON()
   section.post
     header

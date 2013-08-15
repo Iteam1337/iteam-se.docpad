@@ -2,39 +2,40 @@
 layout: default
 ---
 
-- var backgroundDark = !!document.backgroundDark ? "color:white;" : "";
-h1.main-title(style=backgroundDark)= document.title
 
-article#case.row-fluid
-  .about
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
-    .content
+.row-fluid
+  article#case
+    .about
 
-      .text
-        if (!!document.about)
-          .about
-            img(src=document.about.image)
-            .about-text
-              h2=document.about.title
-              p=document.about.text
-        != content
+      .content
+
+        .text
+          if (!!document.about)
+            .about
+              img(src=document.about.image)
+              .about-text
+                h2=document.about.title
+                p=document.about.text
+          != content
 
 
-      .information
-        if (!!document.quote)
-          .quote
-            h3= "\"" + document.quote.text + "\""
-            blockquote="— " + document.quote.by
-        if (document.team)
-          include ../jade_includes/team
+        .information
+          if (!!document.quote)
+            .quote
+              h3= "\"" + document.quote.text + "\""
+              blockquote="— " + document.quote.by
+          if (document.team)
+            include ../jade_includes/team
 
-        if (document.readmorelinks)
-          include ../jade_includes/readmore
+          if (document.readmorelinks)
+            include ../jade_includes/readmore
 
-        if (document.imageGallery)
-          include ../jade_includes/image_gallery
+          if (document.imageGallery)
+            include ../jade_includes/image_gallery
 
-        if (document.tags)
-          include ../jade_includes/related_tags
+          if (document.tags)
+            include ../jade_includes/related_tags
 
-          include ../jade_includes/twitter_tags
+            include ../jade_includes/twitter_tags

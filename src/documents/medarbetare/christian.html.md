@@ -15,6 +15,8 @@ backgroundDark: true
 cssColor: "#001337"
 
 css:
+backgroundImage: "http://i.bldr.se/2Gokw.jpeg"
+backgroundDark: true
 
 twitter: landgren
 instagram: clandgren

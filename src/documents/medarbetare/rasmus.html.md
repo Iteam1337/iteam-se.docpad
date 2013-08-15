@@ -13,6 +13,8 @@ image: /content/images/rasmus.jpg
 fullimage:
 cssColor: "#2d90ed"
 css:
+backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+backgroundDark: true
 
 twitter:
 instagram:

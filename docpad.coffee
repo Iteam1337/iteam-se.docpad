@@ -72,6 +72,13 @@ docpadConfig =
       if size then url += "?s=#{size}"
       return url
 
+    capitalizeFirstChar: (str) ->
+      composed = str.charAt(0).toUpperCase() + str.slice(1)
+      return composed
+
+    shouldWeUseADarkBackground: ->
+      return if @document.backgroundDark then "color:white;" else ""
+
     getAllBlogCategories: () ->
       added = []
       categories = []
@@ -84,6 +91,16 @@ docpadConfig =
         categories.push(category)
         added.push(split)
       return categories
+
+    backgroundImage: () ->
+      return if @document.backgroundImage then "background-image:url(" + @document.backgroundImage + ")" else ""
+
+    singlePageCase: () ->
+      base = @document.url.split("/")
+      slug = @document.slug
+      onCase = base[1] is "case" and slug isnt "case-index"
+      return if onCase then "single-case" else ""
+
 
   # Collections
   # ===========

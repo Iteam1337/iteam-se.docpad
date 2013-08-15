@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-- var backgroundDark = !!document.backgroundDark ? "color:white;" : "";
-h1.main-title(style=backgroundDark)= document.title
 
-article#coworker(ng-controller="CoworkerCtrl")
-  .row-fluid
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
+
+.row-fluid
+  article#coworker(ng-controller="CoworkerCtrl")
     - var inlineClass = "image "
     - inlineClass += !!document.css ? document.css : "";
     - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : "";
