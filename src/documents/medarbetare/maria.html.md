@@ -13,6 +13,8 @@ image: /content/images/maria.jpg
 fullimage:
 cssColor:
 css:
+backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+backgroundDark: true
 
 twitter: MariaSolscher
 instagram: MariaSolscher

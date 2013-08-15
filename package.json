@@ -25,37 +25,28 @@
     "npm": "1.1.x"
   },
   "dependencies": {
-    "docpad": "~6.49.0",
+    "bal-util": "~2.3.0",
     "docpad-plugin-cleanurls": "~2.5.0",
+    "docpad-plugin-coffeekup": "~2.2.0",
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-eco": "~2.0.2",
-    "docpad-plugin-less": "~2.2.0",
+    "docpad-plugin-jade": "~2.5.0",
     "docpad-plugin-marked": "~2.1.1",
     "docpad-plugin-partials": "~2.7.2",
-    "docpad-plugin-stylus": "~2.4.0",
     "docpad-plugin-text": "~2.2.4",
-    "docpad-plugin-jade": "~2.5.0",
-    "docpad-plugin-related": "~2.0.5",
-    "marked": "*",
-    "docpad-plugin-ghpages": "~2.3.0",
-    "docpad-plugin-thumbnails": "~2.1.0",
-    "bal-util": "~2.3.0",
     "grunt": "~0.4.1",
-    "safeps": "~2.2.6",
     "grunt-cli": "~0.1.9",
-    "docpad-plugin-feedr": "~2.5.0",
-    "docpad-plugin-coffeekup": "~2.2.0"
+    "marked": "*",
+    "safeps": "~2.2.6"
   },
   "devDependencies": {
-    "docpad-plugin-livereload": "~2.5.1",
     "mocha": "~1.12.0",
     "grunt": "~0.4.1",
     "grunt-mocha": "~0.3.4",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-jade": "~0.8.0",
     "grunt-contrib-stylus": "~0.6.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-contrib-cssmin": "~0.6.1"
-  },
-  "main": "node_modules/docpad/bin/docpad-server"
+    "grunt-contrib-uglify": "~0.2.2"
+  }
 }

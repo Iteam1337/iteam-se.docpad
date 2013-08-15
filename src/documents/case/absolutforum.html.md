@@ -1,7 +1,8 @@
 ---
 title: ABSOLUT FORUM
 layout: case
-subpages: 'case'
+#showCase: true
+
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
 images: ['absolutforum1.jpg']
 imagePos: ['right']
@@ -11,6 +12,9 @@ intro: Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste va
 siteurl: http://www.absolut.absolutcompany.com
 twitterTag: ['#Absolut-Vodka','#Absolut']
 readmorelinks: ['http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009','http://www.absolut.absolutcompany.com','http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara']
+
+backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundDark: true
 ---
 
 ### En plattform för 126 marknader världen över

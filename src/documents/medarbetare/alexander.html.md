@@ -13,6 +13,8 @@ image: /content/images/alexander.jpg
 fullimage:
 cssColor:
 css:
+backgroundImage: "http://i.bldr.se/4NucD.jpeg"
+backgroundDark: true
 
 twitter:
 instagram: zendeveloper

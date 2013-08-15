@@ -8,16 +8,18 @@
 - var documentUrl = document.url.split("/")
 - var basename = documentUrl[1]
 - var onBlogPage = basename === "blogg"
+- var onCase = basename == "case"
 
 //- All pages that should be shown on the
 //- second navigation row
 - var subpages = {}
-- if (!onBlogPage)
+- if (basename === "blogg")
+  - subpages = getAllBlogCategories()
+- else if (basename == "case")
+  - subpages = getCollection("showcase").toJSON()
+- else
   - subpages = (!!document.subpages) ? getCollection(document.subpages) : false
   - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false
-- else
-  - subpages = getAllBlogCategories()
-
 
 //- Other Scripts
 - scripts.add(["/content/scripts/vendor.js"])
@@ -69,7 +71,7 @@ html(lang="sv")
 
     .row-fluid#header
       ul.subnav
-        div.subnav-inner
+        .subnav-inner
           each doc in pages
             if (doc.pageIndex >= 10)
               - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
@@ -94,7 +96,7 @@ html(lang="sv")
         .subpage-inner
           each subpage in subpages
             - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
-            a(href=subpage.url, class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+            a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
     ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
       each doc, i in pages
@@ -117,7 +119,8 @@ html(lang="sv")
               li
                 a(href=subpage.url)= subpage.title
 
-    .container
+    .background-image(style=backgroundImage())
+    .container(class=singlePageCase())
       .row-fluid#content.content!= content
 
     #footer

@@ -1,7 +1,8 @@
 ---
 title: Beckers.se
 layout: case
-subpages: 'case'
+showCase: true
+
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
 images: ['beckers1.jpg']
 imagePos: ['right']
@@ -10,9 +11,14 @@ team: ['anders','johanna','martin','dennis','rickard','maria']
 intro: Vi utvecklade Beckers.se tillsammans med byråpartnern Klirr och lanserade i augusti 2012.
 siteurl: http://www.beckers.se
 twitterTag: '#beckersfarg'
+
+
+backgroundImage: "http://i.bldr.se/hHDGu.jpeg"
+backgroundDark: true
 ---
 
 <img src="/content/images/beckers1.jpg" class="right" alt="">
+
 ### Sveriges bäst färgsajt inspirerar och utbildar
 Vi utvecklade Beckers.se tillsammans med byråpartnern Klirr och lanserade i augusti 2012. Beckers.se är en responsiv sajt - dvs den anpassar sin layout automatiskt beroende av vad besökarens skärmstorlek är. Perfekt för en sajt som - utan specialanpassningar - måste fungera bra på mobiltelefonen liväl som på en stor skärm på kontoret eller hemma. Sajten riktar sig till konsumenter, men har också delar för målare och beskrivare. Målet var att skapa en sajt som både inspirerar och utbildar och som triggar såväl emotionella som rationella beslut.
 

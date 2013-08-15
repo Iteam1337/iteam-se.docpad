@@ -2,23 +2,40 @@
 layout: default
 ---
 
-article#case.row-fluid
-  .about
-    h1= document.title
-    .content
-      .text!= content
 
-      .information
-        if (document.team)
-          include ../jade_includes/team
+h1.main-title(style=shouldWeUseADarkBackground())= document.title + (document.subtitle && " - " + document.subtitle)
 
-        if (document.readmorelinks)
-          include ../jade_includes/readmore
+.row-fluid
+  article#case
+    .about
 
-        if (document.imageGallery)
-          include ../jade_includes/image_gallery
+      .content
 
-        if (document.tags)
-          include ../jade_includes/related_tags
+        .text
+          if (!!document.about)
+            .about
+              img(src=document.about.image)
+              .about-text
+                h2=document.about.title
+                p=document.about.text
+          != content
 
-          include ../jade_includes/twitter_tags
+
+        .information
+          if (!!document.quote)
+            .quote
+              h3= "\"" + document.quote.text + "\""
+              blockquote="— " + document.quote.by
+          if (document.team)
+            include ../jade_includes/team
+
+          if (document.readmorelinks)
+            include ../jade_includes/readmore
+
+          if (document.imageGallery)
+            include ../jade_includes/image_gallery
+
+          if (document.tags)
+            include ../jade_includes/related_tags
+
+            include ../jade_includes/twitter_tags

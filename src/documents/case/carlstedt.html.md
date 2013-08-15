@@ -1,7 +1,8 @@
 ---
 title: Carlstedt Arkitekter
 layout: case
-subpages: 'case'
+showCase: true
+
 tags: ['IT-review','Drift & Support','Specialist- och projektstöd']
 images: ['carlstedt.jpg']
 imagePos: ['right']
@@ -10,6 +11,9 @@ team: ['mats','rasmus']
 intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.carlstedtark.se
 twitterTag: 'carlstedt arkitekter'
+
+backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundDark: true
 ---
 
 ### Ett heltäckande drift- och support uppdrag

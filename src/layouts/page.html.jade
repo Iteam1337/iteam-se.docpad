@@ -2,16 +2,19 @@
 layout: default
 ---
 
-div.row-fluid(make-anchors, ng-controller="AboutCtrl")
-  div#page.page
-    h1= document.title
-    article.page-content!= content
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
-    if (document.pageType === 'Service')
-      include ../jade_includes/service
+.row-fluid(make-anchors, ng-controller="AboutCtrl")
+  #page.page
+    article.page-content
+      .text!= content
 
-    else if (document.pageType === 'karriar')
-      include ../jade_includes/karriar
+      .info
+        if (document.pageType === 'Service')
+          include ../jade_includes/service
 
-    else if (document.pageType === 'kontakt')
-      include ../jade_includes/kontakt
+        else if (document.pageType === 'karriar')
+          include ../jade_includes/karriar
+
+        else if (document.pageType === 'kontakt')
+          include ../jade_includes/kontakt

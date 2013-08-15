@@ -13,6 +13,8 @@ image: /content/images/johanna.jpg
 fullimage:
 cssColor:
 css:
+backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+backgroundDark: false
 
 twitter: mittistormen
 instagram: mittistormen

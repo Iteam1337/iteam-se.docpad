@@ -8,6 +8,7 @@ dontIndexInAnyCollection: true
 ---
 
 .row-fluid.coworkers
+
   each doc in getCollection('medarbetare').toJSON()
     .coworker
       a.portrait(href=doc.url)

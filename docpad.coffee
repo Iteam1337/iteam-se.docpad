@@ -72,6 +72,13 @@ docpadConfig =
       if size then url += "?s=#{size}"
       return url
 
+    capitalizeFirstChar: (str) ->
+      composed = str.charAt(0).toUpperCase() + str.slice(1)
+      return composed
+
+    shouldWeUseADarkBackground: ->
+      return if @document.backgroundDark then "color:white;" else ""
+
     getAllBlogCategories: () ->
       added = []
       categories = []
@@ -84,6 +91,16 @@ docpadConfig =
         categories.push(category)
         added.push(split)
       return categories
+
+    backgroundImage: () ->
+      return if @document.backgroundImage then "background-image:url(" + @document.backgroundImage + ")" else ""
+
+    singlePageCase: () ->
+      base = @document.url.split("/")
+      slug = @document.slug
+      onCase = base[1] is "case" and slug isnt "case-index"
+      return if onCase then "single-case" else ""
+
 
   # Collections
   # ===========
@@ -115,6 +132,8 @@ docpadConfig =
     # Collection of all cases
     case: (database) ->
       database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[title:1])
+    showcase: (database) ->
+      database.findAllLive({relativeOutDirPath:'case', showCase: true, dontIndexInAnyCollection: $exists: false},[title: 1])
 
     # Collection of all feedback-posts
     feedback: (database) ->
@@ -144,14 +163,7 @@ docpadConfig =
 
   # =================================
   # Plugin Configuration
-
-  plugins:
-    feedr:
-      feeds:
-        'blogs':
-          url: 'http://mix.chimpfeedr.com/c22cf-iteam-blogg'
-        'iteam':
-          url: 'http://mix.chimpfeedr.com/16486-Iteam'
+  #plugins:
 
   # Out Path
   # Where should we put our generated website files?
