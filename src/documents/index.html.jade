@@ -1,40 +1,25 @@
 ---
 layout: 'default'
 title: 'Iteam.se - vi förverkligar drömmar med teknik'
-instagram: iteam1337
-dontIndexInAnyCollection: true
+backgroundImage: '/content/images/parkering.jpg'
 ---
 
 // Example row of columns.
 .row-fluid#startpage
   .span12
     article.news
-      h2 Vi förverkligar drömmar med teknik
-      p Genom att erbjuda goda råd, teknisk spjutspets och driftexpertis förverkligar vi din dröm. Tillsammans med oss - i ditt projekt - kan du få uppleva värdet av hög kvalitet, service och innovation.
+      p: :markdown
+      |  This is a UNIX system. Do you:
+      |     a) know this
+      |     b) ???
 
-.row-fluid
-  .span6
-    h2 Senaste från bloggen
-    p På vår blogg kan du läsa om våra medarbetares lärdomar och reflektioner
-    ul.linklist
-      each doc in getCollection('blogg').toJSON()
-        li
-          a(href=doc.url)= doc.title
-  .span6
-    h2 Senaste nyheter
-    p Här följer du våra senaste pressmeddelanden, våra kunders senaste nyheter och senaste branschnytt.
-    ul.linklist
-      each doc in getCollection('blogg').toJSON()
-        li
-          a(href=doc.url)= doc.title
 
-.row-fluid(ng-controller="WejayCtrl", ng-show="!!nowplaying")
-  .span6#nowplaying
-    a(href="https://github.com/Iteam1337/Wejay")
-      img#wejay(src="/content/images/wejay.png")
-    .info
-      p Just nu lyssnar vi på
-      a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
-      a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
+      p: :markdown
+      |   Vi gör det vi gör för att vi älskar teknik. Inte på ett prylgalet
+      |   måste-ha-sätt där vi jämt köper nya leksaker bara för att de är coola*. Mer på ett “Det där måste gå att göra bättre, jag tror jag vet hur”-sätt. Eller ett “Det där är omöjligt. Låt mig försöka”-sätt.
 
-instagram(name= document.instagram, max=6)
+      |   Vi bygger allt från webbar till e-handel, bot:ar, strömmande musiktjänster
+      |   och … Eftersom vi älskar teknik och problem, bygger vi det vi bygger så att tekniken inte syns. För vi förstår att alla inte är som vi. Våra kunders kunder vill oftast inte se teknik. De vill se saker som funkar. Det är sånt vi löser.
+
+      | * Vi ljög
+      |  förresten om prylarna. Vi köper visst allt som är nytt och coolt.
