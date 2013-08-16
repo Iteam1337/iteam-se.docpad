@@ -11,7 +11,7 @@ backgroundDark: true
 
 .row-fluid
   each doc in getCollection('tjanster').toJSON()
-    .offer
+    .offer(style=backgroundImage(doc))
       a(href=doc.url)
         h2= doc.title
       p= doc.summary

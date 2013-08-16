@@ -92,8 +92,9 @@ docpadConfig =
         added.push(split)
       return categories
 
-    backgroundImage: () ->
-      return if @document.backgroundImage then "background-image:url(" + @document.backgroundImage + ")" else ""
+    backgroundImage: (page) ->
+      page = page || @document
+      return if page.backgroundImage then "background-image:url(" + page.backgroundImage + ")" else ""
 
     singlePageCase: () ->
       base = @document.url.split("/")
@@ -112,54 +113,55 @@ docpadConfig =
 
     # All blog-posts
     blogg: (database) ->
-      database.findAllLive({layout:'blogg', $exists: false},[pageOrder:-1])
+      database.findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false},[pageOrder:-1])
 
     # =================
     # DRIFT blog-posts
     blogg_drift: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/drift', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/drift', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
     # LARV blog-posts
     blogg_larv: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/larv', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/larv', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
     # NYHETER blog-posts
     blogg_nyheter: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/nyheter', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/nyheter', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
     # UTVECKLING blog-posts
     blogg_utveckling: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/utveckling', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/utveckling', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
     # =================
 
     # Collection of all cases
     case: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', $exists: false},[title:1])
+      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[title:1])
+
     showcase: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', showCase: true, $exists: false},[title: 1])
+      database.findAllLive({relativeOutDirPath:'case', showCase: true, dontIndexInAnyCollection: $exists: false},[title: 1])
 
     # Collection of all feedback-posts
     feedback: (database) ->
-      database.findAllLive({relativeOutDirPath:'feedback', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'feedback', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # Collection of a coworkers
     medarbetare: (database) ->
-      database.findAllLive({relativeOutDirPath:'medarbetare', $exists: false},[filename:1])
+      database.findAllLive({relativeOutDirPath:'medarbetare', dontIndexInAnyCollection: $exists: false},[filename:1])
 
     # Collection of all available positions
     ledigatjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'karriar', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'karriar', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # All of our services
     tjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'tjanster', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # A collection of information about us
     om: (database) ->
-      database.findAllLive({relativeOutDirPath:'om', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'om', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # =======================
     # not _really_ in use
     # =======================
     operations: (database) ->
-      database.findAllLive({relativeOutDirPath:'operations', $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'operations', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
   # =================================
   # Plugin Configuration
