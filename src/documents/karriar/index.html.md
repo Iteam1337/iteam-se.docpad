@@ -5,16 +5,25 @@ tags: ['intro', 'page']
 pageType: karriar
 pageIndex: 4
 dontIndexInAnyCollection: true
+backgroundImage: http://blog.benjaminfenster.com/wp-content/uploads/2011/04/jurassic-park-unix.jpg
+backgroundDark: true
 ---
 
-### Följ med på vår resa.
+### This is a Unix system
+	1. Do you know this?
+	2. ????
 
-Som medarbetare hos oss arbetar man med guidning av våra tre grundläggande värderingar: Att skapa värde, Att göra något bra - och Att ha kul. Dom tre riktmärkena hjälper oss framåt längs vår resa - och dig framåt under din resa tillsammans med oss. Det innebär bland annat att du får du arbeta med den allra senaste tekniken - som HTML 5, MVC3, iPhone, Windows Phone 7, nodejs, angularjs, RavenDB och NoSQL. Du kommer också att ha arbetstid avsatt för att labba med ytterligare nya tekniker.
+På Iteam följer alla beslut tre grundläggande riktmärken: Att skapa värde, Att göra något bra - och Att ha kul. Det betyder att vi väljer bort uppdrag
+som står emot någon av dessa. Du kommer alltså alltid jobba med roliga, värdeskapande och meningsfulla projekt. Inga VB-lösningar för porrindustrin med andra ord ;) 
+Vi är aldrig uthyrda som resurskonsulter utan jobbar alltid i team och helst i vårt eget kontor (vi har dock kunder i Venice, LA och då gör vi gärna undantag).
+Alla projekt säljer vi med öppna och transparenta förutsättningar och prioriterar kvalitet över funktionalitet. 
 
-Iteam är en arbetsplats med intressanta utmaningar och mycket stimulans – att ha kul på jobbet är viktigt. Det är en självklarhet att du är med och formar din egen roll och styr över hur du löser dina uppgifter. Vi delar våra erfarenheter med varandra på kontoret och våra kollegor i branschen på vår blogg http://tekniken.nu.
 
-### Got talent? - spontanansök här.
-För oss är det viktigt att hitta rätt person, en som passar in i vårt gäng. Det spelar ingen roll om du har en bra utbildning i grunden eller om du skaffat dig din erfarenhet på egen hand. Vi letar efter dig som har en spännande bakgrund - och som letar efter än mer spänning och utmaningar framöver. Vi älskar spontanansökningar - så tveka inte att skicka din ansökan:
+### Kan du koda utan Stack Overflow?
+Vi är kräsna och väljer endast kandidater som har relevant erfarenhet. Om du söker seniora roller kommer vi vilja se kodexempel, gärna på Github. 
+Söker du en junior roll kommer du få ett köra ett test, först på nätet sedan hos oss på Tegnérgatan 28 i Stockholm. 
+
+Vi älskar spontanansökningar - så om inte ovanstående skrämde dig, skicka in din ansökan här
 
 <form action="">
   <input type="file">
