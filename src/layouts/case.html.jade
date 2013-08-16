@@ -2,8 +2,8 @@
 layout: default
 ---
 
-
-h1.main-title(style=shouldWeUseADarkBackground())= document.title + (document.subtitle && " - " + document.subtitle || '')
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
+  small=document.subtitle && " - " + document.subtitle || ''
 
 .row-fluid
   article#case
