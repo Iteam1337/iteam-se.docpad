@@ -92,8 +92,9 @@ docpadConfig =
         added.push(split)
       return categories
 
-    backgroundImage: () ->
-      return if @document.backgroundImage then "background-image:url(" + @document.backgroundImage + ")" else ""
+    backgroundImage: (page) ->
+      page = page || @document
+      return if page.backgroundImage then "background-image:url(" + page.backgroundImage + ")" else ""
 
     singlePageCase: () ->
       base = @document.url.split("/")
@@ -145,6 +146,7 @@ docpadConfig =
     # Collection of all cases
     case: (database) ->
       database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[title:1])
+
     showcase: (database) ->
       database.findAllLive({relativeOutDirPath:'case', showCase: true, dontIndexInAnyCollection: $exists: false},[title: 1])
 
