@@ -55,18 +55,27 @@
   #toAngular
     display none
 
+  .top-part
+    position relative
+    width 100%
+    height 260px
+    margin-top 50px
+    .information
+      position absolute
+      bottom 22px
+      left 240px
+      max-width 80%
+
   .image
-    border-radius 300px
     border 10px solid #ffbd09
-    margin 0 auto
-    padding 5px
+    margin 0
+    padding 0
     width 200px
     height 200px
     position relative
 
     img
       z-index 1
-      border-radius 200px
       width 200px
       position relative
 
@@ -141,12 +150,13 @@
   .job,
   .email,
   .phone
-    text-align center
+    text-align left
 
   .name
     margin-top 20px
   .job
-    margin-bottom 20px
+    margin-bottom 10px
+    font-size 1.2em
   .email
     a
       display inline-block
@@ -163,10 +173,10 @@
 
   .social
     position relative
-    margin 0px auto
+    margin 0
     width 100%
     display inline-block
-    text-align center
+    text-align left
 
   .social-media,
   .github,
@@ -213,7 +223,7 @@
 
     .git
       vertical-align top
-      width 48%
+      width 100%
       display inline-block
       margin 0
       padding 0
@@ -223,16 +233,26 @@
 
       li
         border-bottom 1px solid #f9f9f9
-
-    .git:last-child
-      margin-left 2%
+        min-height 30px
 
     .title
       width 200px
 
+    .git
+      li:before
+        position absolute
+        bottom 0
+        left 0
+        width 100%
+        height 100%
+        display block
+        content ""
+        vendor("box-shadow", inset 0 -15px 10px -10px white)
+
     li
       margin-bottom 10px
       position relative
+      vertical-align top
 
       a
         color #ffbd09
@@ -242,7 +262,10 @@
           color #666
 
       .git-info
-        width 80%
+        width 85%
+        max-height 50px
+        overflow hidden
+
 
       p
         margin 10px 0 0

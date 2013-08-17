@@ -12,7 +12,8 @@ intro: Vi utvecklade Svensk Byggtjänsts Projektbevakning tillsammans med byråp
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
 twitterTag: ['svenskbyggtjanst','projektbevakning']
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+
+backgroundImage: "/content/images/sb.jpg"
 backgroundDark: true
 ---
 

@@ -12,7 +12,7 @@ intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.carlstedtark.se
 twitterTag: 'carlstedt arkitekter'
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+backgroundImage: "/content/images/ca.jpg"
 backgroundDark: true
 ---
 

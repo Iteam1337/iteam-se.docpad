@@ -82,7 +82,7 @@ docpadConfig =
     getAllBlogCategories: () ->
       added = []
       categories = []
-      for data, i in @getCollection('html').findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false})?.toJSON()
+      for data, i in @getCollection('blogg')?.toJSON()
         split = data.url.split("/")[2]
         if ~added.indexOf split
           continue
@@ -101,6 +101,19 @@ docpadConfig =
       onCase = base[1] is "case" and slug isnt "case-index"
       return if onCase then "single-case" else ""
 
+    getAllBlogsByAuthor: (author) ->
+      blogs = []
+      for data, i in @getCollection('blogg')?.toJSON()
+        inner = data.author
+        if inner is author then blogs.push(data)
+      return blogs
+
+    getAllCasesByCoworker: (coworker) ->
+      casesArray = []
+      for data, i in @getCollection('case')?.toJSON()
+        if data.team then for member, j in data.team
+          if member is coworker then casesArray.push(data)
+      return casesArray
 
   # Collections
   # ===========
