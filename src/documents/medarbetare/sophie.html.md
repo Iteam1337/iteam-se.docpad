@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: sophie
 
-jobTitle: The all-over-the-place-woman
+jobTitle: Office Manager
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
 image: /content/images/sophie.jpg
