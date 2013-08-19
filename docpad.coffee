@@ -159,12 +159,12 @@ docpadConfig =
       database.findAllLive({relativeOutDirPath:'medarbetare', dontIndexInAnyCollection: $exists: false},[filename:1])
 
     # Collection of all available positions
-    ledigatjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'karriar', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+    jobb: (database) ->
+      database.findAllLive({relativeOutDirPath:'jobb', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # All of our services
-    tjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+    erbjudanden: (database) ->
+      database.findAllLive({relativeOutDirPath:'erbjudanden', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # A collection of information about us
     om: (database) ->

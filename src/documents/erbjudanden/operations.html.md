@@ -3,14 +3,15 @@ title: Drift & Support
 layout: page
 tags: ['Drift & Support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 pageType: Service
-pageOrder: 3
-subpages: 'tjanster'
-icon: '/content/ico/driftosupport.png'
+pageOrder: 2
+subpages: 'erbjudanden'
+
 backgroundImage: '/content/images/operations.jpg'
 backgroundDark: true
 
 summary: >
-  Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.
+  Våra Supporttekniker ger personlig och snabb hjälp. Som kund till Drift & Support-avdelningen är IT-supporten ett samtal bort och vi kommer direkt när det behövs. Våra Supporttekniker kan det senaste inom IT och ser alltid till att varje kund har den bästa IT-miljön -anpassad efter behov.
+  Kontakta [Mats Egardt]/(medarbetare/mats) för mer info.
 ---
 
 <img src="/content/ico/driftosupport.png" alt="IT-review icon" class="operations-icon"> Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.

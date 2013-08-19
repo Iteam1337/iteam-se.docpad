@@ -1,17 +1,16 @@
 ---
-title: Tjänster
+title: Erbjudanden
 layout: section
 tags: ['intro', 'page']
 pageIndex: 1
-subpages: 'tjanster'
+subpages: 'erbjudanden'
 dontIndexInAnyCollection: true
-backgroundImage: "http://i.bldr.se/Lc2v4.jpeg"
-backgroundDark: true
 ---
 
 .row-fluid
-  each doc in getCollection('tjanster').toJSON()
+  each doc in getCollection('erbjudanden').toJSON()
     .offer
       a(href=doc.url)
         h2= doc.title
+      
       p= doc.summary
