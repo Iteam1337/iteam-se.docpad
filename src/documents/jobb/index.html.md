@@ -13,14 +13,10 @@ backgroundDark: true
 	1. Do you know this?
 	2. ????
 
-På Iteam följer alla beslut tre grundläggande riktmärken: Att skapa värde, Att göra något bra - och Att ha kul. Det betyder att vi väljer bort uppdrag
-som står emot någon av dessa. Du kommer alltså alltid jobba med roliga, värdeskapande och meningsfulla projekt. Inga VB-lösningar för porrindustrin med andra ord ;) 
-Vi är aldrig uthyrda som resurskonsulter utan jobbar alltid i team och helst i vårt eget kontor (vi har dock kunder i Venice, LA och då gör vi gärna undantag).
-Alla projekt säljer vi med öppna och transparenta förutsättningar och prioriterar kvalitet över funktionalitet. 
 
-### Kul
-Vi på Iteam har våra grundläggande värderingar med oss varje dag: Att skapa värde, Att göra något bra och Att ha kul. På så sätt kan vi välja bort uppdrag som inte uppfyller våra värderingar. Hos oss ska alla utvecklas och arbeta med uppdrag som är utmanande. Vi är aldrig uthyrda som resurskonsulter utan jobbar alltid i team och helst i vårt eget kontor.
-Träning och lab planeras in i schemat.
+Vi på Iteam har våra grundläggande riktmärken med oss varje dag: Att skapa värde, Att göra något bra och Att ha kul. På så sätt kan vi välja bort uppdrag som inte uppfyller våra värderingar. Hos oss ska alla utvecklas och arbeta med uppdrag som är utmanande. Vi är aldrig uthyrda som resurskonsulter utan jobbar alltid i team och helst i vårt eget kontor.
+Lab har vi på schemat!
+
 
 
 ### Kan du koda utan Stack Overflow?
