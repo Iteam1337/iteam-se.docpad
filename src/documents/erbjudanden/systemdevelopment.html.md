@@ -7,11 +7,11 @@ pageOrder: 1
 subpages: 'erbjudanden'
 
 summary: >
-  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. VI bygger allt från verktyg till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
+  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
   Kontakta [Hans Rollman]/(medarbetare/hans) för mer info.
 ---
 
-  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. VI bygger allt från verktyg till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
+  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
 
   Kontakta [Hans Rollman]/(medarbetare/hans) för mer info.
 
