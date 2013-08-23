@@ -7,6 +7,7 @@ layout: default
 - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : ""
 - var bloggCollection = getAllBlogsByAuthor(document.shortname)
 - var cases = getAllCasesByCoworker(document.shortname)
+- var splitRow = (!!cases.length && !!bloggCollection.length) ? "user-content multi" : "user-content"
 
 .row-fluid.page-content
   article#coworker(ng-controller="CoworkerCtrl")
@@ -42,29 +43,28 @@ layout: default
     .row
       .desc!= content
 
+    if (cases.length || bloggCollection.length)
+      .row.split(class=splitRow)
+        if (cases.length)
+          ul.in-cases
+            .header
+              h2.title Medverkande i case
+            each Case in cases
+              li
+                a(href=Case.url)= Case.title
 
-    - var splitRow = (!!cases.length && !!bloggCollection.length) ? "user-content multi" : "user-content"
-    .row.split(class=splitRow)
-      if (cases.length)
-        ul.in-cases
-          .header
-            h2.title Medverkande i case
-          each Case in cases
-            li
-              a(href=Case.url)= Case.title
+        if (bloggCollection.length)
+          ul.bloggar
+            .header
+              h2.title Bloggar
+            each blogg in bloggCollection
+              li
+                a(href=blogg.url)= blogg.title
 
-      if (bloggCollection.length)
-        ul.bloggar
-          .header
-            h2.title Bloggar
-          each blogg in bloggCollection
-            li
-              a(href=blogg.url)= blogg.title
-
-    .row.split
+    .row.split(ng-show="github", class="ng-cloak")
       .header
-        h2.title(ng-show="github") Github
-      .github(class="ng-cloak")
+        h2.title Github
+      .github
         ul.git.repos(ng-show="!!github.repos.length")
           h3.git-title Repos ({{github.repos.length}})
           li(ng-repeat="repo in github.repos|limitTo:8")

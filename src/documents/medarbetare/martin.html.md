@@ -11,7 +11,7 @@ email: martin.loman@iteam.se
 phonenumber: 0707 - 22 70 24
 image: /content/images/martin.jpg
 fullimage:
-cssColor: "#ec5c35"
+cssColor: "red"
 css:
 backgroundImage: "http://i.bldr.se/ZV45u.jpeg"
 backgroundDark: true
