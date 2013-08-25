@@ -116,6 +116,19 @@ docpadConfig =
           if member is coworker then casesArray.push(data)
       return casesArray
 
+    toDateString: (date, short) ->
+      month = ["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]
+      month_abbr = ["Jan","Febr","Mars","Apr","Maj","Juni","Juli","Aug","Sept","Okt","Nov","Dec"]
+      day = ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"]
+      day_abbr = ["Sön","Mån","Tis","Ons","Tors","Fre","Lör"]
+      date = date || @document.date
+      d = new Date(date)
+
+      if short
+        return day_abbr[d.getDay()] + " " + d.getDate() + " " + month_abbr[d.getMonth()] + ", " + (d.getFullYear() + "").substr(2, 2)
+      else
+        return day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + ", " + d.getFullYear()
+
   # Collections
   # ===========
   # These are special collections that our website makes available to us
@@ -229,14 +242,6 @@ docpadConfig =
 
         # Chain
         @
-
-  # =================================
-  # Environment Configuration
-
-  # Locale Code
-  # The code we shall use for our locale (e.g. `en`, `fr`, etc)
-  # If not set, we will attempt to detect the system's locale, if the locale can't be detected or if our locale file is not found for it, we will revert to `en`
-  localeCode: null  # default
 
 
 # Export our DocPad Configuration

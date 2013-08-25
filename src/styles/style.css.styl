@@ -18,14 +18,14 @@
   position relative
 
   .header-inner
-    margin 25px auto 0 auto
-    max-width 700px
+    margin 0 auto
+    max-width 1170px
 
   .brand
     float left
     position relative
-    top -10px
     z-index 1
+    padding 5px 15px
 
   .nav,
   .subnav
@@ -35,7 +35,7 @@
     a
       color #ccc
       display inline-block
-      margin-right 30px
+      margin 0
       height auto
 
       &:last-child
@@ -50,16 +50,21 @@
         color #333
 
   .nav
-    left -60px
     position relative
     text-align center
-    top 4px
+    top 6px
+    margin 0
+    padding 0
+    a
+      padding 15px
 
   .subnav
     z-index 10
     background #2b2b2b
     font-size 0.6em
     margin 0
+    a
+      padding 4px 15px
 
     .subnav-inner
       margin 0 auto
@@ -109,6 +114,8 @@
 
 /* Layout
 ---------------------------------------------*/
+.row
+  margin 0 !important
 #nowplaying
   font-size 1em
   padding  40px 0 0
@@ -132,22 +139,19 @@
       display block
       line-height 1.5
 
-.container
-  margin-top 40px
-  max-width 700px
-
 #footer
   margin 40px auto
-  max-width 700px
-  padding-top 40px
+  max-width 1170px
+  padding 40px 20px 0
+  position relative
 
   > div
     display inline-block
     vertical-align top
 
   #address
-    margin-right 20px
-    width 65%
+    margin 0
+    width 40%
 
     li
       font-size 0.8em
@@ -159,7 +163,10 @@
 
   #followUs
     text-align right
-    width 30%
+    width 100%
+    position absolute
+    right 20px
+    top 20px
 
     > a
       -webkit-transition color 300ms ease
@@ -196,8 +203,11 @@
     background-position top
   .container
     margin-bottom 140px
+    max-width 500px
+    margin 40px auto
 
 .background-image
+  top -190px
   z-index 0
   position absolute
   width 100%
@@ -217,16 +227,21 @@
   position relative
   padding 15px 55px
   margin-top 190px
+  max-width 1060px
+
 
   .main-title
     position absolute
-    margin-top -70px
+    margin-top -90px
     font-size 4em
     white-space nowrap
+    line-height 1.2em
     small
       color inherit
 
   .page-content
+    .top
+      width 100%
     .text,
     .left-part
       float left
@@ -272,3 +287,27 @@
   vendor("animation-iteration-count", 1)
   vendor("animation-timing-function", ease)
   vendor("animation-name", animatein)
+
+#top-holder,
+#main-holder,
+#footer-holder
+  width 100%
+  min-width none
+  display block
+  clear both
+  position relative
+  z-index 1
+  background-color white
+
+#footer-holder
+  margin 0 auto
+  max-width 1170px
+
+#top-holder,
+#footer-holder
+  box(border-box)
+  *
+    box(border-box)
+
+#main-holder
+  z-index 0

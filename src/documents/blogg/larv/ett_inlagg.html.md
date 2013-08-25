@@ -1,11 +1,14 @@
 ---
 title: Ett inlägg
 layout: blogg
-tags: ["blogg", "test", "dennis"]
 category: larv
 author: "dennis"
+
+backgroundImage: "http://i.bldr.se/Y5Exx.gif"
+backgroundDark: true
+
 intro: >
-  Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 ---
 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
