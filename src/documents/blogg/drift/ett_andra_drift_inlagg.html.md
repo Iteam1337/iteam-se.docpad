@@ -1,11 +1,14 @@
 ---
 title: Ett andra drift inlägg
 layout: blogg
-tags: ["blogg", "test", "rickard"]
 category: drift
 author: "dennis"
+
+backgroundImage: "http://i.bldr.se/dYP0D.gif"
+backgroundDark: true
+
 intro: >
-  Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+  Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
 ---
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.

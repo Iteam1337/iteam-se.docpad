@@ -1,12 +1,10 @@
 ---
 layout: default
 ---
+
 h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
-.row-fluid(make-anchors, ng-controller="AboutCtrl")
-  #page.page
-    article.page-content
-      #timeline-embed
+.row-fluid#timeline-embed
 
 script.
   var callback_timeout;

@@ -1,11 +1,14 @@
 ---
 title: Något om utveckling
 layout: blogg
-tags: ["blogg", "test", "dennis"]
 category: utveckling
 author: "dennis"
+
+backgroundImage: "http://i.bldr.se/9Vkve.gif"
+backgroundDark: true
+
 intro: >
-  Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+  Donec id elit non mi porta gravida at eget metus.
 ---
 
 Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Maecenas sed diam eget risus varius blandit sit amet non magna.

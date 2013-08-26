@@ -1,0 +1,12 @@
+mixin blogg(doc, showCategory)
+  section.post
+    header
+      if (doc.backgroundImage)
+        a.post-image(href= doc.url, style="background-image:url(" + doc.backgroundImage + ")")
+      .post-date= toDateString(doc.date, "short")
+      if (showCategory)
+        a.post-category(href= "/blogg/" + doc.category)= capitalizeFirstChar(doc.category) + "/ "
+      a.post-title(href= doc.url)= doc.title
+
+    article.post-content
+      p!= doc.intro

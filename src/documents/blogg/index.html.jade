@@ -1,14 +1,22 @@
 ---
 title: Blogg
-layout: section
+layout: default
 pageIndex: 12
 dontIndexInAnyCollection: true
+backgroundImage: "http://i.bldr.se/qkTj4.jpeg"
+backgroundDark: true
+
 ---
 
-each doc in getCollection("blogg").toJSON()
-  section.post
-    header
-      .date= doc.date.toDateString()
-      .category= doc.category
-      a.title(href= doc.url)= doc.title
-    article= doc.intro
+include ../../jade_includes/mixin.jade
+
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
+
+.row-fluid()
+
+  article#post.post
+
+    .page-content
+      .left-part
+        each doc in getCollection("blogg").toJSON()
+          mixin blogg(doc, true)

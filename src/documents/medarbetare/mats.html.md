@@ -12,8 +12,8 @@ phonenumber: 0736 - 19 80 64
 image: /content/images/mats.jpg
 fullimage:
 cssColor:
-css:
-backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+css: "star"
+backgroundImage: "http://i.bldr.se/ZGmJr.jpeg"
 backgroundDark: true
 
 twitter:

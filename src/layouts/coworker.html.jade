@@ -13,16 +13,17 @@ layout: default
   article#coworker(ng-controller="CoworkerCtrl")
 
     .top-part
-      .left
-        .email
-          a(href="mailto:" + document.email)= document.email
-        .phone= document.phonenumber
 
       .center
         div(class=inlineClass, style=inlineColor)
           img(src=getGravatarUrl(200))
         .job= document.jobTitle
         h1.name= document.title
+
+      .left
+        .email
+          a(href="mailto:" + document.email)= document.email
+        .phone= document.phonenumber
 
       .right
         .social
