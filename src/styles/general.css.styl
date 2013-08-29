@@ -17,6 +17,28 @@ a.btn
   font-size 12px
   margin-right 20px
 
+a.tag
+  font-family "AvantGarde ExtraLight", Franklin Gothic Book, Arial, Sans-Serif
+  display inline-block
+  position relative
+  height 40px
+  width 80%
+  padding 0px 20px
+  border-width 0px 0px 1px
+  border-style none none solid
+  color white
+  font-size 14px
+  line-height 39px
+  text-align center
+  vertical-align bottom
+  font-weight 400
+  background-color rgb(153, 153, 153)
+  vendor("border-radius", 3px)
+  vendor("transition", background-color 300ms ease)
+
+  &:hover
+    background-color _orange
+
 body,
 html
   background #fff

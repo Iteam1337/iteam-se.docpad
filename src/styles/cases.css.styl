@@ -28,7 +28,7 @@
   max-width 700px
 
   .title
-    box-sizing(border-box)
+    box(border-box)
     background #fff
     font-size 1.2em
     margin 5px 0
@@ -110,11 +110,19 @@
         text-align center
         vertical-align top
         width 48%
-        &:nth-child(2n)
-          margin-left 4%
         a
           display block
           margin-bottom 5px
+
+    .relatedServices,
+    .twitter
+      li
+        box(border-box)
+        margin 0
+        padding 0 0 0 10px
+        width 50%
+        &:nth-child(2n)
+          padding 0 10px 0 0
 
 
     .urls
@@ -134,7 +142,7 @@
       .title
         top -50px
 
-      .imgWrap
+      .image-wrapper
         img
           max-height 231px
           margin-bottom 20px
@@ -154,16 +162,16 @@
 
       .tweets
         li
+          box(border-box)
           color #999
           font-family "Palatino"
           font-size 0.8em
-          margin-bottom 10px
           text-align left
           vertical-align top
-          width 48%
-
-          &:nth-child(2n-1)
-            margin-right 15px
+          width 50%
+          padding 0 0 0 10px
+          margin 0 0 10px
+          display inline-block
 
           a
             display inline

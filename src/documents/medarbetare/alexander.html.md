@@ -13,7 +13,7 @@ image: /content/images/alexander.jpg
 fullimage:
 cssColor: "#07AFCA"
 css:
-backgroundImage: "http://i.bldr.se/XmQVu.gif"
+backgroundImage: "http://i.bldr.se/mbY4q.jpeg"
 backgroundDark: true
 
 twitter:

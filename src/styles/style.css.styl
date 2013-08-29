@@ -1,12 +1,33 @@
 @import "variable"
 
-@keyframes animatein
+@keyframes fadein
   from
-    left -100px
-    opacity 0
+    background rgba(255,255,255,0)
   to
-    left 0px
+    background rgba(255,255,255,1)
+
+@keyframes fadeout
+  from
+    background rgba(255,255,255,1)
+  to
+    background rgba(255,255,255,0)
+
+
+@keyframes image-fadein
+  0%
+    opacity 0
+  20%
+    opacity 0
+  100%
     opacity 1
+
+@keyframes image-fadeout
+  0%
+    opacity 1
+  80%
+    opacity 0
+  100%
+    opacity 0
 
 /* Navbar
 ---------------------------------------------*/
@@ -169,7 +190,7 @@
     top 20px
 
     > a
-      -webkit-transition color 300ms ease
+      vendor("transition", color 300ms ease)
 
       color #999
       display inline-block
@@ -179,7 +200,7 @@
         margin-right 20px
 
       &:hover
-        color  #ffbd09
+        color _orange
 
 #subpages
   margin-bottom  20px
@@ -264,6 +285,12 @@
       clear both
       padding-top 1px
 
+  .content
+    .text
+      iframe
+        max-width 100%
+        display inline-block
+
 .header
   display block
   width 100%
@@ -311,3 +338,56 @@
 
 #main-holder
   z-index 0
+
+body
+  &.show-image
+    overflow hidden
+    position fixed
+    height 100%
+    width 100%
+    z-index 0
+
+    zoom-cursor("out")
+    &*
+      position static !important
+      zoom-cursor("out")
+
+    .zoom-wrapper
+      opacity 1
+      z-index 9001
+      background-color rgba(255,255,255,1)
+      animate(fadein)
+
+      img.zoom
+        width auto !important
+        height auto !important
+        max-height 100% !important
+        max-width 100% !important
+        position absolute !important
+        display block !important
+        top 0
+        left 0
+        right 0
+        bottom 0
+        margin auto !important
+        animate(image-fadein)
+
+  .zoomable
+    zoom-cursor()
+    margin 0 5px
+
+  .zoom-wrapper
+    position fixed
+    opacity 0
+    z-index -1
+    background-color rgba(255,255,255,.0)
+    top 0
+    left 0
+    width 100%
+    height 100%
+    padding 40px
+    animate(fadeout)
+    box(border-box)
+
+    img.zoom
+      animate(image-fadeout)
