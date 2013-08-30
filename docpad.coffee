@@ -116,6 +116,13 @@ docpadConfig =
           if member is coworker then casesArray.push(data)
       return casesArray
 
+    getCurrentBlogCategoryAsJSON: () ->
+      name = @document.relativeDirPath?.split("/")[1]
+      name = "blogg_" + name
+      page = @document.page
+      collection = @getCollection(name)?.toJSON()[page?.startIdx...page?.endIdx]
+      return collection
+
     toDateString: (date, short) ->
       month = ["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]
       month_abbr = ["Jan","Febr","Mars","Apr","Maj","Juni","Juli","Aug","Sept","Okt","Nov","Dec"]

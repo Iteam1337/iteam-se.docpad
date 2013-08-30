@@ -10,3 +10,21 @@ mixin blogg(doc, showCategory)
 
     article.post-content
       p!= doc.intro
+
+mixin pagination(page)
+  ul
+    - for (var pageNumber = 0; pageNumber < page.pagecount; pageNumber++)
+      - var num = pageNumber +1
+      if document.page.number === pageNumber
+        li.active
+          span= num
+      else
+        li
+          span
+            a(href=getPageUrl(pageNumber))= num
+    if hasNextPage()
+      li
+        span
+          a(href=getNextPage()) Nästa
+    else
+      li.disabled
