@@ -7,6 +7,7 @@ backgroundImage: "http://i.bldr.se/qkTj4.jpeg"
 backgroundDark: true
 
 ---
+<<<<<<< HEAD
 
 include ../../jade_includes/mixin.jade
 
@@ -20,3 +21,12 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
       .left-part
         each doc in getCollection("blogg").toJSON()
           mixin blogg(doc, true)
+=======
+each doc in getCollection("blogg").toJSON()
+  section.post
+    header
+      .date= doc.date.toDateString()
+      .category= doc.category
+      a.title(href= doc.url)= doc.title
+    article= doc.intro
+>>>>>>> Sophies_härjande

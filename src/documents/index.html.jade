@@ -5,6 +5,7 @@ backgroundImage: http://www.moillusions.com/wp-content/uploads/2010/06/Lego-Impo
 ---
 
 .row-fluid#startpage
+<<<<<<< HEAD
   article.news
     h1 Omöjligt är bara början
     h2 Iteam är en teknikbyrå med fokus på avancerade system. Vi gillar tuffa utmaningar och jobbar bäst i team.
@@ -13,3 +14,33 @@ backgroundImage: http://www.moillusions.com/wp-content/uploads/2010/06/Lego-Impo
         Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra med tack vare människor som vågar att drömma.
 
         Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre och snabbare än de flesta stora konsultföretagen.
+=======
+  .span12
+    article.news
+      h1 Vi älskar teknink
+      p Iteam är en teknikbyrå med IT-support i Stockholm. <br>Vi utvecklar smarta webblösningar som t ex communities, intranät och integration och vi hjälper dig med dina IT-frågor. Iteam förverkligar drömmar med teknik.
+ 
+.row-fluid
+  .span6
+    h2 Senaste från bloggen
+    ul.linklist
+      each doc in getCollection('blogg').toJSON()
+        li
+          a(href=doc.url)= doc.title
+
+h2 Just nu i högtalarna hos oss
+.row-fluid(ng-controller="WejayCtrl", ng-show="!!nowplaying")
+  .span6#nowplaying
+    a(href="https://github.com/Iteam1337/Wejay")
+      img#wejay(src="/content/images/wejay.png")
+    .info
+    
+      a(ng-href="{{nowplaying.artistUrl}}") {{nowplaying.artist}}
+      a(ng-href="{{nowplaying.trackUrl}}") {{nowplaying.track}}
+
+.row-fluid
+  .span12
+    h2 Vår instagram
+
+instagram(name= document.instagram, max=6)
+>>>>>>> Sophies_härjande

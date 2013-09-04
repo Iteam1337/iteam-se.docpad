@@ -2,6 +2,7 @@
 title: Jobb
 layout: page
 tags: ['intro', 'page']
+<<<<<<< HEAD
 pageType: karriar
 pageIndex: 4
 dontIndexInAnyCollection: true
@@ -24,6 +25,25 @@ Vi är kräsna och väljer bara kandidater som har relevant erfarenhet. Om du s�
 Söker du en junior roll kommer du få ett köra ett test, först på nätet sedan hos oss på Tegnérgatan 28 i Stockholm. 
 
 Vi älskar spontanansökningar - så om inte ovanstående skrämde dig, skicka in din ansökan här
+=======
+pageType: "karriar"
+pageIndex: 5
+dontIndexInAnyCollection: true
+---
+
+### Vi har kul
+Varje dag arbetar vi med våra tre grundläggande värderingar i bakhuvudet: Att skapa värde, Att göra något bra och Att ha kul. 
+Hos oss arbetar man med den allra senaste tekniken - som HTML 5, MVC3, iPhone, Windows Phone 7, nodejs, angularjs, RavenDB och NoSQL. 
+Vi har träning och lab på schemat.
+
+Självklart är du med och formar din egen roll och du styr hur du löser dina uppgifter.
+
+Alla ska utvecklas på Iteam.
+
+### Du med talang - spontanansök här
+För oss är det viktigast att hitta rätt personsom passar i gruppen. Det spelar ingen roll om du har en bra utbildning i grunden eller om du skaffat dig din erfarenhet på egen hand. Vi letar efter dig som har en spännande bakgrund och som gillar att bli utmanad. 
+Vi älskar spontanansökningar - så tveka inte att skicka din ansökan:
+>>>>>>> Sophies_härjande
 
 <form action="">
   <input type="file">
@@ -33,4 +53,10 @@ Vi älskar spontanansökningar - så om inte ovanstående skrämde dig, skicka i
   <input type="radio" name="application" id="app-intern">
   <label for="app-intern">Praktik</label>
   <input type="submit">
+<<<<<<< HEAD
 </form>
+=======
+</form>
+
+Häng på vår [blogg](/blogg) där vi delar med oss av våra tankar.
+>>>>>>> Sophies_härjande
