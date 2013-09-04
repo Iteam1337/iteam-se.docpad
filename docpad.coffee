@@ -149,7 +149,7 @@ docpadConfig =
 
     # All of our services
     tjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'vara-tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # A collection of information about us
     om: (database) ->
