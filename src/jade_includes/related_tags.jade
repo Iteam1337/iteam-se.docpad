@@ -1,5 +1,5 @@
 each tag in document.tags
-  each service in getCollection('erbjudanden').toJSON()
+  each service in getCollection('tjanster').toJSON()
     each sTag in service.tags
       if tag === sTag
         li

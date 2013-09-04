@@ -3,27 +3,33 @@ title: Rådgivning
 layout: page
 tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Entreprenörsrådgivning']
 pageType: Service
-pageOrder: 1
-subpages: 'tjanster'
+pageOrder: 3
+subpages: 'erbjudanden'
+
+backgroundImage: '/content/images/team.jpg'
+backgroundDark: true
 
 summary: >
-  Kunskap är grunden för att lyckas - det är vår övertygelse. Kunskap om vad man kan göra på webben - hur och när. Kunskap om vilken målgrupp du vänder dig till och vad deras behov är. Vi agerar rådgivare till dig i den omfattning och takt som just du behöver. Hos oss beställer du din förstudie, hittar en grym lead tech, tar fram ett proof-of-koncept och får inspirerande entreprenörsrådgivning.
+  Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.
+  
+  Kontakta [Hans Rollman]/(medarbetare/hans) för mer info.
 ---
 
 
-Kunskap är grunden för att lyckas - det är vår övertygelse. Kunskap om vad man kan göra på webben - hur och när - nyckeln till framgång. Kunskap om vilken målgrupp du vänder dig till och vad deras behov är. Vi agerar rådgivare till dig i den omfattning och takt som just du behöver. Hos oss beställer du din förstudie, hittar en grym lead tech, tar fram ett proof-of-koncept och får inspirerande entreprenörsrådgivning.
+Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.
+  Kontakta [Hans Rollman]/(medarbetare/hans) för mer info.
 
 ### Förstudie
-Vi tror på vikten av att klarlägga din verksamhets nuläge och identifera en tydlig målbild för ditt växande tjänsteområde eller din produkt. Genom att intervjua dina kunder, dina kollegor, IT-kontakter och andra för dig relevanta aktörer så tar vi reda på detta innan vi sätter igång och utvecklar något. Du får en tydlig rapport som – utifrån din målgrupps perspektiv – visar på behov, förutsättningar och möjligheter för din nya tjänst eller produkt.
+ Vi klartlägger verksamhetens nuläge och identiferar en tydlig målbild för branschen eller produkten. Vi genomför intervjuer av kunder, kollegor, IT-kontakter och andra relevanta aktörer innan vi utvecklar något. Vi levererar en tydlig rapport som – utifrån målgruppens perspektiv – visar på behov, förutsättningar och möjligheter för den nya tjänsten eller produkten.
 
 
-### Lead tech
-Vi vet att dom allra bästa teknikkonceptare, nytänkare och systemutvecklare är svåra att rekrytera för många av våra kunder. Men, du kan fortfarande få tillgång till just en sådan person i just ditt team, eller i din styrgrupp. Genom att vi endast rekryterar erfarna systemutvecklare, vårdar våra medarbetares kunskapsnivå och håller oss ajour inom det senaste så finner du just den extraresurs du behöver hos oss. Anlita en senior lead tech-roll som stöttar just ditt team genom oss. Du kan också använda vår lead tech som expertis i din rekryteringsprocess för att bygga upp ett eget utvecklingsteam.
+### Teknisk Ledare
+Våra Systemutvecklare agerar även Tekniska Ledare som stöd i projekt. Den Tekniska Ledaren kan sitta med i styrgrupper eller projektens externa team. Våra Tekniska Ledare gör allt från att vara behjälpliga i teknikval, att stötta externa team i det dagliga arbetet till att vara involverade i rekryteringsprocesser i t.ex. uppbyggnad av andras utvecklingsteam.
 
 
 ### Proof-of-concept
-När vi förverkligar drömmar kan det ofta vara en god idé att starta med att ta fram en proof-of-concept. Ett bevis på att den tänkta lösningen på din dröm är en bärande idé. Det blir ett verktyg för dig att visa upp för investorer, ledningsgrupp, projektgrupp eller dig och din kompanjon på att det finns en teknisk lösning på din dröm och de utmaningar den innebär. Du får snabbt veta hur – och om din idé kommer att fungera. Hos oss är nyfikenhet, ny teknik och viljan att utmana det som är etablerat något som sitter i väggarna. Vi har stor erfarenhet av webbtekniskt banbrytande idéer och implementationer. Genom att engagera Iteam i konceptutveckling kan vi hjälpa dig att tidigt – innan den större insatsen med teknisk implementation kommer igång.
-
+ Våra Tekniska Ledare och Systemutvecklare hjälper ofta till med proof-of-concept. Vi undersöker hur idéen är görbar och vilka utmaningar projektet medför. Det blir ett enkelt sätt att förmedla idéens framtid för t.ex. investerare, ledningsgrupper eller projektgruppen.
 
 ### Entreprenörsrådgivning
-Att förverkliga en dröm är alldrig så påtagligt som hos dig som är entreprenör. Du tänker "såhär borde det funka..." – fortsättningen på den meningen vill vi lyssna på. Vi ritar och målar på en whiteboard – tänker fritt och öppet tillsammans. Innan vi sätter oss skriver vi självklart sekretessavtal för att du ska känna trygghet och allt går rätt till. Kom upp till oss på en timmes gratis rådgivning för dig. Vi står för mötesrum, affärsutvecklingserfarenhet och ledande koncept- och systemutvecklare. Vi lyssnar på din idé och beskriver vår syn på dina utmaningar, möjligheter och potentiella lösningar. Välkommen till oss så gör vi verklighet av din dröm.
+Under en Entreprenörsrådgivning tänker vi fritt och öppet tillsammans. Iteam står för mötesrum, affärsutvecklingserfarenhet och ledande koncept- och systemutvecklare under en timme. Vi lyssnar på idéen och beskriver vår syn på utmaningar, möjligheter och potentiella lösningar. 
+

@@ -1,7 +1,7 @@
 div#opportunities
   .title Lediga tjänster
   ul
-    each career in getCollection('jobb').toJSON()
+    each career in getCollection('ledigatjanster').toJSON()
       if career.title
         li
           a(href=career.url)= career.title
