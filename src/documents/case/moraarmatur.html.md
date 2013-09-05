@@ -8,7 +8,7 @@ images: ['moraarmatur1.jpg']
 imagePos: ['right']
 imageGallery: ['moraarmatur1.jpg']
 team: ['anders']
-intro: Produkten i fokus för Mora Armatur.
+intro: Produkten i fokus för både proffs och hemmafixare.
 siteurl: http://www.moraarmatur.se
 
 

@@ -8,7 +8,7 @@ images: ['absolutforum1.jpg']
 imagePos: ['right']
 imageGallery: ['absolutforum2.jpg','absolutforum3.jpg']
 team: ['anders']
-intro: Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste varumärken. Designarbetet gjordes tillsammans med byråpartnern Supernative.
+intro: Prisbelönat globalt extranät för alla som arbetar med marknadsföring av ABSOLUT VODKA.
 siteurl: http://www.absolut.absolutcompany.com
 twitterTag: ['#Absolut-Vodka','#Absolut']
 readmorelinks: ['http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009','http://www.absolut.absolutcompany.com','http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara']
