@@ -3,13 +3,14 @@ layout: default
 ---
 include ../jade_includes/mixin.jade
 
-- category = document.url.split("/")[2]
-
-h1.main-title(style=shouldWeUseADarkBackground())= capitalizeFirstChar(category)
+h1.main-title(style=shouldWeUseADarkBackground())= capitalizeFirstChar(document.url.split("/")[2])
 
 .row-fluid
   article#post.post
     .page-content
       .left-part
-        each doc in getCollection("blogg_" + category).toJSON()
+        each doc in getCurrentBlogCategoryAsJSON()
           mixin blogg(doc)
+
+    .pagination
+      mixin pagination(document.page)

@@ -1,34 +1,39 @@
 @import "variable"
 
+@keyframes animatein
+  0%
+    opacity 0
+    left -100px
+  100%
+    opacity 1
+    left 0px
+
 @keyframes fadein
-  from
-    background rgba(255,255,255,0)
-  to
-    background rgba(255,255,255,1)
+  0%
+    left -100%
+    vendor("transform", scale(0))
+  100%
+    left 0
+    vendor("transform", scale(1))
+
 
 @keyframes fadeout
-  from
-    background rgba(255,255,255,1)
-  to
-    background rgba(255,255,255,0)
-
-
-@keyframes image-fadein
   0%
-    opacity 0
-  20%
-    opacity 0
+    vendor("transform", scale(1))
   100%
-    opacity 1
+    vendor("transform", scale(0.95))
 
-@keyframes image-fadeout
+@keyframes slidein
   0%
-    opacity 1
-  80%
-    opacity 0
+    left -100%
   100%
-    opacity 0
+    left 0
 
+@keyframes slideout
+  0%
+    right 0
+  100%
+    right -100%
 /* Navbar
 ---------------------------------------------*/
 #header
@@ -309,11 +314,7 @@
 
 
 .single-case
-  vendor("animation-duration", 1s)
-  vendor("transform-origin", 50% 50%)
-  vendor("animation-iteration-count", 1)
-  vendor("animation-timing-function", ease)
-  vendor("animation-name", animatein)
+  animate(animatein, 1s)
 
 #top-holder,
 #main-holder,
@@ -331,7 +332,8 @@
   width 100%
 
 #top-holder,
-#footer-holder
+#footer-holder,
+#footer
   box(border-box)
   *
     box(border-box)
@@ -339,55 +341,61 @@
 #main-holder
   z-index 0
 
-body
+html
+  background-color white
+  body
+    background-color white
   &.show-image
-    overflow hidden
-    position fixed
-    height 100%
-    width 100%
-    z-index 0
+    animate(slideout)
+    body
+      overflow hidden
+      z-index 0 !important
+      position absolute
+      height 100%
+      width 100%
 
-    zoom-cursor("out")
-    &*
-      position static !important
-      zoom-cursor("out")
+    #top-holder
+      z-index 0 !important
+      position relative !important
+    #footer-holder
+      display none
 
     .zoom-wrapper
-      opacity 1
-      z-index 9001
-      background-color rgba(255,255,255,1)
-      animate(fadein)
+      top 0
+      left 0
+      display block
+      zoom-cursor("out")
+      opacity 1 !important
+      z-index 9001 !important
+      position fixed !important
+      animate(slidein)
 
       img.zoom
-        width auto !important
         height auto !important
+        width auto !important
         max-height 100% !important
         max-width 100% !important
+        min-width none !important
+        min-height none !important
         position absolute !important
-        display block !important
         top 0
         left 0
         right 0
         bottom 0
         margin auto !important
-        animate(image-fadein)
+        padding 0 !important
 
-  .zoomable
-    zoom-cursor()
-    margin 0 5px
+.zoom-wrapper
+  opacity 0
+  z-index 9001
+  background white
+  width 100%
+  height 100%
+  display none
+  animate(fadeout)
 
-  .zoom-wrapper
-    position fixed
-    opacity 0
-    z-index -1
-    background-color rgba(255,255,255,.0)
-    top 0
-    left 0
-    width 100%
-    height 100%
-    padding 40px
-    animate(fadeout)
-    box(border-box)
-
-    img.zoom
-      animate(image-fadeout)
+.zoomable
+  zoom-cursor()
+  margin 0 5px
+  img.zoom
+    animate(image-fadeout)
