@@ -1,0 +1,16 @@
+---
+title: "Våra tjänster"
+layout: section
+tags: ['intro', 'page']
+pageIndex: 1
+subpages: 'tjanster'
+dontIndexInAnyCollection: true
+---
+
+.row-fluid.tjanster
+  each doc in getCollection('tjanster').toJSON()
+    .offer
+      a(href=doc.url)
+        h2= doc.title
+      
+      p= doc.summary
