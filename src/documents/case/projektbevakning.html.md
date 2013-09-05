@@ -10,7 +10,7 @@ imageGallery: ['sb-projektbevakning1.jpg']
 team: ['anders','johanna','mats','dennis','maria','christian']
 intro: Sveriges bästa säljverktyg för byggbranschen.
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
-twitterTag: ['svenskbyggtjanst','projektbevakning']
+twitterTag: ['svenskbyggtjanst','projektbevakning','byggtjanst']
 
 
 backgroundImage: "/content/images/sb.jpg"
