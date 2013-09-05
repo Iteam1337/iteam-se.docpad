@@ -158,7 +158,7 @@
                     scope.active = null;
                     scope.images = JSON.parse(attrs.images);
 
-                    body = angular.element(stdlib.document.body);
+                    body = angular.element(stdlib.document).find("html");
                     keyCodes = [37,39,27];
                     i = scope.images.length;
 

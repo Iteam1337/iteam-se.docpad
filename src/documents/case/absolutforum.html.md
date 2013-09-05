@@ -8,10 +8,10 @@ images: ['absolutforum1.jpg']
 imagePos: ['right']
 imageGallery: ['absolutforum2.jpg','absolutforum3.jpg']
 team: ['anders']
-intro: Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste varumärken. Designarbetet gjordes tillsammans med byråpartnern Supernative.
-siteurl: http://www.absolut.absolutcompany.com
+intro: "Vi utvecklade ABSOLUT FORUM för att vårda ett av världens starkaste varumärken. Designarbetet gjordes tillsammans med byråpartnern Supernative."
+siteurl: "http://www.absolut.absolutcompany.com"
 twitterTag: ['#Absolut-Vodka','#Absolut']
-readmorelinks: ['http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009','http://www.absolut.absolutcompany.com','http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara']
+readmorelinks: [{url:'http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009',title:"Vinnare Episerver Awards 2009"},{url:'http://www.absolut.absolutcompany.com',title:"Absolut Company"},{url:'http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara',title:"Nomineringar Episerver Awards 2009"}]
 
 backgroundImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true
