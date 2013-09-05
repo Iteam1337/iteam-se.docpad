@@ -4,14 +4,14 @@ layout: page
 tags: ['Drift & Support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 pageType: Service
 pageOrder: 2
-subpages: 'erbjudanden'
+subpages: 'tjanster'
 
 backgroundImage: '/content/images/operations.jpg'
 backgroundDark: true
 
 summary: >
   Våra Supporttekniker ger personlig och snabb hjälp. Som kund till Drift & Support-avdelningen är IT-supporten ett samtal bort och vi kommer direkt när det behövs. Våra Supporttekniker kan det senaste inom IT och ser alltid till att varje kund har den bästa IT-miljön -anpassad efter behov.
-  Kontakta [Mats Egardt]/(medarbetare/mats) för mer info.
+  Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.
 ---
 
 Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.
@@ -27,7 +27,7 @@ Med vår specialist- och projektsupport får du som IT-chef eller IT-ansvarig f�
 < Kontakt mig för specialist- och projektstöd >
 
 ### Hyr en IT-avdelning
-Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och [fjärrhjälp](/fjarrhjalp). Vi avhjälper små som stora problem snabbt.
+Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Om du eller din personal behöver hjälp så finns vår support snabbt på plats hos dig - och vi finns även tillgängliga enkelt via telefonsupport och <a href="/fjarrhjalp">fjärrhjälp</a>. Vi avhjälper små som stora problem snabbt.
 
 < Kontakt mig om att hyra en IT-avdelning>
 
