@@ -11,21 +11,24 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
       .content
 
-        .text
-          if (!!document.about)
-            .about
-              img(src=document.about.image)
-              .about-text
-                h2=document.about.title
-                p=document.about.text
-          != content
+        if (!!document.about || !!document.quote)
+          .top
+            if (!!document.about)
+              .about
+                img(src=document.about.image)
+                .about-text
+                  h2=document.about.title
+                  p=document.about.text
+
+            if (!!document.quote)
+              .quote
+                h3= "\"" + document.quote.text + "\""
+                blockquote="— " + document.quote.by
+
+
+        .text!= content
 
         .information
-
-          if (!!document.quote)
-            .quote
-              h3= "\"" + document.quote.text + "\""
-              blockquote="— " + document.quote.by
 
           if (document.team)
             ul.team

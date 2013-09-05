@@ -1,7 +1,6 @@
 ---
 title: SES Astra
 layout: case
-#showCase: true
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['sesastra.jpg']

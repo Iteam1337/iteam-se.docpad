@@ -6,11 +6,14 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
 .row-fluid(make-pretty)
 
-  article#post.post
-    .post-date= document.date.toDateString()
-    .post-content!= content
-    .next
-      a(href="")
-    .post-author
-      if document.author
-        include ../jade_includes/author
+  article#post.single-post
+
+    .page-content
+      .left-part
+        .post-content!= content
+
+      .right-part
+        .post-date= toDateString()
+        .post-author
+          if document.author
+            include ../jade_includes/author

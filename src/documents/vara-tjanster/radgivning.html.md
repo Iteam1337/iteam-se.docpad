@@ -1,0 +1,35 @@
+---
+title: Rådgivning
+layout: page
+tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Entreprenörsrådgivning']
+pageType: Service
+pageOrder: 3
+subpages: 'tjanster'
+
+backgroundImage: '/content/images/team.jpg'
+backgroundDark: true
+
+summary: >
+  Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.
+
+  Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
+---
+
+
+Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.
+  Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
+
+### Förstudie
+ Vi klartlägger verksamhetens nuläge och identiferar en tydlig målbild för branschen eller produkten. Vi genomför intervjuer av kunder, kollegor, IT-kontakter och andra relevanta aktörer innan vi utvecklar något. Vi levererar en tydlig rapport som – utifrån målgruppens perspektiv – visar på behov, förutsättningar och möjligheter för den nya tjänsten eller produkten.
+
+
+### Teknisk Ledare
+Våra Systemutvecklare agerar även Tekniska Ledare som stöd i projekt. Den Tekniska Ledaren kan sitta med i styrgrupper eller projektens externa team. Våra Tekniska Ledare gör allt från att vara behjälpliga i teknikval, att stötta externa team i det dagliga arbetet till att vara involverade i rekryteringsprocesser i t.ex. uppbyggnad av andras utvecklingsteam.
+
+
+### Proof-of-concept
+ Våra Tekniska Ledare och Systemutvecklare hjälper ofta till med proof-of-concept. Vi undersöker hur idéen är görbar och vilka utmaningar projektet medför. Det blir ett enkelt sätt att förmedla idéens framtid för t.ex. investerare, ledningsgrupper eller projektgruppen.
+
+### Entreprenörsrådgivning
+Under en Entreprenörsrådgivning tänker vi fritt och öppet tillsammans. Iteam står för mötesrum, affärsutvecklingserfarenhet och ledande koncept- och systemutvecklare under en timme. Vi lyssnar på idéen och beskriver vår syn på utmaningar, möjligheter och potentiella lösningar.
+

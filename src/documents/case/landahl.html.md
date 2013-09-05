@@ -1,7 +1,7 @@
 ---
 title: Landahl Advokatbyrå
 layout: case
-#showCase: true
+caseIndex: 4
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
 images: ['landahl.jpg']
@@ -27,4 +27,4 @@ Vi har installerat säkert trådlöst nätverk från Ubiquiti, och supportat vid
 Om en anställd på Landahl vill ha support finns vi ett par klick bort. Vi använder Teamviewer för [fjärrhjälp](/fjarrhjalp) - och när det behövs kommer vi såklart ut till kontoret och hjälper på plats.
 
 ### Advokatbyrån för bygg- och fastighetsbranschen
-Landahls verksamhet riktar sig främst till aktörerna inom bygg- och fastighetsbranschen. Inom det området intar Landahl en tätposition bland Sveriges advokabyråer. Landahl har uppdrag åt såväl många av landets största bygg- och fastighetsbolag samt andra fastighetsägare i den privata sektorn, som åt stat, kommun och landsting.  Då bygg- och fastighetsbranschen är livlig och dynamisk strävar Landahl ständigt efter att hålla sig à jour med branschen samt rättsutvecklingen och ha en omsorgsfull rekryteringsprocess för att bibehålla och utveckla den specialistkompetens branschen kräver. Landahls speciella inriktning mot bygg- och fastighetsbranschen samt byråns mix av bredd, kompetens och branschkännedom, ger ständigt klienterna betydande mervärden. Läs mer på [landahl.se](http://www.landahl.se).
+Landahls verksamhet riktar sig främst till aktörerna inom bygg- och fastighetsbranschen. Inom det området intar Landahl en tätposition bland Sveriges advokabyråer. Landahl har uppdrag åt såväl många av landets största bygg- och fastighetsbolag samt andra fastighetsägare i den privata sektorn, som åt stat, kommun och landsting.  Då bygg- och fastighetsbranschen är livlig och dynamisk strävar Landahl ständigt efter att hålla sig à jour med branschen samt rättsutvecklingen och ha en omsorgsfull rekryteringsprocess för att bibehålla och utveckla den specialistkompetens branschen kräver. Landahls speciella inriktning mot bygg- och fastighetsbranschen samt byråns mix av bredd, kompetens och branschkännedom, ger ständigt klienterna betydande mervärden. Läs mer på <a href="http://www.landahl.se" target="_blank">Landahl advokatbyrå</a>.

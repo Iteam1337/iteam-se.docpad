@@ -3,11 +3,20 @@
 #cases
   .case
     margin-bottom 40px
+
+    .case-link
+      min-height 200px
+      display block
+      vertical-align bottom
+      position relative
+
     .case-image
       display inline-block
-      margin-right 40px
-      vertical-align top
       width 30%
+      position absolute
+      bottom 0
+      left 0
+      right 0
 
     .case-about
       display inline-block
@@ -21,14 +30,13 @@
 
         .tag
           display inline-block
-          margin-right 20px
 
 #case
   margin 40px auto
   max-width 700px
 
   .title
-    box-sizing(border-box)
+    box(border-box)
     background #fff
     font-size 1.2em
     margin 5px 0
@@ -40,11 +48,20 @@
 
   .content
 
+    .top
+      width 100%
+      display inline-block
+    .about,
+    .quote
+      display inline-block
+      vertical-align top
+
     .about
       margin 0 0 70px
       padding 0
       height 175px
       position relative
+      width 50%
       img
         max-height 175px
         max-width 30%
@@ -67,6 +84,7 @@
 
     .quote
       color #444
+      float right
       h3
         font-size 2em
       blockquote
@@ -100,11 +118,19 @@
         text-align center
         vertical-align top
         width 48%
-        &:nth-child(2n)
-          margin-left 4%
         a
           display block
           margin-bottom 5px
+
+    .relatedServices,
+    .twitter
+      li
+        box(border-box)
+        margin 0
+        padding 0 0 0 10px
+        width 50%
+        &:nth-child(2n)
+          padding 0 10px 0 0
 
 
     .urls
@@ -124,7 +150,7 @@
       .title
         top -50px
 
-      .imgWrap
+      .image-wrapper
         img
           max-height 231px
           margin-bottom 20px
@@ -144,16 +170,16 @@
 
       .tweets
         li
+          box(border-box)
           color #999
           font-family "Palatino"
           font-size 0.8em
-          margin-bottom 10px
           text-align left
           vertical-align top
-          width 48%
-
-          &:nth-child(2n-1)
-            margin-right 15px
+          width 50%
+          padding 0 0 0 10px
+          margin 0 0 10px
+          display inline-block
 
           a
             display inline

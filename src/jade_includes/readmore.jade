@@ -1,3 +1,6 @@
-each url in document.readmorelinks
+each link in document.readmorelinks
   li
-    a(href=url)= url
+    if typeof link === "object" && link.hasOwnProperty("url")
+      a(href=link.url)= (!!link.title ? link.title : link.url)
+    else
+      a(href=link)= link

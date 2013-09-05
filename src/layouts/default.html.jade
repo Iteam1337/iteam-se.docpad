@@ -69,60 +69,64 @@ html(lang="sv")
 
   body(class=document.slug, ng-app="iteamse", ng-controller="MainCtrl")
 
-    .row-fluid#header
-      ul.subnav
-        .subnav-inner
-          each doc in pages
-            if (doc.pageIndex >= 10)
-              - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-              a(href=doc.url, property="dc:title", class=clazz)= doc.title
-          a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
-
-      .header-inner
-        a.brand(href="/")
-          img(src="/content/images/iteam_logo.svg", width="120", height="39")
-        ul.nav
-
-          each doc in pages
-            if (doc.pageIndex < 10)
-              - clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
+    #top-holder
+      .row-fluid#header
+        ul.subnav
+          .subnav-inner
+            each doc in pages
+              if (doc.pageIndex >= 10)
+                - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
                 a(href=doc.url, property="dc:title", class=clazz)= doc.title
+            a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
 
-        .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
-          .etp-menu
+        .header-inner
+          a.brand(href="/")
+            img(src="/content/images/iteam_logo.svg", width="120", height="39")
+          ul.nav
 
-    if (!!subpages)
-      #navSubpages
-        .subpage-inner
-          each subpage in subpages
-            - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
-            a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+            each doc in pages
+              if (doc.pageIndex < 10)
+                - clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
+                  a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
-    ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
-      each doc, i in pages
-        - clazz = (document.url === doc.url) ? 'active' : null
-        - hasSubpage = (doc.subpages) ? i : null
-        li(mobile-nav, data-subpage=hasSubpage)
-          a(class=clazz, data-url=doc.url)= doc.title
+          .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
+            .etp-menu
+
+      if (!!subpages)
+        #navSubpages
+          .subpage-inner
+            each subpage in subpages
+              - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
+              a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+
+      ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
+        each doc, i in pages
+          - clazz = (document.url === doc.url) ? 'active' : null
+          - hasSubpage = (doc.subpages) ? i : null
+          li(mobile-nav, data-subpage=hasSubpage)
+            a(class=clazz, data-url=doc.url)= doc.title
+            if (doc.subpages)
+              .etp-thin-chevron-right
+
+      #subpageWrap
+        each doc, i in pages
           if (doc.subpages)
-            .etp-thin-chevron-right
+            - subId = "subpages == " + i
+            ul.subpages(ng-show=subId, ng-animate="'slide-in'")
+              li.back(ng-click="subpages = null")
+                .etp-thin-chevron-left
+                span Tillbaka
+              each subpage in getCollection(doc.subpages).toJSON()
+                li
+                  a(href=subpage.url)= subpage.title
 
-    #subpageWrap
-      each doc, i in pages
-        if (doc.subpages)
-          - subId = "subpages == " + i
-          ul.subpages(ng-show=subId, ng-animate="'slide-in'")
-            li.back(ng-click="subpages = null")
-              .etp-thin-chevron-left
-              span Tillbaka
-            each subpage in getCollection(doc.subpages).toJSON()
-              li
-                a(href=subpage.url)= subpage.title
-
+  #main-holder
     .background-image(style=backgroundImage())
+
     .container(class=singlePageCase())
       .row-fluid#content.content!= content
 
+  #footer-holder
     #footer
       #address
         ul
@@ -130,6 +134,7 @@ html(lang="sv")
           li.address Tegnérgatan 28, 113 59 STOCKHOLM
           li Telefon: 08-267090
           li Organisationsnr: 556551-6928
+
       #followUs
         a(href="https://github.com/iteam1337", target="_blank")
           .ets-c-github
@@ -140,5 +145,5 @@ html(lang="sv")
         a(href="http://instagram.com/iteam1337", target="_blank")
           .ets-instagram
 
-    // Scripts
-    != scripts.toHTML()
+  // Scripts
+  != scripts.toHTML()

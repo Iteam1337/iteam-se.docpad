@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+h1.main-title(style=shouldWeUseADarkBackground())= document.title
+
+.row-fluid#timeline-embed
+
+script.
+  var callback_timeout;
+  document.ready = function() {
+    createStoryJS({
+      width: "100%",
+      height: "750",
+      source: {
+        !{content}
+      },
+      embed_id: "timeline-embed",
+      css: "/content/styles/timeline/timeline.css",
+      js: "/content/scripts/timeline/timeline-min.js",
+      lang: "/content/scripts/timeline/sv.js"
+    });
+  }

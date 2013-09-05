@@ -1,7 +1,7 @@
 ---
 title: Wakers Redovisningsbyrå
 layout: case
-#showCase: true
+caseIndex: 6
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['wakers.jpg']
@@ -10,7 +10,6 @@ imageGallery: ['wakers.jpg']
 team: ['mats','rasmus']
 intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.wakers.se
-twitterTag: ['Wakers','Consulting']
 
 backgroundImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true

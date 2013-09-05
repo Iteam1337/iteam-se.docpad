@@ -31,17 +31,17 @@
         margin 0
 
       &.email
-        font-size 0.8em
+        font-family "Palatino", "serif"
+        line-height 1.6
+        font-size 15px
+        font-weight 100
+        letter-spacing 0px
 
       .image
         border-radius 100px
         display inline-block
         vertical-align top
         width 100%
-
-    .title
-      margin-bottom 5px
-      line-height 1.4em
 
     .info
       display inline-block
@@ -55,29 +55,62 @@
   #toAngular
     display none
 
+  .desc,
+  .github
+    vendor("column-count", 2)
+    vendor("column-gap", 50px)
+
   .top-part
+    display block
     position relative
-    width 100%
-    height 260px
-    margin-top 50px
-    .information
+    min-width 100%
+    height 100%
+    margin 0 0 50px
+    padding-top 0
+    vertical-align top
+    .left,
+    .right
+      max-width 25%
       position absolute
-      bottom 22px
-      left 240px
-      max-width 80%
+    .left
+      top 150px
+      left 0
+      text-align left
+    .right
+      top 120px
+      right 0
+      text-align right
+
+    .center
+      display block
+      width 60%
+      margin 0 auto
+      text-align center
+
+      .job
+        text-align center
+        font-size 1.2em
+      .name
+        text-align center
+        font-size 3.5em
+        line-height 1.2em
 
   .image
+    vendor("border-radius", 300px)
     border 10px solid #ffbd09
-    margin 0
-    padding 0
+    margin -130px auto 20px
+    padding 5px
     width 200px
     height 200px
     position relative
-
+    z-index 1
     img
+      vendor("border-radius", 200px)
       z-index 1
       width 200px
       position relative
+      border 6px solid white
+      margin -6px
 
   .sun
     border none
@@ -146,31 +179,6 @@
       height 175px
       border 5px solid white
 
-  .name,
-  .job,
-  .email,
-  .phone
-    text-align left
-
-  .name
-    margin-top 20px
-  .job
-    margin-bottom 10px
-    font-size 1.2em
-  .email
-    a
-      display inline-block
-      margin-bottom 10px
-
-  .title
-    background #fff
-    font-size 1.2em
-    text-align center
-    width 180px
-    margin -72px auto 0
-    display block
-    padding 20px 0
-
   .social
     position relative
     margin 0
@@ -181,8 +189,8 @@
   .social-media,
   .github,
   .cases
-    margin-top 40px
-    padding-top 40px
+    margin-top 0
+    padding-top 0
     position relative
     text-align center
 
@@ -232,11 +240,7 @@
         width 100%
 
       li
-        border-bottom 1px solid #f9f9f9
         min-height 30px
-
-    .title
-      width 200px
 
     .git
       li:before
@@ -293,12 +297,14 @@
         width 20%
         text-align right
 
-
-  .cases
-    .title
-      width 220px
-
+  .user-content
+    &.multi
+      vendor("column-count", 2)
+      vendor("column-gap", 50px)
     li
+      vertical-align top
       display inline-block
-      text-align center
-      width 49%
+      text-align left
+      width 44%
+      padding 0 5% 5px 0
+      margin 0

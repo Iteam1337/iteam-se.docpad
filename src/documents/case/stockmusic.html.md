@@ -1,7 +1,7 @@
 ---
 title: Stockmusic.com
 layout: case
-#showCase: true
+caseIndex: 8
 
 tags: ['Systemutveckling','Rådgivning','Drift & Support','Specialist- och projektstöd','Systemförvaltning']
 images: ['stockmusic1.jpg']

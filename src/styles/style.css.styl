@@ -1,13 +1,39 @@
 @import "variable"
 
 @keyframes animatein
-  from
-    left -100px
+  0%
     opacity 0
-  to
-    left 0px
+    left -100px
+  100%
     opacity 1
+    left 0px
 
+@keyframes fadein
+  0%
+    left -100%
+    vendor("transform", scale(0))
+  100%
+    left 0
+    vendor("transform", scale(1))
+
+
+@keyframes fadeout
+  0%
+    vendor("transform", scale(1))
+  100%
+    vendor("transform", scale(0.95))
+
+@keyframes slidein
+  0%
+    left -100%
+  100%
+    left 0
+
+@keyframes slideout
+  0%
+    right 0
+  100%
+    right -100%
 /* Navbar
 ---------------------------------------------*/
 #header
@@ -18,14 +44,14 @@
   position relative
 
   .header-inner
-    margin 25px auto 0 auto
-    max-width 700px
+    margin 0 auto
+    max-width 1170px
 
   .brand
     float left
     position relative
-    top -10px
     z-index 1
+    padding 5px 15px
 
   .nav,
   .subnav
@@ -35,7 +61,7 @@
     a
       color #ccc
       display inline-block
-      margin-right 30px
+      margin 0
       height auto
 
       &:last-child
@@ -50,16 +76,21 @@
         color #333
 
   .nav
-    left -60px
     position relative
     text-align center
-    top 4px
+    top 6px
+    margin 0
+    padding 0
+    a
+      padding 15px
 
   .subnav
     z-index 10
     background #2b2b2b
     font-size 0.6em
     margin 0
+    a
+      padding 4px 15px
 
     .subnav-inner
       margin 0 auto
@@ -109,6 +140,8 @@
 
 /* Layout
 ---------------------------------------------*/
+.row
+  margin 0 !important
 #nowplaying
   font-size 1em
   padding  40px 0 0
@@ -132,22 +165,19 @@
       display block
       line-height 1.5
 
-.container
-  margin-top 40px
-  max-width 700px
-
 #footer
   margin 40px auto
-  max-width 700px
-  padding-top 40px
+  max-width 1170px
+  padding 40px 20px 0
+  position relative
 
   > div
     display inline-block
     vertical-align top
 
   #address
-    margin-right 20px
-    width 65%
+    margin 0
+    width 40%
 
     li
       font-size 0.8em
@@ -159,10 +189,13 @@
 
   #followUs
     text-align right
-    width 30%
+    width 100%
+    position absolute
+    right 20px
+    top 20px
 
     > a
-      -webkit-transition color 300ms ease
+      vendor("transition", color 300ms ease)
 
       color #999
       display inline-block
@@ -172,7 +205,7 @@
         margin-right 20px
 
       &:hover
-        color  #ffbd09
+        color _orange
 
 #subpages
   margin-bottom  20px
@@ -196,8 +229,11 @@
     background-position top
   .container
     margin-bottom 140px
+    max-width 500px
+    margin 40px auto
 
 .background-image
+  top -190px
   z-index 0
   position absolute
   width 100%
@@ -217,16 +253,21 @@
   position relative
   padding 15px 55px
   margin-top 190px
+  max-width 1060px
+
 
   .main-title
     position absolute
-    margin-top -70px
+    margin-top -90px
     font-size 4em
     white-space nowrap
+    line-height 1.2em
     small
       color inherit
 
   .page-content
+    .top
+      width 100%
     .text,
     .left-part
       float left
@@ -249,10 +290,112 @@
       clear both
       padding-top 1px
 
+  .content
+    .text
+      iframe
+        max-width 100%
+        display inline-block
+
+.header
+  display block
+  width 100%
+  text-align center
+  .title
+    line-height 1.2em
+    text-align center
+    width 100%
+    margin 0 auto 5px
+    display block
+    padding 40px 0
+
+.split
+  border-top 1px solid rgba(204, 204, 204, .2)
+  margin-top 20px
+
 
 .single-case
-  vendor("animation-duration", 1s)
-  vendor("transform-origin", 50% 50%)
-  vendor("animation-iteration-count", 1)
-  vendor("animation-timing-function", ease)
-  vendor("animation-name", animatein)
+  animate(animatein, 1s)
+
+#top-holder,
+#main-holder,
+#footer-holder
+  width 100%
+  min-width none
+  display block
+  clear both
+  position relative
+  z-index 1
+  background-color white
+
+#footer-holder
+  margin 0 auto
+  width 100%
+
+#top-holder,
+#footer-holder,
+#footer
+  box(border-box)
+  *
+    box(border-box)
+
+#main-holder
+  z-index 0
+
+html
+  background-color white
+  body
+    background-color white
+  &.show-image
+    animate(slideout)
+    body
+      overflow hidden
+      z-index 0 !important
+      position absolute
+      height 100%
+      width 100%
+
+    #top-holder
+      z-index 0 !important
+      position relative !important
+    #footer-holder
+      display none
+
+    .zoom-wrapper
+      top 0
+      left 0
+      display block
+      zoom-cursor("out")
+      opacity 1 !important
+      z-index 9001 !important
+      position fixed !important
+      animate(slidein)
+
+      img.zoom
+        height auto !important
+        width auto !important
+        max-height 100% !important
+        max-width 100% !important
+        min-width none !important
+        min-height none !important
+        position absolute !important
+        top 0
+        left 0
+        right 0
+        bottom 0
+        margin auto !important
+        padding 0 !important
+
+.zoom-wrapper
+  opacity 0
+  z-index 9001
+  background white
+  width 100%
+  height 100%
+  display none
+  animate(fadeout)
+
+.zoomable
+  zoom-cursor()
+  margin 0 5px
+  img.zoom
+    animate(image-fadeout)

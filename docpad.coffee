@@ -19,7 +19,7 @@ docpadConfig =
       ]
 
       # The default title of our website
-      title: "Iteam.se | Vi förverkligar drömmar med teknik"
+      title: "Iteam.se | Omöjligt är bara början"
 
       # The website description (for SEO)
       description: """
@@ -116,10 +116,32 @@ docpadConfig =
           if member is coworker then casesArray.push(data)
       return casesArray
 
+    getCurrentBlogCategoryAsJSON: () ->
+      name = @document.relativeDirPath?.split("/")[1]
+      name = "blogg_" + name
+      page = @document.page
+      collection = @getCollection(name)?.toJSON()[page?.startIdx...page?.endIdx]
+      return collection
+
+    toDateString: (date, short) ->
+      month = ["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]
+      month_abbr = ["Jan","Febr","Mars","Apr","Maj","Juni","Juli","Aug","Sept","Okt","Nov","Dec"]
+      day = ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"]
+      day_abbr = ["Sön","Mån","Tis","Ons","Tors","Fre","Lör"]
+      date = date || @document.date
+      d = new Date(date)
+
+      if short
+        return day_abbr[d.getDay()] + " " + d.getDate() + " " + month_abbr[d.getMonth()] + ", " + (d.getFullYear() + "").substr(2, 2)
+      else
+        return day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + ", " + d.getFullYear()
+
   # Collections
   # ===========
   # These are special collections that our website makes available to us
   collections:
+    # http://docs.mongodb.org/manual/reference/operator/ <- great reference for nosql-query
+    #s
     # This is the main collection, for index:es
     sektion: (database) ->
       database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])
@@ -145,12 +167,12 @@ docpadConfig =
 
     # Collection of all cases
     case: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[title:1])
+      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
 
     showcase: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', showCase: true, dontIndexInAnyCollection: $exists: false},[title: 1])
+      database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 5}, dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
 
-    # Collection of all feedback-posts
+    # Collection of all feedback-posts}
     feedback: (database) ->
       database.findAllLive({relativeOutDirPath:'feedback', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
@@ -160,11 +182,11 @@ docpadConfig =
 
     # Collection of all available positions
     ledigatjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'karriar', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'jobb', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # All of our services
     tjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'vara-tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # A collection of information about us
     om: (database) ->
@@ -229,14 +251,6 @@ docpadConfig =
 
         # Chain
         @
-
-  # =================================
-  # Environment Configuration
-
-  # Locale Code
-  # The code we shall use for our locale (e.g. `en`, `fr`, etc)
-  # If not set, we will attempt to detect the system's locale, if the locale can't be detected or if our locale file is not found for it, we will revert to `en`
-  localeCode: null  # default
 
 
 # Export our DocPad Configuration

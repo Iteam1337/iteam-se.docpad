@@ -11,9 +11,9 @@ email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
 image: /content/images/anders.jpg
 fullimage:
-cssColor:
+cssColor: "#000000"
 css:
-backgroundImage: "http://i.bldr.se/2Gokw.jpeg"
+backgroundImage: "/content/images/collage.jpg"
 backgroundDark: false
 
 twitter: osirisguitar

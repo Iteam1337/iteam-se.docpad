@@ -1,4 +1,5 @@
 igrey = #231F20
+_orange = #ffbd09
 iorange = #FFBD09
 iorangergb = rgb(255,189,9)
 bgBoxes = rgba(0,0,0,0.3)
@@ -51,8 +52,21 @@ background-linear-gradient(startPoint, startColor, startInterval, endColor, endI
   background-color startColor
   if deprecatedWebkitStartPoint && deprecatedWebkitEndPoint
     background-image -webkit-gradient(linear, deprecatedWebkitStartPoint, deprecatedWebkitEndPoint, color-stop(startInterval, startColor), color-stop(endInterval, endColor))
-    background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
-    background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+  background-image -webkit-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+  background-image -moz-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+  background-image -ms-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+  background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+  background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
+
+animate(name, duration = .5s, timing = ease, iteration = 1)
+  vendor("animation-name", name)
+  vendor("animation-duration", duration)
+  vendor("animation-timing-function", timing)
+  vendor("animation-iteration-count", iteration)
+
+zoom-cursor(direction = "in")
+  cursor -webkit-zoom- + direction
+  cursor -moz-zoom- + direction
+  cursor -ms-zoom- + direction
+  cursor -o-zoom- + direction
+  cursor zoom- + direction

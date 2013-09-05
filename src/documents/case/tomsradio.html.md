@@ -1,7 +1,7 @@
 ---
 title: Tomsradio
 layout: case
-#showCase: true
+caseIndex: 7
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning','Lead tech','Entreprenörsrådgivning']
 images: ['tomsradio.jpg']
@@ -27,4 +27,4 @@ Timingen för lanseringen av projektet visade sig dock tyvärr bli mycket ogynsa
 
 Vi har fortfarande kvar en fungerande version av detta underbara projekt på våra testservrar. Trots att tio år har passerat håller det unika konceptet för Tomsradio fortfarande, och inom kort kommer en nyinkarnation att se dagens ljus.
 
-Läs gärna IDG:s artikel från 2002.
+Läs gärna <a href="/content/attachments/tomsradio.pdf" target="_blank">IDG:s artikel från 2002</a>.
