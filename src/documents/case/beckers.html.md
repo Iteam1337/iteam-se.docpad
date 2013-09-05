@@ -13,8 +13,8 @@ siteurl: http://www.beckers.se
 twitterTag: '#beckersfarg'
 
 
-backgroundImage: "http://i.bldr.se/hHDGu.jpeg"
-backgroundDark: true
+backgroundImage: "/content/images/be.jpg"
+backgroundDark: false
 ---
 
 <img src="/content/images/beckers1.jpg" class="right" alt="">

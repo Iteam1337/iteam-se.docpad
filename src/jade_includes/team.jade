@@ -1,7 +1,6 @@
-ul.team
-  each member in document.team
-    li
-      each coworker in getCollection('medarbetare').toJSON()
-        if coworker.shortname == member
-          a(href="/medarbetare/" + member)= coworker.title
-          .coworker-job-title= coworker.jobTitle
+each member in document.team
+  li
+    each coworker in getCollection('medarbetare').toJSON()
+      if coworker.shortname == member
+        a(href="/medarbetare/" + member)= coworker.title
+        .coworker-job-title= coworker.jobTitle

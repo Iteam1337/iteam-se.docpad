@@ -13,7 +13,7 @@ image: /content/images/hans.jpg
 fullimage:
 cssColor:
 css:
-backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+backgroundImage: "/content/images/golf.jpg"
 backgroundDark: true
 
 twitter: hrswe

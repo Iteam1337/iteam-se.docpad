@@ -11,9 +11,9 @@ email: dennis.pettersson@iteam.se
 phonenumber:
 image: /content/images/dennis.jpg
 fullimage:
-cssColor: "#f73f48"
+cssColor: "#b35b47"
 css:
-backgroundImage: "http://i.bldr.se/WfGCL.jpeg"
+backgroundImage: "/content/images/sw.jpg"
 backgroundDark: true
 
 twitter: ankjevel

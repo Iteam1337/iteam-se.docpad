@@ -20,22 +20,38 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
                 p=document.about.text
           != content
 
-
         .information
+
           if (!!document.quote)
             .quote
               h3= "\"" + document.quote.text + "\""
               blockquote="— " + document.quote.by
+
           if (document.team)
-            include ../jade_includes/team
+            ul.team
+              .header
+                h2 Medverkande
+              include ../jade_includes/team
 
           if (document.readmorelinks)
-            include ../jade_includes/readmore
+            ul.urls
+              .header
+                h2 Länkar
+              include ../jade_includes/readmore
 
           if (document.imageGallery)
-            include ../jade_includes/image_gallery
+            .gallery
+              .header
+                h2 Galleri
+              include ../jade_includes/image_gallery
 
           if (document.tags)
-            include ../jade_includes/related_tags
+            ul.relatedServices
+              .header
+                h2 Taggar
+              include ../jade_includes/related_tags
 
-            include ../jade_includes/twitter_tags
+            .twitter(ng-show="tweets")
+              .header
+                h2 Twitter
+              include ../jade_includes/twitter_tags

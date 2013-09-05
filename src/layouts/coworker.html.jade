@@ -2,66 +2,69 @@
 layout: default
 ---
 
+- var inlineClass = "image "
+- inlineClass += !!document.css ? document.css : ""
+- var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : ""
+- var bloggCollection = getAllBlogsByAuthor(document.shortname)
+- var cases = getAllCasesByCoworker(document.shortname)
+
 h1.main-title(style=shouldWeUseADarkBackground())= document.title
 
-.row-fluid
+.row-fluid.page-content
   article#coworker(ng-controller="CoworkerCtrl")
-    - var inlineClass = "image "
-    - inlineClass += !!document.css ? document.css : "";
-    - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : "";
-    div(class=inlineClass, style=inlineColor)
-      img(src=getGravatarUrl(200))
-    .information
-      .job= document.jobTitle
-      .email
-        a(href="mailto:" + document.email)= document.email
-      .phone= document.phonenumber
-      .social
-        if document.twitter
-          a(href="http://twitter.com/" + document.twitter, target="_blank")
-            .ets-c-twitter
-        if document.linkedin
-          a(href="http://linkedin.com/" + document.linkedin, target="_blank")
-            .ets-c-linkedin
-        if document.instagram
-          a(href="http://instagram.com/" + document.instagram, target="_blank")
-            .ets-instagram
-        if document.github
-          #github= document.github
-          a(href="http://github.com/" + document.github, target="_blank")
-            .ets-c-github
+
+    .left-part
+      .top-part
+        div(class=inlineClass, style=inlineColor)
+          img(src=getGravatarUrl(200))
+
+        .information
+          .job= document.jobTitle
+          .email
+            a(href="mailto:" + document.email)= document.email
+          .phone= document.phonenumber
+          .social
+            if document.twitter
+              a(href="http://twitter.com/" + document.twitter, target="_blank")
+                .ets-c-twitter
+            if document.linkedin
+              a(href="http://linkedin.com/" + document.linkedin, target="_blank")
+                .ets-c-linkedin
+            if document.instagram
+              a(href="http://instagram.com/" + document.instagram, target="_blank")
+                .ets-instagram
+            if document.github
+              #github= document.github
+              a(href="http://github.com/" + document.github, target="_blank")
+                .ets-c-github
+
       .desc!= content
 
-      ul.cases
-        .title Medverkande i case
-        each cases in getCollection('case').toJSON()
-          if cases.team
-            each member in cases.team
-              if (member == document.shortname)
-                li
-                  a(href=cases.url)= cases.title
-      ul.cases
-        .header
-          h2.title Bloggar
-          a.toggle-expand.pull-left(data-toggle="collapse",data-target="#collapse-blog") toggle
-            i.icon-envelope
-        ul#collapse-blog.unstyled.collapse.in
-          each blogg in getCollection('blogg').toJSON()
-            if blogg.author === document.shortname
-                li
-                  a(href=blogg.url)= blogg.title
-
-
+    .right-part
+      if (cases.length)
+        ul.cases
+          .header
+            h2.title Medverkande i case
+          each Case in cases
+            li
+              a(href=Case.url)= Case.title
+      if (bloggCollection.length)
+        ul.cases.bloggar
+          .header
+            h2.title Bloggar
+          each blogg in bloggCollection
+            li
+              a(href=blogg.url)= blogg.title
       .github(ng-show="github", class="ng-cloak")
         .title Github
-        ul.git.repos(ng-class="{single: (!github.events.length && !!github.repos.length)}", ng-show="!!github.repos.length")
+        ul.git.repos(ng-show="!!github.repos.length")
           h3.git-title Repos ({{github.repos.length}})
           li(ng-repeat="repo in github.repos|limitTo:8")
             a.repo-title(ng-href="{{repo.url}}", target="_blank") {{repo.name}} <small ng-show="!!repo.language">// {{repo.language}}</small>
             .git-info(ng-show="!!repo.description")
               p.git-description {{repo.description}}
             .git-time {{repo.created_at}}
-        ul.git.events(ng-class="{single: (!github.repos.length && !!github.events.length)}", ng-show="!!github.events.length")
+        ul.git.events(ng-show="!!github.events.length")
           h3.git-title Senaste aktivitet
           li(ng-repeat="git in github.events")
             a.push-title(ng-href="{{git.url}}", target="_blank") {{git.type}} <small ng-show="!!git.name && git.name != ''">({{git.name}})</small>
@@ -69,6 +72,7 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
               p.git-message {{git.message}}
             .git-time {{git.created_at}}
 
+    .fluff
       if document.instagram
         .social-media
           .title Instagram
