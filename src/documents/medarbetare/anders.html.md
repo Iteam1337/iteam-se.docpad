@@ -13,7 +13,7 @@ image: /content/images/anders.jpg
 fullimage:
 cssColor: "#000000"
 css:
-backgroundImage: "http://i.bldr.se/2Gokw.jpeg"
+backgroundImage: "/content/images/collage.jpg"
 backgroundDark: false
 
 twitter: osirisguitar
