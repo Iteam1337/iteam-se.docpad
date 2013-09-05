@@ -1,7 +1,7 @@
 ---
 title: Wakers Redovisningsbyrå
 layout: case
-#showCase: true
+caseIndex: 6
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['wakers.jpg']

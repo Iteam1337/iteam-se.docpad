@@ -1,7 +1,7 @@
 ---
 title: Projektbevakning
 layout: case
-showCase: true
+caseIndex: 2
 
 tags: ['Proof-of-concept','Systemutveckling']
 images: ['sb-projektbevakning1.jpg']

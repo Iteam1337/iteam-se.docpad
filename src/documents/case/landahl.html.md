@@ -1,7 +1,7 @@
 ---
 title: Landahl Advokatbyrå
 layout: case
-#showCase: true
+caseIndex: 4
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
 images: ['landahl.jpg']

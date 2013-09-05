@@ -1,7 +1,7 @@
 ---
 title: ABSOLUT FORUM
 layout: case
-#showCase: true
+caseIndex: 10
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
 images: ['absolutforum1.jpg']

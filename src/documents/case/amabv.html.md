@@ -1,7 +1,7 @@
 ---
 title: AMA Beskrivningsverktyg
 layout: case
-#showCase: true
+caseIndex: 10
 
 tags: ['Systemutveckling']
 images: ['sb-amabv1.jpg']
