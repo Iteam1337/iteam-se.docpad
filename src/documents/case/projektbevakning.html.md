@@ -1,5 +1,5 @@
 ---
-title: Svensk Byggtjänsts Projektbevakning
+title: Projektbevakning
 layout: case
 showCase: true
 

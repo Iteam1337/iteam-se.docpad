@@ -1,5 +1,5 @@
 ---
-title: Svensk Byggtjänsts AMA Beskrivningsverktyg
+title: AMA Beskrivningsverktyg
 layout: case
 #showCase: true
 

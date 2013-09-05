@@ -1,5 +1,5 @@
 ---
-title: Svensk Byggtjänsts Byggtjanst.se
+title: Byggtjänst.se
 layout: case
 #showCase: true
 
@@ -10,13 +10,13 @@ imageGallery: ['sb-byggtjanst1.jpg','sb-byggtjanst2.jpg']
 team: ['anders','johanna','mats','christian']
 intro: Vi utvecklade Svensk Byggtjänsts hemsida tillsammans med byråpartnern Britny.
 siteurl: http://www.byggtjanst.se
-twitterTag: ['svenskbyggtjanst']
+twitterTag: ['svenskbyggtjanst', 'byggtjanst']
 
 backgroundImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true
 ---
 
-### Portalen till ett effektivare byggsverige
+### Portalen till ett effektivare Byggsverige
 Svensk Byggtjänst säljer information och kunskap om aktuell teknik och regelverk samt utvecklar verktyg och mötesplatser som skapar effektivitet och lönsamhet i byggsverige. Samhällsbyggnad är ett av Sveriges största verksamhetsområden. Över en halv miljon människor arbetar i en bransch som omsätter omkring en biljon kronor om året. Byggbranschen påverkar oss alla – såväl på arbetet som när vi är lediga – hela livet. Svensk Byggtjänst finns för att säkerställa en byggprocess som matchar samhällets behov, krävs samordning, information och kunskap.
 
 ### Iteam x4 finns hos Svensk Byggtjänst

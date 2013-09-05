@@ -1,5 +1,5 @@
 ---
-title: Svensk Byggtjänsts Omvärldsbevakning
+title: Omvärldsbevakning
 layout: case
 #showCase: true
 
