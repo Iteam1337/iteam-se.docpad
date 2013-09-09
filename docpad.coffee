@@ -140,6 +140,8 @@ docpadConfig =
   # ===========
   # These are special collections that our website makes available to us
   collections:
+    # http://docs.mongodb.org/manual/reference/operator/ <- great reference for nosql-query
+    #s
     # This is the main collection, for index:es
     sektion: (database) ->
       database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])
@@ -165,12 +167,12 @@ docpadConfig =
 
     # Collection of all cases
     case: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[title:1])
+      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
 
     showcase: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', showCase: true, dontIndexInAnyCollection: $exists: false},[title: 1])
+      database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 5}, dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
 
-    # Collection of all feedback-posts
+    # Collection of all feedback-posts}
     feedback: (database) ->
       database.findAllLive({relativeOutDirPath:'feedback', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 

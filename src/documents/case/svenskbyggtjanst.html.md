@@ -1,7 +1,7 @@
 ---
 title: Byggtjänst.se
 layout: case
-#showCase: true
+caseIndex: 5
 
 tags: ['Systemutveckling','Systemförvaltning']
 images: ['sb-byggtjanst-logo.png']

@@ -1,7 +1,6 @@
 ---
 title: Shake My World
 layout: case
-#showCase: true
 
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']
 images: ['shakemyworld1.jpg']

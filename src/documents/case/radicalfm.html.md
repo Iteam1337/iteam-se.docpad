@@ -2,7 +2,7 @@
 title: Radical.FM
 subtitle: Radio Re-Defined
 layout: case
-showCase: true
+caseIndex: 0
 
 tags: ['Proof-of-concept','Lead tech','Drift & Support',Entreprenörsrådgivning','Rådgivning']
 images: ['radicalfm1.jpg']

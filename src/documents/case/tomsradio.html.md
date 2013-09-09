@@ -1,7 +1,7 @@
 ---
 title: Tomsradio
 layout: case
-#showCase: true
+caseIndex: 7
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning','Lead tech','Entreprenörsrådgivning']
 images: ['tomsradio.jpg']
