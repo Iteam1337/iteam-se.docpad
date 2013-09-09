@@ -13,6 +13,9 @@ summary: >
   Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
   Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
 ---
+Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
+
+Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
 
 ### Trygg och effektiv utvecklingsmetodik
 Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Med Scrum blir det ökad kvalitet och ökat fokus på att lösa de utmaningar som är viktigast för dig. Med Scrum handlar det om att leverera värde, snarare än att skriva detaljerade kravspecifikationer. Som projektmodell garanterar vi kvalitet och hög effektivitet.
