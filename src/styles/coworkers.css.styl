@@ -298,9 +298,19 @@
         text-align right
 
   .user-content
+    width 100%
+    margin 0
+    padding 0
     &.multi
-      vendor("column-count", 2)
-      vendor("column-gap", 50px)
+      ul
+        box(border-box)
+        width 50%
+        margin 0
+        padding 0 25px 0 0
+        display inline-block
+        vertical-align top
+      ul:nth-child(2n)
+        padding 0 0 0 25px
     li
       vertical-align top
       display inline-block
