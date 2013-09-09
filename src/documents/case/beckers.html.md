@@ -8,7 +8,7 @@ images: ['beckers1.jpg']
 imagePos: ['right']
 imageGallery: ['beckers2.jpg','beckers3.jpg']
 team: ['anders','johanna','martin','dennis','rickard','maria']
-intro: Sveriges bästa färgsajt inspirerar och utbildar.
+intro: Med inspiration och utbildning lockar Beckers kunderna till butiken.
 siteurl: http://www.beckers.se
 twitterTag: '#beckersfarg'
 

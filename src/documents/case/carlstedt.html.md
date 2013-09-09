@@ -8,7 +8,7 @@ images: ['carlstedt.jpg']
 imagePos: ['right']
 imageGallery: ['carlstedt.jpg']
 team: ['mats','rasmus']
-intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
+intro: Expertstöd och heltäckande drift och support för ett av Sveriges erfarnaste arktitektkontor.
 siteurl: http://www.carlstedtark.se
 twitterTag: 'carlstedt arkitekter'
 
@@ -16,7 +16,7 @@ backgroundImage: "/content/images/ca.jpg"
 backgroundDark: true
 ---
 
-### Ett heltäckande drift- och support uppdrag
+### Ett heltäckande drift- och supportuppdrag
 Åt Carlstedt Arkitekter har vi under ett flertal år agerat rådgivare och funnit tillgängliga som extra stöd vid större projekt.
 Vi började vårt samarbete med en IT-review som gav oss en gemensam tydlig agenda för insatser och ytterligare förbättringar i IT-miljön. Idag finns Iteam på joursupport när ordinarie IT-personal behöver förstärkning. Iteam finns alltid till hands som specialistsupport och IT chefsstöd.
 

@@ -8,7 +8,7 @@ images: ['careerbook1.jpg']
 imagePos: ['right']
 imageGallery: ['careerbook2.jpg']
 team: ['johanna','mats','hans','christian']
-intro: Academic Communication och Iteam tar fram en mötesplats för arbetsgivare och studenter.
+intro: En helt ny sorts mötesplats för arbetsgivare och studenter.
 siteurl: http://www.academicwork.se/careerbook
 twitterTag: ['#careerbook','#academicwork_se']
 

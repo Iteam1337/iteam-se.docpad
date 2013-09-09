@@ -8,7 +8,7 @@ images: ['sb-byggtjanst-logo.png']
 imagePos: ['right']
 imageGallery: ['sb-byggtjanst1.jpg','sb-byggtjanst2.jpg']
 team: ['anders','johanna','mats','christian']
-intro: Vi utvecklade Svensk Byggtjänsts hemsida tillsammans med byråpartnern Britny.
+intro: Ny webbplats som samlar alla Svensk Byggtjänsts tjänster för Byggsverige.
 siteurl: http://www.byggtjanst.se
 twitterTag: ['svenskbyggtjanst', 'byggtjanst']
 

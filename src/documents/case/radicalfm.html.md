@@ -9,7 +9,7 @@ images: ['radicalfm1.jpg']
 imagePos: ['right']
 imageGallery: ['radicalfm1.jpg']
 team: ['johanna','mats','hans','christian','johan']
-intro: "Upptäck ny musik, dela och sänd - Radical.FM är din egen personliga webbradiokanal"
+intro: "Webbradion som utmanar Spotify med banbrytande teknik och innovativ affärsmodell"
 siteurl: "http://www.radical.fm"
 twitterTag: "radicalfm"
 readmorelinks: [{"url":"http://techcrunch.com/2012/11/19/radical-fm-wants-to-go-after-spotify-with-an-ad-free-listener-supported-streamed-music-service/","title":"Techcrunch artikel"},{"url":"http://thenextweb.com/media/2012/11/20/radical-fm-throws-its-hat-into-the-music-streaming-ring-with/","title":"The Next Web artikel"},{"url":"http://www.theradioagency.com/blog/how-to-be-rad-an-interview-with-radical-fms-creator-thomas-mcalevey-part-1/","title":"Intervju med Thomas"}]

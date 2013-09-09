@@ -8,7 +8,7 @@ images: ['sb-amabv1.jpg']
 imagePos: ['right']
 imageGallery: ['sb-amabv1.jpg']
 team: ['anders','johanna','hans','christian','mats']
-intro: Google Docs-liknande beskrivningsverktyg för Byggsverige.
+intro: Google Docs-liknande specifikationsverktyg sparar miljoner i Byggsverige.
 siteurl: http://amabv.byggtjanst.se/Account/Logon
 twitterTag: [ '#svenskbyggtjanst', '#byggtjanst' ]
 
