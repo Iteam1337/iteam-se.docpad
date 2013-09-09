@@ -17,7 +17,8 @@ summary: >
 
 
 Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.
-  Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
+
+Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
 
 ### Förstudie
  Vi klartlägger verksamhetens nuläge och identiferar en tydlig målbild för branschen eller produkten. Vi genomför intervjuer av kunder, kollegor, IT-kontakter och andra relevanta aktörer innan vi utvecklar något. Vi levererar en tydlig rapport som – utifrån målgruppens perspektiv – visar på behov, förutsättningar och möjligheter för den nya tjänsten eller produkten.
