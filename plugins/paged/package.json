@@ -12,6 +12,5 @@
     "docpad": ">=6.46.4 <7"
   },
   "keywords": ["docpad-plugin"] ,
-  "_from": "docpad-plugin-paged@~2.2.2",
   "main": "./paged.plugin.coffee"
 }

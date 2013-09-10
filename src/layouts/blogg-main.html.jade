@@ -16,7 +16,7 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
           section.post
             header
               a.post-image(href= doc.url, style="background-image:url(" + doc.backgroundImage + ")")
-              .post-date= toDateString(doc.date, "short")
+              .post-date= toDateString(doc.realDate || doc.date, "short")
               if (showCategory)
                 a.post-category(href= "/blogg/" + doc.category)= capitalizeFirstChar(doc.category) + "/ "
               a.post-title(href= doc.url)= doc.title

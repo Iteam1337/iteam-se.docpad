@@ -65,7 +65,7 @@ layout: default
     .row.split(ng-show="github", class="ng-cloak")
       .header
         h2.title Github
-      .github
+      .github(ng-class="(!!github.repos.length && !!github.events.length) && 'user-content multi' || 'user-content'")
         ul.git.repos(ng-show="!!github.repos.length")
           h3.git-title Repos ({{github.repos.length}})
           li(ng-repeat="repo in github.repos|limitTo:8")
