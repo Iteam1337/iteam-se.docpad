@@ -18,7 +18,7 @@ backgroundDark: true
 
 twitter: hrswe
 instagram: hrswe
-linkedin: hansrollman
+linkedin: in/hansrollman
 github: hanrol
 ---
 

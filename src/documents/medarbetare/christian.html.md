@@ -19,7 +19,7 @@ backgroundDark: true
 
 twitter: landgren
 instagram: clandgren
-linkedin: christian.landgren
+linkedin: in/christianlandgren
 github: irony
 ---
 

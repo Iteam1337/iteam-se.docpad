@@ -10,11 +10,12 @@ backgroundImage: '/content/images/operations.jpg'
 backgroundDark: true
 
 summary: >
-  Våra Supporttekniker ger personlig och snabb hjälp. Som kund till Drift & Support-avdelningen är IT-supporten ett samtal bort och vi kommer direkt när det behövs. Våra Supporttekniker kan det senaste inom IT och ser alltid till att varje kund har den bästa IT-miljön -anpassad efter behov.
+  Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. De ser alltid till att varje kund har den bästa IT-miljön anpassad efter behov. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.
+<br/>
   Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.
 ---
 
-Vi tror på att du och ditt företag mår bättre, blir lönsammare och växer snabbare med stöd av modern, välmående och säker IT-miljö. i hjälper dig som är IT-chef eller IT-ansvarig att planera proaktivt, utreda, underhålla och övervaka din IT-miljö. Med allt från en bred IT-review till IT-arkitekturexpertis eller en komplett inhyrd IT-supportavdelning kan vi ge dig det stöd du behöver.
+Vi hjälper dig som är IT-chef eller IT-ansvarig att planera, utreda, underhålla och övervaka din IT-miljö.
 
 Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.
 
