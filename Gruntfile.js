@@ -5,6 +5,10 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     outPath: (grunt.file.readJSON('config.json').outPath + "/"),
 
+
+    clean :{
+      out : ['<%= outPath%>']
+    },
     // Concats the js files into a single include
     concat: {
       options: {
@@ -80,6 +84,14 @@ module.exports = function (grunt) {
       }
     },
 
+    copy: {
+      main: {
+        files: [
+          {expand: true, cwd: '<%=outPath%>', src:['**'], dest: '/Volumes/Inetpub/iteam.se'},
+        ]
+      }
+    },
+
     //
     // Generate angular-templates
     jade: {
@@ -104,9 +116,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
   grunt.registerTask('default', [
+    'clean',
     'concat',
     'uglify',
     'stylus',
