@@ -10,3 +10,6 @@ test:
 start:
 	docpad run;
 	#echo "If you are on Mac OS, right click and select Open URL: http://localhost:9778/"
+stage:
+	docpad generate;
+	grunt build;

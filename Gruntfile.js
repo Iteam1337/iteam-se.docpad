@@ -7,7 +7,7 @@ module.exports = function (grunt) {
 
 
     clean :{
-      out : ['<%= outPath%>']
+      out : ['<%= outPath%>/content/styles', '<%= outPath%>/content/scripts', '<%= outPath%>/content/partials',]
     },
     // Concats the js files into a single include
     concat: {
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, cwd: '<%=outPath%>', src:['**'], dest: '/Volumes/Inetpub/iteam.se'},
+          {expand: true, cwd: '<%=outPath%>', src:['**'], dest: '/Volumes/Inetpub/iteam.se/iteam.se/'},
         ]
       }
     },
@@ -128,5 +128,17 @@ module.exports = function (grunt) {
     'cssmin',
     'jade'
   ]);
+
+  // Default task(s).
+  grunt.registerTask('build', [
+    'clean',
+    'concat',
+    'uglify',
+    'stylus',
+    'cssmin',
+    'jade',
+    'copy'
+  ]);
+
 
 };
