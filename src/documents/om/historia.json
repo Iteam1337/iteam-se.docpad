@@ -110,15 +110,15 @@ summary: "Vi jobbar med teknik för att vi älskar det och för att användare i
     {
       "startDate":"2007",
       "headline":"Shake My World",
-      "text": "<p>iPhone släpps och Iteam blir snabbt Apple-partner. T-Rex blir community-plattform och <a href='/case/shakemyworld'>Shake My World</a>utmanar i dejtingsverige med Facebook-liknande koncept. Shake vinner IDG topp 100 bästa dejtingsajt.</p><p>Omvärld: Windows Vista släpps.</p>",
+      "text": "<p>iPhone släpps och Iteam blir snabbt Apple-partner. T-Rex blir community-plattform och <a href='/case/shakemyworld'>Shake My World</a>utmanar i dejtingsverige med Facebook-liknande koncept. Shake vinner IDG topp 100 bästa dejtingsajt.</p><p>Omvärld: Windows Vista släpps. Första iPhonen släpps!</p>",
       "asset": {
-        "media": "http://www.blogcdn.com/www.engadget.com/media/2007/03/windows-vista-sales.jpg"
+        "media": "http://m5.paperblog.com/i/26/261201/june-29-2007-the-day-the-original-iphone-went-L-uXh9lf.jpeg"
       }
     },
     {
       "startDate":"2008",
-      "headline":"Vinster",
-      "text": "<p>Iteam vinner EPiServer Awards för bästa intranät med <a href='/case/absolutforum'>Absolut Forum</a>. Beckers, Mora och FM Matsson är nya kunder hos oss. Vi vinner också priset för Bästa Dejtingsajt fråm IDG med <a href='/case/shakemyworld'>Shake My World</a>.</p><p>Omvärld: USB 3.0 lanseras -nu snabbare, snyggare och pålitligare med 10 gånger högre hastighet än USB 2.0, hela 5 Gbit/sekund. Basshunters fina hit Boten Anna slår i världen.</p>",
+      "headline":"Vinst \"Bästa Dejtingsajt\"",
+      "text": "<p>Iteam vinner EPiServer Awards för bästa intranät med <a href='/case/absolutforum'>Absolut Forum</a>. Beckers, Mora och FM Matsson är nya kunder hos oss. Vi vinner också priset för Bästa Dejtingsajt fråm IDG med <a href='/case/shakemyworld'>Shake My World</a>.</p><p>Omvärld: USB 3.0 lanseras -nu snabbare, snyggare och pålitligare med 10 gånger högre hastighet än USB 2.0, hela 5 Gbit/sekund. Basshunters fina hit \"Boten Anna\"slår i vida världen.</p>",
       "asset": {
         "media": "http://www.youtube.com/watch?v=IgFwiCApH7E"
       }
@@ -126,7 +126,7 @@ summary: "Vi jobbar med teknik för att vi älskar det och för att användare i
     {
       "startDate":"2009",
       "headline":"Nya stora kunder",
-      "text": "<p>Academic Communication blir ny stor kund med en T-Rex community. Vi bygger <a href='/case/careerbook'>Careerbook</a>, ett nytt sätt för företag och ung, välutbildad arbetskraft att finna varandra. Careerbook flyttar så småningom in under Academic Works sajt. Svensk Byggtjänst blir ny stor kund hos oss.</p><p>Omvärld:</p>",
+      "text": "<p>Academic Communication blir ny stor kund med en T-Rex community. Vi bygger <a href='/case/careerbook'>Careerbook</a>, ett nytt sätt för företag och ung, välutbildad arbetskraft att finna varandra. Svensk Byggtjänst blir ny stor kund hos oss.</p><p>Omvärld:</p>",
       "asset": {
       }
     },
