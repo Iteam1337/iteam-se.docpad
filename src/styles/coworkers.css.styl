@@ -55,8 +55,7 @@
   #toAngular
     display none
 
-  .desc,
-  .github
+  .desc
     vendor("column-count", 2)
     vendor("column-gap", 50px)
 
@@ -241,17 +240,41 @@
 
       li
         min-height 30px
+        &:before
+          position absolute
+          bottom 0
+          left 0
+          width 100%
+          height 100%
+          display block
+          content ""
+          vendor("box-shadow", inset 0 -15px 10px -10px white)
 
-    .git
-      li:before
-        position absolute
-        bottom 0
-        left 0
-        width 100%
-        height 100%
-        display block
-        content ""
-        vendor("box-shadow", inset 0 -15px 10px -10px white)
+    .git-info
+      width 85%
+      max-height 50px
+      overflow hidden
+
+    .git-description,
+    .git-message
+      word-wrap break-word
+      white-space pre-wrap
+
+    .git-language
+      margin-top 10px
+      font-family "Monaco","Menlo","Consolas","Courier New","monospace"
+      font-size 0.7em
+      color #999
+
+    .git-time
+      color #999
+      font-family "Palatino"
+      font-size 0.6em
+      position absolute
+      top 0
+      right 0
+      width 20%
+      text-align right
 
     li
       margin-bottom 10px
@@ -265,46 +288,37 @@
         &:hover
           color #666
 
-      .git-info
-        width 85%
-        max-height 50px
-        overflow hidden
-
-
       p
         margin 10px 0 0
         line-height 1.8em
         font-size .9em
 
-      .git-description,
-      .git-message
-        word-wrap break-word
-        white-space pre-wrap
-
-      .git-language
-        margin-top 10px
-        font-family "Monaco","Menlo","Consolas","Courier New","monospace"
-        font-size 0.7em
-        color #999
-
-      .git-time
-        color #999
-        font-family "Palatino"
-        font-size 0.6em
-        position absolute
-        top 0
-        right 0
-        width 20%
-        text-align right
-
   .user-content
+    width 100%
+    margin 0
+    padding 0
     &.multi
-      vendor("column-count", 2)
-      vendor("column-gap", 50px)
+      ul
+        box(border-box)
+        width 50%
+        margin 0
+        padding 0 25px 0 0
+        display inline-block
+        vertical-align top
+        &:nth-child(2n)
+          padding 0 0 0 25px
     li
+      box(border-box)
       vertical-align top
       display inline-block
       text-align left
-      width 44%
-      padding 0 5% 5px 0
+      width 50%
+      padding 0 0 5px 25px
       margin 0
+      &:nth-child(2n)
+        padding 0 25px 5px 0
+
+    &.github
+      li
+        width 100%
+        padding 0 0 5px

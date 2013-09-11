@@ -11,14 +11,14 @@ email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
 image: /content/images/sophie.jpg
 fullimage:
-cssColor: "#fab"
+cssColor: "#c0ffee"
 css:
-backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+backgroundImage: "/content/images/RT.jpg"
 backgroundDark: true
 
 twitter: sophiewesslau
 instagram: sophiewesslau
-linkedin: pub/sophie-wesslau/1/839/870
+linkedin: in/sophiewesslau
 github: sophiewesslau
 ---
 

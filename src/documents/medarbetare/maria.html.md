@@ -18,7 +18,7 @@ backgroundDark: true
 
 twitter: MariaSolscher
 instagram: MariaSolscher
-linkedin: mariasolscher
+linkedin: in/mariasolscher
 github:
 ---
 

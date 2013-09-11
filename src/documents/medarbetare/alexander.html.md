@@ -18,7 +18,7 @@ backgroundDark: true
 
 twitter:
 instagram: zendeveloper
-linkedin: zendeveloper
+linkedin: in/zendeveloper
 github: zendeveloper
 ---
 

@@ -18,7 +18,7 @@ backgroundDark: false
 
 twitter: osirisguitar
 instagram: osirisguitar
-linkedin: andersbornholm
+linkedin: in/andersbornholm
 github: osirisguitar
 ---
 

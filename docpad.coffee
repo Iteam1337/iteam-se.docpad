@@ -82,7 +82,7 @@ docpadConfig =
     getAllBlogCategories: () ->
       added = []
       categories = []
-      for data, i in @getCollection('blogg')?.toJSON()
+      for data, i in @getCollection("blogg_categories")?.toJSON()
         split = data.url.split("/")[2]
         if ~added.indexOf split
           continue
@@ -102,19 +102,21 @@ docpadConfig =
       onCase = base[1] is "case" and slug isnt "case-index"
       return if onCase then "single-case" else ""
 
-    getAllBlogsByAuthor: (author) ->
+    getAllBlogsByAuthor: (author, max) ->
       blogs = []
+      max = max or 6
       for data, i in @getCollection('blogg')?.toJSON()
         inner = data.author
         if inner is author then blogs.push(data)
-      return blogs
+      return blogs.slice 0, max
 
-    getAllCasesByCoworker: (coworker) ->
+    getAllCasesByCoworker: (coworker, max) ->
       casesArray = []
+      max = max or 6
       for data, i in @getCollection('case')?.toJSON()
         if data.team then for member, j in data.team
           if member is coworker then casesArray.push(data)
-      return casesArray
+      return casesArray.slice 0, max
 
     getCurrentBlogCategoryAsJSON: () ->
       name = @document.relativeDirPath?.split("/")[1]
@@ -148,21 +150,25 @@ docpadConfig =
 
     # All blog-posts
     blogg: (database) ->
-      database.findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false},[pageOrder:-1])
+      database.findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
+
+    # All blog-categories
+    blogg_categories: (database) ->
+      database.findAllLive({layout:'blogg-category', sortIndex: $exists: true},[sortIndex:1])
 
     # =================
     # DRIFT blog-posts
     blogg_drift: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/drift', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/drift', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # LARV blog-posts
     blogg_larv: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/larv', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/larv', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # NYHETER blog-posts
     blogg_nyheter: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/nyheter', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/nyheter', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # UTVECKLING blog-posts
     blogg_utveckling: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/utveckling', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/utveckling', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # =================
 
     # Collection of all cases

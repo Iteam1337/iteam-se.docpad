@@ -18,7 +18,7 @@ backgroundDark: true
 
 twitter: martinloman
 instagram: martinloman
-linkedin: martinloman
+linkedin: /in/martinloman
 github:
 ---
 
