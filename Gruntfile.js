@@ -4,10 +4,10 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     outPath: (grunt.file.readJSON('config.json').outPath + "/"),
-
+    outBuildPath: (grunt.file.readJSON('config.json').outBuildPath + "/"),
 
     clean :{
-      out : ['<%= outPath%>/content/styles', '<%= outPath%>/content/scripts', '<%= outPath%>/content/partials',]
+      out : ['<%= outPath%>/content/styles', '<%= outPath %>/content/scripts', '<%= outPath %>/content/partials',]
     },
     // Concats the js files into a single include
     concat: {
@@ -87,7 +87,12 @@ module.exports = function (grunt) {
     copy: {
       main: {
         files: [
-          {expand: true, cwd: '<%=outPath%>', src:['**'], dest: '/Volumes/Inetpub/iteam.se/iteam.se/'},
+          {
+            expand: true,
+            cwd: "<%=outPath%>",
+            src: ["**"],
+            dest: "<%= outBuildPath %>/"
+          }
         ]
       }
     },
@@ -121,7 +126,6 @@ module.exports = function (grunt) {
 
   // Default task(s).
   grunt.registerTask('default', [
-    'clean',
     'concat',
     'uglify',
     'stylus',
