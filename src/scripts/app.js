@@ -6,6 +6,7 @@
       "iteamse.config",
       "iteamse.factory.github",
       "iteamse.factory.twitter",
+      "iteamse.module.about-view",
       "iteamse.module.image-gallery",
       "iteamse.module.instagram",
       "iteamse.module.twitter",
