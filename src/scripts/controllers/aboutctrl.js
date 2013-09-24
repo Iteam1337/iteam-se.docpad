@@ -1,7 +1,7 @@
-(function (stddoc, stdang, LibChart) {
+;(function (stdlib, angular, LibChart) {
     "use strict";
 
-    stdang.module("iteamse").controller("AboutCtrl", function () {
+    angular.module("iteamse").controller("AboutCtrl", function () {
 
         var canvas, ctx, data, options, scaleOverride, scaleSteps, scaleStepWidth, scaleStartValue;
 
@@ -10,7 +10,7 @@
         scaleStepWidth = 1;
         scaleStartValue = 0;
 
-        if (!stddoc.getElementById("turnoverNumbers")) {
+        if (!stdlib.document.getElementById("turnoverNumbers")) {
             return;
         }
 
@@ -38,7 +38,7 @@
             animationSteps: 160
         };
 
-        canvas = stddoc.getElementById("turnoverNumbers");
+        canvas = stdlib.document.getElementById("turnoverNumbers");
         ctx = canvas.getContext("2d");
         new LibChart(ctx).Bar(data, options);
 
@@ -66,7 +66,7 @@
             animationSteps: 200
         };
 
-        canvas = stddoc.getElementById("employeeNumbers");
+        canvas = stdlib.document.getElementById("employeeNumbers");
         ctx = canvas.getContext("2d");
         new LibChart(ctx).Line(data, options);
 
@@ -92,9 +92,9 @@
             animationSteps: 200
         };
 
-        canvas = stddoc.getElementById("businessareaNumbers");
+        canvas = stdlib.document.getElementById("businessareaNumbers");
         ctx = canvas.getContext("2d");
         new LibChart(ctx).Pie(data, options);
     });
 
-})(document, angular, Chart);
+})(window, angular, Chart);

@@ -1,7 +1,7 @@
-(function (stdang) {
+;(function (angular) {
     "use strict";
 
-    stdang.module("iteamse").controller("WejayCtrl", function ($scope, $http) {
+    angular.module("iteamse").controller("WejayCtrl", function ($scope, $http) {
 
         var lastfmKey, lastfmUser, lastfmUrl;
         lastfmKey = "59a34f30f3c5163f936e755463780ad2";

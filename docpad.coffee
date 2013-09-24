@@ -214,6 +214,15 @@ docpadConfig =
   outPath: require("./config.json").outPath
 
 
+  # Ignore Paths
+  # Can be set to an array of absolute paths that we should ignore from the scanning process
+  ignorePaths: [
+    "files/jade_includes",
+    "files/angular_partials",
+    "files/scripts"
+  ]
+
+
   # DocPad Events
   # =============
 

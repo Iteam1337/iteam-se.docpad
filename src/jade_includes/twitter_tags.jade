@@ -1,6 +1,9 @@
-- var twitter = "twitter = '" + document.twitterTag + "'"
-ul.tweets(ng-init=twitter)
-  li(ng-repeat="tweet in tweets | limitTo:5")
-    .text(ng-bind-html-unsafe="tweet.text")
-    .time {{tweet.created_at}}
-    .user {{tweet.user}}
+.twitter(twitter=document.twitterTag, ng-show="!!twitter")
+  .header
+    h2 Twitter
+
+  ul.tweets(twitter=document.twitterTag)
+    li(ng-repeat="tweet in tweets | limitTo:5")
+      .text(ng-bind-html-unsafe="tweet.text")
+      .time {{tweet.created_at}}
+      .user {{tweet.user}}

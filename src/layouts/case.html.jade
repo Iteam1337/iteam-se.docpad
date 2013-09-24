@@ -49,12 +49,6 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
               include ../jade_includes/image_gallery
 
           if (document.tags)
-            ul.relatedServices
-              .header
-                h2 Taggar
-              include ../jade_includes/related_tags
+            include ../jade_includes/related_tags
 
-            .twitter(ng-show="tweets")
-              .header
-                h2 Twitter
-              include ../jade_includes/twitter_tags
+            include ../jade_includes/twitter_tags

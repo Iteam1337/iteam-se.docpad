@@ -19,7 +19,12 @@ module.exports = function (grunt) {
       dist: {
         dest: '<%= outPath %>content/scripts/<%= pkg.name %>.js',
         src: [
-          'src/documents/content/scripts/**/*.js'
+          "src/scripts/config/*.js",
+          "src/scripts/factory/*.js",
+          "src/scripts/directives/*.js",
+          "src/scripts/app.js",
+          "src/scripts/controllers/*.js",
+          "src/scripts/**/*.js"
         ]
       },
       vendor: {

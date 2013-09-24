@@ -10,7 +10,7 @@ layout: default
 - var splitRow = (!!cases.length && !!bloggCollection.length) ? "user-content multi" : "user-content"
 
 .row-fluid.page-content
-  article#coworker(ng-controller="CoworkerCtrl")
+  article#coworker
 
     .top-part
 
@@ -37,7 +37,6 @@ layout: default
             a(href="http://instagram.com/" + document.instagram, target="_blank")
               .ets-instagram
           if document.github
-            #github= document.github
             a(href="http://github.com/" + document.github, target="_blank")
               .ets-c-github
 
@@ -62,24 +61,8 @@ layout: default
               li
                 a(href=blogg.url)= blogg.title
 
-    .row.split(ng-show="github", class="ng-cloak")
-      .header
-        h2.title Github
-      .github(ng-class="(!!github.repos.length && !!github.events.length) && 'user-content multi' || 'user-content'")
-        ul.git.repos(ng-show="!!github.repos.length")
-          h3.git-title Repos ({{github.repos.length}})
-          li(ng-repeat="repo in github.repos|limitTo:8")
-            a.repo-title(ng-href="{{repo.url}}", target="_blank") {{repo.name}} <small ng-show="!!repo.language">// {{repo.language}}</small>
-            .git-info(ng-show="!!repo.description")
-              p.git-description {{repo.description}}
-            .git-time {{repo.created_at}}
-        ul.git.events(ng-show="!!github.events.length")
-          h3.git-title Senaste aktivitet
-          li(ng-repeat="git in github.events")
-            a.push-title(ng-href="{{git.url}}", target="_blank") {{git.type}} <small ng-show="!!git.name && git.name != ''">({{git.name}})</small>
-            .git-info(ng-show="!!git.message")
-              p.git-message {{git.message}}
-            .git-time {{git.created_at}}
+    if document.github
+      github(username=document.github)
 
     if document.instagram
       .row.split
