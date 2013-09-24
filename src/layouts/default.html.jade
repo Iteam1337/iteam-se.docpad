@@ -69,7 +69,7 @@ html(lang="sv")
 
   body(class=document.slug, ng-app="iteamse", ng-controller="MainCtrl")
 
-    #top-holder
+    #top-holder.ng-cloak
       .row-fluid#header
         ul.subnav
           .subnav-inner
@@ -93,13 +93,13 @@ html(lang="sv")
             .etp-menu
 
       if (!!subpages)
-        #navSubpages
+        #navSubpages.ng-cloak
           .subpage-inner
             each subpage in subpages
               - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
               a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
-      ul#mobileNav(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
+      ul#mobileNav.ng-cloak(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
         each doc, i in pages
           - clazz = (document.url === doc.url) ? 'active' : null
           - hasSubpage = (doc.subpages) ? i : null
@@ -108,7 +108,7 @@ html(lang="sv")
             if (doc.subpages)
               .etp-thin-chevron-right
 
-      #subpageWrap
+      #subpageWrap.ng-cloak
         each doc, i in pages
           if (doc.subpages)
             - subId = "subpages == " + i
@@ -120,13 +120,13 @@ html(lang="sv")
                 li
                   a(href=subpage.url)= subpage.title
 
-  #main-holder
+  #main-holder.ng-cloak
     .background-image(style=backgroundImage())
 
     .container(class=singlePageCase())
       .row-fluid#content.content!= content
 
-  #footer-holder
+  #footer-holder.ng-cloak
     #footer
       #address
         ul

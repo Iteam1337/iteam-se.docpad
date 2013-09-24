@@ -15,7 +15,11 @@ p Eftersom våra medarbetare är det viktigaste vi har så ser vi till att ha ku
 .row-fluid#about
   each subpage in getCollection('om').toJSON()
     .row
-      a.offer.span4(style=backgroundImage(subpage),href=subpage.url)
-      a(href=subpage.url)= subpage.title
-      p= subpage.summary
+      - image = backgroundImage(subpage)
+      if !!image
+        a.offer.span4(style=image, href=subpage.url)
+      else
+        .offer.span4
+      a.span6(href=subpage.url)= subpage.title
+      p.span6!= subpage.summary
 

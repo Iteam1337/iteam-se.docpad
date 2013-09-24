@@ -1,5 +1,9 @@
 @import "variable"
 
+@font-face
+  font-family "AvantGarde ExtraLight"
+  src url("/content/fonts/lte52009.ttf") format("truetype")
+
 /* General
 ---------------------------------------------*/
 a,
@@ -78,3 +82,58 @@ h4
 
 h2
   font-size 24px
+
+/* Icons
+---------------------------------------------*/
+.etp-thin-chevron-right,
+.etp-thin-chevron-left,
+.etp-menu,
+.ets-c-github,
+.ets-c-twitter,
+.ets-c-facebook,
+.ets-c-linkedin
+.ets-instagram
+  display inline-block
+  width 1.15em
+  height 1.5em
+  background-position 50%
+  background-size 1em
+  background-repeat no-repeat
+  margin auto
+  padding 0
+  text-align center
+  opacity .6
+  vendor("transition", opacity 300ms ease)
+
+  &:hover
+    opacity 1 !important
+    vendor("transition", opacity 300ms ease)
+
+.etp-thin-chevron-left,
+.etp-thin-chevron-right,
+.etp-menu
+  font-size 1.5em
+
+.etp-thin-chevron-left
+  background-image url(/content/images/svg/left.svg)
+
+.etp-thin-chevron-right
+  background-image url(/content/images/svg/right.svg)
+
+.etp-menu
+  background-image url(/content/images/svg/menu.svg)
+
+.ets-c-github
+  background-image url(/content/images/svg/github.svg)
+
+.ets-c-twitter
+  background-image url(/content/images/svg/twitter.svg)
+
+.ets-c-facebook
+  background-image url(/content/images/svg/facebook.svg)
+
+.ets-c-linkedin
+  background-image url(/content/images/svg/linkedin.svg)
+
+.ets-instagram
+  background-image url(/content/images/svg/instagram.svg)
