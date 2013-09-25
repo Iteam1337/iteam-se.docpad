@@ -13,7 +13,7 @@ image: '/content/images/hans.jpg'
 fullimage:
 cssColor: '#000'
 css:
-backgroundImage: "change.png"
+backgroundImage: "/content/images/change.png"
 backgroundDark: true
 
 twitter: hrswe
