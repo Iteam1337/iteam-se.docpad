@@ -2,7 +2,7 @@
   .header
     h2 Twitter
 
-  ul.tweets(twitter=document.twitterTag)
+  ul.tweets
     li(ng-repeat="tweet in tweets | limitTo:5")
       .text(ng-bind-html-unsafe="tweet.text")
       .time {{tweet.created_at}}

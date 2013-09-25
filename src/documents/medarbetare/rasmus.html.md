@@ -9,11 +9,9 @@ shortname: rasmus
 jobTitle: Drift och support
 email: rasmus.fredriksson@iteam.se
 phonenumber: 0703 - 76 66 40
-image: /content/images/rasmus.jpg
-fullimage:
+
 cssColor: "#2d90ed"
-css:
-backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+topImage: "http://i.bldr.se/y0K8u.jpeg"
 backgroundDark: true
 
 twitter:

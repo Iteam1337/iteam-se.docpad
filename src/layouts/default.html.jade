@@ -90,7 +90,7 @@ html(lang="sv")
                   a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
           .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
-            .etp-menu
+            .e-list
 
       if (!!subpages)
         #navSubpages.ng-cloak
@@ -106,7 +106,7 @@ html(lang="sv")
           li(mobile-nav, data-subpage=hasSubpage)
             a(class=clazz, data-url=doc.url)= doc.title
             if (doc.subpages)
-              .etp-thin-chevron-right
+              .e-chevron-thin-right
 
       #subpageWrap.ng-cloak
         each doc, i in pages
@@ -114,14 +114,14 @@ html(lang="sv")
             - subId = "subpages == " + i
             ul.subpages(ng-show=subId, ng-animate="'slide-in'")
               li.back(ng-click="subpages = null")
-                .etp-thin-chevron-left
+                .e-chevron-thin-left
                 span Tillbaka
               each subpage in getCollection(doc.subpages).toJSON()
                 li
                   a(href=subpage.url)= subpage.title
 
   #main-holder.ng-cloak
-    .background-image(style=backgroundImage())
+    .background-image(style=topImage())
 
     .container(class=singlePageCase())
       .row-fluid#content.content!= content
@@ -137,13 +137,13 @@ html(lang="sv")
 
       #followUs
         a(href="https://github.com/iteam1337", target="_blank")
-          .ets-c-github
+          .e-github
         a(href="https://www.facebook.com/IteamSolutions", target="_blank")
-          .ets-c-facebook
+          .e-facebook
         a(href="http://twitter.com/iteam1337", target="_blank")
-          .ets-c-twitter
+          .e-twitter
         a(href="http://instagram.com/iteam1337", target="_blank")
-          .ets-instagram
+          .e-instagram
 
   // Scripts
   != scripts.toHTML()

@@ -92,9 +92,9 @@ docpadConfig =
         added.push(split)
       return categories
 
-    backgroundImage: (page) ->
+    topImage: (page) ->
       page = page || @document
-      return if page.backgroundImage then "background-image:url(" + page.backgroundImage + ")" else ""
+      return if page.topImage then "background-image:url(" + page.topImage + ")" else ""
 
     singlePageCase: () ->
       base = @document.url.split("/")

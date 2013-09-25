@@ -12,7 +12,7 @@ intro: Vi utvecklade Svensk Byggtjänsts hemsida tillsammans med byråpartnern B
 siteurl: http://www.byggtjanst.se
 twitterTag: ['svenskbyggtjanst', 'byggtjanst']
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+topImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true
 ---
 

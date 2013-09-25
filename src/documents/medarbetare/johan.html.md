@@ -9,11 +9,9 @@ shortname: johan
 jobTitle: Señor Director Creativo
 email: johan.obrink@iteam.se
 phonenumber: 0706 - 82 91 21
-image: /content/images/johan.jpg
-fullimage:
+
 cssColor: "#fab"
-css:
-backgroundImage: "http://i.bldr.se/r4U73.jpeg"
+topImage: "http://i.bldr.se/r4U73.jpeg"
 backgroundDark: true
 
 twitter:

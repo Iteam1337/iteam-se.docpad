@@ -17,7 +17,7 @@
         return;
       }
 
-      query = query.replace(",", " OR ");
+      query = query.replace(/\,/g, " OR ");
 
       cb = new LibCodebird();
       cb.setConsumerKey("bvqOzAMz10CWGfcWOfow", "DYYE1S4jWeTX3rp4P5uJQ62a1AhlqxGRPTnkGYGx7M");

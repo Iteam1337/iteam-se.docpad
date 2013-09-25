@@ -12,7 +12,7 @@ intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.landahl.se
 twitterTag: 'landahl arkitekter'
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+topImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true
 ---
 

@@ -20,7 +20,9 @@
       require: {
         twitter: "^"
       },
-      link: function (scope) {
+      link: function (scope, element) {
+        console.log("scope?", scope);
+        console.log("element?", element);
         scope.tweets = [];
         $twitter(scope.twitter, function (tweets) {
           scope.$apply(function () {

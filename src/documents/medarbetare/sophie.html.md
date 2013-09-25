@@ -9,11 +9,9 @@ shortname: sophie
 jobTitle: Office Manager
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
-image: /content/images/sophie.jpg
-fullimage:
+
 cssColor: "#c0ffee"
-css:
-backgroundImage: "/content/images/RT.jpg"
+topImage: "/content/images/RT.jpg"
 backgroundDark: true
 
 twitter: sophiewesslau

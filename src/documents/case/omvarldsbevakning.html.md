@@ -12,7 +12,7 @@ intro: Vi utvecklade Svensk Byggtjänsts Omvärldsbevakning tillsammans med byr�
 siteurl: http://omvarldsbevakning.byggtjanst.se/
 twitterTag: ['svenskbyggtjanst']
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+topImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true
 ---
 

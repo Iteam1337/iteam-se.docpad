@@ -103,6 +103,7 @@
     height 200px
     position relative
     z-index 1
+
     img
       vendor("border-radius", 200px)
       z-index 1
@@ -110,6 +111,23 @@
       position relative
       border 6px solid white
       margin -6px
+
+    &:hover
+      &:before
+        vendor("border-radius", 200px)
+        z-index 10
+        position absolute
+        left 0
+        top 0
+        content ""
+        display block
+        width 100%
+        height 100%
+        background-color white
+        background-image url("/content/images/svg/phone.svg")
+        background-repeat no-repeat
+        background-size 100px
+        background-position 50%
 
   .sun
     border none

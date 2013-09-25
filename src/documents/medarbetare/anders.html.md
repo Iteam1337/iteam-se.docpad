@@ -9,11 +9,9 @@ shortname: anders
 jobTitle: Senior hacker
 email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
-image: /content/images/anders.jpg
-fullimage:
+
 cssColor: "#000000"
-css:
-backgroundImage: "/content/images/collage.jpg"
+topImage: "/content/images/collage.jpg"
 backgroundDark: false
 
 twitter: osirisguitar

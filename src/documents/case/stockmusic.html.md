@@ -12,7 +12,7 @@ intro: Iteam och Sound Ideas bygger sajt för att söka, provvlyssna och köpa m
 siteurl: http://www.stockmusic.com
 twitterTag: ['stockmusiccom','soundideas']
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+topImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true
 ---
 

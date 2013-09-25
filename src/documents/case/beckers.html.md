@@ -13,7 +13,7 @@ siteurl: http://www.beckers.se
 twitterTag: '#beckersfarg'
 
 
-backgroundImage: "/content/images/be.jpg"
+topImage: "/content/images/be.jpg"
 backgroundDark: false
 ---
 

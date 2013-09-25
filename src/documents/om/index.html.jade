@@ -5,7 +5,7 @@ tags: ['om', 'page']
 subpages: 'om'
 pageIndex: 4
 dontIndexInAnyCollection: true
-backgroundImage: ""
+topImage: ""
 ---
 h3 Medarbetarna är viktigast
 p Vi skapar tekniska lösningar med målet att användarna inte ska märka av tekniken. Våra lösningar är så genomtänkta att det blir som man förväntar sig. Våra utvecklare har tekniken i blodet och vi hittar lätt den bästa lösningen tack vare en naturlig nyfikenhet och intresse.
@@ -15,7 +15,7 @@ p Eftersom våra medarbetare är det viktigaste vi har så ser vi till att ha ku
 .row-fluid#about
   each subpage in getCollection('om').toJSON()
     .row
-      - image = backgroundImage(subpage)
+      - image = topImage(subpage)
       if !!image
         a.offer.span4(style=image, href=subpage.url)
       else

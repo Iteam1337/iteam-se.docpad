@@ -9,11 +9,9 @@ shortname: alexander
 jobTitle: Hacker
 email: alexander.czigler@iteam.se
 phonenumber: '0727-14 50 60'
-image: /content/images/alexander.jpg
-fullimage:
+
 cssColor: "#07AFCA"
-css:
-backgroundImage: "http://i.bldr.se/mbY4q.jpeg"
+topImage: "http://i.bldr.se/mbY4q.jpeg"
 backgroundDark: true
 
 twitter:

@@ -10,7 +10,8 @@
       "iteamse.module.image-gallery",
       "iteamse.module.instagram",
       "iteamse.module.twitter",
-      "iteamse.module.github"
+      "iteamse.module.github",
+      "iteamse.module.wejay"
     ]
   )
 

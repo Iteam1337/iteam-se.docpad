@@ -9,11 +9,9 @@ shortname: dennis
 jobTitle: Webbutvecklare
 email: dennis.pettersson@iteam.se
 phonenumber:
-image: /content/images/dennis.jpg
-fullimage:
+
 cssColor: "#74a6ec"
-css:
-backgroundImage: "http://i.bldr.se/Wb4k0.gif"
+topImage: "http://i.bldr.se/Wb4k0.gif"
 backgroundDark: true
 
 twitter: ankjevel

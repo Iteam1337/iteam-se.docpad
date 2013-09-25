@@ -9,11 +9,9 @@ shortname: hans
 jobTitle: Vice VD, Försäljning
 email: hans.rollman@iteam.se
 phonenumber: '0738 - 1337 87'
-image: /content/images/hans.jpg
-fullimage:
+
 cssColor:
-css:
-backgroundImage: "http://i.bldr.se/rMtaS.jpeg"
+topImage: "http://i.bldr.se/rMtaS.jpeg"
 backgroundDark: true
 
 twitter: hrswe

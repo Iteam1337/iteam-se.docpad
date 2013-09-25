@@ -11,7 +11,7 @@
     return {
       resrict: "A",
       replace: false,
-      scope: false,
+      scope: true,
       link: function (scope, element) {
         var ctx, data, options,
             turnoverNumbers,

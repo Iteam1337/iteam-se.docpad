@@ -6,7 +6,7 @@ pageType: Service
 pageOrder: 1
 subpages: 'tjanster'
 
-backgroundImage: '/content/images/team.jpg'
+topImage: '/content/images/team.jpg'
 backgroundDark: true
 
 summary: >

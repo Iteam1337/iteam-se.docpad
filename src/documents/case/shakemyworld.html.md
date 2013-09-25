@@ -11,7 +11,7 @@ intro: Shake My World anlitade Iteam för att bygga en helt ny sorts webbplats f
 siteurl: http://www.shakemyworld.se
 twitterTag: 'shakemyworld'
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
+topImage: "http://i.bldr.se/csE8D.jpeg"
 backgroundDark: true
 ---
 

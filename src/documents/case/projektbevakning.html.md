@@ -13,7 +13,7 @@ siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
 twitterTag: ['svenskbyggtjanst','projektbevakning','byggtjanst']
 
 
-backgroundImage: "/content/images/sb.jpg"
+topImage: "/content/images/sb.jpg"
 backgroundDark: true
 ---
 

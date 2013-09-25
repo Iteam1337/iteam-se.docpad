@@ -9,12 +9,9 @@ shortname: christian
 jobTitle: CEO and hacker
 email: christian.landgren@iteam.se
 phonenumber: 0707 - 75 58 31
-image: /content/images/christian.jpg
-backgroundImage: "http://mrwinstonwolf.files.wordpress.com/2010/11/pulpwolfvincentjules1.jpg"
-backgroundDark: true
-cssColor: "#001337"
 
-css:
+cssColor: "#001337"
+topImage: "http://mrwinstonwolf.files.wordpress.com/2010/11/pulpwolfvincentjules1.jpg"
 backgroundDark: true
 
 twitter: landgren
