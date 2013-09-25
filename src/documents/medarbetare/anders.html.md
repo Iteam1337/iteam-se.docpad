@@ -11,7 +11,7 @@ email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
 
 cssColor: "#000000"
-topImage: "/content/images/collage.jpg"
+topImage: "/content/images/medarbetare/abo.jpg"
 backgroundDark: false
 
 twitter: osirisguitar
@@ -32,4 +32,4 @@ Konceptutveckling, C#, systemarkitektur, EPiServer, datasäkerhet, single sign-o
 Civilingenjör i datalogi från KTH. Arbetade tidigare på Springtime som konceptutvecklare och projektledare, innan dess på Vindrosen som projektledare och webbutvecklare.
 
 ### Superkraft
-Kan hitta vad som helst på Google
+Kan hitta vad som helst på Google.
