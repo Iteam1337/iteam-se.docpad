@@ -38,7 +38,8 @@
     "grunt-cli": "~0.1.9",
     "marked": "*",
     "safeps": "~2.2.6",
-    "taskgroup": "~3.1.1"
+    "taskgroup": "~3.1.1",
+    "docpad": "~6.53.0"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
