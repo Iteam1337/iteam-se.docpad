@@ -11,8 +11,8 @@ team: ['christian','anders']
 intro: Vi förverkligade en dröm tillsammans med entreprenören Tom McAlevey
 siteurl: "http://en.wikipedia.org/wiki/Tomsradio.com"
 
-topImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 ---
 
 

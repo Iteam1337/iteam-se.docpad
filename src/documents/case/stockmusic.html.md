@@ -12,8 +12,8 @@ intro: Iteam och Sound Ideas bygger sajt för att söka, provvlyssna och köpa m
 siteurl: http://www.stockmusic.com
 twitterTag: ['stockmusiccom','soundideas']
 
-topImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 ---
 
 ### E-commerce plattform för ljudförsäljning

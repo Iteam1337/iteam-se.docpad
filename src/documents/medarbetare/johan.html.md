@@ -11,8 +11,8 @@ email: johan.obrink@iteam.se
 phonenumber: 0706 - 82 91 21
 
 cssColor: "#fab"
-topImage: "http://i.bldr.se/r4U73.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 
 twitter:
 instagram: johanobrink

@@ -4,6 +4,15 @@
 //- All indexes that are to be shown on all pages
 - var pages = getCollection('sektion').toJSON()
 
+//- TEMP SOLLUTION for blogs
+- var arr = []
+each doc in pages
+  - arr.push(doc)
+- blogg = { url: 'http://tekniken.nu/', title: 'Blogg', pageIndex: 15 }
+- arr.splice(arr.length - 2, 0, blogg)
+- pages = arr
+//- TEMP SOLLUTION for blogs
+
 //- url-highlighting and so on
 - var documentUrl = document.url.split("/")
 - var basename = documentUrl[1]
@@ -81,7 +90,7 @@ html(lang="sv")
 
         .header-inner
           a.brand(href="/")
-            img(src="/content/images/iteam_logo.svg", width="120", height="39")
+            img(src="/content/images/svg/iteam_logo.svg", width="120", height="39")
           ul.nav
 
             each doc in pages

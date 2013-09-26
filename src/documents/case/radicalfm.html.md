@@ -16,7 +16,7 @@ readmorelinks: [{"url":"http://techcrunch.com/2012/11/19/radical-fm-wants-to-go-
 quote: {"text":"Where the hell is my jetpack?","by":"Tom McAlevey, CEO Radical"}
 about: {"title":"Bakom kulisserna står en legend","text":"Thomas McAlevey, grundaren av den legendariska radiostationen Bandit 105.5 och Spotify-föregångaren tomsradio.com","image":"/content/images/tom.jpg"}
 
-topImage: "/content/images/brian.jpg"
+topImage: "/content/images/case-topbilder/brian.jpg"
 backgroundDark: false
 ---
 
