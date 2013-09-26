@@ -13,7 +13,7 @@ phonenumber: 0733 - 74 27 84
 <<<<<<< HEAD
 cssColor: #830309
 =======
-cssColor: "#BEF7FF"
+cssColor: "#830309"
 >>>>>>> c6607c69518956a2a910cd38579fe0accb005ebb
 topImage: "http://www.phaidon.com/resource/kusama073.jpg"
 backgroundDark: true
