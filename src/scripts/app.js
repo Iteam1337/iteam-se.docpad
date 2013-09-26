@@ -11,7 +11,8 @@
       "iteamse.module.instagram",
       "iteamse.module.twitter",
       "iteamse.module.github",
-      "iteamse.module.wejay"
+      "iteamse.module.wejay",
+      "iteamse.module.main-title"
     ]
   )
 

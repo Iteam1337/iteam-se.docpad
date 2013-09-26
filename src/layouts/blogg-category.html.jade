@@ -3,7 +3,7 @@ layout: default
 ---
 include ../jade_includes/mixin.jade
 
-h1.main-title(style=shouldWeUseADarkBackground())= capitalizeFirstChar(document.url.split("/")[2])
+h1.main-title(title,style=shouldWeUseADarkBackground())= capitalizeFirstChar(document.url.split("/")[2])
 
 .row-fluid
   article#post.post

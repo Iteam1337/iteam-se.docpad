@@ -8,7 +8,7 @@ tags: ['Proof-of-concept','Lead tech','Drift & Support',Entreprenörsrådgivning
 images: ['radicalfm1.jpg']
 imagePos: ['right']
 imageGallery: ['radicalfm1.jpg']
-team: ['johanna','mats','hans','christian','johan']
+team: ['johanna','mats','hans','christian','johan','anders','rickard']
 intro: "Upptäck ny musik, dela och sänd - Radical.FM är din egen personliga webbradiokanal"
 siteurl: "http://www.radical.fm"
 twitterTag: "radicalfm"
