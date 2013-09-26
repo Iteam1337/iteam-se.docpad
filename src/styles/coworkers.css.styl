@@ -3,13 +3,20 @@
 .coworkers
   .coworker
     display inline-block
-    margin-bottom 40px
+    margin-bottom 20px
     vertical-align top
     width 49%
     position relative
+    margin-right 10px
+    height 150px
 
-    &:nth-child(2n-1)
-      margin-right 10px
+    background-color rgba(150, 150, 150, .05)
+    border 1px solid rgba(150, 150, 150, .07)
+    border-radius 3px
+    &:hover
+      background-color rgba(150, 150, 150, .1)
+      border 1px solid rgba(150, 150, 150, .12)
+    box(border-box)
 
     &:last-child
       margin-bottom 0
@@ -29,6 +36,7 @@
         position absolute
         top 10px
         margin 0
+        left 10px
 
       &.email
         font-family "Palatino", "serif"

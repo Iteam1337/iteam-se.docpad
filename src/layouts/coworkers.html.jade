@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+.row-fluid.coworkers
+
+  each doc in getCollection('medarbetare').toJSON()
+    .coworker
+      a.portrait(href=doc.url)
+        img.image(src=getGravatarUrl(200,doc))
+      .info
+        h4
+          a(href=doc.url)= doc.title
+        p(class="title")= doc.jobTitle
+        a.email(href="mailto:" + doc.email)= doc.email
+        p= doc.phonenumber

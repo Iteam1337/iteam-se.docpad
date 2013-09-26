@@ -10,7 +10,7 @@ jobTitle: Föräldraledig / Project manager
 email: maria.solscher@iteam.se
 phonenumber: 0733 - 74 27 84
 
-cssColor:
+cssColor: "#BEF7FF"
 topImage: "http://www.phaidon.com/resource/kusama073.jpg"
 backgroundDark: true
 

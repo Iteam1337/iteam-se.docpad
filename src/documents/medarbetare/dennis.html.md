@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: dennis
 
-jobTitle: Webbutvecklare
+jobTitle: Slacker
 email: dennis.pettersson@iteam.se
 phonenumber:
 
