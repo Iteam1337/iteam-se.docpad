@@ -12,8 +12,8 @@ intro: Academic Communication och Iteam tar fram en mötesplats för arbetsgivar
 siteurl: http://www.academicwork.se/careerbook
 twitterTag: ['#careerbook','#academicwork_se']
 
-topImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 ---
 
 ### Mötesplatsen för arbetsgivare och studenter

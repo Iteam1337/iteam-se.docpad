@@ -12,8 +12,8 @@ intro: Google Docs-liknande beskrivningsverktyg för Byggsverige.
 siteurl: http://amabv.byggtjanst.se/Account/Logon
 twitterTag: [ '#svenskbyggtjanst', '#byggtjanst' ]
 
-topImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 ---
 
 ### Google Docs-liknande beskrivningsverktyg för Byggsverige

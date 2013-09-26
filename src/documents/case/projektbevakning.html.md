@@ -12,8 +12,7 @@ intro: Sveriges bästa säljverktyg för byggbranschen.
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
 twitterTag: ['svenskbyggtjanst','projektbevakning','byggtjanst']
 
-
-topImage: "/content/images/sb.jpg"
+topImage: "/content/images/case-topbilder/sb.jpg"
 backgroundDark: true
 ---
 

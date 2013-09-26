@@ -12,8 +12,8 @@ intro: Produkten i fokus för både proffs och hemmafixare.
 siteurl: http://www.moraarmatur.se
 
 
-topImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 ---
 
 ### Allt för hemmafixaren till proffset

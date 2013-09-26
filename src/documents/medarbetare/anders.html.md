@@ -10,7 +10,7 @@ jobTitle: Senior hacker
 email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
 
-cssColor: "#000000"
+cssColor: "#000"
 topImage: "/content/images/medarbetare/abo.jpg"
 backgroundDark: false
 

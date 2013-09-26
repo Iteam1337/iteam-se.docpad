@@ -12,8 +12,8 @@ intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.landahl.se
 twitterTag: 'landahl arkitekter'
 
-topImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 ---
 
 ### Fullständigt IT-support ansvar

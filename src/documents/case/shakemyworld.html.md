@@ -11,8 +11,8 @@ intro: Shake My World anlitade Iteam för att bygga en helt ny sorts webbplats f
 siteurl: http://www.shakemyworld.se
 twitterTag: 'shakemyworld'
 
-topImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+topImage:
+backgroundDark:
 ---
 
 ### En kombination av Facebook, datingsajt och en aktivitetssajt.

@@ -12,8 +12,7 @@ intro: Sveriges bästa färgsajt inspirerar och utbildar.
 siteurl: http://www.beckers.se
 twitterTag: '#beckersfarg'
 
-
-topImage: "/content/images/be.jpg"
+topImage: "/content/images/case-topbilder/be.jpg"
 backgroundDark: false
 ---
 
