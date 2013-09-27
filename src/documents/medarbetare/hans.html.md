@@ -11,7 +11,7 @@ email: hans.rollman@iteam.se
 phonenumber: '0738 - 1337 87'
 
 cssColor: "#000"
-topImage: "/content/images/medarbetare/change.png"
+topImage: "/content/images/medarbetare/change.jpg"
 backgroundDark: true
 
 twitter: hrswe
