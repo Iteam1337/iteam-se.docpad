@@ -18,6 +18,8 @@ Vi hjälper dig som är IT-chef eller IT-ansvarig att planera, utreda, underhål
 
 Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.
 
+<call-me-button></call-me-button>
+
 ### IT-review
 En IT-review innebär analys och dokumentation av din IT-miljö. Du får en tydlig översikt av allt från hårdvara och säkerhet, till mjukvara och licenser. I åtgärdsrapporten ser du också tydligt hur du kan åtgärda dagens brister och fel. Du får också en bra grund för att hålla IT-miljön och IT-dokumentationen uppdaterad på lång sikt.
 

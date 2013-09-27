@@ -17,6 +17,8 @@ Våra utvecklare är engagerade och sitter på den senaste kunskapen inom system
 
 Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
 
+<call-me-button></call-me-button>
+
 ### Trygg och effektiv utvecklingsmetodik
 Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Scrum medför ökad kvalitet och ökat fokus på att först lösa de viktigaste utmaningarna i projektet. Med Scrum levereras värde, snarare än att tid ägnas aå att skriva detaljerade kravspecifikationer.
 

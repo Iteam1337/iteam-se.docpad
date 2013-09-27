@@ -19,6 +19,8 @@ Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjud
 
 Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
 
+<call-me-button></call-me-button>
+
 ### Förstudie
  Vi klartlägger nuläget och identiferar en tydlig målbild för branschen eller produkten. Vi genomför intervjuer av relevanta aktörer innan något utvecklas. Vi levererar en tydlig rapport som – utifrån målgruppens perspektiv – visar på behov, förutsättningar och möjligheter för den nya tjänsten eller produkten.
 
