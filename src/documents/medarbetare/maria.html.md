@@ -11,7 +11,7 @@ email: maria.solscher@iteam.se
 phonenumber: 0733 - 74 27 84
 
 cssColor: "#830309"
-topImage: "http://www.phaidon.com/resource/kusama073.jpg"
+topImage: "/content/images/medarbetare/IMG_7390.JPG"
 backgroundDark: true
 
 twitter: MariaSolscher
