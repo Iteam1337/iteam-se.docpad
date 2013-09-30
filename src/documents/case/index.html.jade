@@ -1,6 +1,6 @@
 ---
 title: Case
-layout: section
+layout: cases
 tags: ['intro', 'page']
 pageIndex: 0
 #subpages: 'case'
@@ -10,21 +10,8 @@ topImage: "/content/images/section-topbilder/case-eller-nagot-bw-cropped.jpg"
 backgroundDark: true
 ---
 
-.row-fluid
-  h2 Inledande text
-  p:markdown
-    Massa cool text för att beskriva vad vi gör och varför. Vad sägs? Lite mer säljande?
-    Kanske något anant?
+h2 Inledande text
+:markdown
+  Massa cool text för att beskriva vad vi gör och varför. Vad sägs? Lite mer säljande?
 
-.row-fluid#cases
-  each doc in getCollection('case').toJSON()
-    .case
-      if (doc.images)
-        a.case-link(href=doc.url)
-          img(src="/content/images/" + doc.images[0], class="case-image")
-      else
-        img(src="http://lorempixel.com/100/100", class="case-image")
-      .case-about
-        a(href=doc.url)
-          h2.case-title= doc.title
-        p= doc.intro
+  Kanske något anant?

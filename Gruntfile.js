@@ -59,7 +59,6 @@ module.exports = function (grunt) {
       compile: {
         files: {
           "<%= outPath %>content/styles/<%= pkg.name %>.css": [
-            "src/styles/variables.css.styl",
             "src/styles/general.css.styl",
             "src/styles/style.css.styl",
             "src/styles/animation.css.styl",
@@ -67,6 +66,7 @@ module.exports = function (grunt) {
             "src/styles/cases.css.styl",
             "src/styles/coworkers.css.styl",
             "src/styles/page.css.styl",
+            "src/styles/*.css.styl",
             "src/styles/responsive.css.styl"
           ]
         }
