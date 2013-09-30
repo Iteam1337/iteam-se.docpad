@@ -10,6 +10,11 @@ topImage: "/content/images/section-topbilder/case-eller-nagot-bw-cropped.jpg"
 backgroundDark: true
 ---
 
+.row-fluid
+  h2 Inledande text
+  p:markdown
+    Massa cool text för att beskriva vad vi gör och varför. Vad sägs? Lite mer säljande?
+
 .row-fluid#cases
   each doc in getCollection('case').toJSON()
     .case
