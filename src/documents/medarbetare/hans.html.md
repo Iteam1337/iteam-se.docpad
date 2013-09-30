@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: hans
 
-jobTitle: Vice VD, Försäljning
+jobTitle: VP and Sales
 email: hans.rollman@iteam.se
 phonenumber: '0738 - 1337 87'
 

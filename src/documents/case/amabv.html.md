@@ -2,6 +2,7 @@
 title: AMA Beskrivningsverktyg
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Systemutveckling']
 images: ['sb-amabv1.jpg']
@@ -10,7 +11,7 @@ imageGallery: ['sb-amabv1.jpg']
 team: ['anders','johanna','hans','christian','mats']
 intro: Google Docs-liknande beskrivningsverktyg för Byggsverige.
 siteurl: http://amabv.byggtjanst.se/Account/Logon
-twitterTag: [ '#svenskbyggtjanst', '#byggtjanst' ]
+
 
 topImage:
 backgroundDark:

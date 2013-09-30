@@ -173,7 +173,7 @@ docpadConfig =
 
     # Collection of all cases
     case: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
+      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[releaseDate:-1, title:1])
 
     showcase: (database) ->
       database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 5}, dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])

@@ -6,6 +6,9 @@ topImage: "/content/images/section-topbilder/robots-bw-cropped.jpg"
 backgroundDark: true
 ---
 
+//- Holder for all case-sites
+- var showcases = getCollection("showcase").toJSON()
+
 .row-fluid#startpage
   article.news
     h1 Omöjligt är bara början
@@ -16,3 +19,9 @@ backgroundDark: true
         Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra tack vare människor som vågar drömma.
 
         Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
+
+    .cases
+      each showcase in showcases
+        .case
+          a.case-link(href=showcase.url)
+            img(src="/content/images/" + showcase.images[0], class="case-image")

@@ -2,6 +2,7 @@
 title: Wakers Redovisningsbyrå
 layout: case
 caseIndex: 6
+releaseDate: 091214
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['wakers.jpg']

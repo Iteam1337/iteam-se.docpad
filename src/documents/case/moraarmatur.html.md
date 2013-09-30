@@ -2,6 +2,7 @@
 title: Mora Armatur
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Systemutveckling']
 images: ['moraarmatur1.jpg']

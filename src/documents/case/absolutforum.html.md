@@ -2,6 +2,7 @@
 title: ABSOLUT FORUM
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
 images: ['absolutforum1.jpg']

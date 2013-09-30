@@ -6,12 +6,12 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: sophie
 
-jobTitle: Office Manager
+jobTitle: Office and Marketing Manager
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
 
 cssColor: "#c0ffee"
-topImage: "/content/images/medarbetare/RT.jpg"
+topImage: "/content/images/medarbetare/sru.jpg"
 backgroundDark: true
 
 twitter: sophiewesslau

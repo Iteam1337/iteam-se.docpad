@@ -1,6 +1,7 @@
 ---
 title: SES Astra
 layout: case
+releaseDate: 091214
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['sesastra.jpg']
@@ -9,7 +10,6 @@ imageGallery: ['sesastra.jpg']
 team: ['mats','rasmus']
 intro: Satellitoperatör med expertstöd från Iteam.
 siteurl: http://www.carlstedtark.se
-twitterTag: 'SES_Satellites'
 
 topImage:
 backgroundDark:

@@ -1,4 +1,4 @@
-;(function (angular, stdlib) {
+;(function (angular, stdlib, $) {
   "use strict";
   angular.module(
     "iteamse.module.image-gallery",
@@ -13,6 +13,49 @@
    *   Example:
    *      <image-gallery images="['test.png','file.jpg']"></image-gallery>
    */
+  .directive("imageGallery", function () {
+    return {
+      restrict: "E",
+      replace: false,
+      scope: true,
+      templateUrl: "/content/partials/lightbox.html",
+      link: function (scope, element, attrs) {
+        var i, img, images, lightbox, body;
+
+        images = stdlib.JSON.parse(attrs.images);
+
+        i = images.length;
+
+        while (i--) {
+          img = images[i];
+          if (img.match(/(^\/)|(^http(s)\:\/\/)/i)) {
+            continue;
+          }
+          images[i] = "/content/images/" + img;
+        }
+        i = null;
+        img = null;
+        scope.images = images;
+        console.log(scope.images);
+
+        body = $(stdlib.document).find("html");
+        lightbox = $(element).find("#lightbox");
+        lightbox.modal({
+          show: false,
+          dynamic: true
+        });
+
+        lightbox.appendTo(body);
+
+        scope.activeImage = null;
+        scope.open = function (index) {
+          scope.activeImage = scope.images[index];
+          lightbox.modal("show");
+        };
+      }
+    };
+  });
+   /*
   .directive("imageGallery", function ($timeout) {
     return {
       restrict: "E",
@@ -83,4 +126,5 @@
       }
     };
   });
-})(angular, window);
+  */
+})(angular, window, $);

@@ -2,6 +2,7 @@
 title: Careerbook
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Systemutveckling']
 images: ['careerbook1.jpg']
@@ -10,7 +11,7 @@ imageGallery: ['careerbook2.jpg']
 team: ['johanna','mats','hans','christian']
 intro: Academic Communication och Iteam tar fram en mötesplats för arbetsgivare och studenter.
 siteurl: http://www.academicwork.se/careerbook
-twitterTag: ['#careerbook','#academicwork_se']
+
 
 topImage:
 backgroundDark:

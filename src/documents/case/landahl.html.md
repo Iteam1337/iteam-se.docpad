@@ -2,6 +2,7 @@
 title: Landahl Advokatbyrå
 layout: case
 caseIndex: 4
+releaseDate: 091214
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
 images: ['landahl.jpg']
@@ -10,7 +11,6 @@ imageGallery: ['landahl.jpg']
 team: ['mats','rasmus']
 intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.landahl.se
-twitterTag: 'landahl arkitekter'
 
 topImage:
 backgroundDark:

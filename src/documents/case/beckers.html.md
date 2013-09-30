@@ -2,6 +2,7 @@
 title: Beckers.se
 layout: case
 caseIndex: 1
+releaseDate: 091214
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
 images: ['beckers1.jpg']
@@ -10,7 +11,6 @@ imageGallery: ['beckers2.jpg','beckers3.jpg']
 team: ['anders','johanna','martin','dennis','rickard','maria']
 intro: Sveriges bästa färgsajt inspirerar och utbildar.
 siteurl: http://www.beckers.se
-twitterTag: '#beckersfarg'
 
 topImage: "/content/images/case-topbilder/be.jpg"
 backgroundDark: false
