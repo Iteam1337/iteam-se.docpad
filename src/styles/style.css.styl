@@ -40,6 +40,7 @@
 
 /* Navbar
 ---------------------------------------------*/
+
 #header
   box(border-box)
 
@@ -50,13 +51,14 @@
   .header-inner
     margin 0 auto
     max-width 1170px
+    position relative
 
   .brand
-    float left
-    position relative
+    position absolute
     z-index 1
     padding 5px 15px
     top 5px
+    left 0
 
   .nav,
   .subnav
@@ -374,6 +376,7 @@ html
     #top-holder
       z-index 0 !important
       position relative !important
+
     #footer-holder
       display none
 
