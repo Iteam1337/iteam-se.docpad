@@ -2,6 +2,7 @@
 title: Beckers.se
 layout: case
 caseIndex: 1
+releaseDate: 091214
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
 images: ['beckers1.jpg']

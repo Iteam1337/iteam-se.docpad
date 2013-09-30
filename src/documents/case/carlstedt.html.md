@@ -2,6 +2,7 @@
 title: Carlstedt Arkitekter
 layout: case
 caseIndex: 3
+releaseDate: 091214
 
 tags: ['IT-review','Drift & Support','Specialist- och projektstöd']
 images: ['carlstedt.jpg']

@@ -24,8 +24,6 @@ each doc in pages
 - var subpages = {}
 - if (basename === "blogg")
   - subpages = getAllBlogCategories()
-- else if (basename == "case")
-  - subpages = getCollection("showcase").toJSON()
 - else
   - subpages = (!!document.subpages) ? getCollection(document.subpages) : false
   - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false

@@ -2,6 +2,7 @@
 title: Tomsradio
 layout: case
 caseIndex: 7
+releaseDate: 091214
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning','Lead tech','Entreprenörsrådgivning']
 images: ['tomsradio.jpg']

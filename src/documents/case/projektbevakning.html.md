@@ -2,6 +2,7 @@
 title: Projektbevakning
 layout: case
 caseIndex: 2
+releaseDate: 091214
 
 tags: ['Proof-of-concept','Systemutveckling']
 images: ['sb-projektbevakning1.jpg']

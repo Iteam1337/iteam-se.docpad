@@ -2,6 +2,7 @@
 title: AMA Beskrivningsverktyg
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Systemutveckling']
 images: ['sb-amabv1.jpg']

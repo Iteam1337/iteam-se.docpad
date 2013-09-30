@@ -1,6 +1,7 @@
 ---
 title: Shake My World
 layout: case
+releaseDate: 091214
 
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']
 images: ['shakemyworld1.jpg']

@@ -2,6 +2,7 @@
 title: Stockmusic.com
 layout: case
 caseIndex: 8
+releaseDate: 091214
 
 tags: ['Systemutveckling','Rådgivning','Drift & Support','Specialist- och projektstöd','Systemförvaltning']
 images: ['stockmusic1.jpg']

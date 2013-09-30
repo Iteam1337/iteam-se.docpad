@@ -2,6 +2,7 @@
 title: Careerbook
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Systemutveckling']
 images: ['careerbook1.jpg']

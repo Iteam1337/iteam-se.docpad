@@ -1,6 +1,7 @@
 ---
 title: SES Astra
 layout: case
+releaseDate: 091214
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 images: ['sesastra.jpg']

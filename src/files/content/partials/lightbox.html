@@ -1,0 +1,17 @@
+<div>
+  <ul>
+    <li ng-repeat="(i, image) in images">
+      <img ng-src="{{image}}" alt="image" ng-click="open(i)" />
+    </li>
+  </ul>
+
+  <div id="lightbox" class="lightbox modal fade hide in" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-body lightbox-content">
+      <img ng-src="{{activeImage}}" alt="active image">
+    </div>
+    <div class="modal-footer lightbox-footer">
+      <button class="btn btn-small btn-primary">Click</button>
+    </div>
+  </div>
+
+</div>

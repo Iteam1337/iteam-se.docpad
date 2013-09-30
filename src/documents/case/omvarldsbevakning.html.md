@@ -2,6 +2,7 @@
 title: Omvärldsbevakning
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Proof-of-concept','Systemutveckling']
 images: ['sb-omvarldsbevakning1.jpg']
