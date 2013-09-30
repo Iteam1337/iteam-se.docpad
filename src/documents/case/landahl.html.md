@@ -11,7 +11,6 @@ imageGallery: ['landahl.jpg']
 team: ['mats','rasmus']
 intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.landahl.se
-twitterTag: 'landahl arkitekter'
 
 topImage:
 backgroundDark:

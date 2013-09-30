@@ -10,7 +10,6 @@ imagePos: ['right']
 imageGallery: ['sb-projektbevakning1.jpg']
 team: ['anders','johanna','mats','dennis','maria','christian']
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
-twitterTag: ['svenskbyggtjanst','projektbevakning','byggtjanst']
 
 topImage: "/content/images/case-topbilder/sb.jpg"
 backgroundDark: true

@@ -11,7 +11,7 @@ imageGallery: ['sb-amabv1.jpg']
 team: ['anders','johanna','hans','christian','mats']
 intro: Google Docs-liknande beskrivningsverktyg för Byggsverige.
 siteurl: http://amabv.byggtjanst.se/Account/Logon
-twitterTag: [ '#svenskbyggtjanst', '#byggtjanst' ]
+
 
 topImage:
 backgroundDark:

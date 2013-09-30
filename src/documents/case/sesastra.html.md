@@ -10,7 +10,6 @@ imageGallery: ['sesastra.jpg']
 team: ['mats','rasmus']
 intro: Satellitoperatör med expertstöd från Iteam.
 siteurl: http://www.carlstedtark.se
-twitterTag: 'SES_Satellites'
 
 topImage:
 backgroundDark:

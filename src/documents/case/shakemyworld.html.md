@@ -10,7 +10,6 @@ imageGallery: ['shakemyworld1.jpg','shakemyworld2.jpg','shakemyworld3.jpg']
 team: ['anders','johanna','christian']
 intro: Shake My World anlitade Iteam för att bygga en helt ny sorts webbplats för internetdating.
 siteurl: http://www.shakemyworld.se
-twitterTag: 'shakemyworld'
 
 topImage:
 backgroundDark:
