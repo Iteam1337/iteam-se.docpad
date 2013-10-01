@@ -33,8 +33,7 @@ module.exports = function (grunt) {
           'src/files/content/vendor/_angular.js',
           'src/files/content/vendor/jquery.js',
           'src/files/content/vendor/*.js',
-          'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js',
-          'src/files/content/vendor/twitter-lightbox/bootstrap-lightbox.js'
+          'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
     },

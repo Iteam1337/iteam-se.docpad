@@ -234,26 +234,6 @@
 #github
   display none
 
-.index
-  .background-image
-    height 625px
-    max-height 625px
-    background-position left bottom
-  .container
-    max-width 550px
-    margin 40px auto
-    min-height 376px
-    margin-bottom -50px
-    padding-bottom 0
-    margin-top 73px
-    p
-     max-width none
-  .cases
-    .case
-      display inline-block
-      max-width 150px
-      max-height 80px
-
 .background-image
   top -302px
   z-index 0
@@ -334,7 +314,6 @@
   border-top 1px solid rgba(204, 204, 204, .2)
   margin-top 20px
 
-
 .single-case
   animate(animatein, 1s)
 
@@ -362,62 +341,3 @@
 
 #main-holder
   z-index 0
-
-html
-  background-color white
-  body
-    background-color white
-  &.show-image
-    animate(slideout)
-    body
-      overflow hidden
-      z-index 0 !important
-      position absolute
-      height 100%
-      width 100%
-
-    #top-holder
-      z-index 0 !important
-      position relative !important
-    #footer-holder
-      display none
-
-    .zoom-wrapper
-      top 0
-      left 0
-      display block
-      zoom-cursor("out")
-      opacity 1 !important
-      z-index 9001 !important
-      position fixed !important
-      animate(slidein)
-
-      img.zoom
-        height auto !important
-        width auto !important
-        max-height 100% !important
-        max-width 100% !important
-        min-width none !important
-        min-height none !important
-        position absolute !important
-        top 0
-        left 0
-        right 0
-        bottom 0
-        margin auto !important
-        padding 0 !important
-
-.zoom-wrapper
-  opacity 0
-  z-index 9001
-  background white
-  width 100%
-  height 100%
-  display none
-  animate(fadeout)
-
-.zoomable
-  zoom-cursor()
-  margin 0 5px
-  img.zoom
-    animate(image-fadeout)
