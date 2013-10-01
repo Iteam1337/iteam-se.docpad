@@ -138,12 +138,20 @@ docpadConfig =
       else
         return day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + ", " + d.getFullYear()
 
+    getShowCase: (max) ->
+      casesArray = []
+      max = max or 4
+      for data, i in @getCollection('showcase')?.toJSON()
+        casesArray.push data
+        i++
+        if i is max then break
+      return casesArray
+
   # Collections
   # ===========
   # These are special collections that our website makes available to us
   collections:
     # http://docs.mongodb.org/manual/reference/operator/ <- great reference for nosql-query
-    #s
     # This is the main collection, for index:es
     sektion: (database) ->
       database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])
@@ -176,7 +184,7 @@ docpadConfig =
       database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[releaseDate:-1, title:1])
 
     showcase: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 5}, dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
+      database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 4}, dontIndexInAnyCollection: {$exists: false} }, [caseIndex:1, title:1])
 
     # Collection of all feedback-posts}
     feedback: (database) ->

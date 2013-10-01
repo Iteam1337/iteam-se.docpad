@@ -7,7 +7,7 @@ backgroundDark: true
 ---
 
 //- Holder for all case-sites
-- var showcases = getCollection("showcase").toJSON()
+- var showcases = getShowCase()
 
 .row-fluid#startpage
   article.news
@@ -22,6 +22,7 @@ backgroundDark: true
 
       Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
+    h2 Några utvalda case
     .cases
       each showcase in showcases
         .case
