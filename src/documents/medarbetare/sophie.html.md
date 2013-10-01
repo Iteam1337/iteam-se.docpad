@@ -10,7 +10,7 @@ jobTitle: VD-assistent & Marknadsansvarig
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
 
-cssColor: "#c0ffee"
+cssColor: "#e63132"
 topImage: "/content/images/medarbetare/sru.jpg"
 backgroundDark: true
 

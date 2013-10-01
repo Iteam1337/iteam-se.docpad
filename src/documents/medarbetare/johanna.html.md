@@ -10,7 +10,7 @@ jobTitle: Utvecklingschef
 email: johanna.gustafsson@iteam.se
 phonenumber: 0734 - 02 91 12
 
-cssColor:
+cssColor: "#a7e2fe"
 topImage: "/content/images/medarbetare/jgn.JPG"
 backgroundDark:
 
