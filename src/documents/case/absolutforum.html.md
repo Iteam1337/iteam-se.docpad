@@ -5,9 +5,9 @@ caseIndex: 10
 releaseDate: 091214
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
-images: ['absolutforum1.jpg']
+images: ['case-logos/absolut.jpg']
 imagePos: ['right']
-imageGallery: ['absolutforum2.jpg','absolutforum3.jpg']
+imageGallery: ['case-galleribilder/absolut/absolutforum2.jpg','case-galleribilder/absolut/absolutforum3.jpg','case-galleribilder/absolut/absolutforum1.jpg']
 team: ['anders']
 intro: Prisbelönat globalt extranät för alla som arbetar med marknadsföring av ABSOLUT VODKA.
 siteurl: http://www.absolut.absolutcompany.com
