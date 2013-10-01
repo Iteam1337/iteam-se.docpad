@@ -1,18 +1,28 @@
 ---
 title: SES Astra
+subtitle:
 layout: case
+caseIndex: 10
 releaseDate: 091214
 
 tags: ['Drift & Support','Specialist- och projektstöd']
-images: ['sesastra.jpg']
-imagePos: ['right']
-imageGallery: ['sesastra.jpg']
+logo: 'case-logos/sesastra.jpg'
+
+imageGallery: []
+
 team: ['mats','rasmus']
-intro: Satellitoperatör med expertstöd från Iteam.
 siteurl: http://www.carlstedtark.se
+
+readmorelinks:
+
+quote:
+about:
 
 topImage:
 backgroundDark:
+
+intro: >
+  Satellitoperatör med expertstöd från Iteam.
 ---
 
 ### Teknikstöd för Sverige, Baltikum och Ukraina

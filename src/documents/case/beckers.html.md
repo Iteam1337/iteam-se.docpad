@@ -1,19 +1,28 @@
 ---
 title: Beckers.se
+subtitle:
 layout: case
 caseIndex: 1
 releaseDate: 091214
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
-images: ['beckers1.jpg']
-imagePos: ['right']
-imageGallery: ['beckers2.jpg','beckers3.jpg']
+logo:
+
+imageGallery: ['case-galleribilder/beckers/beckers2.jpg','case-galleribilder/beckers/beckers3.jpg']
+
 team: ['anders','johanna','martin','dennis','rickard','maria']
-intro: Sveriges bästa färgsajt inspirerar och utbildar.
 siteurl: http://www.beckers.se
+
+readmorelinks:
+
+quote:
+about:
 
 topImage: "/content/images/case-topbilder/be.jpg"
 backgroundDark: false
+
+intro: >
+  Sveriges bästa färgsajt inspirerar och utbildar.
 ---
 
 <img src="/content/images/beckers1.jpg" class="right" alt="">

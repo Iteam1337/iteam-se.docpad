@@ -1,19 +1,28 @@
 ---
 title: Stockmusic.com
+subtitle:
 layout: case
 caseIndex: 8
 releaseDate: 091214
 
 tags: ['Systemutveckling','Rådgivning','Drift & Support','Specialist- och projektstöd','Systemförvaltning']
-images: ['stockmusic1.jpg']
-imagePos: ['right']
-imageGallery: ['stockmusic2.jpg','stockmusic3.jpg']
+logo:
+
+imageGallery: ['case-galleribilder/stockmusic/stockmusic1.jpg', 'case-galleribilder/stockmusic/stockmusic2.jpg', 'case-galleribilder/stockmusic/stockmusic3.jpg']
+
 team: ['christian','hans','mats','alexander']
-intro: Iteam och Sound Ideas bygger sajt för att söka, provvlyssna och köpa musik, ljudeffekter och produktionselement.
 siteurl: http://www.stockmusic.com
+
+readmorelinks:
+
+quote:
+about:
 
 topImage:
 backgroundDark:
+
+intro: >
+  Iteam och Sound Ideas bygger sajt för att söka, provvlyssna och köpa musik, ljudeffekter och produktionselement.
 ---
 
 ### E-commerce plattform för ljudförsäljning

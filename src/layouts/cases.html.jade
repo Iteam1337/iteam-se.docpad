@@ -7,11 +7,11 @@ layout: section
 .row-fluid#cases
   each doc in getCollection('case').toJSON()
     .case
-      if (doc.images)
-        a.case-link(href=doc.url)
-          img(src="/content/images/" + doc.images[0], class="case-image")
-      else
-        img(src="http://lorempixel.com/100/100", class="case-image")
+      a.case-link(href=doc.url)
+        if (!!doc.logo)
+          img(src="/content/images/" + doc.logo, class="case-image")
+        else
+          img(src="http://lorempixel.com/360/200", class="case-image")
       .case-about
         a(href=doc.url)
           h2.case-title= doc.title

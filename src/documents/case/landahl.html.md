@@ -1,19 +1,28 @@
 ---
 title: Landahl Advokatbyrå
+subtitle:
 layout: case
 caseIndex: 4
 releaseDate: 091214
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
-images: ['landahl.jpg']
-imagePos: ['right']
-imageGallery: ['landahl.jpg']
+logo: 'case-logos/landahl.jpg'
+
+imageGallery: []
+
 team: ['mats','rasmus']
-intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.landahl.se
+
+readmorelinks:
+
+quote:
+about:
 
 topImage:
 backgroundDark:
+
+intro: >
+  Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 ---
 
 ### Fullständigt IT-support ansvar
