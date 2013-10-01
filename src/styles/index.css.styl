@@ -27,15 +27,13 @@
 
   .rn-carousel-container
     border none
-    *
-      border none
     .rn-carousel-indicator
-      opacity 0.1
+      background none
       margin-top 20px
-      vendor("transition", opacity 300ms ease)
-    &:hover > .rn-carousel-indicator
-      opacity 1
-
+      span
+        color #999
+      .active
+        color _orange
 
   .instagram-feed
     height 100%
