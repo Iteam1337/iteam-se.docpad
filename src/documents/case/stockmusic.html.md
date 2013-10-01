@@ -6,7 +6,7 @@ caseIndex: 8
 releaseDate: 091214
 
 tags: ['Systemutveckling','Rådgivning','Drift & Support','Specialist- och projektstöd','Systemförvaltning']
-logo:
+logo: 'case-logos/soundideas.jpeg'
 
 imageGallery: ['case-galleribilder/stockmusic/stockmusic1.jpg', 'case-galleribilder/stockmusic/stockmusic2.jpg', 'case-galleribilder/stockmusic/stockmusic3.jpg']
 
