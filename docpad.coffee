@@ -64,7 +64,7 @@ docpadConfig =
     # Get the prepared site/document keywords
     getPreparedKeywords: ->
       # Merge the document keywords with the site keywords
-      @site.keywords.concat(@document.keywords or []).join(', ')
+      @site.keywords.concat(@document.keywords or []).join ', '
 
     getGravatarUrl: (size, doc=@document) ->
       hash = require('crypto').createHash('md5').update(doc.email).digest('hex')
@@ -73,7 +73,7 @@ docpadConfig =
       return url
 
     capitalizeFirstChar: (str) ->
-      composed = str.charAt(0).toUpperCase() + str.slice(1)
+      composed = str.charAt(0).toUpperCase() + str.slice 1
       return composed
 
     shouldWeUseADarkBackground: ->
@@ -86,10 +86,10 @@ docpadConfig =
         split = data.url.split("/")[2]
         if ~added.indexOf split
           continue
-        name = split.charAt(0).toUpperCase() + split.slice(1)
+        name = split.charAt(0).toUpperCase() + split.slice 1
         category = {url: "/blogg/" + split, title: name}
-        categories.push(category)
-        added.push(split)
+        categories.push category
+        added.push split
       return categories
 
     topImage: (page) ->
@@ -107,7 +107,7 @@ docpadConfig =
       max = max or 6
       for data, i in @getCollection('blogg')?.toJSON()
         inner = data.author
-        if inner is author then blogs.push(data)
+        if inner is author then blogs.push data
       return blogs.slice 0, max
 
     getAllCasesByCoworker: (coworker, max) ->
@@ -115,7 +115,7 @@ docpadConfig =
       max = max or 6
       for data, i in @getCollection('case')?.toJSON()
         if data.team then for member, j in data.team
-          if member is coworker then casesArray.push(data)
+          if member is coworker then casesArray.push data
       return casesArray.slice 0, max
 
     getCurrentBlogCategoryAsJSON: () ->

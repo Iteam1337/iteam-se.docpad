@@ -16,22 +16,25 @@
     return {
       restrict: "E",
       replace: true,
-      scope: true,
+      scope: {
+        name: "@",
+        max: "@",
+        css: "@"
+      },
       templateUrl: "/content/partials/instagram.html",
-      link: function (scope, element, attrs) {
-        var name, max, options;
-
-        name = attrs.name;
-        max = +attrs.max || 3;
+      link: function (scope, element) {
+        var options;
 
         scope.instagramFeed = [];
 
-        if (typeof name !== "string" || !name) {
+        scope.max = +scope.max || 3;
+
+        if (typeof scope.name !== "string" || !scope.name) {
           return;
         }
 
         options = {
-          url: "http://insta-team.se/user/" + name + "?count=" + max,
+          url: "http://insta-team.se/user/" + scope.name + "?count=" + scope.max,
           method: "GET"
         };
 
