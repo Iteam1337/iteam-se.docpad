@@ -8,7 +8,7 @@ releaseDate: 091214
 tags: ['Systemutveckling']
 logo:
 
-imageGallery: ['moraarmatur1.jpg']
+imageGallery: ['case-galleribilder/moraarmatur/moraarmatur1.jpg']
 
 team: ['anders']
 siteurl: http://www.moraarmatur.se
