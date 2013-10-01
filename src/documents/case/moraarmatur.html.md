@@ -1,20 +1,28 @@
 ---
 title: Mora Armatur
+subtitle:
 layout: case
 caseIndex: 10
 releaseDate: 091214
 
 tags: ['Systemutveckling']
-images: ['moraarmatur1.jpg']
-imagePos: ['right']
+logo:
+
 imageGallery: ['moraarmatur1.jpg']
+
 team: ['anders']
-intro: Produkten i fokus för både proffs och hemmafixare.
 siteurl: http://www.moraarmatur.se
 
+readmorelinks:
+
+quote:
+about:
 
 topImage:
 backgroundDark:
+
+intro: >
+  Produkten i fokus för både proffs och hemmafixare.
 ---
 
 ### Allt för hemmafixaren till proffset

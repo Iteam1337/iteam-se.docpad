@@ -26,4 +26,7 @@ backgroundDark: true
       each showcase in showcases
         .case
           a.case-link(href=showcase.url)
-            img(src="/content/images/" + showcase.images[0], class="case-image")
+            if (!!showcase.logo)
+              img(src="/content/images/" + showcase.logo, class="case-image")
+            else
+              img(src="http://lorempixel.com/100/100", class="case-image")

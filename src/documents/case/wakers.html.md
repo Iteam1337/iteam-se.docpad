@@ -1,19 +1,28 @@
 ---
 title: Wakers Redovisningsbyrå
+subtitle:
 layout: case
 caseIndex: 6
 releaseDate: 091214
 
 tags: ['Drift & Support','Specialist- och projektstöd']
-images: ['wakers.jpg']
-imagePos: ['right']
-imageGallery: ['wakers.jpg']
+logo: 'case-logos/wakers.jpg'
+
+imageGallery: []
+
 team: ['mats','rasmus']
-intro: Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 siteurl: http://www.wakers.se
+
+readmorelinks:
+
+quote:
+about:
 
 topImage:
 backgroundDark:
+
+intro: >
+  Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 ---
 
 ### Wakers Consulting
