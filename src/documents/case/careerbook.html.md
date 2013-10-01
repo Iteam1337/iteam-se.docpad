@@ -3,7 +3,7 @@ title: Careerbook
 subtitle:
 layout: case
 caseIndex: 10
-releaseDate: 091214
+releaseDate: 090101
 
 tags: ['Systemutveckling']
 logo: 'case-logos/careerbook.jpg'

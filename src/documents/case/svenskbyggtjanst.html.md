@@ -3,7 +3,7 @@ title: Byggtjänst.se
 subtitle:
 layout: case
 caseIndex: 5
-releaseDate: 121214
+releaseDate: 100303
 
 tags: ['Systemutveckling','Systemförvaltning']
 logo: 'case-logos/sb-byggtjanst-logo.png'

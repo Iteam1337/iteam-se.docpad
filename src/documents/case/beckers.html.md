@@ -3,7 +3,7 @@ title: Beckers.se
 subtitle:
 layout: case
 caseIndex: 1
-releaseDate: 091214
+releaseDate: 090303
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
 logo: 'case-logos/beckers.png'

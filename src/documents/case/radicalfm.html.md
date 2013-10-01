@@ -3,7 +3,7 @@ title: Radical.FM
 subtitle: Radio Re-Defined
 layout: case
 caseIndex: 0
-releaseDate: 091214
+releaseDate: 110101
 
 tags: ['Proof-of-concept','Lead tech','Drift & Support',Entreprenörsrådgivning','Rådgivning']
 logo: 'case-logos/radicalfm.png'

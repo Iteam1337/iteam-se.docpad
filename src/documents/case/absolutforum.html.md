@@ -3,7 +3,7 @@ title: ABSOLUT FORUM
 subtitle:
 layout: case
 caseIndex: 10
-releaseDate: 091214
+releaseDate: 040101
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
 logo: 'case-logos/absolut.jpg'

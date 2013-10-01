@@ -3,7 +3,7 @@ title: Omvärldsbevakning
 subtitle:
 layout: case
 caseIndex: 10
-releaseDate: 091214
+releaseDate: 100101
 
 tags: ['Proof-of-concept','Systemutveckling']
 logo: 'case-logos/sb-byggtjanst-logo.png'

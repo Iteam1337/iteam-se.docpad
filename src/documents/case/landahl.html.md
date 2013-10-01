@@ -3,7 +3,7 @@ title: Landahl Advokatbyrå
 subtitle:
 layout: case
 caseIndex: 4
-releaseDate: 091214
+releaseDate: 040303
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
 logo: 'case-logos/landahl.jpg'

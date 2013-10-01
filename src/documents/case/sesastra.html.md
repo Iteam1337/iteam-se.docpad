@@ -3,7 +3,7 @@ title: SES Astra
 subtitle:
 layout: case
 caseIndex: 10
-releaseDate: 091214
+releaseDate: 020101
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 logo: 'case-logos/sesastra.jpg'

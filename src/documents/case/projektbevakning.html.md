@@ -3,7 +3,7 @@ title: Projektbevakning
 subtitle:
 layout: case
 caseIndex: 2
-releaseDate: 091214
+releaseDate: 120101
 
 tags: ['Proof-of-concept','Systemutveckling']
 logo: 'case-logos/sb-byggtjanst-logo.png'

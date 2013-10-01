@@ -3,7 +3,7 @@ title: Mora Armatur
 subtitle:
 layout: case
 caseIndex: 10
-releaseDate: 091214
+releaseDate: 090202
 
 tags: ['Systemutveckling']
 logo: 'case-logos/moraarmatur.jpg'

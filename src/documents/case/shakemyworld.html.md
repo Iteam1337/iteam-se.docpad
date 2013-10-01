@@ -3,7 +3,7 @@ title: Shake My World
 subtitle:
 layout: case
 caseIndex: 10
-releaseDate: 091214
+releaseDate: 070101
 
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']
 logo: 'case-logos/shakemyworld.gif'

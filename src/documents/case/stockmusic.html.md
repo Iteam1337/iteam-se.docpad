@@ -3,7 +3,7 @@ title: Stockmusic.com
 subtitle:
 layout: case
 caseIndex: 8
-releaseDate: 091214
+releaseDate: 080101
 
 tags: ['Systemutveckling','Rådgivning','Drift & Support','Specialist- och projektstöd','Systemförvaltning']
 logo: 'case-logos/soundideas.jpeg'
