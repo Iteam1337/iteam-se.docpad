@@ -11,7 +11,6 @@ imageGallery: ['sb-omvarldsbevakning1.jpg']
 team: ['anders','johanna','mats','dennis','maria','christian']
 intro: Vi utvecklade Svensk Byggtjänsts Omvärldsbevakning tillsammans med byråpartnern Britny.
 siteurl: http://omvarldsbevakning.byggtjanst.se/
-twitterTag: ['svenskbyggtjanst']
 
 topImage:
 backgroundDark:

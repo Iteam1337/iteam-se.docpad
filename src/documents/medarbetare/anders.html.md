@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: anders
 
-jobTitle: Senior hacker
+jobTitle: Creative Technical Director
 email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
 
