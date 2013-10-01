@@ -1,4 +1,5 @@
-;(function (angular, stdmoment) {
+;(function () {
+  "use strict";
   angular.module(
     "iteamse.factory.github",
     []
@@ -28,7 +29,7 @@
             returnContent = {
               name: inner.repo.name,
               url: "https://github.com/" + inner.repo.name,
-              created_at: stdmoment(inner.created_at).fromNow(),
+              created_at: moment(inner.created_at).fromNow(),
               type: "",
               message: ""
             };
@@ -145,7 +146,7 @@
             inner = data[i];
             returnContent = {
               url: inner.html_url,
-              created_at: stdmoment(inner.created_at).fromNow(),
+              created_at: moment(inner.created_at).fromNow(),
               name: inner.name,
               description: inner.description,
               language: inner.language
@@ -157,4 +158,4 @@
       };
     }
   ]);
-})(angular, moment);
+})();

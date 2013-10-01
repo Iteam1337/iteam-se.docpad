@@ -1,4 +1,4 @@
-;(function (angular, stdlib) {
+;(function () {
   "use strict";
   angular.module(
     "iteamse.module.instagram",
@@ -49,4 +49,4 @@
       }
     };
   });
-})(angular, window);
+})();

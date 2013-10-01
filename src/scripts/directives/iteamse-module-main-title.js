@@ -1,4 +1,4 @@
-;(function (angular, stdlib) {
+;(function () {
   "use strict";
   angular.module(
     "iteamse.module.main-title",
@@ -8,4 +8,4 @@
     return {
     };
   });
-})(angular, window);
+})();

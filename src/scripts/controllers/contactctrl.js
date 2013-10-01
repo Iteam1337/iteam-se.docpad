@@ -1,4 +1,4 @@
-;(function (angular) {
+;(function () {
   "use strict";
 
   angular.module("iteamse").controller("ContactCtrl", function ($scope) {
@@ -11,4 +11,4 @@
 
   });
 
-})(angular);
+})();

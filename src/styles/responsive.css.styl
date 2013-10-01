@@ -3,17 +3,11 @@
 /**
  * Big screens > 1200px
  */
-@media (min-width:980px)
-  maxWidth = 1170px
-  .container
-    max-width 100%
-
-    > div
-     display inline-block
-
-  #coworker
-    .desc
-      mason()
+@media (max-width:980px)
+  .case-index
+    p,
+    h2
+      max-width 100%
 
   #cases
     .case
@@ -34,47 +28,6 @@
       .case-about
         width 100%
 
-  #case
-    margin 40px auto 0
-    max-width 100%
-
-    .about
-      width 100%
-
-      .content
-        > div
-          display inline-block
-          vertical-align top
-
-        .text
-          width 50%
-
-        .information
-          margin-left 40px
-          width 40%
-
-        .gallery
-          img
-            max-height auto
-            max-width 46%
-
-  .coworkers
-    .coworker
-      width 32%
-
-      &:nth-child(2n)
-        text-align left
-
-        .image
-          float none
-          margin-right 20px
-
-        .info
-          margin 0
-
-  #footer
-    width 100%
-    max-width maxWidth
 /**
  * iPad landscape
  */

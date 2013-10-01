@@ -1,5 +1,4 @@
-;(function (angular, LibCodebird, stdmoment) {
-
+;(function () {
   "use strict";
   angular.module(
     "iteamse.factory.twitter",
@@ -19,7 +18,7 @@
 
       query = query.replace(/\,/g, " OR ");
 
-      cb = new LibCodebird();
+      cb = new Codebird();
       cb.setConsumerKey("bvqOzAMz10CWGfcWOfow", "DYYE1S4jWeTX3rp4P5uJQ62a1AhlqxGRPTnkGYGx7M");
 
       cb.__call(
@@ -52,4 +51,4 @@
     };
   });
 
-})(angular, Codebird, moment);
+})();

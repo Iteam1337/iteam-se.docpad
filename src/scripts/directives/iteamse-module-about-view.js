@@ -1,11 +1,11 @@
-;(function (angular, LibChart, $) {
+;(function () {
   "use strict";
   angular.module(
     "iteamse.module.about-view",
     []
   )
   .directive("aboutView", function () {
-    if (typeof LibChart === "undefined" || typeof $ === "undefined") {
+    if (typeof Chart === "undefined" || typeof $ === "undefined") {
       return;
     }
     return {
@@ -49,7 +49,7 @@
 
           options.animationSteps = 160;
           ctx = turnoverNumbers.getContext("2d");
-          new LibChart(ctx).Bar(data, options);
+          new Chart(ctx).Bar(data, options);
         }
 
         /**
@@ -71,7 +71,7 @@
 
           options.animationSteps = 200;
           ctx = employeeNumbers.getContext("2d");
-          new LibChart(ctx).Line(data, options);
+          new Chart(ctx).Line(data, options);
         }
 
         /**
@@ -95,9 +95,9 @@
 
           options.animationSteps = 200;
           ctx = businessareaNumbers.getContext("2d");
-          new LibChart(ctx).Pie(data, options);
+          new Chart(ctx).Pie(data, options);
         }
       }
     };
   });
-})(angular, Chart, $);
+})();

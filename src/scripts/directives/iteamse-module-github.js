@@ -1,4 +1,4 @@
-;(function (angular, stdlib) {
+;(function () {
   "use strict";
   angular.module(
     "iteamse.module.github",
@@ -38,4 +38,4 @@
       }
     };
   });
-})(angular, window);
+})();

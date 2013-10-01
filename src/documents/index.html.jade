@@ -23,14 +23,13 @@ backgroundDark: true
       Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
     h2 Några utvalda case
-    .cases
+    ul.image(rn-carousel, rn-carousel-indicator)
       each showcase in showcases
-        .case
-          a.case-link(href=showcase.url)
-            if (!!showcase.logo)
-              img(src="/content/images/" + showcase.logo, class="case-image")
-            else
-              img(src="http://lorempixel.com/100/100", class="case-image")
+        if !!showcase.imageGallery
+          each image in showcase.imageGallery
+            if !!image
+              li(style="background-image:url(/content/images/" + image + ");")
+                //-.layer= image
 
     h2 Senaste från instagram
     instagram(name="iteam1337", max="3")

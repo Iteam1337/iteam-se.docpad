@@ -1,20 +1,18 @@
-;(function (stdlib, angular, highlight, $) {
+;(function () {
   "use strict";
-
-  angular.module("iteamse",
-    [
-      "iteamse.config",
-      "iteamse.factory.github",
-      "iteamse.factory.twitter",
-      "iteamse.module.about-view",
-      "iteamse.module.image-gallery",
-      "iteamse.module.instagram",
-      "iteamse.module.twitter",
-      "iteamse.module.github",
-      "iteamse.module.wejay",
-      "iteamse.module.main-title"
-    ]
-  )
+  angular.module("iteamse", [
+    "iteamse.config",
+    "iteamse.factory.github",
+    "iteamse.factory.twitter",
+    "iteamse.module.about-view",
+    "iteamse.module.image-gallery",
+    "iteamse.module.instagram",
+    "iteamse.module.twitter",
+    "iteamse.module.github",
+    "iteamse.module.wejay",
+    "iteamse.module.main-title",
+    "angular-carousel"
+  ])
 
   /**
    * Makes code blocks pretty on blog
@@ -23,7 +21,7 @@
     return {
       link: function () {
         $("pre code").each(function (i, element) {
-          highlight.highlightBlock(element);
+          hljs.highlightBlock(element);
         });
       }
     };
@@ -62,10 +60,10 @@
         });
 
         link.bind("click", function () {
-          stdlib.location = url;
+          window.location = url;
           scope.$apply();
         });
       }
     };
   });
-})(window, angular, hljs, jQuery);
+})();

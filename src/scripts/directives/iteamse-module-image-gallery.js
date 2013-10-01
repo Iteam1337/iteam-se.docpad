@@ -1,4 +1,4 @@
-;(function (angular, stdlib, $) {
+;(function () {
   "use strict";
   angular.module(
     "iteamse.module.image-gallery",
@@ -22,7 +22,7 @@
       link: function (scope, element, attrs) {
         var i, img, images, modal, body;
 
-        images = stdlib.JSON.parse(attrs.images);
+        images = JSON.parse(attrs.images);
 
         i = images.length;
 
@@ -61,4 +61,4 @@
       }
     };
   });
-})(angular, window, $);
+})();

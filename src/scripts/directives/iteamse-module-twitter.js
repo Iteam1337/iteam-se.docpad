@@ -1,4 +1,4 @@
-;(function (angular, stdlib) {
+;(function () {
   "use strict";
   angular.module(
     "iteamse.module.twitter",
@@ -32,4 +32,4 @@
       }
     };
   });
-})(angular, window);
+})();
