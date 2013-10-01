@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: dennis
 
-jobTitle: Frontend Ninjautvecklare
+jobTitle: Frontendutvecklare
 email: dennis.pettersson@iteam.se
 phonenumber:
 

@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: rickard
 
-jobTitle: Frontend Ninjautvecklare
+jobTitle: Frontendutvecklare
 email: rickard.laurin@iteam.se
 phonenumber: '076 - 166 85 11'
 
