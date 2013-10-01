@@ -1,53 +1,62 @@
 @import "variable"
 
-.lightbox
+.modal
   background-color transparent
   text-align center
   line-height 0
   z-index 1050
-  position relative
-  top 70px
   outline none
+  position fixed
+  top 0 !important
+  max-width 100%
+  max-height 100%
+  width 100%
+  height 100%
+  margin 0
+  padding 0
+  display none
+  box(border-box)
 
-  .hide
-    display none
+  &.fade
+    left -100%
+    &.in
+      left 0
 
-  .in
-    display block
-
-.lightbox-content
-  display inline-block
-  padding 10px
+.modal-body,
+.modal-footer
   background-color #fff
-  border 1px solid #999
-  border 1px solid rgba(0, 0, 0, 0.3)
+  border none
+  max-height none
+  min-height none
+  width 90% !important
+  padding 0
+  display block
 
-  vendor("border-radius",6px)
+  box(border-box)
+  vendor("border-radius", 0)
   vendor("background-clip", padding-box)
-  vendor("box-shadow", 0 3px 7px rgba(0, 0, 0, 0.3))
+  vendor("box-shadow", none)
+  vendor("box-pack", center)
+  vendor("box-align", center)
 
-  .lightbox-caption
-    padding 2%
-    position absolute
-    left 11px
-    right 12px
-    bottom 11px
-    background #000
-    background rgba(0, 0, 0, 0.6)
-    color white
+.modal-body
+  display block
+  height 70% !important
+  margin 5% 5% 0
+  img
+    max-width 100%
+    max-height 100%
     text-align center
-    text-shadow 0 -1px 0 #000
-    text-shadow 0 -1px 0 rgba(0, 0, 0, 0.3)
-    font-size 14px
-    line-height 18px
+    vertical-align middle
 
-.lightbox-header
-  .close
-    color white
-    margin-right -16px
-    margin-top -16px
-    font-size 2em
-    opacity .8
+.modal-footer
+  margin 0 5% 5%
+  text-align center
+  height 15% !important
+  position relative
 
-    :hover
-      opacity .4
+  img
+    max-width 150px
+    max-height 150px
+    height 100%
+    width auto
