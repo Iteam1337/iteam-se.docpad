@@ -6,7 +6,7 @@ caseIndex: 10
 releaseDate: 091214
 
 tags: ['Systemutveckling']
-logo:
+logo: 'case-logos/sb-byggtjanst-logo.png'
 
 imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-amabv1.jpg']
 

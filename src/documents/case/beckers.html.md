@@ -6,7 +6,7 @@ caseIndex: 1
 releaseDate: 091214
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
-logo:
+logo: 'case-logos/beckers.png'
 
 imageGallery: ['case-galleribilder/beckers/beckers2.jpg','case-galleribilder/beckers/beckers3.jpg']
 
