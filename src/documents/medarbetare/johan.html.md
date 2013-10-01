@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: johan
 
-jobTitle: Kreativ Teknikchef
+jobTitle: Teknisk Creative Director
 email: johan.obrink@iteam.se
 phonenumber: 0706 - 82 91 21
 
