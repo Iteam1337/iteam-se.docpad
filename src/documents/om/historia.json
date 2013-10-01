@@ -28,16 +28,16 @@ summary: "Vi jobbar med teknik för att vi älskar det och för att användare i
     },
     {
       "startDate":"1997",
-      "headline":"Nintendo 64 & Slussen Community släpps",
-      "text": "<p>Iteams första community släpps -Slussen (stil.nu) med reportage, bilder och kommentarer. Embryot till vårt egenbyggda CMS, T-Rex, skapas. Iteam förutser ny uppfinning \"mp3-spelare\" som dokumenteras i intervju med mp3.com.</p><p>Omvärld: IBMs Deep Blue besegrar Garry Kasparov i schack. Nintendo 64 säpps med spel som Super Mario 64, PilotWings 64 och Star Wars: Shadows of the Empire.</P>",
+      "headline":"Nintendo 64 släpps & vårt egna CMS T-Rex",
+      "text": "<p>Embryot till vårt egenbyggda CMS, T-Rex, skapas. Iteam förutser ny uppfinning \"mp3-spelare\" som dokumenteras i intervju med mp3.com.</p><p>Omvärld: IBMs Deep Blue besegrar Garry Kasparov i schack. Nintendo 64 säpps med spel som Super Mario 64, PilotWings 64 och Star Wars: Shadows of the Empire.</P>",
       "asset": {
         "media": "http://upload.wikimedia.org/wikipedia/commons/1/11/N64-Console-Set.jpg"
       }
     },
     {
       "startDate":"1998",
-      "headline": "Google grundas & Iteam flyttar till kontor",
-      "text": "<p>Iteam flyttar till sin första lokal i Sundbyberg. Här fanns 10 MB fiber i lokalerna. Wow.</p><p>Omvärld: iMac släpps. XML 1.0 lanseras med lysande framtidsutsikter. Google grundas och tar över som ledande sökmotor.</p>",
+      "headline": "iMac släpps & Iteam flyttar till kontor",
+      "text": "<p>Iteam flyttar till sin första lokal i Sundbyberg. Här fanns 10 MB fiber i lokalerna. Wow.</p><p>Omvärld: iMac släpps. Google grundas och tar över som ledande sökmotor.</p>",
       "asset": {
         "media": "http://2.bp.blogspot.com/-HKaSjNUD-eM/TzWEP1-kSkI/AAAAAAAAAHA/0GG_UyaCTLI/s1600/steve+jobs+introduced+imac_intro_320.jpg"
       }
@@ -52,7 +52,7 @@ summary: "Vi jobbar med teknik för att vi älskar det och för att användare i
     },
     {
       "startDate":"2000",
-      "headline":"Tendigt med liten mobil & Maestroo skapas",
+      "headline":"Trendigt med liten mobil & Maestroo skapas",
       "text": "<p>Iteam skapar den första versionen av Maestroo som är en radio för kontor där alla medarbetare väljer sin egen musik. Maestroo mixar och spelar. Idag är Maestroo <a href='/http://www.wejay.org/'>Wejay</a> Det här året föds också Iteams eget CMS T-Rex.</p><p>Omvärld: Första Ajax-applikationen skapas. Året då det var hett med den lilla mobiltelefonen.</p>",
       "asset": {
         "media": "http://netdna.webdesignerdepot.com/uploads/cellphone_design/dkmb86g_488q5g3q3gc_b.jpg"
@@ -79,7 +79,7 @@ summary: "Vi jobbar med teknik för att vi älskar det och för att användare i
       "headline":"iPod 3 & .NET Awards",
       "text": "<p>Iteam T-Rex blir en av Sveriges första certifierade produkter i .NET och Soundshuttle blir en av världens första molnbaserade ljudförsäljningsplattformar. Nomineras i .NET Awards.</p><p>Omvärld: Tredje generationens iPod hittar ut på marknaden.</p>",
       "asset": {
-        "media": "/content/images/ipod3rd.png"
+        "media": "/content/images/historia/ipod3rd.png"
       }
 
     },
@@ -88,7 +88,7 @@ summary: "Vi jobbar med teknik för att vi älskar det och för att användare i
       "headline":"thefacebook kommer & Vi vinner Siriuspriset",
       "text": "<p>Vi jobbar med projektet Teknikspanarna, en kampanj av Teknikföretagen för att stimulera teknik bland mellanstadieelever. Iteam står för teknik och koncept. Teknikspanarna vinner IDG's Siriuspris. Absolut Forum blir kund detta år och vi blir också Episerver-partner.</p><p>Omvärld: thefacebook -eller Facebook som det numera heter, gör sin entré.</p>",
       "asset": {
-        "media": "/content/images/facebookborn.jpg"
+        "media": "/content/images/historia/facebookborn.jpg"
       }
     },
     {

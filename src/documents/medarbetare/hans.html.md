@@ -10,8 +10,8 @@ jobTitle: VP and Sales
 email: hans.rollman@iteam.se
 phonenumber: '0738 - 1337 87'
 
-cssColor: "#000"
-topImage: "/content/images/medarbetare/change.jpg"
+cssColor: "#55ae3a"
+topImage: "/content/images/medarbetare/hrn_golf.jpg"
 backgroundDark: true
 
 twitter: hrswe
