@@ -11,7 +11,7 @@ email: johanna.gustafsson@iteam.se
 phonenumber: 0734 - 02 91 12
 
 cssColor:
-topImage: "/content/images/medarbetare/jgn.jpg"
+topImage: "/content/images/medarbetare/jgn.JPG"
 backgroundDark:
 
 twitter: mittistormen
