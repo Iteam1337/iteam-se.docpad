@@ -39,5 +39,4 @@ Vi hjälper dig att planera, bygga och bibehålla en stabil och driftsäker infr
 
 
 ### Säkerhetsreview
-(text ska skrivas)
-
+En Säkerhetsreview innebär att vi gör en analys och dokumentation av er IT-miljö, med inriktning på just säkerhet. Vi kollar allt från brandväggar och nätverk till servrar och kryptering. Allt dokumenteras och vi går igenom och prioriterar eventuella säkerhetsbrister tillsammans med er. I den slutgiltiga rapporten får du plan med förslag på hur ni, tillsammans med oss eller annan IT-partner, på ett bra sätt åtgärdar identifierade brister.
