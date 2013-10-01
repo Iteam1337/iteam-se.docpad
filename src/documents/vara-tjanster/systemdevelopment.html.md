@@ -23,7 +23,7 @@ Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Scrum medför ökad kval
 ### Så går Scrum till
 Metodiken innebär att arbetet delas upp i korta intensiva utvecklingspass (s.k. sprintar). Varje sprint varar i ca. tre veckor. Vi arbetar fokuserat på en utvald delmängd av lösningen i taget (s.k. sprint backlog). Parallellt med att utvecklingsteamet är igång, arbetar vår rådgivare och beställaren vidare med att konkretisera uppgifter och kravtexter inför nästkommande sprint. Sprinten är väl definierad när den startar, och förändringar tillåts under projektets gång.
 
-### Vad det kostar
+### Ledtid och kostnad
 I ett scrumprojekt betalar man för tiden utvecklingsteamet ägnar åt projektet. En typisk sprint kan vara ca. 280 timmar och är ofta fördelat över ca. tre veckors kalendertid.
 
 ### Att vårda och underhålla
