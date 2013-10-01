@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: anders
 
-jobTitle: Technical Creative Director
+jobTitle: Kreativ Teknikchef
 email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
 

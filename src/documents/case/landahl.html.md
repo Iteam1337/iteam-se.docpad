@@ -26,14 +26,5 @@ intro: >
 ---
 
 ### Fullständigt IT-support ansvar
-För Landahl Advokatbyrå tar vi ett brett ansvar för IT. Vi finns där för att se till att allt från servrar, datorer, skrivare och telefon fungerar som det ska. Landahl tillhör en utav våra allra äldsta kunder och vi hjälp dom i flera projekt.
-
-### Teknikinsatser från A-Ö
-Landahl är kopplat till vårt egna fibernät, och via det, direkt till den toppmoderna hall där servern är placerad. Med säker åtkomst via SSL-VPN kan vi stötta IT-ansvarige genom brandäggen Clavisters klientprogramvara mot en Clavister E7.
-Vi har installerat säkert trådlöst nätverk från Ubiquiti, och supportat vid installation av SIP-växel. Serverbackup körs löpande till en QNAP - och med hjälp av Storagecrafts Shadowprotect smöjliggörs väldigt snabba återställningar, skulle det värsta inträffa. Vid kontorslokalflytt fanns Iteam med och planerade nätverk, hårdvara och trådlöst infrastruktur.
-
-### Fjärhjälp finns alltid nära
-Om en anställd på Landahl vill ha support finns vi ett par klick bort. Vi använder Teamviewer för [fjärrhjälp](/fjarrhjalp) - och när det behövs kommer vi såklart ut till kontoret och hjälper på plats.
-
-### Advokatbyrån för bygg- och fastighetsbranschen
-Landahls verksamhet riktar sig främst till aktörerna inom bygg- och fastighetsbranschen. Inom det området intar Landahl en tätposition bland Sveriges advokabyråer. Landahl har uppdrag åt såväl många av landets största bygg- och fastighetsbolag samt andra fastighetsägare i den privata sektorn, som åt stat, kommun och landsting.  Då bygg- och fastighetsbranschen är livlig och dynamisk strävar Landahl ständigt efter att hålla sig à jour med branschen samt rättsutvecklingen och ha en omsorgsfull rekryteringsprocess för att bibehålla och utveckla den specialistkompetens branschen kräver. Landahls speciella inriktning mot bygg- och fastighetsbranschen samt byråns mix av bredd, kompetens och branschkännedom, ger ständigt klienterna betydande mervärden. Läs mer på <a href="http://www.landahl.se" target="_blank">Landahl advokatbyrå</a>.
+Landahl Advokatbyrå tillhör en av våra äldsta kunder inom IT-support. Iteam har under många år haft ett brett ansvar för Landahls IT-support för att säkerställa att allt från servrar, datorer, skrivare och telefoner fungerar optimalt. 
+Landahls är direkt kopplat till Iteams egna fibernät och via det direkt till servern. Detta gör det smidigare att kunna stötta IT-ansvarig och erbjuda anställda support via fjärrhjälp.

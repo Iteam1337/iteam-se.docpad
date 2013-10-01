@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: christian
 
-jobTitle: CEO and Senior Web Developer
+jobTitle: VD & Ninja
 email: christian.landgren@iteam.se
 phonenumber: 0707 - 75 58 31
 

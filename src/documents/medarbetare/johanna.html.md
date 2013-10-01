@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: johanna
 
-jobTitle: CTO and Senior Web Developer
+jobTitle: Teknikchef
 email: johanna.gustafsson@iteam.se
 phonenumber: 0734 - 02 91 12
 

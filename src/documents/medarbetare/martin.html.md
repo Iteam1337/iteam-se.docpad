@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: martin
 
-jobTitle: Senior Web Developer
+jobTitle: Senior Ninjautvecklare
 email: martin.loman@iteam.se
 phonenumber: 0707 - 22 70 24
 

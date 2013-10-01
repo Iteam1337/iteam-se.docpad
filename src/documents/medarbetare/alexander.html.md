@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: alexander
 
-jobTitle: Senior Web Developer
+jobTitle: Senior Ninjautvecklare
 email: alexander.czigler@iteam.se
 phonenumber: '0727-14 50 60'
 

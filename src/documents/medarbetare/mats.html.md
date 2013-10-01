@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: mats
 
-jobTitle: Senior Support Technician
+jobTitle: Senior Supporttekniker
 email: mats.egardt@iteam.se
 phonenumber: 0736 - 19 80 64
 

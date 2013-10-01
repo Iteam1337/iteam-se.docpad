@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: sophie
 
-jobTitle: Office and Marketing Manager
+jobTitle: VD-assistent & Marknadsansvarig
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
 
