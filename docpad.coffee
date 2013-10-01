@@ -77,7 +77,7 @@ docpadConfig =
       return composed
 
     shouldWeUseADarkBackground: ->
-      return if @document.backgroundDark then "color:white;" else ""
+      return if @document.backgroundDark then "invert" else ""
 
     getAllBlogCategories: () ->
       added = []

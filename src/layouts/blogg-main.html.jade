@@ -4,7 +4,7 @@ layout: default
 include ../jade_includes/mixin.jade
 - var blogg = getCollection("blogg").toJSON().slice(document.page.startIdx, document.page.endIdx)
 
-h1.main-title(title,style=shouldWeUseADarkBackground())= document.title
+h1.main-title(title,class=shouldWeUseADarkBackground())= document.title
 
 .row-fluid()
 
