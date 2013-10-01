@@ -6,7 +6,7 @@ caseIndex: 7
 releaseDate: 091214
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning','Lead tech','Entreprenörsrådgivning']
-logo:
+logo: 'case-logos/tomsradio.png'
 
 imageGallery: ['case-galleribilder/tomsradio/tomsradio.jpg']
 
