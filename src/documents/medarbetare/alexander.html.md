@@ -11,7 +11,7 @@ email: alexander.czigler@iteam.se
 phonenumber: '0727-14 50 60'
 
 cssColor: "#07AFCA"
-topImage: "http://i.bldr.se/mbY4q.jpeg"
+topImage: "/content/images/medarbetare/acr.jpeg"
 backgroundDark: true
 
 twitter:

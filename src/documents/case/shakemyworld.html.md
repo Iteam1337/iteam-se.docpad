@@ -6,7 +6,7 @@ caseIndex: 10
 releaseDate: 070101
 
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']
-logo: 'case-logos/shakemyworld.gif'
+logo: 'case-logos/shake.tif'
 
 imageGallery: ['case-galleribilder/shakemyworld/shakemyworld1.jpg','case-galleribilder/shakemyworld/shakemyworld2.jpg','case-galleribilder/shakemyworld/shakemyworld3.jpg']
 
