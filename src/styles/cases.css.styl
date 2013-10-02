@@ -13,6 +13,10 @@
 
   .case
     margin-bottom 40px
+    display inline-block
+    margin-right 3%
+    vertical-align top
+    width 30%
 
     .case-link
       min-height 200px
@@ -31,7 +35,7 @@
 
     .case-about
       display inline-block
-      width 60%
+      width 100%
 
       .case-title
         margin-top 0
@@ -43,8 +47,11 @@
           display inline-block
 
 #case
-  margin 40px auto
-  max-width 700px
+  margin 40px auto 0
+  max-width 100%
+
+  .about
+    width 100%
 
   .title
     box(border-box)
@@ -58,10 +65,23 @@
     margin-bottom 40px
 
   .content
-
+    > div
+      display inline-block
+      vertical-align top
     .top
       width 100%
       display inline-block
+
+    .text
+      width 50%
+    .information
+      margin-left 40px
+      width 40%
+    .gallery
+      img
+        max-height auto
+        max-width 46%
+
     .about,
     .quote
       display inline-block
@@ -101,6 +121,10 @@
       blockquote
         border-left none
         text-align right
+
+    .text
+      width
+    .information
 
     p
       img

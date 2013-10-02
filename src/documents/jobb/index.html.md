@@ -18,6 +18,8 @@ Självklart är du med och formar din egen roll och du styr hur du löser dina u
 
 Alla ska utvecklas på Iteam. Varje dag.
 
+<!--
+
 ### Du med talang - spontanansök här
 För oss är det viktigast att hitta rätt person som passar i gruppen. Det spelar ingen roll om du har en bra utbildning i grunden eller om du skaffat dig din erfarenhet på egen hand. Vi letar efter dig som har en spännande bakgrund och som gillar att bli utmanad.
 Vi älskar spontanansökningar - så tveka inte att skicka din ansökan:
@@ -32,4 +34,6 @@ Vi älskar spontanansökningar - så tveka inte att skicka din ansökan:
   <input type="submit">
 </form>
 
-Häng på vår [blogg](/blogg) där vi delar med oss av våra tankar.
+-->
+
+Häng på vår [blogg](//tekniken.nu) där vi delar med oss av våra tankar.
