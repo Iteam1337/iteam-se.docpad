@@ -94,7 +94,8 @@ html(lang="sv")
             each doc in pages
               if (doc.pageIndex < 10)
                 - clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-                  a(href=doc.url, property="dc:title", class=clazz)= doc.title
+                - clazz = !!subpages ? clazz + ' submenu' : clazz
+                a(href=doc.url, property="dc:title", class=clazz)= doc.title
 
           .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
             .e-list
