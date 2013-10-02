@@ -80,7 +80,6 @@ docpadConfig =
       return if doc.backgroundDark then "invert" else ""
 
     getMetadataFrom: (page, section="vara-tjanster") ->
-      console.log page, section
       if !page or typeof section is not "string" then return
       queryObject = {
         relativeOutDirPath: section,
