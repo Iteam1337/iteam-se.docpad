@@ -10,7 +10,7 @@ jobTitle: Senior Supporttekniker
 email: rasmus.fredriksson@iteam.se
 phonenumber: 0703 - 76 66 40
 
-cssColor: "#2d90ed"
+cssColor: "#8ab362"
 topImage: "/content/images/medarbetare/rfn.jpg"
 backgroundDark:
 
