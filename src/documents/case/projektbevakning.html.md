@@ -8,7 +8,7 @@ releaseDate: 120101
 tags: ['Proof-of-concept','Systemutveckling']
 logo: 'case-logos/sb-byggtjanst-logo.png'
 
-imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-projektbevakning1.jpg']
+imageGallery: ['case-galleribilder/projektbevakning/sb-projektbevakning1.jpg']
 
 team: ['anders','johanna','mats','dennis','maria','christian']
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/

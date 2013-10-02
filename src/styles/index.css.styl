@@ -1,14 +1,9 @@
 @import "variable"
 
 .index
-  .background-image
-    top -103px
-    height 625px
-    max-height 625px
-    background-position 50%
   .container
     max-width 720px
-    margin 100px auto -50px
+    margin -50px auto 50px
     min-height 376px
     p
      max-width none
@@ -17,28 +12,35 @@
       max-height 100%
       margin 0 auto
 
-  .image
-    height 500px
-    li
-      background-color white
-      background-position 50% 50%
-      background-repeat no-repeat
-      vendor("background-size", contain)
-
   .rn-carousel-container
     border none
+    position relative
+    margin-bottom 20px
+    background-color #444
+
+    .image
+      height 500px
+      li
+        background-color #444
+        background-position 50% 50%
+        background-repeat no-repeat
+        vendor("background-size", contain)
+
     .rn-carousel-indicator
       background none
-      margin-top 20px
+      position absolute
+      bottom 35px
+
       span
         color #999
-      .active
-        color _orange
+        text-shadow 0 0 4px gray
+        &.active
+          color _orange
 
   .instagram-feed
     height 100%
     a
-      width 31%
+      width 23%
       margin 0
       padding 0 1%
       height 200px

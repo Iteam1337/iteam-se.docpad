@@ -9,28 +9,28 @@ backgroundDark: true
 //- Holder for all case-sites
 - var showcases = getShowCase()
 
-.row-fluid#startpage
-  article.news
+ul.image(rn-carousel, rn-carousel-indicator)
+  each showcase in showcases
+    if !!showcase.imageGallery
+      each image in showcase.imageGallery
+        if !!image
+          li(style="background-image:url(/content/images/" + image + ");")
+            //-.layer= image
+
+.container
+  .row-fluid#startpage
+
     h1 Omöjligt är bara början
 
-    h2 Iteam är en teknikbyrå med fokus på avancerade system.
+    article
+      //- h2 Iteam är en teknikbyrå med fokus på avancerade system.
 
-    :markdown
-      Vi gillar tuffa utmaningar och jobbar bäst i team.
+      :markdown
+        Vi gillar tuffa utmaningar och jobbar bäst i team.
 
-      Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra tack vare människor som vågar drömma.
+        Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra tack vare människor som vågar drömma.
 
-      Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
-
-
-    h2 Några utvalda case
-    ul.image(rn-carousel, rn-carousel-indicator)
-      each showcase in showcases
-        if !!showcase.imageGallery
-          each image in showcase.imageGallery
-            if !!image
-              li(style="background-image:url(/content/images/" + image + ");")
-                //-.layer= image
+        Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
     h2 Senaste från instagram
-    instagram(name="iteam1337", max="3")
+    instagram(name="iteam1337", max="4")

@@ -128,11 +128,13 @@ html(lang="sv")
                 li
                   a(href=subpage.url)= subpage.title
 
-  #main-holder.ng-cloak
-    .background-image(style=topImage())
-
-    .container(class=singlePageCase())
-      .row-fluid#content.content!= content
+  if document.url === "/"
+    #main-holder.ng-cloak!= content
+  else
+    #main-holder.ng-cloak
+      .background-image(style=topImage())
+      .container(class=singlePageCase())
+        #content.row-fluid.content!= content
 
   #footer-holder.ng-cloak
     #footer
