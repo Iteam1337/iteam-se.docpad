@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: johanna
 
-jobTitle: Utvecklingschef
+jobTitle: Utvecklingschef & Webbutvecklare
 email: johanna.gustafsson@iteam.se
 phonenumber: 0734 - 02 91 12
 
