@@ -11,11 +11,16 @@ backgroundDark: true
 
 ul.image(rn-carousel, rn-carousel-indicator)
   each showcase in showcases
-    if !!showcase.imageGallery
-      each image in showcase.imageGallery
-        if !!image
-          li(style="background-image:url(/content/images/" + image + ");")
-            //-.layer= image
+    if !!showcase.topImage
+      li(style="background-image:url(" + showcase.topImage + ");")
+        .layer
+          .link(class=shouldWeUseADarkBackground(showcase))
+            a.case-title(href=showcase.url, target="_blank")= showcase.title
+            if !!showcase.sections
+              each section, i in showcase.sections
+                - posClass = i !== 0 ? "separator-before" : ""
+                - section = getMetadataFrom(section)
+                a.section(class=posClass, href=section.url, target="_blank")= section.title
 
 .container
   .row-fluid#startpage

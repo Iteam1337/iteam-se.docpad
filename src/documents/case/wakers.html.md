@@ -6,6 +6,7 @@ caseIndex: 6
 releaseDate: 040505
 
 tags: ['Drift & Support','Specialist- och projektstöd']
+sections: ['Rådgivning','Drift & Support']
 logo: 'case-logos/wakers.jpg'
 
 imageGallery: []

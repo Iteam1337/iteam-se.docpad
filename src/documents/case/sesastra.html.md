@@ -6,6 +6,7 @@ caseIndex: 10
 releaseDate: 020101
 
 tags: ['Drift & Support','Specialist- och projektstöd']
+sections: ['Rådgivning','Drift & Support']
 logo: 'case-logos/sesastra.jpg'
 
 imageGallery: []

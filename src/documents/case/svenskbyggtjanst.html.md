@@ -6,6 +6,7 @@ caseIndex: 5
 releaseDate: 100303
 
 tags: ['Systemutveckling','Systemförvaltning']
+sections: ['Systemutveckling']
 logo: 'case-logos/sb-byggtjanst-logo.png'
 
 imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-byggtjanst1.jpg','case-galleribilder/svensk-byggtjanst/sb-byggtjanst2.jpg']

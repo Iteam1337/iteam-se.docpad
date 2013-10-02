@@ -6,6 +6,7 @@ caseIndex: 2
 releaseDate: 120101
 
 tags: ['Proof-of-concept','Systemutveckling']
+sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/sb-byggtjanst-logo.png'
 
 imageGallery: ['case-galleribilder/projektbevakning/sb-projektbevakning1.jpg']

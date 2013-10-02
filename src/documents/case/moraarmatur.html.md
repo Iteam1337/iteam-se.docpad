@@ -6,6 +6,7 @@ caseIndex: 10
 releaseDate: 090202
 
 tags: ['Systemutveckling']
+sections: ['Systemutveckling']
 logo: 'case-logos/moraarmatur.jpg'
 
 imageGallery: ['case-galleribilder/moraarmatur/moraarmatur1.jpg']

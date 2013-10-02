@@ -66,18 +66,34 @@ docpadConfig =
       # Merge the document keywords with the site keywords
       @site.keywords.concat(@document.keywords or []).join ', '
 
-    getGravatarUrl: (size, doc=@document) ->
+    getGravatarUrl: (size=false, doc=@document) ->
       hash = require('crypto').createHash('md5').update(doc.email).digest('hex')
       url = "http://www.gravatar.com/avatar/#{hash}.jpg"
       if size then url += "?s=#{size}"
       return url
 
-    capitalizeFirstChar: (str) ->
+    capitalizeFirstChar: (str="") ->
       composed = str.charAt(0).toUpperCase() + str.slice 1
       return composed
 
-    shouldWeUseADarkBackground: ->
-      return if @document.backgroundDark then "invert" else ""
+    shouldWeUseADarkBackground: (doc=@document) ->
+      return if doc.backgroundDark then "invert" else ""
+
+    getMetadataFrom: (page, section="vara-tjanster") ->
+      console.log page, section
+      if !page or typeof section is not "string" then return
+      queryObject = {
+        relativeOutDirPath: section,
+        dontIndexInAnyCollection: {
+          $exists: false
+        },
+        tags: {
+          $in: [
+            page
+          ]
+        }
+      }
+      return @getCollection("documents").findOne(queryObject)?.toJSON()
 
     getAllBlogCategories: () ->
       added = []
@@ -92,8 +108,7 @@ docpadConfig =
         added.push split
       return categories
 
-    topImage: (page) ->
-      page = page || @document
+    topImage: (page=@document) ->
       return if page.topImage then "background-image:url(" + page.topImage + ")" else ""
 
     singlePageCase: () ->
@@ -102,17 +117,15 @@ docpadConfig =
       onCase = base[1] is "case" and slug isnt "case-index"
       return if onCase then "single-case" else ""
 
-    getAllBlogsByAuthor: (author, max) ->
+    getAllBlogsByAuthor: (author="", max=6) ->
       blogs = []
-      max = max or 6
       for data, i in @getCollection('blogg')?.toJSON()
         inner = data.author
         if inner is author then blogs.push data
       return blogs.slice 0, max
 
-    getAllCasesByCoworker: (coworker, max) ->
+    getAllCasesByCoworker: (coworker="", max=6) ->
       casesArray = []
-      max = max or 6
       for data, i in @getCollection('case')?.toJSON()
         if data.team then for member, j in data.team
           if member is coworker then casesArray.push data
@@ -125,12 +138,11 @@ docpadConfig =
       collection = @getCollection(name)?.toJSON()[page?.startIdx...page?.endIdx]
       return collection
 
-    toDateString: (date, short) ->
+    toDateString: (date=@document.date, short=false) ->
       month = ["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]
       month_abbr = ["Jan","Febr","Mars","Apr","Maj","Juni","Juli","Aug","Sept","Okt","Nov","Dec"]
       day = ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"]
       day_abbr = ["Sön","Mån","Tis","Ons","Tors","Fre","Lör"]
-      date = date || @document.date
       d = new Date(date)
 
       if short
@@ -152,6 +164,7 @@ docpadConfig =
   # These are special collections that our website makes available to us
   collections:
     # http://docs.mongodb.org/manual/reference/operator/ <- great reference for nosql-query
+    #
     # This is the main collection, for index:es
     sektion: (database) ->
       database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])

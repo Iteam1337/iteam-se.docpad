@@ -6,6 +6,7 @@ caseIndex: 10
 releaseDate: 090101
 
 tags: ['Systemutveckling']
+sections: ['Systemutveckling']
 logo: 'case-logos/careerbook.jpg'
 
 imageGallery: ['case-galleribilder/careerbook/careerbook1.jpg', 'case-galleribilder/careerbook/careerbook2.jpg']

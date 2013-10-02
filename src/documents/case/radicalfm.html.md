@@ -6,6 +6,7 @@ caseIndex: 0
 releaseDate: 110101
 
 tags: ['Proof-of-concept','Lead tech','Drift & Support',Entreprenörsrådgivning','Rådgivning']
+sections: ['Systemutveckling','Rådgivning','Drift & Support']
 logo: 'case-logos/radicalfm.png'
 
 imageGallery: ['case-galleribilder/radical/add_genre.PNG', 'case-galleribilder/radical/add_stations.PNG', 'case-galleribilder/radical/my_station.PNG']
