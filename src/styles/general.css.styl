@@ -1,5 +1,9 @@
 @import "variable"
 
+@font-face
+  font-family "AvantGarde ExtraLight"
+  src url("/content/fonts/lte52009.ttf") format("truetype")
+
 /* General
 ---------------------------------------------*/
 a,
@@ -78,3 +82,67 @@ h4
 
 h2
   font-size 24px
+
+/* Icons
+---------------------------------------------*/
+.e-mail,
+.e-mailme,
+.e-phone,
+.e-alert,
+.e-chevron-thin-right,
+.e-chevron-thin-left,
+.e-list,
+.e-github,
+.e-twitter,
+.e-facebook,
+.e-linkedin,
+.e-instagram
+  display inline-block
+  width 1.15em
+  height 1.5em
+  background-position 50%
+  background-size 1em
+  background-repeat no-repeat
+  margin auto
+  padding 0
+  text-align center
+  opacity .6
+  vendor("transition", opacity 300ms ease)
+
+  &:hover
+    opacity 1 !important
+    vendor("transition", opacity 300ms ease)
+
+.e-mail,
+.e-mailme,
+.e-phone,
+.e-alert,
+.e-chevron-thin-right,
+.e-chevron-thin-left,
+.e-list
+  font-size 1.5em
+
+.e-mail
+  svg(mail)
+.e-mailme
+  svg(mailme)
+.e-phone
+  svg(phone)
+.e-alert
+  svg(alert)
+.e-chevron-thin-left
+  svg(left)
+.e-chevron-thin-right
+  svg(right)
+.e-list
+  svg(list)
+.e-github
+  svg(github)
+.e-twitter
+  svg(twitter)
+.e-facebook
+  svg(facebook)
+.e-linkedin
+  svg(linkedin)
+.e-instagram
+  svg(instagram)

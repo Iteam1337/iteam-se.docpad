@@ -1,19 +1,33 @@
 ---
 title: Byggtjänst.se
+subtitle:
 layout: case
 caseIndex: 5
+releaseDate: 100303
 
 tags: ['Systemutveckling','Systemförvaltning']
-images: ['sb-byggtjanst-logo.png']
-imagePos: ['right']
-imageGallery: ['sb-byggtjanst1.jpg','sb-byggtjanst2.jpg']
-team: ['anders','johanna','mats','christian']
-intro: Ny webbplats som samlar alla Svensk Byggtjänsts tjänster för Byggsverige.
-siteurl: http://www.byggtjanst.se
-twitterTag: ['svenskbyggtjanst', 'byggtjanst']
+sections: ['Systemutveckling']
+logo: 'case-logos/sb-byggtjanst-logo.png'
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-byggtjanst1.jpg','case-galleribilder/svensk-byggtjanst/sb-byggtjanst2.jpg']
+
+team: ['anders','johanna','mats','christian']
+<<<<<<< HEAD
+intro: Ny webbplats som samlar alla Svensk Byggtjänsts tjänster för Byggsverige.
+=======
+>>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
+siteurl: http://www.byggtjanst.se
+
+readmorelinks:
+
+quote:
+about:
+
+topImage:
+backgroundDark:
+
+intro: >
+  Vi utvecklade Svensk Byggtjänsts hemsida tillsammans med byråpartnern Britny.
 ---
 
 ### Portalen till ett effektivare Byggsverige

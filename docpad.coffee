@@ -64,37 +64,51 @@ docpadConfig =
     # Get the prepared site/document keywords
     getPreparedKeywords: ->
       # Merge the document keywords with the site keywords
-      @site.keywords.concat(@document.keywords or []).join(', ')
+      @site.keywords.concat(@document.keywords or []).join ', '
 
-    getGravatarUrl: (size, doc=@document) ->
+    getGravatarUrl: (size=false, doc=@document) ->
       hash = require('crypto').createHash('md5').update(doc.email).digest('hex')
       url = "http://www.gravatar.com/avatar/#{hash}.jpg"
       if size then url += "?s=#{size}"
       return url
 
-    capitalizeFirstChar: (str) ->
-      composed = str.charAt(0).toUpperCase() + str.slice(1)
+    capitalizeFirstChar: (str="") ->
+      composed = str.charAt(0).toUpperCase() + str.slice 1
       return composed
 
-    shouldWeUseADarkBackground: ->
-      return if @document.backgroundDark then "color:white;" else ""
+    shouldWeUseADarkBackground: (doc=@document) ->
+      return if doc.backgroundDark then "invert" else ""
+
+    getMetadataFrom: (page, section="vara-tjanster") ->
+      if !page or typeof section is not "string" then return
+      queryObject = {
+        relativeOutDirPath: section,
+        dontIndexInAnyCollection: {
+          $exists: false
+        },
+        tags: {
+          $in: [
+            page
+          ]
+        }
+      }
+      return @getCollection("documents").findOne(queryObject)?.toJSON()
 
     getAllBlogCategories: () ->
       added = []
       categories = []
-      for data, i in @getCollection('blogg')?.toJSON()
+      for data, i in @getCollection("blogg_categories")?.toJSON()
         split = data.url.split("/")[2]
         if ~added.indexOf split
           continue
-        name = split.charAt(0).toUpperCase() + split.slice(1)
+        name = split.charAt(0).toUpperCase() + split.slice 1
         category = {url: "/blogg/" + split, title: name}
-        categories.push(category)
-        added.push(split)
+        categories.push category
+        added.push split
       return categories
 
-    backgroundImage: (page) ->
-      page = page || @document
-      return if page.backgroundImage then "background-image:url(" + page.backgroundImage + ")" else ""
+    topImage: (page=@document) ->
+      return if page.topImage then "background-image:url(" + page.topImage + ")" else ""
 
     singlePageCase: () ->
       base = @document.url.split("/")
@@ -102,19 +116,19 @@ docpadConfig =
       onCase = base[1] is "case" and slug isnt "case-index"
       return if onCase then "single-case" else ""
 
-    getAllBlogsByAuthor: (author) ->
+    getAllBlogsByAuthor: (author="", max=6) ->
       blogs = []
       for data, i in @getCollection('blogg')?.toJSON()
         inner = data.author
-        if inner is author then blogs.push(data)
-      return blogs
+        if inner is author then blogs.push data
+      return blogs.slice 0, max
 
-    getAllCasesByCoworker: (coworker) ->
+    getAllCasesByCoworker: (coworker="", max=6) ->
       casesArray = []
       for data, i in @getCollection('case')?.toJSON()
         if data.team then for member, j in data.team
-          if member is coworker then casesArray.push(data)
-      return casesArray
+          if member is coworker then casesArray.push data
+      return casesArray.slice 0, max
 
     getCurrentBlogCategoryAsJSON: () ->
       name = @document.relativeDirPath?.split("/")[1]
@@ -123,12 +137,11 @@ docpadConfig =
       collection = @getCollection(name)?.toJSON()[page?.startIdx...page?.endIdx]
       return collection
 
-    toDateString: (date, short) ->
+    toDateString: (date=@document.date, short=false) ->
       month = ["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]
       month_abbr = ["Jan","Febr","Mars","Apr","Maj","Juni","Juli","Aug","Sept","Okt","Nov","Dec"]
       day = ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"]
       day_abbr = ["Sön","Mån","Tis","Ons","Tors","Fre","Lör"]
-      date = date || @document.date
       d = new Date(date)
 
       if short
@@ -136,41 +149,54 @@ docpadConfig =
       else
         return day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + ", " + d.getFullYear()
 
+    getShowCase: (max) ->
+      casesArray = []
+      max = max or 4
+      for data, i in @getCollection('showcase')?.toJSON()
+        casesArray.push data
+        i++
+        if i is max then break
+      return casesArray
+
   # Collections
   # ===========
   # These are special collections that our website makes available to us
   collections:
     # http://docs.mongodb.org/manual/reference/operator/ <- great reference for nosql-query
-    #s
+    #
     # This is the main collection, for index:es
     sektion: (database) ->
       database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])
 
     # All blog-posts
     blogg: (database) ->
-      database.findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false},[pageOrder:-1])
+      database.findAllLive({layout:'blogg', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
+
+    # All blog-categories
+    blogg_categories: (database) ->
+      database.findAllLive({layout:'blogg-category', sortIndex: $exists: true},[sortIndex:1])
 
     # =================
     # DRIFT blog-posts
     blogg_drift: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/drift', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/drift', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # LARV blog-posts
     blogg_larv: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/larv', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/larv', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # NYHETER blog-posts
     blogg_nyheter: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/nyheter', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/nyheter', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # UTVECKLING blog-posts
     blogg_utveckling: (database) ->
-      database.findAllLive({relativeOutDirPath:'blogg/utveckling', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'blogg/utveckling', dontIndexInAnyCollection: $exists: false},[realDate: -1, pageOrder:-1])
     # =================
 
     # Collection of all cases
     case: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
+      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[releaseDate:-1, title:1])
 
     showcase: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 5}, dontIndexInAnyCollection: {$exists: false}},[caseIndex:1, title:1])
+      database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 4}, dontIndexInAnyCollection: {$exists: false} }, [caseIndex:1, title:1])
 
     # Collection of all feedback-posts}
     feedback: (database) ->
@@ -206,6 +232,15 @@ docpadConfig =
   # Where should we put our generated website files?
   # If it is a relative path, it will have the resolved `rootPath` prepended to it
   outPath: require("./config.json").outPath
+
+
+  # Ignore Paths
+  # Can be set to an array of absolute paths that we should ignore from the scanning process
+  ignorePaths: [
+    "files/jade_includes",
+    "files/angular_partials",
+    "files/scripts"
+  ]
 
 
   # DocPad Events

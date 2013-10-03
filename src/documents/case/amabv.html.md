@@ -1,19 +1,33 @@
 ---
 title: AMA Beskrivningsverktyg
+subtitle:
 layout: case
 caseIndex: 10
+releaseDate: 091214
 
 tags: ['Systemutveckling']
-images: ['sb-amabv1.jpg']
-imagePos: ['right']
-imageGallery: ['sb-amabv1.jpg']
-team: ['anders','johanna','hans','christian','mats']
-intro: Google Docs-liknande specifikationsverktyg sparar miljoner i Byggsverige.
-siteurl: http://amabv.byggtjanst.se/Account/Logon
-twitterTag: [ '#svenskbyggtjanst', '#byggtjanst' ]
+sections: ['Systemutveckling']
+logo: 'case-logos/sb-byggtjanst-logo.png'
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-amabv1.jpg']
+
+team: ['anders','johanna','hans','christian','mats']
+<<<<<<< HEAD
+intro: Google Docs-liknande specifikationsverktyg sparar miljoner i Byggsverige.
+=======
+>>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
+siteurl: http://amabv.byggtjanst.se/Account/Logon
+
+readmorelinks:
+
+quote:
+about:
+
+topImage:
+backgroundDark:
+
+intro: >
+  Google Docs-liknande beskrivningsverktyg för Byggsverige.
 ---
 
 ### Google Docs-liknande beskrivningsverktyg för Byggsverige

@@ -1,21 +1,13 @@
 ---
 title: Medarbetare
-layout: section
+layout: coworkers
 subpages: 'medarbetare'
 tags: ['intro', 'page']
 pageIndex: 3
 dontIndexInAnyCollection: true
+
+topImage: "/content/images/section-topbilder/thinking-bw-cropped.jpg"
+backgroundDark: true
 ---
 
-.row-fluid.coworkers
-
-  each doc in getCollection('medarbetare').toJSON()
-    .coworker
-      a.portrait(href=doc.url)
-        img.image(src=getGravatarUrl(200,doc))
-      .info
-        h4
-          a(href=doc.url)= doc.title
-        p(class="title")= doc.jobTitle
-        a.email(href="mailto:" + doc.email)= doc.email
-        p= doc.phonenumber
+h2 Möt våra medarbetare

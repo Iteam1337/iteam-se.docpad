@@ -1,0 +1,18 @@
+---
+layout: section
+---
+
+.row-fluid!= content
+
+.row-fluid#cases
+  each doc in getCollection('case').toJSON()
+    .case
+      a.case-link(href=doc.url)
+        if (!!doc.logo)
+          img(src="/content/images/" + doc.logo, class="case-image")
+        else
+          img(src="http://lorempixel.com/360/200", class="case-image")
+      .case-about
+        a(href=doc.url)
+          h2.case-title= doc.title
+        p= doc.intro

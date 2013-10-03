@@ -2,7 +2,7 @@
 layout: default
 ---
 
-h1.main-title(style=shouldWeUseADarkBackground())= document.title
+h1.main-title(title,class=shouldWeUseADarkBackground())= document.title
 
 .row-fluid(make-pretty)
 
@@ -13,7 +13,7 @@ h1.main-title(style=shouldWeUseADarkBackground())= document.title
         .post-content!= content
 
       .right-part
-        .post-date= toDateString()
+        .post-date= toDateString(document.realDate || document.date, "short")
         .post-author
           if document.author
             include ../jade_includes/author

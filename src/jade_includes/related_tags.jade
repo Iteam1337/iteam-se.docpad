@@ -1,6 +1,9 @@
-each tag in document.tags
-  each service in getCollection('tjanster').toJSON()
-    each sTag in service.tags
-      if tag === sTag
-        li
-          a.tag(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)
+ul.relatedServices
+  .header
+    h2 Taggar
+  each tag in document.tags
+    each service in getCollection('tjanster').toJSON()
+      each sTag in service.tags
+        if tag === sTag
+          li
+            a.tag(href=service.url + "#" + tag[0].toUpperCase() + tag.substr(1).replace(/ /g,'-'))= tag[0].toUpperCase() + tag.substr(1)

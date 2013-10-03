@@ -3,13 +3,22 @@
 .coworkers
   .coworker
     display inline-block
-    margin-bottom 40px
+    margin-bottom 20px
     vertical-align top
-    width 49%
     position relative
+    margin-right 10px
+    height 150px
+    width 32%
+    &:nth-child(2n)
 
-    &:nth-child(2n-1)
-      margin-right 10px
+
+    background-color rgba(150, 150, 150, .05)
+    border 1px solid rgba(150, 150, 150, .07)
+    border-radius 3px
+    &:hover
+      background-color rgba(150, 150, 150, .1)
+      border 1px solid rgba(150, 150, 150, .12)
+    box(border-box)
 
     &:last-child
       margin-bottom 0
@@ -29,6 +38,8 @@
         position absolute
         top 10px
         margin 0
+        left 10px
+
 
       &.email
         font-family "Palatino", "serif"
@@ -42,11 +53,13 @@
         display inline-block
         vertical-align top
         width 100%
+        float none
+        margin-right 20px
 
     .info
       display inline-block
       width 55%
-      margin-left 25%
+      margin 0
       padding 0 5%
       float right
 
@@ -55,8 +68,7 @@
   #toAngular
     display none
 
-  .desc,
-  .github
+  .desc
     vendor("column-count", 2)
     vendor("column-gap", 50px)
 
@@ -70,7 +82,7 @@
     vertical-align top
     .left,
     .right
-      max-width 25%
+      max-width 30%
       position absolute
     .left
       top 150px
@@ -104,6 +116,7 @@
     height 200px
     position relative
     z-index 1
+
     img
       vendor("border-radius", 200px)
       z-index 1
@@ -111,6 +124,23 @@
       position relative
       border 6px solid white
       margin -6px
+
+    &:hover
+      &:before
+        vendor("border-radius", 200px)
+        z-index 10
+        position absolute
+        left 0
+        top 0
+        content ""
+        display block
+        width 100%
+        height 100%
+        background-color white
+        background-image url("/content/images/svg/phone.svg")
+        background-repeat no-repeat
+        background-size 100px
+        background-position 50%
 
   .sun
     border none
@@ -179,12 +209,20 @@
       height 175px
       border 5px solid white
 
-  .social
+  .social-buttons
     position relative
-    margin 0
+    margin 25px 0 0
+    padding 0
     width 100%
     display inline-block
     text-align left
+    font-size 2em
+    line-height 1em
+    a
+      padding 0
+      margin 0 0 0 25px
+      height auto
+      width auto
 
   .social-media,
   .github,
@@ -196,8 +234,7 @@
 
   .social-media,
   .github,
-  .cases,
-  .social
+  .cases
 
     a
       transition color 300ms ease
@@ -241,17 +278,41 @@
 
       li
         min-height 30px
+        &:before
+          position absolute
+          bottom 0
+          left 0
+          width 100%
+          height 100%
+          display block
+          content ""
+          vendor("box-shadow", inset 0 -15px 10px -10px white)
 
-    .git
-      li:before
-        position absolute
-        bottom 0
-        left 0
-        width 100%
-        height 100%
-        display block
-        content ""
-        vendor("box-shadow", inset 0 -15px 10px -10px white)
+    .git-info
+      width 85%
+      max-height 50px
+      overflow hidden
+
+    .git-description,
+    .git-message
+      word-wrap break-word
+      white-space pre-wrap
+
+    .git-language
+      margin-top 10px
+      font-family "Monaco","Menlo","Consolas","Courier New","monospace"
+      font-size 0.7em
+      color #999
+
+    .git-time
+      color #999
+      font-family "Palatino"
+      font-size 0.6em
+      position absolute
+      top 0
+      right 0
+      width 20%
+      text-align right
 
     li
       margin-bottom 10px
@@ -265,46 +326,37 @@
         &:hover
           color #666
 
-      .git-info
-        width 85%
-        max-height 50px
-        overflow hidden
-
-
       p
         margin 10px 0 0
         line-height 1.8em
         font-size .9em
 
-      .git-description,
-      .git-message
-        word-wrap break-word
-        white-space pre-wrap
-
-      .git-language
-        margin-top 10px
-        font-family "Monaco","Menlo","Consolas","Courier New","monospace"
-        font-size 0.7em
-        color #999
-
-      .git-time
-        color #999
-        font-family "Palatino"
-        font-size 0.6em
-        position absolute
-        top 0
-        right 0
-        width 20%
-        text-align right
-
   .user-content
+    width 100%
+    margin 0
+    padding 0
     &.multi
-      vendor("column-count", 2)
-      vendor("column-gap", 50px)
+      ul
+        box(border-box)
+        width 49%
+        margin 0
+        padding 0 25px 0 0
+        display inline-block
+        vertical-align top
+        &:nth-child(2n)
+          padding 0 0 0 25px
     li
+      box(border-box)
       vertical-align top
       display inline-block
       text-align left
-      width 44%
-      padding 0 5% 5px 0
+      width 49%
+      padding 0 0 5px 25px
       margin 0
+      &:nth-child(2n)
+        padding 0 25px 5px 0
+
+    &.github
+      li
+        width 100%
+        padding 0 0 5px

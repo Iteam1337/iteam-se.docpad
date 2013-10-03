@@ -6,19 +6,17 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: martin
 
-jobTitle: Senior webbutvecklare
+jobTitle: Senior Webbutvecklare
 email: martin.loman@iteam.se
 phonenumber: 0707 - 22 70 24
-image: /content/images/martin.jpg
-fullimage:
-cssColor: "red"
-css:
-backgroundImage: "http://i.bldr.se/ZV45u.jpeg"
-backgroundDark: true
+
+cssColor: "#d52228"
+topImage: "/content/images/medarbetare/mln.jpg"
+backgroundDark:
 
 twitter: martinloman
 instagram: martinloman
-linkedin: martinloman
+linkedin: /in/martinloman
 github:
 ---
 

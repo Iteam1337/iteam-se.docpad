@@ -6,29 +6,15 @@ subpages: 'om'
 summary: "Sedan 1995 har vi haft tillväxt - tryggt och säkert."
 ---
 
-p Vi är en trygg leverantör och partner. Vi har högsta kreditrating enligt UC och har Trippel-A (AAA) enligt Soliditet och är ett helt personalägt bolag. Vill du veta mer kan du läsa vidare om Soliditets AAA-rating och statistik <a href="http://www.soliditet.se/cms/ratingstatistik" target="blank">här</a>.
+div(about-view)
+  p Iteam har funnits länge och kommer att finnas kvar länge till.
+  p Vi är ett helt personalägt bolag och har högsta kreditrating enligt UC och har Trippel-A (AAA) enligt Soliditet. Läs mer om Soliditets AAA-rating och statistik <a href="http://www.soliditet.se/cms/ratingstatistik" target="blank">här</a>.
 
-p Vi håller fokus på det vi älskar - teknik och att förverkliga drömmar med teknik. Iteam har funnits länge och kommer att finnas kvar länge till.
+  h3 Omsättning [MSEK]
+  canvas.turnoverNumbers(width=700,height=300)
 
-h3 Omsättning [MSEK]
-canvas(id="turnoverNumbers",width=700,height=300)
+  h3 Antal medarbetare
+  canvas.employeeNumbers(width=700,height=300)
+  p Källa: Bolagsverket, Creditsafe, och <a href="http://www.allabolag.se/5565516928/Iteam_Solutions_AB" target="blank">Allabolag</a>
 
-h3 Antal medarbetare
-canvas(id="employeeNumbers",width=700,height=300)
-p Källa: Bolagsverket, Creditsafe, och <a href="http://www.allabolag.se/5565516928/Iteam_Solutions_AB" target="blank">Allabolag</a>
-
-h3 Fördelning mellan verksamhetsområden
-canvas(id="businessareaNumbers",width=700,height=300)
-  center
-    .legend
-      .advice
-          .box
-          span.text Rådgivning
-
-      .systemdevelopment
-          .box
-          span.text Systemutveckling
-
-      .operations
-          .box
-          span.text Drift &amp; Support
+ 

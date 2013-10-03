@@ -6,19 +6,17 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: maria
 
-jobTitle: Föräldraledig / Project manager
+jobTitle: Projektledare, Föräldraledig
 email: maria.solscher@iteam.se
 phonenumber: 0733 - 74 27 84
-image: "/content/images/maria.jpg"
-fullimage:
-cssColor:
-css:
-backgroundImage: "http://www.phaidon.com/resource/kusama073.jpg"
+
+cssColor: "#830309"
+topImage: "/content/images/medarbetare/mrs.JPG"
 backgroundDark: true
 
 twitter: MariaSolscher
 instagram: MariaSolscher
-linkedin: mariasolscher
+linkedin: in/mariasolscher
 github:
 ---
 

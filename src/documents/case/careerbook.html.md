@@ -1,19 +1,33 @@
 ---
 title: Careerbook
+subtitle:
 layout: case
 caseIndex: 10
+releaseDate: 090101
 
 tags: ['Systemutveckling']
-images: ['careerbook1.jpg']
-imagePos: ['right']
-imageGallery: ['careerbook2.jpg']
-team: ['johanna','mats','hans','christian']
-intro: En helt ny sorts mötesplats för arbetsgivare och studenter.
-siteurl: http://www.academicwork.se/careerbook
-twitterTag: ['#careerbook','#academicwork_se']
+sections: ['Systemutveckling']
+logo: 'case-logos/careerbook.jpg'
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+imageGallery: ['case-galleribilder/careerbook/careerbook1.jpg', 'case-galleribilder/careerbook/careerbook2.jpg']
+
+team: ['johanna','mats','hans','christian']
+<<<<<<< HEAD
+intro: En helt ny sorts mötesplats för arbetsgivare och studenter.
+=======
+>>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
+siteurl: http://www.academicwork.se/careerbook
+
+readmorelinks:
+
+quote:
+about:
+
+topImage:
+backgroundDark:
+
+intro: >
+  Academic Communication och Iteam tar fram en mötesplats för arbetsgivare och studenter.
 ---
 
 ### Mötesplatsen för arbetsgivare och studenter

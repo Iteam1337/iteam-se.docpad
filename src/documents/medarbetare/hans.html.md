@@ -6,19 +6,17 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: hans
 
-jobTitle: Vice VD, Försäljning
+jobTitle: Vice VD & Säljchef
 email: hans.rollman@iteam.se
 phonenumber: '0738 - 1337 87'
-image: /content/images/hans.jpg
-fullimage:
-cssColor:
-css:
-backgroundImage: "http://i.bldr.se/rMtaS.jpeg"
+
+cssColor: "#55ae3a"
+topImage: "/content/images/medarbetare/hrn_golf.jpg"
 backgroundDark: true
 
 twitter: hrswe
 instagram: hrswe
-linkedin: hansrollman
+linkedin: in/hansrollman
 github: hanrol
 ---
 

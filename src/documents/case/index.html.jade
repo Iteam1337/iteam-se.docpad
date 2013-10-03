@@ -1,21 +1,17 @@
 ---
 title: Case
-layout: section
+layout: cases
 tags: ['intro', 'page']
 pageIndex: 0
-#subpages: 'case'
 dontIndexInAnyCollection: true
+
+topImage: "/content/images/section-topbilder/case-eller-nagot-bw-cropped.jpg"
+backgroundDark: true
 ---
 
-.row-fluid#cases
-  each doc in getCollection('case').toJSON()
-    .case
-      if (doc.images)
-        a.case-link(href=doc.url)
-          img(src="/content/images/" + doc.images[0], class="case-image")
-      else
-        img(src="http://lorempixel.com/100/100", class="case-image")
-      .case-about
-        a(href=doc.url)
-          h2.case-title= doc.title
-        p= doc.intro
+h2 Vi skapar förändringar tillsammans med våra kunder
+:markdown
+ Sedan 1995 har vi arbetat med en stor variation av uppdrag.
+ Vi är stolta över våra lösningar och nedan finns ett axplock av dem.
+ 
+ Våra beställare är ute efter en förändring när de kommer till oss. Tillsammans har vi levererat utmanande tjänster, webbar och verktyg i flera branscher: Bygg & Byggmaterial–, Telekom–, Dating–, Jobb & Utbildning–, Musik–, Ekonomi– och Juridikbranschen.

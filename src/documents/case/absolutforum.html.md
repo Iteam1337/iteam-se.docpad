@@ -1,19 +1,29 @@
 ---
 title: ABSOLUT FORUM
+subtitle:
 layout: case
 caseIndex: 10
+releaseDate: 040101
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
-images: ['absolutforum1.jpg']
-imagePos: ['right']
-imageGallery: ['absolutforum2.jpg','absolutforum3.jpg']
+sections: ['Systemutveckling','Rådgivning']
+logo: 'case-logos/absolut.jpg'
+
+imageGallery: ['case-galleribilder/absolut/absolutforum2.jpg','case-galleribilder/absolut/absolutforum3.jpg','case-galleribilder/absolut/absolutforum1.jpg']
+
 team: ['anders']
-intro: Prisbelönat globalt extranät för alla som arbetar med marknadsföring av ABSOLUT VODKA.
 siteurl: http://www.absolut.absolutcompany.com
+
 readmorelinks: [{url:'http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards-2009',title:"Vinnare Episerver Awards 2009"},{url:'http://www.absolut.absolutcompany.com',title:"Absolut Company"},{url:'http://www.episerver.se/Om-oss/Pressrum/Arkiv-pressmeddelanden-2009/Nomineringarna-till-Episerver-Awards-2009-klara',title:"Nomineringar Episerver Awards 2009"}]
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+quote:
+about:
+
+topImage:
+backgroundDark:
+
+intro: >
+  Prisbelönat globalt extranät för alla som arbetar med marknadsföring av ABSOLUT VODKA.
 ---
 
 ### En plattform för 126 marknader världen över

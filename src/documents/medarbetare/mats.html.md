@@ -6,14 +6,12 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: mats
 
-jobTitle: Avdelningschef arkitektur, drift och support
+jobTitle: Senior Supporttekniker
 email: mats.egardt@iteam.se
 phonenumber: 0736 - 19 80 64
-image: /content/images/mats.jpg
-fullimage:
+
 cssColor:
-css: "star"
-backgroundImage: "http://i.bldr.se/ZGmJr.jpeg"
+topImage: "http://i.bldr.se/ZGmJr.jpeg"
 backgroundDark: true
 
 twitter:

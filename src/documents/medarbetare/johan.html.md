@@ -6,15 +6,13 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: johan
 
-jobTitle: Señor Director Creativo
+jobTitle: Teknisk Creative Director
 email: johan.obrink@iteam.se
 phonenumber: 0706 - 82 91 21
-image: /content/images/johan.jpg
-fullimage:
+
 cssColor: "#fab"
-css:
-backgroundImage: "http://i.bldr.se/r4U73.jpeg"
-backgroundDark: true
+topImage: "/content/images/medarbetare/jok.jpg"
+backgroundDark:
 
 twitter:
 instagram: johanobrink

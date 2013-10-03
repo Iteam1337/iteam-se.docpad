@@ -6,19 +6,17 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: anders
 
-jobTitle: Senior hacker
+jobTitle: Teknisk Creative Director
 email: anders.bornholm@iteam.se
 phonenumber: '0708-62 41 90'
-image: /content/images/anders.jpg
-fullimage:
-cssColor: "#000000"
-css:
-backgroundImage: "/content/images/collage.jpg"
+
+cssColor: "#000"
+topImage: "/content/images/medarbetare/abo.jpg"
 backgroundDark: false
 
 twitter: osirisguitar
 instagram: osirisguitar
-linkedin: andersbornholm
+linkedin: in/andersbornholm
 github: osirisguitar
 ---
 
@@ -34,4 +32,4 @@ Konceptutveckling, C#, systemarkitektur, EPiServer, Node.js, AngularJS, single s
 Civilingenjör i datalogi från KTH. Arbetade tidigare på Springtime som konceptutvecklare och projektledare, innan dess på Vindrosen som projektledare och webbutvecklare.
 
 ### Superkraft
-Kan hitta vad som helst på Google
+Kan hitta vad som helst på Google.

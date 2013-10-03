@@ -6,15 +6,13 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: rasmus
 
-jobTitle: Drift och support
+jobTitle: Senior Supporttekniker
 email: rasmus.fredriksson@iteam.se
 phonenumber: 0703 - 76 66 40
-image: /content/images/rasmus.jpg
-fullimage:
-cssColor: "#2d90ed"
-css:
-backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
-backgroundDark: true
+
+cssColor: "#8ab362"
+topImage: "/content/images/medarbetare/rfn.jpg"
+backgroundDark:
 
 twitter:
 instagram:

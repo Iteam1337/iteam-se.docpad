@@ -4,7 +4,11 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     outPath: (grunt.file.readJSON('config.json').outPath + "/"),
+    outBuildPath: (grunt.file.readJSON('config.json').outBuildPath + "/"),
 
+    clean :{
+      out : ['<%= outPath%>/content/styles', '<%= outPath %>/content/scripts', '<%= outPath %>/content/partials',]
+    },
     // Concats the js files into a single include
     concat: {
       options: {
@@ -15,13 +19,26 @@ module.exports = function (grunt) {
       dist: {
         dest: '<%= outPath %>content/scripts/<%= pkg.name %>.js',
         src: [
-          'src/documents/content/scripts/**/*.js'
+          "src/scripts/config/*.js",
+          "src/scripts/factory/*.js",
+          "src/scripts/directives/*.js",
+          "src/scripts/app.js",
+          "src/scripts/controllers/*.js",
+          "src/scripts/**/*.js"
         ]
       },
       vendor: {
         dest: '<%= outPath %>content/scripts/vendor.js',
         src: [
+          'src/files/content/vendor/_angular.js',
+          'src/files/content/vendor/jquery.js',
+          'src/files/content/vendor/angular-mobile.js',
           'src/files/content/vendor/*.js',
+          'src/files/content/vendor/angular-carousel/angular-carousel.js',
+          'src/files/content/vendor/angular-carousel/CollectionManager.js',
+          'src/files/content/vendor/angular-carousel/rn-carousel.js',
+          'src/files/content/vendor/angular-carousel/rn-carousel-infinite.js',
+          'src/files/content/vendor/angular-carousel/rn-carousel-indicators.js',
           'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
@@ -50,7 +67,6 @@ module.exports = function (grunt) {
       compile: {
         files: {
           "<%= outPath %>content/styles/<%= pkg.name %>.css": [
-            "src/styles/variables.css.styl",
             "src/styles/general.css.styl",
             "src/styles/style.css.styl",
             "src/styles/animation.css.styl",
@@ -58,6 +74,7 @@ module.exports = function (grunt) {
             "src/styles/cases.css.styl",
             "src/styles/coworkers.css.styl",
             "src/styles/page.css.styl",
+            "src/styles/*.css.styl",
             "src/styles/responsive.css.styl"
           ]
         }
@@ -74,9 +91,23 @@ module.exports = function (grunt) {
           '<%= outPath %>content/styles/vendor.css': [
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
+            'src/files/content/vendor/angular-carousel/angular-carousel.css',
             '!*.min.css'
           ]
         }
+      }
+    },
+
+    copy: {
+      main: {
+        files: [
+          {
+            expand: true,
+            cwd: "<%=outPath%>",
+            src: ["**"],
+            dest: "<%= outBuildPath %>/"
+          }
+        ]
       }
     },
 
@@ -104,14 +135,28 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
   grunt.registerTask('default', [
     'concat',
-    'uglify',
+    /*'uglify',*/
     'stylus',
     'cssmin',
     'jade'
   ]);
+
+  // Default task(s).
+  grunt.registerTask('build', [
+    'clean',
+    'concat',
+    'uglify',
+    'stylus',
+    'cssmin',
+    'jade',
+    'copy'
+  ]);
+
 
 };

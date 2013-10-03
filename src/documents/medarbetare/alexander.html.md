@@ -6,19 +6,17 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: alexander
 
-jobTitle: Hacker
+jobTitle: Senior Webbutvecklare
 email: alexander.czigler@iteam.se
 phonenumber: '0727-14 50 60'
-image: /content/images/alexander.jpg
-fullimage:
+
 cssColor: "#07AFCA"
-css:
-backgroundImage: "http://i.bldr.se/mbY4q.jpeg"
+topImage: "/content/images/medarbetare/acr.jpeg"
 backgroundDark: true
 
 twitter:
 instagram: zendeveloper
-linkedin: zendeveloper
+linkedin: in/zendeveloper
 github: zendeveloper
 ---
 

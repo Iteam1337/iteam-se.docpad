@@ -1,9 +1,9 @@
 mixin blogg(doc, showCategory)
   section.post
     header
-      if (doc.backgroundImage)
-        a.post-image(href= doc.url, style="background-image:url(" + doc.backgroundImage + ")")
-      .post-date= toDateString(doc.date, "short")
+      if (doc.topImage)
+        a.post-image(href= doc.url, style="background-image:url(" + doc.topImage + ")")
+      .post-date= toDateString((doc.realDate || doc.date), "short")
       if (showCategory)
         a.post-category(href= "/blogg/" + doc.category)= capitalizeFirstChar(doc.category) + "/ "
       a.post-title(href= doc.url)= doc.title
@@ -13,7 +13,7 @@ mixin blogg(doc, showCategory)
 
 mixin pagination(page)
   ul
-    - for (var pageNumber = 0; pageNumber < page.pagecount; pageNumber++)
+    - for (var pageNumber = 0; pageNumber < page.count; pageNumber++)
       - var num = pageNumber +1
       if document.page.number === pageNumber
         li.active
@@ -25,6 +25,7 @@ mixin pagination(page)
     if hasNextPage()
       li
         span
-          a(href=getNextPage()) Nästa
+          a(href=getNextPage()) Tidigare
     else
       li.disabled
+        span Tidigare

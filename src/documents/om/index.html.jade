@@ -5,14 +5,23 @@ tags: ['om', 'page']
 subpages: 'om'
 pageIndex: 4
 dontIndexInAnyCollection: true
+
+topImage: "/content/images/section-topbilder/isolde-bw-cropped.jpg"
+backgroundDark: true
 ---
 h3 Medarbetarna är viktigast
-p Vi skapar tekniska lösningar med målet att användarna inte ska märka av tekniken. Våra lösningar är så genomtänkta att det blir som man förväntar sig. Våra utvecklare har tekniken i blodet och vi hittar lätt den bästa lösningen tack vare en naturlig nyfikenhet och intresset.
+p Vi skapar tekniska lösningar med målet att användarna inte ska märka av tekniken. Våra lösningar är genomtänkta, vilket gör att de beter sig som man förväntat sig. Våra utvecklare har tekniken i blodet och vi tillämpar alltid den bästa lösningen tack vare en naturlig nyfikenhet och intresse.
 
 p Eftersom våra medarbetare är det viktigaste vi har så ser vi till att ha kul tillsammans och att vi utvecklas som grupp. För när vi har kul -då gör vi bra grejer.
+
 .row-fluid#about
-  ul
-    each subpage in getCollection('om').toJSON()
-      li
-        a(href=subpage.url)= subpage.title
-        p= subpage.summary
+  each subpage in getCollection('om').toJSON()
+    .row
+      - image = topImage(subpage)
+      if !!image
+        a.offer.span4(style=image, href=subpage.url)
+      else
+        .offer.span4
+      a.span6(href=subpage.url)= subpage.title
+      p.span6!= subpage.summary
+

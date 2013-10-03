@@ -6,15 +6,13 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: johanna
 
-jobTitle: Utvecklingschef, Senior hacker
+jobTitle: Utvecklingschef & Webbutvecklare
 email: johanna.gustafsson@iteam.se
 phonenumber: 0734 - 02 91 12
-image: /content/images/johanna.jpg
-fullimage:
-cssColor:
-css:
-backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
-backgroundDark: false
+
+cssColor: "#a7e2fe"
+topImage: "/content/images/medarbetare/jgn.JPG"
+backgroundDark:
 
 twitter: mittistormen
 instagram: mittistormen

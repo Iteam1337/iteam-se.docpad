@@ -1,18 +1,29 @@
 ---
 title: Tomsradio
+subtitle:
 layout: case
 caseIndex: 7
+releaseDate: 020202
 
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning','Lead tech','Entreprenörsrådgivning']
-images: ['tomsradio.jpg']
-imagePos: ['right']
-imageGallery: ['tomsradio.jpg']
+sections: ['Systemutveckling','Rådgivning']
+logo: 'case-logos/tomsradio.png'
+
+imageGallery: ['case-galleribilder/tomsradio/tomsradio.jpg']
+
 team: ['christian','anders']
-intro: Vi förverkligade en dröm tillsammans med entreprenören Tom McAlevey
 siteurl: "http://en.wikipedia.org/wiki/Tomsradio.com"
 
-backgroundImage: "http://i.bldr.se/csE8D.jpeg"
-backgroundDark: true
+readmorelinks:
+
+quote:
+about:
+
+topImage:
+backgroundDark:
+
+intro: >
+  Vi förverkligade en dröm tillsammans med entreprenören Tom McAlevey
 ---
 
 

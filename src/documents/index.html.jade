@@ -1,15 +1,41 @@
 ---
 layout: 'default'
 title: 'Iteam.se | Omöjligt är bara början'
-backgroundImage: http://www.moillusions.com/wp-content/uploads/2010/06/Lego-Impossible-Object-4.jpg
+
+topImage: "/content/images/section-topbilder/robots-bw-cropped.jpg"
+backgroundDark: true
 ---
 
-.row-fluid#startpage
-  article.news
-    h1 Omöjligt är bara början
-    h2 Iteam är en teknikbyrå med fokus på avancerade system. Vi gillar tuffa utmaningar och jobbar bäst i team.
-    p
-      :markdown
-        Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra med tack vare människor som vågar att drömma.
+//- Holder for all case-sites
+- var showcases = getShowCase()
 
-        Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre och snabbare än de flesta stora konsultföretagen.
+ul.image(rn-carousel, rn-carousel-indicator)
+  each showcase in showcases
+    if !!showcase.topImage
+      li(style="background-image:url(" + showcase.topImage + ");")
+        .layer
+          .link(class=shouldWeUseADarkBackground(showcase))
+            a.case-title(href=showcase.url, target="_blank")= showcase.title
+            if !!showcase.sections
+              each section, i in showcase.sections
+                - posClass = i !== 0 ? "separator-before" : ""
+                - section = getMetadataFrom(section)
+                a.section(class=posClass, href=section.url, target="_blank")= section.title
+
+.container
+  .row-fluid#startpage
+
+    h1 Omöjligt är bara början
+
+    article
+      //- h2 Iteam är en teknikbyrå med fokus på avancerade system.
+
+      :markdown
+        Vi gillar tuffa utmaningar och jobbar bäst i team.
+
+        Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra tack vare människor som vågar drömma.
+
+        Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
+
+    h2 Senaste från instagram
+    instagram(name="iteam1337", max="4")

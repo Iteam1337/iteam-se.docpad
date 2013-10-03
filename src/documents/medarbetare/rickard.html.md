@@ -6,14 +6,12 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: rickard
 
-jobTitle: Webbutvecklare
+jobTitle: Frontendutvecklare
 email: rickard.laurin@iteam.se
 phonenumber: '076 - 166 85 11'
-image: /content/images/rickard.jpg
-fullimage: /content/images/rickard_hel.jpg
+
 cssColor: "#89e9a7"
-css:
-backgroundImage: "http://i.bldr.se/y0K8u.jpeg"
+topImage: "/content/images/medarbetare/laurin.jpg"
 backgroundDark: true
 
 twitter: rickardlaurin
