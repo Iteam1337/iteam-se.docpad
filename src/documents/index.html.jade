@@ -16,6 +16,7 @@ ul.image(rn-carousel, rn-carousel-indicator)
         .layer
           .link(class=shouldWeUseADarkBackground(showcase))
             a.case-title(href=showcase.url, target="_blank")= showcase.title
+            br
             if !!showcase.sections
               each section, i in showcase.sections
                 - posClass = i !== 0 ? "separator-before" : ""
@@ -37,5 +38,6 @@ ul.image(rn-carousel, rn-carousel-indicator)
 
         Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
-    h2 Senaste från instagram
-    instagram(name="iteam1337", max="4")
+    .instagram
+      h2 Senaste från instagram
+      instagram(name="iteam1337", max="4")

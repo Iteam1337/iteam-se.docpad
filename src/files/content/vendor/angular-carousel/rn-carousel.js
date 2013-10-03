@@ -246,11 +246,52 @@ angular.module('angular-carousel')
             return containerWidth;
         }
 
+        scope.setActiveIndex = function (index) {
+          console.log("setActiveIndex", index);
+          if (scope.carouselCollection.position === +index) {
+            return;
+          }
+          scope.carouselCollection.goTo(+index, true);
+        };
+
         /* enable carousel indicator */
         if (angular.isDefined(iAttrs.rnCarouselIndicator)) {
-          var indicator = $compile("<div id='" + carouselId +"-indicator' index='carouselCollection.index' items='carouselCollection.items' data-rn-carousel-indicators class='rn-carousel-indicator'></div>")(scope);
+          var indicator = $compile("<div id='" + carouselId +"-indicator' index='carouselCollection.index' items='carouselCollection.items' set-active-index='setActiveIndex' data-rn-carousel-indicators class='rn-carousel-indicator'></div>")(scope);
           container.append(indicator);
         }
+
+
+        /* enable carousel indicator */
+        if (angular.isDefined(iAttrs.rnCarouselIndicator)) {
+          var elements = '<div class="left e-chevron-thin-left disabled" ng-click="previous()" ng-class="{\'disabled\': previousDisabled()}"></div>';
+          elements += '<div class="right e-chevron-thin-right" ng-click="next()" ng-class="{\'disabled\': nextDisabled()}"></div>';
+          var arrows = $compile(elements)(scope);
+          container.append(arrows);
+        }
+
+        function updateSlidePositionByButtons (index) {
+          var lastIndex, position, tmpSlideIndex;
+          lastIndex = scope.carouselCollection.getLastIndex();
+          position = scope.carouselCollection.position;
+          tmpSlideIndex = Math.min(Math.max(0, position + index), lastIndex);
+          scope.carouselCollection.goTo(tmpSlideIndex, true);
+        }
+
+        scope.previous = function () {
+          updateSlidePositionByButtons(-1);
+        };
+
+        scope.next = function () {
+          updateSlidePositionByButtons(1);
+        };
+
+        scope.previousDisabled = function () {
+          return scope.carouselCollection.position === 0;
+        };
+
+        scope.nextDisabled = function () {
+          return scope.carouselCollection.position === scope.carouselCollection.getLastIndex();
+        };
 
         function updateSlidePosition(forceSkipAnimation) {
           /* trigger carousel position update */
