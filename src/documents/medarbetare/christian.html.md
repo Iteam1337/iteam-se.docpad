@@ -11,7 +11,7 @@ email: christian.landgren@iteam.se
 phonenumber: 0707 - 75 58 31
 
 cssColor: "#001337"
-topImage: "http://mrwinstonwolf.files.wordpress.com/2010/11/pulpwolfvincentjules1.jpg"
+topImage: "/content/images/medarbetare/cln.jpg"
 backgroundDark: true
 
 twitter: landgren
