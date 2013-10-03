@@ -12,22 +12,11 @@ logo: 'case-logos/carlstedt.jpg'
 imageGallery: []
 
 team: ['mats','rasmus']
-<<<<<<< HEAD
-intro: Expertstöd och heltäckande drift och support för ett av Sveriges erfarnaste arktitektkontor.
-=======
->>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
 siteurl: http://www.carlstedtark.se
 
 readmorelinks:
-
-<<<<<<< HEAD
-### Ett heltäckande drift- och supportuppdrag
-Åt Carlstedt Arkitekter har vi under ett flertal år agerat rådgivare och funnit tillgängliga som extra stöd vid större projekt.
-Vi började vårt samarbete med en IT-review som gav oss en gemensam tydlig agenda för insatser och ytterligare förbättringar i IT-miljön. Idag finns Iteam på joursupport när ordinarie IT-personal behöver förstärkning. Iteam finns alltid till hands som specialistsupport och IT chefsstöd.
-=======
 quote:
 about:
->>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
 
 topImage: "/content/images/case-topbilder/ca.jpg"
 backgroundDark: true

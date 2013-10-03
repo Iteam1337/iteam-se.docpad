@@ -12,10 +12,6 @@ logo: 'case-logos/sb-byggtjanst-logo.png'
 imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-amabv1.jpg']
 
 team: ['anders','johanna','hans','christian','mats']
-<<<<<<< HEAD
-intro: Google Docs-liknande specifikationsverktyg sparar miljoner i Byggsverige.
-=======
->>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
 siteurl: http://amabv.byggtjanst.se/Account/Logon
 
 readmorelinks:

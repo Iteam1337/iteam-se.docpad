@@ -12,10 +12,6 @@ logo: 'case-logos/beckers.png'
 imageGallery: ['case-galleribilder/beckers/beckers2.jpg','case-galleribilder/beckers/beckers3.jpg']
 
 team: ['anders','johanna','martin','dennis','rickard','maria']
-<<<<<<< HEAD
-intro: Med inspiration och utbildning lockar Beckers kunderna till butiken.
-=======
->>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
 siteurl: http://www.beckers.se
 
 readmorelinks:

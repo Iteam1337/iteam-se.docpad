@@ -12,10 +12,6 @@ logo: 'case-logos/careerbook.jpg'
 imageGallery: ['case-galleribilder/careerbook/careerbook1.jpg', 'case-galleribilder/careerbook/careerbook2.jpg']
 
 team: ['johanna','mats','hans','christian']
-<<<<<<< HEAD
-intro: En helt ny sorts mötesplats för arbetsgivare och studenter.
-=======
->>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
 siteurl: http://www.academicwork.se/careerbook
 
 readmorelinks:

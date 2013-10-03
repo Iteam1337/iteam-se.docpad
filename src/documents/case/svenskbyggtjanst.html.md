@@ -12,10 +12,6 @@ logo: 'case-logos/sb-byggtjanst-logo.png'
 imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-byggtjanst1.jpg','case-galleribilder/svensk-byggtjanst/sb-byggtjanst2.jpg']
 
 team: ['anders','johanna','mats','christian']
-<<<<<<< HEAD
-intro: Ny webbplats som samlar alla Svensk Byggtjänsts tjänster för Byggsverige.
-=======
->>>>>>> 3f662dfc9e38a837a251990a59f5e5961497d636
 siteurl: http://www.byggtjanst.se
 
 readmorelinks:
