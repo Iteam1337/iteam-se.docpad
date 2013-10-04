@@ -4,7 +4,7 @@
   margin 40px 0
 
   li
-    font-family "Palatino"
+    font-family serifFontStack
     line-height 1.75
     list-style circle
     margin-left 20px
@@ -15,11 +15,9 @@
     padding-top 20px
 
     .title
-      background #fff
       font-size 1.2em
       margin 5px 0
       position relative
-      top -35px
       width 180px
 
 
@@ -33,7 +31,16 @@
         width 49%
 
   #opportunities
-    margin-top 0;
+    margin-top 0
+
+    .title
+      top 0
+      width auto
+      font-family sansSerifFontStack
+      color #444
+      &:hover
+        color iorange
+
     ul
       li
         list-style none

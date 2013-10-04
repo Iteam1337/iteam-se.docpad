@@ -7,14 +7,10 @@ h1.main-title(title,class=shouldWeUseADarkBackground())= document.title
 .row-fluid(make-anchors)
   #page.page
     article.page-content
-      .text!= content
 
-      .info
-        if (document.pageType === 'Service')
+      if (document.pageType === 'Service')
+        .span6!= content
+        .span6
           include ../jade_includes/service
-
-        else if (document.pageType === 'karriar')
-          include ../jade_includes/karriar
-
-        else if (document.pageType === 'kontakt')
-          include ../jade_includes/kontakt
+      else
+        .span12!= content

@@ -1,9 +1,0 @@
-div#opportunities
-  h3 Lediga tjänster
-  ul
-    each career in getCollection('ledigatjanster').toJSON()
-      if career.title
-        li
-          h4= career.title
-          p= career.summary
-          a(href=career.url) Läs mer
