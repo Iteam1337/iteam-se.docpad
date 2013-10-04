@@ -4,6 +4,10 @@ title: 'Iteam.se | Omöjligt är bara början'
 
 topImage: "/content/images/section-topbilder/robots-bw-cropped.jpg"
 backgroundDark: true
+introHeading: >
+  Något fint om iteam
+introSubheading: >
+  Oh något annat fint om iteam
 ---
 
 ul.image(
@@ -14,7 +18,9 @@ ul.image(
   li(style="background-image:url(" + document.topImage + ")")
     .layer
       .wrapper(class = shouldWeUseADarkBackground(document))
-        h1 Iteam?
+        h1= document.introHeading
+        h2= document.introSubheading
+
   //- Holder for all case-sites
   each showcase in getShowCase()
     if !!showcase.topImage
@@ -36,7 +42,7 @@ ul.image(
       h1 Omöjligt är bara början
 
     .row-fluid
-      .span6
+      .span7
         :markdown
 
           Vi gillar tuffa utmaningar och jobbar bäst i team.
@@ -45,7 +51,7 @@ ul.image(
 
           Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
-      .span6
+      .span4.offset1
         instagram(
           name = "iteam1337"
           max = "4"
