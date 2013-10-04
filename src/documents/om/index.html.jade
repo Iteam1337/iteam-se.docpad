@@ -1,6 +1,6 @@
 ---
 title: Om
-layout: page
+layout: section
 tags: ['om', 'page']
 subpages: 'om'
 pageIndex: 4
@@ -9,19 +9,44 @@ dontIndexInAnyCollection: true
 topImage: "/content/images/section-topbilder/isolde-bw-cropped.jpg"
 backgroundDark: true
 ---
-h3 Medarbetarna är viktigast
-p Vi skapar tekniska lösningar med målet att användarna inte ska märka av tekniken. Våra lösningar är genomtänkta, vilket gör att de beter sig som man förväntat sig. Våra utvecklare har tekniken i blodet och vi tillämpar alltid den bästa lösningen tack vare en naturlig nyfikenhet och intresse.
-
-p Eftersom våra medarbetare är det viktigaste vi har så ser vi till att ha kul tillsammans och att vi utvecklas som grupp. För när vi har kul -då gör vi bra grejer.
-
 .row-fluid#about
-  each subpage in getCollection('om').toJSON()
-    .row
-      - image = topImage(subpage)
-      if !!image
-        a.offer.span4(style=image, href=subpage.url)
-      else
-        .offer.span4
-      a.span6(href=subpage.url)= subpage.title
-      p.span6!= subpage.summary
+  .row
+    .span6
+      :markdown
+        ## Medarbetarna är viktigast
+        Vi skapar tekniska lösningar med målet att användarna inte ska märka av tekniken. Våra lösningar är genomtänkta, vilket gör att de beter sig som man förväntat sig. Våra utvecklare har tekniken i blodet och vi tillämpar alltid den bästa lösningen tack vare en naturlig nyfikenhet och intresse.
 
+        Eftersom våra medarbetare är det viktigaste vi har så ser vi till att ha kul tillsammans och att vi utvecklas som grupp. För när vi har kul -då gör vi bra grejer.
+
+    .span5.offset1
+      :markdown
+        ## Hitta oss
+        [![Google Maps](http://maps.googleapis.com/maps/api/staticmap?center=59.338946,18.05723&zoom=14&size=1170x200&maptype=roadmap&sensor=false&markers=color:0xFFBD09%7Clabel:I%7C59.338946,18.05723&visual_refresh=true)](https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Iteam%2BSolutions%2BAB,%2BTegn%C3%A9rgatan%2B28,%2BStockholm,%2BSweden&aq=&sll=59.318652,18.018436&sspn=0.061665,0.122395&vpsrc=0&t=h&ie=UTF8&hq=iteam+solutions+ab&hnear=Tegn%C3%A9rgatan+28,+113+59+Stockholm,+Stockholms+l%C3%A4n,+Sweden&ll=59.338946,18.057253&spn=0.007091,0.015299&z=16&iwloc=A",style="color:#0000FF;text-align:left",target="_blank)
+        Vi finns på Tegnérgatan 28, 6tr. Spana in våra ljusa och nyfixade lokaler högst upp i huset. Välkommen!
+
+        ### Ring oss 08-26 70 90
+        Här hittar du direktnummer till våra [medarbetare](/medarbetare)
+
+
+  .row(about-view)
+
+    .row
+      .span5
+        :markdown
+          [Iteam har funnits länge](/om/historia) och kommer att finnas kvar länge till.
+          Vi är ett helt personalägt bolag och har högsta kreditrating enligt UC och har Trippel-A (AAA) enligt Soliditet. [Läs mer om Soliditets AAA-rating och statistik.]( http://www.soliditet.se/cms/ratingstatistik)
+
+    .row-fluid
+      .span5
+        h3 Omsättning [MSEK]
+        canvas.turnoverNumbers(width=400,height=200)
+
+      .span5.offset2
+        h3 Antal medarbetare
+        canvas.employeeNumbers(width=400,height=200)
+        p Källa: Bolagsverket, Creditsafe, och <a href="http://www.allabolag.se/5565516928/Iteam_Solutions_AB" target="blank">Allabolag</a>
+
+  .row
+    :markdown
+      #### Organisationsnummer: 556551-6928
+      #### VAT: SE556551-692801
