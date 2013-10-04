@@ -20,14 +20,14 @@ linkedin: in/sophiewesslau
 github: sophiewesslau
 ---
 
-### Varför jobbar du med teknik?
+## Varför jobbar du med teknik?
 Jag gillar känslan av att vara i navet av det senaste och nyaste. Mina kollegor ger mig den känslan.
 
-### Specialistkompetens
+## Specialistkompetens
 Är en doer.
 
-### Bakgrund
+## Bakgrund
 Har arbetat med bemanning & rekrytering inom reklambranschen, webbredaktör och kundansvarig. Är utbildad grafisk formgivare.
 
-### Superkraft
+## Superkraft
 Antar alltid utmaningen i att förändra en dålig stämning i ett rum till god.

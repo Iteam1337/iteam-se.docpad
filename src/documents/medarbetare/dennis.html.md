@@ -20,14 +20,14 @@ linkedin: pub/dennis-pettersson/23/92b/896
 github: ankjevel
 ---
 
-### Varför jobbar du med teknik?
+## Varför jobbar du med teknik?
 Det känns bara som en självklarhet. Det är och har alltid varit något jag brunnit för.
 
-### Specialistkompetens
+## Specialistkompetens
 Är en jäkel på frontend och javascript.
 
-### Bakgrund
+## Bakgrund
 Har studerat Mediadesign vid LTU och Interaktionsdesign vid Nackademin.
 
-### Superkraft
+## Superkraft
 Jag säger prosit millisekunden innan du har nyst.

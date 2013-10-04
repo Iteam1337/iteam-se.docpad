@@ -17,13 +17,13 @@ Våra utvecklare är engagerade och sitter på den senaste kunskapen inom system
 
 Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
 
-### Trygg och effektiv utvecklingsmetodik
+## Trygg och effektiv utvecklingsmetodik
 Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Scrum medför ökad kvalitet och ökat fokus på att först lösa de viktigaste utmaningarna i projektet. Med Scrum levereras värde, snarare än att tid ägnas aå att skriva detaljerade kravspecifikationer.
 
-### Så går Scrum till
+## Så går Scrum till
 Metodiken innebär att arbetet delas upp i korta intensiva utvecklingspass (s.k. sprintar). Varje sprint varar i ca. tre veckor. Vi arbetar fokuserat på en utvald delmängd av lösningen i taget (s.k. sprint backlog). Parallellt med att utvecklingsteamet är igång, arbetar vår rådgivare och beställaren vidare med att konkretisera uppgifter och kravtexter inför nästkommande sprint. Sprinten är väl definierad när den startar, och förändringar tillåts under projektets gång.
 
-### Ledtid och kostnad
+## Ledtid och kostnad
 I ett scrumprojekt betalar man för tiden utvecklingsteamet ägnar åt projektet. En typisk sprint kan vara ca. 280 timmar och är ofta fördelat över ca. tre veckors kalendertid.
 
 ### Att vårda och underhålla

@@ -20,14 +20,14 @@ linkedin: in/rickardlaurin
 github: believer
 ---
 
-### Varför jobbar du med teknik?
+## Varför jobbar du med teknik?
 Har varit helt såld på allting teknikrelaterat ända sedan familjen skaffade en 286:a på tidigt 90-tal.
 
-### Specialistkompetens
+## Specialistkompetens
 Frontend och JavaScript.
 
-### Bakgrund
+## Bakgrund
 Interaktionsdesign vid Nackademin.
 
-### Superkraft
+## Superkraft
 Kan mer om film än IMDb.

@@ -17,7 +17,7 @@ Vi tror att du vill skapa värde och göra något bra ihop med våra uppdragsgiv
 
 Din arbetsplats kommer att vara i våra ljusa och fina lokaler i centrala Stockholm. Där jobbar du tillsammans med 14 passionerade kollegor som älskar teknik och som har kul ihop.
 
-### Krav
+## Krav
 
 * Minst 3-5 års erfarenhet
 * Behärskar Mac, Windows & Linux
@@ -27,7 +27,7 @@ Din arbetsplats kommer att vara i våra ljusa och fina lokaler i centrala Stockh
 * AWS, Azure, Openstack
 * Säljdriven
 
-### Meriterande
+## Meriterande
 
 * Avancerade nätverk (lastbalansering, redundans, VLAN, DirectAccess, etc.)
 * Säljerfarenhet

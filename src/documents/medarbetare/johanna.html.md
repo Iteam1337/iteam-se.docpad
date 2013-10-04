@@ -20,14 +20,14 @@ linkedin: pub/johanna-gustafsson/3/b34/7a6
 github: mittistormen
 ---
 
-### Varför jobbar du med teknik?
+## Varför jobbar du med teknik?
 Jag är systemutvecklare därför att jag gillar att skapa, jag gillar kod och jag gillar att lösa problem, stora som små. Lycka är att få göra det varje dag!
 
-### Specialistkompetens
+## Specialistkompetens
 ASP.NET, C#, integration, AJAX, CSS
 
-### Bakgrund
+## Bakgrund
 KY-utbildning med inriktning mot .NET-utveckling. Arbetade tidigare på ezy som systemutvecklare med fokus på API-integration, betalningslösningar och webbaserade bokningssystem för resebranschen.
 
-### Superkraft
+## Superkraft
 Snabb som en vessla

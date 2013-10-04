@@ -10,7 +10,7 @@ topImage: "/content/images/section-topbilder/thinking-bw-cropped.jpg"
 backgroundDark: true
 ---
 
-### Vi gillar utmaningar
+## Vi gillar utmaningar
 Varje dag arbetar vi med våra tre grundläggande värderingar i bakhuvudet: Att skapa värde, Att göra något bra och Att ha kul.
 Hos oss arbetar man med olika tekniker - som HTML 5, MVC3, iPhone, Windows Phone 7, nodejs, angularjs, RavenDB och NoSQL. Eller det som känns spännande.
 

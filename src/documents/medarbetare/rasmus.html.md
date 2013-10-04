@@ -20,14 +20,14 @@ linkedin:
 github:
 ---
 
-### Varför jobbar du med teknik?
+## Varför jobbar du med teknik?
 Jag jobbar med allt ifrån klientdatorer till servrar och nätverksprodukter. Att spannet är så pass stort gör att ingen dag är den andra lik – det är roligt! Teknik är också spännande för att man aldrig kan bli fullärd!
 
-### Specialistkompetens
+## Specialistkompetens
 Windows, Office, nätverk
 
-### Bakgrund
+## Bakgrund
 Tvåårig KY-utbildning på Nackademin, Nätsystem/Systemintegration. Arbetade tidigare på ITF som supporttekniker/it-tekniker.
 
-### Superkraft
+## Superkraft
 Jag kan genom ett ”virtuellt skrivbord” i huvudet, oftast vägleda kunder med datorproblem per telefon. Typ: Klicka på start, högerklicka på Dator, välj egenskaper, tryck avancerat, inställningar på Prestanda, avancerat och tryck ändra....

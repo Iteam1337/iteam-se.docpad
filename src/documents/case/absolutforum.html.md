@@ -26,7 +26,7 @@ intro: >
   Prisbelönat globalt extranät för alla som arbetar med marknadsföring av ABSOLUT VODKA.
 ---
 
-### En plattform för 126 marknader världen över
+## En plattform för 126 marknader världen över
 The Absolut Company har ett stort antal medarbetare som ansvarar för varumärket ABSOLUT VODKA på 126 marknader världen över. ABSOLUT FORUM är webbplatsen som håller samman alla som arbetar med marknadsföring av ABSOLUT VODKA, och innehåller all information, allt material och alla verktyg som man behöver i sitt arbete.
 
 Webbplatsen är paketerad enligt ABSOLUT VODKAs sedvanligt höga krav på visuellt uttryck och varumärkesbyggande. ABSOLUT FORUM är helt .NET-baserat och byggt på EPiServer CMS och innehåller en mängd moderna tekniska och gränssnittsmässiga lösningar, som automatisk rubrikgenerering och bildbehandling med WPF, livefunktioner (sökning och kommentering t.ex.) byggda med AJAX, flashbaserad presentation av case och användardefinierade snabblänkar både till sidor på webbplatsen och till personer i kontaktregistret man ofta har kontakt med.
@@ -36,6 +36,6 @@ Ett stort fokus under projektet har legat på att göra informationen lätt till
 
 Alla ABSOLUT VODKAs webbtjänster nås via ABSOLUT FORUM, som tack vare de specialbyggda inloggningsmodulerna för RSA Authentication Manager erbjuder tillgång till tjänsterna med en gemensam inloggning och single sign-on.
 
-### Iteam och Absolut Company vinnare
+## Iteam och Absolut Company vinnare
 EpiServer Awards 2009 för bästa intranät gick till Absolut Company, Iteam och Supernative.
 <iframe width="640" height="480" src="//www.youtube.com/embed/0wt60HyxK_s" frameborder="0" allowfullscreen></iframe>

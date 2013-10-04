@@ -26,10 +26,10 @@ intro: >
   Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 ---
 
-### Wakers Consulting
+## Wakers Consulting
 Efter att i många år skött driften av Wakers IT engagerades Iteam intesivt i övergången till att låta medarbetarna arbeta mot en terminalserver, istället för att arbeta lokalt. Det handlar om att hjälpa Wakers och deras ca 60 medarbetare att i vardagen kunna arbeta enklare, effektivare och säkrare. Syftet har också varit att minska mängden administration av klientdatorer på deras fyra kontor. Kontoren är sammankopplade med VPN-tunnlar som bland annat används för att effevktivisera skrivarhanteringen. Vi kan nu fjärrstyra användare direkt på servern och kan individanpassa användarnas rättigheter. Vi använder Acronis backupsystem över IPSEC mellan två av kontoren för maximal säkerhet och tillgänglighet.
 
-### En bred pallett program
+## En bred pallett program
 Vi sköter här driften av Visma Byråstöd, Tid, Skatt, Koncern samt även programvaror från Björn Lundén, Norstedts och Softone.
 Mail via Kerio Connect kopplad till användarnas Outlook, samt serverövervakning med Dell Foglight NMS ger en trygg och enkel vardag.
 

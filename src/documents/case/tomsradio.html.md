@@ -27,7 +27,7 @@ intro: >
 ---
 
 
-### Världens första individuellt streamade internetradio utvecklades av Iteam
+## Världens första individuellt streamade internetradio utvecklades av Iteam
 Kring millenieskiftet kom entreprenören och radiolegenden Tom McAlevey till Iteam med en dröm. Den var att utveckla en radiostation på nätet som kunde kombinera det bästa från två världar - att ta det etablerade konceptet radio till internet och samtidigt utnyttja möjligheterna till personalisering och individuella stationer. Tom McAlevey grundade under 90-talet den legendariska radiostationen Bandit Rock i Stockholm och hade ett stort kunnande inom radiobranschen. Däremot visste han inte hur drömmen skulle lösas tekniskt. Via sitt nätverk kom Tom i kontakt med Iteam.
 
 Iteam ansvarade för att välja rätt tekniska lösningar, utarbetade konceptet tillsammans med formgivare och användarexperter och tog fram en framgångsrik prototyp.
