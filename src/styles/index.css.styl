@@ -57,13 +57,16 @@
       margin 0
       padding 0
 
-      .link
+      .wrapper
         display table-cell
         vertical-align middle
-        &.invert a
-          color white
-          text-shadow 0 0 1px rgba(0, 0, 0, 0.3)
-        a
+        &.invert
+          a,
+          h1
+            color white
+            text-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+        a,
+        h1
           font-size 1em
           white-space nowrap
           line-height 1.2em
@@ -76,6 +79,8 @@
             content "·"
             width 10px
             display inline-block
+        h1
+          font-size 4em
 
 
     .rn-carousel-indicator
@@ -101,20 +106,16 @@
           background-color transparent
           border-width 1px
 
-  .instagram
-    margin-top 40px
-    width 100%
-
-    .instagram-feed
-      a
-        width 25%
-        margin 0
-        padding 0
-        display inline-block
-        text-align center
-        img
-          border 2px solid white
-          max-width 100%
-          max-height 200px
-          margin 0 auto
-          height auto
+  .instagram-feed
+    a
+      width 50%
+      margin 0
+      padding 0
+      display inline-block
+      text-align center
+      img
+        border 2px solid white
+        max-width 100%
+        max-height 200px
+        margin 0 auto
+        height auto

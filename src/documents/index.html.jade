@@ -6,38 +6,47 @@ topImage: "/content/images/section-topbilder/robots-bw-cropped.jpg"
 backgroundDark: true
 ---
 
-//- Holder for all case-sites
-- var showcases = getShowCase()
+ul.image(
+  rn-carousel
+  rn-carousel-indicator
+)
 
-ul.image(rn-carousel, rn-carousel-indicator)
-  each showcase in showcases
+  li(style="background-image:url(" + document.topImage + ")")
+    .layer
+      .wrapper(class = shouldWeUseADarkBackground(document))
+        h1 Iteam?
+  //- Holder for all case-sites
+  each showcase in getShowCase()
     if !!showcase.topImage
-      li(style="background-image:url(" + showcase.topImage + ");")
+      li(style = "background-image:url(" + showcase.topImage + ");")
         .layer
-          .link(class=shouldWeUseADarkBackground(showcase))
-            a.case-title(href=showcase.url, target="_blank")= showcase.title
+          .wrapper(class = shouldWeUseADarkBackground(showcase))
+            a.case-title(href = showcase.url, target = "_blank")= showcase.title
             br
             if !!showcase.sections
               each section, i in showcase.sections
                 - posClass = i !== 0 ? "separator-before" : ""
                 - section = getMetadataFrom(section)
-                a.section(class=posClass, href=section.url, target="_blank")= section.title
+                a.section(class = posClass, href = section.url, target = "_blank")= section.title
 
 .container
-  .row-fluid#startpage
+  #startpage.row-fluid
 
-    h1 Omöjligt är bara början
+    .row
+      h1 Omöjligt är bara början
 
-    article
-      //- h2 Iteam är en teknikbyrå med fokus på avancerade system.
+    .row-fluid
+      .span6
+        :markdown
 
-      :markdown
-        Vi gillar tuffa utmaningar och jobbar bäst i team.
+          Vi gillar tuffa utmaningar och jobbar bäst i team.
 
-        Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra tack vare människor som vågar drömma.
+          Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra tack vare människor som vågar drömma.
 
-        Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
+          Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
-    .instagram
-      h2 Senaste från instagram
-      instagram(name="iteam1337", max="4")
+      .span6
+        instagram(
+          name = "iteam1337"
+          max = "4"
+        )
