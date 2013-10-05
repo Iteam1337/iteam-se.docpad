@@ -4,36 +4,7 @@ title: 'Iteam.se | Omöjligt är bara början'
 
 topImage: "/content/images/section-topbilder/robots-bw-cropped.jpg"
 backgroundDark: true
-introHeading: >
-  Något fint om iteam
-introSubheading: >
-  Oh något annat fint om iteam
 ---
-
-ul.image(
-  rn-carousel
-  rn-carousel-indicator
-)
-
-  li(style="background-image:url(" + document.topImage + ")")
-    .layer
-      .wrapper(class = shouldWeUseADarkBackground(document))
-        h1= document.introHeading
-        h2= document.introSubheading
-
-  //- Holder for all case-sites
-  each showcase in getShowCase()
-    if !!showcase.topImage
-      li(style = "background-image:url(" + showcase.topImage + ");")
-        .layer
-          .wrapper(class = shouldWeUseADarkBackground(showcase))
-            a.case-title(href = showcase.url, target = "_blank")= showcase.title
-            br
-            if !!showcase.sections
-              each section, i in showcase.sections
-                - posClass = i !== 0 ? "separator-before" : ""
-                - section = getMetadataFrom(section)
-                a.section(class = posClass, href = section.url, target = "_blank")= section.title
 
 .container
   #startpage.row-fluid
@@ -51,8 +22,20 @@ ul.image(
 
           Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
-      .span4.offset1
-        instagram(
-          name = "iteam1337"
-          max = "4"
-        )
+ul.image(
+  rn-carousel
+  rn-carousel-indicator
+)
+  //- Holder for all case-sites
+  each showcase in getShowCase()
+    if !!showcase.topImage
+      li(style = "background-image:url(" + showcase.topImage + ");")
+        .layer
+          .wrapper(class = shouldWeUseADarkBackground(showcase))
+            a.case-title(href = showcase.url, target = "_blank")= showcase.title
+            br
+            if !!showcase.sections
+              each section, i in showcase.sections
+                - posClass = i !== 0 ? "separator-before" : ""
+                - section = getMetadataFrom(section)
+                a.section(class = posClass, href = section.url, target = "_blank")= section.title

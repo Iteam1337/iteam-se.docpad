@@ -129,7 +129,7 @@ html(lang="sv")
                   a(href=subpage.url)= subpage.title
 
   if document.url === "/"
-    #main-holder.ng-cloak!= content
+    #main-holder.ng-cloak(style=topImage())!= content
   else
     #main-holder.ng-cloak
       .background-image(style=topImage())
