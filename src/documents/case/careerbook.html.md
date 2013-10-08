@@ -23,7 +23,7 @@ topImage:
 backgroundDark:
 
 intro: >
-  Academic Communication och Iteam tar fram en mötesplats för arbetsgivare och studenter.
+  Vi tar fram en mötesplats för arbetsgivare och studenter för Academic Communication.
 ---
 
 ## Mötesplatsen för arbetsgivare och studenter

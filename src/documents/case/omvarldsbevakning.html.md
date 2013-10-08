@@ -26,7 +26,7 @@ intro: >
   Vi utvecklade Svensk Byggtjänsts Omvärldsbevakning tillsammans med byråpartnern Britny.
 ---
 
-Iteam har tillsammans med Britny utvecklat Omvärldsbevakning, byggbranschens egen nyhetstjänst. Med sina 20 egna redaktörer och specialister ger Bygginfo en överblick och direkttillgång till fördjupad information om allt som händer i byggbranschen – nya EU-direktiv, myndighetsrekommendationer och nya rön.
+Vi har tillsammans med Britny utvecklat Omvärldsbevakning, byggbranschens egen nyhetstjänst. Med sina 20 egna redaktörer och specialister ger Bygginfo en överblick och direkttillgång till fördjupad information om allt som händer i byggbranschen – nya EU-direktiv, myndighetsrekommendationer och nya rön.
 
 Omvärldsbevakning är helt .NET-baserad och byggd med den senaste publiceringstekniken. Detta i form av EPiServer CMS version 6 och communitypaketet Relate+ för att hantera kommentarer, diskussionsforum och användarprofiler. Redaktörshjälpmedel som automatisk bildanpassning och färdiglayoutade innehållsblock för faktarutor, bilder med bildtext och listor med bifogade filer gör publiceringen av nytt material enkel och snabb.
 

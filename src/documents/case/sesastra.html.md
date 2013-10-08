@@ -23,7 +23,7 @@ topImage:
 backgroundDark:
 
 intro: >
-  Satellitoperatör med expertstöd från Iteam.
+  Vi ger expertstöd till satellitoperatör.
 ---
 ## Teknikstöd för Sverige, Baltikum och Ukraina
 

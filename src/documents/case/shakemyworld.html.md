@@ -7,7 +7,7 @@ releaseDate: 070101
 
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']
 sections: ['Systemutveckling','Rådgivning']
-logo: 'case-logos/shake.tif'
+logo: 'case-logos/shake.jpg'
 
 imageGallery: ['case-galleribilder/shakemyworld/shakemyworld1.jpg','case-galleribilder/shakemyworld/shakemyworld2.jpg','case-galleribilder/shakemyworld/shakemyworld3.jpg']
 
