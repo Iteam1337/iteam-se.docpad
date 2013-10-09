@@ -3,7 +3,7 @@ title: Rådgivning
 layout: page
 tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Entreprenörsrådgivning']
 pageType: Service
-pageOrder: 3
+pageOrder: 1
 subpages: 'tjanster'
 
 topImage: '/content/images/section-topbilder/team-cropped-bw.jpg'

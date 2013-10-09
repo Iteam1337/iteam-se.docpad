@@ -1,6 +1,6 @@
 ul.relatedServices
   .header
-    h2 Taggar
+    h2 Våra tjänster hos denna kund
   each tag in document.tags
     each service in getCollection('tjanster').toJSON()
       each sTag in service.tags

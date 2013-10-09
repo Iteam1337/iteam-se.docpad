@@ -3,7 +3,7 @@ title: Systemutveckling
 layout: page
 tags: ['Systemutveckling']
 pageType: Service
-pageOrder: 1
+pageOrder: 2
 subpages: 'tjanster'
 
 topImage: '/content/images/section-topbilder/team-cropped-bw.jpg'
