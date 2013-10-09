@@ -9,7 +9,7 @@ tags: ['Proof-of-concept','Systemutveckling']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/sb-byggtjanst-logo.png'
 
-imageGallery: []
+imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-omvarldsbevakning1.jpg']
 
 team: ['anders','johanna','mats','dennis','maria','christian']
 siteurl: http://omvarldsbevakning.byggtjanst.se/
