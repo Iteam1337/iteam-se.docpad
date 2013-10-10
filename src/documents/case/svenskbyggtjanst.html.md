@@ -19,7 +19,7 @@ readmorelinks:
 quote:
 about:
 
-topImage: "/content/images/case-topbilder/svenskbyggtjanst.JPG"
+topImage:
 backgroundDark:
 
 intro: >

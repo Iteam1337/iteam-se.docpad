@@ -19,7 +19,7 @@ readmorelinks:
 quote:
 about:
 
-topImage: "/content/images/case-topbilder/mora.JPG"
+topImage:
 backgroundDark:
 
 intro: >
