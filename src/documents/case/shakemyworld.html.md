@@ -19,7 +19,7 @@ readmorelinks:
 quote:
 about:
 
-topImage: "/content/images/case-topbilder/caseshake.JPG"
+topImage: "/content/images/case-topbilder/shake.JPG"
 backgroundDark:
 
 intro: >
