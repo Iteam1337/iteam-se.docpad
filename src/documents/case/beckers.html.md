@@ -19,7 +19,7 @@ readmorelinks:
 quote:
 about:
 
-topImage: "/content/images/case-topbilder/be.jpg"
+topImage: "/content/images/case-topbilder/beckers.JPG"
 backgroundDark: false
 
 intro: >
