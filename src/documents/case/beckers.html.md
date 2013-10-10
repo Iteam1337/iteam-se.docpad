@@ -25,6 +25,7 @@ backgroundDark: false
 intro: >
   Sveriges bästa färgsajt inspirerar och utbildar.
 ---
+
 <img src="/content/images/case-galleribilder/beckers/beckers1.jpg" class="right" alt="">
 
 ## Sveriges bästa färgsajt inspirerar och utbildar
