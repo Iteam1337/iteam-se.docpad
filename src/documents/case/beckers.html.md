@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/beckers.JPG"
-backgroundDark: false
+backgroundDark: true
 
 intro: >
   Sveriges bästa färgsajt inspirerar och utbildar.
