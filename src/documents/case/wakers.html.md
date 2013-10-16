@@ -9,7 +9,7 @@ tags: ['Drift & Support','Specialist- och projektstöd']
 sections: ['Rådgivning','Drift & Support']
 logo: 'case-logos/wakers.jpg'
 
-imageGallery: []
+imageGallery:
 
 team: ['mats','rasmus']
 siteurl: http://www.wakers.se
