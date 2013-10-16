@@ -85,9 +85,18 @@
       margin-left 40px
       width 40%
     .gallery
-      img
-        max-height auto
-        max-width 46%
+      li
+        display inline-block
+        margin-right 20px
+        width 47%
+
+        &:nth-child(2n+2)
+          margin-right 0
+
+        img
+          margin 0 0 20px
+          max-height auto
+          max-width 100%
 
     .about,
     .quote
