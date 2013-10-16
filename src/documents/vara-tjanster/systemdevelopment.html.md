@@ -10,8 +10,8 @@ topImage: '/content/images/section-topbilder/team-cropped-bw.jpg'
 backgroundDark: true
 
 summary: >
-  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt.<br/>
-  Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
+  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt.<p>
+  Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.</p>
 ---
 Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
 

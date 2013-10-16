@@ -14,7 +14,7 @@ imageGallery: ['case-galleribilder/radical/add.PNG', 'case-galleribilder/radical
 team: ['johanna','mats','hans','christian','johan','anders','rickard']
 siteurl: "http://www.radical.fm"
 
-readmorelinks: [{"url":"http://techcrunch.com/2012/11/19/radical-fm-wants-to-go-after-spotify-with-an-ad-free-listener-supported-streamed-music-service/","title":"Techcrunch artikel"},{"url":"http://thenextweb.com/media/2012/11/20/radical-fm-throws-its-hat-into-the-music-streaming-ring-with/","title":"The Next Web artikel"},{"url":"http://radiodirect.com/blog/index.php/how-to-be-rad-an-interview-with-radical-fms-creator-thomas-mcalevey-part-1/","title":"Intervju med Thomas"}]
+readmorelinks: [{"url":"http://techcrunch.com/2012/11/19/radical-fm-wants-to-go-after-spotify-with-an-ad-free-listener-supported-streamed-music-service/","title":"Artikel - Techcrunch"},{"url":"http://thenextweb.com/media/2012/11/20/radical-fm-throws-its-hat-into-the-music-streaming-ring-with/","title":"Artikel - The Next Web"},{"url":"http://radiodirect.com/blog/index.php/how-to-be-rad-an-interview-with-radical-fms-creator-thomas-mcalevey-part-1/","title":"Intervju med Thomas"}]
 
 quote: {"text":"Where the hell is my jetpack?","by":"Tom McAlevey, CEO Radical"}
 about: {"title":"Bakom kulisserna står en legend","text":"Thomas McAlevey, grundaren av den legendariska radiostationen Bandit 105.5 och Spotify-föregångaren tomsradio.com","image":"/content/images/case-galleribilder/radical/tom.jpg"}
