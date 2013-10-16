@@ -4,6 +4,9 @@
  * iPhone
  */
 @media (max-width:480px)
+  canvas
+    width 100% !important
+
   .index
     .container,
     #startpage
@@ -11,15 +14,30 @@
       top 0
       padding-top 0
       padding-bottom 0
+    #startpage
+      box(border-box)
+      padding 0 20px
       h1
         margin-bottom 20px
     .rn-carousel-container
       max-height 300px
+      .layer
+        .wrapper
+          padding 0 20px
+          width 100%
+
+          h1,
+          a.case-title
+            font-size 2.5em
+
       .image
         max-height 300px
       .left,
       .right
         display none
+
+    .instagram-feed
+      margin-bottom 20px
 
   .container
     margin 70px auto 0 !important
@@ -240,14 +258,20 @@
         margin-bottom 20px
         position relative
 
+    .tjanster
+      .offer
+        padding-top 0
+
   #footer
     margin 40px 0 0
     padding 0 20px
     width 100%
     #address
+      text-align center
       width 100%
 
     #followUs
       width 100%
       position relative
+      right 0
       text-align center

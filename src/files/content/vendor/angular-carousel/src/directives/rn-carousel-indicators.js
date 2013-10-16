@@ -6,11 +6,10 @@ angular.module('angular-carousel')
     replace: true,
     scope: {
       items: '=',
-      index: '=',
-      setActiveIndex: '='
+      index: '='
     },
     template: '<div class="rn-carousel-indicator">' +
-                '<span ng-click="$parent.setActiveIndex(i)" ng-repeat="(i, item) in items" ng-class="{active: $index==$parent.index}"></span>' +
+                '<span ng-repeat="item in items" ng-class="{active: $index==$parent.index}">●</span>' +
               '</div>'
   };
 }]);

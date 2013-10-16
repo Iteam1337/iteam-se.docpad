@@ -34,11 +34,7 @@ module.exports = function (grunt) {
           'src/files/content/vendor/jquery.js',
           'src/files/content/vendor/angular-mobile.js',
           'src/files/content/vendor/*.js',
-          'src/files/content/vendor/angular-carousel/angular-carousel.js',
-          'src/files/content/vendor/angular-carousel/CollectionManager.js',
-          'src/files/content/vendor/angular-carousel/rn-carousel.js',
-          'src/files/content/vendor/angular-carousel/rn-carousel-infinite.js',
-          'src/files/content/vendor/angular-carousel/rn-carousel-indicators.js',
+          'src/files/content/vendor/angular-carousel/dist/angular-carousel.js',
           'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
@@ -92,7 +88,7 @@ module.exports = function (grunt) {
           '<%= outPath %>content/styles/vendor.css': [
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
-            'src/files/content/vendor/angular-carousel/angular-carousel.css',
+            'src/files/content/vendor/angular-carousel/dist/angular-carousel.min.css',
             '!*.min.css'
           ]
         }
