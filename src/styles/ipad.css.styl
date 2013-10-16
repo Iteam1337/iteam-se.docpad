@@ -12,19 +12,32 @@
       margin-right 1%
       margin-left 1%
       vertical-align top
-      width 48%
+      width 47%
 
       &:nth-child(3n)
         margin 0
 
       .case-image
+        translate-pos(0,-50%)
         display block
-        margin 0 auto 20px
+        margin 0 auto
         max-height 120px
         width auto
+        left 0
 
       .case-about
         width 100%
+
+  .coworkers
+    .coworker
+      margin-right 20px
+      width 47%
+
+      &:nth-child(2n-2)
+        margin-right 0
+
+      &:nth-child(3n+3)
+        margin-right 20px
 
 /**
  * iPad landscape
@@ -55,6 +68,15 @@
         display none
 
 @media(max-width:979px)
+  .index
+    .container
+      min-height 0
+      padding 0
+
+    .rn-carousel-container
+      .right
+        right -5px
+
   .container
     .page-content
       .text,
@@ -69,7 +91,7 @@
     .container
       .page-content
         .info
-          width 65%
+          width 60%
 
   #coworker
     .desc
@@ -121,6 +143,9 @@
         li
           margin-left 0 !important
 
+  #footer
+    margin-top 0
+    padding-top 0
 
 /**
  * iPad portrait

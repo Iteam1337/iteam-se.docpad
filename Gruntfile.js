@@ -75,7 +75,8 @@ module.exports = function (grunt) {
             "src/styles/coworkers.css.styl",
             "src/styles/page.css.styl",
             "src/styles/*.css.styl",
-            "src/styles/responsive.css.styl"
+            "src/styles/ipad.css.styl",
+            "src/styles/iphone.css.styl"
           ]
         }
       }
