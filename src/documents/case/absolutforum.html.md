@@ -19,8 +19,8 @@ readmorelinks: [{url:'http://www.tekniken.nu/nyheter/vinnarna-i-episerver-awards
 quote:
 about:
 
-topImage:
-backgroundDark:
+topImage: '/content/images/case-topbilder/absolut.jpg'
+backgroundDark: true
 
 intro: >
   Prisbelönat globalt extranät för alla som arbetar med marknadsföring av ABSOLUT VODKA.
