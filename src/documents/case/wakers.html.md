@@ -19,10 +19,8 @@ readmorelinks:
 quote:
 about:
 
-topImage: '/content/images/case-topbilder/wakers.jpg'
+topImage: '/content/images/case-topbilder/dsc_0386_by_kevin_krejci.jpg'
 backgroundDark: true
-flickr: 'http://www.flickr.com/photos/kevinkrejci/3949129184/'
-flickrUsr: 'Kevin Krejci'
 
 intro: >
   Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
