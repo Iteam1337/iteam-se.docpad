@@ -11,7 +11,6 @@ backgroundDark: true
 
 summary: >
   Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.<p>
-  Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.</p>
 ---
 
 Vi hjälper dig som är IT-chef eller IT-ansvarig att planera, utreda, underhålla och övervaka din IT-miljö.
