@@ -6,7 +6,7 @@ pageType: Service
 pageOrder: 3
 subpages: 'tjanster'
 
-topImage: '/content/images/section-topbilder/operations.jpg'
+topImage: '/content/images/section-topbilder/operations-org.jpg'
 backgroundDark: true
 
 summary: >
