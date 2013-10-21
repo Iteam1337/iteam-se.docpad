@@ -21,7 +21,7 @@ github: sophiewesslau
 ---
 
 ## Varför jobbar du med teknik?
-Jag gillar känslan av att vara i navet av det senaste och nyaste. Mina kollegor ger mig den känslan.
+Jag gillar känslan av att vara i navet av det senaste och nyaste. Mina kollegor har koll och de är generösa och delar med sig.
 
 ## Specialistkompetens
 Är en doer.
