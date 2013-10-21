@@ -6,7 +6,7 @@ pageType: Service
 pageOrder: 2
 subpages: 'tjanster'
 
-topImage: '/content/images/section-topbilder/team-cropped-bw.jpg'
+topImage: '/content/images/section-topbilder/jobb.jpg'
 backgroundDark: true
 
 summary: >
