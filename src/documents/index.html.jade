@@ -4,28 +4,22 @@ title: 'Iteam.se | Omöjligt är bara början'
 
 topImage: "/content/images/section-topbilder/robots-bw-cropped.jpg"
 backgroundDark: true
+introHeading: >
+  För nio år sedan fanns inte Youtube.
+introSubheading: >
 ---
-
-.container
-  #startpage.row-fluid
-
-    .row
-      h1 Omöjligt är bara början
-
-    .row-fluid
-      .span7
-        :markdown
-
-          Vi gillar tuffa utmaningar och jobbar bäst i team.
-
-          Iteam grundades 1995 utifrån en passion för teknik och en dröm. Det visade sig att hela världen går att förbättra tack vare människor som vågar drömma.
-
-          Vi tror att ett litet team med noga utvalda uppgifter och agila arbetssätt kan prestera bättre än många stora konsultföretag.
 
 ul.image(
   rn-carousel
   rn-carousel-indicator
+  loop=true
+  loopInterval=6000
 )
+  li(style="background-image:url(" + document.topImage + ")")
+      .layer
+        .wrapper(class = shouldWeUseADarkBackground(document))
+          h1= document.introHeading
+          h2= document.introSubheading
   //- Holder for all case-sites
   each showcase in getShowCase()
     if !!showcase.topImage
@@ -39,3 +33,21 @@ ul.image(
                 - posClass = i !== 0 ? "separator-before" : ""
                 - section = getMetadataFrom(section)
                 a.section(class = posClass, href = section.url, target = "_blank")= section.title
+
+.container
+  #startpage.row-fluid
+
+    .row-fluid
+      .span12
+        :markdown
+          Att prata om passion blir lätt pretentiöst. Men faktum är att det är det som är kärnan i Iteam. Sedan 1995 har världen genomgått en teknisk revolution och under hela den tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa pryl och nästa utmaning.
+            Det senaste är inte automatiskt det bästa - det vet vi bättre än de flesta. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
+
+    .row-fluid
+      .span12
+        h2 Följ med oss på Instagram
+
+        instagram(
+          name = "iteam1337"
+          max = "4"
+        )

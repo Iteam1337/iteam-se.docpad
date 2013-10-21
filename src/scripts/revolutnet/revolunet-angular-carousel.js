@@ -3,7 +3,7 @@
   angular.module("revolunet.angular-carousel", [
     "revolunet.collection-manager"
   ])
-  .directive('rnCarousel', ['$compile', '$parse', '$swipe', '$document', '$window', 'CollectionManager', function($compile, $parse, $swipe, $document, $window, CollectionManager) {
+  .directive('rnCarousel', ['$compile', '$parse', '$swipe', '$document', '$window', 'CollectionManager', '$timeout', function($compile, $parse, $swipe, $document, $window, CollectionManager, $timeout) {
     /* track number of carousel instances */
     var carousels = 0;
 
@@ -46,7 +46,6 @@
             repeatAttribute.value = originalItem + ' in carouselCollection.cards ' + trackProperty;
         }
         return function(scope, iElement, iAttrs, controller) {
-          console.log(scope)
           carousels++;
           var carouselId = 'rn-carousel-' + carousels,
               swiping = 0,                    // swipe status
@@ -55,7 +54,10 @@
               offset  = 0,                    // move offset
               minSwipePercentage = 0.1,       // minimum swipe required to trigger slide change
               containerWidth = 0,          // store width of the first slide
-              skipAnimation = true;
+              skipAnimation = true,
+              loop = !!iAttrs.loop,
+              loopInterval = iAttrs.loopInterval || 6000,
+              disableLoop = false;
 
           /* add a wrapper div that will hide the overflow */
           var carousel = iElement.wrap("<div id='" + carouselId +"' class='rn-carousel-container'></div>"),
@@ -360,6 +362,34 @@
               // todo: requestAnimationFrame instead
               moveDelay = ($window.jasmine || $window.navigator.platform=='iPad')?0:50;
 
+          function loopToNext(first) {
+            var lastIndex, position, tmpSlideIndex;
+            if (!first && !disableLoop) {
+              lastIndex = scope.carouselCollection.getLastIndex();
+              position = scope.carouselCollection.position;
+              tmpSlideIndex = Math.min(Math.max(0, position + loop), lastIndex);
+              if (tmpSlideIndex === lastIndex) {
+                loop = -1;
+              } else if (tmpSlideIndex === 0) {
+                loop = 1;
+              }
+              scope.carouselCollection.goTo(tmpSlideIndex, true);
+            }
+            $timeout(loopToNext, loopInterval);
+          }
+
+          if (loop && scope.carouselCollection.getLastIndex() !== 1) {
+            $(carousel).mouseenter(function() {
+              disableLoop = true;
+            }).mouseleave(function() {
+              disableLoop = false;
+            });
+            $timeout(function() {
+              loop = 1;
+              loopToNext(true);
+            }, loopInterval);
+          }
+
           $swipe.bind(carousel, {
             /* use angular $swipe service */
             start: function(coords) {
@@ -369,6 +399,7 @@
                 startX = coords.x;
               }
               $document.bind('mouseup', documentMouseUpEvent);
+              disableLoop = true;
             },
             move: function (coords) {
               if (swiping===0) return;
@@ -396,6 +427,7 @@
             },
             end: function (coords) {
               swipeEnd(coords);
+              disableLoop = false;
             }
           });
         //  if (containerWidth===0) updateContainerWidth();
