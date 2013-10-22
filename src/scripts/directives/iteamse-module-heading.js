@@ -11,7 +11,7 @@
    *
    *   Required values
    *   headings {string} - String of headings from the document
-   *   
+   *
    *   Example:
    *     <heading headings="Heading 1,Heading 2"></heading>
    */
@@ -25,8 +25,8 @@
       templateUrl: "/content/partials/heading.html",
       link: function (scope, element) {
         var headings = scope.headings.split(',');
-        var random = Math.floor(Math.random() * (headings.length - 1 + 1)) + 0;
-        
+        var max = headings.length - 1;
+        var random = Math.round(Math.random() * max);
         scope.randomHeading = headings[random];
       }
     };

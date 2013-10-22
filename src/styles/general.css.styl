@@ -159,3 +159,122 @@ h4
   svg(linkedin)
 .e-instagram
   svg(instagram)
+
+.rn-carousel-container
+  border none
+  position relative
+  margin-bottom 20px
+  background-color #444
+  ul
+    height 100%
+    width 100%
+    li
+      background-repeat no-repeat
+      background-position 50% 50%
+
+  &.invert
+    background-color #eee
+    .layer
+      .wrapper
+        a,
+        h1,
+        h2
+          color white
+          text-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+    .rn-carousel-indicator
+      span
+        box-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+        background-color #fff
+        border 0px solid #fff
+
+    .image
+      li
+        background-color #eee
+    .e-chevron-thin-left
+      background-image url("/content/images/svg/left.svg")
+    .e-chevron-thin-right
+      background-image url("/content/images/svg/right.svg")
+
+  .left,
+  .right
+    position absolute
+    font-size 3em
+    top 50%
+    margin-top -1em
+    line-height 1em
+    cursor pointer
+    &.disabled
+      opacity 0 !important
+
+  .left
+    left 20px
+
+  .right
+    right 20px
+
+  .e-chevron-thin-left
+    background-image url("/content/images/svg/left-dark.svg")
+  .e-chevron-thin-right
+    background-image url("/content/images/svg/right-dark.svg")
+
+  .image
+    height 450px
+    li
+      background-color #444
+      background-position 50% 50%
+      background-repeat no-repeat
+      vendor("background-size", cover)
+
+  .layer
+    display table
+    height 100%
+    width 100%
+    top -0px
+    position relative
+    text-align center
+    margin 0
+    padding 0
+
+    .wrapper
+      display table-cell
+      vertical-align middle
+      a,
+      h1,
+      h2
+        font-size 1em
+        line-height 1.2em
+        position relative
+        color #333
+        &.case-title
+          font-size 4em
+        &.separator-before:before
+          content "·"
+          width 10px
+          display inline-block
+      h1
+        font-size 4em
+        margin 0 auto
+        width 80%
+
+  .rn-carousel-indicator
+    background none
+    position absolute
+    top 5px
+
+    span
+      padding 0
+      height 10px
+      width 10px
+      margin 4px
+      content ""
+      cursor pointer
+      display inline-block
+      background-color #000
+      border 0px solid #000
+      box-shadow 0 0 1px rgba(255, 255, 255, 0.3)
+      border-radius 10px
+      &.active
+        width 8px
+        height 8px
+        background-color transparent
+        border-width 1px
