@@ -3,7 +3,7 @@
   angular.module("revolunet.angular-carousel", [
     "revolunet.collection-manager"
   ])
-  .directive('rnCarousel', ['$compile', '$parse', '$swipe', '$document', '$window', 'CollectionManager', '$timeout', function($compile, $parse, $swipe, $document, $window, CollectionManager, $timeout) {
+  .directive('rnCarousel', ['$rootScope', '$compile', '$parse', '$swipe', '$document', '$window', 'CollectionManager', '$timeout', function($rootScope, $compile, $parse, $swipe, $document, $window, CollectionManager, $timeout) {
     /* track number of carousel instances */
     var carousels = 0;
 
@@ -63,7 +63,6 @@
               disableLoop = false,
               disableLoopWhileUpdating = false,
               colorArrayCopy = colorArray.slice();
-
 
           /* add a wrapper div that will hide the overflow */
           var carousel = iElement.wrap("<div id='" + carouselId +"' class='rn-carousel-container'></div>"),
@@ -241,21 +240,26 @@
           window.addEventListener('resize', resize);
 
           function resize () {
-              updateContainerWidth();
-              updateSlidePosition();
+            updateContainerWidth();
+            updateSlidePosition();
           }
 
           function updateContainerWidth() {
-              container.css('width', 'auto');
-              skipAnimation = true;
-              var slides = carousel.children('li');
+            container.css('width', 'auto');
+            skipAnimation = true;
+            var slides = carousel.children('li');
+            if (!!$(container).is(":hidden")) {
+              containerWidth = $('body').width() / 1.3;
+              container.css('height', '100%');
+            } else {
               if (slides.length === 0) {
                 containerWidth = carousel[0].getBoundingClientRect().width;
               } else {
                 containerWidth = slides[0].getBoundingClientRect().width;
               }
-              container.css('width', containerWidth + 'px');
-              return containerWidth;
+            }
+            container.css('width', containerWidth + 'px');
+            return containerWidth;
           }
 
           scope.setActiveIndex = function (index) {
@@ -440,6 +444,10 @@
               swipeEnd(coords);
               disableLoop = false;
             }
+          });
+
+          $rootScope.$on('forcePosition', function (event, index) {
+            scope.carouselCollection.goTo(index, true);
           });
         //  if (containerWidth===0) updateContainerWidth();
         };
