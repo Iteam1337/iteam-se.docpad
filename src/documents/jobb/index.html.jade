@@ -35,5 +35,5 @@ chevron: true
         each career in getCollection('ledigatjanster').toJSON()
           if !!career.title
             li
-              a.title(href=career.url)= career.title
+              a.title(href=career.url)= career.title + ' »'
               p!= career.summary

@@ -12,7 +12,7 @@
         '</ul>' +
         '<div class="modal fade hide" tabindex="-1" role="dialog" aria-hidden="true">' +
             '<div class="modal-body">' +
-              '<button class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">Stäng</button>' +
+              '<button class="btn btn-inverse btn-large" data-dismiss="modal" aria-hidden="true" ng-click="close()">Stäng</button>' +
               '<ul class="images" rn-carousel rn-carousel-indicator>' +
                 '<li ng-repeat="item in images" style="background-image:url(\'{{item}}\');"></li>' +
               '</ul>' +
