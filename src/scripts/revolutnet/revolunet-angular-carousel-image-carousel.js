@@ -5,9 +5,11 @@
 
     var template = '' +
       '<div>' +
-        '<div class="images">' +
-          '<div class="image" ng-repeat="image in images" ng-click="showModalAtIndex($index)"><img ng-src="{{image}}" /></div>' +
-        '</div>' +
+        '<ul class="images">' +
+          '<li ng-repeat="image in images" ng-click="showModalAtIndex($index)">' +
+            '<img ng-src="{{image}}" alt="image"/>' +
+          '</li>' +
+        '</ul>' +
         '<div class="modal fade hide" tabindex="-1" role="dialog" aria-hidden="true">' +
             '<div class="modal-body">' +
               '<button class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">Stäng</button>' +

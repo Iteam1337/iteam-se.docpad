@@ -249,8 +249,7 @@
             skipAnimation = true;
             var slides = carousel.children('li');
             if (!!$(container).is(":hidden")) {
-              containerWidth = $('body').width() / 1.3;
-              container.css('height', '100%');
+              containerWidth = $('body').width() * 0.9;
             } else {
               if (slides.length === 0) {
                 containerWidth = carousel[0].getBoundingClientRect().width;
