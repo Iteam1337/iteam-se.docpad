@@ -6,6 +6,7 @@
     "iteamse.factory.github",
     "iteamse.factory.twitter",
     "iteamse.module.about-view",
+    "iteamse.module.heading",
     "iteamse.module.instagram",
     "iteamse.module.twitter",
     "iteamse.module.github",
