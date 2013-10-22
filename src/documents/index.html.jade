@@ -13,13 +13,15 @@ introSubheading: >
 ul.image(
   rn-carousel
   rn-carousel-indicator
+  loop=true
+  loopInterval=6000
 )
 
   li(style="background-image:url(" + document.topImage + ")")
-    .layer
-      .wrapper(class = shouldWeUseADarkBackground(document))
-        h1= document.introHeading
-        h2= document.introSubheading
+      .layer
+        .wrapper(class = shouldWeUseADarkBackground(document))
+          h1= document.introHeading
+          h2= document.introSubheading
 
   //- Holder for all case-sites
   each showcase in getShowCase()
