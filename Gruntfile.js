@@ -22,6 +22,9 @@ module.exports = function (grunt) {
           "src/scripts/config/*.js",
           "src/scripts/factory/*.js",
           "src/scripts/directives/*.js",
+          "src/scripts/revolutnet/revolunet-collection-manager.js",
+          "src/scripts/revolutnet/revolunet-angular-carousel.js",
+          "src/scripts/revolutnet/revolunet-angular-carousel-image-carousel.js",
           "src/scripts/app.js",
           "src/scripts/controllers/*.js",
           "src/scripts/**/*.js"
@@ -34,7 +37,6 @@ module.exports = function (grunt) {
           'src/files/content/vendor/jquery.js',
           'src/files/content/vendor/angular-mobile.js',
           'src/files/content/vendor/*.js',
-          'src/files/content/vendor/angular-carousel/dist/angular-carousel.js',
           'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
