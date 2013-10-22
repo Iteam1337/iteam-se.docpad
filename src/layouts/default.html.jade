@@ -9,7 +9,7 @@
 each doc in pages
   - arr.push(doc)
 - blogg = { url: 'http://tekniken.nu/', title: 'Blogg', pageIndex: 15 }
-- arr.splice(arr.length - 2, 0, blogg)
+- arr.splice(arr.length - 1, 0, blogg)
 - pages = arr
 //- TEMP SOLLUTION for blogs
 
@@ -113,7 +113,7 @@ html(lang="sv")
           - hasSubpage = (doc.subpages) ? i : null
           li(mobile-nav, data-subpage=hasSubpage)
             a(class=clazz, data-url=doc.url)= doc.title
-            if (doc.subpages)
+            if (doc.chevron)
               .e-chevron-thin-right
 
       #subpageWrap.ng-cloak

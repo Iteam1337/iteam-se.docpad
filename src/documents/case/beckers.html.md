@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/beckers.JPG"
-backgroundDark: true
+backgroundDark: false
 
 intro: >
   Beckers.se - En responsiv sajt om färger
