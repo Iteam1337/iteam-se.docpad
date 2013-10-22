@@ -13,9 +13,10 @@ chevron: true
 ---
 
 .row
-  h2 Vi arbetar med Rådgivning, Systemutveckling och Drift & Support.
+  h2 När webbyråer skapar kampanjer bygger vi digitala tjänster och företag
 
   :markdown
+    Vi arbetar med Rådgivning, Systemutveckling och Drift & Support. 
     Resultatet blir tex förstudier, digitala tjänster, siter, verktyg, eller analys av IT-miljö.
     [Hans Rollman](/medarbetare/hans) har alla svar på frågor kring Rådgivning och Systemutveckling. [Mats Egardt](/medarbetare/mats) berättar allt om It-Support.
   img: "/content/images/section-topbilder/placeholder.jpg" 
@@ -23,6 +24,6 @@ chevron: true
 .row-fluid.tjanster
   each doc in getCollection('tjanster').toJSON()
     .span4.offer
-      a.title(href=doc.url)= doc.title
+      a.title(href=doc.url)= doc.title + ' »'
 
       p!= doc.summary
