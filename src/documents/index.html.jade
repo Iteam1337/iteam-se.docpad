@@ -5,8 +5,7 @@ title:
 topImage: "/content/images/section-topbilder/start.JPG"
 backgroundDark: true
 
-introHeading: >
-  För nio år sedan fanns inte Youtube.
+introHeading: ['För nio år sedan fanns inte Youtube.','För tio år sedan fanns inte Facebook']
 introSubheading: >
 ---
 
@@ -17,16 +16,15 @@ ul.image(
   loopInterval=6000
 )
 
-  li(style="background-image:url(" + document.topImage + ")")
+  li(style="background-image:url(" + document.topImage + ")", invert=!!shouldWeUseADarkBackground(document))
       .layer
         .wrapper(class = shouldWeUseADarkBackground(document))
-          h1= document.introHeading
-          h2= document.introSubheading
+          heading(headings = document.introHeading)
 
   //- Holder for all case-sites
   each showcase in getShowCase()
     if !!showcase.topImage
-      li(style = "background-image:url(" + showcase.topImage + ");")
+      li(style = "background-image:url(" + showcase.topImage + ");", invert=!!shouldWeUseADarkBackground(showcase))
         .layer
           .wrapper(class = shouldWeUseADarkBackground(showcase))
             a.case-title(href = showcase.url, target = "_blank")= showcase.title
@@ -39,7 +37,6 @@ ul.image(
 
 .container
   #startpage.row-fluid
-
     .row-fluid
       .span12
         :markdown
