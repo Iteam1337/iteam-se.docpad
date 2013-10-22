@@ -7,6 +7,7 @@ backgroundDark: true
 
 introHeading: ["För tre år sedan fanns inte iPad", "För sex år sedan fanns inte iPhone", "Internet var ingen fluga", "Ordet digitalkamera försvinner", "När webbyråer skapar kampanjer bygger vi digitala tjänster och företag", "Alla borde lära sig programmera i lågstadiet, Mark Zuckerberg"]
 introSubheading: >
+  Andra raden
 ---
 
 ul.image(
@@ -21,8 +22,9 @@ ul.image(
     invert=!!shouldWeUseADarkBackground(document)
   )
     .layer
-      .wrapper(class = shouldWeUseADarkBackground(document))
-        heading(headings = document.introHeading)
+      .wrapper(class=shouldWeUseADarkBackground(document))
+        heading(headings=document.introHeading)
+        h2=document.introSubheading
 
   //- Holder for all case-sites
   each showcase in getShowCase()
