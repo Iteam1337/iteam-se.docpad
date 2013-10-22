@@ -21,13 +21,14 @@ github: mittistormen
 ---
 
 ## Varför jobbar du med teknik?
-Jag är systemutvecklare därför att jag gillar att skapa, jag gillar kod och jag gillar att lösa problem, stora som små. Lycka är att få göra det varje dag!
+Med teknik löser man problem – stora som små, varje dag. Att skapa hållbara system är en av mina drivkrafter. Trots alla mina år inom branschen lär jag mig något nytt varje dag eftersom de tekniska möjligheterna förändras hela tiden.
 
 ## Specialistkompetens
 ASP.NET, C#, integration, AJAX, CSS
 
 ## Bakgrund
-KY-utbildning med inriktning mot .NET-utveckling. Arbetade tidigare på ezy som systemutvecklare med fokus på API-integration, betalningslösningar och webbaserade bokningssystem för resebranschen.
+Med en KY-utbildning och 5 års systemutveckling inom resebranchen i bagaget, så började jag på Iteam 2009. Det visade sig vara ett mycket lyckosamt byte, eftersom min resa kunde fortsätta med utveckling av engagerande och avancerade system för snabbfotade uppdragsgivare.
 
 ## Superkraft
-Snabb som en vessla
+Snabb som en vessla.
+
