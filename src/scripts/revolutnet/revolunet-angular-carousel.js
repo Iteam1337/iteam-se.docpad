@@ -59,10 +59,11 @@
               containerWidth = 0,          // store width of the first slide
               skipAnimation = true,
               loop = !!iAttrs.loop,
-              loopInterval = iAttrs.loopInterval || 6000,
+              loopInterval = +iAttrs.loopinterval || 6000,
               disableLoop = false,
               colorArrayCopy = colorArray.slice();
 
+          console.log(loopInterval);
 
           /* add a wrapper div that will hide the overflow */
           var carousel = iElement.wrap("<div id='" + carouselId +"' class='rn-carousel-container'></div>"),
