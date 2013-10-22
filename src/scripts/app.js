@@ -13,6 +13,7 @@
     "iteamse.module.main-title",
     "revolunet.collection-manager",
     "revolunet.angular-carousel",
+    "revolunet.angular-carousel.indicators",
     "revolunet.angular-carousel.image-carousel"
   ])
 

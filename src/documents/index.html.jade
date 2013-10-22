@@ -17,7 +17,7 @@ ul.image(
   loopInterval=6000
 )
 
-  li(style="background-image:url(" + document.topImage + ")")
+  li(style="background-image:url(" + document.topImage + ")", invert=!!shouldWeUseADarkBackground(document))
       .layer
         .wrapper(class = shouldWeUseADarkBackground(document))
           h1= document.introHeading
@@ -26,7 +26,7 @@ ul.image(
   //- Holder for all case-sites
   each showcase in getShowCase()
     if !!showcase.topImage
-      li(style = "background-image:url(" + showcase.topImage + ");")
+      li(style = "background-image:url(" + showcase.topImage + ");", invert=!!shouldWeUseADarkBackground(showcase))
         .layer
           .wrapper(class = shouldWeUseADarkBackground(showcase))
             a.case-title(href = showcase.url, target = "_blank")= showcase.title
