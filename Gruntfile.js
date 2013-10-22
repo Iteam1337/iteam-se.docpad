@@ -24,6 +24,7 @@ module.exports = function (grunt) {
           "src/scripts/directives/*.js",
           "src/scripts/revolutnet/revolunet-collection-manager.js",
           "src/scripts/revolutnet/revolunet-angular-carousel.js",
+          "src/scripts/revolutnet/revolunet-angular-carousel-indicators.js",
           "src/scripts/revolutnet/revolunet-angular-carousel-image-carousel.js",
           "src/scripts/app.js",
           "src/scripts/controllers/*.js",

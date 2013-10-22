@@ -24,7 +24,8 @@
             repeatAttribute = liAttributes['ng-repeat'],
             isBuffered = false,
             originalCollection,
-            fakeArray;
+            fakeArray,
+            colorArray = [];
         if (!repeatAttribute) repeatAttribute = liAttributes['data-ng-repeat'];
         if (!repeatAttribute) repeatAttribute = liAttributes['x-ng-repeat'];
         if (!repeatAttribute) {
@@ -35,15 +36,17 @@
           // if we use DOM nodes instead of ng-repeat, create a fake collection
           originalCollection = 'fakeArray';
           fakeArray = Array.prototype.slice.apply(liChilds);
+          fakeArray.map(function(el) {
+            colorArray.push(!!el.getAttribute('invert') ? 'invert' : '');
+          });
         } else {
           var exprMatch = repeatAttribute.value.match(/^\s*(.+)\s+in\s+(.*?)\s*(\s+track\s+by\s+(.+)\s*)?$/),
               originalItem = exprMatch[1],
               trackProperty = exprMatch[3] || '';
           originalCollection = exprMatch[2];
           isBuffered = angular.isDefined(tAttrs['rnCarouselBuffered']);
-
-            /* update the current ngRepeat expression and add a slice operator */
-            repeatAttribute.value = originalItem + ' in carouselCollection.cards ' + trackProperty;
+          /* update the current ngRepeat expression and add a slice operator */
+          repeatAttribute.value = originalItem + ' in carouselCollection.cards ' + trackProperty;
         }
         return function(scope, iElement, iAttrs, controller) {
           carousels++;
@@ -57,7 +60,9 @@
               skipAnimation = true,
               loop = !!iAttrs.loop,
               loopInterval = iAttrs.loopInterval || 6000,
-              disableLoop = false;
+              disableLoop = false,
+              colorArrayCopy = colorArray.slice();
+
 
           /* add a wrapper div that will hide the overflow */
           var carousel = iElement.wrap("<div id='" + carouselId +"' class='rn-carousel-container'></div>"),
@@ -266,7 +271,7 @@
           }
 
 
-          /* enable carousel indicator */
+          /* Arrows! */
           if (angular.isDefined(iAttrs.rnCarouselIndicator)) {
             var elements = '<div class="left e-chevron-thin-left disabled" ng-click="previous()" ng-class="{\'disabled\': previousDisabled()}"></div>';
             elements += '<div class="right e-chevron-thin-right" ng-click="next()" ng-class="{\'disabled\': nextDisabled()}"></div>';
@@ -313,6 +318,7 @@
                     .css(translateSlideProperty(offset, true));
             }
             skipAnimation = false;
+            container.removeClass('invert').addClass(colorArrayCopy[scope.carouselCollection.index]);
           }
 
           /* bind events */
