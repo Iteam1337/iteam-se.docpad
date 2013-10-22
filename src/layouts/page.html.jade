@@ -11,6 +11,7 @@ h1.main-title(title,class=shouldWeUseADarkBackground())= document.title
       if (document.pageType === 'Service')
         .span6!= content
         .span6
+          h4!= document.tagHeader
           include ../jade_includes/service
       else
         .span12!= content
