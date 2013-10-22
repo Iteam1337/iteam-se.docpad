@@ -31,6 +31,29 @@
     margin-bottom 20px
     background-color #444
 
+    &.invert
+      background-color #eee
+      .layer
+        .wrapper
+          a,
+          h1,
+          h2
+            color white
+            text-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+      .rn-carousel-indicator
+        span
+          box-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+          background-color #fff
+          border 0px solid #fff
+
+      .image
+        li
+          background-color #eee
+      .e-chevron-thin-left
+        background-image url("/content/images/svg/left.svg")
+      .e-chevron-thin-right
+        background-image url("/content/images/svg/right.svg")
+
     .left,
     .right
       position absolute
@@ -47,6 +70,11 @@
 
     .right
       right 20px
+
+    .e-chevron-thin-left
+      background-image url("/content/images/svg/left-dark.svg")
+    .e-chevron-thin-right
+      background-image url("/content/images/svg/right-dark.svg")
 
     .image
       height 450px
@@ -69,12 +97,6 @@
       .wrapper
         display table-cell
         vertical-align middle
-        &.invert          
-          a,
-          h1,
-          h2
-            color white
-            text-shadow 0 0 1px rgba(0, 0, 0, 0.3)
         a,
         h1,
         h2
@@ -106,10 +128,10 @@
         content ""
         cursor pointer
         display inline-block
-        background-color #fff
-        border 0px solid #fff
-        vendor("border-radius", 10px)
-        box-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+        background-color #000
+        border 0px solid #000
+        box-shadow 0 0 1px rgba(255, 255, 255, 0.3)
+        border-radius 10px
         &.active
           width 8px
           height 8px
