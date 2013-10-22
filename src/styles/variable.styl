@@ -36,6 +36,9 @@ shadow()
 border-radius()
   vendor('border-radius', arguments)
 
+translate-pos(x,y)
+  vendor("transform", translateX(x) translateY(y))
+
 transition()
   vendor('transition', arguments)
 
@@ -44,6 +47,10 @@ transform()
 
 transform-origin()
   vendor('transform-origin', arguments)
+
+two-column(count = 2, gap = 20px)
+  vendor('column-count', count)
+  vendor('golumn-gap', gap)
 
 user-select()
   vendor('user-select', arguments)

@@ -2,16 +2,16 @@
 title: Systemutveckling
 layout: page
 tags: ['Systemutveckling']
+tagHeader: hej
 pageType: Service
 pageOrder: 2
 subpages: 'tjanster'
 
-topImage: '/content/images/section-topbilder/team-cropped-bw.jpg'
+topImage: '/content/images/section-topbilder/systemutveckling.jpg'
 backgroundDark: true
 
 summary: >
-  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt.<br/>
-  Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
+  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt.<p>
 ---
 Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
 

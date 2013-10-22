@@ -5,12 +5,17 @@
     background-position 50% 50%
     background-size cover
   .container
-    max-width 720px
-    margin 0 auto
-    min-height 376px
+    box(border-box)
     background-color transparent
+    margin 0 auto
+    max-width 1170px
+    min-height 376px
+    padding 20px
+
     p
-     max-width none
+      two-column()
+      max-width none
+
     img
       max-width 100%
       max-height 100%
@@ -25,6 +30,29 @@
     position relative
     margin-bottom 20px
     background-color #444
+
+    &.invert
+      background-color #eee
+      .layer
+        .wrapper
+          a,
+          h1,
+          h2
+            color white
+            text-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+      .rn-carousel-indicator
+        span
+          box-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+          background-color #fff
+          border 0px solid #fff
+
+      .image
+        li
+          background-color #eee
+      .e-chevron-thin-left
+        background-image url("/content/images/svg/left.svg")
+      .e-chevron-thin-right
+        background-image url("/content/images/svg/right.svg")
 
     .left,
     .right
@@ -42,6 +70,11 @@
 
     .right
       right 20px
+
+    .e-chevron-thin-left
+      background-image url("/content/images/svg/left-dark.svg")
+    .e-chevron-thin-right
+      background-image url("/content/images/svg/right-dark.svg")
 
     .image
       height 450px
@@ -64,21 +97,13 @@
       .wrapper
         display table-cell
         vertical-align middle
-        &.invert
-          a,
-          h1,
-          h2
-            color white
-            text-shadow 0 0 1px rgba(0, 0, 0, 0.3)
         a,
         h1,
         h2
           font-size 1em
-          white-space nowrap
           line-height 1.2em
           position relative
-          color #666
-          text-shadow 0 0 1px rgba(255, 255, 255, 0.3)
+          color #333
           &.case-title
             font-size 4em
           &.separator-before:before
@@ -87,6 +112,8 @@
             display inline-block
         h1
           font-size 4em
+          margin 0 auto
+          width 80%
 
     .rn-carousel-indicator
       background none
@@ -101,10 +128,10 @@
         content ""
         cursor pointer
         display inline-block
-        background-color #fff
-        border 0px solid #fff
-        vendor("border-radius", 10px)
-        box-shadow 0 0 1px rgba(0, 0, 0, 0.3)
+        background-color #000
+        border 0px solid #000
+        box-shadow 0 0 1px rgba(255, 255, 255, 0.3)
+        border-radius 10px
         &.active
           width 8px
           height 8px
@@ -113,7 +140,7 @@
 
   .instagram-feed
     a
-      width 50%
+      width 25%
       margin 0
       padding 0
       display inline-block
@@ -121,6 +148,5 @@
       img
         border 2px solid white
         max-width 100%
-        max-height 200px
         margin 0 auto
         height auto

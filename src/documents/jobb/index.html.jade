@@ -3,11 +3,13 @@ title: Jobb
 layout: section
 tags: ['intro', 'page']
 pageType: "karriar"
-pageIndex: 5
+pageIndex: 4
 dontIndexInAnyCollection: true
 
-topImage: "/content/images/section-topbilder/jobb.JPG"
+topImage: "/content/images/section-topbilder/isolde.jpg"
 backgroundDark: true
+
+chevron: true
 ---
 
 .row-fluid#karriar
@@ -16,11 +18,12 @@ backgroundDark: true
       :markdown
         ## Vi gillar utmaningar
 
-        Hos oss arbetar vi med olika tekniker, som HTML5, MVC 3, node.js, AngularJS, RavenDB och NoSQL. Eller det som känns spännande.
+        Vi arbetar med olika tekniker som HTML5, MVC 3, node.js, AngularJS, RavenDB och NoSQL. Eller det som känns spännande och bär på lösningen.
 
-        Självklart är du med och formar din egen roll och du styr hur du löser dina uppgifter. Alla ska utvecklas på Iteam – varje dag.
+        Som vår medarbetare bildar man sin egen roll. Alla ska utvecklas på Iteam – varje dag.
         
-        Vi arbetar i team med några utvecklare och projektledare. De olika teamen är dedikerade till specifika projekt, men behövs mer kraft från något annat team så delar vi med oss till varandra. I övrigt spelas det en hel del pingis för små pauser i arbetet.
+        Vi tillämpar Scrum, i team med några utvecklare och projektledare. De olika teamen är dedikerade till specifika projekt och i dagsläget är vi två team men vi siktar alltid på att växa. 
+        I övrigt spelas det pingis, vi umgås och skrattar.
 
         På vår blogg [tekniken.nu](//tekniken.nu) delar vi med oss av våra tankar och idéer.
 
@@ -33,4 +36,4 @@ backgroundDark: true
           if !!career.title
             li
               a.title(href=career.url)= career.title
-              p= career.summary
+              p!= career.summary

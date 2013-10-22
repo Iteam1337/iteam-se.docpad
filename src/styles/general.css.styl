@@ -22,11 +22,12 @@ a.btn
   margin-right 20px
 
 a.tag
+  box(border-box)
   font-family regularFontStack
   display inline-block
   position relative
   height 40px
-  width 80%
+  width 100%
   padding 0px 20px
   border-width 0px 0px 1px
   border-style none none solid
@@ -43,8 +44,13 @@ a.tag
   &:hover
     background-color _orange
 
+  &.remote
+    width 25%
+    margin-right 20px
+
 body,
 html
+  -webkit-overflow-scrolling touch
   background #fff
   font-family sansSerifFontStack
   font-size 1em

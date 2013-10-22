@@ -15,15 +15,16 @@ layout: default
     .top-part
 
       .center
-        div(class=inlineClass, style=inlineColor)
-          img(src=getGravatarUrl(200))
+        a(href="tel:" + document.phonenumber)
+          div(class=inlineClass, style=inlineColor)
+            img(src=getGravatarUrl(200))
         .job= document.jobTitle
         h1.name= document.title
 
       .left
         .email
           a(href="mailto:" + document.email)= document.email
-        .phone= document.phonenumber
+          .phone= document.phonenumber
 
       .right
         .social-buttons

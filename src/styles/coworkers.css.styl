@@ -8,7 +8,7 @@
     position relative
     margin-right 10px
     height 150px
-    width 32%
+    width 31%
     &:nth-child(2n)
 
 
@@ -257,6 +257,7 @@
   .social-media
     a
       margin 0 20px
+      width 29%
 
   .github,
   .cases
@@ -295,8 +296,9 @@
 
     .git-description,
     .git-message
-      word-wrap break-word
-      white-space pre-wrap
+      overflow hidden
+      text-overflow ellipsis
+      white-space nowrap
 
     .git-language
       margin-top 10px
@@ -333,7 +335,7 @@
 
   .user-content
     width 100%
-    margin 0
+    margin 20px 0 !important
     padding 0
     &.multi
       ul

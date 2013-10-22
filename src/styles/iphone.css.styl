@@ -1,215 +1,12 @@
 @import "variable"
 
-
-@media (max-width:980px)
-  .case-index
-    p,
-    h2
-      max-width 100%
-
-  #cases
-    .case
-      display inline-block
-      margin-right 1%
-      margin-left 1%
-      vertical-align top
-      width 48%
-
-      &:nth-child(3n)
-        margin 0
-
-      .case-image
-        display block
-        margin 0 auto 20px
-        max-height 120px
-        width auto
-
-      .case-about
-        width 100%
-
-/**
- * iPad landscape
- */
-@media (max-width:1199px) and (min-width:980px)
-  #coworker
-    .social-media
-      a:last-child
-        display none
-
-
-/**
- * iPad landscape
- */
-@media (max-width:979px) and (min-width:768px)
-  #case
-    img
-      &.right
-        float right
-        position relative
-        right 0
-        width 300px
-    .about
-      width 100%
-  #coworker
-    .social-media
-      a:last-child
-        display none
-
-@media(max-width:979px)
-  .container
-    .page-content
-      .text,
-      .left-part
-        width 100%
-      .info,
-      .right-part
-        width 100%
-        padding 0
-
-  .medarbetare-index
-    .container
-      .page-content
-        .info
-          width 65%
-
-  #coworker
-    .desc
-      vendor("column-count", 1)
-      vendor("column-gap", 0)
-
-    .user-content.multi
-      width 100%
-
-    .top-part
-      .center
-        width 100%
-        margin-bottom 60px
-
-      .left,
-      .right
-        top inherit
-        vertical-align bottom
-        max-width none
-        width 50%
-
-      .left
-        bottom -50px
-      .right
-        bottom -65px
-        .social-buttons
-          text-align center
-        .social
-          text-align right
-
-  #case
-    .content
-      .about,
-      .quote
-        width 100%
-        float none
-      .quote
-        blockquote
-          text-align left
-
-      .twitter
-        .tweets
-          li
-            width 100%
-            max-width 370px
-      .twitter,
-      .relatedServices,
-      .team
-        li
-          margin-left 0 !important
-
-
-/**
- * iPad portrait
- */
-@media (max-width:767px)
-
-  .index
-    .background-image
-      background-position left bottom
-
-  #header
-
-    .nav
-      text-align right
-
-    .brand
-      float left
-      position relative
-
-  body
-    padding 0
-
-
-  #coworker
-    .user-content
-      &.multi ul,
-      &.multi li,
-      ul,
-      li
-        width 100%
-        margin 0
-        padding 0 !important
-
-    .social-media
-      a
-        padding 0 10px 10px
-
-  .background-image
-    background-position 50% 0
-
-  .container
-    padding 0 20px
-
-  .coworkers
-    .coworker
-      width 100%
-      margin-left 0
-      padding 0
-
-      .info
-        float left
-        margin-left 15px
-
-      a
-        .image,
-        &.portrait
-          max-height 100px
-          max-width 100px
-          float left
-          position relative
-
-  #coworker .github .git
-    width 100%
-    &:last-child
-      margin-left 0
-
-  #case
-    .content
-      .about
-        height 100%
-        margin-bottom 20px
-        img
-          position relative
-          width 100%
-        .about-text
-          position relative
-          max-height none
-          width 100%
-          display block
-
-  .visible-phone
-    display none !important
-
-
 /**
  * iPhone
  */
 @media (max-width:480px)
+  canvas
+    width 100% !important
+
   .index
     .container,
     #startpage
@@ -217,23 +14,51 @@
       top 0
       padding-top 0
       padding-bottom 0
+    #startpage
+      box(border-box)
+      padding 0
       h1
         margin-bottom 20px
+
     .rn-carousel-container
       max-height 300px
+      .layer
+        .wrapper
+          padding 0 20px
+          width 100%
+
+          h1,
+          a.case-title
+            font-size 2.5em
+
       .image
         max-height 300px
       .left,
       .right
         display none
 
+    .container
+      h2
+        font-size 21px
+
+    .instagram-feed
+      margin-bottom 20px
+      
+      a
+        width 50%
+
   .container
     margin 70px auto 0 !important
+
+
+
     .main-title
       margin-top -30px
-      font-size 2.6em
+      font-size 2.3em
       color #333 !important
       text-shadow none !important
+      position relative
+      white-space normal
 
   iframe
     height auto
@@ -350,6 +175,9 @@
 
   #cases
     .case
+      margin 0
+      width 100%
+
       .case-about
         width 100%
       .case-image
@@ -360,16 +188,23 @@
         width auto
 
   #case
+    margin 0 auto 0
+
     img
       &.right
         display none
 
     .about
       .content
-        .team
-          li
-            display block
-            width 100%
+        .text
+          width 100%
+        .information
+          margin-left 0
+          width 100%
+          .team
+            li
+              display block
+              width 100%
 
   .coworkers
     .coworker
@@ -426,20 +261,28 @@
           text-align center
 
   #page
+    margin: 20px 0
+
     .history
       .year
         left 0
         margin-bottom 20px
         position relative
 
+    .tjanster
+      .offer
+        padding-top 0
+
   #footer
     margin 40px 0 0
     padding 0 20px
     width 100%
     #address
+      text-align center
       width 100%
 
     #followUs
       width 100%
       position relative
+      right 0
       text-align center

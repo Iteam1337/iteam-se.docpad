@@ -2,16 +2,16 @@
 title: Drift & Support
 layout: page
 tags: ['Drift & Support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
+tagHeader: hej
 pageType: Service
 pageOrder: 3
 subpages: 'tjanster'
 
-topImage: '/content/images/section-topbilder/operations.jpg'
+topImage: '/content/images/section-topbilder/operations-org.jpg'
 backgroundDark: true
 
 summary: >
-  Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.<br/>
-  Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.
+  Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.<p>
 ---
 
 Vi hjälper dig som är IT-chef eller IT-ansvarig att planera, utreda, underhålla och övervaka din IT-miljö.

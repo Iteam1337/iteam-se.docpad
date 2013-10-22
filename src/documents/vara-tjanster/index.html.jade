@@ -6,21 +6,19 @@ pageIndex: 1
 subpages: 'tjanster'
 dontIndexInAnyCollection: true
 
-topImage: "/content/images/section-topbilder/varatjanster3.JPG"
+topImage: "/content/images/section-topbilder/varatjanster4.JPG"
 backgroundDark: true
 
-img: "/content/images/section-topbilder/placeholder.jpg"
+chevron: true
 ---
 
 .row
   h2 Vi arbetar med Rådgivning, Systemutveckling och Drift & Support.
 
   :markdown
-    Resultatet blir bl.a. digitala tjänster, siter, verktyg, analys av IT-miljö samt förstudier.
-    Läs mer om våra tjänster här nedan. För mer information kontakta [Hans Rollman](/medarbetare/hans).
-
-.row
-  img.tjanst(src=document.img)
+    Resultatet blir tex förstudier, digitala tjänster, siter, verktyg, eller analys av IT-miljö.
+    [Hans Rollman](/medarbetare/hans) har alla svar på frågor kring Rådgivning och Systemutveckling. [Mats Egardt](/medarbetare/mats) berättar allt om It-Support.
+  img: "/content/images/section-topbilder/placeholder.jpg" 
 
 .row-fluid.tjanster
   each doc in getCollection('tjanster').toJSON()

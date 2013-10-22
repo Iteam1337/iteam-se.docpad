@@ -9,7 +9,7 @@ tags: ['Drift & Support','Specialist- och projektstöd']
 sections: ['Rådgivning','Drift & Support']
 logo: 'case-logos/wakers.jpg'
 
-imageGallery: []
+imageGallery:
 
 team: ['mats','rasmus']
 siteurl: http://www.wakers.se
@@ -19,8 +19,8 @@ readmorelinks:
 quote:
 about:
 
-topImage:
-backgroundDark:
+topImage: '/content/images/case-topbilder/dsc_0386_by_kevin_krejci.jpg'
+backgroundDark: true
 
 intro: >
   Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
