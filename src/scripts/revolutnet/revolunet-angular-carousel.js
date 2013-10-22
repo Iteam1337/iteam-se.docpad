@@ -385,7 +385,7 @@
           }
 
           if (loop && scope.carouselCollection.getLastIndex() !== 1) {
-            $(carousel).mouseenter(function() {
+            $(container).mouseenter(function() {
               disableLoop = true;
             }).mouseleave(function() {
               disableLoop = false;
