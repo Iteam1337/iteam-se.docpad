@@ -59,7 +59,7 @@
               containerWidth = 0,          // store width of the first slide
               skipAnimation = true,
               loop = !!iAttrs.loop,
-              loopInterval = iAttrs.loopInterval || 6000,
+              loopInterval = +iAttrs.loopinterval || 6000,
               disableLoop = false,
               disableLoopWhileUpdating = false,
               colorArrayCopy = colorArray.slice();
