@@ -90,7 +90,7 @@ module.exports = function (grunt) {
           '<%= outPath %>content/styles/vendor.css': [
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
-            'src/files/content/vendor/angular-carousel/dist/angular-carousel.min.css',
+            'src/scripts/revolutnet/angular-carousel.css',
             '!*.min.css'
           ]
         }
