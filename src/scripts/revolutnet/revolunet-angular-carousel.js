@@ -61,6 +61,7 @@
               loop = !!iAttrs.loop,
               loopInterval = iAttrs.loopInterval || 6000,
               disableLoop = false,
+              disableLoopWhileUpdating = false,
               colorArrayCopy = colorArray.slice();
 
 
@@ -305,6 +306,7 @@
 
           function updateSlidePosition(forceSkipAnimation) {
             /* trigger carousel position update */
+            disableLoopWhileUpdating = true;
             skipAnimation = !!forceSkipAnimation || skipAnimation;
             if (containerWidth===0) updateContainerWidth();
             offset = Math.round(scope.carouselCollection.getRelativeIndex() * -containerWidth);
@@ -319,6 +321,9 @@
             }
             skipAnimation = false;
             container.removeClass('invert').addClass(colorArrayCopy[scope.carouselCollection.index]);
+            $timeout(function () {
+              disableLoopWhileUpdating = false;
+            }, (+loopInterval)/2);
           }
 
           /* bind events */
@@ -370,7 +375,7 @@
 
           function loopToNext(first) {
             var lastIndex, position, tmpSlideIndex;
-            if (!first && !disableLoop) {
+            if (!first && !disableLoopWhileUpdating && !disableLoop) {
               lastIndex = scope.carouselCollection.getLastIndex();
               position = scope.carouselCollection.position;
               tmpSlideIndex = Math.min(Math.max(0, position + loop), lastIndex);
