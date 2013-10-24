@@ -2,7 +2,7 @@
 title: Rådgivning
 layout: page
 tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Entreprenörsrådgivning']
-tagHeader: hej
+tagHeader: Rådgivningscase
 pageType: Service
 pageOrder: 1
 subpages: 'tjanster'
