@@ -97,6 +97,20 @@ module.exports = function (grunt) {
         }
       }
     },
+    shell: {
+      docpad: {
+        options: {
+          stdout: true
+        },
+        command: "docpad generate --env static"
+      },
+      preparedeploy: {
+        options: {
+          stdout: true
+        },
+        command: "bash preparedeploy.sh"
+      }
+    },
 
     copy: {
       main: {
@@ -106,6 +120,16 @@ module.exports = function (grunt) {
             cwd: "<%=outPath%>",
             src: ["**"],
             dest: "<%= outBuildPath %>/"
+          }
+        ]
+      },
+      release: {
+        files: [
+          {
+            expand: true,
+            cwd: "<%=outPath%>",
+            src: ["**"],
+            dest: "/Volumes/guld/iteam.se"
           }
         ]
       }
@@ -137,6 +161,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-shell');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -158,5 +183,9 @@ module.exports = function (grunt) {
     'copy'
   ]);
 
-
+  grunt.registerTask('deploy', [
+    'shell:docpad',
+    'shell:preparedeploy',
+    'copy:release'
+  ]);
 };

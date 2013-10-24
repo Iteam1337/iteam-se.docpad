@@ -4,6 +4,7 @@
 !/src/
 !.gitignore
 !config.json
+!preparedeploy.sh
 !docpad.coffe
 !Gruntfile.js
 !LICENSE.md
