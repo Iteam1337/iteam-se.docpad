@@ -1,7 +1,7 @@
 ---
 title: Drift & Support
 layout: page
-tags: ['Drift & Support','IT-review','Specialist- och projektstöd','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
+tags: ['Drift & Support','IT-review','Specialistsupport','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 tagHeader: Drift – & Supportkunder
 pageType: Service
 pageOrder: 3
@@ -22,7 +22,7 @@ Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.
 En IT-review innebär analys och dokumentation av din IT-miljö. Du får en tydlig översikt av allt från hårdvara och säkerhet, till mjukvara och licenser. I åtgärdsrapporten ser du också tydligt hur du kan åtgärda dagens brister och fel. Du får också en bra grund för att hålla IT-miljön och IT-dokumentationen uppdaterad på lång sikt.
 
 
-## Specialist- och projektstöd
+## Specialistsupport
 Med vår specialist- och projektsupport får du som IT-chef eller IT-ansvarig förstärkning till din specialistroll. Att kämpa ensam under planerings- och implementeringsfasen av IT-projekt kan vara mycket tufft. Vi agerar stöd, bollplank och specialistförstärkning.
 
 

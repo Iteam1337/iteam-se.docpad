@@ -1,5 +1,5 @@
 ---
-title: Omvärldsbevakning
+title: Bygginfo
 subtitle:
 layout: case
 caseIndex: 10
@@ -26,14 +26,12 @@ intro: >
   Vi utvecklade Svensk Byggtjänsts Omvärldsbevakning tillsammans med byråpartnern Britny.
 ---
 
-Vi har tillsammans med Britny utvecklat Omvärldsbevakning, byggbranschens egen nyhetstjänst. Med sina 20 egna redaktörer och specialister ger Bygginfo en överblick och direkttillgång till fördjupad information om allt som händer i byggbranschen – nya EU-direktiv, myndighetsrekommendationer och nya rön.
+##Byggbranschens omvärldsbevakning
+Varje dag händer det något nytt i byggbranschen, allt från nya EU-direktiv, myndighetsrekommendationer och nya rön. Iteam fick i uppdrag att tillsammans med Britny, utveckla Bygginfo – en nyhetstjänst som samlar det senaste inom byggbranschen.  
+För att göra det enkelt och snabbt för redaktörerna att publicera utvecklades hjälpmedel som automatisk bildanpassning och färdiglayoutade innehållsblock för faktarutor, bilder med bildtext och listor med bifogade filer. Det finns också möjlighet för användare att kommentera, diskutera och skapa egna användarprofiler.
 
-Omvärldsbevakning är helt .NET-baserad och byggd med den senaste publiceringstekniken. Detta i form av EPiServer CMS version 6 och communitypaketet Relate+ för att hantera kommentarer, diskussionsforum och användarprofiler. Redaktörshjälpmedel som automatisk bildanpassning och färdiglayoutade innehållsblock för faktarutor, bilder med bildtext och listor med bifogade filer gör publiceringen av nytt material enkel och snabb.
+Bygginfo är sammankopplad med Svensk Byggtjänsts övriga webbplatser vilket underlättar för användaren att hoppa fritt mellan dem utan att behöva logga in på nytt. En omfattande teknisk integration med de övriga webbplatserna gör att kontoinformation, uppgifter om prenumerationer och licenser samt transaktioner lagras på en central plats och finns åtkomlig oavsett vilken av webbtjänsterna man för tillfället använder. Tjänsten är integrerad med Svensk Byggtjänsts webbutik, vilket gör att redaktörerna kan placera ut puffar för produkter som är relaterade till innehållet på en artikel eller nyhet.
 
-Omvärldsbevakning är sammankopplad med Svensk Byggtjänsts övriga webbplatser och har en för användaren helt sömlös single sign-on. En omfattande teknisk integration med de övriga webbplatserna gör att kontoinformation, uppgifter om prenumerationer och licenser samt transaktioner lagras på en central plats och finns åtkomlig oavsett vilken av webbtjänsterna man för tillfället använder. Tjänsten är också integrerad med Svensk Byggtjänsts webbutik, vilket gör att redaktörerna kan placera ut puffar för produkter som är relaterade till innehållet på en artikel eller nyhet.
+Med hjälp av Svensk Byggtjänsts centrala sökmotor baserad på FAST-plattformen indexeras hela innehållet på sajten. En avancerad sökalgoritm levererar ett personligt innehåll baserat på den inloggade användarens valda preferenser inom de olika fackområdena, innehållets publiceringstid och redaktörsprioritering, användarens senaste inloggningstillfälle och andra parametrar. På så sätt levereras alltid ett relevant nyhetsflöde.
 
-Med hjälp av Svensk Byggtjänsts centrala sökmotor baserad på FAST-plattformen indexeras hela innehållet i Omvärldsbevakning. En avancerad sökalgoritm levererar ett personaliserat innehåll som baseras på den inloggade användarens valda preferenser inom de olika fackområdena, innehållets publiceringstid och redaktörsprioritering, användarens senaste inloggningstillfälle och andra parametrar. På så sätt levereras alltid ett relevant nyhetsflöde.
-
-Övriga deltagare i projektet har varit Comperio som har tagit fram sökmotoralgoritmerna i FAST och Mogul som har anpassat den befintliga webbutiken för integration.
-
-Omvärldsbevakning nominerades i klassen Bästa Webb B2B i Episerver Awards 2010.
+Bygginfo nominerades i klassen Bästa Webb B2B i Episerver Awards 2010.

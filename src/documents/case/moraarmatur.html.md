@@ -27,9 +27,8 @@ intro: >
 ---
 
 ## Allt för hemmafixaren till proffset
-Tillsammans med oss har Supernative tagit fram Mora Armaturs nya globala webbplats – <a href="http://www.moraarmatur.com" target="_blank">www.moraarmatur.com</a>. På den nya webbplatsen står produkten i fokus: alla produkter är tydligt presenterade med stora bilder och snabbnavigerade översiktssidor för varje produktslag. Om varje produkt finns lättillgänglig information om alla utföranden och varianter, inklusive Mora Armaturs garantier och miljömärkningen EcoSafe. För hemmafixare och proffs finns också sprängskisser med exakta mått för varje produkt – man behöver aldrig fundera på om den nya köksblandaren kommer passa i köket eller inte.
-
-Produktinformationen uppdateras automatiskt varje natt tack vare integration med Mora Armaturs produktdatabas, så informationen du ser som besökare är alltid den senaste. Vill man dyka ännu djupare i informationen kommer man snabbt åt den webbaserade produktkatalogen som också innehåller information om reservdelar och verktyg.
-
-## Systersajten FM Mattsson också från Iteam
-Förutom produkter har nya www.moraarmatur.com en snabb och kraftfull sökmotor med koppling till Google Maps för att hitta bland de nästan 5000 återförsäljarna, samt allmän information om företaget och dess historia. www.moraarmatur.com finns på 6 språk. Iteam har tidigare utvecklat systersajten <a href="http://www.fmmattsson.com" target="_blank">www.fmmattsson.com</a> och Ostnor-koncernens webbplats <a href="http://www.ostnor.com" target="_blank">www.ostnor.com</a>.
+Iteam, tillsammans med Supernative, fick uppdraget att ta fram Mora Armaturs globala sajt, <a href="http://www.moraarmatur.com" target="_blank">www.moraarmatur.com</a>.
+Sajten är anpassad för både hemmafixaren och proffset med skisser och exakta mått för varje produkt. Det gör det enkelt att veta om den nya köksblandaren passar i köket eller inte. Sajten är lättnavigerad och alla produkter presenteras med bilder och varianter. 
+Iteam valde att integrera Mora Armaturs produktdatabas med sajten, vilket innebär att databasen uppdateras varje natt för att besökaren alltid ska få den senaste informationen. Vill man dyka ännu djupare i informationen kommer man snabbt åt den webbaserade produktkatalogen som också innehåller information om reservdelar och verktyg. 
+Förutom produktinformationen har sajten, som finns på sex olika språk, en snabb och kraftfull sökmotor kopplad till Google Maps. Den gör det enkelt att hitta allmän information, företagshistoria eller kontaktuppgifter till någon av de 5000 återförsäljarna. 
+Iteam har även utvecklat systersajten <a href="http://www.moraarmatur.com" target="_blank">www.fmmattsson.com</a> och Ostnor-koncernens webbplats <a href="http://www.moraarmatur.com" target="_blank">www.ostnor.com</a>.
