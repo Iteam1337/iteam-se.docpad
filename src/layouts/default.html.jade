@@ -29,11 +29,11 @@ each doc in pages
   - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false
 
 //- Other Scripts
-- scripts.add(["/content/scripts/vendor.js"])
+//- scripts.add(["/content/scripts/vendor.js"])
 
 //- User
 - styles.add(["/content/styles/vendor.css","/content/styles/iteamse.css"])
-- scripts.add(["/content/scripts/iteamse.js"])
+//- scripts.add(["/content/scripts/iteamse.js"])
 
 !!! 5
 html(lang="sv")
@@ -156,3 +156,5 @@ html(lang="sv")
 
   // Scripts
   != scripts.toHTML()
+  script(src="/content/scripts/vendor.js")
+  script(src="/content/scripts/iteamse.js")

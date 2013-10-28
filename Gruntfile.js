@@ -176,7 +176,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean',
     'concat',
-    'uglify',
+    /*'uglify',*/
     'stylus',
     'cssmin',
     'jade',
