@@ -6,7 +6,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: christian
 
-jobTitle: VD
+jobTitle: VD & Technical Creative Director
 email: christian.landgren@iteam.se
 phonenumber: 0707 - 75 58 31
 
