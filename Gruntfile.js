@@ -166,7 +166,7 @@ module.exports = function (grunt) {
   // Default task(s).
   grunt.registerTask('default', [
     'concat',
-    /*'uglify',*/
+    'uglify',
     'stylus',
     'cssmin',
     'jade'
@@ -176,7 +176,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean',
     'concat',
-    /*'uglify',*/
+    'uglify',
     'stylus',
     'cssmin',
     'jade',
