@@ -1,6 +1,6 @@
 ---
-title: Radical.FM
-subtitle: Radio Re-Defined
+title: Radical FM
+subtitle: 
 layout: case
 caseIndex: 0
 releaseDate: 110101
@@ -16,23 +16,21 @@ siteurl: "http://www.radical.fm"
 
 readmorelinks: [{"url":"http://techcrunch.com/2012/11/19/radical-fm-wants-to-go-after-spotify-with-an-ad-free-listener-supported-streamed-music-service/","title":"Artikel - Techcrunch"},{"url":"http://thenextweb.com/media/2012/11/20/radical-fm-throws-its-hat-into-the-music-streaming-ring-with/","title":"Artikel - The Next Web"},{"url":"http://radiodirect.com/blog/index.php/how-to-be-rad-an-interview-with-radical-fms-creator-thomas-mcalevey-part-1/","title":"Intervju med Thomas"}]
 
-quote: {"text":"Where the hell is my jetpack?","by":"Tom McAlevey, CEO Radical"}
-about: {"title":"Bakom kulisserna står en legend","text":"Thomas McAlevey, grundaren av den legendariska radiostationen Bandit 105.5 och Spotify-föregångaren tomsradio.com","image":"/content/images/case-galleribilder/radical/tom.jpg"}
-
 topImage: "/content/images/case-topbilder/brian.jpg"
 backgroundDark: false
 
 intro: >
-  "Upptäck ny musik, dela och sänd - Radical.FM är din egen personliga webbradiokanal"
+  Världens första individuellt streamade internetradio utvecklades av Iteam.
 ---
 
-## 22 miljoner låtar i biblioteket
-Vi har lett utvecklingen av Radical.FM – internetradio som den borde vara: personaliserade strömmar, egna radiokanaler, fri uppladdning av musik för osignade band och möjligheten för vem som helst att vara programvärd. Radical.FM är en internetradio där man som användare enkelt sätter ihop sitt eget personaliserade utbud genom att kombinera genrer efter önskemål. Saknas en genre kan man lätt sätta ihop en egen genom att söka i det omfattande musikbiblioteket på 22 miljoner låtar och sätta ihop en egen genrelista.
+## Tomsradio som blev Radical FM
+###Världens första individuellt streamade internetradio
+Kring millenieskiftet kom entreprenören och radiolegenden Tom McAlevey till Iteam med en dröm. Den var att utveckla en radiostation på nätet som kunde kombinera det bästa från två världar - att ta det etablerade konceptet radio till internet och samtidigt utnyttja möjligheterna till personliga och individuella stationer. Resultatet blev Tomsradio där Iteam ansvarade för att välja rätt tekniska lösningar, utarbeta konceptet tillsammans med formgivare och användarexperter och ta fram en framgångsrik prototyp. 
 
-Vill man ta steget till att skapa en egen radiokanal finns RadCast – ett inbyggd stöd för att vara radio-DJ och både välja låtar och sköta pratet, direkt till alla som lyssnar. För den som vill skapa en egen talkshow finns möjlighet att både sända video, välja musik och prata via den unika tjänsten TALK. För det osignerade bandet är Radical.FM en gyllene kanal – alla band kan ladda upp sin musik utan krav på distributionsavtal. Man får enkelheten i publiceringen som i tjänster som SoundCloud, samtidigt som man får exponeringen och möjligheten till integration i övrigt musikutbud som i Spotify.
+Efter ett års arbete var projektet klart för sin officiella lansering. Betaversionen av tjänsten som fick namnet Tomsradio hade spritt sig och var mycket omtyckt bland både lyssnare och journalister. IDG skrev en lång hyllning till tjänsten som de benämnde "Den bästa radiostationen i världen". Läs gärna IDG:s artikel från 2002.
 
-## Bakom kulisserna står en legend
-Bakom Radical.FM står Thomas McAlevey, grundaren av den legendariska svenska radiostationen Bandit 105.5 och Spotify-föregångaren tomsradio.com. Den nya tjänsten är helt gratis och reklamfri, och kommer att finansieras med hjälp av donationer från frekventa användare. Radical.FM använder den senaste webbtekniken (bland annat HTML5, NodeJS och MongoDB) för att hantera strömning och uppspelning av musik, och för att garantera en extrem skalbarhet. Den svenska teknikbyrån Iteam har fungerat som teknisk kravställare och har under projektet löpande arbetat med att utvärdera och rekommendera tekniker för att lösa Radical.FMs unika tekniska utmaningar.
+Timingen för lanseringen av projektet visade sig dock tyvärr bli mycket ogynnsam. Den sammanlagda effekten av 11:e september och dotcom-kraschen blev stor för både skivbolag och investerare och tjänsten fick stängas ner i väntan på bättre tider.
 
-## Teknisk kvalitet och innovation i världsklass
+Nu, tio år senare har projektet åter fått liv och går nu under namnet Radical FM. Även denna gång har Iteam lett utvecklingen av tjänsten som ger användarna möjlighet att själva kunna sända radioprogram och för ladda upp egenproducerad musik utan krav på distributionsavtal. 
+
 Under projektets utvecklingsfaser har Iteam fungerat som beställarstöd för kunden, samt som projektledare och teknisk mentor för produktionsteamet som finns i Rumänien. ”Att använda Iteam som beställarstöd och teknisk lead ger oss det bästa av två världar – teknisk kvalitet och innovation i världsklass till väsentligt lägre pris.” berättar Tom McAlevey, grundare och VD i den amerikanska startupen Radical.FM.
