@@ -23,7 +23,7 @@ topImage: '/content/images/case-topbilder/dsc_0386_by_kevin_krejci.jpg'
 backgroundDark: true
 
 intro: >
-  Uppdaterad it-miljö för ökad säkerhet och produktivitet
+  Vi uppdaterade it-miljö för ökad säkerhet och produktivitet.
 ---
 
 ## Wakers Redovisningsbyrå

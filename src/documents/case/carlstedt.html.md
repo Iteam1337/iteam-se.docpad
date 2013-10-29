@@ -22,7 +22,7 @@ topImage: "/content/images/case-topbilder/ca.jpg"
 backgroundDark: true
 
 intro: >
-  Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
+  Vi gav expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 ---
 
 ## Ett heltäckande drift- och support uppdrag

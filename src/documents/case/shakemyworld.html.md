@@ -23,7 +23,7 @@ topImage: "/content/images/case-topbilder/shake.JPG"
 backgroundDark:
 
 intro: >
-  En kombination av Facebook, dejtingsajt och en aktivitetssajt.
+  Vi ville skapa en kombination av Facebook, dejtingsajt och en aktivitetssajt.
 
 
 ---

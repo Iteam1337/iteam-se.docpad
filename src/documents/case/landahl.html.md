@@ -7,7 +7,7 @@ releaseDate: 040303
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
 sections: ['Drift & Support']
-logo: 'case-logos/landahl.jpg'
+logo: 'case-logos/landahl.png'
 
 imageGallery: []
 
@@ -23,7 +23,7 @@ topImage:
 backgroundDark:
 
 intro: >
-  Expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
+  Vi gav expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.
 ---
 
 ## Fullständigt IT-support

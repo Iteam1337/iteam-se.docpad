@@ -27,15 +27,13 @@ intro: >
 ---
 
 ## En plattform för 126 marknader världen över
-The Absolut Company har ett stort antal medarbetare som ansvarar för varumärket ABSOLUT VODKA på 126 marknader världen över. ABSOLUT FORUM är webbplatsen som håller samman alla som arbetar med marknadsföring av ABSOLUT VODKA, och innehåller all information, allt material och alla verktyg som man behöver i sitt arbete.
+Vi utvecklade ett globalt intraranät för alla som marknadsför ABSOLUT VODKA.
+---
 
-Webbplatsen är paketerad enligt ABSOLUT VODKAs sedvanligt höga krav på visuellt uttryck och varumärkesbyggande. ABSOLUT FORUM är helt .NET-baserat och byggt på EPiServer CMS och innehåller en mängd moderna tekniska och gränssnittsmässiga lösningar, som automatisk rubrikgenerering och bildbehandling med WPF, livefunktioner (sökning och kommentering t.ex.) byggda med AJAX, flashbaserad presentation av case och användardefinierade snabblänkar både till sidor på webbplatsen och till personer i kontaktregistret man ofta har kontakt med.
+## En plattform för 126 marknader världen över
+The Absolut Company har ett stort antal medarbetare som ansvarar för varumärket ABSOLUT VODKA och sitter utspridda på 126 marknader världen över. Iteam fick i uppdrag att utveckla ett intranät för all information, material och verktyg som medarbetarna behöver i sitt arbete. 
 
-### Taggmoln och realtidssök långt före sin tid
-Ett stort fokus under projektet har legat på att göra informationen lätt tillgänglig på flera sätt, för att passa så många olika användare som möjligt. En traditionell menynavigering slussar användarna till det viktigaste innehållet. All information är taggad med nyckelord, som används för att hjälpa användarna att hitta rätt information på alternativa sätt (t.ex. via taggmoln). En kraftfull sökfunktion söker i realtid med hjälp av AJAX antingen globalt eller på det avsnitt användaren befinner sig.
+Vi byggde ABSOLUT FORUM, ett intranät anpassat för många användare och lättillgänglig information. För att göra det så enkelt som möjligt för användarna taggade vi all information med nyckelord och valde en traditionell menynavigering som slussar dem vidare till det viktigaste innehållet. För att få en gemensam inloggning och single sign-on valde vi att bygga inloggningsmodulerna för RSA Authentication Manager speciellt anpassade för ABSOLUT FORUM. Intranätet är byggt på EpiServer CMS helt .NET-baserat.   
+För projektet fick vi, tillsammans med the Absolut Company och Supernative priset för ”Bästa intranät” under EpiServer Awards 2009.
 
-Alla ABSOLUT VODKAs webbtjänster nås via ABSOLUT FORUM, som tack vare de specialbyggda inloggningsmodulerna för RSA Authentication Manager erbjuder tillgång till tjänsterna med en gemensam inloggning och single sign-on.
-
-## Iteam och Absolut Company vinnare
-EpiServer Awards 2009 för bästa intranät gick till Absolut Company, Iteam och Supernative.
-<iframe width="640" height="480" src="//www.youtube.com/embed/0wt60HyxK_s" frameborder="0" allowfullscreen></iframe>
+Vill du veta mer om projektet? Kontakta <a href="medarbetare/hans">Anders Bornholm</a>.
