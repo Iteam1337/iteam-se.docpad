@@ -23,11 +23,7 @@ topImage: '/content/images/case-topbilder/absolut.jpg'
 backgroundDark: true
 
 intro: >
-  Prisbelönat globalt extranät för alla som arbetar med marknadsföring av ABSOLUT VODKA.
----
-
-## En plattform för 126 marknader världen över
-Vi utvecklade ett globalt intraranät för alla som marknadsför ABSOLUT VODKA.
+  Vi utvecklade ett globalt intraranät för alla som marknadsför ABSOLUT VODKA.
 ---
 
 ## En plattform för 126 marknader världen över
