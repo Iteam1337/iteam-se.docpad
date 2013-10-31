@@ -23,7 +23,6 @@ topImage: "/content/images/case-topbilder/beckers.JPG"
 backgroundDark: true
 
 intro: >
-  Beckers.se - En responsiv sajt om färger
   Iteam fick i uppdrag att skapa en responsiv sajt för Beckers.
 ---
 

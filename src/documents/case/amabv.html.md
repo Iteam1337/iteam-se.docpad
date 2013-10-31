@@ -23,7 +23,7 @@ topImage:
 backgroundDark:
 
 intro: >
-  Google Docs-liknande beskrivningsverktyg för byggsverige.
+  Svensk Byggtjänst ville ha ett beskrivningsverktyg för byggsverige. Vi tog fram ett Google Docs-liknande verktyg.
 ---
 
 ## Webbaserat verktyg för byggsverige
