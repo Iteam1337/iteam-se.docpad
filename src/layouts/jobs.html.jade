@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+h1.main-title(title,class=shouldWeUseADarkBackground())= document.title
+
+.row-fluid(make-anchors)
+  #page.page.job
+    article.page-content
+      .span7!= content
+      .span5.right-coloumn
+        h2 Krav
+        .row!= fromMarkdown(document.krav)
+        h2 Meriterande
+        .row!= fromMarkdown(document.meriterande)
+        h2 Anstallningsform
+        .row!= fromMarkdown(document.anstallningsform)

@@ -145,9 +145,9 @@ docpadConfig =
       d = new Date(date)
 
       if short
-        return day_abbr[d.getDay()] + " " + d.getDate() + " " + month_abbr[d.getMonth()] + ", " + (d.getFullYear() + "").substr(2, 2)
+        return "#{day_abbr[d.getDay()]} #{d.getDate()} #{month_abbr[d.getMonth()]}, #{(d.getFullYear()).substr(2, 2)}"
       else
-        return day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()] + ", " + d.getFullYear()
+        return "#{day[d.getDay()]} #{d.getDate()} #{month[d.getMonth()]}, #{d.getFullYear()}"
 
     getShowCase: (max) ->
       casesArray = []
@@ -157,6 +157,10 @@ docpadConfig =
         i++
         if i is max then break
       return casesArray
+
+    fromMarkdown: (markdownString) ->
+      mardown = require("markdown").markdown
+      return mardown.toHTML(markdownString)
 
   # Collections
   # ===========
