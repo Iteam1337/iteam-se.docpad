@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   "use strict";
 
   angular.module("iteamse").controller("MainCtrl", function ($scope) {

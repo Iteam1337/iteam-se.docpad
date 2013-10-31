@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   "use strict";
   angular.module(
     "iteamse.module.heading",
@@ -24,9 +24,10 @@
       },
       templateUrl: "/content/partials/heading.html",
       link: function (scope, element) {
-        var headings = scope.headings.split(',');
-        var max = headings.length - 1;
-        var random = Math.min(Math.max(0, Math.floor(Math.random() * max)), max);
+        var headings, max, random;
+        headings = scope.headings.split(',');
+        max = headings.length - 1;
+        random = Math.min(Math.max(0, Math.floor(Math.random() * max)), max);
         scope.randomHeading = headings[random];
       }
     };

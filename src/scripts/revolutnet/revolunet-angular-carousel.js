@@ -1,4 +1,4 @@
-;(function () {
+(function () {
 
   angular.module("revolunet.angular-carousel", [
     "revolunet.collection-manager"

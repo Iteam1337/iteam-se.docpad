@@ -47,7 +47,7 @@
   /**
    * Mobile nav
    */
-  .directive("mobileNav", function () {
+  .directive("mobileNav", function ($window) {
     return {
       link: function (scope, elm) {
         var arrow, link, subpage, url;
@@ -64,7 +64,7 @@
         });
 
         link.bind("click", function () {
-          window.location = url;
+          $window.location = url;
           scope.$apply();
         });
       }

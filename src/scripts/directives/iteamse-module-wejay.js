@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   "use strict";
 
   angular.module(
@@ -18,7 +18,8 @@
 
         lastfmKey = "59a34f30f3c5163f936e755463780ad2";
         lastfmUser = "iteam1337";
-        lastfmUrl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + lastfmUser + "&api_key=" + lastfmKey + "&format=json";
+        lastfmUrl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user={lastfmUser}&api_key={lastfmKey}&format=json";
+        lastfmUrl = lastfmUrl.replace("{lastfmUser}", lastfmUser).replace("{lastfmKey}", lastfmKey);
 
         /**
          * Gets now playing music from Last.fm

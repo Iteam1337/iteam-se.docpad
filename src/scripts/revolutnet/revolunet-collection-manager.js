@@ -7,7 +7,9 @@
   **/
   angular.module("revolunet.collection-manager", [
   ])
-  .service("CollectionManager", [function() {
+  .service("CollectionManager", [
+    "$log",
+    function($log) {
 
       function CollectionManager(options) {
           var initial = {
@@ -36,7 +38,7 @@
 
       CollectionManager.prototype.log = function() {
           if (this.debug) {
-              console.log.apply(console, arguments);
+              $log.log.apply(console, arguments);
              // console.log('CollectionManager:', this);
           }
       };

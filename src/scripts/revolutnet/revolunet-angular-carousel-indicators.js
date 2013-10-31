@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   angular.module("revolunet.angular-carousel.indicators", [])
   .directive('rnCarouselIndicators', [
     function() {
@@ -16,4 +16,4 @@
       };
     }
   ]);
-})(angular);
+})();

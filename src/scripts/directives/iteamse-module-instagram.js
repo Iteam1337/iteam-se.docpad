@@ -1,4 +1,4 @@
-;(function () {
+(function () {
   "use strict";
   angular.module(
     "iteamse.module.instagram",
@@ -12,7 +12,7 @@
    *   Example:
    *     <instagram name="ankjevel" max="3"></instagram>
    */
-  .directive("instagram", function ($http) {
+  .directive("instagram", function ($http, $log) {
     return {
       restrict: "E",
       replace: true,
@@ -23,7 +23,7 @@
       },
       templateUrl: "/content/partials/instagram.html",
       link: function (scope, element) {
-        var options;
+        var options, url;
 
         scope.instagramFeed = [];
 
@@ -33,18 +33,16 @@
           return;
         }
 
-        options = {
-          url: "http://insta-team.se/user/" + scope.name + "?count=" + scope.max,
-          method: "GET"
-        };
+        url = "http://insta-team.se/user/{name}?count={max}";
+        url = url.replace("{name}", scope.name).replace("{max}", scope.max);
 
-        $http(options).success(function (content) {
+        $http.get(url).success(function (content) {
           if (!content && !content.data && !(content.data instanceof Array)) {
             return;
           }
           scope.instagramFeed = content.data;
         }).error(function (data) {
-          stdlib.console.error(data);
+          $log.error(data);
         });
       }
     };

@@ -1,7 +1,7 @@
-;(function (angular, $) {
+(function () {
   "use strict";
   angular.module("revolunet.angular-carousel.image-carousel", [])
-  .directive("imageCarousel", ["$rootScope", "$parse", "$compile", function ($rootScope, $parse, $compile) {
+  .directive("imageCarousel", ["$rootScope", "$parse", "$compile", "$log", function ($rootScope, $parse, $compile, $log) {
 
     var template = '' +
       '<div>' +
@@ -33,7 +33,7 @@
           content = $(iElement).find('.modal');
 
           if (!content.length) {
-            return console.error('no modal-body found');
+            return $log.error('no modal-body found');
           }
 
           content.appendTo($('body'));
@@ -47,10 +47,10 @@
 
           scope.showModalAtIndex = function (index) {
             content.modal("show");
-            $rootScope.$emit('forcePosition', index);
+            $rootScope.$emit("forcePosition", index);
           };
         };
       }
     };
   }]);
-})(angular, $);
+})();
