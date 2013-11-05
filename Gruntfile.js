@@ -149,7 +149,34 @@ module.exports = function (grunt) {
           }
         })
       }
-    }
+    },
+
+    aws: grunt.file.readJSON('aws.json'),
+
+    s3: {
+      options: {
+        key:    '<%= aws.key %>',
+        secret: '<%= aws.secret %>',
+        access: 'public-read',
+        gzip: true,
+        maxOperations: 20,
+        headers: {
+          'Cache-Control': 'public, max-age=' + 60 * 60 * 24 * 30 // 30 days
+        }
+      },
+      test: {
+        options: {
+          bucket: 'www.iteam.se',
+        },
+        upload: [
+          {
+            src: 'out/**/*',
+            dest: '/',
+            rel: 'out'
+          },
+        ],
+      },
+    },
 
   });
 
@@ -162,6 +189,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-s3');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -185,7 +213,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('deploy', [
     'shell:docpad',
-    'shell:preparedeploy',
-    'copy:release'
+    's3'
   ]);
 };
