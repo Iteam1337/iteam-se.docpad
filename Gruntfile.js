@@ -158,6 +158,7 @@ module.exports = function (grunt) {
         key:    '<%= aws.key %>',
         secret: '<%= aws.secret %>',
         access: 'public-read',
+        region: 'eu-west-1',
         gzip: true,
         maxOperations: 20,
         headers: {
