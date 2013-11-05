@@ -91,7 +91,7 @@ html(lang="sv", manifest="/application.appcache")
             each doc in pages
               if (doc.pageIndex >= 10)
                 - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-                a(href=doc.url, property="dc:title", class=clazz)= doc.title
+                a(href=doc.url+"/", property="dc:title", class=clazz)= doc.title
             a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
 
         .header-inner
@@ -103,7 +103,7 @@ html(lang="sv", manifest="/application.appcache")
               if (doc.pageIndex < 10)
                 - clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
                 - clazz = !!subpages ? clazz + ' submenu' : clazz
-                a(href=doc.url, property="dc:title", class=clazz)= doc.title
+                a(href=doc.url+"/", property="dc:title", class=clazz)= doc.title
 
           .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
             .e-list
@@ -113,7 +113,7 @@ html(lang="sv", manifest="/application.appcache")
           .subpage-inner
             each subpage in subpages
               - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
-              a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+              a(href=subpage.url + "/",class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
       ul#mobileNav.ng-cloak(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
         each doc, i in pages
@@ -134,7 +134,7 @@ html(lang="sv", manifest="/application.appcache")
                 span Tillbaka
               each subpage in getCollection(doc.subpages).toJSON()
                 li
-                  a(href=subpage.url)= subpage.title
+                  a(href=subpage.url + "/")= subpage.title
 
   .offset
 
