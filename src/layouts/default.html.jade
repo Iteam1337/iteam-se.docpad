@@ -78,6 +78,7 @@ html(lang="sv")
     class=document.slug
     ng-app="iteamse"
     ng-controller="MainCtrl"
+    menu
   )
 
     #top-holder.ng-cloak
@@ -131,6 +132,8 @@ html(lang="sv")
               each subpage in getCollection(doc.subpages).toJSON()
                 li
                   a(href=subpage.url)= subpage.title
+
+  .offset
 
   if document.url === "/"
     #main-holder.ng-cloak!= content

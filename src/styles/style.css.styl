@@ -341,7 +341,8 @@
 
 #top-holder,
 #main-holder,
-#footer-holder
+#footer-holder,
+.offset
   width 100%
   min-width none
   display block
@@ -349,6 +350,9 @@
   position relative
   z-index 1
   background-color white
+
+.offset
+  z-index -120
 
 #footer-holder
   margin 0 auto
@@ -363,7 +367,7 @@
     box(border-box)
 
 #top-holder
-  position:fixed
+  position fixed
 
 #main-holder
   z-index 0
