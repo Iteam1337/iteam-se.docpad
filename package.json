@@ -55,6 +55,9 @@
   },
   "devDependencies": {
     "mocha": "~1.12.0",
-    "grunt-mocha": "~0.3.4"
+    "grunt-mocha": "~0.3.4",
+    "grunt-invalidate-cloudfront": "~0.1.2",
+    "grunt-manifest": "~0.4.0",
+    "grunt-contrib-imagemin": "~0.3.0"
   }
 }

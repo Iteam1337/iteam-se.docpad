@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     outBuildPath: (grunt.file.readJSON('config.json').outBuildPath + "/"),
 
     clean :{
-      out : ['<%= outPath%>/content/styles', '<%= outPath %>/content/scripts', '<%= outPath %>/content/partials',]
+      out : ['<%= outPath%>']
     },
     // Concats the js files into a single include
     concat: {
@@ -22,10 +22,7 @@ module.exports = function (grunt) {
           "src/scripts/config/*.js",
           "src/scripts/factory/*.js",
           "src/scripts/directives/*.js",
-          "src/scripts/revolutnet/revolunet-collection-manager.js",
-          "src/scripts/revolutnet/revolunet-angular-carousel.js",
-          "src/scripts/revolutnet/revolunet-angular-carousel-indicators.js",
-          "src/scripts/revolutnet/revolunet-angular-carousel-image-carousel.js",
+          "src/scripts/revolutnet/*.js",
           "src/scripts/app.js",
           "src/scripts/controllers/*.js",
           "src/scripts/**/*.js"
@@ -37,7 +34,7 @@ module.exports = function (grunt) {
           'src/files/content/vendor/_angular.js',
           'src/files/content/vendor/jquery.js',
           'src/files/content/vendor/angular-mobile.js',
-          'src/files/content/vendor/*.js',
+          //'src/files/content/vendor/*.js',
           'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
@@ -81,6 +78,16 @@ module.exports = function (grunt) {
       }
     },
 
+    imagemin: {
+      main:{
+        files: [{
+          expand: true, cwd:'out/',
+          src:['**/{*.png,*.jpg}'],
+          dest: 'out/'
+        }]
+      }
+    },
+
     // Minify vendor css
     cssmin: {
       add_banner: {
@@ -100,7 +107,8 @@ module.exports = function (grunt) {
     shell: {
       docpad: {
         options: {
-          stdout: true
+          stdout: true,
+          failOnError: true,
         },
         command: "docpad generate --env static"
       },
@@ -160,6 +168,7 @@ module.exports = function (grunt) {
         access: 'public-read',
         region: 'eu-west-1',
         gzip: true,
+        gzipExclude: ['.jpg', '.png', '.jpeg', '.JPG', '.PNG'],
         maxOperations: 20,
         headers: {
           'Cache-Control': 'public, max-age=' + 60 * 60 * 24 * 30 // 30 days
@@ -179,6 +188,44 @@ module.exports = function (grunt) {
       },
     },
 
+    invalidate_cloudfront: {
+      options: {
+        key:    '<%= aws.key %>',
+        secret: '<%= aws.secret %>',
+        distribution: '<%= aws.cloudfrontDistribution %>',
+      },
+      production: {
+        files: [{
+          expand: true,
+          cwd: './out/',
+          src: ['**/*'],
+          filter: 'isFile',
+          dest: ''
+        }]
+      }
+    },
+
+    manifest: {
+      generate: {
+        options: {
+          //network: ['*', 'https://*'],
+          preferOnline: true,
+          verbose: true,
+          timestamp: true,
+          basePath: 'out',
+        },
+        src: [
+          'content/scripts/iteamse.js',
+          'content/scripts/vendor.js',
+          'content/partials/*.html',
+          'content/styles/*.css',
+          'content/images/svg/*.svg',
+          'content/fonts/*.ttf',
+        ],
+        dest: 'out/application.appcache'
+      }
+    },
+
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -191,6 +238,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-invalidate-cloudfront');
+  grunt.loadNpmTasks('grunt-manifest');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -213,7 +263,11 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('deploy', [
+    'clean',
     'shell:docpad',
-    's3'
+    'imagemin',
+    'manifest',
+    's3',
+    'invalidate_cloudfront'
   ]);
 };

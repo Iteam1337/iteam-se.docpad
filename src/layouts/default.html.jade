@@ -36,7 +36,7 @@ each doc in pages
 //- scripts.add(["/content/scripts/iteamse.js"])
 
 !!! 5
-html(lang="sv")
+html(lang="sv", manifest="/application.appcache")
   head
 
     // Meta
@@ -73,6 +73,9 @@ html(lang="sv")
 
     // Styles
     != styles.toHTML()
+
+    script(src="/content/scripts/vendor.js")
+    script(src="/content/scripts/iteamse.js")
 
   body(
     class=document.slug
@@ -163,5 +166,3 @@ html(lang="sv")
 
   // Scripts
   != scripts.toHTML()
-  script(src="/content/scripts/vendor.js")
-  script(src="/content/scripts/iteamse.js")
