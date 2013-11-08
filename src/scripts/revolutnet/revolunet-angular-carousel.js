@@ -377,15 +377,15 @@
               moveDelay = ($window.jasmine || $window.navigator.platform=='iPad')?0:50;
 
           function loopToNext(first) {
-            var lastIndex, position, tmpSlideIndex;
+            var lastIndex, position, tmpSlideIndex, next;
             if (!first && !disableLoopWhileUpdating && !disableLoop) {
               lastIndex = scope.carouselCollection.getLastIndex();
               position = scope.carouselCollection.position;
-              tmpSlideIndex = Math.min(Math.max(0, position + loop), lastIndex);
-              if (tmpSlideIndex === lastIndex) {
-                loop = -1;
-              } else if (tmpSlideIndex === 0) {
-                loop = 1;
+              next = position + loop;
+              if (next === lastIndex + 1) {
+                tmpSlideIndex = 0;
+              } else {
+                tmpSlideIndex = Math.min(Math.max(0, next), lastIndex);
               }
               scope.carouselCollection.goTo(tmpSlideIndex, true);
             }
