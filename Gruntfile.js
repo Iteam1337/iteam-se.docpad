@@ -31,14 +31,16 @@ module.exports = function (grunt) {
       vendor: {
         dest: '<%= outPath %>content/scripts/vendor.js',
         src: [
-          'src/files/content/vendor/_angular.js',
-          'src/files/content/vendor/jquery.js',
+          'src/files/content/vendor/angular.js',
           'src/files/content/vendor/angular-mobile.js',
-          'src/files/content/vendor/codebird.js',
-          'src/files/content/vendor/highlight.js',
-          'src/files/content/vendor/prettify.js',
+          'src/files/content/vendor/jquery.js',
           'src/files/content/vendor/jquery.smartresize.js',
           'src/files/content/vendor/chart.js',
+          'src/files/content/vendor/codebird.js',
+          'src/files/content/vendor/highlight.js',
+          'src/files/content/vendor/moment.js',
+          'src/files/content/vendor/modernizr.js',
+          'src/files/content/vendor/prettify.js',
           'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
@@ -102,8 +104,8 @@ module.exports = function (grunt) {
           '<%= outPath %>content/styles/vendor.css': [
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
-            'src/scripts/revolutnet/angular-carousel.css',
-            '!*.min.css'
+            'src/files/content/vendor/css/*.css',
+            'src/scripts/revolutnet/angular-carousel.css'
           ]
         }
       }
