@@ -34,7 +34,11 @@ module.exports = function (grunt) {
           'src/files/content/vendor/_angular.js',
           'src/files/content/vendor/jquery.js',
           'src/files/content/vendor/angular-mobile.js',
-          //'src/files/content/vendor/*.js',
+          'src/files/content/vendor/codebird.js',
+          'src/files/content/vendor/highlight.js',
+          'src/files/content/vendor/prettify.js',
+          'src/files/content/vendor/jquery.smartresize.js',
+          'src/files/content/vendor/chart.js',
           'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
