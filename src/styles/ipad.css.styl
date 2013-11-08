@@ -119,8 +119,7 @@
 
   #coworker
     .desc
-      vendor("column-count", 1)
-      vendor("column-gap", 0)
+      column(1, 0)
 
     .user-content.multi
       width 100%
@@ -204,8 +203,9 @@
     .container
       padding 20px
 
-      p
-        two-column(1,0)
+      .two-column
+        p
+          column(1, 0)
 
   #header
 

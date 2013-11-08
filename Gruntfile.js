@@ -151,7 +151,7 @@ module.exports = function (grunt) {
           pretty: true
         },
         files: grunt.file.expandMapping(['**/*.jade'], "<%= outPath %>content/partials/", {
-          cwd: "src/angular_partials/",
+          cwd: "src/mixins_and_partials/angular_partials/",
           rename: function(destBase, destPath) {
             return destBase + destPath.replace(/\.jade$/, '.html');
           }

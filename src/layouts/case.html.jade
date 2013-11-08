@@ -34,19 +34,19 @@ h1.main-title(title,class=shouldWeUseADarkBackground())= document.title
             ul.team
               .header
                 h2 Vårt team
-              include ../jade_includes/team
+              include ../mixins_and_partials/jade_includes/team
 
           if (document.readmorelinks)
             ul.urls
               .header
                 h2 Länkar
-              include ../jade_includes/readmore
+              include ../mixins_and_partials/jade_includes/readmore
 
           if (document.imageGallery)
             .gallery
               .header
                 h2 Galleri
-              include ../jade_includes/image_gallery
+              include ../mixins_and_partials/jade_includes/image_gallery
 
           if (document.tags)
-            include ../jade_includes/related_tags
+            include ../mixins_and_partials/jade_includes/related_tags
