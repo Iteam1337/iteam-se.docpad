@@ -2,7 +2,7 @@
 layout: default
 ---
 
-h1.main-title(title,class=shouldWeUseADarkBackground())= document.title
+h1.main-title(title,class=shouldWeUseADarkBackground(),soft-hyphen)= document.title
   small=document.subtitle && " - " + document.subtitle || ''
 
 .row-fluid

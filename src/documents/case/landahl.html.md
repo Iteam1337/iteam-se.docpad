@@ -9,7 +9,7 @@ tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruk
 sections: ['Drift & Support']
 logo: 'case-logos/landahl.png'
 
-imageGallery: []
+imageGallery:
 
 team: ['mats','rasmus']
 siteurl: http://www.landahl.se
