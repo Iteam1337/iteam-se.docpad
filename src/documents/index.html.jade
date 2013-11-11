@@ -34,7 +34,7 @@ ul.image(
       )
         .layer
           .wrapper(class = shouldWeUseADarkBackground(showcase))
-            a.case-title(href = showcase.url)= showcase.title
+            a.case-title(soft-hyphen, href = showcase.url)= showcase.title
             br
             if !!showcase.sections
               each section, i in showcase.sections
