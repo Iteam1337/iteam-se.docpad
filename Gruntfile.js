@@ -165,7 +165,7 @@ module.exports = function (grunt) {
       }
     },
 
-    aws: grunt.file.readJSON('aws.json'),
+    aws: grunt.file.isFile('aws.json') && grunt.file.readJSON('aws.json'),
 
     s3: {
       options: {
