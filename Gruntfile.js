@@ -97,8 +97,8 @@ module.exports = function (grunt) {
 
     s3: {
       options: {
-        key:    '<%= aws.key %>',
-        secret: '<%= aws.secret %>',
+        key:    '<%= process.env.AWS_ACCESS_KEY_ID || aws.key %>',
+        secret: '<%= process.env.AWS_SECRET_ACCESS_KEY || aws.secret %>',
         access: 'public-read',
         region: 'eu-west-1',
         gzip: true,
