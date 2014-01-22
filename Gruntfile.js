@@ -174,7 +174,7 @@ module.exports = function (grunt) {
           'Cache-Control': 'public, max-age=' + 60 * 60 * 24 * 30 // 30 days
         }
       },
-      test: {
+      production: {
         options: {
           bucket: 'www.iteam.se',
         },
@@ -220,7 +220,7 @@ module.exports = function (grunt) {
           'content/partials/*.html',
           'content/styles/*.css',
           'content/images/svg/*.svg',
-          'content/fonts/*.ttf',
+          'content/fonts/*.*',
         ],
         dest: 'out/application.appcache'
       }
