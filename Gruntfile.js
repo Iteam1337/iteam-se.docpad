@@ -97,8 +97,8 @@ module.exports = function (grunt) {
 
     s3: {
       options: {
-        key:    '<%= process.env.AWS_ACCESS_KEY_ID || aws.key %>',
-        secret: '<%= process.env.AWS_SECRET_ACCESS_KEY || aws.secret %>',
+        key:    process.env.AWS_ACCESS_KEY_ID,
+        secret: process.env.AWS_SECRET_ACCESS_KEY,
         access: 'public-read',
         region: 'eu-west-1',
         gzip: true,
@@ -136,8 +136,8 @@ module.exports = function (grunt) {
 
     invalidate_cloudfront: {
       options: {
-        key:    '<%= process.env.AWS_ACCESS_KEY_ID || aws.key %>',
-        secret: '<%= process.env.AWS_SECRET_ACCESS_KEY || aws.secret %>',
+        key:    process.env.AWS_ACCESS_KEY_ID,
+        secret: process.env.AWS_SECRET_ACCESS_KEY,
         distribution: '<%= aws && aws.cloudfrontDistribution %>',
       },
       production: {
