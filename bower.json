@@ -1,0 +1,21 @@
+{
+  "name": "iteam.se",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Iteam1337/iteam-se.docpad",
+  "authors": [
+    "irony <cl@iteam.se>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.9",
+    "jquery": "~2.0.3",
+    "bootstrap": "~3.0.3"
+  }
+}
