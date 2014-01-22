@@ -88,12 +88,12 @@ html(lang="sv", manifest="/application.appcache")
                 span Tillbaka
               each subpage in getCollection(doc.subpages).toJSON()
                 li
-                  a(href=subpage.url + "/")= subpage.title
+                  a(href=subpage.url)= subpage.title
 
   .offset
 
   if document.url === "/"
-    main-holder != content
+    #main-holder!= content
   else
     #main-holder
       .background-image(style=topImage())
