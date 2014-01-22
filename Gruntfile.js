@@ -1,10 +1,8 @@
 module.exports = function (grunt) {
-
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    outPath: (grunt.file.readJSON('config.json').outPath + "/"),
-    outBuildPath: (grunt.file.readJSON('config.json').outBuildPath + "/"),
+    outPath: './out/',
 
     clean :{
       out : ['<%= outPath%>']
@@ -19,22 +17,13 @@ module.exports = function (grunt) {
       dist: {
         dest: '<%= outPath %>content/scripts/<%= pkg.name %>.js',
         src: [
-          "src/scripts/config/*.js",
-          "src/scripts/factory/*.js",
-          "src/scripts/directives/*.js",
-          "src/scripts/revolutnet/*.js",
-          "src/scripts/app.js",
-          "src/scripts/controllers/*.js",
           "src/scripts/**/*.js"
         ]
       },
       vendor: {
         dest: '<%= outPath %>content/scripts/vendor.js',
         src: [
-          'src/files/content/vendor/_angular.js',
           'src/files/content/vendor/jquery.js',
-          'src/files/content/vendor/angular-mobile.js',
-          //'src/files/content/vendor/*.js',
           'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
         ]
       }
@@ -63,16 +52,7 @@ module.exports = function (grunt) {
       compile: {
         files: {
           "<%= outPath %>content/styles/<%= pkg.name %>.css": [
-            "src/styles/general.css.styl",
-            "src/styles/style.css.styl",
-            "src/styles/animation.css.styl",
-            "src/styles/blog.css.styl",
-            "src/styles/cases.css.styl",
-            "src/styles/coworkers.css.styl",
-            "src/styles/page.css.styl",
-            "src/styles/*.css.styl",
-            "src/styles/ipad.css.styl",
-            "src/styles/iphone.css.styl"
+            "src/**/*.css.styl"
           ]
         }
       }
@@ -98,7 +78,6 @@ module.exports = function (grunt) {
           '<%= outPath %>content/styles/vendor.css': [
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
             'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
-            'src/scripts/revolutnet/angular-carousel.css',
             '!*.min.css'
           ]
         }
@@ -111,51 +90,6 @@ module.exports = function (grunt) {
           failOnError: true,
         },
         command: "docpad generate --env static"
-      },
-      preparedeploy: {
-        options: {
-          stdout: true
-        },
-        command: "bash preparedeploy.sh"
-      }
-    },
-
-    copy: {
-      main: {
-        files: [
-          {
-            expand: true,
-            cwd: "<%=outPath%>",
-            src: ["**"],
-            dest: "<%= outBuildPath %>/"
-          }
-        ]
-      },
-      release: {
-        files: [
-          {
-            expand: true,
-            cwd: "<%=outPath%>",
-            src: ["**"],
-            dest: "/Volumes/guld/iteam.se"
-          }
-        ]
-      }
-    },
-
-    //
-    // Generate angular-templates
-    jade: {
-      compile: {
-        options: {
-          pretty: true
-        },
-        files: grunt.file.expandMapping(['**/*.jade'], "<%= outPath %>content/partials/", {
-          cwd: "src/angular_partials/",
-          rename: function(destBase, destPath) {
-            return destBase + destPath.replace(/\.jade$/, '.html');
-          }
-        })
       }
     },
 
@@ -186,13 +120,25 @@ module.exports = function (grunt) {
           },
         ],
       },
+      stage: {
+        options: {
+          bucket: 'stage.iteam.se'
+        },
+        upload: [
+          {
+            src: 'out/**/*',
+            dest: '/',
+            rel: 'out'
+          },
+        ],
+      },
     },
 
     invalidate_cloudfront: {
       options: {
-        key:    '<%= aws.key %>',
-        secret: '<%= aws.secret %>',
-        distribution: '<%= aws.cloudfrontDistribution %>',
+        key:    '<%= process.env.AWS_ACCESS_KEY_ID || aws.key %>',
+        secret: '<%= process.env.AWS_SECRET_ACCESS_KEY || aws.secret %>',
+        distribution: '<%= aws && aws.cloudfrontDistribution %>',
       },
       production: {
         files: [{
@@ -217,7 +163,6 @@ module.exports = function (grunt) {
         src: [
           'content/scripts/iteamse.js',
           'content/scripts/vendor.js',
-          'content/partials/*.html',
           'content/styles/*.css',
           'content/images/svg/*.svg',
           'content/fonts/*.*',
@@ -233,9 +178,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-invalidate-cloudfront');
@@ -248,7 +191,6 @@ module.exports = function (grunt) {
     'uglify',
     'stylus',
     'cssmin',
-    'jade'
   ]);
 
   // Default task(s).
@@ -257,17 +199,26 @@ module.exports = function (grunt) {
     'concat',
     'uglify',
     'stylus',
-    'cssmin',
-    'jade',
-    'copy'
+    'cssmin'
   ]);
 
-  grunt.registerTask('deploy', [
+  grunt.registerTask('dist', [
     'clean',
     'shell:docpad',
+    'concat',
     'imagemin',
-    'manifest',
-    's3',
-    'invalidate_cloudfront'
+    'uglify',
+    'stylus',
+    'manifest'
+  ]);
+
+  grunt.registerTask('deploy:production', [
+    'dist',
+    's3:production'
+  ]);
+
+  grunt.registerTask('deploy:stage', [
+    'dist',
+    's3:stage'
   ]);
 };

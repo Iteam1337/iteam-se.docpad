@@ -5,9 +5,8 @@ layout: default
 - var inlineClass = "image "
 - inlineClass += !!document.css ? document.css : ""
 - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : ""
-- var bloggCollection = getAllBlogsByAuthor(document.shortname)
-- var cases = getAllCasesByCoworker(document.shortname)
-- var splitRow = (!!cases.length && !!bloggCollection.length) ? "user-content multi" : "user-content"
+- var cases = []; //getAllCasesByCoworker(document.shortname)
+- var splitRow = (!!cases.length) ? "user-content multi" : "user-content"
 
 .row-fluid.page-content
   article#coworker
@@ -44,7 +43,7 @@ layout: default
     .row
       .desc!= content
 
-    if (cases.length || bloggCollection.length)
+    if (cases.length)
       .row.split(class=splitRow)
         if (cases.length)
           ul.in-cases
@@ -53,14 +52,6 @@ layout: default
             each Case in cases
               li
                 a(href=Case.url)= Case.title
-
-        if (bloggCollection.length)
-          ul.bloggar
-            .header
-              h2.title Bloggar
-            each blogg in bloggCollection
-              li
-                a(href=blogg.url)= blogg.title
 
     if document.github
       github(username=document.github)

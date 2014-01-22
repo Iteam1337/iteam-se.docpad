@@ -4,27 +4,15 @@
 //- All indexes that are to be shown on all pages
 - var pages = getCollection('sektion').toJSON()
 
-//- TEMP SOLLUTION for blogs
-- var arr = []
-each doc in pages
-  - arr.push(doc)
-- blogg = { url: 'http://tekniken.nu/', title: 'Blogg', pageIndex: 15 }
-- arr.splice(arr.length - 1, 0, blogg)
-- pages = arr
-//- TEMP SOLLUTION for blogs
+- pages.push({ url: 'http://tekniken.nu/', title: 'Blogg', pageIndex: 15 })
 
 //- url-highlighting and so on
 - var documentUrl = document.url.split("/")
 - var basename = documentUrl[1]
-- var onBlogPage = basename === "blogg"
-- var onCase = basename == "case"
 
 //- All pages that should be shown on the
 //- second navigation row
 - var subpages = {}
-- if (basename === "blogg")
-  - subpages = getAllBlogCategories()
-- else
   - subpages = (!!document.subpages) ? getCollection(document.subpages) : false
   - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false
 
@@ -84,7 +72,7 @@ html(lang="sv", manifest="/application.appcache")
     menu
   )
 
-    #top-holder.ng-cloak
+    #top-holder
       .row-fluid#header
         ul.subnav
           .subnav-inner
@@ -109,13 +97,13 @@ html(lang="sv", manifest="/application.appcache")
             .e-list
 
       if (!!subpages)
-        #navSubpages.ng-cloak
+        #navSubpages
           .subpage-inner
             each subpage in subpages
               - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
               a(href=subpage.url + "/",class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
-      ul#mobileNav.ng-cloak(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
+      ul#mobileNav
         each doc, i in pages
           - clazz = (document.url === doc.url) ? 'active' : null
           - hasSubpage = (doc.subpages) ? i : null
@@ -124,7 +112,7 @@ html(lang="sv", manifest="/application.appcache")
             if (doc.chevron)
               .e-chevron-thin-right
 
-      #subpageWrap.ng-cloak
+      #subpageWrap
         each doc, i in pages
           if (doc.subpages)
             - subId = "subpages == " + i
@@ -139,14 +127,14 @@ html(lang="sv", manifest="/application.appcache")
   .offset
 
   if document.url === "/"
-    #main-holder.ng-cloak!= content
+    #main-holder != content
   else
-    #main-holder.ng-cloak
+    #main-holder
       .background-image(style=topImage())
       .container(class=singlePageCase())
         #content.row-fluid.content!= content
 
-  #footer-holder.ng-cloak
+  #footer-holder
     #footer
       #address
         ul
