@@ -43,13 +43,9 @@ module.exports = function (grunt) {
 
     // Minify vendor css
     cssmin: {
-      add_banner: {
-        options: {
-          banner: '/* vendor.css */ \n'
-        },
+      vendor: {
         files: {
             '<%= outPath %>content/styles/vendor.css': [
-            'content/styles/*.css',
             'bower_components/bootstrap/dist/css/bootstrap.min.css',
           ]
         }

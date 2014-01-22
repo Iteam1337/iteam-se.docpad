@@ -140,7 +140,7 @@ docpadConfig =
           trailingSlashes: true
     grunt:
       writeAfter: false
-      generateAfter: ["stylus", "concat"]
+      generateAfter: ["stylus", "cssmin", "concat"]
 
   # Collections
   # ===========
@@ -150,7 +150,7 @@ docpadConfig =
     #
     # This is the main collection, for index:es
     sektion: (database) ->
-      database.findAllLive({isfolder: true, pageIndex: $exists: true}, [pageIndex:1,title:1])
+      database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])
 
     # Collection of all cases
     case: (database) ->

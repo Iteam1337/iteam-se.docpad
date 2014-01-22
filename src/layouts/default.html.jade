@@ -30,6 +30,7 @@ html(lang="sv", manifest="/application.appcache")
 
     link(rel="shortcut icon", href="/content/ico/favicon.ico")
     script(src="/content/scripts/iteamse.js")
+    link(rel="stylesheet", href="/content/styles/vendor.css", type="text/css")
     link(rel="stylesheet", href="/content/styles/iteamse.css", type="text/css")
 
   body(
@@ -65,12 +66,12 @@ html(lang="sv", manifest="/application.appcache")
         #navSubpages
           .subpage-inner
             each subpage in subpages
-              - active = (document.url === subpage.url ||  && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
+              - active = (subpage.url.indexOf(document.url) > -1) ? 'active' : null
               a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
       ul#mobileNav
         each doc, i in pages
-          - clazz = (document.url === doc.url) ? 'active' : null
+          - clazz = (doc.url.indexOf(document.url) > -1) ? 'active' : null
           - hasSubpage = (doc.subpages) ? i : null
           li(mobile-nav, data-subpage=hasSubpage)
             a(class=clazz, data-url=doc.url)= doc.title
