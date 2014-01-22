@@ -133,6 +133,15 @@ docpadConfig =
       mardown = require("markdown").markdown
       return mardown.toHTML(markdownString)
 
+
+  plugins:
+    ## skips the .html extension by adding a folder and index.html and creates a redirect html
+    cleanurls:
+          trailingSlashes: true
+    grunt:
+      writeAfter: false
+      generateAfter: ["stylus", "concat"]
+
   # Collections
   # ===========
   # These are special collections that our website makes available to us
@@ -141,7 +150,7 @@ docpadConfig =
     #
     # This is the main collection, for index:es
     sektion: (database) ->
-      database.findAllLive({relativeOutDirPath:'', pageIndex: $exists: true}, [pageIndex:1,title:1])
+      database.findAllLive({isfolder: true, pageIndex: $exists: true}, [pageIndex:1,title:1])
 
     # Collection of all cases
     case: (database) ->

@@ -3,7 +3,6 @@
 
 //- All indexes that are to be shown on all pages
 - var pages = getCollection('sektion').toJSON()
-
 - pages.push({ url: 'http://tekniken.nu/', title: 'Blogg', pageIndex: 15 })
 
 //- url-highlighting and so on
@@ -12,63 +11,29 @@
 
 //- All pages that should be shown on the
 //- second navigation row
-- var subpages = {}
-  - subpages = (!!document.subpages) ? getCollection(document.subpages) : false
-  - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false
-
-//- Other Scripts
-//- scripts.add(["/content/scripts/vendor.js"])
-
-//- User
-- styles.add(["/content/styles/vendor.css","/content/styles/iteamse.css"])
-//- scripts.add(["/content/scripts/iteamse.js"])
+- var subpages = document.subpages && getCollection(document.subpages).toJSON()
 
 !!! 5
 html(lang="sv", manifest="/application.appcache")
   head
-
-    // Meta
     meta(charset="utf-8")
     meta(http-equiv="content-type", content="text/html; charset=utf-8")
-
-    //-
-      Use the .htaccess and remove these lines to avoid edge case issues.
-      More info: h5bp.com/i/378
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
 
-    //- Our site title and description
     title= getPreparedTitle()
     meta(name="description", content=getPreparedDescription())
     meta(name="keywords", content=getPreparedKeywords())
     meta(name="author", content=site.author || '')
-
-    //- Output DocPad produced meta elements
-    != getBlock("meta").toHTML()
-
-    //- Mobile viewport optimized: h5bp.com/viewport
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 
-    // Icons
+    != getBlock("meta").toHTML()
+
     link(rel="shortcut icon", href="/content/ico/favicon.ico")
-    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/content/ico/apple-touch-icon-144-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/content/ico/apple-touch-icon-114-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/content/ico/apple-touch-icon-72-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", href="/content/ico/apple-touch-icon-57-precomposed.png")
-
-    //- Shims: IE6-8 support of HTML5 elements
-    //if lt IE 9
-      script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-
-    // Styles
-    != styles.toHTML()
-
-    script(src="/content/scripts/vendor.js")
     script(src="/content/scripts/iteamse.js")
+    link(rel="stylesheet", href="/content/styles/iteamse.css", type="text/css")
 
   body(
     class=document.slug
-    ng-app="iteamse"
-    ng-controller="MainCtrl"
     menu
   )
 
@@ -79,7 +44,7 @@ html(lang="sv", manifest="/application.appcache")
             each doc in pages
               if (doc.pageIndex >= 10)
                 - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-                a(href=doc.url+"/", property="dc:title", class=clazz)= doc.title
+                a(href=doc.url, property="dc:title", class=clazz)= doc.title
             a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
 
         .header-inner
@@ -100,8 +65,8 @@ html(lang="sv", manifest="/application.appcache")
         #navSubpages
           .subpage-inner
             each subpage in subpages
-              - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
-              a(href=subpage.url + "/",class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+              - active = (document.url === subpage.url ||  && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
+              a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
       ul#mobileNav
         each doc, i in pages
@@ -127,7 +92,7 @@ html(lang="sv", manifest="/application.appcache")
   .offset
 
   if document.url === "/"
-    #main-holder != content
+    main-holder != content
   else
     #main-holder
       .background-image(style=topImage())
@@ -154,3 +119,8 @@ html(lang="sv", manifest="/application.appcache")
 
   // Scripts
   != scripts.toHTML()
+  script.
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2430046-1']);
+    _gaq.push(['_trackPageview']);
+  script(src="//www.google-analytics.com/ga.js")

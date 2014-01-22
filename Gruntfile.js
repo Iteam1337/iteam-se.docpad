@@ -9,45 +9,18 @@ module.exports = function (grunt) {
     },
     // Concats the js files into a single include
     concat: {
-      options: {
-        stripBanners: true,
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-          '<%= grunt.template.today("yyyy-mm-dd HH:mm") %> */\n'
-      },
-      dist: {
+      vendor: {
         dest: '<%= outPath %>content/scripts/<%= pkg.name %>.js',
         src: [
-          "src/scripts/**/*.js"
+          'bower_components/jquery/jquery.min.js',
+          'bower_components/bootstrap/dist/js/bootstrap.min.js',
         ]
-      },
-      vendor: {
-        dest: '<%= outPath %>content/scripts/vendor.js',
-        src: [
-          'src/files/content/vendor/jquery.js',
-          'src/files/content/vendor/twitter-bootstrap/js/bootstrap.js'
-        ]
-      }
-    },
-
-    // Minifies the jsfiles
-    uglify: {
-      options: {
-        // the banner is inserted at the top of the output
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
-      },
-      dist: {
-        files: {
-          '<%= outPath %>content/scripts/all.min.js': [
-            '<%= concat.vendor.dest %>',
-            '<%= concat.dist.dest %>'
-          ]
-        }
       }
     },
 
     stylus: {
       options: {
-        banner: '/* <%= pkg.name %>.css */ \n'
+        banner: '/* <%= pkg.name %> */ \n'
       },
       compile: {
         files: {
@@ -75,10 +48,9 @@ module.exports = function (grunt) {
           banner: '/* vendor.css */ \n'
         },
         files: {
-          '<%= outPath %>content/styles/vendor.css': [
-            'src/files/content/vendor/twitter-bootstrap/css/bootstrap.css',
-            'src/files/content/vendor/twitter-bootstrap/css/bootstrap-responsive.css',
-            '!*.min.css'
+            '<%= outPath %>content/styles/vendor.css': [
+            'content/styles/*.css',
+            'bower_components/bootstrap/dist/css/bootstrap.min.css',
           ]
         }
       }
@@ -154,11 +126,9 @@ module.exports = function (grunt) {
 
   });
 
-  // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-stylus');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-s3');
@@ -168,7 +138,6 @@ module.exports = function (grunt) {
   // Default task(s).
   grunt.registerTask('default', [
     'concat',
-    'uglify',
     'stylus',
     'cssmin',
   ]);
@@ -177,7 +146,6 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean',
     'concat',
-    'uglify',
     'stylus',
     'cssmin'
   ]);
@@ -187,7 +155,6 @@ module.exports = function (grunt) {
     'shell:docpad',
     'concat',
     'imagemin',
-    'uglify',
     'stylus',
     'manifest'
   ]);
