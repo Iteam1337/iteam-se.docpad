@@ -34,7 +34,7 @@ ul.image(
       )
         .layer
           .wrapper(class = shouldWeUseADarkBackground(showcase))
-            a.case-title(href = showcase.url)= showcase.title
+            a.case-title(soft-hyphen, href = showcase.url)= showcase.title
             br
             if !!showcase.sections
               each section, i in showcase.sections
@@ -43,17 +43,26 @@ ul.image(
                 a.section(class = posClass, href = section.url, target = "_blank")= section.title
 
 .container
-  #startpage.row-fluid
-    .row-fluid
-      .span12
+  #startpage
+    .row-fluid.two-column
+      .span12.row-fluid
         :markdown
           Att prata om passion blir lätt pretentiöst. Men faktum är att det är det som är kärnan i Iteam. Sedan 1995 har världen genomgått en teknisk revolution och under hela den tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa pryl och nästa utmaning.
             Det senaste är inte automatiskt det bästa - det vet vi bättre än de flesta. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
 
     .row-fluid
-      .span12
-        h2 Iteam på Instagram
+      .span6
+        :markdown
+          ##Vi rekryterar
 
+          Iteam ska starta sitt tredje utvecklingsteam under 2014 med fokus på Node och Angular. Om du tycker JavaScript och agil produktutveckling är det roligaste just nu kan du skicka mig ett meddelande med och ditt github repo.
+
+          Vi jobbar bara i team och har projekt mellan ett halvår och ett år. Roller som söks är Frontend engineer (CSS/less/angular/TDD), system developer (NodeJs/Mongo/TDD), devOps (Docker, Chef, Grunt, AWS, Elasticsearch).
+
+          Kontakta [Sophie Raland Wesslau](/medarbetare/sophie) om du vill veta mer.
+
+      .span6
+        h2 Iteam på Instagram
         instagram(
           name="iteam1337"
           max=4

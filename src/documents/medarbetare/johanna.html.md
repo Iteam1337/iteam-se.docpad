@@ -24,7 +24,7 @@ github: mittistormen
 Med teknik löser man problem – stora som små, varje dag. Att skapa hållbara system är en av mina drivkrafter. Trots alla mina år inom branschen lär jag mig något nytt varje dag eftersom de tekniska möjligheterna förändras hela tiden.
 
 ## Specialistkompetens
-ASP.NET, C#, integration, AJAX, CSS
+ASP.NET, integration, Node.js, SQL, RavenDB (NoSQL), Javascript på klienten.
 
 ## Bakgrund
 Med en KY-utbildning och 5 års systemutveckling inom resebranchen i bagaget, så började jag på Iteam 2009. Det visade sig vara ett mycket lyckosamt byte, eftersom min resa kunde fortsätta med utveckling av engagerande och avancerade system för snabbfotade uppdragsgivare.
