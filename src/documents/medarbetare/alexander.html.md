@@ -12,7 +12,7 @@ phonenumber: '0727-14 50 60'
 
 cssColor: "#07AFCA"
 topImage: "/content/images/medarbetare/acr.jpeg"
-backgroundDark: true
+background: 'invert'
 
 twitter:
 instagram: zendeveloper

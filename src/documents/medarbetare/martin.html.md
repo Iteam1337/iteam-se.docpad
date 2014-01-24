@@ -12,7 +12,7 @@ phonenumber: 0707 - 22 70 24
 
 cssColor: "#ba1b0a"
 topImage: "/content/images/medarbetare/mln.jpg"
-backgroundDark:
+background: invert
 
 twitter: martinloman
 instagram: martinloman

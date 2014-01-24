@@ -12,7 +12,7 @@ phonenumber: 0703 - 76 66 40
 
 cssColor: "#8ab362"
 topImage: "/content/images/medarbetare/rfn.jpg"
-backgroundDark:
+background: invert
 
 twitter:
 instagram:

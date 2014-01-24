@@ -12,7 +12,7 @@ phonenumber: '0708-62 41 90'
 
 cssColor: "#000"
 topImage: "/content/images/medarbetare/abo.jpg"
-backgroundDark: false
+background: 
 
 twitter: osirisguitar
 instagram: osirisguitar

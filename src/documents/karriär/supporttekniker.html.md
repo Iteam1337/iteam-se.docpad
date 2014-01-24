@@ -3,7 +3,7 @@ title: Senior Supporttekniker
 layout: job
 pageOrder: 2
 topImage: "/content/images/section-topbilder/jobb-annons/rekrytering2.JPG"
-backgroundDark: true
+background: 'invert'
 summary: >
   Vi söker en klurig Senior Supporttekniker med det lilla extra. Som vår nya Seniora Supporttekniker är du självgående, nyfiken och gillar att ha kontakt med våra kunder.
 

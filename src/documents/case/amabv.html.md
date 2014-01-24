@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage:
-backgroundDark:
+background: 'invert'
 
 intro: >
   Svensk Byggtjänst ville ha ett beskrivningsverktyg för byggsverige. Vi tog fram ett Google Docs-liknande verktyg.

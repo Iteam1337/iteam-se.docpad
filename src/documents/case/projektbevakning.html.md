@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/sb.jpg"
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Svensk byggtjänst ville ha en mötesplats för olika aktörer i branschen med syfte att ge dem möjligheten att skapa nya affärer.

@@ -8,7 +8,7 @@ pageOrder: 3
 subpages: 'tjanster'
 
 topImage: '/content/images/section-topbilder/operations-org.jpg'
-backgroundDark: true
+background: 'invert'
 
 summary: >
   Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.<p>

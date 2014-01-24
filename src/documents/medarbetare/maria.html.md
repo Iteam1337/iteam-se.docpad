@@ -12,7 +12,7 @@ phonenumber: 0733 - 74 27 84
 
 cssColor: "#830309"
 topImage: "/content/images/medarbetare/mrs.JPG"
-backgroundDark: true
+background: 'invert'
 
 twitter: MariaSolscher
 instagram: MariaSolscher

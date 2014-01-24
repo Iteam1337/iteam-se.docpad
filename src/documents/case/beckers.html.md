@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/beckers.JPG"
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Iteam fick i uppdrag att skapa en responsiv sajt för Beckers.
