@@ -55,7 +55,8 @@
     "markdown": "~0.5.0",
     "grunt-s3": "~0.2.0-alpha.3",
     "stripcolorcodes": "~0.1.0",
-    "docpad-plugin-grunt": "~2.1.1"
+    "docpad-plugin-grunt": "~2.1.1",
+    "docpad-plugin-styl": "~2.0.0"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
@@ -63,6 +64,7 @@
     "grunt-invalidate-cloudfront": "~0.1.2",
     "grunt-manifest": "~0.4.0",
     "grunt-contrib-imagemin": "~0.3.0",
-    "bower": "*"
+    "bower": "*",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }
