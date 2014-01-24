@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage:
-backgroundDark:
+background: 'invert'
 
 intro: >
   Iteam fick i uppdrag av Academic Work att bygga en plattform som förenklar rekrytering. Vi valde att bygga Careerbook, ett socialt nätverk, som matchar studenter och företag.

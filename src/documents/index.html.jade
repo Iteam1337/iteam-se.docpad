@@ -3,7 +3,7 @@ layout: 'default'
 title:
 
 topImage: "/content/images/section-topbilder/start.JPG"
-backgroundDark: true
+background: 'invert'
 
 introHeading: ["För fyra år sedan fanns inte iPad", "För sju år sedan fanns inte iPhone", "Internet var ingen fluga"]
 introSubheading: >
@@ -18,10 +18,10 @@ ul.image(
 
   li(
     style="background-image:url(" + document.topImage + ");"
-    invert=!!shouldWeUseADarkBackground(document)
+    class=document.background
   )
     .layer
-      .wrapper(class=shouldWeUseADarkBackground(document))
+      .wrapper(class=document.background)
         heading(headings=document.introHeading)
         h2.hidden-phone=document.introSubheading
 
@@ -30,10 +30,10 @@ ul.image(
     if !!showcase.topImage
       li(
         style="background-image:url(" + showcase.topImage + ");"
-        invert=!!shouldWeUseADarkBackground(showcase)
+        class=showcase.background
       )
         .layer
-          .wrapper(class = shouldWeUseADarkBackground(showcase))
+          .wrapper(class = showcase.background)
             a.case-title(href = showcase.url)= showcase.title
             br
             if !!showcase.sections

@@ -19,7 +19,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/ca.jpg"
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Vi gav expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.

@@ -12,7 +12,7 @@ phonenumber: 0736 - 19 80 64
 
 cssColor:
 topImage: "http://i.bldr.se/ZGmJr.jpeg"
-backgroundDark: true
+background: 'invert'
 
 twitter:
 instagram:

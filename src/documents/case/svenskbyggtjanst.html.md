@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/svenskbyggtjanst.JPG"
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Vi utvecklade Svensk Byggtjänsts hemsida tillsammans med byråpartnern Britny.

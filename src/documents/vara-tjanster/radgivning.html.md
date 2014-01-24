@@ -8,7 +8,7 @@ pageOrder: 1
 subpages: 'tjanster'
 
 topImage: '/content/images/section-topbilder/radgivning.jpg'
-backgroundDark: true
+background: 'invert'
 
 summary: >
   Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.<p>

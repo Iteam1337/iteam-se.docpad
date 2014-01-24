@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: '/content/images/case-topbilder/dsc_0386_by_kevin_krejci.jpg'
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Vi uppdaterade it-miljö för ökad säkerhet och produktivitet.

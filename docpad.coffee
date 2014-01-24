@@ -72,9 +72,6 @@ docpadConfig =
       composed = str.charAt(0).toUpperCase() + str.slice 1
       return composed
 
-    shouldWeUseADarkBackground: (doc=@document) ->
-      return if doc.backgroundDark then "invert" else ""
-
     getMetadataFrom: (page, section="vara-tjanster") ->
       if !page or typeof section is not "string" then return
       queryObject = {

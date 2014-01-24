@@ -17,7 +17,7 @@ siteurl: "http://www.radical.fm"
 readmorelinks: [{"url":"http://techcrunch.com/2012/11/19/radical-fm-wants-to-go-after-spotify-with-an-ad-free-listener-supported-streamed-music-service/","title":"Artikel - Techcrunch"},{"url":"http://thenextweb.com/media/2012/11/20/radical-fm-throws-its-hat-into-the-music-streaming-ring-with/","title":"Artikel - The Next Web"},{"url":"http://radiodirect.com/blog/index.php/how-to-be-rad-an-interview-with-radical-fms-creator-thomas-mcalevey-part-1/","title":"Intervju med Thomas"}]
 
 topImage: "/content/images/case-topbilder/brian.jpg"
-backgroundDark: false
+background: 
 
 intro: >
   Världens första individuellt streamade internetradio utvecklades av Iteam.

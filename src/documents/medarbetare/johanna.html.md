@@ -12,7 +12,7 @@ phonenumber: 0734 - 02 91 12
 
 cssColor: "#a7e2fe"
 topImage: "/content/images/medarbetare/jgn.JPG"
-backgroundDark:
+background: invert
 
 twitter: mittistormen
 instagram: mittistormen

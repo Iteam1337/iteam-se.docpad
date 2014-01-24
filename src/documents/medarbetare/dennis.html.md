@@ -12,7 +12,7 @@ phonenumber:
 
 cssColor: "#74a6ec"
 topImage: ""
-backgroundDark: false
+background: invert
 
 twitter: ankjevel
 instagram: ankjevel

@@ -12,7 +12,7 @@ phonenumber: '0738 - 1337 87'
 
 cssColor: "#55ae3a"
 topImage: "/content/images/medarbetare/hrn_golf.jpg"
-backgroundDark: true
+background: 'invert'
 
 twitter: hrswe
 instagram: hrswe

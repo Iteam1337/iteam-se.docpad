@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/mora.JPG"
-backgroundDark:
+background: invert
 
 intro: >
   Produkten i fokus för både proffs och hemmafixare.
