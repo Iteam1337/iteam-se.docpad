@@ -1,17 +1,18 @@
-#slider
-  height 300px
-  overflow hidden
-  position relative
+@import 'variable'
 
-  li
-    max-height 300px
-
-    position absolute
-    left 0
-    top 0
+.carousel-inner
+  height 450px
     
-    &:nth-child(2)
-      left 100%
+  .item
+    height 100%
 
-    img
-      width 100%
+    .carousel-caption
+      positioned('top-left', 50%,0,0,50%)
+      translate-pos(-50%,-50%);
+
+      font-size 4em
+      right auto
+      width 87%
+
+      .sub-caption
+        font-size 0.4em
