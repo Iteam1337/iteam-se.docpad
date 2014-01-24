@@ -63,12 +63,14 @@ html(lang="sv", manifest="/application.appcache")
             - active = (subpage.url.indexOf(document.url) > -1) ? 'active' : null
             a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
+
   .offset
 
   if document.url === "/"
     #main-holder!= content
   else
     #main-holder
+      .background-image(style=topImage())
       .container(class=singlePageCase())
         #content.row-fluid.content!= content
 

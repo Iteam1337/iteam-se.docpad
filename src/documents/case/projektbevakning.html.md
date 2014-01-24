@@ -1,5 +1,5 @@
 ---
-title: Projekt--bevakning
+title: Projektbevakning
 subtitle:
 layout: case
 caseIndex: 2

@@ -29,8 +29,13 @@ introSubheading: >
       .item 
         img(src=showcase.topImage)
         .carousel-caption
-          a(href=showcase.url,invert=!!shouldWeUseADarkBackground(showcase))= showcase.title
+          a(href=showcase.url)= showcase.title
           .sub-caption
+            if !!showcase.sections
+              each section, i in showcase.sections
+                - posClass = i !== 0 ? "separator-before" : ""
+                - section = getMetadataFrom(section)
+                a.section(class = posClass, href = section.url, target = "_blank")= section.title
 
   a.left.carousel-control(href="#slider",data-slide="prev")
     .glyphicon.glyphicon-chevron-left
