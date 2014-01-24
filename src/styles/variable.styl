@@ -36,6 +36,21 @@ shadow()
 border-radius()
   vendor('border-radius', arguments)
 
+positioned(direction, top = 0, right = 0, bottom = 0, left = 0)
+  position absolute
+  if direction = 'top-right'
+    right right
+    top top
+  if direction = 'top-left'
+    left left
+    top top
+  if direction = 'bottom-right'
+    bottom bottom
+    right right
+  if direction = 'bottom-left'
+    bottom bottom
+    left left
+
 translate-pos(x,y)
   vendor("transform", translateX(x) translateY(y))
 
