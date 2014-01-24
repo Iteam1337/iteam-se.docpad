@@ -117,7 +117,6 @@ docpadConfig =
 
     getShowCase: (max) ->
       casesArray = []
-      return casesArray
 
       max = max or 4
       for data, i in @getCollection('showcase')?.toJSON()

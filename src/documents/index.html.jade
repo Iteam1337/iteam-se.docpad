@@ -29,7 +29,7 @@ introSubheading: >
       .item 
         img(src=showcase.topImage)
         .carousel-caption
-          a(href=showcase.url)= showcase.title
+          a(href=showcase.url,invert=!!shouldWeUseADarkBackground(showcase))= showcase.title
           .sub-caption
 
   a.left.carousel-control(href="#slider",data-slide="prev")
