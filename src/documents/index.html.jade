@@ -9,38 +9,12 @@ introHeading: ["För fyra år sedan fanns inte iPad", "För sju år sedan fanns 
 introSubheading: >
   - Framtiden formas av människor som vågar drömma. Vi bygger framtidens företag med hjälp av senaste digitala verktygen och engagerade beställare.
 ---
-ul.image(
-  rn-carousel
-  rn-carousel-indicator
-  loop=true
-  loopinterval=4000
-)
 
-  li(
-    style="background-image:url(" + document.topImage + ");"
-    invert=!!shouldWeUseADarkBackground(document)
-  )
-    .layer
-      .wrapper(class=shouldWeUseADarkBackground(document))
-        heading(headings=document.introHeading)
-        h2.hidden-phone=document.introSubheading
-
-  //- Holder for all case-sites
-  each showcase in getShowCase()
-    if !!showcase.topImage
-      li(
-        style="background-image:url(" + showcase.topImage + ");"
-        invert=!!shouldWeUseADarkBackground(showcase)
-      )
-        .layer
-          .wrapper(class = shouldWeUseADarkBackground(showcase))
-            a.case-title(soft-hyphen, href = showcase.url)= showcase.title
-            br
-            if !!showcase.sections
-              each section, i in showcase.sections
-                - posClass = i !== 0 ? "separator-before" : ""
-                - section = getMetadataFrom(section)
-                a.section(class = posClass, href = section.url, target = "_blank")= section.title
+ul#slider
+  li
+    img(src=document.topImage)
+  li
+    img(Src=document.topImage)
 
 .container
   #startpage
@@ -63,7 +37,3 @@ ul.image(
 
       .span6
         h2 Iteam på Instagram
-        instagram(
-          name="iteam1337"
-          max=4
-        )

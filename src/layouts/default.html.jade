@@ -35,60 +35,34 @@ html(lang="sv", manifest="/application.appcache")
 
   body(
     class=document.slug
-    menu
   )
 
-    #top-holder
-      .row-fluid#header
-        ul.subnav
-          .subnav-inner
-            each doc in pages
-              if (doc.pageIndex >= 10)
-                - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-                a(href=doc.url, property="dc:title", class=clazz)= doc.title
-            a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
+  nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse(role="navigation")
+    .navbar-header
+      button.navbar-toggle(type="button",data-toggle="collapse",data-target="#main-nav")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="/")
+        img(src="/content/images/svg/iteam_logo.svg", width="120", height="30")
 
-        .header-inner
-          a.brand(href="/")
-            img(src="/content/images/svg/iteam_logo.svg", width="120", height="39")
-          ul.nav
-
-            each doc in pages
-              if (doc.pageIndex < 10)
-                - clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-                - clazz = !!subpages ? clazz + ' submenu' : clazz
-                a(href=doc.url, property="dc:title", class=clazz)= doc.title
-
-          .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
-            .e-list
-
-      if (!!subpages)
-        #navSubpages
-          .subpage-inner
-            each subpage in subpages
-              - active = (subpage.url.indexOf(document.url) > -1) ? 'active' : null
-              a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
-
-      ul#mobileNav
+    .collapse.navbar-collapse#main-nav
+      ul.nav.navbar-nav
         each doc, i in pages
           - clazz = (doc.url.indexOf(document.url) > -1) ? 'active' : null
           - hasSubpage = (doc.subpages) ? i : null
-          li(mobile-nav, data-subpage=hasSubpage)
-            a(class=clazz, data-url=doc.url)= doc.title
+          li(data-subpage=hasSubpage)
+            a(class=clazz, href=doc.url)= doc.title
             if (doc.chevron)
               .e-chevron-thin-right
 
-      #subpageWrap
-        each doc, i in pages
-          if (doc.subpages)
-            - subId = "subpages == " + i
-            ul.subpages(ng-show=subId, ng-animate="'slide-in'")
-              li.back(ng-click="subpages = null")
-                .e-chevron-thin-left
-                span Tillbaka
-              each subpage in getCollection(doc.subpages).toJSON()
-                li
-                  a(href=subpage.url)= subpage.title
+    if (!!subpages)
+      #navSubpages
+        .subpage-inner
+          each subpage in subpages
+            - active = (subpage.url.indexOf(document.url) > -1) ? 'active' : null
+            a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+
 
   .offset
 
@@ -125,3 +99,5 @@ html(lang="sv", manifest="/application.appcache")
     _gaq.push(['_setAccount', 'UA-2430046-1']);
     _gaq.push(['_trackPageview']);
   script(src="//www.google-analytics.com/ga.js")
+  script(src="//localhost:35729/livereload.js")
+

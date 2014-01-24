@@ -1,0 +1,54 @@
+@import 'variable'
+
+nav.navbar-default
+  background #333
+
+  .navbar-header
+    .navbar-brand
+      padding 10px
+
+  ul
+    float none
+    margin 0 auto
+    max-width 1060px
+    text-align center
+
+    li
+      display inline-block
+      float none
+
+      @media mobile
+        display block
+        text-align left
+
+      a
+        color #fff
+        padding 10px
+      .e-chevron-thin-right
+        display none
+
+#navSubpages
+  background #444
+  font-size 0.8em
+  padding 10px
+  text-align center
+
+  @media mobile
+    display none
+
+  .subpage-inner
+    margin 0 auto
+    max-width 850px
+    position relative
+
+    a
+      color #fff
+      display inline-block
+      margin 5px 0
+
+      &.active,
+      &:hover
+        color #ffbd09
+
+      &:not(:last-child)
+        margin-right 20px
