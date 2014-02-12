@@ -32,4 +32,4 @@ The Absolut Company har ett stort antal medarbetare som ansvarar för varumärke
 Vi byggde ABSOLUT FORUM, ett intranät anpassat för många användare och lättillgänglig information. För att göra det så enkelt som möjligt för användarna taggade vi all information med nyckelord och valde en traditionell menynavigering som slussar dem vidare till det viktigaste innehållet. För att få en gemensam inloggning och single sign-on valde vi att bygga inloggningsmodulerna för RSA Authentication Manager speciellt anpassade för ABSOLUT FORUM. Intranätet är byggt på EpiServer CMS helt .NET-baserat.   
 För projektet fick vi, tillsammans med the Absolut Company och Supernative priset för ”Bästa intranät” under EpiServer Awards 2009.
 
-Vill du veta mer om projektet? Kontakta <a href="medarbetare/hans">Anders Bornholm</a>.
+Vill du veta mer om projektet? Kontakta <a href="medarbetare/anders">Anders Bornholm</a>.
