@@ -18,6 +18,7 @@ function ProcessRequest() {
       var a = document.createElement('a');
       var img = new Image();
 
+      a.href = res.data[i].link;
       img.src = res.data[i].image.low_resolution.url;
 
       a.appendChild(img);
