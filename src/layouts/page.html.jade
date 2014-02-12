@@ -4,14 +4,14 @@ layout: default
 
 h1(title,class=document.background)= document.title
 
-.row-fluid(make-anchors)
+.row(make-anchors)
   #page.page
     article.page-content
 
       if (document.pageType === 'Service')
-        .span6!= content
-        .span6
+        .col-md-6!= content
+        .col-md-6
           h4!= document.tagHeader
           include ../jade_includes/service
       else
-        .span12!= content
+        .col-md-12!= content

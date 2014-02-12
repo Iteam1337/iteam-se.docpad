@@ -7,14 +7,14 @@ pageIndex: 4
 dontIndexInAnyCollection: true
 
 topImage: "/content/images/section-topbilder/isolde.jpg"
-backgroundDark: true
+background: 'invert'
 
 chevron: true
 ---
 
 .row-fluid#karriar
   .row
-    .span6
+    .col-md-6
       :markdown
        ## Vi älskar spontanansökningar
 
@@ -28,4 +28,12 @@ chevron: true
         På vår blogg [tekniken.nu](//tekniken.nu) delar vi med oss av våra idéer och upptäkter.
 
         Kontakta gärna [Sophie Raland Wesslau](/medarbetare/sophie) om du vill veta mer.
-
+    
+    #opportunities.col-md-5.col-md-offset-1
+      h2 Just nu söker vi
+      ul
+        each career in getCollection('ledigatjanster').toJSON()
+          if !!career.title
+            li
+              a.title(href=career.url)= career.title + ' »'
+              p!= career.summary

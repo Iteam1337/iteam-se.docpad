@@ -7,8 +7,8 @@ h1(title,class=document.background)= document.title
 .row-fluid(make-anchors)
   #page.page.job
     article.page-content
-      .span7!= content
-      .span5.right-coloumn
+      .col-md-7!= content
+      .col-md-5.right-coloumn
         h2 Krav
         .row!= fromMarkdown(document.krav)
         h2 Meriterande

@@ -34,7 +34,7 @@ anstallningsform: >
 
   * **Anställningsform:** Tillsvidareanställning, 6 månaders provanställning, sedan fast anställning.
 
-  * **Start:** Höst 2013
+  * **Start:** Omgående
 
   * Ansök tjänsten genom att maila ditt CV och personliga brev till [sophie.wesslau@iteam.se](mailto:sophie.wesslau@iteam.se)
 

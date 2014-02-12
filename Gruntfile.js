@@ -15,6 +15,10 @@ module.exports = function (grunt) {
           'bower_components/jquery/jquery.min.js',
           'bower_components/bootstrap/dist/js/bootstrap.min.js',
         ]
+      },
+      app: {
+        dest: '<%= outPath %>content/scripts/app.js',
+        src: ['src/scripts/*.js']
       }
     },
 

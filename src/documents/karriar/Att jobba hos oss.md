@@ -33,7 +33,7 @@ Anders kodar bäst i
 
 
 
-    #opportunities.span5.offset1
+    #opportunities.col-md-5.col-md-offset-1
       h2 Just nu söker vi
       ul
         each career in getCollection('ledigatjanster').toJSON()
