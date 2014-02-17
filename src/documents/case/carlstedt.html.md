@@ -2,7 +2,7 @@
 title: Carlstedt Arkitekter
 subtitle:
 layout: case
-caseIndex: 3
+caseIndex: 4
 releaseDate: 070202
 
 tags: ['IT-review','Drift & Support','Specialist- och projektstöd']

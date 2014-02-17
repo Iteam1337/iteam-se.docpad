@@ -2,7 +2,7 @@
 title: Radical FM
 subtitle: 
 layout: case
-caseIndex: 0
+caseIndex: 1
 releaseDate: 110101
 
 tags: ['Proof-of-concept','Lead tech','Drift & Support',Entreprenörsrådgivning','Rådgivning']

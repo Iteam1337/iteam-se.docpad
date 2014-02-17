@@ -2,7 +2,7 @@
 title: Projektbevakning
 subtitle:
 layout: case
-caseIndex: 2
+caseIndex: 3
 releaseDate: 120101
 
 tags: ['Proof-of-concept','Systemutveckling']

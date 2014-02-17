@@ -194,9 +194,14 @@
         width 200px
 
     .gallery
-      padding-top 40px
       position relative
       width 100%
+
+      img
+        margin 0
+
+        &:not(:last-child)
+          margin-bottom 20px
 
       .title
         top -50px
