@@ -12,7 +12,7 @@ module.exports = function (grunt) {
       vendor: {
         dest: '<%= outPath %>content/scripts/<%= pkg.name %>.js',
         src: [
-          'bower_components/jquery/jquery.min.js',
+          'bower_components/jquery/jquery.js',
           'bower_components/bootstrap/dist/js/bootstrap.min.js',
         ]
       },

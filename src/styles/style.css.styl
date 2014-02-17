@@ -70,10 +70,17 @@
   > div
     display inline-block
     vertical-align top
+    
+    @media mobile
+      display block  
+      margin-top 20px
 
   #address
     margin 0
     width 40%
+
+    @media mobile
+      width 100%
 
     li
       font-size 0.8em
@@ -84,11 +91,17 @@
         margin-bottom 10px
 
   #followUs
-    text-align right
-    width 100%
     position absolute
     right 20px
+    text-align right
     top 30px
+    width 100%
+
+    @media mobile
+      position relative
+      right 0
+      text-align center
+      top 0
 
     .e-github,
     .e-twitter,
@@ -148,6 +161,9 @@
   padding 15px 55px
   margin-top 300px
   max-width 1060px
+
+  @media mobile
+    padding 15px 10px
 
   h1
     position absolute
@@ -233,6 +249,9 @@
   max-width 1060px
   padding 0 55px
   width 100%
+
+  @media mobile
+    top 20px
 
 #top-holder,
 #footer-holder,

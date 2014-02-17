@@ -4,6 +4,7 @@
   #main-holder
     background-position 50% 50%
     background-size cover
+    
   .container
     box(border-box)
     background-color transparent
@@ -13,8 +14,11 @@
     padding 20px
 
     .two-column p
-      two-column()
+      column()
       max-width none
+
+      @media mobile
+        column(1,0);
 
     img
       max-width 100%

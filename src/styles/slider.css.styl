@@ -1,32 +1,50 @@
 @import 'variable'
 
-.carousel-inner
-  height 450px
-    
-  .item
-    height 100%
+#slider
+  .carousel-inner
+    height 450px
 
-    img
-      min-height 100%
-      width 100%
+    @media mobile
+      height 250px
+      
+    .item
+      height 100%
 
-    .carousel-caption
-      positioned('top-left', 50%,0,0,50%)
-      translate-pos(-50%,-50%);
+      img
+        min-height 100%
+        width 100%
 
-      font-size 4em
-      right auto
-      width 1060px
+      .carousel-caption
+        positioned('top-left', 50%,0,0,50%)
+        translate-pos(-50%,-50%);
 
-      a
-        color #fff
+        font-size 4em
+        right auto
+        width 1060px
 
-      .sub-caption
-        font-size 0.4em
+        @media normalDesktop
+          max-width 80%
 
-        .separator-before:before
-          content "\2022"
-          font-size 14px
-          margin 0 5px
-          position relative
-          top -3px
+        @media mobile
+          font-size 2.5rem
+          max-width 100%
+
+        a
+          color #fff
+
+        .sub-caption
+          font-size 0.4em
+
+          @media mobile
+            font-size 1rem
+            padding 0 20px
+
+          .separator-before:before
+            content "\2022"
+            font-size 14px
+            margin 0 5px
+            position relative
+            top -3px
+
+  .carousel-control
+    z-index 10
