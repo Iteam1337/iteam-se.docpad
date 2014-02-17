@@ -1,11 +1,22 @@
 var xmlHttp = null;
 
-function GetInstagramPhotos() {
-  var Url = "http://insta-team.se/user/iteam1337?count=4";
+var instagram = document.querySelector('.instagram');
+
+if (instagram) {
+  var user           = instagram.getAttribute('data-name');
+  var numberOfImages = instagram.getAttribute('data-images');
+  var count          = numberOfImages ? numberOfImages : 4;
+
+  GetInstagramPhotos(user, count);
+}
+
+function GetInstagramPhotos(name, max) {
+  var url = "http://insta-team.se/user/{name}?count={count}";
+  url = url.replace('{name}', name).replace('{count}', count);
 
   xmlHttp = new XMLHttpRequest(); 
   xmlHttp.onreadystatechange = ProcessRequest;
-  xmlHttp.open( "GET", Url, true );
+  xmlHttp.open( "GET", url, true );
   xmlHttp.send( null );
 }
 
@@ -18,6 +29,7 @@ function ProcessRequest() {
       var a = document.createElement('a');
       var img = new Image();
 
+      a.setAttribute('target', '_blank');
       a.href = res.data[i].link;
       img.src = res.data[i].image.low_resolution.url;
 
@@ -27,4 +39,3 @@ function ProcessRequest() {
   }
 }
 
-GetInstagramPhotos();
