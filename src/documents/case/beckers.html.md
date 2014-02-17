@@ -2,7 +2,7 @@
 title: Beckers.se
 subtitle:
 layout: case
-caseIndex: 1
+caseIndex: 2
 releaseDate: 090303
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
