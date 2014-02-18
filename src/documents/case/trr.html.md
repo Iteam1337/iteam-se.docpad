@@ -3,15 +3,15 @@ title: TRR
 subtitle:
 layout: case
 caseIndex: 0
-releaseDate: 120101
+releaseDate: 140120
 
 tags: ['Proof-of-concept','Systemutveckling']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/trr.png'
 
-imageGallery: ['case-galleribilder/trr/trr-1.png','case-galleribilder/trr/trr-2.png','case-galleribilder/trr/trr-3.png']
+imageGallery: ['case-galleribilder/trr/trr-2.png','case-galleribilder/trr/trr-3.png','case-galleribilder/trr/trr-4.png','case-galleribilder/trr/trr-5.png']
 
-team: ['anders','martin','alexander','dennis']
+team: ['anders','martin','alexander','dennis', 'hans']
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
 
 readmorelinks:
@@ -26,13 +26,13 @@ intro: >
   Uppdragets mål är att hjälpa fler uppsagda inom PTK och LO-förbunden till fler jobb – snabbare och enklare.
 ---
 
-## Iteam och TRR lanserar Sveriges vassaste rekryteringsverktyg
+## TRR och Iteam lanserar Sveriges vassaste rekryteringsverktyg
 
 ## Utmaning & bakgrund
 Uppdragets mål är att hjälpa fler uppsagda inom PTK och LO-förbunden till fler jobb – snabbare och enklare. Projektet har varit en satsning mellan Trygghetsrådet och dotterbolaget Startkraft. Utmaningen är att matcha ihop den rikstäckande arbetskraftefterfrågan och arbetskraft på ett snabbt, korrekt och inspirerande sätt.
 
 ## Lösningen & tekniken
-Projektet har resulterat i två nya webbgränssnitt – ett för medarbetarna inom TRR Rekrytering och ett för kunder. Båda gränsnitten har självklart fått en responsiv design, vilket gör att medarbetare och kunder sömlöst kan röra sig mellan sina stationära datorer, mobiltelefoner och läsplattor. Båda nya gränssnitten använder sig av AngularJS vilket lett till god struktur, avlastning av servern och att det har varit enklare att skriva kod som går att underhålla och kontinuerligt förbättra.Centralt i projektet finns ett väl utvecklat SOAP API och REST API för hanteringet av central information – så som jobbprofiler, kunddata, kandidatdata, CV:n, matchningsparametrar och meddelandehantering. För backend lösningen har vi använt .NET4 och kvalitetsstyrt med hjälp av automatiserade tester.
+Projektet har resulterat i två nya webbgränssnitt – ett för medarbetarna inom TRR Rekrytering och ett för kunder. Båda gränsnitten har självklart fått en responsiv design, vilket gör att medarbetare och kunder sömlöst kan röra sig mellan sina stationära datorer, mobiltelefoner och läsplattor. Båda nya gränssnitten använder sig av AngularJS vilket lett till god struktur, avlastning av servern och att det har varit enklare att skriva kod som går att underhålla och kontinuerligt förbättra. Centralt i projektet finns ett väl utvecklat SOAP API och REST API för hanteringet av central information – så som jobbprofiler, kunddata, kandidatdata, CV:n, matchningsparametrar och meddelandehantering. För backendlösningen har vi använt .NET4 och kvalitetsstyrt med hjälp av automatiserade tester.
 
 ## Resultatet
 Det nya verksamhetsstödet för TRR Rekrytering innebär kortare handläggningstider – från framtagning av kompetensprofil för tjänsten som skall tillsättas – till att rätt kandidater enkelt kan söka rätt jobb. Verktyget ökar också den interna effektiviteten och flexibiliteten ytterligare. Storstadsområden – som Stockholm, Göteborg och Malmö – är ett skräddarsytt state-of-the-art verksamhetsstöd en viktig nyckel till framgång för att TRR Rekrytering och dess kunder ska klara av svängningar mellan hög- och lågkonjunktur.
