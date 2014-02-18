@@ -4,16 +4,21 @@
   #main-holder
     background-position 50% 50%
     background-size cover
+    
   .container
     box(border-box)
     background-color transparent
     margin 0 auto
-    max-width 1170px
+    max-width width
     min-height 376px
     padding 20px
 
-    p
+    .two-column p
+      column()
       max-width none
+
+      @media mobile
+        column(1,0);
 
     img
       max-width 100%
@@ -24,19 +29,10 @@
       line-height 1.2em
       margin-bottom 1em
 
-    .two-column
-      p
-        column(2)
+  #footer-holder
+    padding 0 20px
+    max-width width
 
-  .instagram-feed
-    a
-      width 25%
-      margin 0
-      padding 0
-      display inline-block
-      text-align center
-      img
-        border 2px solid white
-        max-width 100%
-        margin 0 auto
-        height auto
+    #footer
+      max-width width
+      padding 40px 20px 0

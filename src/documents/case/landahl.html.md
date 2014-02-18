@@ -9,7 +9,7 @@ tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruk
 sections: ['Drift & Support']
 logo: 'case-logos/landahl.png'
 
-imageGallery:
+imageGallery: []
 
 team: ['mats','rasmus']
 siteurl: http://www.landahl.se
@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage:
-backgroundDark:
+background: invert
 
 intro: >
   Vi gav expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.

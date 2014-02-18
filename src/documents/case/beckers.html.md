@@ -2,7 +2,7 @@
 title: Beckers.se
 subtitle:
 layout: case
-caseIndex: 1
+caseIndex: 2
 releaseDate: 090303
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/beckers.JPG"
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Iteam fick i uppdrag att skapa en responsiv sajt för Beckers.

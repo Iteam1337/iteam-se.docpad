@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage:
-backgroundDark:
+background: invert
 
 intro: >
   Vi ger expertstöd till satellitoperatör.

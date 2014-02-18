@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: '/content/images/case-topbilder/absolut.jpg'
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Vi utvecklade ett globalt intraranät för alla som marknadsför ABSOLUT VODKA.

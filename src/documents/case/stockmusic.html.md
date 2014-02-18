@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage:
-backgroundDark:
+background: invert
 
 intro: >
   Vi bygger Sound Ideas sajt för att söka, provvlyssna och köpa musik, ljudeffekter och produktionselement.

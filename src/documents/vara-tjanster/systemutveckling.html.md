@@ -8,7 +8,7 @@ pageOrder: 2
 subpages: 'tjanster'
 
 topImage: '/content/images/section-topbilder/systemutveckling.jpg'
-backgroundDark: true
+background: 'invert'
 
 summary: >
   Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt.<p>

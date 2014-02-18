@@ -6,13 +6,13 @@ pageIndex: 5
 dontIndexInAnyCollection: true
 
 topImage: "/content/images/section-topbilder/om3.JPG"
-backgroundDark: true
+background: 'invert'
 
 chevron: true
 ---
 .row-fluid#about
   .row
-    .span6
+    .col-md-6
       :markdown
         ##Kvalitet, innovation och effektivitet
         Iteam är en teknikbyrå i Stockholm som erbjuder agil utveckling, rådgivning och IT-drift till små och medelstora företag inom media, juridik, HR och bygg. Vi erbjuder komplexa tekniklösningar i projektform med agila arbetssätt vilket borgar för kvalitet, innovation och effektivitet. Iteam startades 1995 och vi är ett helt personalägt bolag och har högsta kreditrating enligt UC och har Trippel-A (AAA) enligt Soliditet. [Läs mer]( http://www.soliditet.se/cms/ratingstatistik) om Soliditets AAA-rating och statistik.
@@ -20,7 +20,7 @@ chevron: true
         ##Att utvecklas är lösningen
         Vi jobbar alltid i nära samarbete med våra kunder. Vi står för den tekniska lösningen när det handlar om att skapa eller vidareutveckla ett befintligt företag eller tjänst. Målet, oavsett uppdrag, är att både kund och medarbetare kontinuerligt ska utvecklas och växa - både som individ och företag.
 
-    .span5.offset1
+    .col-md-5.col-md-offset-1.map
       :markdown
         ## Hitta oss
         [![Google Maps](http://maps.googleapis.com/maps/api/staticmap?center=59.338946,18.05723&zoom=14&size=1170x200&maptype=roadmap&sensor=false&markers=color:0xFFBD09%7Clabel:I%7C59.338946,18.05723&visual_refresh=true)](https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Iteam%2BSolutions%2BAB,%2BTegn%C3%A9rgatan%2B28,%2BStockholm,%2BSweden&aq=&sll=59.318652,18.018436&sspn=0.061665,0.122395&vpsrc=0&t=h&ie=UTF8&hq=iteam+solutions+ab&hnear=Tegn%C3%A9rgatan+28,+113+59+Stockholm,+Stockholms+l%C3%A4n,+Sweden&ll=59.338946,18.057253&spn=0.007091,0.015299&z=16&iwloc=A",style="color:#0000FF;text-align:left",target="_blank)
@@ -33,16 +33,16 @@ chevron: true
   .row(about-view)
 
     .row
-      .span5
+      .col-md-5
         :markdown
           ##Lite statistik om oss:
 
-    .row-fluid
-      .span5
+    .row
+      .col-md-5
         h3 Omsättning [MSEK]
         canvas.turnoverNumbers(width=400,height=200)
 
-      .span5.offset2
+      .col-md-5.col-md-offset-2
         h3 Antal medarbetare
         canvas.employeeNumbers(width=400,height=200)
         p Källa: Bolagsverket, Creditsafe, och <a href="http://www.allabolag.se/5565516928/Iteam_Solutions_AB" target="blank">Allabolag</a>

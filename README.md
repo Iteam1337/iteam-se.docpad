@@ -1,6 +1,10 @@
 ## This is the official iteam.se website
 Our site is built using [docpad](https://github.com/bevry/docpad/)
 
+
+[![Build Status](https://drone.io/github.com/Iteam1337/iteam-se.docpad/status.png)](https://drone.io/github.com/Iteam1337/iteam-se.docpad/latest)
+
+
 ## Getting Started
 
 1. Clone the project and run the server

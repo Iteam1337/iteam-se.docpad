@@ -8,11 +8,11 @@ shortname: rickard
 
 jobTitle: Frontendutvecklare
 email: rickard.laurin@iteam.se
-phonenumber: '076 - 166 85 11'
+phonenumber: '0761 - 66 85 11'
 
 cssColor: "#8fe991"
 topImage: "/content/images/medarbetare/rln.jpg"
-backgroundDark: true
+background: 'invert'
 
 twitter: rickardlaurin
 instagram: rickardlaurin

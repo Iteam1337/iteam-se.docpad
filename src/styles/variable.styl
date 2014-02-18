@@ -1,12 +1,20 @@
-igrey = #231F20
-_orange = #ffbd09
-iorange = #FFBD09
-iorangergb = rgb(255,189,9)
-bgBoxes = rgba(0,0,0,0.3)
+// Colors
+igrey              = #231F20
+_orange            = #ffbd09
+iorange            = #FFBD09
+iorangergb         = rgb(255,189,9)
+bgBoxes            = rgba(0,0,0,0.3)
+
+// Fonts
 sansSerifFontStack = "AvantGarde ExtraLight", "Tex Gyre Adventor Regular", Franklin Gothic Book, Arial, Sans-Serif
-serifFontStack = "Palatino Linotype", serif
+serifFontStack     = "Palatino Linotype", serif
 monospaceFontStack = "Monaco", "Menlo", "Consolas", "Courier New", "monospace"
 
+// Sizes
+width              = 1170px
+
+
+// Mixins
 vendor(prop, args)
   -webkit-{prop} args
   -moz-{prop} args
@@ -35,6 +43,24 @@ shadow()
 
 border-radius()
   vendor('border-radius', arguments)
+
+box-sizing()
+  vendor('box-sizing', arguments)
+
+positioned(direction, top = 0, right = 0, bottom = 0, left = 0)
+  position absolute
+  if direction = 'top-right'
+    right right
+    top top
+  if direction = 'top-left'
+    left left
+    top top
+  if direction = 'bottom-right'
+    bottom bottom
+    right right
+  if direction = 'bottom-left'
+    bottom bottom
+    left left
 
 translate-pos(x,y)
   vendor("transform", translateX(x) translateY(y))
@@ -80,3 +106,8 @@ zoom-cursor(direction = "in")
 
 svg(icon = "")
   background-image url("/content/images/svg/" + icon + ".svg")
+
+// Responsiveness
+tablet = "(max-width:979px)"
+mobile = "(max-width:480px)"
+normalDesktop = "(max-width:1200px)"

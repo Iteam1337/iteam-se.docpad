@@ -6,13 +6,13 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: sophie
 
-jobTitle: VD-assistent & Marknadsansvarig
+jobTitle: Administration & Projektledning
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
 
 cssColor: "#e63132"
 topImage: "/content/images/medarbetare/sru.jpg"
-backgroundDark: true
+background: 'invert'
 
 twitter: sophiewesslau
 instagram: sophiewesslau

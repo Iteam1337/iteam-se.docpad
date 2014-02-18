@@ -12,6 +12,9 @@
     "iteam",
     "iteam.se"
   ],
+  "scripts": {
+    "postinstall": "bower install"
+  },
   "author": "Iteam Solutions <info@iteam.se> (http://iteam.se)",
   "bugs": {
     "url": "https://github.com/Iteam1337/iteam-se.docpad/issues"
@@ -39,7 +42,7 @@
     "marked": "*",
     "safeps": "~2.2.6",
     "taskgroup": "~3.1.1",
-    "docpad": "~6.63.3",
+    "docpad": "6.54.10",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-jade": "~0.8.0",
@@ -51,13 +54,17 @@
     "docpad-plugin-livereload": "~2.6.0",
     "markdown": "~0.5.0",
     "grunt-s3": "~0.2.0-alpha.3",
-    "stripcolorcodes": "~0.1.0"
+    "stripcolorcodes": "~0.1.0",
+    "docpad-plugin-grunt": "~2.1.1",
+    "docpad-plugin-styl": "~2.0.0"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
     "grunt-mocha": "~0.3.4",
     "grunt-invalidate-cloudfront": "~0.1.2",
     "grunt-manifest": "~0.4.0",
-    "grunt-contrib-imagemin": "~0.3.0"
+    "grunt-contrib-imagemin": "~0.3.0",
+    "bower": "*",
+    "grunt-contrib-watch": "~0.5.3"
   }
 }

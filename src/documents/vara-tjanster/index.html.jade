@@ -7,7 +7,7 @@ subpages: 'tjanster'
 dontIndexInAnyCollection: true
 
 topImage: "/content/images/section-topbilder/varatjanster4.JPG"
-backgroundDark: true
+background: 'invert'
 
 chevron: true
 ---
@@ -21,9 +21,9 @@ chevron: true
     [Hans Rollman](/medarbetare/hans) har alla svar på frågor kring Rådgivning och Systemutveckling. [Mats Egardt](/medarbetare/mats) berättar allt om It-Support.
   img: "/content/images/section-topbilder/placeholder.jpg" 
 
-.row-fluid.tjanster
+.row.tjanster
   each doc in getCollection('tjanster').toJSON()
-    .span4.offer
+    .col-md-4.offer
       a.title(href=doc.url)= doc.title + ' »'
 
       p!= doc.summary

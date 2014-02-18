@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/shake.JPG"
-backgroundDark:
+background: invert
 
 intro: >
   Vi ville skapa en kombination av Facebook, dejtingsajt och en aktivitetssajt.

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-h1.main-title(title,class=shouldWeUseADarkBackground(),soft-hyphen)= document.title
+h1(title,class=document.background)= document.title
   small=document.subtitle && " - " + document.subtitle || ''
 
 .row-fluid
@@ -20,33 +20,32 @@ h1.main-title(title,class=shouldWeUseADarkBackground(),soft-hyphen)= document.ti
                   h2=document.about.title
                   p=document.about.text
 
-            if (!!document.quote)
-              .quote
-                h3= "\"" + document.quote.text + "\""
-                blockquote="— " + document.quote.by
-
-
         .text!= content
 
         .information
+          if (!!document.quote)
+            .quote
+              h3= "\"" + document.quote.text + "\""
+              blockquote="— " + document.quote.by
 
           if (document.team)
             ul.team
               .header
                 h2 Vårt team
-              include ../mixins_and_partials/jade_includes/team
+              include ../jade_includes/team
 
           if (document.readmorelinks)
             ul.urls
               .header
                 h2 Länkar
-              include ../mixins_and_partials/jade_includes/readmore
+              include ../jade_includes/readmore
 
           if (document.imageGallery)
             .gallery
               .header
                 h2 Galleri
-              include ../mixins_and_partials/jade_includes/image_gallery
+              ul
+                include ../jade_includes/image_gallery
 
           if (document.tags)
-            include ../mixins_and_partials/jade_includes/related_tags
+            include ../jade_includes/related_tags

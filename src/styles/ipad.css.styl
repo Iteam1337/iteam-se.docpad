@@ -1,13 +1,6 @@
 @import "variable"
 
 @media (max-width:980px)
-  .index
-    .rn-carousel-container
-      .layer
-        .wrapper
-          background rgba(255,255,255,0.3)
-          &.invert
-            background none
   .case-index
     p,
     h2
@@ -97,10 +90,6 @@
       margin-top 0
       padding-top 0
 
-    .rn-carousel-container
-      .right
-        right -5px
-
   .container
     .page-content
       .text,
@@ -119,7 +108,7 @@
 
   #coworker
     .desc
-      column(1, 0)
+      column(1,0)
 
     .user-content.multi
       width 100%
@@ -203,18 +192,8 @@
     .container
       padding 20px
 
-      .two-column
-        p
-          column(1, 0)
-
-  #header
-
-    .nav
-      text-align right
-
-    .brand
-      float left
-      position relative
+      p
+        two-column(1,0)
 
   body
     padding 0

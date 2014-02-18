@@ -2,7 +2,7 @@
 title: Carlstedt Arkitekter
 subtitle:
 layout: case
-caseIndex: 3
+caseIndex: 4
 releaseDate: 070202
 
 tags: ['IT-review','Drift & Support','Specialist- och projektstöd']
@@ -19,7 +19,7 @@ quote:
 about:
 
 topImage: "/content/images/case-topbilder/ca.jpg"
-backgroundDark: true
+background: 'invert'
 
 intro: >
   Vi gav expertstöd för IT-ansvarige och extraresurs vid kontorsflytt.

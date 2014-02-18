@@ -1,4 +1,0 @@
-.image-wrapper
-  div(ng-class="{'zoom-wrapper': active != null}")
-    img.zoom(ng-show="active != null", ng-src="{{images[active]}}")
-  img.zoomable(ng-repeat="(i, image) in images", ng-src="{{image}}", ng-click="setActive(i)")

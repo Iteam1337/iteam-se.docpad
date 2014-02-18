@@ -4,149 +4,76 @@
 //- All indexes that are to be shown on all pages
 - var pages = getCollection('sektion').toJSON()
 
-//- TEMP SOLLUTION for blogs
-- var arr = []
-each doc in pages
-  - arr.push(doc)
-- blogg = { url: 'http://tekniken.nu/', title: 'Blogg', pageIndex: 15 }
-- arr.splice(arr.length - 1, 0, blogg)
-- pages = arr
-//- TEMP SOLLUTION for blogs
-
 //- url-highlighting and so on
 - var documentUrl = document.url.split("/")
 - var basename = documentUrl[1]
-- var onBlogPage = basename === "blogg"
-- var onCase = basename == "case"
 
 //- All pages that should be shown on the
 //- second navigation row
-- var subpages = {}
-- if (basename === "blogg")
-  - subpages = getAllBlogCategories()
-- else
-  - subpages = (!!document.subpages) ? getCollection(document.subpages) : false
-  - subpages = !!subpages && !!subpages.toJSON ? subpages.toJSON() : false
-
-//- Other Scripts
-//- scripts.add(["/content/scripts/vendor.js"])
-
-//- User
-- styles.add(["/content/styles/vendor.css","/content/styles/iteamse.css"])
-//- scripts.add(["/content/scripts/iteamse.js"])
+- var subpages = document.subpages && getCollection(document.subpages).toJSON()
 
 !!! 5
 html(lang="sv")
   head
-
-    // Meta
     meta(charset="utf-8")
     meta(http-equiv="content-type", content="text/html; charset=utf-8")
-
-    //-
-      Use the .htaccess and remove these lines to avoid edge case issues.
-      More info: h5bp.com/i/378
     meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
 
-    //- Our site title and description
-    title= getPreparedTitle().replace('--','')
+    title= getPreparedTitle()
     meta(name="description", content=getPreparedDescription())
     meta(name="keywords", content=getPreparedKeywords())
     meta(name="author", content=site.author || '')
-
-    //- Output DocPad produced meta elements
-    != getBlock("meta").toHTML()
-
-    //- Mobile viewport optimized: h5bp.com/viewport
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 
-    // Icons
+    != getBlock("meta").toHTML()
+
     link(rel="shortcut icon", href="/content/ico/favicon.ico")
-    link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/content/ico/apple-touch-icon-144-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/content/ico/apple-touch-icon-114-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/content/ico/apple-touch-icon-72-precomposed.png")
-    link(rel="apple-touch-icon-precomposed", href="/content/ico/apple-touch-icon-57-precomposed.png")
-
-    //- Shims: IE6-8 support of HTML5 elements
-    //if lt IE 9
-      script(async src="http://html5shim.googlecode.com/svn/trunk/html5.js")
-
-    // Styles
-    != styles.toHTML()
-
-    script(src="/content/scripts/vendor.js")
     script(src="/content/scripts/iteamse.js")
+    link(rel="stylesheet", href="/content/styles/vendor.css", type="text/css")
+    link(rel="stylesheet", href="/content/styles/iteamse.css", type="text/css")
 
   body(
     class=document.slug
-    ng-app="iteamse"
-    ng-controller="MainCtrl"
-    menu
   )
 
-    #top-holder.ng-cloak
-      .row-fluid#header
-        ul.subnav
-          .subnav-inner
-            each doc in pages
-              if (doc.pageIndex >= 10)
-                - var clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-                a(href=doc.url+"/", property="dc:title", class=clazz)= doc.title
-            a(href="http://tfs.iteam.se", target="_blank", class="btn") Logga in
+  nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse(role="navigation")
+    .navbar-header
+      button.navbar-toggle(type="button",data-toggle="collapse",data-target="#main-nav")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="/")
+        img(src="/content/images/svg/iteam_logo.svg", width="120", height="30")
 
-        .header-inner
-          a.brand(href="/")
-            img(src="/content/images/svg/iteam_logo.svg", width="120", height="39")
-          ul.nav
-
-            each doc in pages
-              if (doc.pageIndex < 10)
-                - clazz = (document.url === doc.url || basename === doc.url.substring(1)) ? 'active' : null
-                - clazz = !!subpages ? clazz + ' submenu' : clazz
-                a(href=doc.url+"/", property="dc:title", class=clazz)= doc.title
-
-          .openMobileNav.visible-phone(ng-click="mobileNav = !mobileNav; subpages = null")
-            .e-list
-
-      if (!!subpages)
-        #navSubpages.ng-cloak
-          .subpage-inner
-            each subpage in subpages
-              - active = (document.url === subpage.url || !!onBlogPage && subpage.title.toLowerCase() === documentUrl[2]) ? 'active' : null
-              a(href=subpage.url + "/",class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
-
-      ul#mobileNav.ng-cloak(ng-show="mobileNav && subpages == null",ng-animate="'slide'")
+    .collapse.navbar-collapse#main-nav
+      ul.nav.navbar-nav
         each doc, i in pages
-          - clazz = (document.url === doc.url) ? 'active' : null
+          - clazz = (doc.url.indexOf(document.url) > -1) ? 'active' : null
           - hasSubpage = (doc.subpages) ? i : null
-          li(mobile-nav, data-subpage=hasSubpage)
-            a(class=clazz, data-url=doc.url)= doc.title
+          li(data-subpage=hasSubpage)
+            a(class=clazz, href=doc.url)= doc.title
             if (doc.chevron)
               .e-chevron-thin-right
 
-      #subpageWrap.ng-cloak
-        each doc, i in pages
-          if (doc.subpages)
-            - subId = "subpages == " + i
-            ul.subpages(ng-show=subId, ng-animate="'slide-in'")
-              li.back(ng-click="subpages = null")
-                .e-chevron-thin-left
-                span Tillbaka
-              each subpage in getCollection(doc.subpages).toJSON()
-                li
-                  a(href=subpage.url + "/")= subpage.title
+    if (!!subpages)
+      #navSubpages
+        .subpage-inner
+          each subpage in subpages
+            - active = (subpage.url.indexOf(document.url) > -1) ? 'active' : null
+            a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+
 
   .offset
 
   if document.url === "/"
-    #main-holder.ng-cloak!= content
+    #main-holder!= content
   else
-    #main-holder.ng-cloak
+    #main-holder
       .background-image(style=topImage())
       .container(class=singlePageCase())
         #content.row-fluid.content!= content
 
-  #footer-holder.ng-cloak
+  #footer-holder
     #footer
       #address
         ul
@@ -166,3 +93,9 @@ html(lang="sv")
 
   // Scripts
   != scripts.toHTML()
+  script.
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-2430046-1']);
+    _gaq.push(['_trackPageview']);
+  script(src="//www.google-analytics.com/ga.js")
+  script(src="/content/scripts/app.js")

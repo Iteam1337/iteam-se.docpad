@@ -46,7 +46,6 @@
 
       .case-title
         margin-top 0
-        text-align center
 
       .case-tags
         padding-top 20px
@@ -132,11 +131,13 @@
 
     .quote
       color #444
-      float right
       h3
-        font-size 2em
+        font-size 1.3em
+        line-height 1.4
       blockquote
         border-left none
+        margin-bottom 0
+        padding-bottom 0
         text-align right
 
     .text
@@ -160,11 +161,16 @@
     .team,
     .relatedServices,
     .twitter
+      margin-top 40px
       position relative
+
+      .header
+        h2
+          margin-top 0
 
       li
         display inline-block
-        margin-bottom 20px
+        margin-top 20px
         text-align left
         vertical-align top
         width 48%
@@ -182,7 +188,6 @@
         &:nth-child(2n)
           padding 0 10px 0 0
 
-
     .urls
       padding 40px 0
       position relative
@@ -193,9 +198,31 @@
         width 200px
 
     .gallery
-      margin 40px 0
+      margin-top 40px
       position relative
       width 100%
+
+      .header
+        h2
+          margin-top 0
+
+      li
+        margin 0
+        margin-top 20px
+        max-height 150px
+        width 49%
+
+        &:nth-child(2n-1)
+          padding-right 10px
+
+        &:nth-child(2n+2)
+          padding-left 10px
+
+        img
+          margin 0
+          max-height 100%
+          vertical-align top
+          width 100%
 
       .title
         top -50px
@@ -210,6 +237,8 @@
             margin-right 0
 
     .relatedServices
+      padding 40px 0 0
+
       .title
         width 200px
 

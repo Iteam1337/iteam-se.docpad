@@ -1,8 +1,0 @@
-- var images = []
-each image in document.imageGallery
-  if typeof image === "string"
-    if image.charAt(0) !== "/" || !image.match(/^http/i)
-      - image = "/content/images/" + image
-    - images.push(image)
-
-image-carousel(images="['" + images.join("','") +"']")

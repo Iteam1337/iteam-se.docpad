@@ -1,0 +1,51 @@
+@import 'variable'
+
+#slider
+  .carousel-inner
+    height 450px
+
+    @media mobile
+      height 250px
+      
+    .item
+      height 100%
+
+      img
+        min-height 100%
+        width 100%
+
+      .carousel-caption
+        positioned('top-left', 50%,0,0,50%)
+        translate-pos(-50%,-50%);
+
+        font-size 4em
+        right auto
+        width 1060px
+
+        @media normalDesktop
+          max-width 80%
+
+        @media mobile
+          font-size 2.5rem
+          max-width 100%
+
+        a
+          color #fff
+
+        .sub-caption
+          font-size 0.4em
+
+          @media mobile
+            font-size 1rem
+            padding 0 20px
+
+          .separator-before:before
+            content "\2022"
+            font-size 14px
+            margin 0 5px
+            position relative
+            top -3px
+
+  .carousel-control
+    color #fff
+    z-index 10

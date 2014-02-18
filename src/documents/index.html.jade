@@ -1,69 +1,66 @@
 ---
 layout: 'default'
 title:
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 
 topImage: "/content/images/section-topbilder/start.JPG"
-backgroundDark: true
+background: 'invert'
 
 introHeading: ["Vi är en teknikbyrå med kreativa lösnigar"]
 introSubheading: >
   - Vi förverkligar dina idéer med teknik och hjälper din organisation att växa.
 ---
-ul.image(
-  rn-carousel
-  rn-carousel-indicator
-  loop=true
-  loopinterval=4000
-)
 
-  li(
-    style="background-image:url(" + document.topImage + ");"
-    invert=!!shouldWeUseADarkBackground(document)
-  )
-    .layer
-      .wrapper(class=shouldWeUseADarkBackground(document))
-        heading(headings=document.introHeading)
-        h2.hidden-phone=document.introSubheading
+#slider.carousel.slide(data-ride="carousel")
+  ol.carousel-indicators
+    li.active(data-target="#slider",data-slide-to="0")
+    li(data-target="#slider",data-slide-to="1")
+    li(data-target="#slider",data-slide-to="2")
+    li(data-target="#slider",data-slide-to="3")
+    li(data-target="#slider",data-slide-to="4")
 
-  //- Holder for all case-sites
-  each showcase in getShowCase()
-    if !!showcase.topImage
-      li(
-        style="background-image:url(" + showcase.topImage + ");"
-        invert=!!shouldWeUseADarkBackground(showcase)
-      )
-        .layer
-          .wrapper(class = shouldWeUseADarkBackground(showcase))
-            a.case-title(soft-hyphen, href = showcase.url)= showcase.title
-            br
+  .carousel-inner
+    .item.active
+      img(src=document.topImage)
+      .carousel-caption= document.introHeading[0]
+        .sub-caption= document.introSubheading
+    each showcase in getShowCase()
+      if !!showcase.topImage
+      .item 
+        img(src=showcase.topImage)
+        .carousel-caption
+          a(href=showcase.url)= showcase.title
+          .sub-caption
             if !!showcase.sections
               each section, i in showcase.sections
                 - posClass = i !== 0 ? "separator-before" : ""
                 - section = getMetadataFrom(section)
                 a.section(class = posClass, href = section.url, target = "_blank")= section.title
 
+  a.left.carousel-control(href="#slider",data-slide="prev")
+    .glyphicon.glyphicon-chevron-left
+  a.right.carousel-control(href="#slider",data-slide="next")
+    .glyphicon.glyphicon-chevron-right
+
 .container
   #startpage
-    .row-fluid.two-column
-      .span12.row-fluid
+    .row.two-column
+      .col-md-12.row
         :markdown
           Att prata om passion blir lätt pretentiöst. Men faktum är att det är det som är kärnan i Iteam. Sedan 1995 har världen genomgått en teknisk revolution och under hela den tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa pryl och nästa utmaning.
             Det senaste är inte automatiskt det bästa - det vet vi bättre än de flesta. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
 
-    .row-fluid
-      .span6
+    .row
+      .col-md-6
         :markdown
-          ##Vi rekryterar
+          ## TRR har Sveriges vassaste rekryteringsverktyg
 
-          Iteam ska starta sitt tredje utvecklingsteam under 2014 med fokus på Node och Angular. Om du tycker JavaScript och agil produktutveckling är det roligaste just nu kan du skicka mig ett meddelande med och ditt github repo.
+          ”Tillsammans med Iteam har vi lyckats tänka nytt och utmana. Verksamhetsstödet för TRR Rekrytering har helt och hållet utgått från våra kunders behov. Projektet går långt utöver systemutveckling – det har verkligen handlat om verksamhetsutveckling – och Iteam har visat att man brinner för att hjälpa organisationer och företag att utvecklas och växa.”
+          
+          *Erik Wickbom, Projektledare, Utvecklingsavdelningen Trygghetsrådet TRR*
 
-          Vi jobbar bara i team och har projekt mellan ett halvår och ett år. Roller som söks är Frontend engineer (CSS/less/angular/TDD), system developer (NodeJs/Mongo/TDD), devOps (Docker, Chef, Grunt, AWS, Elasticsearch).
+          [Läs mer om projektet](/case/trr)
 
-          Kontakta [Sophie Raland Wesslau](/medarbetare/sophie) om du vill veta mer.
-
-      .span6
+      .col-md-6
         h2 Iteam på Instagram
-        instagram(
-          name="iteam1337"
-          max=4
-        )
+        .instagram#instagram-feed(data-name="iteam1337", data-images=8)

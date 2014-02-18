@@ -20,7 +20,7 @@ quote:
 about:
 
 topImage:
-backgroundDark:
+background: invert
 
 intro: >
   Vi utvecklade Svensk Byggtjänsts Omvärldsbevakning tillsammans med byråpartnern Britny.

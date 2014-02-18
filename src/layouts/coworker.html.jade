@@ -5,11 +5,10 @@ layout: default
 - var inlineClass = "image "
 - inlineClass += !!document.css ? document.css : ""
 - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : ""
-- var bloggCollection = getAllBlogsByAuthor(document.shortname)
-- var cases = getAllCasesByCoworker(document.shortname)
-- var splitRow = (!!cases.length && !!bloggCollection.length) ? "user-content multi" : "user-content"
+- var cases = []; //getAllCasesByCoworker(document.shortname)
+- var splitRow = (!!cases.length) ? "user-content multi" : "user-content"
 
-.row-fluid.page-content
+.row.page-content
   article#coworker
 
     .top-part
@@ -44,7 +43,7 @@ layout: default
     .row
       .desc!= content
 
-    if (cases.length || bloggCollection.length)
+    if (cases.length)
       .row.split(class=splitRow)
         if (cases.length)
           ul.in-cases
@@ -54,14 +53,6 @@ layout: default
               li
                 a(href=Case.url)= Case.title
 
-        if (bloggCollection.length)
-          ul.bloggar
-            .header
-              h2.title Bloggar
-            each blogg in bloggCollection
-              li
-                a(href=blogg.url)= blogg.title
-
     if document.github
       github(username=document.github)
 
@@ -69,5 +60,4 @@ layout: default
       .row.split
         .header
           h2.title Instagram
-        .social-media
-          instagram(name= document.instagram)
+        .social-media.instagram#instagram-feed(data-name=document.instagram, data-images=3)

@@ -12,7 +12,7 @@ phonenumber: 0706 - 82 91 21
 
 cssColor: "#fab"
 topImage: "/content/images/medarbetare/jok.jpg"
-backgroundDark:
+background: invert
 
 twitter:
 instagram: johanobrink
