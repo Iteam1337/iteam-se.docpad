@@ -12,28 +12,65 @@ background: 'invert'
 chevron: true
 ---
 
-.row-fluid#karriar
+row-fluid#career
   .row
     .col-md-6
       :markdown
-       ## Vi älskar spontanansökningar
+        ##Värde, kvalitet och gemenskap
+        För oss handlar arbetet varje dag om driva våra kunders affärer och lösningar framåt. Samtidigt som vi vill utvecklas. Värde, kvalitet och gemenskap är självklarheter hos oss och gemenskapen är vårt kitt som gör vår organisation  prestigelös.
 
-        Vi söker alltid nya talanger. Men det är svårt att sätta fingret på hur rollbeskrivningarna ska se ut. Det vi letar efter är personligheter som sticker ut och passar in. Därför älskar vi spontanansökningar.
+        ## Varför vi gillar att jobba på Iteam
+        * Alla kollegor älskar teknik
+        * Lab & träning är alltid inplanerat
+        * Gemensam måndagsfrukost med rullande schema för ansvaret
+        * Kontoret ligger mitt i stan och utsikten är kanon
+        * Vi spelar ofta rundpingis
+        * Vi har planerade AW's en gång i månaden och del oplanerade
+        * Vi tillämpar flex och vi har 6 veckor semester
+        * Övertid är inget som förväntas av oss
+        * Alla delar på julbonus varje år och vi har generöst friskvårdsbidrag
+        * Vi går i strumplästen och vi skrattar
 
-        Vi arbetar med olika tekniker som HTML5, ASP.NET MVC 3, Node.js, AngularJS, RavenDB och MongoDB. Eller det som känns spännande och bär på lösningen.
+      #opportunities
+        h2 Just nu söker vi
+        ul
+          each career in getCollection('ledigatjanster').toJSON()
+            if !!career.title
+              li
+                a.title(href=career.url)= career.title
+                p!= career.summary 
 
-        Visst kan vi sätta namn på våra roller i dagsläget, men det betyder inte att vi söker någon med just precis samma erfarenheter och kunskaper som våra medarbetare har. Snarare tvärtom.
-        Men för att förtydliga hur vår organisation ser ut så kan du läsa mer under [Att jobba hos oss](karriär/att jobba hos oss).
+      :markdown
+        ## Vi älskar spontanansökningar 
+        Vi söker alltid nya kollegor som brinner. Du brinner gärna för dina privata projekt vid sidan om Iteam, och du pysslar gärna med dina egna grejer för att utvecklas. Det är lätt att säga att vi söker talang, vilket vi gör, men vi vill fokusera på personligheter som bidrar.<br/>
+        Är du intresserad av oss, tveka inte att kontakta [Sophie Raland Wesslau](/medarbetare/sophie).
 
-        På vår blogg [tekniken.nu](//tekniken.nu) delar vi med oss av våra idéer och upptäkter.
+    .col-md-5.col-md-offset-1.our-roles
+      :markdown
 
-        Kontakta gärna [Sophie Raland Wesslau](/medarbetare/sophie) om du vill veta mer.
-    
-    #opportunities.col-md-5.col-md-offset-1
-      h2 Just nu söker vi
-      ul
-        each career in getCollection('ledigatjanster').toJSON()
-          if !!career.title
-            li
-              a.title(href=career.url)= career.title + ' »'
-              p!= career.summary
+        ## Våra roller
+
+        ### [Senior Webbutvecklare](/medarbetare/johanna)
+        Mål: **Stabilitet & trygghet.**<br/>
+        Vad: Ny-/produktutveckling (Scrum). Förvaltning. (Kanban). Tech lead i våra projektteam. Devops i form av miljöer och releasehantering.<br/>
+        *Verktyg: Proof of concept. .NET, Node.js, Angular.JS, SQL/NoSQL. Automatisk och manuell testning.*
+
+        ### [Technical Creative Director](/medarbetare/johan)
+        Mål: **Innovation.**<br/>
+        Vad: Rådgivning till produktägare, beställare eller externa utvecklingsteam. Tech lead i våra projektteam och/eller tekniskt stöd till Senior webbutvecklare. Devops.<br/>
+        *Verktyg: Labb. Omvärldsbevakning. Förstudie. Konceptutveckling. Proof of concept. .NET, Node.js, Angular.JS, SQL/NoSQL. Automatisk och manuell testning.*
+
+        ### [Frontendutvecklare](/medarbetare/rickard)
+        Mål: **Enkelhet.**<br/>
+        Vad: Ny-/produktutveckling (Scrum). Förvaltning. (Kanban)<br/>
+        *Verktyg: Proof of concept. HTML5, CSS3, LESS, Angular.JS, SQL/NoSQL. Automatisk och manuell testning.*
+
+        ### [Projektledare](/medarbetare/maria)
+        Mål: **Kontroll.**<br/>
+        Vad: Ny-/produktutveckling samt rådgivning och stöd till beställare. <br/>
+        *Verktyg: Scrum, Kanban, TFS.*
+
+        ### [Senior Supporttekniker](/medarbetare/mats)
+        Mål: **God service.**<br/>
+        Vad: Support till befintliga kunder samt Iteams utvecklingsavdelning.<br/>
+        *Verktyg: OP5, Teamviewer, samtliga Microsoft-program. Brandväggar från Clavister och Mikrotik.*
