@@ -26,8 +26,8 @@ introSubheading: >
         .sub-caption= document.introSubheading
     each showcase in getShowCase()
       if !!showcase.topImage
-      .item 
-        img(src=showcase.topImage)
+      - bgImg = "background-image:url(" + showcase.topImage + ");"
+      .item(style=bgImg)
         .carousel-caption
           a(href=showcase.url)= showcase.title
           .sub-caption
