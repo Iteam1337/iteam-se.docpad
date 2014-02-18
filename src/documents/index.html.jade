@@ -7,6 +7,7 @@ topImage: "/content/images/section-topbilder/start.JPG"
 background: 'invert'
 
 introHeading: ["Vi är en kreativ teknikbyrå som driver din affär framåt"]
+introHeadingMobile: ['En kreativ teknikbyrå']
 introSubheading: >
   - Vi är ditt stöd när du vill förändra.
 ---
@@ -22,8 +23,10 @@ introSubheading: >
   .carousel-inner
     .item.active
       img(src=document.topImage)
-      .carousel-caption= document.introHeading[0]
+      .carousel-caption.visible-md.visible-lg= document.introHeading[0]
         .sub-caption= document.introSubheading
+      .carousel-caption.visible-sm= document.introHeading[0]
+      .carousel-caption.visible-xs= document.introHeadingMobile[0]
     each showcase in getShowCase()
       if !!showcase.topImage
       - bgImg = "background-image:url(" + showcase.topImage + ");"
