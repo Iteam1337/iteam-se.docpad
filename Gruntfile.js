@@ -14,6 +14,7 @@ module.exports = function (grunt) {
         src: [
           'bower_components/jquery/jquery.js',
           'bower_components/bootstrap/dist/js/bootstrap.min.js',
+          'bower_components/Chart.js/Chart.js',
         ]
       },
       app: {

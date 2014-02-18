@@ -3,5 +3,6 @@ each image in document.imageGallery
   if typeof image === "string"
     if image.charAt(0) !== "/" || !image.match(/^http/i)
       - image = "/content/images/" + image
-
-      img(src=image)
+      li
+        a(href=image)
+          img(src=image)
