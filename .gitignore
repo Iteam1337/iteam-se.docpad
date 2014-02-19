@@ -3,3 +3,4 @@ node_modules
 out
 bower_components
 aws.json
+publicera.sh
