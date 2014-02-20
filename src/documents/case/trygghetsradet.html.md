@@ -5,7 +5,7 @@ layout: case
 caseIndex: 0
 releaseDate: 140120
 
-tags: ['Proof-of-concept','Systemutveckling']
+tags: ['Förstudie','Teknisk Ledare','Proof-of-concept','Systemutveckling']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/trr.png'
 
