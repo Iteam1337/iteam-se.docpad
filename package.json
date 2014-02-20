@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "bal-util": "~2.3.0",
-    "docpad-plugin-cleanurls": "~2.6.2",
+    "docpad-plugin-cleanurls": "~2.7.0",
     "docpad-plugin-coffeekup": "~2.2.0",
     "docpad-plugin-coffeescript": "~2.3.0",
     "docpad-plugin-eco": "~2.0.3",
@@ -42,7 +42,7 @@
     "marked": "*",
     "safeps": "~2.2.6",
     "taskgroup": "~3.1.1",
-    "docpad": "6.54.10",
+    "docpad": "~6.63.6",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-jade": "~0.8.0",
@@ -56,7 +56,7 @@
     "grunt-s3": "~0.2.0-alpha.3",
     "stripcolorcodes": "~0.1.0",
     "docpad-plugin-grunt": "~2.1.1",
-    "docpad-plugin-styl": "~2.0.0"
+    "docpad-plugin-styl": "~2.0.1"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
