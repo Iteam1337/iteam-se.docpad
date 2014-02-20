@@ -1,5 +1,5 @@
 ---
-title: TRR
+title: Trygghetsrådet
 subtitle:
 layout: case
 caseIndex: 0
@@ -14,7 +14,7 @@ imageGallery: ['case-galleribilder/trr/trr-2.png','case-galleribilder/trr/trr-3.
 team: ['anders','martin','alexander','dennis', 'hans']
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
 
-readmorelinks:
+readmorelinks: [{"url": "http://www.trr.se/}]
 
 quote: {text: "Tillsammans med Iteam har vi lyckats tänka nytt och utmana. Verksamhetsstödet för TRR Rekrytering har helt och hållet utgått från våra kunders behov. Projektet går långt utöver systemutveckling – det har verkligen handlat om verksamhetsutveckling – och Iteam har visat att man brinner för att hjälpa organisationer och företag att utvecklas och växa.", by:"Erik Wickbom, Projektledare, Utvecklingsavdelningen Trygghetsrådet TRR"}
 about:
