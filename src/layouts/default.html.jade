@@ -48,7 +48,7 @@ html(lang="sv")
     .collapse.navbar-collapse#main-nav
       ul.nav.navbar-nav
         each doc, i in pages
-          - clazz = (doc.url.indexOf(document.url) > -1) ? 'active' : null
+          - clazz = (document.url.indexOf(doc.url) > -1) ? 'active' : null
           - hasSubpage = (doc.subpages) ? i : null
           li(data-subpage=hasSubpage)
             a(class=clazz, href=doc.url)= doc.title
@@ -59,9 +59,8 @@ html(lang="sv")
       #navSubpages
         .subpage-inner
           each subpage in subpages
-            - active = (subpage.url.indexOf(document.url) > -1) ? 'active' : null
+            - active = (subpage.url === document.url) ? 'active' : null
             a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
-
 
   .offset
 

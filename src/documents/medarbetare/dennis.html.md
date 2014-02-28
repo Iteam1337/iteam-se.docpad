@@ -10,8 +10,8 @@ jobTitle: Frontendutvecklare
 email: dennis.pettersson@iteam.se
 phonenumber:
 
-cssColor: "#74a6ec"
-topImage: ""
+cssColor: "rgba(255,255,255,.0)"
+topImage: "http://i.bldr.se/hax/7M2A9.jpeg"
 background: invert
 
 twitter: ankjevel
