@@ -5,12 +5,23 @@ layout: default
 h1(title,class=document.background)= document.title
   small=document.subtitle && " - " + document.subtitle || ''
 
+if (document.caseIndex >= 0)
+  each doc in getCollection('case').toJSON()
+    if (doc.caseIndex === document.caseIndex - 1)
+      .prev-case
+        a(href=doc.url)
+          i.glyphicon.glyphicon-chevron-left
+          span= doc.title
+    if (doc.caseIndex === document.caseIndex + 1)
+      .next-case
+        a(href=doc.url)
+          i.glyphicon.glyphicon-chevron-right
+          span= doc.title
+
 .row-fluid
   article#case
     .about
-
       .content
-
         if (!!document.about || !!document.quote)
           .top
             if (!!document.about)

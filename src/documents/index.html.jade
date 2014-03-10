@@ -6,9 +6,10 @@ description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar
 topImage: "/content/images/section-topbilder/start.JPG"
 background: 'invert'
 
-introHeading: ["Vi är en teknikbyrå med kreativa lösnigar"]
+introHeading: ["Vi är en kreativ teknikbyrå som driver din affär framåt"]
+introHeadingMobile: ['En kreativ teknikbyrå']
 introSubheading: >
-  - Vi förverkligar dina idéer med teknik och hjälper din organisation att växa.
+  - Vi är ditt stöd när du vill förändra.
 ---
 
 #slider.carousel.slide(data-ride="carousel")
@@ -22,12 +23,14 @@ introSubheading: >
   .carousel-inner
     .item.active
       img(src=document.topImage)
-      .carousel-caption= document.introHeading[0]
+      .carousel-caption.visible-md.visible-lg= document.introHeading[0]
         .sub-caption= document.introSubheading
+      .carousel-caption.visible-sm= document.introHeading[0]
+      .carousel-caption.visible-xs= document.introHeadingMobile[0]
     each showcase in getShowCase()
       if !!showcase.topImage
-      .item 
-        img(src=showcase.topImage)
+      - bgImg = "background-image:url(" + showcase.topImage + ");"
+      .item(style=bgImg)
         .carousel-caption
           a(href=showcase.url)= showcase.title
           .sub-caption
@@ -47,8 +50,8 @@ introSubheading: >
     .row.two-column
       .col-md-12.row
         :markdown
-          Att prata om passion blir lätt pretentiöst. Men faktum är att det är det som är kärnan i Iteam. Sedan 1995 har världen genomgått en teknisk revolution och under hela den tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa pryl och nästa utmaning.
-            Det senaste är inte automatiskt det bästa - det vet vi bättre än de flesta. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
+          Vår kärna har sedan 1995 alltid varit passion. Under den här tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa utmaning och den bästa lösningen.
+            Det nyaste är inte automatiskt det bästa - det vet vi. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
 
     .row
       .col-md-6

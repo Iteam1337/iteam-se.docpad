@@ -42,7 +42,7 @@
     "marked": "*",
     "safeps": "~2.2.6",
     "taskgroup": "~3.1.1",
-    "docpad": "~6.63.2",
+    "docpad": "~6.63.6",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-jade": "~0.8.0",
