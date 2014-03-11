@@ -1,5 +1,8 @@
 ---
 title: Johanna Gustafsson
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Johanna
 
 layout: coworker

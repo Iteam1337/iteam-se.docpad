@@ -1,5 +1,8 @@
 ---
 title: Johan Öbrink
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Johan
 
 layout: coworker

@@ -1,5 +1,8 @@
 ---
 title: Mats Egardt
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Mats
 
 layout: coworker

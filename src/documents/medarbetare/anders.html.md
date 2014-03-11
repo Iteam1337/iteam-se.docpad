@@ -1,5 +1,8 @@
 ---
 title: Anders Bornholm
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Anders
 
 layout: coworker
@@ -12,7 +15,7 @@ phonenumber: '0708-62 41 90'
 
 cssColor: "#000"
 topImage: "/content/images/medarbetare/abo.jpg"
-background: 
+background:
 
 twitter: osirisguitar
 instagram: osirisguitar

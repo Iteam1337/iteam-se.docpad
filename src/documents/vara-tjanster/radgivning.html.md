@@ -1,5 +1,8 @@
 ---
 title: Rådgivning
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 layout: page
 tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Entreprenörsrådgivning']
 tagHeader: Rådgivningscase
@@ -11,13 +14,12 @@ topImage: '/content/images/section-topbilder/radgivning.jpg'
 background: 'invert'
 
 summary: >
-  Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.<p>
+  Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett proof-of-koncept.
 ---
-
 
 Vi agerar rådgivare i den takt och omfattning som projekten behöver. Vi erbjuder en förstudie, en Teknisk Ledare som driver projektet och vi kan ta fram ett Proof-of-Concept.
 
-Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
+Kontakta [Hans Rollman](/medarbetare/hans "Hans Rollman") för mer info.
 
 ## Förstudie
  Vi klartlägger nuläget och identiferar en tydlig målbild för branschen eller produkten. Vi genomför intervjuer av relevanta aktörer innan något utvecklas. Vi levererar en tydlig rapport som – utifrån målgruppens perspektiv – visar på behov, förutsättningar och möjligheter för den nya tjänsten eller produkten.

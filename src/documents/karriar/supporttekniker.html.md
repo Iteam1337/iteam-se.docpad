@@ -1,5 +1,8 @@
 ---
 title: Senior Supporttekniker
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 layout: job
 pageOrder: 2
 topImage: "/content/images/section-topbilder/jobb-annons/rekrytering2.JPG"

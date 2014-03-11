@@ -1,5 +1,8 @@
 ---
 title: Systemutveckling
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 layout: page
 tags: ['Systemutveckling']
 tagHeader: Systemutvecklingscase
@@ -11,11 +14,12 @@ topImage: '/content/images/section-topbilder/systemutveckling.jpg'
 background: 'invert'
 
 summary: >
-  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt.<p>
+  Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt.
 ---
+
 Våra utvecklare är engagerade och sitter på den senaste kunskapen inom systemutveckling. Vi bygger allt från verktyg, till e-handel och intranät. Inget projekt är det andra likt eftersom vi gillar att bli utmanade.
 
-Kontakta <a href="medarbetare/hans">Hans Rollman</a> för mer info.
+Kontakta [Hans Rollman](/medarbetare/hans "Hans Rollman") för mer info.
 
 ## Trygg och effektiv utvecklingsmetodik
 Vi arbetar ofta enligt Scrum-metodiken i våra projekt. Scrum medför ökad kvalitet och ökat fokus på att först lösa de viktigaste utmaningarna i projektet. Med Scrum levereras värde, snarare än att tid ägnas aå att skriva detaljerade kravspecifikationer.
@@ -28,3 +32,6 @@ I ett scrumprojekt betalar man för tiden utvecklingsteamet ägnar åt projektet
 
 ### Att vårda och underhålla
 När första releasen är gjord är det klokt att budgetera ungefär lika mycket tid för, vidareutveckling. På så sätt kommer nya idéer och funktioner att konstant uppdateras. Våra Systemutvecklare och IT-Supporttekniker är behjälpliga när man ansluter sig till ett retaineravtal med oss.
+
+## T-Rex
+[T-REX](/vara-tjanster/systemutveckling/trex "T-REX") är Iteams .NET-baserade plattform.

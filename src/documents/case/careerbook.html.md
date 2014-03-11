@@ -1,5 +1,8 @@
 ---
 title: Careerbook
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 subtitle:
 layout: case
 caseIndex: 10
@@ -27,6 +30,6 @@ intro: >
 ---
 
 ## Mötesplatsen för arbetsgivare och studenter
-Iteam fick i uppdrag av Academic Work att bygga en plattform som förenklar rekrytering. Vi valde att bygga Careerbook, ett socialt nätverk, som matchar studenter och företag. Redan från start var intresset stort både bland studenter och hos flera populära arbetsgivare som SEB, TeliaSonera, Riksbanken och ABB.  
-Utifrån sin profil matchas man mot Sveriges attraktivaste företag och kan direkt få en skräddarsydd bedömning av vilken arbetsgivare som skulle passa. 
-Careerbook är byggt på Iteams plattform T-REX Community och har funktioner som interna meddelanden, vänförfrågningar, aktivitetsanmälningar och nyhetsflöden vilket ger en levande och användarvänlig upplevelse för besökarna. 
+Iteam fick i uppdrag av Academic Work att bygga en plattform som förenklar rekrytering. Vi valde att bygga Careerbook, ett socialt nätverk, som matchar studenter och företag. Redan från start var intresset stort både bland studenter och hos flera populära arbetsgivare som SEB, TeliaSonera, Riksbanken och ABB.
+Utifrån sin profil matchas man mot Sveriges attraktivaste företag och kan direkt få en skräddarsydd bedömning av vilken arbetsgivare som skulle passa.
+Careerbook är byggt på Iteams plattform T-REX Community och har funktioner som interna meddelanden, vänförfrågningar, aktivitetsanmälningar och nyhetsflöden vilket ger en levande och användarvänlig upplevelse för besökarna.
