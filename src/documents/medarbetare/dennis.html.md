@@ -21,6 +21,8 @@ twitter: ankjevel
 instagram: ankjevel
 linkedin: pub/dennis-pettersson/23/92b/896
 github: ankjevel
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

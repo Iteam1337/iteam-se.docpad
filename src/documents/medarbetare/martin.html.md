@@ -21,6 +21,8 @@ twitter: martinloman
 instagram: martinloman
 linkedin: /in/martinloman
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

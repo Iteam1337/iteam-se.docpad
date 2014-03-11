@@ -21,6 +21,8 @@ twitter:
 instagram: johanobrink
 linkedin: /pub/johan-öbrink/1/512/71b/
 github: JohanObrink
+blog: http://terminaln00b.ghost.io/rss/
+
 ---
 
 ## Varför jobbar du med teknik?

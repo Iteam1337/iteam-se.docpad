@@ -21,6 +21,8 @@ twitter: MariaSolscher
 instagram: MariaSolscher
 linkedin: in/mariasolscher
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

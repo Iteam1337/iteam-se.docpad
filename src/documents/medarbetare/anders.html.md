@@ -21,6 +21,8 @@ twitter: osirisguitar
 instagram: osirisguitar
 linkedin: in/andersbornholm
 github: osirisguitar
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

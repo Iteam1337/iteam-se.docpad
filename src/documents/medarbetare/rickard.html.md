@@ -21,6 +21,8 @@ twitter: rickardlaurin
 instagram: rickardlaurin
 linkedin: in/rickardlaurin
 github: believer
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

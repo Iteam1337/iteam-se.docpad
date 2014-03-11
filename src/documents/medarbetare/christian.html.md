@@ -21,6 +21,8 @@ twitter: landgren
 instagram: clandgren
 linkedin: in/christianlandgren
 github: irony
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

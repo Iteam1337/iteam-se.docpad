@@ -21,6 +21,8 @@ twitter:
 instagram:
 linkedin: pub/mats-egardt/4/321/12
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

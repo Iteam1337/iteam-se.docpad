@@ -61,3 +61,8 @@ layout: default
         .header
           h2.title Instagram
         .social-media.instagram#instagram-feed(data-name=document.instagram, data-images=3)
+    if document.blog
+      .row.split
+        .header
+          h2.title Blogg
+          #blog-feed(data-url=document.blog, data-count=3)

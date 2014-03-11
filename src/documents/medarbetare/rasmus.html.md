@@ -21,6 +21,8 @@ twitter:
 instagram:
 linkedin:
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

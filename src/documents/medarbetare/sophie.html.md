@@ -21,6 +21,8 @@ twitter: sophiewesslau
 instagram: sophiewesslau
 linkedin: in/sophiewesslau
 github: sophiewesslau
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

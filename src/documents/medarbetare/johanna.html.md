@@ -21,6 +21,8 @@ twitter: mittistormen
 instagram: mittistormen
 linkedin: pub/johanna-gustafsson/3/b34/7a6
 github: mittistormen
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

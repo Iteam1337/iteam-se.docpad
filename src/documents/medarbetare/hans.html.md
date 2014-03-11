@@ -21,6 +21,8 @@ twitter: hrswe
 instagram: hrswe
 linkedin: in/hansrollman
 github: hanrol
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

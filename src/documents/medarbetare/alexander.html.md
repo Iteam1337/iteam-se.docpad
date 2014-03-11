@@ -21,6 +21,8 @@ twitter:
 instagram: zendeveloper
 linkedin: in/zendeveloper
 github: zendeveloper
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?
