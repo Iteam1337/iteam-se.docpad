@@ -21,7 +21,7 @@ twitter: osirisguitar
 instagram: osirisguitar
 linkedin: in/andersbornholm
 github: osirisguitar
-blog:
+blog: http://metalcoder.ghost.io/rss/
 
 ---
 
