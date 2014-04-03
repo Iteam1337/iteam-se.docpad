@@ -6,18 +6,18 @@ keywords: ''
 subtitle:
 layout: case
 caseIndex: 10
-releaseDate: 091214
+releaseDate: 141209
 
 tags: ['Systemutveckling','Rådgivning','Strategi']
 sections: ['Systemutveckling']
 logo: 'case-logos/VIMLA_weblogo-hi-white.png'
 
-imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-amabv1.jpg']
+imageGallery:
 
 team: ['anders','johanna','dennis','rickard','sophie','alexander','johan']
 siteurl: "http://vimla.se"
 
-readmorelinks: http://www.madetoorder.se, www.jungrelations.se
+readmorelinks: [{"url":"http://www.madetoorder.se","title":"Made to Order"}, {"url":"http://www.jungrelations.se","title":"Jung Relations"}]
 
 
 quote:
@@ -35,13 +35,13 @@ intro: >
 Vi på Iteam har haft nöjet att samarbeta med Telenor för att ta fram det nya abonnemanget Vimla. Arbetet och processen har varit unik eftersom vi har haft två beställare med en imponerande kompetens samt professionella samarbetspartner (designbyrån Made to order med flera). Det har gjort att samarbetet flutit på och vi har varit på samma bana under hela projektet.
 
 ###Samarbetet är nyckeln
-Vimla bygger på öppenhet, som kund är du inte kund utan du är medlem och du är en stor del av Vimlas framtid. 
+Vimla bygger på öppenhet, som kund är du inte kund utan du är medlem och du är en stor del av Vimlas framtid.
 Emma-Klara Wächter och Johan Littorin på Telenor har arbetat hela tiden med att alla samarbetspartner ska uppleva en teamkänsla –vi är inte samarbetspartner, vi är kollegor. Detta har varit en viktig nyckel till framgång i vårt samarbete. Vi på Iteam har varit strategiskt involverade från starten av samarbetet, både vad gäller form och funktion.
 Samarbetet där vi som samarbetspartner är en del av Vimlagruppen, gör det enkelt för oss att förmedla vidare denna känsla till Vimlas medlemmar. Vimlagruppen är hela tiden lyhörd för vad medlemmarna önskar ska göras här näst och vi i Vimlagruppen planerar sprintar efter medlemmarnas idéer och tankar. Det är vårt ansvar gentemot medlemmarna.
 
 Johan Littorin, intiativtagare och affärsansvarig för Vimla om samarbetet med Iteam:
 
-”Vi ser vårt team hos Iteam mer som våra kollegor än som leverantör. Istället för att vi ställer krav som Iteam utför så jobbar vi tillsammans och sätter alla funktioner och lösningar för siten. Det har gjort att vi kommit mycket längre än vad vi skulle gjort annars”, säger Johan Littorin.
+> ”Vi ser vårt team hos Iteam mer som våra kollegor än som leverantör. Istället för att vi ställer krav som Iteam utför så jobbar vi tillsammans och sätter alla funktioner och lösningar för siten. Det har gjort att vi kommit mycket längre än vad vi skulle gjort annars”, säger Johan Littorin.
 
 ###Utmaningen
 Det var ont om tid och mycket skulle göras på kort tid. Uppdraget startade med att vi på Iteam tog fram en prototyp av Vimla, som vid det laget inte hette Vimla och vars grafiska profil inte heller var fastställd.
@@ -52,18 +52,21 @@ Genom vägen fram arbetade Iteams frontendutvecklare och Made to orders designer
 Det unika i lösningen var att alla andra samarbetspartner i Vimlagruppen hade ett gemensamt och tydligt mål. Alla ville utveckla en produkt som vi tror mycket starkt på. Därför har arbetet för oss på Iteam inte bara handlat om systemutveckling utan det har även handlat om att utveckla varumärket och se till att Telenor har kunnat bygga sin produkt i den takt och i den ordning de önskat.
 
 Johan Öbrink, Technical Creative Director på Iteam:
-“Vi på Iteam har länge pratat om hur viktigt det är att “sitta på samma sida av bordet som kunden” – att fokusera på produktens värde istället för kontraktet. Men det här är första gången jag har upplevt det från start till mål” säger Johan Öbrink. 
-Johan fortsätter “Det krävs en enorm teknisk mognad och professionalism för att kunna bygga en produkt samtidigt som varumärkets innehåll definieras. Det kräver förberedelse för ständiga förändringar och 180-graderssvängar. Och det kräver en obrottslig lojalitet mot slutresultatet istället för vad som sades i går eller i förrgår. Få klarar av en sådan utmaning. Och att för första gången ha haft två beställare som Johan Littorin och Emma-Klara Wächter med denna kompetens i Vimlaprojektet, har gjort att samarbetet kommer att bli Iteams goda exempel att alltid luta sig tillbaka på för framtida projekt.”
+> “Vi på Iteam har länge pratat om hur viktigt det är att “sitta på samma sida av bordet som kunden” – att fokusera på produktens värde istället för kontraktet. Men det här är första gången jag har upplevt det från start till mål” säger Johan Öbrink.
+
+> Johan fortsätter “Det krävs en enorm teknisk mognad och professionalism för att kunna bygga en produkt samtidigt som varumärkets innehåll definieras. Det kräver förberedelse för ständiga förändringar och 180-graderssvängar. Och det kräver en obrottslig lojalitet mot slutresultatet istället för vad som sades i går eller i förrgår. Få klarar av en sådan utmaning. Och att för första gången ha haft två beställare som Johan Littorin och Emma-Klara Wächter med denna kompetens i Vimlaprojektet, har gjort att samarbetet kommer att bli Iteams goda exempel att alltid luta sig tillbaka på för framtida projekt.”
 
 ###Om Vimla
 Vimla är en annorlunda mobiloperatör med ett enkelt fastprisabonnemang utan bindningstid, uppsägningstid eller dolda avgifter. Vimlas idé bygger på öppenhet och samarbete – man är inte kund, man är medlem. Om du hjälper andra medlemmar belönas du för det. Om du rekryterar nya medlemmar, får ni båda rabatt på månadskostnaden så länge ni är medlemmar.
 
-Den nya abonnemangsformen lanserades den 12 februari på www.vimla.se.
+Den nya abonnemangsformen lanserades den 12 februari på [www.vimla.se](www.vimla.se).
 
 ###Pressfrågor
 Johan Öbrink, Iteam, 070-682 91 21
+
 Johan Littorin, Telenor, 0734 41 72 85
 
 ###Samarbetspartner
-Made to order, www.madetoorder.se
-Jung, www.jungrelations.se
+[Made to order](www.madetoorder.se)
+
+[Jung](www.jungrelations.se)

@@ -34,14 +34,14 @@ row-fluid#career
         * Alla delar på julbonus varje år och vi har generöst friskvårdsbidrag
         * Vi går i strumplästen och vi skrattar
 
-      //- #opportunities
-      //-   h2 Just nu söker vi
-      //-   ul
-      //-     each career in getCollection('ledigatjanster').toJSON()
-      //-       if !!career.title
-      //-         li
-      //-           a.title(href=career.url)= career.title
-      //-           p!= career.summary
+      #opportunities
+        h2 Just nu söker vi
+        ul
+          each career in getCollection('ledigatjanster').toJSON()
+            if !!career.title
+              li
+                a.title(href=career.url)= career.title
+                p!= career.summary
 
       :markdown
         ## Vi älskar spontanansökningar
