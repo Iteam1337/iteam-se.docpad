@@ -2,7 +2,7 @@
 title: Trygghetsrådet
 subtitle:
 layout: case
-caseIndex: 0
+caseIndex: 1
 releaseDate: 140120
 
 tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Systemutveckling']
