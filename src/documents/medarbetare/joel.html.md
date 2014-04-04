@@ -19,7 +19,7 @@ background: invert
 
 twitter: joelborjesson
 instagram: bjoelse
-linkedin: http://se.linkedin.com/in/joelborjesson
+linkedin: in/joelborjesson
 github: joelborjesson
 blog: http://www.bjoel.se/feed/
 
