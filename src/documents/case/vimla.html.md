@@ -5,25 +5,24 @@ keywords: ''
 
 subtitle:
 layout: case
-caseIndex: 10
-releaseDate: 141209
+caseIndex: 0
+releaseDate: 140325
 
 tags: ['Systemutveckling','Rådgivning','Strategi']
 sections: ['Systemutveckling']
-logo: 'case-logos/VIMLA_weblogo-hi-white.png'
+logo: 'case-logos/vimla.png'
 
-imageGallery:
+imageGallery: ['case-galleribilder/vimla/vimla-1.png','case-galleribilder/vimla/vimla-2.png','case-galleribilder/vimla/vimla-3.png','case-galleribilder/vimla/vimla-4.png']
 
 team: ['anders','johanna','dennis','rickard','sophie','alexander','johan']
-siteurl: "http://vimla.se"
+siteurl: "https://vimla.se"
 
 readmorelinks: [{"url":"http://www.madetoorder.se","title":"Made to Order"}, {"url":"http://www.jungrelations.se","title":"Jung Relations"}]
 
-
-quote:
+quote: {text:"Vi ser vårt team hos Iteam mer som våra kollegor än som leverantör. Istället för att vi ställer krav som Iteam utför så jobbar vi tillsammans och sätter alla funktioner och lösningar för siten. Det har gjort att vi kommit mycket längre än vad vi skulle gjort annars", by:"Johan Littorin, intiativtagare och affärsansvarig för Vimla"}
 about:
 
-topImage:
+topImage: '/content/images/case-topbilder/vimla2.jpg'
 background: 'invert'
 
 intro: >
