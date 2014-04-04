@@ -14,7 +14,7 @@ email: joel.borjesson@iteam.se
 phonenumber: 0708-10 98 31
 
 cssColor: "#0ff1ce"
-topImage: "/content/images/medarbetare/jgn.jpg"
+topImage: "/content/images/medarbetare/joel.jpg"
 background: invert
 
 twitter: joelborjesson
