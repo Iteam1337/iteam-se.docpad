@@ -1,5 +1,8 @@
 ---
 title: Dennis Pettersson
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Dennis
 
 layout: coworker
@@ -10,14 +13,16 @@ jobTitle: Frontendutvecklare
 email: dennis.pettersson@iteam.se
 phonenumber:
 
-cssColor: "#74a6ec"
-topImage: ""
+cssColor: "rgba(255,255,255,.0)"
+topImage: "http://i.bldr.se/hax/7M2A9.jpeg"
 background: invert
 
 twitter: ankjevel
 instagram: ankjevel
 linkedin: pub/dennis-pettersson/23/92b/896
 github: ankjevel
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

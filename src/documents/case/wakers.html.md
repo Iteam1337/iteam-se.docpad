@@ -1,5 +1,8 @@
 ---
 title: Wakers Redovisningsbyrå
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 subtitle:
 layout: case
 caseIndex: 6
@@ -27,5 +30,5 @@ intro: >
 ---
 
 ## Wakers Redovisningsbyrå
-Iteam som under många år skött driften av Wakers IT blev ombedda att se över en lösning där medarbetarna skulle kunna arbeta enklare, effektivare, säkrare och minska mängden administration på deras fyra kontor. 
-Resultatet blev kontor som kopplades ihop med VPN-tunnlar. Detta för att kunna fjärrstyra användare, individanpassa användarnas rättigheter och effektivisera skrivarhanteringen. Vi valde också att implementera ett backupsystem som maximerar både tillgänglighet och säkerhet. 
+Iteam som under många år skött driften av Wakers IT blev ombedda att se över en lösning där medarbetarna skulle kunna arbeta enklare, effektivare, säkrare och minska mängden administration på deras fyra kontor.
+Resultatet blev kontor som kopplades ihop med VPN-tunnlar. Detta för att kunna fjärrstyra användare, individanpassa användarnas rättigheter och effektivisera skrivarhanteringen. Vi valde också att implementera ett backupsystem som maximerar både tillgänglighet och säkerhet.

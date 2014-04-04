@@ -1,5 +1,8 @@
 ---
 title: Bygginfo
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 subtitle:
 layout: case
 caseIndex: 10
@@ -27,7 +30,7 @@ intro: >
 ---
 
 ##Byggbranschens omvärldsbevakning
-Varje dag händer det något nytt i byggbranschen, allt från nya EU-direktiv, myndighetsrekommendationer och nya rön. Iteam fick i uppdrag att tillsammans med Britny, utveckla Bygginfo – en nyhetstjänst som samlar det senaste inom byggbranschen.  
+Varje dag händer det något nytt i byggbranschen, allt från nya EU-direktiv, myndighetsrekommendationer och nya rön. Iteam fick i uppdrag att tillsammans med Britny, utveckla Bygginfo – en nyhetstjänst som samlar det senaste inom byggbranschen.
 För att göra det enkelt och snabbt för redaktörerna att publicera utvecklades hjälpmedel som automatisk bildanpassning och färdiglayoutade innehållsblock för faktarutor, bilder med bildtext och listor med bifogade filer. Det finns också möjlighet för användare att kommentera, diskutera och skapa egna användarprofiler.
 
 Bygginfo är sammankopplad med Svensk Byggtjänsts övriga webbplatser vilket underlättar för användaren att hoppa fritt mellan dem utan att behöva logga in på nytt. En omfattande teknisk integration med de övriga webbplatserna gör att kontoinformation, uppgifter om prenumerationer och licenser samt transaktioner lagras på en central plats och finns åtkomlig oavsett vilken av webbtjänsterna man för tillfället använder. Tjänsten är integrerad med Svensk Byggtjänsts webbutik, vilket gör att redaktörerna kan placera ut puffar för produkter som är relaterade till innehållet på en artikel eller nyhet.

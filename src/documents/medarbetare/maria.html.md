@@ -1,5 +1,8 @@
 ---
 title: Maria Sölscher
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Maria
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter: MariaSolscher
 instagram: MariaSolscher
 linkedin: in/mariasolscher
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

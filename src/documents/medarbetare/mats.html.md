@@ -1,5 +1,8 @@
 ---
 title: Mats Egardt
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Mats
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter:
 instagram:
 linkedin: pub/mats-egardt/4/321/12
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

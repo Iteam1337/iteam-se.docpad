@@ -1,5 +1,8 @@
 ---
 title: Hans Rollman
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Hans
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter: hrswe
 instagram: hrswe
 linkedin: in/hansrollman
 github: hanrol
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

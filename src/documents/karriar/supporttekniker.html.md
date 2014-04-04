@@ -1,33 +1,33 @@
 ---
-title: Senior Supporttekniker
+title: Systemutvecklare
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 layout: job
 pageOrder: 2
 topImage: "/content/images/section-topbilder/jobb-annons/rekrytering2.JPG"
 background: 'invert'
 summary: >
-  Vi söker en klurig Senior Supporttekniker med det lilla extra. Som vår nya Seniora Supporttekniker är du självgående, nyfiken och gillar att ha kontakt med våra kunder.
+  Iteam växer och vi söker dig som vill växa till en av Sveriges bästa Systemutvecklare. 
 
 krav: >
-  * Minst 3-5 års erfarenhet
-
-  * Behärskar Mac, Windows & Linux
-
-  * Behärskar Exchange och AD
-
-  * Hyper-V (även kluster)
-
-  * Nginx, Apache, Node, Centos/Debian, Redhat
-
-  * AWS, Azure, Openstack
-
-  * Säljdriven
+  * 2-4 års arbetslivserfarenhet
+  * Javascript
+  * Node.js
+  * NoSQL (t ex MongoDb)
 
 meriterande: >
-  * Avancerade nätverk (lastbalansering, redundans, VLAN, DirectAccess, etc.)
-
-  * Säljerfarenhet
-
-  * Devops (ALM)
+  * .NET
+  * SQL
+  * HTML5
+  * CSS3
+  * less
+  * Angular.js
+  * TDD
+  * Chef
+  * Grunt
+  * AWS
+  * Elasticsearch
 
 anstallningsform: >
   * **Anställningsform:** Heltid
@@ -41,14 +41,14 @@ anstallningsform: >
   * **Ring gärna vid frågor:** 0702 944 055
 ---
 
-Vi söker en klurig Senior Supporttekniker med det lilla extra.
-Som vår nya Seniora Supporttekniker är du självgående, nyfiken och gillar att ha kontakt med våra kunder. Du älskar att lösa problem och du ger dig inte förrän uppgiften är löst. Att hänga med i det senaste inom teknik är en självklarhet.
+Iteam växer och vi söker dig som vill växa till en av Sveriges bästa utvecklare. 
+I rollen som systemutvecklare hos Iteam kommer du att arbeta i team bestående av 3-5 personer i projekt som drivs agilt. Medarbetarna är erfarna, drivna, innovativa samt kvalitetsmedvetna och brinner för internets framtid och de nyaste, roligaste och mest banbrytande teknikerna. Vi hoppas att du känner igen dig i detta.
 
-I rollen som Senior Supporttekniker gillar du att ha många bollar i luften.  En typisk dag hos Iteam kan innehålla en stor bredd av uppdrag. Under förmiddagen kan du bygga ett regelverk för kommunikation mellan olika VLAN, innan du räddar en kund från en mindre kris för att sedan fundera över arkitekturen för en större webbsite. Däremellan har du hunnit med lite rundpingis. Du möter alla uppgifter med samma glada inställning och lugn.
+Som systemutvecklare på Iteam ser du alltid till den bästa lösningen för att uppnå effektivitet och lönsamhet för kunden och projektet. Vi vill att kundens affär ska bli bättre med vår teknik. 
 
-Vi tror att du vill skapa värde och göra något bra ihop med våra uppdragsgivare. Du har 3-5 års erfarenhet inom support, och säljerfarenhet är ett plus. Du är självgående och har en god kommunikativ förmåga med stort tålamod. Du är nyfiken på teknik och gillar att lösa våra kunders problem.
+Vi på Iteam har en arbetsplats i ljusa och fina lokaler i centrala Stockholm. Vi arbetar tillsammans i team och i nära samarbete med våra byråpartners och kunder, allt för att nå bästa resultat. 
 
-Din arbetsplats kommer att vara i våra ljusa och fina lokaler i centrala Stockholm. Där jobbar du tillsammans med 14 passionerade kollegor som älskar teknik och som har kul ihop.
+Vi tror att du har 2-4 års arbetslivserfarenhet och att du har en naturlig nyfikenhet och fascination för teknik, något vi tror du har med dig sedan unga år. Det som kommer göra dig vinnande i vårt team är en förmåga att lyssna, tänka kreativt, kommunicera tydligt och ta ansvar för att leverera i tid.
 
 ## Om Iteam
 

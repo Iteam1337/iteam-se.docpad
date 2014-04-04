@@ -1,5 +1,8 @@
 ---
 title: Rasmus Fredriksson
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Rasmus
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter:
 instagram:
 linkedin:
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

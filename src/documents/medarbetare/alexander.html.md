@@ -1,5 +1,8 @@
 ---
 title: Alexander Czigler
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Alexander
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter:
 instagram: zendeveloper
 linkedin: in/zendeveloper
 github: zendeveloper
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

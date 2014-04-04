@@ -1,5 +1,8 @@
 ---
 title: Martin Loman
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Martin
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter: martinloman
 instagram: martinloman
 linkedin: /in/martinloman
 github:
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

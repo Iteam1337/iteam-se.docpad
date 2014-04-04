@@ -173,7 +173,7 @@ docpadConfig =
 
     # A collection of information about us
     om: (database) ->
-      database.findAllLive({relativeOutDirPath:'om', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAllLive({relativeOutDirPath:'om-oss', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # =======================
     # not _really_ in use

@@ -1,5 +1,8 @@
 ---
 title: Sophie Raland Wesslau
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Sophie
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter: sophiewesslau
 instagram: sophiewesslau
 linkedin: in/sophiewesslau
 github: sophiewesslau
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

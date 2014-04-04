@@ -1,5 +1,8 @@
 ---
 title: Johan Öbrink
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Johan
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter:
 instagram: johanobrink
 linkedin: /pub/johan-öbrink/1/512/71b/
 github: JohanObrink
+blog: http://terminaln00b.ghost.io/rss/
+
 ---
 
 ## Varför jobbar du med teknik?

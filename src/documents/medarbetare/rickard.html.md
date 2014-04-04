@@ -1,5 +1,8 @@
 ---
 title: Rickard Laurin
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Rickard
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter: rickardlaurin
 instagram: rickardlaurin
 linkedin: in/rickardlaurin
 github: believer
+blog: http://rickardlaurin.ghost.io/rss/
+
 ---
 
 ## Varför jobbar du med teknik?

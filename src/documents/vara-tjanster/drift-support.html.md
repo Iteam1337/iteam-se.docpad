@@ -1,5 +1,8 @@
 ---
 title: Drift & Support
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 layout: page
 tags: ['Drift & Support','IT-review','Specialistsupport','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 tagHeader: Drift – & Supportkunder
@@ -11,12 +14,12 @@ topImage: '/content/images/section-topbilder/operations-org.jpg'
 background: 'invert'
 
 summary: >
-  Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.<p>
+  Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.
 ---
 
 Vi hjälper dig som är IT-chef eller IT-ansvarig att planera, utreda, underhålla och övervaka din IT-miljö.
 
-Kontakta <a href="/medarbetare/mats">Mats Egardt</a> för mer info.
+Kontakta [Mats Egardt](/medarbetare/mats "Mats Egardt") för mer info.
 
 ## IT-review
 En IT-review innebär analys och dokumentation av din IT-miljö. Du får en tydlig översikt av allt från hårdvara och säkerhet, till mjukvara och licenser. I åtgärdsrapporten ser du också tydligt hur du kan åtgärda dagens brister och fel. Du får också en bra grund för att hålla IT-miljön och IT-dokumentationen uppdaterad på lång sikt.
@@ -27,7 +30,7 @@ Med vår specialist- och projektsupport får du som IT-chef eller IT-ansvarig f�
 
 
 ## Hyr en IT-avdelning
-Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Via telefonsupport och <a href="/fjarrhjalp">fjärrhjälp</a> hjälper vi till med små som stora problem snabbt.
+Hos oss kan du hyra en komplett IT-avdelning. Vi hjälper dig att planera, driftsätta och underhålla en väl fungerande IT-miljö. Via telefonsupport och [fjärrhjälp](/fjarrhjalp "fjärrhjälp") hjälper vi till med små som stora problem snabbt.
 
 
 ## Systemförvaltning

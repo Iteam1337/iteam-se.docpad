@@ -1,5 +1,8 @@
 ---
 title: Christian Landgren
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 navigationTitle: Christian
 
 layout: coworker
@@ -18,6 +21,8 @@ twitter: landgren
 instagram: clandgren
 linkedin: in/christianlandgren
 github: irony
+blog:
+
 ---
 
 ## Varför jobbar du med teknik?

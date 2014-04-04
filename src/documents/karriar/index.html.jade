@@ -1,5 +1,8 @@
 ---
 title: Karriär
+description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+keywords: ''
+
 layout: section
 tags: ['intro', 'page']
 pageType: "karriar"
@@ -31,17 +34,17 @@ row-fluid#career
         * Alla delar på julbonus varje år och vi har generöst friskvårdsbidrag
         * Vi går i strumplästen och vi skrattar
 
-      //- #opportunities
-      //-   h2 Just nu söker vi
-      //-   ul
-      //-     each career in getCollection('ledigatjanster').toJSON()
-      //-       if !!career.title
-      //-         li
-      //-           a.title(href=career.url)= career.title
-      //-           p!= career.summary 
+      #opportunities
+        h2 Just nu söker vi
+        ul
+          each career in getCollection('ledigatjanster').toJSON()
+            if !!career.title
+              li
+                a.title(href=career.url)= career.title
+                p!= career.summary
 
       :markdown
-        ## Vi älskar spontanansökningar 
+        ## Vi älskar spontanansökningar
         Vi söker alltid nya kollegor som är engagerade. Du brinner gärna för dina privata projekt vid sidan om Iteam, och du pysslar gärna med dina egna grejer för att utvecklas. Det är lätt att säga att vi söker talang, vilket vi såklart gör, men vi vill fokusera på personligheter som bidrar.<br/>
         Är du intresserad av oss, tveka inte att kontakta [Sophie Raland Wesslau](/medarbetare/sophie).
 
@@ -52,7 +55,7 @@ row-fluid#career
 
         ### [Senior Webbutvecklare](/medarbetare/johanna)
         Mål: **Stabilitet & trygghet.**<br/>
-        Vad: Ny-/produktutveckling (Scrum). Förvaltning. (Kanban). Tech lead i våra projektteam. Devops i form av miljöer och releasehantering.<br/>
+        Vad: Ny-/produktutveckling (Scrum). Förvaltning. (Kanban). Tech lead i våra projektteam. Devops för miljöer och releasehantering.<br/>
         *Verktyg: Proof of concept. .NET, Node.js, Angular.JS, SQL/NoSQL. Automatisk och manuell testning.*
 
         ### [Technical Creative Director](/medarbetare/johan)
