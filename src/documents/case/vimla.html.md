@@ -17,7 +17,7 @@ imageGallery: ['case-galleribilder/vimla/vimla-1.png','case-galleribilder/vimla/
 team: ['anders','johanna','dennis','rickard','sophie','alexander','johan']
 siteurl: "https://vimla.se"
 
-readmorelinks: [{"url":"http://www.madetoorder.se","title":"Made to Order"}, {"url":"http://www.jungrelations.se","title":"Jung Relations"}]
+readmorelinks: [{"url":"https://vimla.se","title":"Vimla"},{"url":"https://www.youtube.com/watch?v=hJ472LXXaaM","title":"Vimla - Så här funkar det"},{"url":"http://www.madetoorder.se","title":"Made to Order"}, {"url":"http://www.jungrelations.se","title":"Jung Relations"}]
 
 quote: {text:"Vi ser vårt team hos Iteam mer som våra kollegor än som leverantör. Istället för att vi ställer krav som Iteam utför så jobbar vi tillsammans och sätter alla funktioner och lösningar för siten. Det har gjort att vi kommit mycket längre än vad vi skulle gjort annars", by:"Johan Littorin, intiativtagare och affärsansvarig för Vimla"}
 about:
@@ -35,12 +35,8 @@ Vi på Iteam har haft nöjet att samarbeta med Telenor för att ta fram det nya 
 
 ###Samarbetet är nyckeln
 Vimla bygger på öppenhet, som kund är du inte kund utan du är medlem och du är en stor del av Vimlas framtid.
-Emma-Klara Wächter och Johan Littorin på Telenor har arbetat hela tiden med att alla samarbetspartner ska uppleva en teamkänsla –vi är inte samarbetspartner, vi är kollegor. Detta har varit en viktig nyckel till framgång i vårt samarbete. Vi på Iteam har varit strategiskt involverade från starten av samarbetet, både vad gäller form och funktion.
+Emma-Klara Wächter och Johan Littorin på Telenor har arbetat hela tiden med att alla samarbetspartner ska uppleva en teamkänsla – vi är inte samarbetspartner, vi är kollegor. Detta har varit en viktig nyckel till framgång i vårt samarbete. Vi på Iteam har varit strategiskt involverade från starten av samarbetet, både vad gäller form och funktion.
 Samarbetet där vi som samarbetspartner är en del av Vimlagruppen, gör det enkelt för oss att förmedla vidare denna känsla till Vimlas medlemmar. Vimlagruppen är hela tiden lyhörd för vad medlemmarna önskar ska göras här näst och vi i Vimlagruppen planerar sprintar efter medlemmarnas idéer och tankar. Det är vårt ansvar gentemot medlemmarna.
-
-Johan Littorin, intiativtagare och affärsansvarig för Vimla om samarbetet med Iteam:
-
-> ”Vi ser vårt team hos Iteam mer som våra kollegor än som leverantör. Istället för att vi ställer krav som Iteam utför så jobbar vi tillsammans och sätter alla funktioner och lösningar för siten. Det har gjort att vi kommit mycket längre än vad vi skulle gjort annars”, säger Johan Littorin.
 
 ###Utmaningen
 Det var ont om tid och mycket skulle göras på kort tid. Uppdraget startade med att vi på Iteam tog fram en prototyp av Vimla, som vid det laget inte hette Vimla och vars grafiska profil inte heller var fastställd.

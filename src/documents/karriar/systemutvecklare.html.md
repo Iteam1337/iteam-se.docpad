@@ -12,21 +12,34 @@ summary: >
 
 krav: >
   * 2-4 års arbetslivserfarenhet
+  
   * Javascript
+
   * Node.js
+
   * NoSQL (t ex MongoDb)
 
 meriterande: >
   * .NET
+
   * SQL
+
   * HTML5
+
   * CSS3
+
   * less
+
   * Angular.js
+
   * TDD
+
   * Chef
+
   * Grunt
+
   * AWS
+
   * Elasticsearch
 
 anstallningsform: >
