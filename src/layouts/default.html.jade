@@ -23,7 +23,7 @@ html(lang="sv")
     meta(name="description", content=getPreparedDescription())
     meta(name="keywords", content=getPreparedKeywords())
     meta(name="author", content=site.author || '')
-    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1")
 
     != getBlock("meta").toHTML()
 
@@ -33,32 +33,43 @@ html(lang="sv")
     link(rel="stylesheet", href="/content/styles/iteamse.css", type="text/css")
 
   body(class=document.slug)
+    #header
+      a(href="/")
+        img(src="/content/images/svg/iteam_logo.svg", width="120", height="30", id="logo")
+      .navbar.navbar-static-top
+        .navbar-inner
+          span.logoAndMenu
+            a.btn.btn-navbar(type="button",data-toggle="collapse",data-target="#main-nav")
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
 
-    nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse(role="navigation")
-      .navbar-header
-        button.navbar-toggle(type="button",data-toggle="collapse",data-target="#main-nav")
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand(href="/")
-          img(src="/content/images/svg/iteam_logo.svg", width="120", height="30")
+          .nav-collapse.collapse.navbar-responsive-collapse#main-nav
+            ul.nav
+              each doc, i in pages
+                - active = (document.url.indexOf(doc.url) > -1) ? 'active' : null
+                - hasSubpage = (doc.subpages) ? i : null
+                li(data-subpage=hasSubpage)
+                  a(class=active, href=doc.url)= doc.title
+                  if (doc.chevron)
+                    .e-chevron-thin-right
 
-      .collapse.navbar-collapse#main-nav
-        ul.nav.navbar-nav
-          each doc, i in pages
-            - active = (document.url.indexOf(doc.url) > -1) ? 'active' : null
-            - hasSubpage = (doc.subpages) ? i : null
-            li(data-subpage=hasSubpage)
-              a(class=active, href=doc.url)= doc.title
-              if (doc.chevron)
-                .e-chevron-thin-right
+          .nav-collapse.hidden-xs
+            ul.nav
+              each doc, i in pages
+                - active = (document.url.indexOf(doc.url) > -1) ? 'active' : null
+                - hasSubpage = (doc.subpages) ? i : null
+                li(data-subpage=hasSubpage)
+                  a(class=active, href=doc.url)= doc.title
+                  if (doc.chevron)
+                    .e-chevron-thin-right          
 
-      if (!!subpages)
-        #navSubpages
-          .subpage-inner
-            each subpage in subpages
-              - active = (document.url.indexOf(subpage.url) > -1) ? 'active' : null
-              a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+          if (!!subpages)
+            #navSubpages
+              .subpage-inner
+                each subpage in subpages
+                  - active = (document.url.indexOf(subpage.url) > -1) ? 'active' : null
+                  a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
     .offset
 
@@ -68,6 +79,7 @@ html(lang="sv")
       #main-holder
         .background-image(style=topImage())
         .container(class=singlePageCase())
+         
           #content.row-fluid.content!= content
 
     #footer-holder

@@ -31,11 +31,16 @@ if (document.caseIndex >= 0)
                   h2=document.about.title
                   p=document.about.text
 
+        if (!!document.quote)
+          .visible-xs
+            h3= "\"" + document.quote.text + "\""
+            blockquote="— " + document.quote.by
+
         .text!= content
 
         .information
           if (!!document.quote)
-            .quote
+            .quote.hidden-xs
               h3= "\"" + document.quote.text + "\""
               blockquote="— " + document.quote.by
 
