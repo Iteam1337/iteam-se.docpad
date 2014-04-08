@@ -62,6 +62,6 @@ Johan Öbrink, Iteam, 070-682 91 21
 Johan Littorin, Telenor, 0734 41 72 85
 
 ### Samarbetspartner
-[Made to order](www.madetoorder.se)
+[Made to order](http://www.madetoorder.se)
 
-[Jung](www.jungrelations.se)
+[Jung](http://www.jungrelations.se)
