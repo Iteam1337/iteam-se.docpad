@@ -22,11 +22,9 @@ chevron: true
     Vi arbetar med Rådgivning, Systemutveckling och Drift & Support.
     Resultatet blir tex förstudier, digitala tjänster, siter, verktyg, eller analys av IT-miljö.
     [Hans Rollman](/medarbetare/hans) har alla svar på frågor kring Rådgivning och Systemutveckling. [Mats Egardt](/medarbetare/mats) berättar allt om It-Support.
-  img: "/content/images/section-topbilder/placeholder.jpg"
 
 .row.tjanster
   each doc in getCollection('tjanster').toJSON()
     .col-md-4.offer
-      a.title(href=doc.url)= doc.title + ' »'
-
+      a.title(href=doc.url)= doc.title
       p!= doc.summary
