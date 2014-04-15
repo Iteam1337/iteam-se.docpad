@@ -5,7 +5,7 @@ keywords: ''
 
 subtitle:
 layout: case
-caseIndex: 5
+caseIndex: 6
 releaseDate: 040303
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
