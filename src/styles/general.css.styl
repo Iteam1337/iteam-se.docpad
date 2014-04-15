@@ -1,11 +1,11 @@
 @import "variable"
 
 @font-face
-  font-family "AvantGarde ExtraLight"
-  src url("/content/fonts/lte52009.ttf") format("truetype")
+  font-family: "AvantGarde ExtraLight";
+  src: url("/content/fonts/lte52009.ttf") format("truetype");
 
 @font-face
-  font-family "Tex Gyre Adventor Regular"
+  font-family: "Tex Gyre Adventor Regular";
   src: url('/content/fonts/texgyreadventor-regular-webfont.eot');
   src: url('/content/fonts/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('/content/fonts/texgyreadventor-regular-webfont.woff') format('woff'),
@@ -58,6 +58,11 @@ a.tag
   &.remote
     width 25%
     margin-right 20px
+
+    @media mobile
+      display block
+      margin-bottom 10px
+      width 100%
 
 body,
 html

@@ -49,7 +49,7 @@ html(lang="sv")
               span.icon-bar
 
           .nav-collapse.collapse.navbar-responsive-collapse#main-nav
-            ul.nav
+            ul.nav.visible-xs
               each doc, i in pages
                 - active = (document.url.indexOf(doc.url) > -1) ? 'active' : null
                 - hasSubpage = (doc.subpages) ? i : null
