@@ -18,9 +18,9 @@ topImage: "/content/images/medarbetare/acr.jpeg"
 background: 'invert'
 
 twitter:
-instagram: zendeveloper
-linkedin: in/zendeveloper
-github: zendeveloper
+instagram:
+linkedin: in/alexanderczigler
+github: alexanderczigler
 blog:
 
 ---
