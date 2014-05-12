@@ -28,7 +28,7 @@ blog: http://www.bjoel.se/feed/
 ## Varför jobbar du med teknik?
 Jag tror på att jobba med det jag tycker är roligt. Teknik är något som jag inte bara utbildat mig inom utan också suttit med på fritiden och sömnlösa nätter. Teknik för mig är inte bara ett jobb, det är också en hobby och ett intresse. Teknik är något som är under ständig utveckling vilket betyder att jag hela tiden utsätts för nya utmaningar som pressar mig till att bli ännu bättre. Att sedan kunna jobba med något som underlättar vardagen för andra och sakta men säkert gör världen till en lite bättre plats är inte helt fy skam det heller.
  
-## Specialkompetens
+## Specialistkompetens
 Projektledning, Verksamhetsanalys, Kravställning, Skapa relationer, Nätverkande, Teknisk rådgivning, Planering, Social Media och Wordpress.
  
 ## Bakgrund
