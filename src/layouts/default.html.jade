@@ -86,6 +86,17 @@ html(lang="sv")
          
           #content.row-fluid.content!= content
 
+    if document.callToAction
+      .call-to-action-wrap
+        #call-to-action Kontakta oss
+        .inner
+          .phone
+            .e-phone
+            span 08 - 26 70 90
+          .mail
+            .e-mail
+            a(href="mailto:hans.rollman@iteam.se") hans.rollman@iteam.se
+
     #footer-holder
       #footer
         #address
@@ -95,6 +106,8 @@ html(lang="sv")
             li Telefon: 08-26 70 90
 
         #followUs
+          a(href="mailto:hans.rollman@iteam.se")
+            .e-mail
           a(href="https://github.com/iteam1337", target="_blank")
             .e-github
           a(href="https://www.facebook.com/IteamSolutions", target="_blank")

@@ -1,7 +1,7 @@
 // Colors
 igrey              = #231F20
 _orange            = #ffbd09
-iorange            = #FFBD09
+iorange            = _orange
 iorangergb         = rgb(255,189,9)
 bgBoxes            = rgba(0,0,0,0.3)
 
@@ -27,9 +27,6 @@ trans()
 
 origin()
   vendor("transform-origin", arguments)
-
-transition()
-  vendor("transition", arguments)
 
 mason(count = 2, gap = 25px)
   vendor("count", count)
@@ -73,6 +70,9 @@ transform()
 
 transform-origin()
   vendor('transform-origin', arguments)
+
+rotated(degrees)
+  vendor('transform', rotate(degrees))
 
 column(count = 2, gap = 20px)
   vendor('column-count', count)
