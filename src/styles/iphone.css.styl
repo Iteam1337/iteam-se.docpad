@@ -11,18 +11,17 @@
     .container,
     #startpage
       margin-top 0 !important
-      top 0
-      padding-top 20px
       padding-bottom 0
+      padding-top 20px
+      top 0
     #startpage
       box(border-box)
       padding 0
       h1
         margin-bottom 20px
 
-    .container
-      h2
-        font-size 21px
+    .container h2
+      font-size 21px
 
     .instagram-feed
       margin-bottom 20px
@@ -34,15 +33,14 @@
     margin 70px auto 0 !important
 
     .content > h1
-      margin-top -70px !important
       font-size 2.3em !important
-      text-shadow none !important
+      margin-top -70px !important
       position relative
+      text-shadow none !important
       white-space normal !important
 
-    &.single-case
-      h1
-        margin-top -60px !important
+    &.single-case h1
+      margin-top -60px !important
 
   iframe
     height auto
@@ -51,78 +49,71 @@
     display inherit !important
 
   .background-image
-    top -70px
-    height 100%
-    min-height 0
-    max-height 170px
-    position absolute
+    max-size(0,none,0,170px)
+    positioned('top','left',-70px,0)
+
     display inline-block
+    height 100%
   .container
-    top 150px
     padding-bottom 150px
+    top 150px
 
   a.btn
-    font-family "Palatino Linotype", sans-serif;
+    font-family serifFontStack
     margin 0 0 10px
     width 100%
 
   #startpage
     margin-top 40px
 
-  ul.subpages
-    > li
-      > div
-        left 20px
-        right auto
-      > span
-        margin-left 55px
+  ul.subpages > li
+    > div
+      left 20px
+      right auto
+    > span
+      margin-left 55px
 
-  #cases
-    .case
-      margin 0
+  #cases .case
+    margin 0
+    width 100%
+
+    .case-about
       width 100%
+    .case-image
+      max-size(0,360px,0,200px)
 
-      .case-about
-        width 100%
-      .case-image
-        display block
-        max-height 200px
-        max-width 360px
-        margin 0 auto 20px
-        width auto
+      display block
+      margin 0 auto 20px
+      width auto
 
   #case
     margin 0 auto 0
 
-    img
-      &.right
-        display none
+    img.right
+      display none
 
-    .about
-      .content
-        .text
+    .about .content
+      .text
+        width 100%
+      .information
+        margin-left 0
+        width 100%
+        .team li
+          display block
           width 100%
-        .information
-          margin-left 0
-          width 100%
-          .team
-            li
-              display block
-              width 100%
 
-  .coworkers
-    .coworker
-      width 100%
+  .coworkers .coworker
+    width 100%
 
-      &:nth-child(2n)
-        text-align left
+    &:nth-child(2n)
+      text-align left
 
-        .image
-          float none
-          margin-right 20px
+      .image
+        float none
+        margin-right 20px
 
-        .info
-          margin-right 0
+      .info
+        margin-right 0
 
   #coworker
     margin-top 40px
@@ -130,20 +121,16 @@
     .image
       margin-top -205px
 
-    .cases
-      li
-        text-align left
-        width 100%
+    .cases li
+      text-align left
+      width 100%
 
-    .github
-      li
-        a
-          display inline-block
-          font-size 0.8em
-          max-width 80%
-          overflow hidden
-          text-overflow ellipsis
-          white-space nowrap
+    .github li a
+      text-overflow()
+
+      display inline-block
+      font-size 0.8em
+      max-width 80%
 
     .top-part
       margin-bottom 15px
@@ -153,13 +140,12 @@
 
       .left,
       .right
-        width 100%
-        position relative
+        positioned('top','left',0,0,relative)
+
         bottom 0
-        top 0
-        left 0
         right 0
         text-align center
+        width 100%
       .right
         .social
           text-align center
@@ -167,15 +153,13 @@
   #page
     margin: 20px 0
 
-    .history
-      .year
-        left 0
-        margin-bottom 20px
-        position relative
+    .history .year
+      left 0
+      margin-bottom 20px
+      position relative
 
-    .tjanster
-      .offer
-        padding-top 0
+    .tjanster .offer
+      padding-top 0
 
   #footer
     margin 40px 0 0
@@ -186,7 +170,7 @@
       width 100%
 
     #followUs
-      width 100%
-      position relative
-      right 0
+      positioned('top','right',0,0,relative)
+
       text-align center
+      width 100%

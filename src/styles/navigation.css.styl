@@ -1,25 +1,21 @@
 @import 'variable'
 
 #header
+  positioned('top','left',0,0,fixed)
+
   color #000
   height 51px
-  left 0
-  position fixed
-  top 0
   width 100%
   z-index 10
 
   #logo
-    position absolute
-    left 10px
-    top 8px
-    z-index 20
-    
+    positioned('top','left',8px,10px)
+    size(100px, 30px)
+
     background url('/content/images/ovrigt/iteam_logo.png') no-repeat
     background none, url('/content/images/svg/iteam_logo.svg') no-repeat
     background-size 90px
-    height 30px
-    width 100px
+    z-index 20
 
     @media mobile
       left 10px
@@ -49,10 +45,8 @@
 
       .btn-navbar
         box-sizing()
+        positioned('top','right',7px,10px)
 
-        position absolute
-        right 10px
-        top 7px
         background #333
         border none
         height 35px
@@ -63,9 +57,9 @@
         z-index 50
 
         .icon-bar
+          size(100%,3px)
+
           display block
-          width 100%
-          height 3px
           margin-top 3px
           background-color #F5F5F5
 
@@ -98,9 +92,7 @@
           text-align left
 
           &:last-child
-            position relative
-            right auto
-            top 0
+            positioned('top','right',0,auto,relative)
 
             a
               color #999

@@ -22,64 +22,11 @@ vendor(prop, args)
   -o-{prop} args
   {prop} args
 
-trans()
-  vendor("transform", arguments)
-
-origin()
-  vendor("transform-origin", arguments)
-
-mason(count = 2, gap = 25px)
-  vendor("count", count)
-  vendor("gap", gap)
-
-box()
-  vendor("box-sizing", arguments)
-
-shadow()
-  vendor("box-shadow", arguments)
-
-border-radius()
-  vendor('border-radius', arguments)
-
-box-sizing()
-  vendor('box-sizing', arguments)
-
-positioned(direction, top = 0, right = 0, bottom = 0, left = 0)
-  position absolute
-  if direction = 'top-right'
-    right right
-    top top
-  if direction = 'top-left'
-    left left
-    top top
-  if direction = 'bottom-right'
-    bottom bottom
-    right right
-  if direction = 'bottom-left'
-    bottom bottom
-    left left
-
-translate-pos(x,y)
-  vendor("transform", translateX(x) translateY(y))
-
-transition()
-  vendor('transition', arguments)
-
-transform()
-  vendor('transform', arguments)
-
-transform-origin()
-  vendor('transform-origin', arguments)
-
-rotated(degrees)
-  vendor('transform', rotate(degrees))
-
-column(count = 2, gap = 20px)
-  vendor('column-count', count)
-  vendor('golumn-gap', gap)
-
-user-select()
-  vendor('user-select', arguments)
+animate(name, duration = .5s, timing = ease, iteration = 1)
+  vendor("animation-name", name)
+  vendor("animation-duration", duration)
+  vendor("animation-timing-function", timing)
+  vendor("animation-iteration-count", iteration)
 
 background-linear-gradient(startPoint, startColor, startInterval, endColor, endInterval, deprecatedWebkitStartPoint = false, deprecatedWebkitEndPoint = false)
   background-color startColor
@@ -91,11 +38,75 @@ background-linear-gradient(startPoint, startColor, startInterval, endColor, endI
   background-image -o-linear-gradient(startPoint, startColor startInterval, endColor endInterval)
   background-image linear-gradient(startPoint, startColor startInterval, endColor endInterval)
 
-animate(name, duration = .5s, timing = ease, iteration = 1)
-  vendor("animation-name", name)
-  vendor("animation-duration", duration)
-  vendor("animation-timing-function", timing)
-  vendor("animation-iteration-count", iteration)
+border-radius()
+  vendor('border-radius', arguments)
+
+box()
+  vendor("box-sizing", arguments)
+
+box-sizing()
+  vendor('box-sizing', arguments)
+
+break-before(type = always)
+  vendor('column-break-before', type)
+
+break-inside(type = avoid)
+  vendor('column-break-inside', type)
+
+columns(count = 2, gap = 20px)
+  vendor('column-count', count)
+  vendor('golumn-gap', gap)
+
+mason(count = 2, gap = 25px)
+  vendor("count", count)
+  vendor("gap", gap)
+
+max-size(min-width = 0, max-width = none, min-height = 0, max-height = none)
+  min-height min-height
+  max-height max-height
+  min-width min-width
+  max-width max-width
+
+origin()
+  vendor("transform-origin", arguments)
+
+positioned(direction1 = 'top', direction2 = 'left', position1 = 0, position2 = 0, positioning = absolute)
+  position positioning
+  {direction1} position1
+  {direction2} position2
+
+rotated(degrees)
+  vendor('transform', rotate(degrees))
+
+shadow()
+  vendor("box-shadow", arguments)
+
+size(width, height = width)
+  height height
+  width width
+
+svg(icon = "")
+  background-image url("/content/images/svg/" + icon + ".svg")
+
+text-overflow()
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+
+trans()
+  vendor("transform", arguments)
+
+translate-pos(x,y)
+  vendor("transform", translateX(x) translateY(y))
+
+transition()
+  vendor('transition', arguments)
+
+transform-origin()
+  vendor('transform-origin', arguments)
+
+user-select()
+  vendor('user-select', arguments)
 
 zoom-cursor(direction = "in")
   cursor -webkit-zoom- + direction
@@ -103,9 +114,6 @@ zoom-cursor(direction = "in")
   cursor -ms-zoom- + direction
   cursor -o-zoom- + direction
   cursor zoom- + direction
-
-svg(icon = "")
-  background-image url("/content/images/svg/" + icon + ".svg")
 
 // Responsiveness
 tablet        = "(max-width:979px)"
