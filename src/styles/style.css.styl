@@ -237,8 +237,11 @@
   border-top 1px solid rgba(204, 204, 204, .2)
   margin-top 20px
 
-.single-case
+body[class^="medarbetare"] > #main-holder > .container, .single-case
   animate(animatein, 1s)
+
+  @media mobile
+    animate(none, 0)
 
 #top-holder,
 #main-holder,
