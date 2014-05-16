@@ -34,4 +34,4 @@ I ett scrumprojekt betalar man för tiden utvecklingsteamet ägnar åt projektet
 När första releasen är gjord är det klokt att budgetera ungefär lika mycket tid för vidareutveckling. På så sätt kommer nya idéer och funktioner att konstant uppdateras. Våra Systemutvecklare och IT-Supporttekniker är behjälpliga när man ansluter sig till ett retaineravtal med oss.
 
 ## T-Rex
-[T-REX](/vara-tjanster/systemutveckling/trex "T-REX") är Iteams .NET-baserade plattform.
+[T-REX](/vara-tjanster/systemutveckling/trex) är Iteams .NET-baserade plattform.
