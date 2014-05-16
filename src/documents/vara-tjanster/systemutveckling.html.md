@@ -31,7 +31,7 @@ Metodiken innebär att arbetet delas upp i korta intensiva utvecklingspass (s.k.
 I ett scrumprojekt betalar man för tiden utvecklingsteamet ägnar åt projektet. En typisk sprint kan vara ca. 280 timmar och är ofta fördelat över ca. tre veckors kalendertid.
 
 ### Att vårda och underhålla
-När första releasen är gjord är det klokt att budgetera ungefär lika mycket tid för, vidareutveckling. På så sätt kommer nya idéer och funktioner att konstant uppdateras. Våra Systemutvecklare och IT-Supporttekniker är behjälpliga när man ansluter sig till ett retaineravtal med oss.
+När första releasen är gjord är det klokt att budgetera ungefär lika mycket tid för vidareutveckling. På så sätt kommer nya idéer och funktioner att konstant uppdateras. Våra Systemutvecklare och IT-Supporttekniker är behjälpliga när man ansluter sig till ett retaineravtal med oss.
 
 ## T-Rex
 [T-REX](/vara-tjanster/systemutveckling/trex "T-REX") är Iteams .NET-baserade plattform.
