@@ -3,97 +3,61 @@ layout: 'default'
 title: '404 Not Found'
 dynamic: true
 ---
+<div class="stripes"></div>
+<div class="fourofour">
+  <div class="number">404</div>
+  <div class="text">
+    This page doesn't seem to exist.
+    <a href="/" class="back">Go back to start?</a>
+  </div>
+</div>
 
-  <div class="bluescreen"></div>
-  <div class="stripes-right"></div>
-  <div class="stripes"></div>
-  <div class="fourofour">
-  
-    <div class="number">404</div>
-    <div class="text">A fatal exception has occured. This page doesn't seem to exist.
-  <ul><li>Press any key to go back to start page</li><li>Press <a href="back">this link</a> to go back</li></ul>
-  <span href="">Press any key to continue _</span></div>
-    
-  <img src="http://www.iteam.se/content/images/svg/iteam_logo.svg" style="
-    /* display: none; */
-"></div>
-  
-  <meta id="fake_position_meta" name="fake_geolocation_chrome_extension" content="{}"></body>
-
-  div.bluescreen {
-background: repeating-radial-gradient( circle, #093E9C, #093E9E 10px, #093E9C 500px, #222);
-height: 100%;
-}
-
-div.stripes-right {
-background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0), #FFBD09 10px, #FFF 10px, #FFBD09 30px );
-height: 100%;
-display: none;
-}
-
+<style>
 div.stripes {
-background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), #FFBD09 10px, rgba(255, 255, 255, 0) 10px, #FFBD09 30px );
-height: 100%;
-/* opacity: 0; */
-width: 100%;
-position: fixed;
-top: 0;
-left: 0;
-display: none;
+  background: repeating-linear-gradient( 45deg, rgba(255, 255, 255, 0), #FFBD09 15px, rgba(255, 255, 255, 0) 0px, #FFBD09 30px );
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 div.fourofour {
-position: fixed;
-top: 50%;
-left: 50%;
-/* font-size: 300px; */
--webkit-transform: translate3d(-50%,-50%,0);
-background: none;
-/* font-family: 'Helvetica Neue'; */
-font-weight: 100;
-text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 300px;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  -moz-transform: translate3d(-50%,-50%,0);
+  background: none;
+  font-family: 'Helvetica Neue';
+  font-weight: 100;
+  text-align: center;
 }
 
 div.number {
-/* border-bottom: 3px solid #000; */
-margin-bottom: 40px;
-line-height: 1;
-background: #FFF;
-display: inline-block;
-color: #093E9E;
-padding: 5px 10px;
-/* margin: 0 auto; */
-/* text-align: center; */
+  border-bottom: 3px solid #000;
+  margin-bottom: 40px;
+  line-height: 1;
+  display: inline-block;
+  color: #333;
+  padding: 5px 10px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 div.text {
-font-size: 21px;
-font-weight: 300;
-text-align: left;
+  font-size: 21px;
+  font-weight: 300;
+  text-align:center;
+  margin-top:20px;
 }
 
-li {
-margin: 10px 0;
+a.back {
+  background: #333;
+  color:#fff;
+  padding: 5px;
+  text-decoration:none;
 }
-
-span {
-/* background: #333; */
-color: #FFF;
-text-decoration: none;
-/* padding: 5px; */
-display: block;
-margin-top: 40px;
-text-align: right;
-padding-right: 100px;
-}
-a {
-background: #FFF;
-padding: 2px 10px;
-color: #093E9E;
-}
-
-img {
-display: block;
-width: 100px;
-margin: 50px auto 0;
-}
+</style>
