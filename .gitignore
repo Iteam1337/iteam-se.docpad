@@ -5,3 +5,4 @@ bower_components
 aws.json
 publicera.sh
 .idea
+.docpad.db
