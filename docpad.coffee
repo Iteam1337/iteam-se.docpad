@@ -9,6 +9,9 @@ docpadConfig =
 
   templateData:
 
+    # Expose package info
+    pkg: require process.cwd() + "/package.json"
+
     # Specify some site properties
     site:
       # The production url of our website
