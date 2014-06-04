@@ -13,5 +13,9 @@ h1(title,class=document.background)= document.title
         .col-md-6
           h4!= document.tagHeader
           include ../jade_includes/service
+
+          if document.certifications
+            each img in document.certifications
+              img.certification(src=img)
       else
         .col-md-12!= content

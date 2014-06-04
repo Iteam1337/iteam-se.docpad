@@ -3,12 +3,24 @@
 #coworker
   #blog-feed
     text-align left
+
     *
       box(border-box)
-    .blog
-      vertical-align top
-      font-size larger
-      display inline-block
-      padding 0 20px 0
-      width 25%
-      margin 0
+    
+    li
+      float left
+      width 49%
+
+      &:nth-child(2n-1)
+        margin-right 2%
+
+      .title
+        font-size 18px
+        padding 0 0 10px
+        text-align left
+
+      .content
+        width 100%
+
+      @media mobile
+        width 100%

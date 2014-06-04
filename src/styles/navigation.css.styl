@@ -1,44 +1,102 @@
 @import 'variable'
 
-nav.navbar-default
+#header
+  positioned('top','left',0,0,fixed)
+
+  color #000
+  height 51px
+  width 100%
+  z-index 10
+
+  #logo
+    positioned('top','left',8px,10px)
+    size(100px, 30px)
+
+    background url('/content/images/ovrigt/iteam_logo.png') no-repeat
+    background none, url('/content/images/svg/iteam_logo.svg') no-repeat
+    background-size 90px
+    z-index 20
+
+    @media mobile
+      left 10px
+      top 10px
+
+.navbar-static-top
   background #333
+  position static
+  margin-bottom 0
 
-  .navbar-header
-    .navbar-brand
-      padding 10px
-
-  ul
-    float none
+  .navbar-inner
     margin 0 auto
-    max-width 1060px
-    text-align center
-
-    li
-      display inline-block
-      float none
-
-      a.active
-        color #FFBD09
-      &:last-child
-        font-size 0.75rem
-        position absolute
-        right 20px
-
-        a
-          color #fff
+    position relative
+    width 100%
+    
+    .logoAndMenu
+      border none
+      display none
+      padding 5px 10px
+      position relative
+      height 50px
+      line-height 1
+      z-index 15
 
       @media mobile
         display block
-        text-align left
 
+      .btn-navbar
+        box-sizing()
+        positioned('top','right',7px,10px)
+
+        background #333
+        border none
+        height 35px
+        margin-bottom 0
+        padding 8px 6px
+        text-shadow none
+        width 35px
+        z-index 50
+
+        .icon-bar
+          size(100%,3px)
+
+          display block
+          margin-top 3px
+          background-color #F5F5F5
+
+    ul.nav
+      float none
+      margin 5px auto 0
+      max-width 1060px
+      text-align center
+
+      > li
+        display inline-block
+        float none
+
+        a.active
+          color iorange
         &:last-child
-          position relative
-          right auto
-          top 0
+          font-size 0.75rem
+          position absolute
+          right 20px
 
-          a
-            color #999
-            font-size 1rem
+        > a
+          color #999
+
+          &:focus, &:hover
+            color iorange
+            background none
+
+        @media mobile
+          display block
+          text-align left
+
+          &:last-child
+            positioned('top','right',0,auto,relative)
+
+            a
+              color #999
+              font-size 1rem
 
       a
         color #fff
@@ -57,7 +115,6 @@ nav.navbar-default
 
   .subpage-inner
     margin 0 auto
-    max-width 850px
     position relative
 
     a

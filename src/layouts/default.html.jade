@@ -13,7 +13,11 @@
 - var subpages = document.subpages && getCollection(document.subpages).toJSON()
 
 doctype html
+<!--[if IE 8]><html class="ie8" lang="sv"><![endif]-->
+<!--[if IE 9]><html lang="sv" class="ie9"><![endif]-->
+<!--[if !IE]><!-->
 html(lang="sv")
+  <!--<![endif]-->
   head
     meta(charset="utf-8")
     meta(http-equiv="content-type", content="text/html; charset=utf-8")
@@ -23,7 +27,7 @@ html(lang="sv")
     meta(name="description", content=getPreparedDescription())
     meta(name="keywords", content=getPreparedKeywords())
     meta(name="author", content=site.author || '')
-    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1")
 
     != getBlock("meta").toHTML()
 
@@ -33,32 +37,43 @@ html(lang="sv")
     link(rel="stylesheet", href="/content/styles/iteamse.css", type="text/css")
 
   body(class=document.slug)
+    #header
+      a(href="/")
+        div(id="logo")
+      .navbar.navbar-static-top
+        .navbar-inner
+          span.logoAndMenu
+            a.btn.btn-navbar(type="button",data-toggle="collapse",data-target="#main-nav")
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
 
-    nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse(role="navigation")
-      .navbar-header
-        button.navbar-toggle(type="button",data-toggle="collapse",data-target="#main-nav")
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand(href="/")
-          img(src="/content/images/svg/iteam_logo.svg", width="120", height="30")
+          .nav-collapse.collapse.navbar-responsive-collapse#main-nav
+            ul.nav.visible-xs
+              each doc, i in pages
+                - active = (document.url.indexOf(doc.url) > -1) ? 'active' : null
+                - hasSubpage = (doc.subpages) ? i : null
+                li(data-subpage=hasSubpage)
+                  a(class=active, href=doc.url)= doc.title
+                  if (doc.chevron)
+                    .e-chevron-thin-right
 
-      .collapse.navbar-collapse#main-nav
-        ul.nav.navbar-nav
-          each doc, i in pages
-            - active = (document.url.indexOf(doc.url) > -1) ? 'active' : null
-            - hasSubpage = (doc.subpages) ? i : null
-            li(data-subpage=hasSubpage)
-              a(class=active, href=doc.url)= doc.title
-              if (doc.chevron)
-                .e-chevron-thin-right
+          .nav-collapse.hidden-xs
+            ul.nav
+              each doc, i in pages
+                - active = (document.url.indexOf(doc.url) > -1) ? 'active' : null
+                - hasSubpage = (doc.subpages) ? i : null
+                li(data-subpage=hasSubpage)
+                  a(class=active, href=doc.url)= doc.title
+                  if (doc.chevron)
+                    .e-chevron-thin-right          
 
-      if (!!subpages)
-        #navSubpages
-          .subpage-inner
-            each subpage in subpages
-              - active = (document.url.indexOf(subpage.url) > -1) ? 'active' : null
-              a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
+          if (!!subpages)
+            #navSubpages
+              .subpage-inner
+                each subpage in subpages
+                  - active = (document.url.indexOf(subpage.url) > -1) ? 'active' : null
+                  a(href=subpage.url,class=active)= (subpage.navigationTitle ? subpage.navigationTitle :subpage.title)
 
     .offset
 
@@ -68,7 +83,19 @@ html(lang="sv")
       #main-holder
         .background-image(style=topImage())
         .container(class=singlePageCase())
+         
           #content.row-fluid.content!= content
+
+    if document.callToAction
+      .call-to-action-wrap
+        #call-to-action Kontakta oss
+        .inner
+          .phone
+            .e-phone
+            span 08 - 26 70 90
+          .mail
+            .e-mail
+            a(href="mailto:hans.rollman@iteam.se") hans.rollman@iteam.se
 
     #footer-holder
       #footer
@@ -79,6 +106,8 @@ html(lang="sv")
             li Telefon: 08-26 70 90
 
         #followUs
+          a(href="mailto:hans.rollman@iteam.se")
+            .e-mail
           a(href="https://github.com/iteam1337", target="_blank")
             .e-github
           a(href="https://www.facebook.com/IteamSolutions", target="_blank")
@@ -92,19 +121,33 @@ html(lang="sv")
     != scripts.toHTML()
     <!-- Analytics -->
     script.
+
+      // Google Analytics
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-2430046-1', 'iteam.se');
       ga('send', 'pageview');
 
+<<<<<<< HEAD
+=======
+      // GoSquared
+>>>>>>> optimize
       !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
       arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
       d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
       insertBefore(d,q)}(window,document,'script','_gs');
+<<<<<<< HEAD
       
       _gs('GSN-599299-Y');
+=======
+      _gs('GSN-599299-Y');
+
+      // ProspectEye
+      var psSite = "f85d645e3d";
+      var peJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+      document.write(unescape("%3Cscript src='" + peJsHost + "tr.prospecteye.com/track.js' type='text/javascript'%3E%3C/script%3E"));
+>>>>>>> optimize
     <!-- End Analytics -->
     script(src="/content/scripts/app.js")

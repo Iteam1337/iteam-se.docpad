@@ -6,55 +6,44 @@
     h2
       max-width 100%
 
-  #cases
-    .case
-      display inline-block
-      margin-right 1%
-      margin-left 1%
-      vertical-align top
-      width 47%
+  #cases .case
+    display inline-block
+    margin-right 1%
+    margin-left 1%
+    vertical-align top
+    width 47%
 
-      &:nth-child(3n)
-        margin 0
+    &:nth-child(3n)
+      margin 0
 
-      .case-image
-        translate-pos(0,-50%)
-        display block
-        margin 0 auto
-        max-height 120px
-        width auto
-        left 0
+    .case-image
+      max-height 120px
+      width auto
+      left 0
 
-      .case-about
-        width 100%
+    .case-about
+      width 100%
 
-  .coworkers
-    .coworker
-      margin-right 20px
-      width 47%
+  .coworkers .coworker
+    margin-right 20px
+    width 47%
 
-      &:nth-child(2n-2)
-        margin-right 0
+    &:nth-child(2n-2)
+      margin-right 0
 
+  #page #connectedCases ul li
+    margin-right 20px
+    width 45%
 
-  #page
-    #connectedCases
-      ul
-        li
-          margin-right 20px
-          width 45%
-
-          &:nth-child(2n+2)
-            margin-right 0
+    &:nth-child(2n+2)
+      margin-right 0
 
 /**
  * iPad landscape
  */
 @media (max-width:1199px) and (min-width:980px)
-  #coworker
-    .social-media
-      a
-        width 27%
+  #coworker .social-media a
+    width 27%
 
 /**
  * iPad landscape
@@ -77,12 +66,10 @@
       width 100%
 
 @media(max-width:979px)
-  #coworker
-    .social-media
-      a
-        width 30%
-        margin 0
-        padding 0
+  #coworker .social-media a
+    width 30%
+    margin 0
+    padding 0
 
   .index
     .container
@@ -116,11 +103,10 @@
     .user-content.multi
       width 100%
 
-    .github
-      .git-time
-        position relative
-        text-align left
-        width auto
+    .github .git-time
+      position relative
+      text-align left
+      width auto
 
     .top-part
       .center
@@ -149,9 +135,8 @@
       .quote
         width 100%
         float none
-      .quote
-        blockquote
-          text-align left
+      .quote blockquote
+        text-align left
 
       .gallery
         padding-top 0
@@ -159,11 +144,9 @@
           margin-right 10px
           width 48%
 
-      .twitter
-        .tweets
-          li
-            width 100%
-            max-width 370px
+      .twitter .tweets li
+        width 100%
+        max-width 370px
       .twitter,
       .relatedServices,
       .team
@@ -181,14 +164,6 @@
 @media (max-width:767px)
 
   .index
-    .rn-carousel-container
-      .layer
-        .wrapper
-          h1
-            font-size 3em
-            margin 0 auto
-            width 80%
-
     .background-image
       background-position left bottom
 
@@ -224,20 +199,20 @@
 
   .coworkers
     .coworker
-      width 100%
       margin-left 0
       padding 0
+      width 100%
 
       .info
         float left
-        margin-left 15px
+        margin-left 25px
 
       a
         .image,
         &.portrait
+          float left
           max-height 100px
           max-width 100px
-          float left
           position relative
 
   #coworker .github .git
@@ -254,10 +229,10 @@
           position relative
           width 100%
         .about-text
+          display block
           position relative
           max-height none
           width 100%
-          display block
 
   .visible-phone
     display none !important

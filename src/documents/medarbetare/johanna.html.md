@@ -21,7 +21,7 @@ twitter: mittistormen
 instagram: mittistormen
 linkedin: pub/johanna-gustafsson/3/b34/7a6
 github: mittistormen
-blog:
+blog: http://womenatwork.ghost.io/rss/
 
 ---
 

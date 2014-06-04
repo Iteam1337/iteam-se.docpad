@@ -5,7 +5,7 @@ keywords: ''
 
 subtitle:
 layout: case
-caseIndex: 10
+caseIndex: 16
 releaseDate: 070101
 
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']

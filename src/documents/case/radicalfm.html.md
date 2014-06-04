@@ -5,7 +5,7 @@ keywords: ''
 
 subtitle:
 layout: case
-caseIndex: 1
+caseIndex: 2
 releaseDate: 110101
 
 tags: ['Proof-of-concept','Lead tech','Drift & Support',Entreprenörsrådgivning','Rådgivning']

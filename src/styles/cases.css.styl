@@ -51,6 +51,7 @@
 
   .title
     box(border-box)
+
     background #fff
     font-size 1.2em
     margin 5px 0
@@ -65,8 +66,8 @@
       display inline-block
       vertical-align top
     .top
-      width 100%
       display inline-block
+      width 100%
 
     .text
       width 50%
@@ -99,16 +100,14 @@
       position relative
       width 50%
       img
+        positioned('bottom', 'left', 0, 0)
+
         max-height 175px
         max-width 30%
-        position absolute
-        bottom 0
-        left 0
       .about-text
+        positioned('bottom', 'right', 0, 0)
+        
         width 65%
-        position absolute
-        bottom 0
-        right 0
         max-height 175px
         h2
           display inline-block
@@ -138,8 +137,8 @@
         margin 40px 0
 
         &.left
-          left -100px
-          position absolute
+          positioned('top', 'left', 0, -100px)
+
         &.right
           float right
           margin-left 20px
@@ -179,6 +178,10 @@
     .urls
       padding 40px 0
       position relative
+      
+      @media mobile
+        padding 0
+
       li
         margin 0 0 5px
 
@@ -266,10 +269,12 @@
     margin-top 0
 
 .next-case, .prev-case
-  position absolute
-  right -200px
+  positioned('top', 'right', 250px, -200px)
+
   text-align center
-  top 250px
+
+  @media mobile
+    display none
 
   a
     color #333 !important
