@@ -3,8 +3,8 @@ image: node0.10
 #  - /var/cache/npm
 
 script:
-  - npm -s install --cache /var/cache/npm
-  - npm -s install -g grunt-cli docpad bower --cache /var/cache/npm
+  - npm -s install
+  - npm -s install -g grunt-cli docpad bower
   - bower install
   - grunt deploy:$DRONE_BRANCH
 
