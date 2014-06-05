@@ -1,0 +1,21 @@
+image: node0.10
+script:
+  - npm -s install
+  - npm -s install -g grunt-cli docpad bower
+  - bower install
+  - grunt deploy:$DRONE_BRANCH
+
+notify:
+  recipients:
+    christian.landgren@iteam.se
+    rickard.laurin@iteam.se
+    sophie.wesslau@iteam.se
+
+  slack:
+    team: iteamsolutions
+    channel: #dev
+    username: drone.io
+    token: 8CucDNnAVELD0BBEErMnhobE
+    on_started: true
+    on_failure: true
+    on_success: true
