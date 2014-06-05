@@ -1,6 +1,6 @@
 image: node0.10
-cache:
-  - /var/cache/npm
+#cache:
+#  - /var/cache/npm
 
 script:
   - npm -s install --cache /var/cache/npm
