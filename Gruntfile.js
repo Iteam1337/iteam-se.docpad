@@ -29,8 +29,8 @@ module.exports = function (grunt) {
       },
       compile: {
         files: {
-          "<%= outPath %>content/styles/<%= pkg.name %>.css": [
-            "src/**/*.css.styl"
+          '<%= outPath %>content/styles/<%= pkg.name %>.css': [
+            'src/**/*.css.styl'
           ]
         }
       }
@@ -39,7 +39,8 @@ module.exports = function (grunt) {
     imagemin: {
       main:{
         files: [{
-          expand: true, cwd:'out/',
+          expand: true,
+          cwd:'out/',
           src:['**/{*.png,*.jpg}'],
           dest: 'out/'
         }]
@@ -50,8 +51,8 @@ module.exports = function (grunt) {
     cssmin: {
       vendor: {
         files: {
-            '<%= outPath %>content/styles/vendor.css': [
-            'bower_components/bootstrap/dist/css/bootstrap.min.css',
+          '<%= outPath %>content/styles/vendor.css': [
+            'bower_components/bootstrap/dist/css/bootstrap.min.css'
           ]
         }
       }
@@ -62,7 +63,7 @@ module.exports = function (grunt) {
           stdout: true,
           failOnError: true,
         },
-        command: "docpad generate --env static"
+        command: 'docpad generate --env static'
       }
     },
 
@@ -94,6 +95,18 @@ module.exports = function (grunt) {
       stage: {
         options: {
           bucket: 'stage.iteam.se'
+        },
+        upload: [
+          {
+            src: 'out/**/*',
+            dest: '/',
+            rel: 'out'
+          },
+        ],
+      },
+      master: {
+        options: {
+          bucket: 'test.iteam.se'
         },
         upload: [
           {
