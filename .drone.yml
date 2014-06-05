@@ -1,8 +1,11 @@
 image: node0.10
-#cache:
-#  - /var/cache/npm
+cache:
+  - /tmp/npm
 
 script:
+  - mkdir -p /tmp/npm
+  - sudo chown -R ubuntu:ubuntu /tmp/npm
+  - npm config set cache /tmp/npm
   - npm -s install
   - npm -s install -g grunt-cli docpad bower
   - bower install
