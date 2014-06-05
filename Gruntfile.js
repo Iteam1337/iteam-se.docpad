@@ -76,7 +76,7 @@ module.exports = function (grunt) {
         gzipExclude: ['.jpg', '.png', '.jpeg', '.JPG', '.PNG'],
         maxOperations: 20,
         headers: {
-          'Cache-Control': 'public, max-age=' + 60 * 60 * 24 * 30 // 30 days
+          'Cache-Control': 'public, max-age=' + 60 * 60 * 24 * 1 // 1 day
         }
       },
       production: {
