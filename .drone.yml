@@ -1,6 +1,6 @@
 image: node0.10
 cache:
-  - .npm
+  - ~/.npm
 
 script:
   - npm -s install
