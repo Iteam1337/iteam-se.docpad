@@ -1,4 +1,7 @@
 image: node0.10
+cache:
+  - .npm
+
 script:
   - npm -s install
   - npm -s install -g grunt-cli docpad bower
@@ -19,3 +22,4 @@ notify:
     on_started: true
     on_failure: true
     on_success: true
+
