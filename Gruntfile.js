@@ -183,7 +183,7 @@ module.exports = function (grunt) {
     's3:stage'
   ]);
 
-  grunt.registerTask('deploy:master', [
+  grunt.registerTask('deploy:test', [
     'dist',
     's3:test'
   ]);

@@ -1,24 +1,20 @@
 image: node0.10
 cache:
-  - ~/.npm
+  - /var/cache/npm
 
 script:
-  - npm -s install
-  - npm -s install -g grunt-cli docpad bower
+  - npm -s install --cache /var/cache/npm
+  - npm -s install -g grunt-cli docpad bower --cache /var/cache/npm
   - bower install
   - grunt deploy:$DRONE_BRANCH
 
 notify:
-  recipients:
-    christian.landgren@iteam.se
-    rickard.laurin@iteam.se
-    sophie.wesslau@iteam.se
 
   slack:
     team: iteamsolutions
-    channel: #dev
+    channel: #marknad
     username: drone.io
-    emoji: http://img2.wikia.nocookie.net/__cb20130818100405/survivoronlinegaming/images/9/96/Simpsons-nelson-ha-ha-93-p-672x480.jpg
+    image_url: http://img2.wikia.nocookie.net/__cb20130818100405/survivoronlinegaming/images/9/96/Simpsons-nelson-ha-ha-93-p-672x480.jpg
     token: 8CucDNnAVELD0BBEErMnhobE
     on_started: true
     on_failure: true
