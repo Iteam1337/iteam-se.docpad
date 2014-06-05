@@ -104,7 +104,7 @@ module.exports = function (grunt) {
           },
         ],
       },
-      master: {
+      test: {
         options: {
           bucket: 'test.iteam.se'
         },
@@ -182,4 +182,12 @@ module.exports = function (grunt) {
     'dist',
     's3:stage'
   ]);
+
+  grunt.registerTask('deploy:master', [
+    'dist',
+    's3:test'
+  ]);
+
+  // alias for master => test
+  grunt.registerTask('deploy:master', ['deploy:test']);
 };
