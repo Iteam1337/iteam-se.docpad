@@ -68,22 +68,6 @@ docpadConfig =
       if size then url += "?s=#{size}"
       return url
 
-    getMetadataFrom: (page, section="vara-tjanster") ->
-      if !page or typeof section is not "string" then return
-      console.log('getMetadataFrom', arguments)
-      queryObject = {
-        relativeOutDirPath: section,
-        dontIndexInAnyCollection: {
-          $exists: false
-        },
-        tags: {
-          $in: [
-            page
-          ]
-        }
-      }
-      return @getCollection("documents").findOne(queryObject)?.toJSON()
-
     topImage: (page=@document) ->
       return if page.topImage then "background-image:url(" + page.topImage + ")" else ""
 
@@ -100,8 +84,6 @@ docpadConfig =
     ## skips the .html extension by adding a folder and index.html and creates a redirect html
     cleanurls:
           trailingSlashes: true
-    grunt:
-      writeAfter: ["stylus", "cssmin", "concat"]
 
   # Collections
   # ===========

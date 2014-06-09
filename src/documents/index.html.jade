@@ -7,10 +7,10 @@ keywords: ''
 topImage: "/content/images/section-topbilder/start.JPG"
 background: 'invert'
 
-introHeading: ["Vi är en kreativ teknikbyrå som driver din affär framåt"]
+introHeading: ["En kreativ teknikbyrå för dig som vill växa"]
 introHeadingMobile: ['En kreativ teknikbyrå']
 introSubheading: >
-  - Vi är ditt stöd när du vill förändra.
+  - Har dina barn bättre teknik än ditt företag?
 ---
 
 #slider.carousel.slide(data-ride="carousel")
@@ -35,11 +35,9 @@ introSubheading: >
         .carousel-caption
           a(href=showcase.url)= showcase.title
           .sub-caption
-            if !!showcase.sections
               each section, i in showcase.sections
                 - posClass = i !== 0 ? "separator-before" : ""
-                - section = getMetadataFrom(section)
-                a.section(class = posClass, href = section.url, target = "_blank")= section.title
+                a.section(class = posClass, href = showcase.url)= section
 
   a.left.carousel-control(href="#slider",data-slide="prev")
     .glyphicon.glyphicon-chevron-left
