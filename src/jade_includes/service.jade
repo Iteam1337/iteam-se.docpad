@@ -1,5 +1,5 @@
 #connectedCases
-  ul
+  ul.clearfix
     each cases in getCollection('case').toJSON()
       if cases.tags
         each tag in cases.tags
