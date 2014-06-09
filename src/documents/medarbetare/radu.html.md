@@ -2,6 +2,7 @@
 title: Radu Achim
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 navigationTitle: Radu
 

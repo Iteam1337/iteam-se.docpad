@@ -1,16 +1,3 @@
-mixin blogg(doc, showCategory)
-  section.post
-    header
-      if (doc.topImage)
-        a.post-image(href= doc.url, style="background-image:url(" + doc.topImage + ")")
-      .post-date= toDateString((doc.realDate || doc.date), "short")
-      if (showCategory)
-        a.post-category(href= "/blogg/" + doc.category)= capitalizeFirstChar(doc.category) + "/ "
-      a.post-title(href= doc.url)= doc.title
-
-    article.post-content
-      p!= doc.intro
-
 mixin pagination(page)
   ul
     - for (var pageNumber = 0; pageNumber < page.count; pageNumber++)

@@ -2,6 +2,7 @@
 title: Karriär
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 layout: section
 tags: ['intro', 'page']
@@ -18,6 +19,22 @@ chevron: true
 row-fluid#career
   .row
     .col-md-6.hidden-xs
+
+      #opportunities
+        h2 Just nu söker vi
+        ul
+          each career in getCollection('ledigatjanster').toJSON()
+            if !!career.title
+              li
+                a.title(href=career.url)= career.title
+                p!= career.summary
+
+      :markdown
+        ## Varför Iteam?
+
+        Vi vet att ett kreativt kunskapsföretag inte är bättre än glädjen hos sina medarbetare och därför prioriterar vi att få en stimulerande 
+        arbetsmiljö där vi lär oss av varandra, väljer utmanande projekt och där vi aldrig skickar ut konsulter ensamma på för långa uppdrag som konsulter.
+
       :markdown
         ![Elisabeth](/content/images/ovrigt/elisabeth.jpeg)
 
@@ -69,14 +86,7 @@ row-fluid#career
         * Alla delar på julbonus varje år och vi har generöst friskvårdsbidrag
         * Vi går i strumplästen och vi skrattar
 
-      #opportunities
-        h2 Just nu söker vi
-        ul
-          each career in getCollection('ledigatjanster').toJSON()
-            if !!career.title
-              li
-                a.title(href=career.url)= career.title
-                p!= career.summary
+
 
       :markdown
         ## Vi älskar spontanansökningar

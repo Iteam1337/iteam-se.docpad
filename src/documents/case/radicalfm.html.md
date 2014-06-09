@@ -2,6 +2,7 @@
 title: Radical FM
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 110101
 tags: ['Proof-of-concept','Lead tech','Drift & Support',Entreprenörsrådgivning','Rådgivning']
 sections: ['Systemutveckling','Rådgivning','Drift & Support']
 logo: 'case-logos/radicalfm.png'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/radical/add.PNG', 'case-galleribilder/radical/mystation.PNG', 'case-galleribilder/radical/nowplaying.PNG', 'case-galleribilder/radical/playlist.PNG', 'case-galleribilder/radical/search.PNG', 'case-galleribilder/radical/myprofile.PNG']
 

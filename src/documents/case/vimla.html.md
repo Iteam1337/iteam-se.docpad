@@ -2,6 +2,7 @@
 title: Vimla
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 140325
 tags: ['Systemutveckling','Rådgivning','Strategi']
 sections: ['Systemutveckling']
 logo: 'case-logos/vimla.png'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/vimla/vimla-1.png','case-galleribilder/vimla/vimla-2.png','case-galleribilder/vimla/vimla-3.png','case-galleribilder/vimla/vimla-4.png']
 

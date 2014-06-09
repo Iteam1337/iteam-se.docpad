@@ -2,6 +2,7 @@
 title: Drift & Support
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 layout: page
 tags: ['Drift & Support','IT-review','Specialistsupport','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']

@@ -2,6 +2,7 @@
 title: Martin Loman
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 navigationTitle: Martin
 

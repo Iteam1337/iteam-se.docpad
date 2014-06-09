@@ -2,6 +2,7 @@
 title: ABSOLUT FORUM
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 040101
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/absolut.jpg'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/absolut/absolutforum2.jpg','case-galleribilder/absolut/absolutforum3.jpg','case-galleribilder/absolut/absolutforum1.jpg']
 

@@ -4,10 +4,6 @@
 //- All indexes that are to be shown on all pages
 - var pages = getCollection('sektion').toJSON()
 
-//- url-highlighting and so on
-- var documentUrl = document.url.split("/")
-- var basename = documentUrl[1]
-
 //- All pages that should be shown on the
 //- second navigation row
 - var subpages = document.subpages && getCollection(document.subpages).toJSON()
@@ -82,7 +78,7 @@ html(lang="sv")
     else
       #main-holder
         .background-image(style=topImage())
-        .container(class=singlePageCase())
+        .container(class=document.containerClass)
          
           #content.row-fluid.content!= content
 

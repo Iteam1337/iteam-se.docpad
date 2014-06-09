@@ -28,7 +28,7 @@ introSubheading: >
         .sub-caption= document.introSubheading
       .carousel-caption.visible-sm= document.introHeading[0]
       .carousel-caption.visible-xs= document.introHeadingMobile[0]
-    each showcase in getShowCase()
+    each showcase in getCollection('showcase').toJSON()
       if !!showcase.topImage
       - bgImg = "background-image:url(" + showcase.topImage + ");"
       .item(style=bgImg)
@@ -51,7 +51,7 @@ introSubheading: >
     .row.two-column
       .col-md-12.row
         :markdown
-          Vår kärna har sedan 1995 alltid varit passion. Under den här tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa utmaning och den bästa lösningen.
+          Vår kärna har sedan starten 1995 alltid varit passion. Under den här tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa utmaning och den bästa lösningen.
             Det nyaste är inte automatiskt det bästa - det vet vi. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
 
     .row
