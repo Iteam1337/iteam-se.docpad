@@ -80,10 +80,16 @@ docpadConfig =
     getAllCasesByCoworker: (coworker="", max=6) ->
       @getCollection('case').toJSON().filter (c) -> c.team && ~c.team.indexOf(coworker)
 
+    marked: require('marked')
+
   plugins:
     ## skips the .html extension by adding a folder and index.html and creates a redirect html
     cleanurls:
           trailingSlashes: true
+
+
+  regenerateDelay: 0
+  watchOptions: catchupDelay: 0
 
   # Collections
   # ===========

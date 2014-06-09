@@ -12,8 +12,8 @@ h1(title,class=document.background)= document.title
       .col-md-5.right-coloumn
         h2 Krav
         .row
-          :markdown=document.krav
+          !{ marked(document.krav) }
         h2 Meriterande
-          :markdown=document.meriterande
-        h2 Anstallningsform
-          :markdown=document.anstallningsform
+          !{ marked(document.meriterande) }
+        h2 Anställningsform
+          !{ marked(document.anstallningsform) }
