@@ -28,7 +28,7 @@ topImage: '/content/images/case-topbilder/absolut.jpg'
 background: 'invert'
 
 intro: >
-  Vi utvecklade ett globalt intraranät för alla som marknadsför ABSOLUT VODKA.
+  Vi utvecklade ett globalt intranät för alla som marknadsför ABSOLUT VODKA.
 ---
 
 ## En plattform för 126 marknader världen över

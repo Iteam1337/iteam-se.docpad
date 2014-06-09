@@ -6,7 +6,7 @@ standalone: true
 
 layout: job
 pageOrder: 2
-topImage: "/content/images/section-topbilder/jobb-annons/rekrytering2.JPG"
+topImage: "http://i.imgur.com/aD4G4eZ.gif"
 background: 'invert'
 summary: >
   Vi söker dig som gillar att få saker gjorda och har servicekänsla och omtanke.
