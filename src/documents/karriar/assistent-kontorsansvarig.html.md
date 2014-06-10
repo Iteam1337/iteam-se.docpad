@@ -1,6 +1,6 @@
 ---
 title: Assistent och kontorsansvarig
-description: Vi söker dig som njuter av att få saker gjorda och har känsla för service och omtanke.
+description: Vi söker dig som njuter av att få saker gjorda, och har känsla för service och omtanke.
 keywords: ''
 standalone: true
 
@@ -9,17 +9,17 @@ pageOrder: 2
 topImage: "http://i.imgur.com/aD4G4eZ.gif"
 background: 'invert'
 summary: >
-  Vi söker dig som gillar att få saker gjorda och har servicekänsla och omtanke.
+  Vi söker dig som gillar att få saker gjorda, och har servicekänsla och omtanke.
 
 krav: >
-  * Erfarenhet av administrativt arbete
+  * Erfarenhet av administrativt arbete.
 
 meriterande: >
   * HTML / Markdown
 
   * Teknikintresserad
 
-  * Lön/Bokföring 
+  * Lön / Bokföring 
 
 anstallningsform: >
   * 50% föräldravikariat t.o.m. september 2015.
@@ -37,11 +37,11 @@ anstallningsform: >
 Din roll innefattar att assistera VD och övriga medarbetare med att enklare uppgifter så som att sköta inköp, svara i telefon och tar emot kunder samt förbereder möten. Du delar ut posten, beställer mat, hanterar löpande frågor kring lokalen samt lokalens inredning. Ytterst handlar kontorsansvaret om att du och dina kollegor har en arbetsmiljö i världsklass och att våra kunder välkomnas och gillar att ha möten hos oss.
 
 
-## Du kommer att assistera:
+## Du kommer att:
 
-- marknadsansvarig i marknadsarbetet
-- ekonomiansvarig med bl.a. inkommande post och leverantörsfakturor 
-- personalansvariga genom att ordna after works, hålla kolla på och uppmärksamma födelsedagar och roliga aktiviteter.
+* assistera marknadsansvarig i marknadsarbetet
+* assistera ekonomiansvarig med bl.a. inkommande post och leverantörsfakturor 
+* assistera personalansvariga genom att ordna after works, hålla kolla på och uppmärksamma födelsedagar och roliga aktiviteter.
 
 **Din arbetsplats:** Din arbetsplats är på Iteams kontor i centrala Stockholm. Ljusa och fina lokaler där vi arbetar tillsammans i team och i nära samarbete med kunder och partners.
 
