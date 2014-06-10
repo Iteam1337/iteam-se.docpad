@@ -95,23 +95,40 @@ html(lang="sv")
 
     #footer-holder
       #footer
-        #address
-          ul
-            li.company Iteam Solutions AB
-            li.address Tegnérgatan 28, 113 59 Stockholm
-            li Telefon: <a href="callto:+468267090">08-26 70 90</a>
 
-        #followUs
-          a(href="mailto:hans.rollman@iteam.se")
-            .e-mail
-          a(href="https://github.com/iteam1337", target="_blank")
-            .e-github
-          a(href="https://www.facebook.com/IteamSolutions", target="_blank")
-            .e-facebook
-          a(href="http://twitter.com/iteam1337", target="_blank")
-            .e-twitter
-          a(href="http://instagram.com/iteam1337", target="_blank")
-            .e-instagram
+        ul.row
+          each doc, i in pages
+            - hasSubpage = (doc.subpages) ? i : null
+            li.col-md-4(data-subpage=hasSubpage)
+              a(href=doc.url)
+                h2= doc.title
+                p=doc.description
+
+        form.row.contact(action='https://docs.google.com/forms/d/1SseMEJgZjsT9WQtn6CBHhhcKTkHoMKgtt378_OswMDM/formResponse?embedded=true', target='_blank')
+          input.input-xxlarge.col-md-6(placeholder='Ditt mobilnummer så kontaktar vi dig!', name='entry.589797910', required)
+          input.input-xxlarge.col-md-4(placeholder='En hälsning till säljaren', name='entry.1147522160')
+          input.btn-success.col-md-2(type="submit", value='Ring mig!')
+
+        .row
+
+          #address.col-md-6
+            ul
+              img(src='/content/images/svg/iteam_logo.svg')
+              li.company Iteam Solutions AB
+              li.address Tegnérgatan 28, 113 59 Stockholm
+              li Telefon: <a href="callto:+468267090">08-26 70 90</a>
+
+          #followUs.col-md-6
+            a(href="mailto:hans.rollman@iteam.se")
+              .e-mail
+            a(href="https://github.com/iteam1337", target="_blank")
+              .e-github
+            a(href="https://www.facebook.com/IteamSolutions", target="_blank")
+              .e-facebook
+            a(href="http://twitter.com/iteam1337", target="_blank")
+              .e-twitter
+            a(href="http://instagram.com/iteam1337", target="_blank")
+              .e-instagram
 
     // Scripts
     != scripts.toHTML()

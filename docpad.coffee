@@ -99,7 +99,7 @@ docpadConfig =
     #
     # This is the main collection, for index:es
     sektion: (database) ->
-      database.findAll({pageIndex: $exists: true}, [pageIndex:1,title:1])
+      database.findAll({dontIndexInAnyCollection: $exists: true}, [pageIndex:1,title:1])
 
     # Collection of all cases
     case: (database) ->

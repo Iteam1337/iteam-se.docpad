@@ -1,6 +1,6 @@
 ---
 title: 'Om oss'
-description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+description: 'Iteam har funnits sedan 1995 och har AAA-rating och är partners med de största leverantörerna.'
 keywords: ''
 standalone: true
 
@@ -68,6 +68,8 @@ chevron: true
     :markdown
       ## Läs mer om våra tjänster
 
-      [Rådgivning](../vara-tjanster/radgivning)
-      [Systemutveckling](../vara-tjanster/systemutveckling)
-      [Drift & Support](../vara-tjanster/drift-support)
+
+    each doc in getCollection('tjanster').toJSON()
+      .col-md-5.well
+        a(href=doc.url)=doc.title
+        p=doc.summary

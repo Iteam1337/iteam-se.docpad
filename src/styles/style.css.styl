@@ -68,7 +68,7 @@
       display block
       line-height 1.5
 
-#footer
+#footer .row
   margin 40px auto
   max-width 1060px
   position relative
@@ -257,12 +257,28 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
 #footer-holder
   margin 0 auto
   max-width 1060px
-  padding 0 55px
+  padding 20px 55px
   width 100%
+  background greyBg
+  position relative
 
   @media mobile
     padding 0 20px
     top 60px
+
+  a
+    color black
+
+  .row.contact
+    padding 50px 0 
+    input
+      height 50px
+      font-size 25px
+
+  #address img
+      padding-bottom 20px
+      margin-top -30px
+      opacity 0.6
 
 #top-holder,
 #footer-holder,
