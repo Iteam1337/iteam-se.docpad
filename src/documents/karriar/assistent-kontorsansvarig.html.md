@@ -39,8 +39,8 @@ Din roll innefattar att assistera VD och övriga medarbetare med att enklare upp
 
 ## Du kommer att:
 
-* assistera marknadsansvarig i marknadsarbetet
-* assistera ekonomiansvarig med bl.a. inkommande post och leverantörsfakturor 
+* assistera marknadsansvarig i marknadsarbetet.
+* assistera ekonomiansvarig med bl.a. inkommande post och leverantörsfakturor. 
 * assistera personalansvariga genom att ordna after works, hålla kolla på och uppmärksamma födelsedagar och roliga aktiviteter.
 
 **Din arbetsplats:** Din arbetsplats är på Iteams kontor i centrala Stockholm. Ljusa och fina lokaler där vi arbetar tillsammans i team och i nära samarbete med kunder och partners.
