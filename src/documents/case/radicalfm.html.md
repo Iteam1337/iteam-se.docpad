@@ -39,3 +39,6 @@ Timingen för lanseringen av projektet visade sig dock tyvärr bli mycket ogynns
 Nu, tio år senare har projektet åter fått liv och går nu under namnet Radical FM. Även denna gång har Iteam lett utvecklingen av tjänsten som ger användarna möjlighet att själva kunna sända radioprogram och för ladda upp egenproducerad musik utan krav på distributionsavtal.
 
 Under projektets utvecklingsfaser har Iteam fungerat som beställarstöd för kunden, samt som projektledare och teknisk mentor för produktionsteamet som finns i Rumänien. ”Att använda Iteam som beställarstöd och teknisk lead ger oss det bästa av två världar – teknisk kvalitet och innovation i världsklass till väsentligt lägre pris.” berättar Tom McAlevey, grundare och VD i den amerikanska startupen Radical.FM.
+
+## Här är resultatet:
+<iframe src="//player.vimeo.com/video/91650553" width="500" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
