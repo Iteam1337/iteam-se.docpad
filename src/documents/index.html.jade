@@ -47,21 +47,21 @@ introSubheading: >
 .container
   #startpage
     .row.two-column
-      .col-md-12.row
+      .col-md-12.row.lead
         :markdown
           Vår kärna har sedan starten 1995 alltid varit passion. Under den här tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa utmaning och den bästa lösningen.
             Det nyaste är inte automatiskt det bästa - det vet vi. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
 
     .row
-      .col-md-6.news
-        :markdown
-          ## Tack Elisabeth! 
-
-          ![Elisabeth](/content/images/startpage/elisabeth_start.jpg)
-
-          Vi är så glada att vi lärt känna dig under din LIA och att se dig utvecklas så snabbt under dina tolv veckor hos oss.
-          [Läs mer om hennes uppfattning och Iteam och LIAn.](/karriar)
-
-      .col-md-6.instagram-wrap
-        h2 Iteam på Instagram
+      .col-md-12.instagram-wrap
+        h1 Följ oss på Instagram
         .instagram#instagram-feed(data-name="iteam1337", data-images=8)
+
+    .row
+      .col-md-12
+        form.row.contact(action='https://docs.google.com/forms/d/1SseMEJgZjsT9WQtn6CBHhhcKTkHoMKgtt378_OswMDM/formResponse?embedded=true', target='_blank')
+          h1 Kostnadsfri rådgivning 
+            small Vi vill träffa dig
+          input.input-xxlarge.col-md-4(placeholder='Mobilnummer eller epost', name='entry.589797910', required)
+          input.input-xxlarge.col-md-4(placeholder='En hälsning till rådgivaren', name='entry.1147522160')
+          input.btn-success.col-md-4.text-center(type="submit", value='Kontakta mig!')

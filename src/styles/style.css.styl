@@ -69,10 +69,9 @@
       line-height 1.5
 
 #footer .row
-  margin 40px auto
-  max-width 1060px
-  position relative
-
+  
+  &.boilerplate
+    padding-top 70px
   > div
     display inline-block
     vertical-align top
@@ -82,8 +81,6 @@
       margin-top 20px
 
   #address
-    margin 0
-    width 40%
 
     @media mobile
       width 100%
@@ -97,14 +94,9 @@
         margin-bottom 10px
 
   #followUs
-    positioned('top', 'right', 0, 20px)
-
     text-align right
-    width 100%
 
     @media mobile
-      positioned('top', 'right', 0, 0, relative)
-
       text-align center
 
     .e-mail
@@ -254,13 +246,13 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
   height 50px
   z-index -120
 
-#footer-holder
-  margin 0 auto
-  max-width 1060px
-  padding 20px 55px
-  width 100%
+#footer
   background greyBg
-  position relative
+  margin 0 auto
+
+  .container
+    background greyBg
+    
 
   @media mobile
     padding 0 20px
@@ -269,20 +261,26 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
   a
     color black
 
-  .row.contact
-    padding 50px 0 
-    input
-      height 50px
-      font-size 25px
+ 
 
   #address img
       padding-bottom 20px
       margin-top -30px
       opacity 0.6
 
+.row.contact
+  padding 50px 0 
+  input
+    height 50px
+    font-size 20px
+
+    &:last-child
+      margin-right 0
+
 #top-holder,
 #footer-holder,
 #footer
+  
   box(border-box)
   *
     box(border-box)
