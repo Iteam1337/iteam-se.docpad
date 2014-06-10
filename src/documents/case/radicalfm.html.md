@@ -41,4 +41,4 @@ Nu, tio år senare har projektet åter fått liv och går nu under namnet Radica
 Under projektets utvecklingsfaser har Iteam fungerat som beställarstöd för kunden, samt som projektledare och teknisk mentor för produktionsteamet som finns i Rumänien. ”Att använda Iteam som beställarstöd och teknisk lead ger oss det bästa av två världar – teknisk kvalitet och innovation i världsklass till väsentligt lägre pris.” berättar Tom McAlevey, grundare och VD i den amerikanska startupen Radical.FM.
 
 ## Här är resultatet:
-<iframe src="//player.vimeo.com/video/91650553" width="500" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/91650553?title=0&amp;byline=0&amp;portrait=0" width="500" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
