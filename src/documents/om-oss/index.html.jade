@@ -64,12 +64,8 @@ chevron: true
     :markdown
       #### Organisationsnummer: <input value="556551-6928" onclick="this.select()"> | VAT: <input value="SE556551-692801"  onclick="this.select()">
 
-  .row
-    :markdown
-      ## Läs mer om våra tjänster
-
-
+  section.row
     each doc in getCollection('tjanster').toJSON()
-      .col-md-5.well
+      .col-md-4
         a(href=doc.url)=doc.title
         p=doc.summary
