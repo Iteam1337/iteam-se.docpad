@@ -1,6 +1,6 @@
 {
   "name": "iteamse",
-  "version": "1.0.4",
+  "version": "1.0.9",
   "description": "The sourcecode for iteam.se",
   "homepage": "https://github.com/Iteam1337/iteam-se.docpad",
   "keywords": [
@@ -38,6 +38,7 @@
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-partials": "~2.9.1",
     "docpad-plugin-restapi": "~2.1.6",
+    "docpad-plugin-sitemap": "~2.2.0",
     "docpad-plugin-styl": "~2.0.1",
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.9",
