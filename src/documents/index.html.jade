@@ -7,10 +7,10 @@ keywords: ''
 topImage: "/content/images/section-topbilder/start.JPG"
 background: 'invert'
 
-introHeading: ["Vi är en kreativ teknikbyrå som driver din affär framåt"]
+introHeading: ["En kreativ teknikbyrå för dig som vill växa"]
 introHeadingMobile: ['En kreativ teknikbyrå']
 introSubheading: >
-  - Vi är ditt stöd när du vill förändra.
+  - Bli ledare i din bransch genom teknisk innovation
 ---
 
 #slider.carousel.slide(data-ride="carousel")
@@ -28,18 +28,16 @@ introSubheading: >
         .sub-caption= document.introSubheading
       .carousel-caption.visible-sm= document.introHeading[0]
       .carousel-caption.visible-xs= document.introHeadingMobile[0]
-    each showcase in getShowCase()
+    each showcase in getCollection('showcase').toJSON()
       if !!showcase.topImage
       - bgImg = "background-image:url(" + showcase.topImage + ");"
       .item(style=bgImg)
         .carousel-caption
           a(href=showcase.url)= showcase.title
           .sub-caption
-            if !!showcase.sections
               each section, i in showcase.sections
                 - posClass = i !== 0 ? "separator-before" : ""
-                - section = getMetadataFrom(section)
-                a.section(class = posClass, href = section.url, target = "_blank")= section.title
+                a.section(class = posClass, href = showcase.url)= section
 
   a.left.carousel-control(href="#slider",data-slide="prev")
     .glyphicon.glyphicon-chevron-left
@@ -49,21 +47,17 @@ introSubheading: >
 .container
   #startpage
     .row.two-column
-      .col-md-12.row
+      .col-md-12.row.lead
         :markdown
-          Vår kärna har sedan 1995 alltid varit passion. Under den här tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa utmaning och den bästa lösningen.
+          Vår kärna har sedan starten 1995 alltid varit passion. Under den här tiden har vi storögt, hungrigt och otåligt kastat oss över allt nytt. Vår passion driver oss ständigt vidare till nästa teknik, nästa utmaning och den bästa lösningen.
             Det nyaste är inte automatiskt det bästa - det vet vi. Men om ny teknik och ny kunskap bär på lösningen, så kan du lita på att vi känner till det.
 
     .row
-      .col-md-6.news
-        :markdown
-          ## Tack Elisabeth! 
-
-          ![Elisabeth](/content/images/startpage/elisabeth_start.jpg)
-
-          Vi är så glada att vi lärt känna dig under din LIA och att se dig utvecklas så snabbt under dina tolv veckor hos oss.
-          [Läs mer om hennes uppfattning och Iteam och LIAn.](/karriar)
-
-      .col-md-6.instagram-wrap
-        h2 Iteam på Instagram
+      .col-md-12.instagram-wrap
+        h1 Följ oss på Instagram
         .instagram#instagram-feed(data-name="iteam1337", data-images=8)
+
+ 
+
+    include ../jade_includes/call-to-action
+

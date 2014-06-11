@@ -8,6 +8,12 @@
     opacity 1
     left 0px
 
+@keyframes animateup
+  0%
+    margin-top 300px
+  100%
+    margin-top 30px
+
 @keyframes fadein
   0%
     trans(scale(0))
@@ -39,6 +45,12 @@
 ---------------------------------------------*/
 .row
   margin 0 !important
+
+
+section
+  padding-top: 70px;
+  padding-botttom: 70px;
+
 #nowplaying
   font-size 1em
   padding 40px 0 0
@@ -62,11 +74,10 @@
       display block
       line-height 1.5
 
-#footer
-  margin 40px auto
-  max-width 1060px
-  position relative
-
+#footer .row
+  
+  &.boilerplate
+    padding-top 70px
   > div
     display inline-block
     vertical-align top
@@ -76,8 +87,6 @@
       margin-top 20px
 
   #address
-    margin 0
-    width 40%
 
     @media mobile
       width 100%
@@ -91,14 +100,9 @@
         margin-bottom 10px
 
   #followUs
-    positioned('top', 'right', 0, 20px)
-
     text-align right
-    width 100%
 
     @media mobile
-      positioned('top', 'right', 0, 0, relative)
-
       text-align center
 
     .e-mail
@@ -146,7 +150,7 @@
   display block
   overflow hidden
   background-repeat no-repeat
-  background-color white
+  background-color silver
   background-position 50% 50%
 
   @media mobile
@@ -232,6 +236,7 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
   @media mobile
     animate(none, 0)
 
+
 #top-holder,
 #main-holder,
 #footer-holder,
@@ -247,19 +252,41 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
   height 50px
   z-index -120
 
-#footer-holder
+#footer
+  background greyBg
   margin 0 auto
-  max-width 1060px
-  padding 0 55px
-  width 100%
+
+  .container
+    background greyBg
+    
 
   @media mobile
     padding 0 20px
     top 60px
 
+  a
+    color black
+
+ 
+
+  #address img
+      padding-bottom 20px
+      margin-top -30px
+      opacity 0.6
+
+.row.contact
+  padding 50px 0 
+  input
+    height 50px
+    font-size 20px
+
+    &:last-child
+      margin-right 0
+
 #top-holder,
 #footer-holder,
 #footer
+  
   box(border-box)
   *
     box(border-box)

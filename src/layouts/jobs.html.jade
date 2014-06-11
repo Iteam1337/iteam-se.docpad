@@ -1,5 +1,6 @@
 ---
 layout: default
+standalone: true
 ---
 
 h1(title,class=document.background)= document.title
@@ -10,8 +11,6 @@ h1(title,class=document.background)= document.title
       .col-md-7!= content
       .col-md-5.right-coloumn
         h2 Krav
-        .row!= fromMarkdown(document.krav)
-        h2 Meriterande
-        .row!= fromMarkdown(document.meriterande)
-        h2 Anstallningsform
-        .row!= fromMarkdown(document.anstallningsform)
+        .row !{marked(document.krav)}
+        h2 Meriterande !{marked(document.meriterande)}
+        h2 Anställningsform !{marked(document.anstallningsform)}

@@ -2,6 +2,7 @@
 title: Drift & Support
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 layout: page
 tags: ['Drift & Support','IT-review','Specialistsupport','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
@@ -21,7 +22,6 @@ summary: >
 
 Vi hjälper dig som är IT-chef eller IT-ansvarig att planera, utreda, underhålla och övervaka din IT-miljö.
 
-Kontakta [Mats Egardt](/medarbetare/mats "Mats Egardt") för mer info.
 
 ## IT-review
 En IT-review innebär analys och dokumentation av din IT-miljö. Du får en tydlig översikt av allt från hårdvara och säkerhet, till mjukvara och licenser. I åtgärdsrapporten ser du också tydligt hur du kan åtgärda dagens brister och fel. Du får också en bra grund för att hålla IT-miljön och IT-dokumentationen uppdaterad på lång sikt.
@@ -45,3 +45,8 @@ Vi hjälper dig att planera, bygga och bibehålla en stabil och driftsäker infr
 
 ## Säkerhetsreview
 En Säkerhetsreview innebär att vi gör en analys och dokumentation av er IT-miljö, med inriktning på just säkerhet. Vi kollar allt från brandväggar och nätverk till servrar och kryptering. Allt dokumenteras och vi går igenom och prioriterar eventuella säkerhetsbrister tillsammans med er. I den slutgiltiga rapporten får du plan med förslag på hur ni, tillsammans med oss eller annan IT-partner, på ett bra sätt åtgärdar identifierade brister.
+
+
+![Vi är i samma team](https://31.media.tumblr.com/847429b61de68143c5cf658682b3fdf3/tumblr_n5w5gyx04z1r5lqijo1_500.gif)
+
+Vi är nyfikna på vad du gör när allt bara fungerar? Kontakta [Mats Egardt](/medarbetare/mats "Mats Egardt") om du också är nyfiken?

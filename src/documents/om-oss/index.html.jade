@@ -1,7 +1,8 @@
 ---
 title: 'Om oss'
-description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+description: 'Iteam har funnits sedan 1995, har AAA-rating och är partners med de största leverantörerna.'
 keywords: ''
+standalone: true
 
 layout: section
 tags: ['om', 'page']
@@ -61,4 +62,10 @@ chevron: true
 
   .row
     :markdown
-      #### Organisationsnummer: 556551-6928   •  VAT: SE556551-692801
+      #### Organisationsnummer: <input value="556551-6928" onclick="this.select()"> | VAT: <input value="SE556551-692801"  onclick="this.select()">
+
+  section.row
+    each doc in getCollection('tjanster').toJSON()
+      .col-md-4
+        a(href=doc.url)=doc.title
+        p=doc.summary

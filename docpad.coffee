@@ -35,7 +35,7 @@ docpadConfig =
       email: "info@iteam.se"
 
       # Your company's name
-      copyright: "© Iteam Solutions AB 2013"
+      copyright: "© Iteam Solutions AB 2014"
 
 
     # Helper Functions
@@ -68,25 +68,6 @@ docpadConfig =
       if size then url += "?s=#{size}"
       return url
 
-    capitalizeFirstChar: (str="") ->
-      composed = str.charAt(0).toUpperCase() + str.slice 1
-      return composed
-
-    getMetadataFrom: (page, section="vara-tjanster") ->
-      if !page or typeof section is not "string" then return
-      queryObject = {
-        relativeOutDirPath: section,
-        dontIndexInAnyCollection: {
-          $exists: false
-        },
-        tags: {
-          $in: [
-            page
-          ]
-        }
-      }
-      return @getCollection("documents").findOne(queryObject)?.toJSON()
-
     topImage: (page=@document) ->
       return if page.topImage then "background-image:url(" + page.topImage + ")" else ""
 
@@ -97,46 +78,18 @@ docpadConfig =
       return if onCase then "single-case" else ""
 
     getAllCasesByCoworker: (coworker="", max=6) ->
-      casesArray = []
-      for data, i in @getCollection('case')?.toJSON()
-        if data.team then for member, j in data.team
-          if member is coworker then casesArray.push data
-      return casesArray.slice 0, max
+      @getCollection('case').toJSON().filter (c) -> c.team && ~c.team.indexOf(coworker)
 
-    toDateString: (date=@document.date, short=false) ->
-      month = ["Januari","Februari","Mars","April","Maj","Juni","Juli","Augusti","September","Oktober","November","December"]
-      month_abbr = ["Jan","Febr","Mars","Apr","Maj","Juni","Juli","Aug","Sept","Okt","Nov","Dec"]
-      day = ["Söndag","Måndag","Tisdag","Onsdag","Torsdag","Fredag","Lördag"]
-      day_abbr = ["Sön","Mån","Tis","Ons","Tors","Fre","Lör"]
-      d = new Date(date)
-
-      if short
-        return "#{day_abbr[d.getDay()]} #{d.getDate()} #{month_abbr[d.getMonth()]}, #{(d.getFullYear()).substr(2, 2)}"
-      else
-        return "#{day[d.getDay()]} #{d.getDate()} #{month[d.getMonth()]}, #{d.getFullYear()}"
-
-    getShowCase: (max) ->
-      casesArray = []
-
-      max = max or 4
-      for data, i in @getCollection('showcase')?.toJSON()
-        casesArray.push data
-        i++
-        if i is max then break
-      return casesArray
-
-    fromMarkdown: (markdownString) ->
-      mardown = require("markdown").markdown
-      return mardown.toHTML(markdownString)
-
+    marked: require('marked')
 
   plugins:
     ## skips the .html extension by adding a folder and index.html and creates a redirect html
     cleanurls:
           trailingSlashes: true
-    grunt:
-      writeAfter: false
-      generateAfter: ["stylus", "cssmin", "concat"]
+
+
+  regenerateDelay: 0
+  watchOptions: catchupDelay: 0
 
   # Collections
   # ===========
@@ -146,40 +99,40 @@ docpadConfig =
     #
     # This is the main collection, for index:es
     sektion: (database) ->
-      database.findAllLive({pageIndex: $exists: true}, [pageIndex:1,title:1])
+      database.findAll({dontIndexInAnyCollection: $exists: true}, [pageIndex:1,title:1])
 
     # Collection of all cases
     case: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', dontIndexInAnyCollection: {$exists: false}},[releaseDate:-1, title:1])
+      database.findAll({relativeOutDirPath:'case', dontIndexInAnyCollection: $exists: false},[releaseDate:-1, title:1])
 
     showcase: (database) ->
-      database.findAllLive({relativeOutDirPath:'case', caseIndex: {$lte: 4}, dontIndexInAnyCollection: {$exists: false} }, [caseIndex:1, title:1])
+      database.findAll({relativeOutDirPath:'case', caseIndex: {$lte: 4} }, [caseIndex:1, title:1])
 
     # Collection of all feedback-posts}
     feedback: (database) ->
-      database.findAllLive({relativeOutDirPath:'feedback', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAll({relativeOutDirPath:'feedback', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # Collection of a coworkers
     medarbetare: (database) ->
-      database.findAllLive({relativeOutDirPath:'medarbetare', dontIndexInAnyCollection: $exists: false},[filename:1])
+      database.findAll({relativeOutDirPath:'medarbetare', dontIndexInAnyCollection: $exists: false},[filename:1])
 
     # Collection of all available positions
     ledigatjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'karriar', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAll({relativeOutDirPath:'karriar', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # All of our services
     tjanster: (database) ->
-      database.findAllLive({relativeOutDirPath:'vara-tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAll({relativeOutDirPath:'vara-tjanster', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # A collection of information about us
     om: (database) ->
-      database.findAllLive({relativeOutDirPath:'om-oss', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAll({relativeOutDirPath:'om-oss', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
 
     # =======================
     # not _really_ in use
     # =======================
     operations: (database) ->
-      database.findAllLive({relativeOutDirPath:'operations', dontIndexInAnyCollection: $exists: false},[pageOrder:1])
+      database.findAll({relativeOutDirPath:'operations'},[pageOrder:1])
 
   # =================================
   # Plugin Configuration
@@ -190,33 +143,6 @@ docpadConfig =
   # If it is a relative path, it will have the resolved `rootPath` prepended to it
   outPath: "./out"
 
-
-  # Ignore Paths
-  # Can be set to an array of absolute paths that we should ignore from the scanning process
-  ignorePaths: [
-    "files/jade_includes",
-    "files/scripts"
-  ]
-
-
-  # DocPad Events
-  # =============
-
-  # Here we can define handlers for events that DocPad fires
-  # You can find a full listing of events on the DocPad Wiki
-  events:
-
-    # Server Extend
-    # Used to add our own custom routes to the server before the docpad routes are added
-    serverExtend: (opts) ->
-      # Extract the server from the options
-      {server} = opts
-      docpad = @docpad
-
-      # As we are now running in an event,
-      # ensure we are using the latest copy of the docpad configuraiton
-      # and fetch our urls from it
-      latestConfig = docpad.getConfig()
 
 # Export our DocPad Configuration
 module.exports = docpadConfig

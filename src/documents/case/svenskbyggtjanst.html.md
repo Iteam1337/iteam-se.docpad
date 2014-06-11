@@ -2,6 +2,7 @@
 title: Byggtjänst.se
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 100303
 tags: ['Systemutveckling','Systemförvaltning']
 sections: ['Systemutveckling']
 logo: 'case-logos/sb-byggtjanst-logo.png'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-byggtjanst1.jpg','case-galleribilder/svensk-byggtjanst/sb-byggtjanst2.jpg']
 

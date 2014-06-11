@@ -1,5 +1,6 @@
 ---
 layout: default
+standalone: true
 ---
 
 h1(title,class=document.background)= document.title
@@ -7,3 +8,5 @@ h1(title,class=document.background)= document.title
 .row-fluid
   article#page.page
     .page-content!= content
+
+include ../jade_includes/call-to-action

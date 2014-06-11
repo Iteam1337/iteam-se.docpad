@@ -2,6 +2,7 @@
 title: Careerbook
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 090101
 tags: ['Systemutveckling']
 sections: ['Systemutveckling']
 logo: 'case-logos/careerbook.jpg'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/careerbook/careerbook1.jpg', 'case-galleribilder/careerbook/careerbook2.jpg']
 

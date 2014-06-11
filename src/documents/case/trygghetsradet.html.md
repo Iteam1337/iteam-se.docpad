@@ -2,6 +2,7 @@
 title: Trygghetsrådet
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 140120
 tags: ['Rådgivning','Förstudie','Lead tech','Proof-of-concept','Systemutveckling']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/trr.png'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/trr/trr-2.png','case-galleribilder/trr/trr-3.png','case-galleribilder/trr/trr-4.png','case-galleribilder/trr/trr-5.png']
 

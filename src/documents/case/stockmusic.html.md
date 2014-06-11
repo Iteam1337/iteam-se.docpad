@@ -2,6 +2,7 @@
 title: Soundideas.com
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 080101
 tags: ['Systemutveckling','Rådgivning','Drift & Support','Specialist- och projektstöd','Systemförvaltning']
 sections: ['Systemutveckling','Rådgivning','Drift & Support']
 logo: 'case-logos/soundideas.jpeg'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/stockmusic/stockmusic1.jpg', 'case-galleribilder/stockmusic/stockmusic2.jpg', 'case-galleribilder/stockmusic/stockmusic3.jpg']
 

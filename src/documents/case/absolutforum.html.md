@@ -2,6 +2,7 @@
 title: ABSOLUT FORUM
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
@@ -11,6 +12,7 @@ releaseDate: 040101
 tags: ['Systemutveckling','Proof-of-concept','Rådgivning']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/absolut.jpg'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/absolut/absolutforum2.jpg','case-galleribilder/absolut/absolutforum3.jpg','case-galleribilder/absolut/absolutforum1.jpg']
 
@@ -26,7 +28,7 @@ topImage: '/content/images/case-topbilder/absolut.jpg'
 background: 'invert'
 
 intro: >
-  Vi utvecklade ett globalt intraranät för alla som marknadsför ABSOLUT VODKA.
+  Vi utvecklade ett globalt intranät för alla som marknadsför ABSOLUT VODKA.
 ---
 
 ## En plattform för 126 marknader världen över
