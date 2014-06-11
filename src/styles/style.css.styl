@@ -132,47 +132,35 @@ section
       border-right 1px solid #ccc
       padding-right 20px
 
-.background-image
-  positioned('top', 'right', -305px, 0)
-  vendor("background-size", cover)
-
-  z-index 0
-  width 100%
-  height 450px
-  max-height 450px
-  min-height 450px
-  display block
-  overflow hidden
-  background-repeat no-repeat
-  background-color silver
-  background-position 50% 50%
-
-  @media mobile
-    height 220px
-    max-height 220px
-    min-height 220px
-    top -69px
-
 .container
   box(border-box)
 
   background-color white
-  z-index 1
+  margin-top -120px
   position relative
-  padding 15px 55px
-  margin-top 297px
+  padding 25px 55px
   max-width 1060px
+  z-index 1
 
   @media mobile
+    margin-top 0
     padding 15px 20px
 
   .content > h1
-    position relative
-    margin-top -90px
+    positioned('top','left',-140px,0)
+
     font-size 4em
-    white-space nowrap
     line-height 1.2em
     text-shadow 1px 1px 1px rgba(255, 255, 255, 0.3)
+    white-space nowrap
+    
+    @media mobile
+      font-size 2.3em !important
+      margin 0
+      text-shadow none !important
+      top -120px
+      white-space normal !important 
+
     &.invert
       color white
       text-shadow 1px 1px 1px rgba(0, 0, 0, 0.3)
@@ -232,7 +220,6 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
 
 
 #top-holder,
-#main-holder,
 #footer-holder,
 .offset
   width 100%
@@ -243,17 +230,8 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
   background-color white
 
 .offset
-  height 50px
+  height 42px
   z-index -120
-
-.row.contact
-  padding 50px 0 
-  input
-    height 50px
-    font-size 20px
-
-    &:last-child
-      margin-right 0
 
 #top-holder,
 #footer-holder,
@@ -265,6 +243,3 @@ body[class^="medarbetare"] > #main-holder > .container, .single-case
 
 #top-holder
   position fixed
-
-#main-holder
-  z-index 0

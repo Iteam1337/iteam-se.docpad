@@ -7,8 +7,11 @@
     
   .lead p
     font-size 25px
-    margin-top 70px
-    margin-bottom 70px
+    margin 70px 0
+
+    @media mobile
+      font-size 18px
+      margin 0
 
   .container
     box(border-box)
@@ -33,6 +36,9 @@
       font-size 3em
       line-height 1.2em
       margin-bottom 1em
+
+      @media mobile
+        font-size 28px
 
   #footer-holder
     padding 0 20px

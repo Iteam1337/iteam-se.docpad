@@ -1,14 +1,17 @@
 @import "variable"
 
 #instagram-feed a
-  width 25%
+  display inline-block
   margin 0
   padding 0
-  display inline-block
   text-align center
+  width 25%
+
+  @media mobile
+    width 50%
 
   img
     border 2px solid white
+    height auto
     max-width 100%
     margin 0 auto
-    height auto
