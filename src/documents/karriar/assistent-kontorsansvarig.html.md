@@ -1,6 +1,6 @@
 ---
 title: Assistent och kontorsansvarig
-description: Vi söker dig som njuter av att få saker gjorda, och har känsla för service och omtanke.
+description: Vi söker dig som njuter av att få saker gjorda, har känsla för service och omtanke.
 keywords: ''
 standalone: true
 
@@ -9,7 +9,7 @@ pageOrder: 2
 topImage: "http://i.imgur.com/aD4G4eZ.gif"
 background: 'invert'
 summary: >
-  Vi söker dig som gillar att få saker gjorda, och har servicekänsla och omtanke.
+  Vi söker dig som gillar att få saker gjorda, har servicekänsla och omtanke.
 
 krav: >
   * Erfarenhet av administrativt arbete.
@@ -34,7 +34,7 @@ anstallningsform: >
 # Du gillar att få saker gjorda och har känsla för service och har omtanke.
 
 **Din roll:** Som assistent och kontorsansvarig hos oss på Iteam är din dag händelserik och varierad. 
-Din roll innefattar att assistera VD och övriga medarbetare med att enklare uppgifter så som att sköta inköp, svara i telefon och tar emot kunder samt förbereder möten. Du delar ut posten, beställer mat, hanterar löpande frågor kring lokalen samt lokalens inredning. Ytterst handlar kontorsansvaret om att du och dina kollegor har en arbetsmiljö i världsklass och att våra kunder välkomnas och gillar att ha möten hos oss.
+Din roll innefattar att assistera VD och övriga medarbetare med enklare uppgifter så som att sköta inköp, svara i telefon och tar emot kunder samt förbereder möten. Du delar ut posten, beställer mat, hanterar löpande frågor kring lokalen samt lokalens inredning. Ytterst handlar kontorsansvaret om att du och dina kollegor har en arbetsmiljö i världsklass och att våra kunder välkomnas och gillar att ha möten hos oss.
 
 
 ## Du kommer att:
