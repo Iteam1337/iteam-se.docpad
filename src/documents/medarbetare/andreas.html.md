@@ -15,7 +15,7 @@ email: andreas.pettersson@iteam.se
 phonenumber: '0706 09 09 65'
 
 cssColor: "#918C8E"
-topImage: 
+topImage: "/content/images/medarbetare/apn2.jpg"
 background: 'invert'
 
 twitter: aandreass
