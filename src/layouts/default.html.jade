@@ -66,6 +66,7 @@ html(lang="sv")
 
           if (!!subpages)
             #navSubpages
+              .nav-bg
               .subpage-inner
                 each subpage in subpages
                   - active = (document.url.indexOf(subpage.url) > -1) ? 'active' : null

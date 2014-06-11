@@ -22,13 +22,16 @@
       top 10px
 
 .navbar-static-top
-  background #333
   position static
   margin-bottom 0
+
+  @media mobile
+    background #333
 
   .navbar-inner
     margin 0 auto
     position relative
+    top -5px
     width 100%
     
     .logoAndMenu
@@ -62,6 +65,11 @@
           display block
           margin-top 3px
           background-color #F5F5F5
+
+    .nav-collapse
+      background #333
+      position relative
+      z-index 10
 
     ul.nav
       float none
@@ -105,16 +113,29 @@
         display none
 
 #navSubpages
+  height = 40px
+
   background rgba(0.5,0.5,0.5,0.5)
   font-size 0.8em
-  padding 10px
+  height height
   text-align center
 
   @media mobile
     display none
 
+  .nav-bg
+    background rgba(33, 33, 33, 0.8)
+    width 100%
+    height height
+    position absolute
+    top 0
+    left 0
+    -webkit-filter blur(10px)
+    -webkit-transform scale(2)
+
   .subpage-inner
     margin 0 auto
+    padding-top 5px
     position relative
 
     a

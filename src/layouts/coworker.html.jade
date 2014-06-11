@@ -45,23 +45,25 @@ standalone: true
       .desc!= content
 
     if (cases.length)
-      .row.split(class=splitRow)
-        if (cases.length)
-          ul.in-cases
-            .header
-              h2.title Medverkande i case
-            each Case in cases
-              li
-                a(href=Case.url)= Case.title
-
-    if document.github
-      .row#github(username=document.github)
+      .row.split
+        .col-md-6
+          .header
+            h2.title Medverkande i case
+          if (cases.length)
+            ul.in-cases
+              each Case in cases
+                li
+                  a(href=Case.url)= Case.title
+      if document.github
+        .row.split#github(username=document.github)
+          .header
+            h2.title GitHub
 
     if document.blog
       .row.split
         .header
           h2.title Blogg
-          ul#blog-feed(data-url=document.blog, data-count=4)
+        ul#blog-feed(data-url=document.blog, data-count=4)
 
     if document.instagram
       .row.split
