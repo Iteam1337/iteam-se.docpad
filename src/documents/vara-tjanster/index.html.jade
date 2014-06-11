@@ -14,7 +14,6 @@ topImage: "/content/images/section-topbilder/varatjanster4.JPG"
 background: 'invert'
 
 chevron: true
-callToAction:
 ---
 
 .row.lead
@@ -30,3 +29,5 @@ callToAction:
     .col-md-4.offer
       a.title(href=doc.url)= doc.title
       p!= doc.summary
+
+include ../../jade_includes/call-to-action
