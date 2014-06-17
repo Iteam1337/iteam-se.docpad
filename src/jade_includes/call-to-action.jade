@@ -1,7 +1,8 @@
 .col-md-12.call-to-action-form
   form.row.contact(action='https://docs.google.com/forms/d/1SseMEJgZjsT9WQtn6CBHhhcKTkHoMKgtt378_OswMDM/formResponse?embedded=true', target='_blank')
-    h1 Kostnadsfri rådgivning 
-      small Vi vill träffa dig
+    h1=document.formTitle || 'Kostnadsfri rådgivning'
+      small=document.formDescription || 'Vi vill träffa dig'
     input.input-xxlarge(type="text",placeholder='Mobilnummer eller epost', name='entry.589797910', required)
-    input.input-xxlarge(type="text",placeholder='En hälsning till rådgivaren', name='entry.1147522160')
-    input.btn-success.text-center(type="submit", value='Kontakta mig!')
+    input.input-xxlarge(type="text",placeholder='Ditt namn', name='entry.1147522160')
+    input(type="hidden", name='entry.1974291764',value=document.formTracking || 'Ring mig')
+    input.btn-success.text-center(type="submit", value=document.formAction || 'Kontakta mig!')
