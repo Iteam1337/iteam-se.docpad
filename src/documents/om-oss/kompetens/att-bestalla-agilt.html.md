@@ -6,7 +6,7 @@ topImage: "/content/images/ovrigt/iteam-mingel.jpg"
 background: 'invert'
 layout: page
 formTitle: 'Anmälan fokusgrupp'
-formDescription: ' Start onsdagen den 20 september kl 16.00'
+formDescription: ' Start onsdagen den 10 september kl 16.00'
 formContact: 'Din epostadress'
 formAction: 'Anmäl mig'
 formTracking: 'Fokusgrupp Sept 2014'
