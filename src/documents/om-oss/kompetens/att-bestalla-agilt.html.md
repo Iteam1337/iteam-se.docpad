@@ -12,7 +12,7 @@ formAction: 'Anmäl mig'
 formTracking: 'Fokusgrupp Sept 2014'
 ---
 
-## Varför fokusgrupp?
+## Hjälp oss bli bättre leverantörer av agila tjänster genom att diskutera med oss och kollegor i fokusgrupp under hösten
 Under hösten 2014 kommer vi vid tre tillfällen bjuda in beställare från företag i Sverige som är Marknadschefer, IT-chefer och områdesansvariga/affärsutvecklare för att diskutera frågor om agila projekt.
 
 Agil utveckling fungerar bevisat bra när både leverantörer och beställare förstår hur processen fungerar och dess fördelar och har förståelse inom sin egen organisation för dessa. Vi tror att fokusgrupper kan vara ett bra forum för fler att kunna lära sig av varandra för att hantera frågeställningar så som förankring internt, lägga/försvara budget och genomföra uppföljning. 
