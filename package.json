@@ -28,8 +28,10 @@
     "npm": "1.1.x"
   },
   "dependencies": {
-    "docpad": "~6.68.1",
+    "bal-util": "~2.3.0",
+    "docpad": "~6.68.0",
     "docpad-plugin-cleanurls": "~2.7.0",
+    "docpad-plugin-coffeekup": "~2.2.0",
     "docpad-plugin-coffeescript": "~2.4.0",
     "docpad-plugin-eco": "~2.0.3",
     "docpad-plugin-grunt": "~2.1.1",
@@ -37,6 +39,7 @@
     "docpad-plugin-livereload": "~2.6.0",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-partials": "~2.9.1",
+    "docpad-plugin-text": "~2.3.2",
     "docpad-plugin-restapi": "~2.1.6",
     "docpad-plugin-sitemap": "~2.2.0",
     "docpad-plugin-styl": "~2.0.1",
@@ -50,8 +53,12 @@
     "grunt-contrib-stylus": "~0.6.0",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-s3": "~0.2.0-alpha.3",
-    "grunt-shell": "^0.7.0",
-    "marked": "*"
+    "grunt-shell": "~0.x",
+    "markdown": "~0.5.0",
+    "marked": "*",
+    "safeps": "~2.2.6",
+    "stripcolorcodes": "~0.1.0",
+    "taskgroup": "~3.1.1"
   },
   "devDependencies": {
     "mocha": "~1.12.0",
