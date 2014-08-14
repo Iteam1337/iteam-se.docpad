@@ -2,8 +2,7 @@
 Our site is built using [docpad](https://github.com/bevry/docpad/)
 
 
-[![Build Status](https://drone.io/github.com/Iteam1337/iteam-se.docpad/status.png)](https://drone.io/github.com/Iteam1337/iteam-se.docpad/latest)
-
+[![Build Status](http://drone.iteam.se/github.com/iteam1337/iteam-se.docpad/status.svg?branch=master)](http://drone.iteam.se/github.com/iteam1337/iteam-se.docpad)
 
 ## Getting Started
 

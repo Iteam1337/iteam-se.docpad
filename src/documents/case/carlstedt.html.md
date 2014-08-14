@@ -2,15 +2,17 @@
 title: Carlstedt Arkitekter
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 4
+caseIndex: 5
 releaseDate: 070202
 
 tags: ['IT-review','Drift & Support','Specialist- och projektstöd']
 sections: ['Drift & Support']
 logo: 'case-logos/carlstedt.jpg'
+containerClass: 'single-case'
 
 imageGallery: []
 

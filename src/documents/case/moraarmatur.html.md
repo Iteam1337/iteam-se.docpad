@@ -2,15 +2,17 @@
 title: Mora Armatur
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 10
+caseIndex: 13
 releaseDate: 090202
 
 tags: ['Systemutveckling']
 sections: ['Systemutveckling']
 logo: 'case-logos/moraarmatur.jpg'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/moraarmatur/moraarmatur1.jpg']
 

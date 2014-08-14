@@ -2,15 +2,17 @@
 title: AMA Beskrivningsverktyg
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 10
+caseIndex: 11
 releaseDate: 091214
 
 tags: ['Systemutveckling']
 sections: ['Systemutveckling']
 logo: 'case-logos/sb-byggtjanst-logo.png'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-amabv1.jpg']
 

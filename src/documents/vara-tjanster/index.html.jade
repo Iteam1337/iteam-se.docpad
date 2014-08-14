@@ -1,7 +1,8 @@
 ---
 title: "Våra tjänster"
-description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+description: 'Vi stöttar företag som vill växa med skräddarsydda digitala verktyg.'
 keywords: ''
+standalone: true
 
 layout: section
 tags: ['intro', 'page']
@@ -15,7 +16,7 @@ background: 'invert'
 chevron: true
 ---
 
-.row
+.row.lead
   h2 När webbyråer skapar kampanjer bygger vi digitala tjänster och företag
 
   :markdown
@@ -26,6 +27,7 @@ chevron: true
 .row.tjanster
   each doc in getCollection('tjanster').toJSON()
     .col-md-4.offer
-      a.title(href=doc.url)= doc.title + ' »'
-
+      a.title(href=doc.url)= doc.title
       p!= doc.summary
+
+include ../../jade_includes/call-to-action

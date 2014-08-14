@@ -6,3 +6,4 @@ aws.json
 publicera.sh
 .idea
 *.log
+.docpad.db

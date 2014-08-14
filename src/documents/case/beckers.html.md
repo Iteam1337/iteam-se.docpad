@@ -2,15 +2,17 @@
 title: Beckers.se
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 2
+caseIndex: 3
 releaseDate: 090303
 
 tags: ['Systemutveckling','Systemförvaltning','Drift & Support']
 sections: ['Systemutveckling','Drift & Support']
 logo: 'case-logos/beckers.png'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/beckers/beckers2.jpg','case-galleribilder/beckers/beckers3.jpg']
 

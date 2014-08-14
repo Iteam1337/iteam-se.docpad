@@ -1,11 +1,12 @@
 ---
 layout: default
+standalone: true
 ---
 
 - var inlineClass = "image "
 - inlineClass += !!document.css ? document.css : ""
 - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : ""
-- var cases = []; //getAllCasesByCoworker(document.shortname)
+- var cases = getAllCasesByCoworker(document.shortname)
 - var splitRow = (!!cases.length) ? "user-content multi" : "user-content"
 
 .row.page-content
@@ -44,25 +45,29 @@ layout: default
       .desc!= content
 
     if (cases.length)
-      .row.split(class=splitRow)
-        if (cases.length)
-          ul.in-cases
-            .header
-              h2.title Medverkande i case
-            each Case in cases
-              li
-                a(href=Case.url)= Case.title
+      .row.split
+        .col-md-6
+          .header
+            h2.title Medverkande i case
+          if (cases.length)
+            ul.in-cases
+              each Case in cases
+                li
+                  a(href=Case.url)= Case.title
+      if document.github
+        .row.split#github(username=document.github)
+          .header
+            h2.title GitHub
 
-    if document.github
-      github(username=document.github)
+    if document.blog
+      .row.split
+        .header
+          h2.title Blogg
+        ul#blog-feed(data-url=document.blog, data-count=4)
 
     if document.instagram
       .row.split
         .header
           h2.title Instagram
         .social-media.instagram#instagram-feed(data-name=document.instagram, data-images=3)
-    if document.blog
-      .row.split
-        .header
-          h2.title Blogg
-          #blog-feed(data-url=document.blog, data-count=4)
+    

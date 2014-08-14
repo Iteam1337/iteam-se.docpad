@@ -2,24 +2,22 @@
 
 #slider
   .carousel-inner
-    height 450px
+    height 700px
 
     @media mobile
       height 250px
       
     .item
+      size(100%)
       vendor("background-position", 50% 50%)
       vendor("background-size", cover)
-        
-      height 100%
-      width 100%
 
       img
         min-height 100%
         width 100%
 
       .carousel-caption
-        positioned('top-left', 50%,0,0,50%)
+        positioned('top', 'left', 50%, 50%)
         translate-pos(-50%,-50%);
 
         font-size 4em
@@ -44,11 +42,11 @@
             padding 0 20px
 
           .separator-before:before
+            positioned('top','right', -3px, 0, relative)
+
             content "\2022"
             font-size 14px
             margin 0 5px
-            position relative
-            top -3px
 
   .carousel-control
     color #fff

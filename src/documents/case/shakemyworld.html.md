@@ -2,15 +2,17 @@
 title: Shake My World
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 10
+caseIndex: 16
 releaseDate: 070101
 
 tags: ['Entreprenörsrådgivning','Proof-of-concept','Systemutveckling','Rådgivning']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/shake.jpg'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/shakemyworld/shakemyworld1.jpg','case-galleribilder/shakemyworld/shakemyworld2.jpg','case-galleribilder/shakemyworld/shakemyworld3.jpg']
 

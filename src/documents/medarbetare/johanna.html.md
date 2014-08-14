@@ -2,6 +2,7 @@
 title: Johanna Gustafsson
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 navigationTitle: Johanna
 
@@ -21,7 +22,7 @@ twitter: mittistormen
 instagram: mittistormen
 linkedin: pub/johanna-gustafsson/3/b34/7a6
 github: mittistormen
-blog:
+blog: http://womenatwork.ghost.io/rss/
 
 ---
 

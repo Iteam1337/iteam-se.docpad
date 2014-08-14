@@ -4,6 +4,14 @@
   var xmlHttp = null;
   var feed = document.getElementById('blog-feed');
 
+  function truncate (text, length) {
+    if (text == null || text.length < length || text.indexOf(" ", length) == -1) {
+      return text;
+    }
+
+    return text.substr(0, text.indexOf(" ", length)) + "...";
+  }
+
   function stateChange() {
     if (xmlHttp.readyState !== 4 || xmlHttp.status !== 200) {
       return;
@@ -13,12 +21,23 @@
       return;
     }
     res.data.forEach(function (data) {
-      var a = document.createElement('a');
-      a.setAttribute('target', '_blank');
-      a.setAttribute('href', data.link);
-      a.className = 'blog';
-      a.innerHTML = data.title;
-      feed.appendChild(a);
+      var li      = document.createElement('li')
+      ,   title   = document.createElement('a')
+      ,   content = document.createElement('p');
+
+      // Set title
+      title.classList.add('title');
+      title.href = data.link;
+      title.target = "_blank";
+      title.innerHTML = data.title;
+
+      // Set content
+      content.classList.add('content');
+      content.innerHTML = truncate(data.content.replace(/(<([^>]+)>)/ig,""), 200);
+
+      li.appendChild(title);
+      li.appendChild(content);
+      feed.appendChild(li);
     });
   }
 

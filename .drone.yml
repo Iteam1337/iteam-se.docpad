@@ -1,0 +1,25 @@
+image: node0.10
+cache:
+  - /tmp/npm
+
+script:
+  - mkdir -p /tmp/npm
+  - sudo chown -R ubuntu:ubuntu /tmp/npm
+  - npm config set cache /tmp/npm
+  - npm -s install
+  - npm -s install -g grunt-cli docpad bower
+  - bower install
+  - grunt deploy:$DRONE_BRANCH
+
+notify:
+
+  slack:
+    team: iteamsolutions
+    channel: #marknad
+    username: drone.io
+    image_url: http://img2.wikia.nocookie.net/__cb20130818100405/survivoronlinegaming/images/9/96/Simpsons-nelson-ha-ha-93-p-672x480.jpg
+    token: 8CucDNnAVELD0BBEErMnhobE
+    on_started: true
+    on_failure: true
+    on_success: true
+

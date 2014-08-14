@@ -3,14 +3,16 @@ title: Landahl Advokatbyrå
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
 
+standalone: true
 subtitle:
 layout: case
-caseIndex: 5
+caseIndex: 6
 releaseDate: 040303
 
 tags: ['Drift & Support','Specialist- och projektstöd','Arkitektur & Infrastruktur','Hyr en IT-avdelning']
 sections: ['Drift & Support']
 logo: 'case-logos/landahl.png'
+containerClass: 'single-case'
 
 imageGallery: []
 

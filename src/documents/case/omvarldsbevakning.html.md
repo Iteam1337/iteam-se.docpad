@@ -2,15 +2,17 @@
 title: Bygginfo
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 10
+caseIndex: 14
 releaseDate: 100101
 
 tags: ['Proof-of-concept','Systemutveckling']
 sections: ['Systemutveckling','Rådgivning']
 logo: 'case-logos/sb-byggtjanst-logo.png'
+containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/svensk-byggtjanst/sb-omvarldsbevakning1.jpg']
 

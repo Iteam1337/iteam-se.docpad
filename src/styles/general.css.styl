@@ -1,11 +1,11 @@
 @import "variable"
 
 @font-face
-  font-family "AvantGarde ExtraLight"
-  src url("/content/fonts/lte52009.ttf") format("truetype")
+  font-family: "AvantGarde ExtraLight";
+  src: url("/content/fonts/lte52009.ttf") format("truetype");
 
 @font-face
-  font-family "Tex Gyre Adventor Regular"
+  font-family: "Tex Gyre Adventor Regular";
   src: url('/content/fonts/texgyreadventor-regular-webfont.eot');
   src: url('/content/fonts/texgyreadventor-regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('/content/fonts/texgyreadventor-regular-webfont.woff') format('woff'),
@@ -18,7 +18,9 @@
 /* General
 ---------------------------------------------*/
 a,
-a:link
+a:link,
+a:hover,
+a:visited
   color orange
   cursor pointer
   text-decoration none
@@ -33,55 +35,62 @@ a.btn
   margin-right 20px
 
 a.tag
+  border-radius(3px)
   box(border-box)
-  font-family regularFontStack
-  display inline-block
-  position relative
-  height 40px
-  width 100%
-  padding 0px 20px
-  border-width 0px 0px 1px
+  transition(background 300ms ease)
+
+  background rgb(153, 153, 153)
   border-style none none solid
+  border-width 0px 0px 1px
   color white
+  display inline-block
+  font-family regularFontStack
   font-size 14px
+  font-weight 400
   line-height 39px
+  height 40px
+  padding 0px 20px
+  position relative
   text-align center
   vertical-align bottom
-  font-weight 400
-  background-color rgb(153, 153, 153)
-  vendor("border-radius", 3px)
-  vendor("transition", background-color 300ms ease)
+  width 100%
 
   &:hover
-    background-color _orange
+    background _orange
 
   &.remote
-    width 25%
     margin-right 20px
+    width 25%
+
+    @media mobile
+      display block
+      margin-bottom 10px
+      width 100%
 
 body,
 html
-  -webkit-overflow-scrolling touch
   background #fff
   font-family sansSerifFontStack
   font-size 1em
   height 100%
-  overflow-x hidden
   position relative
 
 body
   color #666
 
+blockquote
+  p
+    font-size 18px
+    line-height 1.6
+
 p
   color #666
   font-family serifFontStack
-  line-height 2
-  color #666
-  line-height 1.6
-  margin-bottom 20px
   font-size 17px
   font-weight 100
   letter-spacing 0
+  line-height 1.6
+  margin-bottom 20px
   max-width 450px
 
 ul
@@ -124,21 +133,21 @@ h4
 .e-facebook,
 .e-linkedin,
 .e-instagram
-  display inline-block
-  width 1.15em
-  height 1.5em
+  transition(opacity 300ms ease)
+
   background-position 50%
   background-size 1em
   background-repeat no-repeat
+  display inline-block
+  height 1.5em
   margin auto
+  opacity .4
   padding 0
   text-align center
-  opacity .6
-  vendor("transition", opacity 300ms ease)
+  width 1.15em
 
   &:hover
     opacity 1 !important
-    vendor("transition", opacity 300ms ease)
 
 .e-mail,
 .e-mailme,
@@ -173,3 +182,34 @@ h4
   svg(linkedin)
 .e-instagram
   svg(instagram)
+
+#main-holder
+  width 100%
+  display block
+  position relative
+  background-color white
+  z-index 0
+
+  .background-image
+    vendor("background-size", cover)
+
+    z-index 0
+    width 100%
+    height 450px
+    max-height 450px
+    min-height 450px
+    display block
+    overflow hidden
+    background-repeat no-repeat
+    background-color silver
+    background-position 50% 50%
+
+    @media mobile
+      display inline-block
+      height 220px
+      max-height 220px
+      min-height 220px
+
+@media mobile
+  div[class^="col-"]
+    padding 0

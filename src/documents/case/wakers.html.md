@@ -2,15 +2,17 @@
 title: Wakers Redovisningsbyrå
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 6
+caseIndex: 8
 releaseDate: 040505
 
 tags: ['Drift & Support','Specialistsupport']
 sections: ['Rådgivning','Drift & Support']
 logo: 'case-logos/wakers.jpg'
+containerClass: 'single-case'
 
 imageGallery:
 

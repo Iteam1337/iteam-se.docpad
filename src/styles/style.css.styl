@@ -8,20 +8,26 @@
     opacity 1
     left 0px
 
+@keyframes animateup
+  0%
+    margin-top 300px
+  100%
+    margin-top 30px
+
 @keyframes fadein
   0%
+    trans(scale(0))
     left -100%
-    vendor("transform", scale(0))
   100%
+    trans(scale(1))
     left 0
-    vendor("transform", scale(1))
 
 
 @keyframes fadeout
   0%
-    vendor("transform", scale(1))
+    trans(scale(0))
   100%
-    vendor("transform", scale(0.95))
+    trans(scale(0.95))
 
 @keyframes slidein
   0%
@@ -39,9 +45,15 @@
 ---------------------------------------------*/
 .row
   margin 0 !important
+
+
+section
+  padding-top: 70px;
+  padding-botttom: 70px;
+
 #nowplaying
   font-size 1em
-  padding  40px 0 0
+  padding 40px 0 0
 
   > a
     display inline-block
@@ -62,11 +74,7 @@
       display block
       line-height 1.5
 
-#footer
-  margin 40px auto
-  max-width 1060px
-  position relative
-
+#footer .row
   > div
     display inline-block
     vertical-align top
@@ -76,8 +84,6 @@
       margin-top 20px
 
   #address
-    margin 0
-    width 40%
 
     @media mobile
       width 100%
@@ -91,24 +97,15 @@
         margin-bottom 10px
 
   #followUs
-    position absolute
-    right 20px
     text-align right
-    top 30px
-    width 100%
 
     @media mobile
-      position relative
-      right 0
       text-align center
-      top 0
 
-    .e-github,
-    .e-twitter,
-    .e-facebook,
-    .e-linkedin,
-    .e-instagram
-      opacity .4
+    .e-mail
+      positioned('top', 'right', 4px, 0, relative)
+
+      font-size 1.2em
 
     > a
       vendor("transition", color 300ms ease)
@@ -125,7 +122,7 @@
 
 #subpages
   margin-bottom  20px
-  padding  10px 0
+  padding 10px 0
 
   li
     display inline-block
@@ -135,43 +132,35 @@
       border-right 1px solid #ccc
       padding-right 20px
 
-#github
-  display none
-
-.background-image
-  top -302px
-  z-index 0
-  position absolute
-  width 100%
-  height 450px
-  max-height 450px
-  min-height 450px
-  display block
-  overflow hidden
-  background-repeat no-repeat
-  background-color white
-  background-position 50% 50%
-  vendor("background-size", cover)
-
 .container
   box(border-box)
+
   background-color white
-  z-index 1
+  margin-top -120px
   position relative
-  padding 15px 55px
-  margin-top 300px
+  padding 25px 55px
   max-width 1060px
+  z-index 1
 
   @media mobile
-    padding 15px 10px
+    margin-top 0
+    padding 15px 20px
 
-  h1
-    position absolute
-    margin-top -90px
+  .content > h1
+    positioned('top','left',-140px,0)
+
     font-size 4em
-    white-space nowrap
     line-height 1.2em
     text-shadow 1px 1px 1px rgba(255, 255, 255, 0.3)
+    white-space nowrap
+    
+    @media mobile
+      font-size 2.3em !important
+      margin 0
+      text-shadow none !important
+      top -120px
+      white-space normal !important 
+
     &.invert
       color white
       text-shadow 1px 1px 1px rgba(0, 0, 0, 0.3)
@@ -203,11 +192,9 @@
       clear both
       padding-top 1px
 
-  .content
-    .text
-      iframe
-        max-width 100%
-        display inline-block
+  .content .text iframe
+    max-width 100%
+    display inline-block
 
 .header
   display block
@@ -225,43 +212,34 @@
   border-top 1px solid rgba(204, 204, 204, .2)
   margin-top 20px
 
-.single-case
+body[class^="medarbetare"] > #main-holder > .container, .single-case
   animate(animatein, 1s)
 
+  @media mobile
+    animate(none, 0)
+
+
 #top-holder,
-#main-holder,
 #footer-holder,
 .offset
   width 100%
-  min-width none
+  min-width 0
   display block
   clear both
   position relative
-  z-index 0
   background-color white
 
 .offset
-  height 50px
+  height 42px
   z-index -120
-
-#footer-holder
-  margin 0 auto
-  max-width 1060px
-  padding 0 55px
-  width 100%
-
-  @media mobile
-    top 20px
 
 #top-holder,
 #footer-holder,
 #footer
+  
   box(border-box)
   *
     box(border-box)
 
 #top-holder
   position fixed
-
-#main-holder
-  z-index 0

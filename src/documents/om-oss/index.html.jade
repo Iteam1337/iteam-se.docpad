@@ -1,7 +1,8 @@
 ---
 title: 'Om oss'
-description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
+description: 'Iteam har funnits sedan 1995, har AAA-rating och är partners med de största leverantörerna.'
 keywords: ''
+standalone: true
 
 layout: section
 tags: ['om', 'page']
@@ -10,6 +11,8 @@ dontIndexInAnyCollection: true
 
 topImage: "/content/images/section-topbilder/om3.JPG"
 background: 'invert'
+
+certifications: ['/content/images/ovrigt/clavisterpartner.png','/content/images/ovrigt/microsoftpartner.png', '/content/images/ovrigt/aws.png']
 
 chevron: true
 ---
@@ -26,12 +29,19 @@ chevron: true
     .col-md-5.col-md-offset-1.map
       :markdown
         ## Hitta oss
-        [![Google Maps](http://maps.googleapis.com/maps/api/staticmap?center=59.338946,18.05723&zoom=14&size=1170x200&maptype=roadmap&sensor=false&markers=color:0xFFBD09%7Clabel:I%7C59.338946,18.05723&visual_refresh=true)](https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Iteam%2BSolutions%2BAB,%2BTegn%C3%A9rgatan%2B28,%2BStockholm,%2BSweden&aq=&sll=59.318652,18.018436&sspn=0.061665,0.122395&vpsrc=0&t=h&ie=UTF8&hq=iteam+solutions+ab&hnear=Tegn%C3%A9rgatan+28,+113+59+Stockholm,+Stockholms+l%C3%A4n,+Sweden&ll=59.338946,18.057253&spn=0.007091,0.015299&z=16&iwloc=A",style="color:#0000FF;text-align:left",target="_blank)
+        [![Google Maps](http://maps.googleapis.com/maps/api/staticmap?center=59.338946,18.05723&zoom=14&size=1170x200&maptype=roadmap&sensor=false&markers=color:0xFFBD09%7Clabel:I%7C59.338946,18.05723&visual_refresh=true)](https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Iteam%2BSolutions%2BAB,%2BTegn%C3%A9rgatan%2B28,%2BStockholm,%2BSweden&aq=&sll=59.318652,18.018436&sspn=0.061665,0.122395&vpsrc=0&t=h&ie=UTF8&hq=iteam+solutions+ab&hnear=Tegn%C3%A9rgatan+28,+113+59+Stockholm,+Stockholms+l%C3%A4n,+Sweden&ll=59.338946,18.057253&spn=0.007091,0.015299&z=16&iwloc=A",style="color:#0000FF;text-align:left",target="_blank")
 
         Vi finns på Tegnérgatan 28 högst upp i huset i våra nyrenoverade och ljusa lokaler.
         ### Ring oss
         Ring vårt växelnummer är 08-26 70 90 eller direkt till våra [medarbetare](/medarbetare).
 
+      if document.certifications
+        div.certifications
+          h3 Partners
+          ul
+            each image in document.certifications
+              li
+                img.certification(src=image)
 
   .row(about-view)
 
@@ -52,4 +62,12 @@ chevron: true
 
   .row
     :markdown
-      #### Organisationsnummer: 556551-6928   •  VAT: SE556551-692801
+      #### Organisationsnummer: <input value="556551-6928" onclick="this.select()"> | VAT: <input value="SE556551-692801"  onclick="this.select()">
+
+  section.row
+    each doc in getCollection('tjanster').toJSON()
+      .col-md-4
+        a(href=doc.url)=doc.title
+        p=doc.summary
+
+include ../../jade_includes/call-to-action

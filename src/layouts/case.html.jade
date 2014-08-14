@@ -1,5 +1,6 @@
 ---
 layout: default
+standalone: true
 ---
 
 h1(title,class=document.background)= document.title
@@ -31,11 +32,16 @@ if (document.caseIndex >= 0)
                   h2=document.about.title
                   p=document.about.text
 
+        if (!!document.quote)
+          .visible-xs
+            h3= "\"" + document.quote.text + "\""
+            blockquote="— " + document.quote.by
+
         .text!= content
 
         .information
           if (!!document.quote)
-            .quote
+            .quote.hidden-xs
               h3= "\"" + document.quote.text + "\""
               blockquote="— " + document.quote.by
 
@@ -60,3 +66,5 @@ if (document.caseIndex >= 0)
 
           if (document.tags)
             include ../jade_includes/related_tags
+
+  include ../jade_includes/call-to-action

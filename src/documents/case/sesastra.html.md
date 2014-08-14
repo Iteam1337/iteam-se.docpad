@@ -2,15 +2,17 @@
 title: SES Astra
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
+standalone: true
 
 subtitle:
 layout: case
-caseIndex: 10
+caseIndex: 15
 releaseDate: 020101
 
 tags: ['Drift & Support','Specialist- och projektstöd']
 sections: ['Rådgivning','Drift & Support']
 logo: 'case-logos/sesastra.jpg'
+containerClass: 'single-case'
 
 imageGallery: []
 
