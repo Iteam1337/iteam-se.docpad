@@ -10,7 +10,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: radu
 
-jobTitle: Utvecklare
+jobTitle: Webbutvecklare
 email: radu.achim@iteam.se
 phonenumber: '0708 - 109 938'
 
