@@ -8,7 +8,7 @@ layout: page
 tags: ['Drift & Support','IT-review','Specialistsupport','Hyr en IT-avdelning','Systemförvaltning','Arkitektur & Infrastruktur','Säkerhetsreview']
 tagHeader: Drift – & Supportkunder
 pageType: Service
-pageOrder: 3
+pageOrder: 4
 subpages: 'tjanster'
 
 topImage: '/content/images/section-topbilder/operations-org.jpg'

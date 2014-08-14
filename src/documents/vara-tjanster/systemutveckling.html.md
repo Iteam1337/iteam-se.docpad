@@ -8,7 +8,7 @@ layout: page
 tags: ['Systemutveckling']
 tagHeader: Lite grejer vi gjort
 pageType: Service
-pageOrder: 2
+pageOrder: 3
 subpages: 'tjanster'
 
 certifications: ['/content/images/ovrigt/microsoftpartner.png','/content/images/ovrigt/aws.png']
