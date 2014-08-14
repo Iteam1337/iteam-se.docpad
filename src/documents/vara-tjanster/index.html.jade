@@ -26,7 +26,7 @@ chevron: true
 
 .row.tjanster
   each doc in getCollection('tjanster').toJSON()
-    .col-md-4.offer
+    .col-md-3.offer
       a.title(href=doc.url)= doc.title
       p!= doc.summary
 

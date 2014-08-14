@@ -2,12 +2,15 @@
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig =
 
+
   # Template Data
   # =============
   # These are variables that will be accessible via our templates
   # To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
 
   templateData:
+
+    pkg: require process.cwd() + "/package.json"
 
     # Specify some site properties
     site:

@@ -17,7 +17,7 @@
       ,   a    = document.createElement('a')
       ,   p    = document.createElement('p');
 
-      a.src = data.html_url;
+      a.href = data.html_url;
       a.innerHTML = data.name;
 
       p.innerHTML = data.description;
