@@ -4,7 +4,7 @@ description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar
 keywords: ''
 standalone: true
 
-navigationTitle: Maria
+navigationTitle: Maria S
 
 layout: coworker
 subpages: 'medarbetare'
