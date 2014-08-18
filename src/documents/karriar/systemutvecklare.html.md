@@ -50,9 +50,9 @@ anstallningsform: >
 
   * **Start:** Omgående
 
-  * Ansök tjänsten genom att maila ditt CV och personliga brev till [sophie.wesslau@iteam.se](mailto:sophie.wesslau@iteam.se)
+  * Ansök tjänsten genom att maila ditt CV och personliga brev till [maria.carroll@iteam.se](mailto:maria.carroll@iteam.se)
 
-  * **Ring gärna vid frågor:** 0702 944 055
+  * **Ring gärna vid frågor:** 0731-414736
 ---
 
 Iteam växer och vi söker dig som vill växa till en av Sveriges bästa utvecklare. 
