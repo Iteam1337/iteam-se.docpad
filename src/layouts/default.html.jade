@@ -28,9 +28,8 @@ html(lang="sv")
     != getBlock("meta").toHTML()
 
     link(rel="shortcut icon", href="/content/ico/favicon.ico")
-    script(src="/content/scripts/iteamse.js")
-    link(rel="stylesheet", href="/content/styles/vendor.css", type="text/css")
-    link(rel="stylesheet", href="/content/styles/iteamse.css", type="text/css")
+    link(rel="stylesheet", href="/content/styles/vendor.css?v=" + pkg.version, type="text/css")
+    link(rel="stylesheet", href="/content/styles/iteamse.css?v=" + pkg.version, type="text/css")
 
   body(class=document.slug)
     #header
@@ -151,4 +150,5 @@ html(lang="sv")
       document.write(unescape("%3Cscript src='" + peJsHost + "tr.prospecteye.com/track.js' type='text/javascript'%3E%3C/script%3E"));
 
     <!-- End Analytics -->
-    script(src="/content/scripts/app.js")
+    script(src="/content/scripts/iteamse.js?v=" + pkg.version)
+    script(src="/content/scripts/app.js?v=" + pkg.version)

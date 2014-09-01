@@ -23,6 +23,6 @@ På Iteam vill vi hjälpa fler beställare att bli bättre på att använda agil
 ## Gå med i fokusgruppen
 Som deltagare i fokusgruppen diskuterar du med andra marknadschefer, utvecklare och projektledare för lära sig av varandra. Du kommer få insikt och få konkreta tips för hur du blir bättre beställ are och även dela med dig av dina egna erfaranheter. 
 
-Första mötet sker kl 16.00 onsdagen den 10:e september 2014 i Iteams lokaler på Tegnérgatan 28 och är kostnadsfritt.
-Använd formuläret nedan för att göra din anmälan eller kontakta [sophie@iteam.se](mailto:sophie@iteam.se) för frågor. Anmälan är inte bindande, vi återkommer när det närmar sig med mer detaljer.
+Första mötet sker kl 16.00 onsdagen den 10 september 2014 i Iteams lokaler på Tegnérgatan 28 och är kostnadsfritt.
+Använd formuläret nedan för att göra din anmälan eller kontakta [maria.carroll@iteam.se](mailto:maria.carroll@iteam.se) för frågor. Anmälan är inte bindande, vi återkommer när det närmar sig med mer detaljer.
 
