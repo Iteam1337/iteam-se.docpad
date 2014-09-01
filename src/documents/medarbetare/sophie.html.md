@@ -10,7 +10,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: sophie
 
-jobTitle: Administration & Projektledning
+jobTitle: Administration & Projektledning, Föräldraledig
 email: sophie.wesslau@iteam.se
 phonenumber: 0702 - 94 40 55
 
