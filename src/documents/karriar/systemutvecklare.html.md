@@ -55,6 +55,8 @@ anstallningsform: >
   * **Ring gärna vid frågor:** 0731-414736
 ---
 
+**Nedanstående tjänst är tillsatt** men vi älskar spontanansökningar inför kommande behov! 
+
 Iteam växer och vi söker dig som vill växa till en av Sveriges bästa utvecklare. 
 I rollen som systemutvecklare hos Iteam kommer du att arbeta i team bestående av 3-5 personer i projekt som drivs agilt. Medarbetarna är erfarna, drivna, innovativa samt kvalitetsmedvetna och brinner för internets framtid och de nyaste, roligaste och mest banbrytande teknikerna. Vi hoppas att du känner igen dig i detta.
 
