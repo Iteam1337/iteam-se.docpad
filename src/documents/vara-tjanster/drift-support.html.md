@@ -14,7 +14,7 @@ subpages: 'tjanster'
 topImage: '/content/images/section-topbilder/operations-org.jpg'
 background: 'invert'
 
-certifications: ['/content/images/ovrigt/clavisterpartner.png']
+certifications: ['/content/images/ovrigt/clavisterpartner.png','/content/images/ovrigt/sonicwall.png']
 
 summary: >
   Våra Supporttekniker ger personlig och snabb hjälp och kan det senaste inom IT. Antingen guidar Supporteknikerna på telefon eller kommer på studs om det krävs.
