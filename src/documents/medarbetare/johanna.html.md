@@ -1,5 +1,5 @@
 ---
-title: Johanna Gustafsson
+title: Johanna Månsson Grahn
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
 standalone: true
@@ -10,7 +10,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: johanna
 
-jobTitle: Utvecklingschef & Webbutvecklare
+jobTitle: Utvecklingschef & Systemutvecklare
 email: johanna.gustafsson@iteam.se
 phonenumber: 0734 - 02 91 12
 
