@@ -76,7 +76,7 @@ html(lang="sv")
       #main-holder!= content
     else
       #main-holder
-        .background-image(style=topImage())
+        .background-image(style=topImage(),class=document.bgClass)
         .container(class=document.containerClass)
          
           #content.row-fluid.content!= content

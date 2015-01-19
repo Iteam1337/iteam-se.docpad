@@ -6,7 +6,8 @@ standalone: true
 
 layout: job
 pageOrder: 2
-topImage: "/content/images/section-topbilder/jobb-annons/rekrytering2.JPG"
+topImage: "/content/images/section-topbilder/career.jpg"
+bgClass: job-header
 background: 'invert'
 summary: >
   Iteam växer och vi söker dig som vill bli en av Sveriges bästa systemutvecklare. 
