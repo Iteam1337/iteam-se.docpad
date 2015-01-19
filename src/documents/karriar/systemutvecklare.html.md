@@ -11,7 +11,7 @@ background: 'invert'
 summary: >
   Iteam växer och vi söker dig som vill bli en av Sveriges bästa systemutvecklare. 
 
-våra främsta behov: >
+krav: >
   * 1-3 års arbetslivserfarenhet
   
   * Javascript
@@ -20,7 +20,7 @@ våra främsta behov: >
 
   * NoSQL (t ex MongoDb)
 
-meriterandeee: >
+meriterande: >
   * .NET
 
   * SQL
