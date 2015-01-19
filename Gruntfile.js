@@ -188,6 +188,4 @@ module.exports = function (grunt) {
     's3:test'
   ]);
 
-  // alias for master => test
-  grunt.registerTask('deploy:master', ['deploy:test']);
 };
