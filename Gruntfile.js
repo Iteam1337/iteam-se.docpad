@@ -173,17 +173,17 @@ module.exports = function (grunt) {
     'manifest'
   ]);
 
-  grunt.registerTask('deploy:production', [
+  grunt.registerTask('deploy:master', [
     'dist',
     's3:production'
   ]);
 
-  grunt.registerTask('deploy:stage', [
+  grunt.registerTask('deploy:release', [
     'dist',
     's3:stage'
   ]);
 
-  grunt.registerTask('deploy:test', [
+  grunt.registerTask('deploy:develop', [
     'dist',
     's3:test'
   ]);
