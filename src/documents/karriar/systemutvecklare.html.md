@@ -9,10 +9,10 @@ pageOrder: 2
 topImage: "/content/images/section-topbilder/jobb-annons/rekrytering2.JPG"
 background: 'invert'
 summary: >
-  Iteam växer och vi söker dig som vill växa till en av Sveriges bästa Systemutvecklare. 
+  Iteam växer och vi söker dig som vill bli en av Sveriges bästa systemutvecklare. 
 
-krav: >
-  * 2-4 års arbetslivserfarenhet
+våra främsta behov: >
+  * 1-3 års arbetslivserfarenhet
   
   * Javascript
 
@@ -20,7 +20,7 @@ krav: >
 
   * NoSQL (t ex MongoDb)
 
-meriterande: >
+meriterandeee: >
   * .NET
 
   * SQL
@@ -37,9 +37,7 @@ meriterande: >
 
   * Chef
 
-  * Grunt
-
-  * AWS
+  * Grunt/Gulp etc
 
   * Elasticsearch
 
@@ -55,8 +53,6 @@ anstallningsform: >
   * **Ring gärna vid frågor:** 0731-414736
 ---
 
-**Nedanstående tjänst är tillsatt** men vi älskar spontanansökningar inför kommande behov! 
-
 Iteam växer och vi söker dig som vill växa till en av Sveriges bästa utvecklare. 
 I rollen som systemutvecklare hos Iteam kommer du att arbeta i team bestående av 3-5 personer i projekt som drivs agilt. Medarbetarna är erfarna, drivna, innovativa samt kvalitetsmedvetna och brinner för internets framtid och de nyaste, roligaste och mest banbrytande teknikerna. Vi hoppas att du känner igen dig i detta.
 
@@ -69,6 +65,7 @@ Vi tror att du har 2-4 års arbetslivserfarenhet och att du har en naturlig nyfi
 ## Om Iteam
 
 Iteam Solutions grundades 1995. Sedan dess har vi växt tryggt och genom åren etablerat oss som en av Sveriges bästa teknikbyråer. Iteam består av två affärsområden: Development och Support.
+
 Våra värdeord är: Ha kul, Skapa värde, Göra något bra.
 
-Vår vision är att förverkliga våra kunders drömmar med teknik. I vår strävan mot visionen erbjuder vi teknisk rådgivning, förstudier, utveckling, drift och support. Vi är Microsoft-partner och EPiServer Solution Partner. I vår position som teknikbyrå jobbar vi i nära samarbete med webbyråpartners, reklambyråer och designbyråer i vårt kontinuerliga uppdrag att hjälpa förverkliga våra kunders mål och drömmar om affärsstödjande och moderna webbplatser och webbtjänster. Bland våra kunder finns Beckers Färg, ABSOLUT VODKA, Trygghetsrådet, ShakeMyWorld, Svensk Byggtjänst och Crucell.
+Vår vision är att förverkliga våra kunders drömmar med teknik. 
