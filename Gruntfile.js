@@ -63,7 +63,7 @@ module.exports = function (grunt) {
           stdout: true,
           failOnError: true,
         },
-        command: 'docpad generate --env static'
+        command: './node_modules/.bin/docpad generate --env static'
       }
     },
 
@@ -147,7 +147,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-manifest');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  //grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -168,7 +168,7 @@ module.exports = function (grunt) {
     'clean',
     'shell:docpad',
     'concat',
-    'imagemin',
+    //'imagemin',
     'stylus',
     'manifest'
   ]);
