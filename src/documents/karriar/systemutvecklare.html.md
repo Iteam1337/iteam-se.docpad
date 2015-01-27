@@ -10,37 +10,39 @@ topImage: "/content/images/section-topbilder/career.jpg"
 bgClass: job-header
 background: 'invert'
 summary: >
-  Iteam växer och vi söker dig som vill bli en av Sveriges bästa systemutvecklare. 
+  Iteam växer och vi söker dig som älskar programmering. 
 
 krav: >
-  * 1-3 års arbetslivserfarenhet
+  * du vill växa som utvecklare
+
+  * du älskar programmering
   
-  * Javascript
-
-  * Node.js
-
-  * NoSQL (t ex MongoDb)
+  * Node.js, Angular eller .NET
 
 meriterande: >
   * .NET
 
-  * SQL
+  * Java
+
+  * Ruby
+
+  * Node.js
+
+  * TDD
+
+  * Docker
 
   * HTML5
 
   * CSS3
 
-  * less
-
   * Angular.js
-
-  * TDD
-
-  * Chef
 
   * Grunt/Gulp etc
 
   * Elasticsearch
+
+  * MongoDB
 
 anstallningsform: >
   * **Anställningsform:** Heltid
@@ -49,24 +51,23 @@ anstallningsform: >
 
   * **Start:** Omgående
 
-  * Ansök tjänsten genom att maila ditt CV och personliga brev till [maria.carroll@iteam.se](mailto:maria.carroll@iteam.se)
+  * **Ansökan:** Ansök genom att maila ditt CV, personligt brev och gärna en länk till ditt github-konto till [maria.carroll@iteam.se](mailto:maria.carroll@iteam.se)
 
-  * **Ring gärna vid frågor:** 0731-414736
+  * **Frågor:** Till Johanna Månsson Grahn, Utvecklingschef 073-402 91 12
 ---
 
-Iteam växer och vi söker dig som vill växa till en av Sveriges bästa utvecklare. 
-I rollen som systemutvecklare hos Iteam kommer du att arbeta i team bestående av 3-5 personer i projekt som drivs agilt. Medarbetarna är erfarna, drivna, innovativa samt kvalitetsmedvetna och brinner för internets framtid och de nyaste, roligaste och mest banbrytande teknikerna. Vi hoppas att du känner igen dig i detta.
+Vi söker dig som älskar programmering!
 
-Som systemutvecklare på Iteam ser du alltid till den bästa lösningen för att uppnå effektivitet och lönsamhet för kunden och projektet. Vi vill att kundens affär ska bli bättre med vår teknik. 
+## Din roll ##
 
-Vi på Iteam har en arbetsplats i ljusa och fina lokaler i centrala Stockholm. Vi arbetar tillsammans i team och i nära samarbete med våra byråpartners och kunder, allt för att nå bästa resultat. 
+På Iteam kommer du att arbeta i team bestående av ca 3-5 personer i projekt som drivs agilt (scrum, XP eller kanban). Dina kollegor är erfarna, drivna, innovativa och kvalitetsmedvetna. De brinner för internets framtid och de nyaste, roligaste och mest banbrytande teknikerna.
 
-Vi tror att du har 2-4 års arbetslivserfarenhet och att du har en naturlig nyfikenhet och fascination för teknik, något vi tror du har med dig sedan unga år. Det som kommer göra dig vinnande i vårt team är en förmåga att lyssna, tänka kreativt, kommunicera tydligt och ta ansvar för att leverera i tid.
+Vi söker dig som är mer junior än senior och som har en stark vilja att växa som person och inom teamet. Du älskar programmering och drivs av en önskan att bli en skicklig utvecklare. Du är troligtvis riktigt bra på antingen Node.js, .NET, Java, Ruby eller liknande. Dessutom är du bra på, eller längtar efter att jobba med, t ex Angular.js, MongoDB, ElasticSearch, Docker, Gulp, HTML5, CSS3. Det viktigaste är att du vill lära dig Node.js, Angular eller .NET då det är de tekniker vi oftast jobbar med.
 
 ## Om Iteam
 
-Iteam Solutions grundades 1995. Sedan dess har vi växt tryggt och genom åren etablerat oss som en av Sveriges bästa teknikbyråer. Iteam består av två affärsområden: Development och Support.
+Vi erbjuder systemutveckling, teknisk rådgivning, mentorskap och affärsutveckling för att skapa okomplicerade lösningar på komplexa problem. Primärt jobbar vi med webbaserad teknik men ryggar inte för att lära nytt när det behövs. Vi arbetar uteslutande agilt och ofta i långsiktiga kundrelationer och samarbeten.
 
-Våra värdeord är: Ha kul, Skapa värde, Göra något bra.
+Vårt mål är att hitta och skapa mesta möjliga värde för våra kunder och inom deras projekt. Därför backar vi aldrig för att ifrågasätta befintliga arbetssätt och tankebanor när det gäller både teknik, utvecklingsmetodik och organisation. Vårt motto är “There is a better way”. Vi menar inte nödvändigtvis att vårt sätt är bättre (även om vi hoppas det) utan snarare att vi även kommer att ifrågasätta våra egna arbetssätt och teknikval för att uppnå mer värde.
 
-Vår vision är att förverkliga våra kunders drömmar med teknik. 
+Några av våra kunder är Alcro Beckers, Besedo, Scania, Spotify, Swedbank, Trygghetsrådet och Vimla.
