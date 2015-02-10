@@ -10,7 +10,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: maria
 
-jobTitle: Projektledare, Föräldraledig
+jobTitle: Projektledare
 email: maria.solscher@iteam.se
 phonenumber: 0733 - 74 27 84
 
