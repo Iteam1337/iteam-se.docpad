@@ -168,7 +168,7 @@ module.exports = function (grunt) {
     'clean',
     'shell:docpad',
     'concat',
-//    'imagemin',
+    'copy',
     'stylus',
     'manifest'
   ]);
