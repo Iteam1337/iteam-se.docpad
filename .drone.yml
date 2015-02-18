@@ -5,11 +5,12 @@ cache:
 script:
   - mkdir -p /tmp/npm
   - sudo chown -R ubuntu:ubuntu /tmp/npm
-  - npm config set cache /tmp/npm
+  - cp -rf /tmp/npm .
   - npm -s install
   - npm -s install -g grunt-cli docpad bower
   - bower install
   - grunt deploy:$DRONE_BRANCH
+  - cp -rf node_modules /tmp/npm
 
 notify:
 
