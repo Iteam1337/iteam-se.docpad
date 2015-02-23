@@ -7,7 +7,7 @@ script:
   - sudo chown ubuntu:ubuntu /tmp/npm
   - npm set cache /tmp/npm
   - npm config set registry http://npm.iteam.se:4873/
-  - npm -s install
+  - npm -s install --production
   - ./node_modules/.bin/bower install
   - ./node_modules/.bin/grunt deploy:$DRONE_BRANCH
 
