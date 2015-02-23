@@ -13,6 +13,7 @@ Our site is built using [docpad](https://github.com/bevry/docpad/)
   cd iteam-se
   npm install -g docpad
   npm install
+  grunt
   docpad run
   ```
 
