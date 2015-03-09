@@ -1,10 +1,15 @@
 image: node0.10
 
+cache:
+  - /tmp/npm
+
 script:
+  - sudo chown ubuntu:ubuntu /tmp/npm
+  - npm set cache /tmp/npm
+  - npm config set registry http://npm.iteam.se:4873/
   - npm -s install
-  - npm -s install -g grunt-cli docpad bower
-  - bower install
-  - grunt deploy:$DRONE_BRANCH
+  - ./node_modules/.bin/bower install
+  - ./node_modules/.bin/grunt deploy:$DRONE_BRANCH
 
 notify:
 

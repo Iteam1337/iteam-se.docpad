@@ -2,7 +2,7 @@
 Our site is built using [docpad](https://github.com/bevry/docpad/)
 
 
-[![Build Status](http://drone.iteam.se/github.com/iteam1337/iteam-se.docpad/status.svg?branch=master)](http://drone.iteam.se/github.com/iteam1337/iteam-se.docpad)
+[![Build Status](http://drone.iteam.se/api/badge/github.com/Iteam1337/iteam-se.docpad/status.svg?branch=master)](http://drone.iteam.se/github.com/Iteam1337/iteam-se.docpad)
 
 ## Getting Started
 
@@ -13,6 +13,7 @@ Our site is built using [docpad](https://github.com/bevry/docpad/)
   cd iteam-se
   npm install -g docpad
   npm install
+  grunt
   docpad run
   ```
 

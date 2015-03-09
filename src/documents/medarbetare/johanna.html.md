@@ -11,7 +11,7 @@ subpages: 'medarbetare'
 shortname: johanna
 
 jobTitle: Utvecklingschef & Systemutvecklare
-email: johanna.gustafsson@iteam.se
+email: johanna.grahn@iteam.se
 phonenumber: 0734 - 02 91 12
 
 cssColor: "#a7e2fe"

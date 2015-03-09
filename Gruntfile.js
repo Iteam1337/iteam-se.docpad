@@ -63,7 +63,7 @@ module.exports = function (grunt) {
           stdout: true,
           failOnError: true,
         },
-        command: 'docpad generate --env static'
+        command: './node_modules/.bin/docpad generate --env static'
       }
     },
 
@@ -147,7 +147,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-manifest');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  //grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -168,26 +168,24 @@ module.exports = function (grunt) {
     'clean',
     'shell:docpad',
     'concat',
-    'imagemin',
+    //'imagemin',
     'stylus',
     'manifest'
   ]);
 
-  grunt.registerTask('deploy:production', [
+  grunt.registerTask('deploy:master', [
     'dist',
     's3:production'
   ]);
 
-  grunt.registerTask('deploy:stage', [
+  grunt.registerTask('deploy:release', [
     'dist',
     's3:stage'
   ]);
 
-  grunt.registerTask('deploy:test', [
+  grunt.registerTask('deploy:develop', [
     'dist',
     's3:test'
   ]);
 
-  // alias for master => test
-  grunt.registerTask('deploy:master', ['deploy:test']);
 };

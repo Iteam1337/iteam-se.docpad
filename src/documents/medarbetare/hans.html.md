@@ -10,7 +10,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: hans
 
-jobTitle: Vice VD & Säljchef, Föräldraledig
+jobTitle: Vice VD & Säljchef
 email: hans.rollman@iteam.se
 phonenumber: '0738 - 1337 87'
 
