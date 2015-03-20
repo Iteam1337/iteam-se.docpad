@@ -63,7 +63,7 @@ module.exports = function (grunt) {
           stdout: true,
           failOnError: true,
         },
-        command: 'docpad generate --env static'
+        command: './node_modules/.bin/docpad generate --env static'
       }
     },
 
@@ -188,6 +188,4 @@ module.exports = function (grunt) {
     's3:test'
   ]);
 
-  // alias for master => test
-  grunt.registerTask('deploy:master', ['deploy:test']);
 };
