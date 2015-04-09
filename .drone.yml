@@ -1,4 +1,6 @@
 image: node0.10
+cache:
+  - /tmp/npm
 
 cache:
   - /tmp/npm

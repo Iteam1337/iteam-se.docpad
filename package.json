@@ -37,14 +37,14 @@
     "docpad-plugin-livereload": "~2.6.0",
     "docpad-plugin-marked": "~2.2.1",
     "docpad-plugin-partials": "~2.9.1",
-    "docpad-plugin-text": "~2.3.2",
+    "docpad-plugin-restapi": "~2.1.6",
     "docpad-plugin-sitemap": "~2.2.0",
     "docpad-plugin-styl": "~2.0.1",
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.9",
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-copy": "~0.x",
+    "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-cssmin": "~0.6.1",
     "grunt-contrib-jade": "~0.8.0",
     "grunt-contrib-stylus": "~0.6.0",
@@ -60,6 +60,7 @@
     "mocha": "~1.12.0",
     "grunt-mocha": "~0.3.4",
     "grunt-manifest": "~0.4.0",
+    "bower": "*",
     "grunt-contrib-watch": "~0.5.3"
   }
 }

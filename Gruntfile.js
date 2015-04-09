@@ -36,7 +36,7 @@ module.exports = function (grunt) {
       }
     },
 
-    imagemin: {
+    copy: {
       main:{
         files: [{
           expand: true,
@@ -147,7 +147,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-s3');
   grunt.loadNpmTasks('grunt-manifest');
-  //grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -168,7 +168,7 @@ module.exports = function (grunt) {
     'clean',
     'shell:docpad',
     'concat',
-    //'imagemin',
+    'copy',
     'stylus',
     'manifest'
   ]);
