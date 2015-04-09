@@ -56,6 +56,8 @@ anstallningsform: >
   * **Frågor:** Till Johanna Månsson Grahn, Utvecklingschef 073-402 91 12
 ---
 
+** Tjänsten är tillsatt! Men du är alltid välkommen att skicka in en spontanansökan, [läs mer här](/karriar) **
+
 Vi söker dig som älskar programmering!
 
 ## Din roll ##
