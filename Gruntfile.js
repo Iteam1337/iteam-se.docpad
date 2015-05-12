@@ -112,7 +112,8 @@ module.exports = function (grunt) {
           {
             src: 'out/**/*',
             dest: '/',
-            rel: 'out'
+            rel: 'out',
+            options: { verify: true }
           },
         ],
       },
