@@ -108,7 +108,7 @@ module.exports = function (grunt) {
         options: {
           bucket: 'test.iteam.se'
         },
-        upload: [
+        sync: [
           {
             src: 'out/**/*',
             dest: '/',
