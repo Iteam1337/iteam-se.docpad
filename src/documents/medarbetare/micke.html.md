@@ -27,7 +27,9 @@ blog:
 ---
 
 ## Varför jobbar du med teknik?
-Har alltid älskat vetenskap och teknikutveckling. Tycker det är väldigt fascinerande vad man kan åstadkomma med en dator och lite kod. Använd på rätt sätt är teknik det som till stor del driver människan framåt. Man lär sig något nytt varje dag i det här arbetet, det blir aldrig tråkigt. Det passar mig perfekt för jag behöver den utmaningen. Förutom programmering är psykologi någonting som ligger mig varmt om hjärtat. Jag brinner för lösningar som hjälper människor i deras vardag och hoppas kunna kombinera dessa två intresseområden så mycket som möjligt i mitt arbete.
+Har alltid älskat vetenskap och teknikutveckling. Tycker det är väldigt fascinerande vad man kan åstadkomma med en dator och lite kod. Använd på rätt sätt är teknik det som till stor del driver människan framåt. Man lär sig något nytt varje dag i det här arbetet, det blir aldrig tråkigt. Det passar mig perfekt för jag behöver den utmaningen.
+
+Förutom programmering är psykologi någonting som ligger mig varmt om hjärtat. Jag brinner för lösningar som hjälper människor i deras vardag och hoppas kunna kombinera dessa två intresseområden så mycket som möjligt i mitt arbete.
 
 ## Specialistkompetens
 Språk i C-familjen, särskilt Javascript, samt PHP och C#/C++. Linux-frälst.
