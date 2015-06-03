@@ -16,7 +16,7 @@ containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/trr/trr-2.png','case-galleribilder/trr/trr-3.png','case-galleribilder/trr/trr-4.png','case-galleribilder/trr/trr-5.png']
 
-team: ['anders','martin','alexander','dennis', 'hans']
+team: ['anders','martin','alexander','dennis','hans','mikael']
 siteurl: http://www.byggtjanst.se/Varaprodukter/Projektbevakning/
 
 readmorelinks: [{"url": "http://www.trr.se/"}]
