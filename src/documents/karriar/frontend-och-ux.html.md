@@ -6,7 +6,11 @@ standalone: true
 
 layout: job
 pageOrder: 2
+<<<<<<< HEAD
 topImage: "/content/images/career/la.jpg"
+=======
+topImage: "/content/images/section-topbilder/career.jpg"
+>>>>>>> develop
 bgClass: job-header
 background: 'invert'
 summary: >
