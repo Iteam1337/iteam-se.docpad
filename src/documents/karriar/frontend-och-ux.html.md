@@ -13,7 +13,7 @@ summary: >
   Iteam växer och vi söker dig som älskar programmering och användbarhet.
 
 krav: >
-  * du vill växa
+  * Du vill växa
 
   * HTML5
   
@@ -28,19 +28,11 @@ krav: >
 meriterande: >
   * Photoshop
 
-  * TDD
-
-  * Docker
-
   * React.js
 
   * Angular.js
 
   * Grunt/Gulp etc
-
-  * Elasticsearch
-
-  * MongoDB
 
 anstallningsform: >
   * **Anställningsform:** Heltid
