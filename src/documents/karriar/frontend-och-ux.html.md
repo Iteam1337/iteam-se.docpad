@@ -6,11 +6,7 @@ standalone: true
 
 layout: job
 pageOrder: 2
-<<<<<<< HEAD
 topImage: "/content/images/career/la.jpg"
-=======
-topImage: "/content/images/section-topbilder/career.jpg"
->>>>>>> develop
 bgClass: job-header
 background: 'invert'
 summary: >
@@ -27,9 +23,11 @@ krav: >
 
   * SASS/LESS
 
-  * javascript
+  * Javascript
 
 meriterande: >
+  * Photoshop
+
   * TDD
 
   * Docker
@@ -62,7 +60,7 @@ Vi söker dig som älskar programmering och funktionell design!
 
 På Iteam kommer du att arbeta i team bestående av ca 3-5 personer i projekt som drivs agilt (scrum, XP eller kanban). Dina kollegor är erfarna, drivna, innovativa och kvalitetsmedvetna. De brinner för internets framtid och de nyaste, roligaste och mest banbrytande teknikerna.
 
-Vi söker dig som är mer junior än senior och som har en stark vilja att växa som person och inom teamet. Du älskar programmering och drivs av en önskan att ta fram funktionella och användbara lösningar.
+Vi söker dig som är mer junior än senior och som har en stark vilja att växa som person och inom teamet. Du älskar programmering och drivs av en önskan att ta fram funktionella och användbara lösningar. Du är förmodligen bra på antingen frontendutveckling eller UX men ser hur de kompletterar varandra och vill utvecklas inom båda områdena.
 
 ## Om Iteam
 
