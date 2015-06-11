@@ -8,6 +8,8 @@ standalone: true
 - var inlineColor = !!document.cssColor ? "border-color:" + document.cssColor + " !important;" : ""
 - var cases = getAllCasesByCoworker(document.shortname)
 - var splitRow = (!!cases.length) ? "user-content multi" : "user-content"
+- var phoneNumberLink = formatPhoneNumber(document.phonenumber, false)
+- var phoneNumberText = formatPhoneNumber(document.phonenumber, true)
 
 .row.page-content
   article#coworker
@@ -25,7 +27,7 @@ standalone: true
         .email
           a(href="mailto:" + document.email)= document.email
           .phone
-            a(href="tel:" + document.phonenumber)= document.phonenumber
+            a(href="tel:" + phoneNumberLink)= phoneNumberText
 
       .right
         .social-buttons

@@ -14,4 +14,4 @@ standalone: true
         p(class="title")= doc.jobTitle
         a.email(href="mailto:" + doc.email)= doc.email
         p
-          a.email(href="tel:" + doc.phonenumber)= doc.phonenumber
+          a.phone(href="tel:" + formatPhoneNumber(doc.phonenumber, false))= formatPhoneNumber(doc.phonenumber, true)

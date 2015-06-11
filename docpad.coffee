@@ -83,6 +83,20 @@ docpadConfig =
     getAllCasesByCoworker: (coworker="", max=6) ->
       @getCollection('case').toJSON().filter (c) -> c.team && ~c.team.indexOf(coworker)
 
+    formatPhoneNumber: (phoneNumber="", isDisplayed) ->
+      # normalize string and remove all unnecessary characters
+      formattedNumber = phoneNumber.replace(/[^\d]/g, "")
+
+      # check if number length do not equal 10
+      if formattedNumber.length != 10
+        return ""
+
+      if isDisplayed
+        # reformat and return phone number
+        return formattedNumber.replace(/(\d{4})(\d{2})(\d{2})(\d{2})/, "$1 - $2 $3 $4")
+      else
+        return formattedNumber
+
     marked: require('marked')
 
   plugins:

@@ -12,7 +12,7 @@ shortname: mikael
 
 jobTitle: Webbutvecklare
 email: mikael.wallin@iteam.se
-phonenumber: '0730892230'
+phonenumber: '0730-89 22 30'
 
 cssColor: "#D40000"
 topImage: "/content/images/medarbetare/mwn.jpg"
