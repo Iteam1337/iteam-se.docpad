@@ -13,5 +13,4 @@ standalone: true
           a(href=doc.url)= doc.title
         p(class="title")= doc.jobTitle
         a.email(href="mailto:" + doc.email)= doc.email
-        p
-          a.email(href="tel:" + doc.phonenumber)= doc.phonenumber
+        p= doc.phonenumber
