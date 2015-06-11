@@ -5,7 +5,7 @@ var ctx, data, options,
 
 options = {
   scaleOverride  : true,
-  scaleSteps     : 15,
+  scaleSteps     : 20,
   scaleStepWidth : 1,
   scaleStartValue: 0,
   animationSteps : 0
