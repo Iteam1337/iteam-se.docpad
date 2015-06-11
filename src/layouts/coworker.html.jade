@@ -24,7 +24,8 @@ standalone: true
       .left
         .email
           a(href="mailto:" + document.email)= document.email
-          .phone= document.phonenumber
+          .phone
+            a(href="tel:" + document.phonenumber)= document.phonenumber
 
       .right
         .social-buttons
