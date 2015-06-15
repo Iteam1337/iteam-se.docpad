@@ -19,10 +19,10 @@ topImage: "/content/images/medarbetare/acr.jpeg"
 background: 'invert'
 
 twitter:
-instagram:
+instagram: alexanderczigler
 linkedin: in/alexanderczigler
-github: alexanderczigler
-blog:
+github: ilix
+blog: http://www.ilix.se/rss/
 
 ---
 
