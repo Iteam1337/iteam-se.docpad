@@ -10,9 +10,9 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: dennis
 
-jobTitle: Frontendutvecklare
+jobTitle: Frontendutvecklare, Föräldraledig
 email: dennis.pettersson@iteam.se
-phonenumber:
+phonenumber: 073 334 00 02
 
 cssColor: "rgba(255,255,255,.0)"
 topImage: "http://i.bldr.se/hax/7M2A9.jpeg"

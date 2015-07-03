@@ -10,7 +10,7 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: johanna
 
-jobTitle: Utvecklingschef & Systemutvecklare
+jobTitle: Utvecklingschef & Systemutvecklare, Föräldraledig
 email: johanna.grahn@iteam.se
 phonenumber: 0734 - 02 91 12
 
