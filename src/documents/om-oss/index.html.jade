@@ -26,6 +26,13 @@ chevron: true
         ## Att utvecklas är lösningen
         Vi jobbar alltid i nära samarbete med våra kunder. Vi står för den tekniska lösningen när det handlar om att skapa eller vidareutveckla ett befintligt företag eller tjänst. Målet, oavsett uppdrag, är att både kund och medarbetare kontinuerligt ska utvecklas och växa - både som individ och företag.
 
+        ### Omsättning [MSEK]
+        <canvas class="turnoverNumbers" width="400" height="200"></canvas>
+
+        ### Antal medarbetare
+        <canvas class="employeeNumbers" width="400" height="200"></canvas>
+        Källa: Bolagsverket, Creditsafe och [Allabolag](http://www.allabolag.se/5565516928/Iteam_Solutions_AB)
+
     .col-md-5.col-md-offset-1.map
       :markdown
         ## Hitta oss
@@ -36,41 +43,27 @@ chevron: true
         ### Ring oss
         Ring vårt växelnummer är 08-26 70 90 eller direkt till våra [medarbetare](/medarbetare).
 
-        ### Kolla in vårt kontor i 3D
-        <a href="https://my.matterport.com/show/?m=YNZtsQ339ux" target="_blank" title="Kolla in vårt kontor i 3D"><img src="/content/images/career/showcase_3d.png"></a>
-
-        <a href="https://my.matterport.com/show/?m=YNZtsQ339ux" target="_blank" title="Kolla in vårt kontor i 3D">Välkommen in och ta en rundtur i våra kontorslokaler!</a>
-
       if document.certifications
-        div.certifications
+        .certifications.row
           h3 Partners
           ul
             each image in document.certifications
               li
                 img.certification(src=image)
 
-  .row(about-view)
-
-    .row
-      .col-md-5
+      .row
         :markdown
-          ## Lite statistik om oss:
-
-    .row
-      .col-md-5
-        h3 Omsättning [MSEK]
-        canvas.turnoverNumbers(width=400,height=200)
-
-      .col-md-5.col-md-offset-2
-        h3 Antal medarbetare
-        canvas.employeeNumbers(width=400,height=200)
-        p Källa: Bolagsverket, Creditsafe, och <a href="http://www.allabolag.se/5565516928/Iteam_Solutions_AB" target="blank">Allabolag</a>
+          ### Kolla in vårt kontor i 3D
+          <a href="https://my.matterport.com/show/?m=YNZtsQ339ux" target="_blank" title="Kolla in vårt kontor i 3D">
+            <img src="/content/images/career/showcase_3d.png">
+            Välkommen in och ta en rundtur i våra kontorslokaler!
+          </a>
 
   .row
     :markdown
-      #### Organisationsnummer: <input value="556551-6928" onclick="this.select()"> | VAT: <input value="SE556551-692801"  onclick="this.select()">
+      #### Organisationsnummer: <input value="556551-6928" onclick="this.select()"> | VAT: <input value="SE556551-692801" onclick="this.select()">
 
-      #### Fakturor tar vi helst emot på epost. <a href="mailto:invoice@iteam.se">invoice@iteam.se</a>
+      #### Fakturor tar vi helst emot på epost. [invoice@iteam.se](mailto:invoice@iteam.se)
 
   section.row
     each doc in getCollection('tjanster').toJSON()
