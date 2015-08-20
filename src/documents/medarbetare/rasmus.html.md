@@ -1,5 +1,5 @@
 ---
-title: Rasmus Fredriksson
+title: Rasmus Strömberg
 description: 'Iteam är en teknikbyrå med kreativa lösningar. Vi förverkligar dina idéer.'
 keywords: ''
 standalone: true
