@@ -31,7 +31,7 @@ intro: >
   Vi utvecklade Svensk Byggtjänsts Omvärldsbevakning tillsammans med byråpartnern Britny.
 ---
 
-##Byggbranschens omvärldsbevakning
+## Byggbranschens omvärldsbevakning
 Varje dag händer det något nytt i byggbranschen, allt från nya EU-direktiv, myndighetsrekommendationer och nya rön. Iteam fick i uppdrag att tillsammans med Britny, utveckla Bygginfo – en nyhetstjänst som samlar det senaste inom byggbranschen.
 För att göra det enkelt och snabbt för redaktörerna att publicera utvecklades hjälpmedel som automatisk bildanpassning och färdiglayoutade innehållsblock för faktarutor, bilder med bildtext och listor med bifogade filer. Det finns också möjlighet för användare att kommentera, diskutera och skapa egna användarprofiler.
 

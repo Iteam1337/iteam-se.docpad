@@ -113,16 +113,18 @@ html(lang="sv")
               li Telefon: <a href="callto:+468267090">08-26 70 90</a>
 
           #followUs.col-md-6
-            a(href="mailto:hans.rollman@iteam.se")
+            a(href="mailto:hans.rollman@iteam.se", title="E-post")
               .e-mail
-            a(href="https://github.com/iteam1337", target="_blank")
+            a(href="https://github.com/iteam1337", target="_blank", title="GitHub")
               .e-github
-            a(href="https://www.facebook.com/IteamSolutions", target="_blank")
+            a(href="https://www.facebook.com/IteamSolutions", target="_blank", title="Facebook")
               .e-facebook
-            a(href="http://twitter.com/iteam1337", target="_blank")
+            a(href="http://twitter.com/iteam1337", target="_blank", title="Twitter")
               .e-twitter
-            a(href="http://instagram.com/iteam1337", target="_blank")
+            a(href="http://instagram.com/iteam1337", target="_blank", title="Instagram")
               .e-instagram
+            a(href="https://www.youtube.com/channel/UCU2TdLZ7p0jEuuGUxaod4lw", target="_blank", title="YouTube")
+              .e-youtube
 
     // Scripts
     != scripts.toHTML()
@@ -138,5 +140,17 @@ html(lang="sv")
       ga('send', 'pageview');
 
     <!-- End Analytics -->
+    <!-- Tracking -->
+    script.
+
+      // Amazon CloudFront
+      !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(
+      arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];
+      d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.
+      insertBefore(d,q)}(window,document,'script','_gs');
+
+      _gs('GSN-599299-Y');
+
+    <!-- End Tracking -->
     script(src="/content/scripts/iteamse.js?v=" + pkg.version)
     script(src="/content/scripts/app.js?v=" + pkg.version)

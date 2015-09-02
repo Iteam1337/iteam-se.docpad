@@ -84,11 +84,12 @@ module.exports = function (grunt) {
         options: {
           bucket: 'www.iteam.se',
         },
-        upload: [
+        sync: [
           {
             src: 'out/**/*',
             dest: '/',
-            rel: 'out'
+            rel: 'out',
+            options: { verify: true }
           },
         ],
       },
@@ -96,11 +97,12 @@ module.exports = function (grunt) {
         options: {
           bucket: 'stage.iteam.se'
         },
-        upload: [
+        sync: [
           {
             src: 'out/**/*',
             dest: '/',
-            rel: 'out'
+            rel: 'out',
+            options: { verify: true }
           },
         ],
       },
@@ -108,11 +110,12 @@ module.exports = function (grunt) {
         options: {
           bucket: 'test.iteam.se'
         },
-        upload: [
+        sync: [
           {
             src: 'out/**/*',
             dest: '/',
-            rel: 'out'
+            rel: 'out',
+            options: { verify: true }
           },
         ],
       },

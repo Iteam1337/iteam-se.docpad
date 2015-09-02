@@ -16,7 +16,7 @@ containerClass: 'single-case'
 
 imageGallery: ['case-galleribilder/vimla/vimla-1.png','case-galleribilder/vimla/vimla-2.png','case-galleribilder/vimla/vimla-3.png','case-galleribilder/vimla/vimla-4.png']
 
-team: ['anders','johanna','dennis','rickard','sophie','alexander','johan']
+team: ['anders','johanna','dennis','rickard','sophie','alexander','johan','mikael']
 siteurl: "https://vimla.se"
 
 readmorelinks: [{"url":"https://vimla.se","title":"Vimla"},{"url":"https://www.youtube.com/watch?v=hJ472LXXaaM","title":"Vimla - Så här funkar det"},{"url":"http://www.madetoorder.se","title":"Made to Order"}, {"url":"http://www.jungrelations.se","title":"Jung Relations"}]
@@ -24,7 +24,7 @@ readmorelinks: [{"url":"https://vimla.se","title":"Vimla"},{"url":"https://www.y
 quote: {text:"Vi ser vårt team hos Iteam mer som våra kollegor än som leverantör. Istället för att vi ställer krav som Iteam utför så jobbar vi tillsammans och sätter alla funktioner och lösningar för siten. Det har gjort att vi kommit mycket längre än vad vi skulle gjort annars", by:"Johan Littorin, intiativtagare och affärsansvarig för Vimla"}
 about:
 
-topImage: '/content/images/case-topbilder/vimla2.jpg'
+topImage: '/content/images/case-topbilder/vimla_phone.jpg'
 background: 'invert'
 
 intro: >
