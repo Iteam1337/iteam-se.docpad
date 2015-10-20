@@ -10,17 +10,17 @@ layout: coworker
 subpages: 'medarbetare'
 shortname: dennis
 
-jobTitle: Frontendutvecklare, Föräldraledig
+jobTitle: Frontendutvecklare
 email: dennis.pettersson@iteam.se
-phonenumber: 073 334 00 02
+phonenumber: 072 975 68 07
 
 cssColor: "rgba(255,255,255,.0)"
 topImage: "http://i.bldr.se/hax/7M2A9.jpeg"
 background: invert
 
 twitter: ankjevel
-instagram: ankjevel
-linkedin: pub/dennis-pettersson/23/92b/896
+instagram:
+linkedin: in/ankjevel
 github: ankjevel
 blog:
 
